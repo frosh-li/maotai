@@ -6,16 +6,19 @@ const uuid = require('uuid/v4');
 
 
 class MaotaiService {
+  get signSecrit(){
+    return "my secrit";
+  }
   md5(str) {
     let _md5 = crypto.createHash('md5');
     let result = _md5.update(str).digest('hex');
     return result.toLowerCase();
   }
 
-  userAgent() {
+  userAgent(mobile) {
     let os = "android";
     let version = "1.0.23";
-    let appIndent = this.md5(uuid());
+    let appIndent = this.md5(mobile+this.signSecrit);
     let signString = "7c60b232d79d34d727c12c6f33ad8fea29ebb333ae0c1b3822e5a18934c8f189";
     let appIndentSign = this.md5([os, version,appIndent,signString].join("-"));
     return `Mozilla/5.0 (Linux; Android 4.4.4; LA2-SN Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36[${os}/${version}/${appIndent}/${appIndentSign}]`;
@@ -28,12 +31,11 @@ class MaotaiService {
    * @return {type}      description
    */
   login(tel, pass='123456', userAgent){
-    userAgent = userAgent || this.userAgent();
+    userAgent = userAgent || this.userAgent(tel);
     let now = +new Date();
     if(tel == "15330066919"){
       pass="110520";
     }
-    let randomMD5 = "8bf81d40806ffb9614867197b8e33243";
     let options = { method: 'POST',
       url: 'https://www.cmaotai.com/API/Servers.ashx',
       headers:
@@ -94,7 +96,7 @@ class MaotaiService {
    * @return {type}            description
    */
   createOrder(tel, pid , quantity=1, userAgent) {
-    userAgent = userAgent || this.userAgent();
+    userAgent = userAgent || this.userAgent(tel);
     let now = +new Date();
     console.log('useragent createorder', userAgent);
     return new Promise((resolve, reject) => {
@@ -209,7 +211,6 @@ class MaotaiService {
    * @return {type}           description
    */
   apointment(addressID, userAgent, pid=391) {
-    userAgent = userAgent || this.userAgent();
     let now = +new Date();
     var options = { method: 'POST',
       url: 'https://www.cmaotai.com/API//Servers.ashx',
@@ -260,8 +261,8 @@ class MaotaiService {
     // let phone;
     // console.log('开始预约:', phone);
     this.apintmentResults = [];
-    let userAgent = this.userAgent();
-    this.apointmentBySinglePhone(phones,userAgent, callback);
+
+    this.apointmentBySinglePhone(phones,null, callback);
 
   }
 
@@ -284,6 +285,7 @@ class MaotaiService {
       return callback(this.apintmentResults);
     }
     phone = phone.trim();
+    userAgent = this.userAgent(phone);
     console.log('开始预约:', phone);
     this.login(phone, '123456', userAgent)
       .then(userinfo => {

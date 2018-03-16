@@ -106,7 +106,6 @@ router.post('/maotai/multiOrder', (req, res, next) => {
   let pid = req.body.pid;
   let quantity = req.body.quantity || 1;
   let ret = [];
-  let userAgent = this.userAgent();
   function createOne() {
     let tel = tels.shift();
     if(!tel){
@@ -116,6 +115,7 @@ router.post('/maotai/multiOrder', (req, res, next) => {
         datas: ret
       })
     }
+    let userAgent = this.userAgent(tel);
     MaotaiService.createOrder(tel, pid , quantity,userAgent)
       .then(data => {
         if(data.code === 0){
