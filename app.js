@@ -11,6 +11,10 @@ var routers = require('./routes/routes');
 var redis = require('redis');
 global.redisClient = redis.createClient();
 
+redisClient.on('error', function(error){
+    
+})
+
 global.aliSessionId="";
 
 var app = express();
@@ -47,16 +51,5 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
-// const AliVerify = require('./tools/startAliVerify');
-// // 启动自动刷新token库功能
-// setInterval(() => {
-//   AliVerify.connectSidFromHard().then(data => {
-//     if(data === true){
-//
-//     }
-//   }).catch(e=>{
-//     console.log('生成SID失败', e);
-//   });
-// },10000)
 
 module.exports = app;

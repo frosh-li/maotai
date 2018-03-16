@@ -1,7 +1,7 @@
-const Service = require('./service');
+const Service = require('../tools/service');
 let assert = require("chai").assert;
 
-describe('测试Service', () => {
+describe('接口通用函数测试', () => {
   // it("截屏测试", () => {
   //   AliVerify.capture();
   //   assert.equal("ok", "ok");
@@ -21,6 +21,5 @@ describe('测试Service', () => {
     assert.equal(userAgent, oldUserAgent);
     done();
   })
-
 
 });

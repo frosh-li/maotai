@@ -15,7 +15,7 @@ class AliVerify {
     let pressX1 = ePoint[0];
     let pressY1 = ePoint[1];
     let dur = 1000;
-    let adb = `/Users/junliang/android-sdk-macosx/platform-tools/adb`;
+    let adb = `adb`;
     let adbCommand = `${adb} shell input swipe ${pressX} ${pressY} ${pressX1} ${pressY1} ${dur}`;
 
     execSync(adbCommand);
@@ -26,11 +26,12 @@ class AliVerify {
    * @return {type}  description
    */
   capture(){
+    let adb = "adb";
   	// console.log('屏幕截图开始',`adb shell /system/bin/screencap -p /sdcard/screenshot.png`);
-  	require('child_process').execSync('/Users/junliang/android-sdk-macosx/platform-tools/adb shell /system/bin/screencap -p /sdcard/screenshot.png');
+  	require('child_process').execSync(`${adb} shell /system/bin/screencap -p /sdcard/screenshot.png`);
   	// console.log('屏幕截图完成')
   	// console.log('拉取屏幕截图到电脑','adb pull /sdcard/screenshot.png /Users/junliang/server/www/maotaiServer/temp/');
-  	require('child_process').execSync('/Users/junliang/android-sdk-macosx/platform-tools/adb pull /sdcard/screenshot.png /Users/junliang/server/www/maotaiServer/temp/');
+  	require('child_process').execSync(`${adb} pull /sdcard/screenshot.png ./temp/`);
   	// console.log('拉取完成');
   }
   /**
@@ -42,7 +43,7 @@ class AliVerify {
     let pressX = 126;
     let pressY = 98;
     let dur = 10;
-    let adb = `/Users/junliang/android-sdk-macosx/platform-tools/adb`;
+    let adb = `adb`;
     let adbCommand = `${adb} shell input tap ${pressX} ${pressY}`;
 
     execSync(adbCommand);
@@ -51,19 +52,25 @@ class AliVerify {
   calcPos(callback) {
     let sPoint = [0 ,0 ],
         ePoint = [0 ,0 ];
+    let getPixTime = (+new Date());
     getPixels(path.resolve(__dirname,'../temp/screenshot.png'), (err, pixels)=>{
+      console.log('获取图像耗时', (+new Date() - getPixTime)+"ms");
       if(err){
         console.log(err);
         callback([sPoint, ePoint]);
       }
-      for(let i = 0 ; i < 720; i = i + 4){
-        for(let j = 575; j < 1218 ; j=j +4){
+      let width = pixels.shape[0];
+      let height = pixels.shape[1];
+      console.log('image size', width, height);
+      let startTime = +new Date();
+      for(let i = 0 ; i < width; i = i + 4){
+        for(let j = height/2; j < height ; j=j +4){
           let R = pixels.get(i, j, 0),
 					    G = pixels.get(i, j, 1),
 					    B = pixels.get(i, j, 2);
           if(R == 235 && G == 2 && B == 41){
             // start pos;
-            sPoint = [i-100, j]
+            sPoint = [i-100, j];
           }
           if(R == 46 && G == 171 && B == 255){
             // end pos
@@ -71,7 +78,7 @@ class AliVerify {
           }
         }
       }
-      console.log(sPoint, ePoint);
+      console.log(sPoint, ePoint, (+new Date() - startTime)+"ms");
       callback([sPoint, ePoint]);
     })
   }
@@ -83,16 +90,17 @@ class AliVerify {
    * @return {type}  description
    */
   connectSidFromHard() {
-    // let getPixels = require('get-pixels');
-    this.openAliUI();
+
     return new Promise((resolve, reject) => {
-      this.captureAndCalcPos((status) => {
-        if(status){
-          return resolve(true)
-        }else{
-          return resolve(false)
-        }
-      });
+      this.openAliUI();
+      return this.captureAndCalcPos(resolve, reject);
+      // this.captureAndCalcPos((status) => {
+      //   if(status){
+      //     return resolve(true)
+      //   }else{
+      //     return this.captureAndCalcPos(resolve, reject)
+      //   }
+      // });
     })
 
   }
@@ -104,7 +112,7 @@ class AliVerify {
    *
    * @return {type}  description
    */
-  captureAndCalcPos(callback){
+  captureAndCalcPos(resolve, reject){
     // 开始截屏
     setTimeout(()=>{
       this.capture();
@@ -120,10 +128,11 @@ class AliVerify {
             Points[1][1] == 0
           ){
             // 重试进行截屏
-            return this.captureAndCalcPos(callback);
+            return this.captureAndCalcPos(resolve, reject);
           }
           this.swipeToCircle(Points[0], Points[1]);
-          callback(true);
+          return resolve(true);
+          return reject(new Error('未知错误'));
         });
       },500)
     },2000);
