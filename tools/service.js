@@ -124,7 +124,10 @@ class MaotaiService {
             return reject(error);
           };
           console.log('定位查询结果',body);
-          return resolve(addressID);
+          return resolve({
+              addressID: addressID,
+              lbsdata: body
+          });
         });
     })
   }
@@ -151,64 +154,62 @@ class MaotaiService {
     return new Promise((resolve, reject) => {
       this.login(tel, pass, userAgent)
         .then(data => {
-          AliVerify.connectSidFromHard().then(data => {
-            if(data === true){
-              this.checkAliToken(
-                (aliSessionId)=>{
-                  this.getAddressId(tel).then(address =>{
-                    this.LBSServer(address, tel, userAgent).then(() => {
-                        let options = { method: 'POST',
-                          url: 'https://www.cmaotai.com/API/CreateOrder.ashx',
-                          headers:
-                           {
-                             'cache-control': 'no-cache',
-                             'accept-language': 'zh-CN,en-US;q=0.8',
-                             accept: 'application/json, text/javascript, */*; q=0.01',
-                             'content-type': 'application/x-www-form-urlencoded',
-                             referer: `https://www.cmaotai.com/ysh5/page/BuyInquiry/buyInquiryIndex.html?type=invoiceInfo&productId=${pid}&num=${quantity}`,
-                             'user-agent': userAgent,
-                             'x-requested-with': 'XMLHttpRequest' },
-                          form:
-                           { phoneCode: tel,
-                             productId: pid,
-                             quantity: quantity,
-                             couponsId: '7a971dbc622643db96118c938277c64f',
-                             addressId: address,
-                             invioceId: -1,
-                             express: 14,
-                             shopId: '211110105003',
-                             sessid: aliSessionId,
-                             remark: '',
-                             subinfoId: '',
-                             timestamp121: now } ,
-                         jar:j};
-                        aliSessionId = null;
-                        request(options, function (error, response, body) {
-                          if (error){
-                            return reject(error);
-                          };
-                          console.log('下单结果',body);
-                          return resolve(JSON.parse(body));
-                        });
-                    })
-                    .catch(e => {
-                        return reject(e);
-                    })
-
-                  })
-                });
-            }
-          }).catch(e=>{
-            return reject(e);
-          });
-
-        }).catch(e => {
-          return reject(e);
+            return this.getAddressId(tel)
         })
-
+        .then(address => {
+            return this.LBSServer(address, tel, userAgent);
+        })
+        .then(data => {
+            let shopId = 211110105003;
+            if(data && data.lbsdata && data.lbsdata.network && data.lbsdata.network.Sid == shopId){
+                return AliVerify.connectSidFromHard();
+            }else{
+                return reject(new Error("订单错误，因为商家没有上货"));
+            }
+        }).then(data => {
+            if(data === true){
+                this.checkAliToken((aliSessionId)=>{
+                    // 如果找到对应shopID
+                    let options = { method: 'POST',
+                      url: 'https://www.cmaotai.com/API/CreateOrder.ashx',
+                      headers:
+                       {
+                         'cache-control': 'no-cache',
+                         'accept-language': 'zh-CN,en-US;q=0.8',
+                         accept: 'application/json, text/javascript, */*; q=0.01',
+                         'content-type': 'application/x-www-form-urlencoded',
+                         referer: `https://www.cmaotai.com/ysh5/page/BuyInquiry/buyInquiryIndex.html?type=invoiceInfo&productId=${pid}&num=${quantity}`,
+                         'user-agent': userAgent,
+                         'x-requested-with': 'XMLHttpRequest' },
+                      form:
+                       { phoneCode: tel,
+                         productId: pid,
+                         quantity: quantity,
+                         couponsId: '7a971dbc622643db96118c938277c64f',
+                         addressId: address,
+                         invioceId: -1,
+                         express: 14,
+                         shopId: shopId,
+                         sessid: aliSessionId,
+                         remark: '',
+                         subinfoId: '',
+                         timestamp121: now } ,
+                     jar:j};
+                    aliSessionId = null;
+                    request(options, function (error, response, body) {
+                      if (error){
+                        return reject(error);
+                      };
+                      console.log('下单结果',body);
+                      return resolve(JSON.parse(body));
+                    });
+                })
+            }
+        }).catch(e => {
+            console.log(e);
+            return reject(e);
+        })
     })
-
-
   }
 
   getAddressId(tel) {
@@ -373,7 +374,8 @@ class MaotaiService {
       .then((addressID) => {
           return this.LBSServer(addressID, phone, userAgent);
       })
-      .then(addressID => {
+      .then(data => {
+        let addressID = data.addressID;
         return this.apointment(addressID, userAgent)
       })
       .then(apointmentRet => {
@@ -418,7 +420,8 @@ class MaotaiService {
       .then((addressID) => {
           return this.LBSServer(addressID, phone, userAgent);
       })
-      .then(addressID => {
+      .then(data => {
+        let addressID = data.addressID
         return this.apointment(addressID, userAgent)
       })
       .then(apointmentRet => {
