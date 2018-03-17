@@ -112,7 +112,8 @@ router.post('/maotai/apointment', (req, res, next) => {
 })
 
 router.post('/maotai/multiOrder', (req, res, next) => {
-  let tels = req.body.tels.split(",");
+    console.log(req.body.tels);
+  let tels = req.body.tels.split("|");
   let pid = req.body.pid;
   let quantity = req.body.quantity || 1;
   let ret = [];
@@ -125,8 +126,8 @@ router.post('/maotai/multiOrder', (req, res, next) => {
         datas: ret
       })
     }
-    let userAgent = this.userAgent(tel);
-    MaotaiService.createOrder(tel, pid , quantity,userAgent)
+    let userAgent = MaotaiService.userAgent(tel);
+    MaotaiService.createOrder(JSON.parse(tel), pid , quantity,userAgent)
       .then(data => {
         if(data.code === 0){
           ret.push({

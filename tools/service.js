@@ -137,12 +137,19 @@ class MaotaiService {
    * @param  {type} quantity=1 description
    * @return {type}            description
    */
-  createOrder(tel, pid , quantity=1, userAgent) {
+  createOrder(stel, pid , quantity=1, userAgent) {
+    if(typeof stel === 'string'){
+        var tel = stel;
+        var pass = '123456';
+    }else{
+        var tel = stel.phone;
+        var pass = stel.pass;
+    }
     userAgent = userAgent || this.userAgent(tel);
     let now = +new Date();
     console.log('useragent createorder', userAgent);
     return new Promise((resolve, reject) => {
-      this.login(tel, tel === "15330066919"?"110520":"123456", userAgent)
+      this.login(tel, pass, userAgent)
         .then(data => {
           AliVerify.connectSidFromHard().then(data => {
             if(data === true){
@@ -173,7 +180,8 @@ class MaotaiService {
                              sessid: aliSessionId,
                              remark: '',
                              subinfoId: '',
-                             timestamp121: now } };
+                             timestamp121: now } ,
+                         jar:j};
                         aliSessionId = null;
                         request(options, function (error, response, body) {
                           if (error){
@@ -236,9 +244,9 @@ class MaotaiService {
 
         });
       }
-      setTimeout(()=>{
-          getFromRemote()
-      },DELAY);
+
+      getFromRemote()
+
       // redisClient.get(`address:${tel}`, (err, addresses)=>{
       //   if(err){
       //     getFromRemote();
@@ -290,7 +298,7 @@ class MaotaiService {
     var cookie_string = j.getCookieString(options.url); // "key1=value1; key2=value2; ..."
     console.log('cookie', cookie_string);
     return new Promise((resolve, reject) => {
-        setTimeout(() => {
+
             request(options, function (error, response, body) {
               if (error){
                 console.log(error);
@@ -305,7 +313,7 @@ class MaotaiService {
                 return resolve(body);
               }
             });
-        },DELAY)
+
 
     })
   }
