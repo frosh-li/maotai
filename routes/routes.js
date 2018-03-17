@@ -101,6 +101,16 @@ router.post('/maotai/multiApointment', (req, res, next) => {
   })
 })
 
+router.post('/maotai/apointment', (req, res, next) => {
+  let phone = req.body.tel;
+  MaotaiService._apointmentBySinglePhone(phone, (data) => {
+    res.json({
+      status: 200,
+      data:data
+    })
+  })
+})
+
 router.post('/maotai/multiOrder', (req, res, next) => {
   let tels = req.body.tels.split(",");
   let pid = req.body.pid;

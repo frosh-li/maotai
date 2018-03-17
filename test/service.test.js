@@ -22,4 +22,26 @@ describe('接口通用函数测试', () => {
     done();
   })
 
+  it("测试预约", (done) => {
+      let phones =[
+        {
+            phone: "13967676452",
+            pass: "123456"
+        },
+        {
+            phone: "18810320392",
+            pass: "12345678"
+        },
+        {
+            phone: "15075870950",
+            pass: "123456"
+        }
+      ];
+      Service.apointmentMulti(phones, (data) => {
+          console.log(data);
+          assert.equal(true, true),
+          done();
+      })
+  })
+
 });

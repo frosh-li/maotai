@@ -1,9 +1,13 @@
 var request = require("request");
-request = request.defaults({jar: true});
+var FileCookieStore = require('tough-cookie-filestore');
+var j = request.jar(new FileCookieStore('cookies.json'));
+request = request.defaults({ jar : true })
 var AliVerify = require('./startAliVerify');
 const crypto = require('crypto');
 const uuid = require('uuid/v4');
 
+
+const DELAY = 3000;
 
 class MaotaiService {
   get signSecrit(){
@@ -36,6 +40,8 @@ class MaotaiService {
     if(tel == "15330066919"){
       pass="110520";
     }
+    j = request.jar();
+    // request = request.defaults({ jar : j })
     let options = { method: 'POST',
       url: 'https://www.cmaotai.com/API/Servers.ashx',
       headers:
@@ -51,13 +57,21 @@ class MaotaiService {
        { action: 'UserManager.login',
          tel: tel,
          pwd: pass,
-         timestamp121: now } };
-    console.log('useragent login', options.headers);
+         timestamp121: now } ,
+     jar: j};
+     var cookie_string = j.getCookieString(options.url); // "key1=value1; key2=value2; ..."
+     console.log('cookie', cookie_string);
+    // console.log('useragent login', options.headers);
+    console.log('start login cookie', )
     return new Promise((resolve, reject) => {
       request(options, function (error, response, body) {
         if (error) {
           return reject(error);
         }
+        console.log(response.headers);
+        // console.log("set cookie",response.headers['cookie']);
+        var cookie_string = j.getCookieString(options.url); // "key1=value1; key2=value2; ..."
+        console.log('cookie', cookie_string);
         console.log(body);
         body = JSON.parse(body);
         if(body.state === true && body.code === 0){
@@ -86,6 +100,35 @@ class MaotaiService {
 
 
   }
+
+  LBSServer(addressID, tel, userAgent, pid=391) {
+    let now = (+new Date());
+    return new Promise((resolve, reject) => {
+        let options = { method: 'POST',
+          url: 'https://www.cmaotai.com/API/LBSServer.ashx',
+          headers:
+           {
+             'cache-control': 'no-cache',
+             'accept-language': 'zh-CN,en-US;q=0.8',
+             accept: 'application/json, text/javascript, */*; q=0.01',
+             'content-type': 'application/x-www-form-urlencoded',
+             referer: `https://www.cmaotai.com/ysh5/page/Category/productDetails.html?productId=${pid}`,
+             'user-agent': userAgent,
+             'x-requested-with': 'XMLHttpRequest' },
+          form:
+           { pid: pid,
+             quant: 1,
+             timestamp121: now } ,
+         jar:j};
+        request(options, function (error, response, body) {
+          if (error){
+            return reject(error);
+          };
+          console.log('定位查询结果',body);
+          return resolve(addressID);
+        });
+    })
+  }
   /**
    * createOrder - 创建订单
    *
@@ -107,38 +150,44 @@ class MaotaiService {
               this.checkAliToken(
                 (aliSessionId)=>{
                   this.getAddressId(tel).then(address =>{
-                    let options = { method: 'POST',
-                      url: 'https://www.cmaotai.com/API/CreateOrder.ashx',
-                      headers:
-                       {
-                         'cache-control': 'no-cache',
-                         'accept-language': 'zh-CN,en-US;q=0.8',
-                         accept: 'application/json, text/javascript, */*; q=0.01',
-                         'content-type': 'application/x-www-form-urlencoded',
-                         referer: `https://www.cmaotai.com/ysh5/page/BuyInquiry/buyInquiryIndex.html?type=invoiceInfo&productId=${pid}&num=${quantity}`,
-                         'user-agent': userAgent,
-                         'x-requested-with': 'XMLHttpRequest' },
-                      form:
-                       { phoneCode: tel,
-                         productId: pid,
-                         quantity: quantity,
-                         couponsId: '7a971dbc622643db96118c938277c64f',
-                         addressId: address,
-                         invioceId: -1,
-                         express: 14,
-                         shopId: '211110105003',
-                         sessid: aliSessionId,
-                         remark: '',
-                         subinfoId: '',
-                         timestamp121: now } };
-                    aliSessionId = null;
-                    request(options, function (error, response, body) {
-                      if (error){
-                        return reject(error);
-                      };
-                      console.log('下单结果',body);
-                      return resolve(JSON.parse(body));
-                    });
+                    this.LBSServer(address, tel, userAgent).then(() => {
+                        let options = { method: 'POST',
+                          url: 'https://www.cmaotai.com/API/CreateOrder.ashx',
+                          headers:
+                           {
+                             'cache-control': 'no-cache',
+                             'accept-language': 'zh-CN,en-US;q=0.8',
+                             accept: 'application/json, text/javascript, */*; q=0.01',
+                             'content-type': 'application/x-www-form-urlencoded',
+                             referer: `https://www.cmaotai.com/ysh5/page/BuyInquiry/buyInquiryIndex.html?type=invoiceInfo&productId=${pid}&num=${quantity}`,
+                             'user-agent': userAgent,
+                             'x-requested-with': 'XMLHttpRequest' },
+                          form:
+                           { phoneCode: tel,
+                             productId: pid,
+                             quantity: quantity,
+                             couponsId: '7a971dbc622643db96118c938277c64f',
+                             addressId: address,
+                             invioceId: -1,
+                             express: 14,
+                             shopId: '211110105003',
+                             sessid: aliSessionId,
+                             remark: '',
+                             subinfoId: '',
+                             timestamp121: now } };
+                        aliSessionId = null;
+                        request(options, function (error, response, body) {
+                          if (error){
+                            return reject(error);
+                          };
+                          console.log('下单结果',body);
+                          return resolve(JSON.parse(body));
+                        });
+                    })
+                    .catch(e => {
+                        return reject(e);
+                    })
+
                   })
                 });
             }
@@ -156,8 +205,11 @@ class MaotaiService {
   }
 
   getAddressId(tel) {
+
     console.log('start get addressID from mobile:', tel);
     let now = +new Date();
+
+
     var options = { method: 'POST',
       url: 'https://www.cmaotai.com/YSApp_API/YSAppServer.ashx',
       headers:
@@ -168,14 +220,20 @@ class MaotaiService {
        { action: 'AddressManager.list',
          index: '1',
          size: '10',
-         timestamp121: now } };
+         timestamp121: now },
+     jar:j};
+
     return new Promise((resolve,reject) => {
       function getFromRemote() {
+
         request(options, function (error, response, body) {
           if (error){
             return reject(error);
           }
-          redisClient.set(`address:${tel}`, body);
+          console.log('response', response);
+          // redisClient.set(`address:${tel}`, body);
+          //console.log('response',response);
+          // console.log('body',body);
           let bodyJSON = JSON.parse(body);
           console.log(bodyJSON.data.list[0])
           console.log('获取的地址id',bodyJSON.data.list[0].SId);
@@ -183,7 +241,9 @@ class MaotaiService {
 
         });
       }
-      getFromRemote();
+      setTimeout(()=>{
+          getFromRemote()
+      },DELAY);
       // redisClient.get(`address:${tel}`, (err, addresses)=>{
       //   if(err){
       //     getFromRemote();
@@ -213,7 +273,7 @@ class MaotaiService {
   apointment(addressID, userAgent, pid=391) {
     let now = +new Date();
     var options = { method: 'POST',
-      url: 'https://www.cmaotai.com/API//Servers.ashx',
+      url: 'https://www.cmaotai.com/API/Servers.ashx',
       headers:
        {
          'cache-control': 'no-cache',
@@ -222,28 +282,36 @@ class MaotaiService {
          'content-type': 'application/x-www-form-urlencoded',
          referer: `https://www.cmaotai.com/ysh5/page/Reservations/SelectAddress.html`,
          'user-agent': userAgent,
+         "Host":'www.cmaotai.com',
          'x-requested-with': 'XMLHttpRequest' },
       form:
        { action: 'ReservationsManager.Regist',
          addressID: addressID,
          pid: pid,
-         timestamp121: now } };
+         timestamp121: now } ,
+     jar:j};
     console.log('useragent 预约', userAgent);
+    // var j = request.jar();
+    var cookie_string = j.getCookieString(options.url); // "key1=value1; key2=value2; ..."
+    console.log('cookie', cookie_string);
     return new Promise((resolve, reject) => {
-      request(options, function (error, response, body) {
-        if (error){
-          console.log(error);
-          return reject(error);
-        }
-        else{
-          console.log("预约结果", body);
-          let ret = JSON.stringify(body);
-          if(body.state === false){
-            return reject("预约失败:"+body.msg);
-          }
-          return resolve(body);
-        }
-      });
+        setTimeout(() => {
+            request(options, function (error, response, body) {
+              if (error){
+                console.log(error);
+                return reject(error);
+              }
+              else{
+                console.log("预约结果", body);
+                let ret = JSON.stringify(body);
+                if(body.state === false){
+                  return reject("预约失败:"+body.msg);
+                }
+                return resolve(body);
+              }
+            });
+        },DELAY)
+
     })
   }
 
@@ -278,18 +346,29 @@ class MaotaiService {
    * @return {type}       description
    */
   apointmentBySinglePhone(phones,userAgent, callback) {
-    let phone = phones.shift();
+    let sphone = phones.shift();
 
-    if(!phone){
+    if(!sphone){
       console.log("所有手机号预约结束");
       return callback(this.apintmentResults);
     }
-    phone = phone.trim();
+    // phone = phone.trim();
+    console.log(typeof sphone);
+    if(typeof sphone === 'string'){
+        var phone = sphone.trim();
+        var pass = "123456"
+    }else{
+        var phone = sphone.phone.trim();
+        var pass = sphone.pass.trim();
+    }
     userAgent = this.userAgent(phone);
     console.log('开始预约:', phone);
-    this.login(phone, '123456', userAgent)
+    this.login(phone, pass, userAgent)
       .then(userinfo => {
         return this.getAddressId(phone)
+      })
+      .then((addressID) => {
+          return this.LBSServer(addressID, phone, userAgent);
       })
       .then(addressID => {
         return this.apointment(addressID, userAgent)
@@ -309,6 +388,41 @@ class MaotaiService {
         setTimeout(() => {
           this.apointmentBySinglePhone(phones, userAgent,callback);
         },3000)
+      })
+  }
+
+  /**
+   * apointmentBySinglePhone - 单个用户预约
+   *
+   * 1、登录
+   * 2、获取默认地址
+   * 3、预订
+   *
+   * @param  {type} phone description
+   * @return {type}       description
+   */
+  _apointmentBySinglePhone(phone,callback) {
+    phone = phone.trim();
+    let userAgent = this.userAgent(phone);
+    console.log('开始预约:', phone);
+    this.login(phone, '123456', userAgent)
+      .then(userinfo => {
+        return this.getAddressId(phone)
+      })
+      .then((addressID) => {
+          return this.LBSServer(addressID, phone, userAgent);
+      })
+      .then(addressID => {
+        return this.apointment(addressID, userAgent)
+      })
+      .then(apointmentRet => {
+
+        console.log('预约结果',phone, apointmentRet);
+        callback(apointmentRet)
+      })
+      .catch(e => {
+        console.log('error', e);
+        callback(e)
       })
   }
 }
