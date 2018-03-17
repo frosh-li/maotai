@@ -7,7 +7,7 @@ const crypto = require('crypto');
 const uuid = require('uuid/v4');
 
 
-const DELAY = 3000;
+const DELAY = 1000;
 
 class MaotaiService {
   get signSecrit(){
@@ -68,7 +68,6 @@ class MaotaiService {
         if (error) {
           return reject(error);
         }
-        console.log(response.headers);
         // console.log("set cookie",response.headers['cookie']);
         var cookie_string = j.getCookieString(options.url); // "key1=value1; key2=value2; ..."
         console.log('cookie', cookie_string);
@@ -230,10 +229,6 @@ class MaotaiService {
           if (error){
             return reject(error);
           }
-          console.log('response', response);
-          // redisClient.set(`address:${tel}`, body);
-          //console.log('response',response);
-          // console.log('body',body);
           let bodyJSON = JSON.parse(body);
           console.log(bodyJSON.data.list[0])
           console.log('获取的地址id',bodyJSON.data.list[0].SId);
@@ -385,6 +380,9 @@ class MaotaiService {
       })
       .catch(e => {
         console.log('error', e);
+        let obj = {};
+        obj[phone] = e.message;
+        this.apintmentResults.push(obj);
         setTimeout(() => {
           this.apointmentBySinglePhone(phones, userAgent,callback);
         },3000)
