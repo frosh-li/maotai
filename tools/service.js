@@ -133,14 +133,17 @@ class MaotaiService {
   }
   /**
    * createOrder - 创建订单
-   *
+   * fixedShopId:
+   * 雍贵中心网店ID 211110105003
+   * 不限制为-1
    * @param  {type} tel        description
    * @param  {type} sid        description
    * @param  {type} pid        description
    * @param  {type} quantity=1 description
+   * @param  {string} fixedShopId 是否锁定购买某一家
    * @return {type}            description
    */
-  createOrder(stel, pid , quantity=1, userAgent) {
+  createOrder(stel, pid , quantity=1, userAgent, fixedShopId = -1) {
     if(typeof stel === 'string'){
         var tel = stel;
         var pass = '123456';
@@ -149,7 +152,7 @@ class MaotaiService {
         var pass = stel.pass;
     }
     userAgent = userAgent || this.userAgent(tel);
-    let shopId = 211110105003;
+    let shopId = fixedShopId;
     let now = +new Date();
     let scopeAddress = null;
     console.log('useragent createorder', userAgent);
@@ -163,12 +166,17 @@ class MaotaiService {
             return this.LBSServer(address, tel, userAgent);
         })
         .then(data => {
-            return AliVerify.connectSidFromHard();
-            // if(data && data.lbsdata && data.lbsdata.network && data.lbsdata.network.Sid == shopId){
-            //     return AliVerify.connectSidFromHard();
-            // }else{
-            //     return reject(new Error("订单错误，因为商家没有上货"));
-            // }
+            if(shopID > 0){
+                if(data && data.lbsdata && data.lbsdata.network && data.lbsdata.network.Sid == shopId){
+                    return AliVerify.connectSidFromHard();
+                }else{
+                    return reject(new Error("订单错误，因为商家没有上货"));
+                }
+            }else{
+                return AliVerify.connectSidFromHard();
+            }
+
+
         }).then(data => {
             if(data === true){
                 this.checkAliToken((aliSessionId)=>{

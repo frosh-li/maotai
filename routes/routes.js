@@ -113,9 +113,10 @@ router.post('/maotai/apointment', (req, res, next) => {
 
 router.post('/maotai/multiOrder', (req, res, next) => {
     console.log(req.body.tels);
-  let tels = req.body.tels.split("|");
-  let pid = req.body.pid;
-  let quantity = req.body.quantity || 1;
+  let tels = req.body.tels.split("|");      // 电话
+  let pid = req.body.pid;                   // 酒品编号 飞天茅台53° 为391
+  let quantity = req.body.quantity || 1;    // 订购数量瓶
+  let fixedShopId = req.body.shopid || -1 ; // 网点ID
   let ret = [];
   function createOne() {
     let tel = tels.shift();
@@ -127,7 +128,7 @@ router.post('/maotai/multiOrder', (req, res, next) => {
       })
     }
     let userAgent = MaotaiService.userAgent(tel);
-    MaotaiService.createOrder(JSON.parse(tel), pid , quantity,userAgent)
+    MaotaiService.createOrder(JSON.parse(tel), pid , quantity,userAgent, fixedShopId)
       .then(data => {
         if(data.code === 0){
           ret.push({
