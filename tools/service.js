@@ -149,7 +149,9 @@ class MaotaiService {
         var pass = stel.pass;
     }
     userAgent = userAgent || this.userAgent(tel);
+    let shopId = 211110105003;
     let now = +new Date();
+    let scopeAddress = null;
     console.log('useragent createorder', userAgent);
     return new Promise((resolve, reject) => {
       this.login(tel, pass, userAgent)
@@ -157,15 +159,16 @@ class MaotaiService {
             return this.getAddressId(tel)
         })
         .then(address => {
+            scopeAddress = address;
             return this.LBSServer(address, tel, userAgent);
         })
         .then(data => {
-            let shopId = 211110105003;
-            if(data && data.lbsdata && data.lbsdata.network && data.lbsdata.network.Sid == shopId){
-                return AliVerify.connectSidFromHard();
-            }else{
-                return reject(new Error("订单错误，因为商家没有上货"));
-            }
+            return AliVerify.connectSidFromHard();
+            // if(data && data.lbsdata && data.lbsdata.network && data.lbsdata.network.Sid == shopId){
+            //     return AliVerify.connectSidFromHard();
+            // }else{
+            //     return reject(new Error("订单错误，因为商家没有上货"));
+            // }
         }).then(data => {
             if(data === true){
                 this.checkAliToken((aliSessionId)=>{
@@ -186,7 +189,7 @@ class MaotaiService {
                          productId: pid,
                          quantity: quantity,
                          couponsId: '7a971dbc622643db96118c938277c64f',
-                         addressId: address,
+                         addressId: scopeAddress,
                          invioceId: -1,
                          express: 14,
                          shopId: shopId,

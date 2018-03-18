@@ -12,8 +12,8 @@ const phones = [
 describe("自动购买流程测试", ()=>{
     it("批量购买", (done) => {
         let tels = phones;
-        let pid = 405;
-        let quantity = 6;
+        let pid = 391;
+        let quantity = 2;
         let ret = [];
         function createOne() {
           let tel = tels.shift();
