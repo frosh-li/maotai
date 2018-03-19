@@ -112,11 +112,11 @@ router.post('/maotai/apointment', (req, res, next) => {
 })
 
 router.post('/maotai/multiOrder', (req, res, next) => {
-    console.log(req.body.tels);
+  console.log(req.body.tels);
   let tels = req.body.tels.split("|");      // 电话
   let pid = req.body.pid;                   // 酒品编号 飞天茅台53° 为391
   let quantity = req.body.quantity || 1;    // 订购数量瓶
-  let fixedShopId = req.body.shopid || -1 ; // 网点ID
+  let fixedShopId = req.body.shopid || -1 ; // 网点ID  211110105003 雍贵中心
   let ret = [];
   function createOne() {
     let tel = tels.shift();
