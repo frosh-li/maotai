@@ -30,12 +30,12 @@ class BaiduService {
           let params = {
             query:"小区",
             tag:"房地产",
-            location: `${this.location.lat},${this.location.lng}`,
+            location: `${location.lat},${location.lng}`,
             radius: 1000,
             output:"json",
           }
           let reqUrl = this.buildUrl(url, params);
-          console.log(reqUrl);
+          console.log('poit',reqUrl);
           request({
             url:reqUrl,
             method:'get',

@@ -6,14 +6,14 @@
  var mysql      = require('mysql');
  var request = require('request');
  var Service = require('../tools/service');
- var connection = mysql.createConnection({
-   host     : 'localhost',
-   user     : 'root',
-   password : '123456',
-   database : 'accounts'
- });
+ // var connection = mysql.createConnection({
+ //   host     : 'localhost',
+ //   user     : 'root',
+ //   password : '123456',
+ //   database : 'accounts'
+ // });
 
- connection.connect();
+// connection.connect();
  /**
   * getAccount - 获取定量账号
   *
@@ -32,12 +32,36 @@
  }
 
 
-getAccount(20)
-  .then(phones => {
+let _phones = [
+    "18320488532",
+    "15249625137",
+    "15046846298",
+    "18903188059",
+    "18648747250",
+    "18634641063",
+    "15192468705",
+    "13670589613",
+    "13792080758",
+    "13313181385",
+    "13935327172",
+    "13432527862",
+    "13333176802",
+    "13624666057",
+    "15935492346",
+    "13593493641",
+    "13191162477",
+    "13842111030",
+    "15613794675",
+    "18947646202"
+]
+let phones = [];
+_phones.forEach(phone => {
+    phones.push({
+        phone: phone,
+        pass:"a123456"
+    })
+})
+
     Service.apointmentMulti(phones, (data) => {
         console.log(data);
     })
-  })
-  .catch(e => {
-    console.log(e);
-  })

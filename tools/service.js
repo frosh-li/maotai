@@ -73,7 +73,7 @@ class MaotaiService {
                 if (body.state === true && body.code === 0) {
                     return resolve(body);
                 } else {
-                    return reject(new Error(body.msg));
+                    return reject(new Error(tel+':'+pass+':'+body.msg));
                 }
             });
         })
@@ -96,6 +96,53 @@ class MaotaiService {
           form: {
               action: 'AddressManager.edit',
               sid: addressId,
+              provinceId: provinceId,
+              cityId: cityId,
+              districtsId:districtsId,
+              addressInfo:addressInfo,
+              address: address,
+              shipTo:shipTo,
+              callPhone: callPhone,
+              zipcode:'000000',
+              isDef: isDef,
+              lng:lng,
+              lat: lat,
+              timestamp121: now
+          },
+          jar: j
+      };
+      return new Promise((resolve, reject) => {
+        request(options, function(error, response, body) {
+            if (error) {
+                return reject(error);
+            }
+            console.log(body);
+            body = JSON.parse(body);
+            if (body.state === true && body.code === 0) {
+                return resolve(body);
+            } else {
+                return reject(new Error(body.msg));
+            }
+        });
+      })
+    }
+
+    addAddress(provinceId,cityId, districtsId, addressInfo, address, shipTo, callPhone, zipcode="100000",isDef=1,lng, lat, userAgent){
+      let now = (+new Date());
+      let options = {
+          method: 'POST',
+          url: 'https://www.cmaotai.com/API/Servers.ashx',
+          headers: {
+              'cache-control': 'no-cache',
+              'accept-language': 'zh-CN,en-US;q=0.8',
+              accept: 'application/json, text/javascript, */*; q=0.01',
+              'content-type': 'application/x-www-form-urlencoded',
+              referer: 'https://www.cmaotai.com/',
+              'user-agent': userAgent,
+              'x-requested-with': 'XMLHttpRequest'
+          },
+          form: {
+              action: 'AddressManager.add',
               provinceId: provinceId,
               cityId: cityId,
               districtsId:districtsId,
@@ -379,6 +426,56 @@ class MaotaiService {
               // console.log(bodyJSON.data.list[0])
               console.log('获取的地址id', bodyJSON.data.list[0].SId);
               return resolve(bodyJSON.data.list[0].SId);
+
+          });
+
+            // redisClient.get(`address:${tel}`, (err, addresses)=>{
+            //   if(err){
+            //     getFromRemote();
+            //   }else{
+            //     if(addresses){
+            //       let bodyJSON = JSON.parse(addresses);
+            //       console.log(bodyJSON.data.list[0])
+            //       console.log('获取的地址id from redis',bodyJSON.data.list[0].SId);
+            //       return resolve(bodyJSON.data.list[0].SId);
+            //     }else{
+            //       getFromRemote();
+            //     }
+            //   }
+            // })
+
+        })
+    }
+
+    getAllAddress(tel) {
+        console.log('start get addressID from mobile:', tel);
+        let now = +new Date();
+
+        var options = {
+            method: 'POST',
+            url: 'https://www.cmaotai.com/YSApp_API/YSAppServer.ashx',
+            headers: {
+                'postman-token': '5c885fd4-6b0a-21ff-0bf2-3f35526c6973',
+                'cache-control': 'no-cache',
+                'content-type': 'application/x-www-form-urlencoded'
+            },
+            form: {
+                action: 'AddressManager.list',
+                index: '1',
+                size: '10',
+                timestamp121: now
+            },
+            jar: j
+        };
+
+        return new Promise((resolve, reject) => {
+          request(options, function(error, response, body) {
+              if (error) {
+                  return reject(error);
+              }
+              let bodyJSON = JSON.parse(body);
+              // console.log(bodyJSON.data.list[0])
+              return resolve(bodyJSON.data.list);
 
           });
 

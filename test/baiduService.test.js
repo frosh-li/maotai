@@ -24,18 +24,19 @@ describe("测试百度解析", ()=>{
             assert.equal(typeof data, 'object');
             done();
           }).catch(e=>{
+            console.log(e);
             done();
           })
     })
 
-    it("根据名字获取经纬度", (done) => {
-        Service.geoDecoder('北京市东城区雍贵中心')
-          .then(data=>{
-            console.log(data);
-            assert.equal(data.status, 0);
-            done();
-          }).catch(e=>{
-            done();
-          })
-    })
+    // it("根据名字获取经纬度", (done) => {
+    //     Service.geoDecoder('北京市东城区雍贵中心')
+    //       .then(data=>{
+    //         console.log(data);
+    //         assert.equal(data.status, 0);
+    //         done();
+    //       }).catch(e=>{
+    //         done();
+    //       })
+    // })
 })
