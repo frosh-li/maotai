@@ -27,7 +27,7 @@ console.log(names.length);
  */
 function getAccount(num){
   return new Promise((resolve, reject) => {
-    connection.query('select * from accounts where status=1 and remark="汽车大厦双龙" limit 0,'+num, function(err, results){
+    connection.query('select * from accounts where status=1 and remark="汽车大厦双龙" limit 11,'+num, function(err, results){
       if(err){
         return reject(err);
       }
@@ -37,9 +37,9 @@ function getAccount(num){
 }
 
 function start() {
-  getAccount(40)
+  getAccount(10)
     .then((accounts) => {
-      addressEdit(accounts,40);
+      addressEdit(accounts,10);
     })
     .catch(e=>{
       console.log(e);
@@ -79,14 +79,14 @@ function addressEdit(accounts, count){
       let cData = data[currentIndex];
       return Service.editAddress(
         addressID,
-        '550000',
-        '550100',
-        '550101',
-        '贵州省贵阳市',
-        cData.address.replace("贵州省贵阳市",""),
-        names[currentIndex],
+        '100000',
+        '101000',
+        '101010',
+        '北京市大兴区',
+        cData.address,
+        names[currentIndex+10],
         acc.phone,
-        zipcode="550000",
+        zipcode="000000",
         isDef=1,
         cData.lat,
         cData.lng,

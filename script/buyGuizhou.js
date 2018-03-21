@@ -1,23 +1,41 @@
 /**
- * 监控某一个站点是否已经可以抢货了
+ * 贵州地区的茅台购买
  */
 const MaotaiService = require('../tools/service');
-const originPhones = [
-  {"phone":"13102661153", "pass":"123456"},
-  {"phone":"13153185002", "pass":"123456"},
-  {"phone":"13157440883", "pass":"123456"},
-];
+const colors = require('colors/safe');
+
+var mysql      = require('mysql');
+var request = require('request');
+var connection = mysql.createConnection({
+  host     : 'localhost',
+  user     : 'root',
+  password : '123456',
+  database : 'accounts'
+});
+
+connection.connect();
 
 let tels = [];
-originPhones.forEach(data => {
-  tels.push(JSON.stringify(data));
-})
-tels = tels.join("|");
 
-console.log('to Buy tels', tels);
+
+// console.log('to Buy tels', tels);
 let pid = '391';
 let quantity = 6;
-let shopId = '211110105003';
+let shopId = -1; //不限制区域
+
+
+
+
+function getAccount(num){
+  return new Promise((resolve, reject) => {
+    connection.query('select * from accounts where status=1 and remark="汽车大厦双龙" limit 0,'+num, function(err, results){
+      if(err){
+        return reject(err);
+      }
+      return resolve(results);
+    })
+  })
+}
 
 function printInfo(data){
   try{
@@ -113,5 +131,18 @@ function startToBy() {
   })
 }
 
-watchQuanity('13153185002', '123456', '211110102007');
-// startToBy();
+getAccount(16)
+  .then(data => {
+    data.forEach(cdata => {
+      tels.push(JSON.stringify({
+        phone:cdata.phone,
+        pass: cdata.pass,
+      }));
+    })
+    tels = tels.join("|");
+    console.log(tels);
+    watchQuanity(data[0].phone, data[0].pass, -1);
+  })
+  .catch(e => {
+    console.log(e);
+  })

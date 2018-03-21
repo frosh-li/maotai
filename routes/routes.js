@@ -137,7 +137,7 @@ router.post('/maotai/multiOrder', (req, res, next) => {
             data: data
           })
           console.log('create order success', tel, pid,'error');
-          setTimeout(createOne, 10);
+          setTimeout(createOne, 1000);
         }else{
           console.log('create order fail', tel, pid,'error');
           ret.push({
@@ -145,7 +145,7 @@ router.post('/maotai/multiOrder', (req, res, next) => {
             status: "FAIL",
             data: data
           })
-          setTimeout(createOne, 10);
+          setTimeout(createOne, 1000);
         }
 
       }).catch(e=>{
@@ -155,10 +155,10 @@ router.post('/maotai/multiOrder', (req, res, next) => {
           error:e.message
         })
         console.log('create order fail', tel, pid,'error', e.message);
-        setTimeout(createOne, 10);
+        setTimeout(createOne, 1000);
       })
   }
-  setTimeout(createOne, 10);
+  setTimeout(createOne, 1000);
 })
 
 module.exports = router;

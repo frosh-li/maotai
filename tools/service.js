@@ -7,7 +7,7 @@ request = request.defaults({
 var AliVerify = require('./startAliVerify');
 const crypto = require('crypto');
 const uuid = require('uuid/v4');
-
+const colors = require('colors/safe');
 
 const DELAY = 1000;
 
@@ -43,7 +43,6 @@ class MaotaiService {
             pass = "110520";
         }
         j = request.jar();
-        // request = request.defaults({ jar : j })
         let options = {
             method: 'POST',
             url: 'https://www.cmaotai.com/API/Servers.ashx',
@@ -64,19 +63,12 @@ class MaotaiService {
             },
             jar: j
         };
-        var cookie_string = j.getCookieString(options.url); // "key1=value1; key2=value2; ..."
-        console.log('cookie', cookie_string);
-        // console.log('useragent login', options.headers);
-        console.log('start login cookie', )
+
         return new Promise((resolve, reject) => {
             request(options, function(error, response, body) {
                 if (error) {
                     return reject(error);
                 }
-                // console.log("set cookie",response.headers['cookie']);
-                var cookie_string = j.getCookieString(options.url); // "key1=value1; key2=value2; ..."
-                console.log('cookie', cookie_string);
-                console.log(body);
                 body = JSON.parse(body);
                 if (body.state === true && body.code === 0) {
                     return resolve(body);
@@ -104,10 +96,10 @@ class MaotaiService {
           form: {
               action: 'AddressManager.edit',
               sid: addressId,
-              provinceId: '550000',
-              cityId: '550100',
-              districtsId:'550101',
-              addressInfo:"贵州省贵阳市",
+              provinceId: provinceId,
+              cityId: cityId,
+              districtsId:districtsId,
+              addressInfo:addressInfo,
               address: address,
               shipTo:shipTo,
               callPhone: callPhone,
@@ -172,22 +164,38 @@ class MaotaiService {
         })
     }
 
-    checkAliToken(callback) {
 
+    /**
+     * checkAliToken - 动态检查是否获取到最新的阿里验证码
+     *
+     * @param  {type} callback description
+     * @return {type}          description
+     */
+    checkAliToken(callback) {
         if (!aliSessionId) {
             setTimeout(() => {
                 this.checkAliToken(callback);
             }, 100);
-            //return process.nextTick(()=>{this.checkAliToken()});
-            // return this.checkAliToken();
         } else {
-
             console.log('token成功获取到', aliSessionId);
             callback(aliSessionId);
-
         }
     }
 
+
+    /**
+     * LBSServer -
+     * 根据定位获取茅台推送的酒品网点
+     * 无推送结果不能发送订单
+     * 获取推送结果判定是否购买
+     * 锁定网点逻辑也在这里面
+     *
+     * @param  {type} addressID description
+     * @param  {type} tel       description
+     * @param  {type} userAgent description
+     * @param  {type} pid = 391 description
+     * @return {type}           description
+     */
     LBSServer(addressID, tel, userAgent, pid = 391) {
         let now = (+new Date());
         return new Promise((resolve, reject) => {
@@ -208,7 +216,8 @@ class MaotaiService {
                     quant: 1,
                     timestamp121: now
                 },
-                jar: j
+                jar: j,
+                json:true
             };
             request(options, function(error, response, body) {
                 if (error) {
@@ -227,14 +236,14 @@ class MaotaiService {
      * fixedShopId:
      * 雍贵中心网店ID 211110105003
      * 不限制为-1
-     * @param  {type} tel        description
-     * @param  {type} sid        description
-     * @param  {type} pid        description
-     * @param  {type} quantity=1 description
-     * @param  {string} fixedShopId 是否锁定购买某一家
+     * @param  {type} tel        手机号
+     * @param  {type} pid        商品编号 茅台飞天53°的ID为391
+     * @param  {type} quantity=6 购买数量 6瓶为一箱，优先购买一箱
+     * @param  {userAgent} userAgent 固定分配的登录手机号
+     * @param  {string} fixedShopId 是否锁定购买某一家 -1为不锁定  211110102007雍贵中心 211110105003双龙
      * @return {type}            description
      */
-    createOrder(stel, pid, quantity = 1, userAgent, fixedShopId = -1) {
+    createOrder(stel, pid, quantity = 6, userAgent, fixedShopId = -1) {
         if (typeof stel === 'string') {
             var tel = stel;
             var pass = '123456';
@@ -258,13 +267,36 @@ class MaotaiService {
                 })
                 .then(data => {
                     if (shopId > 0) {
-                        if (data && data.lbsdata && data.lbsdata.data && data.lbsdata.data.network && data.lbsdata.data.network.Sid == shopId) {
+                        if (data && data.lbsdata && data.lbsdata.data && data.lbsdata.data.stock && data.lbsdata.data.stock.Sid == shopId) {
+                          if(
+                            data.lbsdata.data.stock.StockCount > 0
+                            &&
+                            data.lbsdata.data.limit.LimitCount >= quantity
+                          ){
                             return AliVerify.connectSidFromHard();
+                          }else {
+                            return reject(new Error("该网点无库存或可购买数量不够"));
+                          }
+
                         } else {
                             return reject(new Error("订单错误，因为商家没有上货"));
                         }
                     } else {
-                        return AliVerify.connectSidFromHard();
+                      console.log('data------');
+                      if(data && data.lbsdata && data.lbsdata.state===true && data.lbsdata.code === 0){
+                        shopId = data.lbsdata.data.stock.Sid;
+                        if(
+                          data.lbsdata.data.stock.StockCount > 0
+                          &&
+                          data.lbsdata.data.limit.LimitCount >= quantity
+                        ){
+                          return AliVerify.connectSidFromHard();
+                        }else {
+                          return reject(new Error("该网点无库存或可购买数量不够"));
+                        }
+                      }else{
+                        return reject(new Error("还未开始抢购，继续等待中，60秒后进行下一次测试"));
+                      }
                     }
 
 
@@ -305,7 +337,7 @@ class MaotaiService {
                                 if (error) {
                                     return reject(error);
                                 };
-                                console.log('下单结果', body);
+                                console.log(colors.green('下单完成'+JSON.stringify(body)));
                                 return resolve(JSON.parse(body));
                             });
                         })
@@ -318,10 +350,8 @@ class MaotaiService {
     }
 
     getAddressId(tel) {
-
         console.log('start get addressID from mobile:', tel);
         let now = +new Date();
-
 
         var options = {
             method: 'POST',
@@ -341,21 +371,16 @@ class MaotaiService {
         };
 
         return new Promise((resolve, reject) => {
-            function getFromRemote() {
+          request(options, function(error, response, body) {
+              if (error) {
+                  return reject(error);
+              }
+              let bodyJSON = JSON.parse(body);
+              // console.log(bodyJSON.data.list[0])
+              console.log('获取的地址id', bodyJSON.data.list[0].SId);
+              return resolve(bodyJSON.data.list[0].SId);
 
-                request(options, function(error, response, body) {
-                    if (error) {
-                        return reject(error);
-                    }
-                    let bodyJSON = JSON.parse(body);
-                    console.log(bodyJSON.data.list[0])
-                    console.log('获取的地址id', bodyJSON.data.list[0].SId);
-                    return resolve(bodyJSON.data.list[0].SId);
-
-                });
-            }
-
-            getFromRemote()
+          });
 
             // redisClient.get(`address:${tel}`, (err, addresses)=>{
             //   if(err){
@@ -406,10 +431,7 @@ class MaotaiService {
             },
             jar: j
         };
-        console.log('useragent 预约', userAgent);
-        // var j = request.jar();
-        var cookie_string = j.getCookieString(options.url); // "key1=value1; key2=value2; ..."
-        console.log('cookie', cookie_string);
+
         return new Promise((resolve, reject) => {
 
             request(options, function(error, response, body) {
@@ -441,8 +463,6 @@ class MaotaiService {
      * @return {type}        description
      */
     apointmentMulti(phones, callback) {
-        // let phone;
-        // console.log('开始预约:', phone);
         this.apintmentResults = [];
 
         this.apointmentBySinglePhone(phones, null, callback);

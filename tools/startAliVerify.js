@@ -4,6 +4,8 @@ const {
 const getPixels = require('get-pixels');
 const path = require('path');
 
+const adb = "adb -s emulator-5554";
+
 class AliVerify {
 
     /**
@@ -17,7 +19,6 @@ class AliVerify {
             let pressX1 = ePoint[0];
             let pressY1 = ePoint[1];
             let dur = 1000;
-            let adb = `adb`;
             let adbCommand = `${adb} shell input swipe ${pressX} ${pressY} ${pressX1} ${pressY1} ${dur}`;
 
             execSync(adbCommand);
@@ -28,7 +29,6 @@ class AliVerify {
          * @return {type}  description
          */
     capture() {
-            let adb = "adb";
             // console.log('屏幕截图开始',`adb shell /system/bin/screencap -p /sdcard/screenshot.png`);
             require('child_process').execSync(`${adb} shell /system/bin/screencap -p /sdcard/screenshot.png`);
             // console.log('屏幕截图完成')
@@ -45,7 +45,6 @@ class AliVerify {
         let pressX = 126;
         let pressY = 98;
         let dur = 10;
-        let adb = `adb`;
         let adbCommand = `${adb} shell input tap ${pressX} ${pressY}`;
 
         execSync(adbCommand);
@@ -66,7 +65,7 @@ class AliVerify {
             console.log('image size', width, height);
             let startTime = +new Date();
             for (let i = 0; i < width; i = i + 4) {
-                for (let j = height / 2; j < height; j = j + 4) {
+                for (let j = height / 3; j < height; j = j + 4) {
                     let R = pixels.get(i, j, 0),
                         G = pixels.get(i, j, 1),
                         B = pixels.get(i, j, 2);

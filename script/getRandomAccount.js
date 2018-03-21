@@ -15,10 +15,10 @@ var connection = mysql.createConnection({
 connection.connect();
 let pois = [];
 let baiduAK = "144d946a1d5c7b48c7e9a604ec5979cd";
-let loc = "26.601158,106.712734|26.56837,106.693768|26.593935,106.705566|26.601742,106.719005|26.57262,106.720889";
+let loc = "39.811828,116.347906";
 
 function getAddress(loc, callback){
-  let url = `http://api.map.baidu.com/geocoder/v2/?location=${loc}&output=json&pois=1&ak=${baiduAK}&batch=false`;
+  let url = `http://api.map.baidu.com/geocoder/v2/?location=${loc}&pois=1&output=json&pois=1&ak=${baiduAK}&batch=false&radius=2000&`;
   request({
     url: url,
     method: 'get',
@@ -29,7 +29,7 @@ function getAddress(loc, callback){
       return callback();
     }
     body.result.pois.forEach((points) => {
-      let sql = `insert into address(address, lat, lng) values("贵州省贵阳市${points.addr}", "${points.point.x}","${points.point.y}")`;
+      let sql = `insert into address(address, lat, lng) values("${points.addr}", "${points.point.x}","${points.point.y}")`;
       connection.query(sql, function(err, result){
         if(err){
           return console.log(err)
