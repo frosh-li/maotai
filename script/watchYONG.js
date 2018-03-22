@@ -3,26 +3,10 @@
  */
 const MaotaiService = require('../tools/service');
 let _phones = [
-  "18320488532",
-  "15249625137",
-  "15046846298",
-  "18903188059",
-  "18648747250",
-  "18634641063",
-  "15192468705",
-  "13670589613",
-  "13792080758",
-  "13313181385",
-  "13935327172",
-  "13432527862",
-  "13333176802",
-  "13624666057",
-  "15935492346",
-  "13593493641",
-  "13191162477",
-  "13842111030",
-  "15613794675",
-  "18947646202",
+  "13102661153",
+  "13153185002",
+  "13157440883",
+
 ]
 
 const originPhones = [
@@ -34,7 +18,7 @@ const originPhones = [
 _phones.forEach(item => {
   originPhones.push({
     "phone":item,
-    "pass":"a123456"
+    "pass":"123456"
   })
 });
 
@@ -48,7 +32,7 @@ tels = tels.join("|");
 console.log('to Buy tels', tels);
 let pid = '391';
 let quantity = 6;
-let shopName = '中恒实信|金源腾达';
+let shopName = '雍贵';
 
 function printInfo(data){
   try{
@@ -77,7 +61,7 @@ function fixShop(network, shopName) {
 
 function watchQuanity(tel, pass, shopName) {
   let randomIndex = Math.floor(Math.random()*(_phones.length-1));
-  tel = _phones[randomIndex];
+  tel = _phones[randomIndex]
   let userAgent = MaotaiService.userAgent(tel);
   let scopeAddress = "";
   MaotaiService.login(tel, pass, userAgent)
@@ -162,5 +146,5 @@ function startToBy() {
   })
 }
 
-watchQuanity(18320488532, 'a123456', shopName);
+watchQuanity(13102661153, '123456', shopName);
 // startToBy();

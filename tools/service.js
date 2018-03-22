@@ -12,6 +12,17 @@ const colors = require('colors/safe');
 const DELAY = 1000;
 
 class MaotaiService {
+    headers (userAgent) {
+      return {
+        'cache-control': 'no-cache',
+        'accept-language': 'zh-CN,en-US;q=0.8',
+        'accept': 'application/json, text/javascript, */*; q=0.01',
+        'content-type': 'application/x-www-form-urlencoded',
+        'referer': 'https://www.cmaotai.com/ysh5/page/LoginRegistr/userLogin.html',
+        'user-agent': userAgent,
+        'x-requested-with': 'XMLHttpRequest'
+      }
+    }
     get signSecrit() {
         return "my secrit";
     }
@@ -46,15 +57,7 @@ class MaotaiService {
         let options = {
             method: 'POST',
             url: 'https://www.cmaotai.com/API/Servers.ashx',
-            headers: {
-                'cache-control': 'no-cache',
-                'accept-language': 'zh-CN,en-US;q=0.8',
-                accept: 'application/json, text/javascript, */*; q=0.01',
-                'content-type': 'application/x-www-form-urlencoded',
-                referer: 'https://www.cmaotai.com/ysh5/page/LoginRegistr/userLogin.html',
-                'user-agent': userAgent,
-                'x-requested-with': 'XMLHttpRequest'
-            },
+            headers: this.headers(userAgent),
             form: {
                 action: 'UserManager.login',
                 tel: tel,
@@ -84,15 +87,7 @@ class MaotaiService {
       let options = {
           method: 'POST',
           url: 'https://www.cmaotai.com/API/Servers.ashx',
-          headers: {
-              'cache-control': 'no-cache',
-              'accept-language': 'zh-CN,en-US;q=0.8',
-              accept: 'application/json, text/javascript, */*; q=0.01',
-              'content-type': 'application/x-www-form-urlencoded',
-              referer: 'https://www.cmaotai.com/',
-              'user-agent': userAgent,
-              'x-requested-with': 'XMLHttpRequest'
-          },
+          headers: this.headers(userAgent),
           form: {
               action: 'AddressManager.edit',
               sid: addressId,
@@ -132,15 +127,7 @@ class MaotaiService {
       let options = {
           method: 'POST',
           url: 'https://www.cmaotai.com/API/Servers.ashx',
-          headers: {
-              'cache-control': 'no-cache',
-              'accept-language': 'zh-CN,en-US;q=0.8',
-              accept: 'application/json, text/javascript, */*; q=0.01',
-              'content-type': 'application/x-www-form-urlencoded',
-              referer: 'https://www.cmaotai.com/',
-              'user-agent': userAgent,
-              'x-requested-with': 'XMLHttpRequest'
-          },
+          headers: this.headers(userAgent),
           form: {
               action: 'AddressManager.add',
               provinceId: provinceId,
@@ -179,15 +166,7 @@ class MaotaiService {
         let options = {
             method: 'POST',
             url: 'https://www.cmaotai.com/API/Servers.ashx',
-            headers: {
-                'cache-control': 'no-cache',
-                'accept-language': 'zh-CN,en-US;q=0.8',
-                accept: 'application/json, text/javascript, */*; q=0.01',
-                'content-type': 'application/x-www-form-urlencoded',
-                referer: 'https://www.cmaotai.com/',
-                'user-agent': userAgent,
-                'x-requested-with': 'XMLHttpRequest'
-            },
+            headers: this.headers(userAgent),
             form: {
                 action: 'AddressManager.delete',
                 Sid: addressId,
@@ -252,15 +231,15 @@ class MaotaiService {
                 headers: {
                     'cache-control': 'no-cache',
                     'accept-language': 'zh-CN,en-US;q=0.8',
-                    accept: 'application/json, text/javascript, */*; q=0.01',
+                    'accept': 'application/json, text/javascript, */*; q=0.01',
                     'content-type': 'application/x-www-form-urlencoded',
-                    referer: `https://www.cmaotai.com/ysh5/page/Category/productDetails.html?productId=${pid}`,
+                    'referer': `https://www.cmaotai.com/ysh5/page/Category/productDetails.html?productId=${pid}`,
                     'user-agent': userAgent,
                     'x-requested-with': 'XMLHttpRequest'
                 },
                 form: {
                     pid: pid,
-                    quant: 1,
+                    quant: 6,
                     timestamp121: now
                 },
                 jar: j,
@@ -278,19 +257,31 @@ class MaotaiService {
             });
         })
     }
+
+    fixShop(network, shopName) {
+      let result = false;
+      let allShopNames = shopName.split("|");
+      console.log(allShopNames);
+      allShopNames.forEach(item=>{
+        if(data.lbsdata.data.network.SName.indexOf(item) > -1 || data.lbsdata.data.network.DName.indexOf(item) > -1){
+          result = true;
+        }
+      })
+      return result;
+    }
     /**
      * createOrder - 创建订单
-     * fixedShopId:
+     * fixedShopName:
      * 雍贵中心网店ID 211110105003
      * 不限制为-1
      * @param  {type} tel        手机号
      * @param  {type} pid        商品编号 茅台飞天53°的ID为391
      * @param  {type} quantity=6 购买数量 6瓶为一箱，优先购买一箱
      * @param  {userAgent} userAgent 固定分配的登录手机号
-     * @param  {string} fixedShopId 是否锁定购买某一家 -1为不锁定  211110102007雍贵中心 211110105003双龙
+     * @param  {string} fixedShopName 是否锁定购买某一家 -1为不锁定  211110102007雍贵中心 211110105003双龙
      * @return {type}            description
      */
-    createOrder(stel, pid, quantity = 6, userAgent, fixedShopId = -1) {
+    createOrder(stel, pid, quantity = 6, userAgent, fixedShopName = -1) {
         if (typeof stel === 'string') {
             var tel = stel;
             var pass = '123456';
@@ -298,8 +289,9 @@ class MaotaiService {
             var tel = stel.phone;
             var pass = stel.pass;
         }
+        let shopId = -1;
         userAgent = userAgent || this.userAgent(tel);
-        let shopId = fixedShopId;
+        let shopName = fixedShopName;
         let now = +new Date();
         let scopeAddress = null;
         console.log('useragent createorder', userAgent);
@@ -313,40 +305,24 @@ class MaotaiService {
                     return this.LBSServer(address, tel, userAgent);
                 })
                 .then(data => {
-                    if (shopId > 0) {
-                        if (data && data.lbsdata && data.lbsdata.data && data.lbsdata.data.stock && data.lbsdata.data.stock.Sid == shopId) {
-                          if(
-                            data.lbsdata.data.stock.StockCount > 0
-                            &&
-                            data.lbsdata.data.limit.LimitCount >= quantity
-                          ){
-                            return AliVerify.connectSidFromHard();
-                          }else {
-                            return reject(new Error("该网点无库存或可购买数量不够"));
-                          }
 
-                        } else {
-                            return reject(new Error("订单错误，因为商家没有上货"));
-                        }
-                    } else {
-                      console.log('data------');
-                      if(data && data.lbsdata && data.lbsdata.state===true && data.lbsdata.code === 0){
-                        shopId = data.lbsdata.data.stock.Sid;
-                        if(
-                          data.lbsdata.data.stock.StockCount > 0
-                          &&
-                          data.lbsdata.data.limit.LimitCount >= quantity
-                        ){
-                          return AliVerify.connectSidFromHard();
-                        }else {
-                          return reject(new Error("该网点无库存或可购买数量不够"));
-                        }
-                      }else{
-                        return reject(new Error("还未开始抢购，继续等待中，60秒后进行下一次测试"));
+                    if (data && data.lbsdata && data.lbsdata.data && data.lbsdata.data.stock && data.lbsdata.data.stock) {
+                      if(
+                        data.lbsdata.data.stock.StockCount > 0
+                        &&
+                        data.lbsdata.data.limit.LimitCount >= quantity
+                        &&
+                        this.fixShop(data.lbsdata.data.network, shopName)
+                      ){
+                        shopId = data.lbsdata.data.network.Sid;
+                        return AliVerify.connectSidFromHard();
+                      }else {
+                        return reject(new Error("该网点无库存或可购买数量不够"));
                       }
+
+                    } else {
+                        return reject(new Error("订单错误，因为商家没有上货"));
                     }
-
-
                 }).then(data => {
                     if (data === true) {
                         this.checkAliToken((aliSessionId) => {
@@ -400,11 +376,10 @@ class MaotaiService {
         console.log('start get addressID from mobile:', tel);
         let now = +new Date();
 
-        var options = {
+        let options = {
             method: 'POST',
             url: 'https://www.cmaotai.com/YSApp_API/YSAppServer.ashx',
             headers: {
-                'postman-token': '5c885fd4-6b0a-21ff-0bf2-3f35526c6973',
                 'cache-control': 'no-cache',
                 'content-type': 'application/x-www-form-urlencoded'
             },
@@ -428,22 +403,6 @@ class MaotaiService {
               return resolve(bodyJSON.data.list[0].SId);
 
           });
-
-            // redisClient.get(`address:${tel}`, (err, addresses)=>{
-            //   if(err){
-            //     getFromRemote();
-            //   }else{
-            //     if(addresses){
-            //       let bodyJSON = JSON.parse(addresses);
-            //       console.log(bodyJSON.data.list[0])
-            //       console.log('获取的地址id from redis',bodyJSON.data.list[0].SId);
-            //       return resolve(bodyJSON.data.list[0].SId);
-            //     }else{
-            //       getFromRemote();
-            //     }
-            //   }
-            // })
-
         })
     }
 
@@ -455,7 +414,6 @@ class MaotaiService {
             method: 'POST',
             url: 'https://www.cmaotai.com/YSApp_API/YSAppServer.ashx',
             headers: {
-                'postman-token': '5c885fd4-6b0a-21ff-0bf2-3f35526c6973',
                 'cache-control': 'no-cache',
                 'content-type': 'application/x-www-form-urlencoded'
             },
@@ -474,29 +432,43 @@ class MaotaiService {
                   return reject(error);
               }
               let bodyJSON = JSON.parse(body);
-              // console.log(bodyJSON.data.list[0])
               return resolve(bodyJSON.data.list);
-
           });
-
-            // redisClient.get(`address:${tel}`, (err, addresses)=>{
-            //   if(err){
-            //     getFromRemote();
-            //   }else{
-            //     if(addresses){
-            //       let bodyJSON = JSON.parse(addresses);
-            //       console.log(bodyJSON.data.list[0])
-            //       console.log('获取的地址id from redis',bodyJSON.data.list[0].SId);
-            //       return resolve(bodyJSON.data.list[0].SId);
-            //     }else{
-            //       getFromRemote();
-            //     }
-            //   }
-            // })
-
         })
     }
 
+    apointStatus(userAgent) {
+      let now = +new Date();
+      var options = {
+          method: 'POST',
+          url: 'https://www.cmaotai.com/API/Servers.ashx',
+          headers: this.headers(userAgent),
+          form: {
+              action:'ReservationsManager.List',
+              index:1,
+              size:10,
+              timestamp121: now
+          },
+          jar: j,
+          json:true
+      };
+
+      return new Promise((resolve, reject) => {
+          request(options, function(error, response, body) {
+              if (error) {
+                  console.log(error);
+                  return reject(error);
+              } else {
+                console.log("预约列表查看", body);
+                if(body && body.data && body.data.datas && body.data.datas.length > 0)
+                  return resolve(JSON.stringify(body.data.datas[0]));
+                else{
+                  return reject('没有预约列表');
+                }
+              }
+          });
+      })
+    }
 
     /**
      * apointment - 预约
@@ -510,16 +482,7 @@ class MaotaiService {
         var options = {
             method: 'POST',
             url: 'https://www.cmaotai.com/API/Servers.ashx',
-            headers: {
-                'cache-control': 'no-cache',
-                'accept-language': 'zh-CN,en-US;q=0.8',
-                accept: 'application/json, text/javascript, */*; q=0.01',
-                'content-type': 'application/x-www-form-urlencoded',
-                referer: `https://www.cmaotai.com/ysh5/page/Reservations/SelectAddress.html`,
-                'user-agent': userAgent,
-                "Host": 'www.cmaotai.com',
-                'x-requested-with': 'XMLHttpRequest'
-            },
+            headers: this.headers(userAgent),
             form: {
                 action: 'ReservationsManager.Regist',
                 addressID: addressID,
@@ -596,35 +559,35 @@ class MaotaiService {
         userAgent = this.userAgent(phone);
         console.log('开始预约:', phone);
         this.login(phone, pass, userAgent)
-            .then(userinfo => {
-                return this.getAddressId(phone)
-            })
-            .then((addressID) => {
-                return this.LBSServer(addressID, phone, userAgent);
-            })
-            .then(data => {
-                let addressID = data.addressID;
-                return this.apointment(addressID, userAgent)
-            })
-            .then(apointmentRet => {
-                let obj = {};
-                obj[phone] = apointmentRet;
-                this.apintmentResults.push(obj);
-                console.log('预约结果', phone, apointmentRet);
-                setTimeout(() => {
-                    this.apointmentBySinglePhone(phones, userAgent, callback);
-                }, 3000)
+          .then(userinfo => {
+              return this.getAddressId(phone)
+          })
+          .then((addressID) => {
+              return this.LBSServer(addressID, phone, userAgent);
+          })
+          .then(data => {
+              let addressID = data.addressID;
+              return this.apointment(addressID, userAgent)
+          })
+          .then(apointmentRet => {
+              let obj = {};
+              obj[phone] = apointmentRet;
+              this.apintmentResults.push(obj);
+              console.log('预约结果', phone, apointmentRet);
+              setTimeout(() => {
+                  this.apointmentBySinglePhone(phones, userAgent, callback);
+              }, 3000)
 
-            })
-            .catch(e => {
-                console.log('error', e);
-                let obj = {};
-                obj[phone] = e.message;
-                this.apintmentResults.push(obj);
-                setTimeout(() => {
-                    this.apointmentBySinglePhone(phones, userAgent, callback);
-                }, 3000)
-            })
+          })
+          .catch(e => {
+              console.log('error', e);
+              let obj = {};
+              obj[phone] = e.message;
+              this.apintmentResults.push(obj);
+              setTimeout(() => {
+                  this.apointmentBySinglePhone(phones, userAgent, callback);
+              }, 3000)
+          })
     }
 
     /**
@@ -642,25 +605,24 @@ class MaotaiService {
         let userAgent = this.userAgent(phone);
         console.log('开始预约:', phone);
         this.login(phone, '123456', userAgent)
-            .then(userinfo => {
-                return this.getAddressId(phone)
-            })
-            .then((addressID) => {
-                return this.LBSServer(addressID, phone, userAgent);
-            })
-            .then(data => {
-                let addressID = data.addressID
-                return this.apointment(addressID, userAgent)
-            })
-            .then(apointmentRet => {
-
-                console.log('预约结果', phone, apointmentRet);
-                callback(apointmentRet)
-            })
-            .catch(e => {
-                console.log('error', e);
-                callback(e)
-            })
+          .then(userinfo => {
+            return this.getAddressId(phone)
+          })
+          .then((addressID) => {
+            return this.LBSServer(addressID, phone, userAgent);
+          })
+          .then(data => {
+            let addressID = data.addressID
+            return this.apointment(addressID, userAgent)
+          })
+          .then(apointmentRet => {
+            console.log('预约结果', phone, apointmentRet);
+            callback(apointmentRet)
+          })
+          .catch(e => {
+            console.log('error', e);
+            callback(e)
+          })
     }
 }
 

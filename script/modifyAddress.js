@@ -79,9 +79,9 @@ function addressEdit(accounts, count){
       let cData = data[currentIndex];
       return Service.editAddress(
         addressID,
-        '100000',
-        '101000',
-        '101010',
+        '110000',
+        '110100',
+        '110115',
         '北京市大兴区',
         cData.address,
         names[currentIndex+10],
