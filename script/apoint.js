@@ -47,13 +47,13 @@ let _phones = [
     "13842111030",
     "15613794675",
 ]
-let phones = [];
-_phones.forEach(phone => {
-    phones.push({
-        phone: phone,
-        pass:"a123456"
-    })
-})
+let phones = require("../accounts30.txt.json");
+// _phones.forEach(phone => {
+//     phones.push({
+//         phone: phone,
+//         pass:"a123456"
+//     })
+// })
 
     Service.apointmentMulti(phones, (data) => {
         console.log(data);

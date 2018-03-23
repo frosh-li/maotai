@@ -37,13 +37,8 @@ function getAccount(num){
 }
 
 function start() {
-  getAccount(10)
-    .then((accounts) => {
-      addressEdit(accounts,10);
-    })
-    .catch(e=>{
-      console.log(e);
-    })
+  let accounts = require('../accounts30.txt.json');
+  addressEdit(accounts,30);
 }
 
 function getRandomAddress(count){
@@ -81,8 +76,8 @@ function addressEdit(accounts, count){
         addressID,
         '110000',
         '110100',
-        '110115',
-        '北京市大兴区',
+        '110101',
+        '北京市东城区',
         cData.address,
         names[currentIndex+10],
         acc.phone,

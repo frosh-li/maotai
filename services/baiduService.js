@@ -22,7 +22,7 @@ class BaiduService {
     this.loc = data;
   }
 
-  getPoit(address){
+  getPoit(address, page_num=0){
     let url = `${this.apiURL}`;
     return new Promise((resolve, reject) => {
       this.geoDecoder(address)
@@ -33,6 +33,8 @@ class BaiduService {
             location: `${location.lat},${location.lng}`,
             radius: 1000,
             output:"json",
+            page_num: page_num,
+            page_size: 20,
           }
           let reqUrl = this.buildUrl(url, params);
           console.log('poit',reqUrl);

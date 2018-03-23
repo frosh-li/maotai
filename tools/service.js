@@ -116,7 +116,7 @@ class MaotaiService {
             if (body.state === true && body.code === 0) {
                 return resolve(body);
             } else {
-                return reject(new Error(body.msg));
+                return resolve(body);
             }
         });
       })
@@ -429,6 +429,7 @@ class MaotaiService {
               let bodyJSON = JSON.parse(body);
               // console.log(bodyJSON.data.list[0])
               console.log('获取的地址id', bodyJSON.data.list[0].SId);
+              console.log('获取的地址id', bodyJSON.data.list[0]);
               return resolve(bodyJSON.data.list[0].SId);
 
           });
@@ -653,6 +654,10 @@ class MaotaiService {
               obj[phone] = apointmentRet;
               this.apintmentResults.push(obj);
               console.log('预约结果', phone, apointmentRet);
+              if(JSON.parse(apointmentRet).code === 101){
+                //被封号
+                console.log('被封号:', phone);
+              }
               setTimeout(() => {
                   this.apointmentBySinglePhone(phones, userAgent, callback);
               }, 3000)
