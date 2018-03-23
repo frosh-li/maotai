@@ -263,7 +263,7 @@ class MaotaiService {
       let allShopNames = shopName.split("|");
       console.log(allShopNames);
       allShopNames.forEach(item=>{
-        if(data.lbsdata.data.network.SName.indexOf(item) > -1 || data.lbsdata.data.network.DName.indexOf(item) > -1){
+        if(network.SName.indexOf(item) > -1 || network.DName.indexOf(item) > -1){
           result = true;
         }
       })
@@ -326,43 +326,72 @@ class MaotaiService {
                 }).then(data => {
                     if (data === true) {
                         this.checkAliToken((aliSessionId) => {
-                            // 如果找到对应shopID
-                            let options = {
-                                method: 'POST',
-                                url: 'https://www.cmaotai.com/API/CreateOrder.ashx',
-                                headers: {
-                                    'cache-control': 'no-cache',
-                                    'accept-language': 'zh-CN,en-US;q=0.8',
-                                    accept: 'application/json, text/javascript, */*; q=0.01',
-                                    'content-type': 'application/x-www-form-urlencoded',
-                                    referer: `https://www.cmaotai.com/ysh5/page/BuyInquiry/buyInquiryIndex.html?type=invoiceInfo&productId=${pid}&num=${quantity}`,
-                                    'user-agent': userAgent,
-                                    'x-requested-with': 'XMLHttpRequest'
-                                },
-                                form: {
-                                    phoneCode: tel,
-                                    productId: pid,
-                                    quantity: quantity,
-                                    couponsId: '7a971dbc622643db96118c938277c64f',
-                                    addressId: scopeAddress,
-                                    invioceId: -1,
-                                    express: 14,
-                                    shopId: shopId,
-                                    sessid: aliSessionId,
-                                    remark: '',
-                                    subinfoId: '',
-                                    timestamp121: now
-                                },
-                                jar: j
-                            };
-                            aliSessionId = null;
-                            request(options, function(error, response, body) {
-                                if (error) {
-                                    return reject(error);
-                                };
-                                console.log(colors.green('下单完成'+JSON.stringify(body)));
-                                return resolve(JSON.parse(body));
-                            });
+                          let options = {
+                              method: 'POST',
+                              url: 'https://www.cmaotai.com/YSApp_API/YSAppServer.ashx',
+                              headers: {
+                                  'cache-control': 'no-cache',
+                                  'accept-language': 'zh-CN,en-US;q=0.8',
+                                  accept: 'application/json, text/javascript, */*; q=0.01',
+                                  'content-type': 'application/x-www-form-urlencoded',
+                                  referer: `https://www.cmaotai.com/ysh5/page/BuyInquiry/buyInquiryIndex.html?type=invoiceInfo&productId=${pid}&num=${quantity}`,
+                                  'user-agent': userAgent,
+                                  'x-requested-with': 'XMLHttpRequest'
+                              },
+                              form: {
+                                action: "MemberManager.coupon",
+                                sid: shopId,
+                                pid: pid,
+                                count: quantity
+                              },
+                              json:true,
+                              jar: j
+                          };
+                          request(options, function(error, response, body) {
+                              if (error) {
+                                  return reject(error);
+                              };
+
+                              console.log(colors.green('获取优惠券'+JSON.stringify(body)));
+                              let couponsId = body.data.Cid;
+                              // 如果找到对应shopID
+                              let options = {
+                                  method: 'POST',
+                                  url: 'https://www.cmaotai.com/API/CreateOrder.ashx',
+                                  headers: {
+                                      'cache-control': 'no-cache',
+                                      'accept-language': 'zh-CN,en-US;q=0.8',
+                                      accept: 'application/json, text/javascript, */*; q=0.01',
+                                      'content-type': 'application/x-www-form-urlencoded',
+                                      referer: `https://www.cmaotai.com/ysh5/page/BuyInquiry/buyInquiryIndex.html?type=invoiceInfo&productId=${pid}&num=${quantity}`,
+                                      'user-agent': userAgent,
+                                      'x-requested-with': 'XMLHttpRequest'
+                                  },
+                                  form: {
+                                      phoneCode: tel,
+                                      productId: pid,
+                                      quantity: quantity,
+                                      couponsId: couponsId,
+                                      addressId: scopeAddress,
+                                      invioceId: -1,
+                                      express: 14,
+                                      shopId: shopId,
+                                      sessid: aliSessionId,
+                                      remark: '',
+                                      subinfoId: '',
+                                      timestamp121: now
+                                  },
+                                  jar: j
+                              };
+                              aliSessionId = null;
+                              request(options, function(error, response, body) {
+                                  if (error) {
+                                      return reject(error);
+                                  };
+                                  console.log(colors.green('下单完成'+JSON.stringify(body)));
+                                  return resolve(JSON.parse(body));
+                              });
+                          });
                         })
                     }
                 }).catch(e => {
@@ -437,6 +466,55 @@ class MaotaiService {
         })
     }
 
+    _getOrders(userId) {
+
+        let now = +new Date();
+
+        var options = {
+            method: 'POST',
+            url: 'https://www.cmaotai.com/YSApp_API/YSAppServer.ashx',
+            headers: {
+                'cache-control': 'no-cache',
+                'content-type': 'application/x-www-form-urlencoded'
+            },
+            form: {
+                action: 'OrdersManager.GetUserOrderInfo',
+                userId: userId,
+                index: '1',
+                size: '10',
+                timestamp121: now
+            },
+            json:true,
+            jar: j
+        };
+
+        return new Promise((resolve, reject) => {
+          request(options, function(error, response, body) {
+              if (error) {
+                  return reject(error);
+              }
+              console.log(JSON.stringify(body));
+              return resolve(body.data.Data);
+          });
+        })
+    }
+
+    getOrder(user, pass){
+      let userAgent = this.userAgent(user);
+      return new Promise((resolve, reject) => {
+        this.login(user, pass, userAgent)
+          .then(userinfo => {
+            return this._getOrders(userinfo.data.UserId);
+          })
+          .then(data => {
+            return resolve(data);
+          })
+          .catch(e => {
+            return reject(e);
+          })
+      })
+    }
+
     apointStatus(userAgent) {
       let now = +new Date();
       var options = {
@@ -459,9 +537,10 @@ class MaotaiService {
                   console.log(error);
                   return reject(error);
               } else {
-                console.log("预约列表查看", body);
+                console.log("预约列表查看");
+                console.dir(body.data);
                 if(body && body.data && body.data.datas && body.data.datas.length > 0)
-                  return resolve(JSON.stringify(body.data.datas[0]));
+                  return resolve(body.data.datas[0]);
                 else{
                   return reject('没有预约列表');
                 }

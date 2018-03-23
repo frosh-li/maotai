@@ -111,6 +111,24 @@ router.post('/maotai/apointment', (req, res, next) => {
   })
 })
 
+router.post('/maotai/getOrder/', (req, res, next) => {
+  let user = req.body.tel;
+  let pass = req.body.pass;
+  MaotaiService.getOrder(user,pass)
+    .then(data => {
+      return res.json({
+        status: 200,
+        data: data
+      })
+    })
+    .catch(e => {
+      return res.json({
+        status: 500,
+        error:e.message
+      })
+    })
+})
+
 router.post('/maotai/multiOrder', (req, res, next) => {
   console.log(req.body.tels);
   let tels = req.body.tels.split("|");      // 电话

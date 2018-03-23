@@ -3,27 +3,16 @@
  */
 const MaotaiService = require('../tools/service');
 let _phones = [
-  "18320488532",
-  "15249625137",
-  "15046846298",
-  "18903188059",
-  "18648747250",
-  "18634641063",
-  "15192468705",
+  // "15046846298",
+  // "18903188059",
   "13670589613",
-  "13792080758",
-  "13313181385",
-  "13935327172",
-  "13432527862",
-  "13333176802",
-  "13624666057",
-  "15935492346",
-  "13593493641",
+  // "13792080758",
+  // "13624666057",
+  // "15935492346",
   "13191162477",
-  "13842111030",
   "15613794675",
-  "18947646202",
 ]
+const request = require('request');
 
 const originPhones = [
   // {"phone":"13102661153", "pass":"123456"},
@@ -109,6 +98,7 @@ function watchQuanity(tel, pass, shopName) {
               }
 
             } else {
+              console.log("商家还未上货");
               setTimeout(() => {
                   watchQuanity(tel, pass, shopName);
               }, 60*1000);
@@ -162,5 +152,5 @@ function startToBy() {
   })
 }
 
-watchQuanity(18320488532, 'a123456', shopName);
-// startToBy();
+//watchQuanity(15249625137, 'a123456', shopName);
+startToBy();

@@ -5,7 +5,13 @@ const getPixels = require('get-pixels');
 const path = require('path');
 
 const adb = "adb -s emulator-5554";
-
+function avg(arr){
+  let totals = 0;
+  arr.forEach(item => {
+    totals+=item;
+  })
+  return totals/arr.length;
+}
 class AliVerify {
 
     /**
@@ -53,6 +59,10 @@ class AliVerify {
     calcPos(callback) {
         let sPoint = [0, 0],
             ePoint = [0, 0];
+        let startPointX = [];
+        let startPointY = [];
+        let endPointX = [];
+        let endPointY = [];
         let getPixTime = (+new Date());
         getPixels(path.resolve(__dirname, '../temp/screenshot.png'), (err, pixels) => {
             console.log('获取图像耗时', (+new Date() - getPixTime) + "ms");
@@ -71,15 +81,31 @@ class AliVerify {
                         B = pixels.get(i, j, 2);
                     if (R == 235 && G == 2 && B == 41) {
                         // start pos;
-                        sPoint = [i - 100, j];
+                        sPoint = [i, j];
+                        startPointX.push(i);
+                        startPointY.push(j);
                     }
                     if (R == 46 && G == 171 && B == 255) {
                         // end pos
-                        ePoint = [i - 100, j]
+                        ePoint = [i , j]
+                        endPointX.push(i);
+                        endPointY.push(j);
                     }
                 }
             }
             console.log(sPoint, ePoint, (+new Date() - startTime) + "ms");
+            if(
+              startPointX.length > 0
+              &&
+              startPointY.length > 0
+              &&
+              endPointX.length > 0
+              &&
+              endPointY.length > 0
+            ){
+              sPoint = [avg(startPointX), avg(startPointY)]
+              ePoint = [avg(endPointX), avg(endPointY)]
+            }
             callback([sPoint, ePoint]);
         })
     }

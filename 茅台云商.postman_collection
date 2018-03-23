@@ -1,0 +1,1129 @@
+{
+	"id": "986f50a5-3e21-bf37-56df-56a99095ecf5",
+	"name": "茅台云商",
+	"description": "",
+	"order": [
+		"730705a3-0144-e056-43ad-c6d2c89cda09",
+		"d635eab0-1f74-93b5-371c-503c4dfd577d",
+		"5967a4a4-4149-c5cd-e144-83868680e19f",
+		"f0b2d3ae-ab11-a3f7-5c61-119ac6846202",
+		"f2250377-7124-cfa7-7cbb-ccddf88b819d",
+		"f3bede5f-ae07-8ae3-9e85-cb67723d4e41",
+		"cf98ad0d-877b-8ded-ea5a-86081fdc3294",
+		"59c25655-f388-9f22-a8ff-9b082394f441",
+		"1f9d48c4-5c6f-9d85-6311-4a573550ab13",
+		"b30be045-fb17-32e5-adb9-7e07612cc139",
+		"34e4963c-1b31-6ed0-e377-f4f718f5ef1d",
+		"3226fc0a-ecbb-32da-4ce8-e0c342af4851",
+		"08f5fe79-b653-71ac-9e48-3cd5a4ba8f70",
+		"ed06f717-7a39-e497-a7c7-385f30c2aca4",
+		"566797fc-1771-5843-d45d-3bf82851835c",
+		"c3a90ab4-6e9a-c012-31f0-1b88c6e7a115",
+		"ea6db3b3-d963-55ea-184f-6ae4378e673d"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1520839573963,
+	"owner": "3901145",
+	"public": false,
+	"requests": [
+		{
+			"folder": null,
+			"id": "08f5fe79-b653-71ac-9e48-3cd5a4ba8f70",
+			"name": "预约列表",
+			"dataMode": "urlencoded",
+			"data": [
+				{
+					"key": "action",
+					"value": "ReservationsManager.List",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "index",
+					"value": "1",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "size",
+					"value": "10",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "timestamp121",
+					"value": "{{CurrentTime}}",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				}
+			],
+			"auth": null,
+			"events": null,
+			"rawModeData": null,
+			"descriptionFormat": "html",
+			"description": null,
+			"variables": null,
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"method": "POST",
+			"pathVariables": {},
+			"url": "{{MAOTAI}}Servers.ashx",
+			"preRequestScript": null,
+			"tests": null,
+			"currentHelper": null,
+			"helperAttributes": null,
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"enabled": true
+				}
+			],
+			"pathVariableData": [],
+			"collectionId": "986f50a5-3e21-bf37-56df-56a99095ecf5"
+		},
+		{
+			"id": "1f9d48c4-5c6f-9d85-6311-4a573550ab13",
+			"headers": "",
+			"headerData": [],
+			"url": "http://127.0.0.1:10010/api/maotai/multiOrder",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "tels",
+					"value": "{\"phone\":\"17097224268\",\"pass\":\"123456\"}",
+					"type": "text",
+					"enabled": true,
+					"description": "电话号码"
+				},
+				{
+					"key": "pid",
+					"value": "391",
+					"type": "text",
+					"enabled": true,
+					"description": "产品ID 391 测试ID405 茅台王子"
+				},
+				{
+					"key": "quantity",
+					"value": "6",
+					"type": "text",
+					"enabled": true,
+					"description": "订购数量"
+				},
+				{
+					"key": "shopid",
+					"value": "211110105003",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1521773855936,
+			"name": "批量订购",
+			"description": null,
+			"collectionId": "986f50a5-3e21-bf37-56df-56a99095ecf5"
+		},
+		{
+			"id": "3226fc0a-ecbb-32da-4ce8-e0c342af4851",
+			"headers": "X-Requested-With: XMLHttpRequest\nUser-Agent: Mozilla/5.0 (Linux; Android 4.4.4; LA2-SN Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36[android/1.0.23/8bf81d40806ffb9614867197b8e33243/2418a0720cacab1cb0f7cb7ef8490ff2]\nReferer: https://www.cmaotai.com/ysh5/page/Category/productDetails.html?productId=391&num=6&addressSelect=true\nContent-Type: application/x-www-form-urlencoded;charset=UTF-8\nAccept: application/json, text/javascript, */*; q=0.01\nAccept-Language: zh-CN,en-US;q=0.8\n",
+			"headerData": [
+				{
+					"key": "X-Requested-With",
+					"value": "XMLHttpRequest",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "User-Agent",
+					"value": "Mozilla/5.0 (Linux; Android 4.4.4; LA2-SN Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36[android/1.0.23/8bf81d40806ffb9614867197b8e33243/2418a0720cacab1cb0f7cb7ef8490ff2]",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Referer",
+					"value": "https://www.cmaotai.com/ysh5/page/Category/productDetails.html?productId=391&num=6&addressSelect=true",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded;charset=UTF-8",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Accept",
+					"value": "application/json, text/javascript, */*; q=0.01",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Accept-Language",
+					"value": "zh-CN,en-US;q=0.8",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{MAOTAI}}LBSServer.ashx",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "pid",
+					"value": "391",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "quant",
+					"value": "6",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "timestamp121",
+					"value": "{{CurrentTime}}",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1521773872858,
+			"name": "查询库存",
+			"description": null,
+			"collectionId": "986f50a5-3e21-bf37-56df-56a99095ecf5"
+		},
+		{
+			"folder": null,
+			"id": "34e4963c-1b31-6ed0-e377-f4f718f5ef1d",
+			"name": "订单列表",
+			"dataMode": "urlencoded",
+			"data": [
+				{
+					"key": "action",
+					"value": "OrdersManager.GetUserOrderInfo",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "userId",
+					"value": "2188122",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "index",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "status",
+					"value": "0",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "size",
+					"value": "10",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "timestamp121",
+					"value": "{{CurrentTime}}",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"auth": null,
+			"events": null,
+			"rawModeData": null,
+			"descriptionFormat": "html",
+			"description": null,
+			"variables": null,
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"method": "POST",
+			"pathVariables": {},
+			"url": "{{YSAPI}}YSAppServer.ashx",
+			"preRequestScript": null,
+			"tests": null,
+			"currentHelper": null,
+			"helperAttributes": null,
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"enabled": true
+				}
+			],
+			"pathVariableData": [],
+			"collectionId": "986f50a5-3e21-bf37-56df-56a99095ecf5"
+		},
+		{
+			"id": "566797fc-1771-5843-d45d-3bf82851835c",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{YSAPI}}YSAppServer.ashx",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "action",
+					"value": "AddressManager.add",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "provinceId",
+					"value": "550000",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "cityId",
+					"value": "550000",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "districtsId",
+					"value": "550000",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "addressInfo",
+					"value": "贵州省贵阳市",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "address",
+					"value": "贵阳市云岩区北京路66号(黔灵公园地区近省政府)",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "shipTo",
+					"value": "周曼亚",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "callPhone",
+					"value": "13176048776",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "zipcode",
+					"value": "550000",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "isDef",
+					"value": "1",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "lng",
+					"value": "106.71272980463603",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "lat",
+					"value": "26.60115172812552",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "timestamp121",
+					"value": "{{CurrentTime}}",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1521773866774,
+			"name": "添加地址",
+			"description": null,
+			"collectionId": "986f50a5-3e21-bf37-56df-56a99095ecf5"
+		},
+		{
+			"id": "5967a4a4-4149-c5cd-e144-83868680e19f",
+			"headers": "",
+			"headerData": [],
+			"url": "http://127.0.0.1:10010/api/maotai/login",
+			"queryParams": [],
+			"preRequestScript": "var timesDate = +new Date();\npostman.setGlobalVariable(\"CurrentTime\", timesDate);",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "tel",
+					"value": "15613794675",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "pass",
+					"value": "123456",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1521773885108,
+			"name": "登录本地服务器",
+			"description": null,
+			"collectionId": "986f50a5-3e21-bf37-56df-56a99095ecf5"
+		},
+		{
+			"id": "59c25655-f388-9f22-a8ff-9b082394f441",
+			"headers": "",
+			"headerData": [],
+			"url": "http://127.0.0.1:10010/api/maotai/multiApointment",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "tels",
+					"value": "13485665212,13102661153,13485665212",
+					"type": "text",
+					"enabled": true,
+					"description": "电话号码"
+				}
+			],
+			"dataMode": "urlencoded",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1521773859997,
+			"name": "预约Local",
+			"description": null,
+			"collectionId": "986f50a5-3e21-bf37-56df-56a99095ecf5"
+		},
+		{
+			"folder": null,
+			"id": "730705a3-0144-e056-43ad-c6d2c89cda09",
+			"name": "获取阿里SID",
+			"dataMode": "urlencoded",
+			"data": [
+				{
+					"key": "action",
+					"value": "OrdersManager.GetUserOrderInfo",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "userId",
+					"value": "2188122",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "index",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "status",
+					"value": "0",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "size",
+					"value": "10",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "timestamp121",
+					"value": "{{CurrentTime}}",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"auth": null,
+			"events": null,
+			"rawModeData": null,
+			"descriptionFormat": "html",
+			"description": null,
+			"variables": null,
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"method": "POST",
+			"pathVariables": {},
+			"url": "{{YSAPI}}YSAppServer.ashx",
+			"preRequestScript": null,
+			"tests": null,
+			"currentHelper": null,
+			"helperAttributes": null,
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"enabled": true
+				}
+			],
+			"pathVariableData": [],
+			"collectionId": "986f50a5-3e21-bf37-56df-56a99095ecf5"
+		},
+		{
+			"id": "b30be045-fb17-32e5-adb9-7e07612cc139",
+			"headers": "",
+			"headerData": [],
+			"url": "http://127.0.0.1:10010/api/maotai/multiOrder",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "tels",
+					"value": "{\"phone\":\"15046846298\",\"pass\":\"a123456\"}",
+					"type": "text",
+					"enabled": true,
+					"description": "电话号码"
+				},
+				{
+					"key": "pid",
+					"value": "391",
+					"type": "text",
+					"enabled": true,
+					"description": "产品ID 391 测试ID405 茅台王子"
+				},
+				{
+					"key": "quantity",
+					"value": "6",
+					"type": "text",
+					"enabled": true,
+					"description": "订购数量"
+				},
+				{
+					"key": "shopName",
+					"value": "中恒实信|金源腾达",
+					"description": "211110105003",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1521773869436,
+			"name": "批量提交订单",
+			"description": null,
+			"collectionId": "986f50a5-3e21-bf37-56df-56a99095ecf5"
+		},
+		{
+			"id": "c3a90ab4-6e9a-c012-31f0-1b88c6e7a115",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{MAOTAI}}/Servers.ashx",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "action",
+					"value": "ReservationsManager.Regist",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "addressID",
+					"value": "1841259",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "pid",
+					"value": "391",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "timestamp121",
+					"value": "{{CurrentTime}}",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1521773863621,
+			"name": "预约",
+			"description": null,
+			"collectionId": "986f50a5-3e21-bf37-56df-56a99095ecf5"
+		},
+		{
+			"id": "cf98ad0d-877b-8ded-ea5a-86081fdc3294",
+			"headers": "",
+			"headerData": [],
+			"url": "http://127.0.0.1:10010/api/maotai/createOrder",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "tel",
+					"value": "13814576156",
+					"type": "text",
+					"enabled": true,
+					"description": "电话号码"
+				},
+				{
+					"key": "pid",
+					"value": "391",
+					"type": "text",
+					"enabled": true,
+					"description": "产品ID 391 测试ID405 茅台王子"
+				},
+				{
+					"key": "quantity",
+					"value": "6",
+					"type": "text",
+					"enabled": true,
+					"description": "订购数量"
+				}
+			],
+			"dataMode": "urlencoded",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1521773881948,
+			"name": "发送订单Local",
+			"description": null,
+			"collectionId": "986f50a5-3e21-bf37-56df-56a99095ecf5"
+		},
+		{
+			"id": "d635eab0-1f74-93b5-371c-503c4dfd577d",
+			"headers": "X-Requested-With: XMLHttpRequest\nReferer: https://www.cmaotai.com/ysh5/page/LoginRegistr/userLogin.html\nContent-Type: application/x-www-form-urlencoded;charset=UTF-8\nAccept: application/json, text/javascript, */*; q=0.01\nAccept-Language: zh-CN,en-US;q=0.8\n",
+			"headerData": [
+				{
+					"key": "X-Requested-With",
+					"value": "XMLHttpRequest",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "Referer",
+					"value": "https://www.cmaotai.com/ysh5/page/LoginRegistr/userLogin.html",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded;charset=UTF-8",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "Accept",
+					"value": "application/json, text/javascript, */*; q=0.01",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "Accept-Language",
+					"value": "zh-CN,en-US;q=0.8",
+					"enabled": true,
+					"description": ""
+				}
+			],
+			"url": "{{MAOTAI}}/Servers.ashx",
+			"folder": null,
+			"queryParams": [],
+			"preRequestScript": "var timesDate = +new Date();\npostman.setGlobalVariable(\"CurrentTime\", timesDate);",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "action",
+					"value": "UserManager.login",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "tel",
+					"value": "15330066919",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "pwd",
+					"value": "110520",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "timestamp121",
+					"value": "{{CurrentTime}}",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": null,
+			"currentHelper": null,
+			"helperAttributes": null,
+			"time": 1521187380321,
+			"name": "用户登录",
+			"description": null,
+			"collectionId": "986f50a5-3e21-bf37-56df-56a99095ecf5",
+			"responses": [],
+			"isFromCollection": true,
+			"collectionRequestId": "d635eab0-1f74-93b5-371c-503c4dfd577d",
+			"auth": null,
+			"events": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var timesDate = +new Date();",
+							"postman.setGlobalVariable(\"CurrentTime\", timesDate);"
+						]
+					}
+				}
+			],
+			"rawModeData": null,
+			"descriptionFormat": null,
+			"variables": null
+		},
+		{
+			"folder": null,
+			"id": "ea6db3b3-d963-55ea-184f-6ae4378e673d",
+			"name": "删除订单",
+			"dataMode": "urlencoded",
+			"data": [
+				{
+					"key": "action",
+					"value": "OrdersManager.OrderClose",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "orderId",
+					"value": "MTYS201803140060760",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "timestamp121",
+					"value": "{{CurrentTime}}",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				}
+			],
+			"auth": null,
+			"events": null,
+			"rawModeData": null,
+			"descriptionFormat": "html",
+			"description": null,
+			"variables": null,
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"method": "POST",
+			"pathVariables": {},
+			"url": "{{YSAPI}}YSAppServer.ashx",
+			"preRequestScript": null,
+			"tests": null,
+			"currentHelper": null,
+			"helperAttributes": null,
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"enabled": true
+				}
+			],
+			"pathVariableData": [],
+			"collectionId": "986f50a5-3e21-bf37-56df-56a99095ecf5"
+		},
+		{
+			"folder": null,
+			"id": "ed06f717-7a39-e497-a7c7-385f30c2aca4",
+			"name": "地址列表",
+			"dataMode": "urlencoded",
+			"data": [
+				{
+					"key": "action",
+					"value": "AddressManager.list",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "index",
+					"value": "1",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "size",
+					"value": "10",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "timestamp121",
+					"value": "{{CurrentTime}}",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				}
+			],
+			"auth": null,
+			"events": null,
+			"rawModeData": null,
+			"descriptionFormat": "html",
+			"description": null,
+			"variables": null,
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"method": "POST",
+			"pathVariables": {},
+			"url": "{{YSAPI}}YSAppServer.ashx",
+			"preRequestScript": null,
+			"tests": null,
+			"currentHelper": null,
+			"helperAttributes": null,
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"enabled": true
+				}
+			],
+			"pathVariableData": [],
+			"collectionId": "986f50a5-3e21-bf37-56df-56a99095ecf5"
+		},
+		{
+			"id": "f0b2d3ae-ab11-a3f7-5c61-119ac6846202",
+			"headers": "",
+			"headerData": [],
+			"url": "http://127.0.0.1:10010/api/maotai/getOrder",
+			"queryParams": [],
+			"preRequestScript": "var timesDate = +new Date();\npostman.setGlobalVariable(\"CurrentTime\", timesDate);",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "tel",
+					"value": "15613794675",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "pass",
+					"value": "a123456",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1521773843450,
+			"name": "获取本地订单列表",
+			"description": "",
+			"collectionId": "986f50a5-3e21-bf37-56df-56a99095ecf5",
+			"responses": []
+		},
+		{
+			"id": "f2250377-7124-cfa7-7cbb-ccddf88b819d",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://127.0.0.1:10010/api/maotai/updateSid",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "tel",
+					"value": "13814576156",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "qu",
+					"value": "",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1521773887916,
+			"name": "订单列表 copy",
+			"description": null,
+			"collectionId": "986f50a5-3e21-bf37-56df-56a99095ecf5"
+		},
+		{
+			"folder": null,
+			"id": "f3bede5f-ae07-8ae3-9e85-cb67723d4e41",
+			"name": "发送订单",
+			"dataMode": "urlencoded",
+			"data": [
+				{
+					"key": "phoneCode",
+					"value": "15176785048",
+					"type": "text",
+					"enabled": true,
+					"description": "电话号码"
+				},
+				{
+					"key": "productId",
+					"value": "309",
+					"type": "text",
+					"enabled": true,
+					"description": "产品ID 391 测试ID405 茅台王子"
+				},
+				{
+					"key": "quantity",
+					"value": "6",
+					"type": "text",
+					"enabled": true,
+					"description": "订购数量"
+				},
+				{
+					"key": "couponsId",
+					"value": "7a971dbc622643db96118c938277c64f",
+					"type": "text",
+					"enabled": true,
+					"description": "优惠券ID"
+				},
+				{
+					"key": "addressId",
+					"value": "1882585",
+					"type": "text",
+					"enabled": true,
+					"description": "选择的地址ID"
+				},
+				{
+					"key": "invioceId",
+					"value": "-1",
+					"type": "text",
+					"enabled": true,
+					"description": "-1为不要发票"
+				},
+				{
+					"key": "express",
+					"value": "14",
+					"type": "text",
+					"enabled": true,
+					"description": "14网点自提 15同城配送 9快递配送"
+				},
+				{
+					"key": "shopId",
+					"value": "211110105003",
+					"type": "text",
+					"enabled": true,
+					"description": "网店ID雍贵中心网店ID（211110105003） 汽车大厦（211110102007）"
+				},
+				{
+					"key": "sessid",
+					"value": "{{aliSid}}",
+					"type": "text",
+					"enabled": true,
+					"description": "风险评估ID"
+				},
+				{
+					"key": "remark",
+					"value": "",
+					"type": "text",
+					"enabled": true,
+					"description": "备注"
+				},
+				{
+					"key": "subinfoId",
+					"value": "",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "timestamp121",
+					"value": "{{CurrentTime}}",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"auth": null,
+			"events": null,
+			"rawModeData": null,
+			"descriptionFormat": "html",
+			"description": null,
+			"variables": null,
+			"headers": "X-Requested-With: XMLHttpRequest\nUser-Agent: Mozilla/5.0 (Linux; Android 4.4.4; LA2-SN Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36[android/1.0.23/8bf81d40806ffb9614867197b8e33243/2418a0720cacab1cb0f7cb7ef8490ff2]\nReferer: https://www.cmaotai.com/ysh5/page/BuyInquiry/buyInquiryIndex.html?type=invoiceInfo&productId=405&num=1\nContent-Type: application/x-www-form-urlencoded;charset=UTF-8\nAccept: application/json, text/javascript, */*; q=0.01\nAccept-Language: zh-CN,en-US;q=0.8\n",
+			"method": "POST",
+			"pathVariables": {},
+			"url": "{{MAOTAI}}CreateOrder.ashx",
+			"preRequestScript": null,
+			"tests": null,
+			"currentHelper": null,
+			"helperAttributes": null,
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "X-Requested-With",
+					"value": "XMLHttpRequest",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "User-Agent",
+					"value": "Mozilla/5.0 (Linux; Android 4.4.4; LA2-SN Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36[android/1.0.23/8bf81d40806ffb9614867197b8e33243/2418a0720cacab1cb0f7cb7ef8490ff2]",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Referer",
+					"value": "https://www.cmaotai.com/ysh5/page/BuyInquiry/buyInquiryIndex.html?type=invoiceInfo&productId=405&num=1",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded;charset=UTF-8",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Accept",
+					"value": "application/json, text/javascript, */*; q=0.01",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Accept-Language",
+					"value": "zh-CN,en-US;q=0.8",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariableData": [],
+			"collectionId": "986f50a5-3e21-bf37-56df-56a99095ecf5"
+		}
+	]
+}

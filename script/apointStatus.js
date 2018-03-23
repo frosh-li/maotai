@@ -8,13 +8,9 @@ let _phones = [
   "18903188059",
   "13670589613",
   "13792080758",
-  "13935327172",
-  "13333176802",
   "13624666057",
   "15935492346",
-  "13593493641",
   "13191162477",
-  "13842111030",
   "15613794675",
 ]
 
@@ -46,7 +42,7 @@ function getStatus(){
   let phone = originPhones.shift();
   if(!phone){
     console.log("检查完成");
-    console.log(statusResults);
+    console.dir(statusResults);
     return;
   }
   console.log('start to check status', phone);
