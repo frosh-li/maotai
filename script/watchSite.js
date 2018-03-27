@@ -32,7 +32,7 @@ let shopName = '集玉进出口';
 
 //猫咪
 // const originPhones = [{"phone":"13523472132", 'pass':"abcdef7758521"},{"phone":"18037798213", 'pass':"abcdef7758521"},];
-// let shopName = '西安市雁塔区';
+// let shopName = '紫薇尚层';
 // 13523472132/18037798213
 //
 // abcdef7758521
