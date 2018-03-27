@@ -1,6 +1,7 @@
 var request = require("request");
 var FileCookieStore = require('tough-cookie-filestore');
 var j = request.jar(new FileCookieStore('cookies.json'));
+console.log(j)
 request = request.defaults({
     jar: true
 })
@@ -76,7 +77,7 @@ class MaotaiService {
                 if (body.state === true && body.code === 0) {
                     return resolve(body);
                 } else {
-                    return reject(new Error(tel+':'+pass+':'+body.msg));
+                    return reject(new Error('登录失败:'+tel+':'+pass+':'+body.msg));
                 }
             });
         })
@@ -247,6 +248,7 @@ class MaotaiService {
             };
             request(options, function(error, response, body) {
                 if (error) {
+                  console.log("定位信息获取错误", error);
                     return reject(error);
                 };
                 console.log('定位查询结果', body);
@@ -305,7 +307,7 @@ class MaotaiService {
                     return this.LBSServer(address, tel, userAgent);
                 })
                 .then(data => {
-
+                    console.log(data);
                     if (data && data.lbsdata && data.lbsdata.data && data.lbsdata.data.stock && data.lbsdata.data.stock) {
                       if(
                         data.lbsdata.data.stock.StockCount > 0
@@ -428,9 +430,15 @@ class MaotaiService {
               }
               let bodyJSON = JSON.parse(body);
               // console.log(bodyJSON.data.list[0])
-              console.log('获取的地址id', bodyJSON.data.list[0].SId);
-              console.log('获取的地址id', bodyJSON.data.list[0]);
-              return resolve(bodyJSON.data.list[0].SId);
+              if(bodyJSON.data && bodyJSON.data.list && bodyJSON.data.list.length > 0){
+                console.log('获取的地址id', bodyJSON.data.list[0].SId);
+                console.log('获取的地址id', bodyJSON.data.list[0]);
+
+                return resolve(bodyJSON.data.list[0].SId);
+              }else{
+                return resolve("");
+              }
+
 
           });
         })

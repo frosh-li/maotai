@@ -47,7 +47,7 @@ let _phones = [
     "13842111030",
     "15613794675",
 ]
-let phones = require("../accounts30.txt.json");
+let phones = require("../accounts.json");
 // _phones.forEach(phone => {
 //     phones.push({
 //         phone: phone,

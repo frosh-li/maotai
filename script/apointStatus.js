@@ -14,20 +14,8 @@ let _phones = [
   "15613794675",
 ]
 
-// var originPhones = [
-//   // {"phone":"13102661153", "pass":"123456"},
-//   // {"phone":"13153185002", "pass":"123456"},
-//   // {"phone":"13157440883", "pass":"123456"},
-// ];
 
-// _phones.forEach(item => {
-//   originPhones.push({
-//     "phone":item,
-//     "pass":"a123456"
-//   })
-// });
-
-originPhones = require("../accounts30.txt.json");
+originPhones = require("../accounts.json");
 
 
 let tels = [];

@@ -173,7 +173,19 @@ router.post('/maotai/multiOrder', (req, res, next) => {
           error:e.message
         })
         console.log('create order fail', tel, pid,'error', e.message);
-        setTimeout(createOne, 1000);
+        if(e.message == "该网点无库存或可购买数量不够"){
+          // 如果没有库存就不需要继续下一步
+          console.log("所有货物都已经被洗刷一空，无法购买更多了");
+          tels.length = 0;
+          return res.json({
+            status: 200,
+            msg:"alldone",
+            datas: ret
+          })
+        }else{
+          setTimeout(createOne, 1000);
+        }
+
       })
   }
   setTimeout(createOne, 1000);

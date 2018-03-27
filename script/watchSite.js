@@ -14,18 +14,14 @@ let _phones = [
 ]
 const request = require('request');
 
-const originPhones = [
-  // {"phone":"13102661153", "pass":"123456"},
-  // {"phone":"13153185002", "pass":"123456"},
-  // {"phone":"13157440883", "pass":"123456"},
-];
+const originPhones = require("../accounts.json");
 
-_phones.forEach(item => {
-  originPhones.push({
-    "phone":item,
-    "pass":"a123456"
-  })
-});
+// _phones.forEach(item => {
+//   originPhones.push({
+//     "phone":item,
+//     "pass":"a123456"
+//   })
+// });
 
 
 let tels = [];
@@ -37,7 +33,7 @@ tels = tels.join("|");
 console.log('to Buy tels', tels);
 let pid = '391';
 let quantity = 6;
-let shopName = '中恒实信|金源腾达';
+let shopName = '集玉进出口';
 
 function printInfo(data){
   try{
@@ -57,7 +53,7 @@ function fixShop(network, shopName) {
   let allShopNames = shopName.split("|");
   console.log(allShopNames);
   allShopNames.forEach(item=>{
-    if(data.lbsdata.data.network.SName.indexOf(item) > -1 || data.lbsdata.data.network.DName.indexOf(item) > -1){
+    if(network.SName.indexOf(item) > -1 || network.DName.indexOf(item) > -1){
       result = true;
     }
   })
@@ -65,8 +61,9 @@ function fixShop(network, shopName) {
 }
 
 function watchQuanity(tel, pass, shopName) {
-  let randomIndex = Math.floor(Math.random()*(_phones.length-1));
-  tel = _phones[randomIndex];
+  let randomIndex = Math.floor(Math.random()*(originPhones.length-1));
+  tel = originPhones[randomIndex].phone;
+  pass = originPhones[randomIndex].pass;
   let userAgent = MaotaiService.userAgent(tel);
   let scopeAddress = "";
   MaotaiService.login(tel, pass, userAgent)
@@ -78,7 +75,7 @@ function watchQuanity(tel, pass, shopName) {
           return MaotaiService.LBSServer(address, tel, userAgent);
       })
       .then(data => {
-
+        console.log(JSON.stringify(data.lbsdata));
         //if (shopName > 0) {
             if (data && data.lbsdata && data.lbsdata.data && data.lbsdata.data.stock && data.lbsdata.data.stock.Sid) {
               if(
@@ -89,6 +86,8 @@ function watchQuanity(tel, pass, shopName) {
                 fixShop(data.lbsdata.data.network, shopName)
 
               ){
+                //{"state":true,"code":10,"data":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":false,"Certificate":{"ID":"2638466","UID":2253191,"PID":"391","Status":4,"Address":{"ID":1941154,"IsDefault":false,"IsPushAddreess":true,"Name":"刘宇凡","TelPhone":"16602083513","Zipcode":"000000","ProvCode":"110000","CityCode":"110100","AreaCode":"110101","Remark":"","IsVerification":false,"AddressDetails":"北京市东城区,富贵园3区2号楼,北京东城区富贵园三区2号楼","Longitude":116.433435,"Latitude":39.894258,"Address":"富贵园3区2号楼,北京东城区富贵园三区2号楼","AddressText":"北京市东城区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-02 00:00:00"},"EnterTimeSlot":{"Start":"2018-03-27 00:00:00","End":"2018-03-27 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-03-27 10:00:00","End":"2018-03-27 16:00:00","InTime":true}}}
+                console.log("商家已经上货，开始购买流程");
                 startToBy();
               }else {
                 printInfo(data);
@@ -126,7 +125,7 @@ function watchQuanity(tel, pass, shopName) {
         //   }
         // }
       }).catch(e => {
-          console.log("位置错误,60秒后重试", e.message);
+          console.log("位置错误,60秒后重试", e);
           setTimeout(() => {
               watchQuanity(tel, pass, shopName);
           }, 60*1000);
@@ -149,8 +148,10 @@ function startToBy() {
       return console.log(error);
     }
     console.log(results);
+
+    // 结束后再次进行观察以防遗漏
   })
 }
 
-//watchQuanity(15249625137, 'a123456', shopName);
-startToBy();
+watchQuanity(13157440883, '123456', shopName);
+//startToBy();
