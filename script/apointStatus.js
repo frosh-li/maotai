@@ -15,7 +15,7 @@ let _phones = [
 ]
 
 
-originPhones = require("../accounts.json");
+originPhones = require("../accounts/zhang.json");
 
 
 let tels = [];

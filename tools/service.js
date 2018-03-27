@@ -265,7 +265,13 @@ class MaotaiService {
       let allShopNames = shopName.split("|");
       console.log(allShopNames);
       allShopNames.forEach(item=>{
-        if(network.SName.indexOf(item) > -1 || network.DName.indexOf(item) > -1){
+        if(
+            network.SName.indexOf(item) > -1
+            ||
+            network.DName.indexOf(item) > -1
+            ||
+            network.Address.indexOf(item) > -1
+        ){
           result = true;
         }
       })

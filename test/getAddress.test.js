@@ -82,17 +82,19 @@ const names = [
   "葛康宁","宋俊宇","李兴艳","龙小五","王欢","乔兴旺","覃芳","高洁","张发昌","熬绍芳","罗静","张竹青","刘丽","张红","刘义红","刘义霞","姚小虎","罗杰","高梅","王希","冉茂林"
 ]
 let results = [];
-let phones = require('../accounts.json');
-
+//let phones = require('../accounts.json');
+let phones = require("../accounts/zhuxiaodi2.json");
+// phones.length = 5;
 let address = [];
 let index = 0;
 let totalAddress = 50;
 let ret2 = [];
-let shopAddress = "长城中环墅232号";
+let shopAddress = "兰州市甘南路";
 describe("地址测试", ()=>{
     it("获取用户地址", (done) => {
       function checkPhone(){
         console.log(phones, phones.length);
+
         let phone = phones.shift();
         if(!phone){
             done();
@@ -115,28 +117,28 @@ describe("地址测试", ()=>{
             if(addressid){
               return Service.editAddress(
                   addressid,
-                  310000,
-                  310100,
-                  310115,
-                  `上海市浦东新区`,
+                  620000,
+                  620100,
+                  620102,
+                  `甘肃省兰州市城关区`,
                   `${currentAddress.address}`,
                   names[index],
                   user.phone,
-                  zipcode="310000",
+                  zipcode="620000",
                   isDef=1,
                   currentAddress.location.lng,
                   currentAddress.location.lat,
                   userAgent)
             }else{
               return Service.addAddress(
-                  310000,
-                  310100,
-                  310115,
-                  `上海市浦东新区`,
+                  620000,
+                  620100,
+                  620102,
+                  `甘肃省兰州市城关区`,
                   `${currentAddress.address}`,
                   names[index],
                   user.phone,
-                  zipcode="310000",
+                  zipcode="620000",
                   isDef=1,
                   currentAddress.location.lng,
                   currentAddress.location.lat,

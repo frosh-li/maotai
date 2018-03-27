@@ -14,7 +14,22 @@ let _phones = [
 ]
 const request = require('request');
 
+// 上海购买
+// 地址信息
 const originPhones = require("../accounts.json");
+let shopName = '集玉进出口';
+
+// 猪小弟 两单
+// const originPhones = require("../accounts/zhuxiaodi.json");
+// let shopName = '七里河区';
+// const originPhones = require("../accounts/zhuxiaodi2.json");
+// let shopName = '甘南路';
+
+// 张先生10单
+
+// const originPhones = require("../accounts/zhang.json");
+// let shopName = '北京路贵州饭店';
+
 
 // _phones.forEach(item => {
 //   originPhones.push({
@@ -33,7 +48,7 @@ tels = tels.join("|");
 console.log('to Buy tels', tels);
 let pid = '391';
 let quantity = 6;
-let shopName = '集玉进出口';
+
 
 function printInfo(data){
   try{
@@ -53,7 +68,13 @@ function fixShop(network, shopName) {
   let allShopNames = shopName.split("|");
   console.log(allShopNames);
   allShopNames.forEach(item=>{
-    if(network.SName.indexOf(item) > -1 || network.DName.indexOf(item) > -1){
+    if(
+        network.SName.indexOf(item) > -1
+        ||
+        network.DName.indexOf(item) > -1
+        ||
+        network.Address.indexOf(item) > -1
+        ){
       result = true;
     }
   })
