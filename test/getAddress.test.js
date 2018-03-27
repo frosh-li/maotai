@@ -83,13 +83,30 @@ const names = [
 ]
 let results = [];
 //let phones = require('../accounts.json');
-let phones = require("../accounts/zhuxiaodi2.json");
+// let phones = require("../accounts/zhuxiaodi2.json");
+let phones = [
+    // {"phone":"18369929888","pass":"123456"},
+    // {"phone":"15206614333","pass":"123456"},
+    {"phone":"15288939130","pass":"123456"},
+    {"phone":"17602663277","pass":"wf1982"},
+    {"phone":"13093401696","pass":"Y199013"},
+    {"phone":"18776571180","pass":"19940j"}
+]
 // phones.length = 5;
 let address = [];
 let index = 0;
 let totalAddress = 50;
 let ret2 = [];
-let shopAddress = "兰州市甘南路";
+let shopAddress = "贵州市北京路贵州饭店";
+
+function randomPhone(phone) {
+    let lastCode = phone.charAt(10);
+    lastCode = lastCode + 2;
+    if(lastCode >= 10){
+        lastCode = 0;
+    }
+    return phone.substring(0,10)+lastCode.toString();
+}
 describe("地址测试", ()=>{
     it("获取用户地址", (done) => {
       function checkPhone(){
@@ -117,28 +134,28 @@ describe("地址测试", ()=>{
             if(addressid){
               return Service.editAddress(
                   addressid,
-                  620000,
-                  620100,
-                  620102,
-                  `甘肃省兰州市城关区`,
+                  520000,
+                  520100,
+                  520103,
+                  `贵州省贵阳市云岩区`,
                   `${currentAddress.address}`,
                   names[index],
-                  user.phone,
-                  zipcode="620000",
+                  randomPhone(user.phone),
+                  zipcode="520000",
                   isDef=1,
                   currentAddress.location.lng,
                   currentAddress.location.lat,
                   userAgent)
             }else{
               return Service.addAddress(
-                  620000,
-                  620100,
-                  620102,
-                  `甘肃省兰州市城关区`,
+                  520000,
+                  520100,
+                  520103,
+                  `贵州省贵阳市云岩区`,
                   `${currentAddress.address}`,
                   names[index],
                   user.phone,
-                  zipcode="620000",
+                  zipcode="520000",
                   isDef=1,
                   currentAddress.location.lng,
                   currentAddress.location.lat,

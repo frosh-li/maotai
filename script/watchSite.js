@@ -30,6 +30,17 @@ let shopName = '集玉进出口';
 // const originPhones = require("../accounts/zhang.json");
 // let shopName = '北京路贵州饭店';
 
+//猫咪
+// const originPhones = [{"phone":"13523472132", 'pass':"abcdef7758521"},{"phone":"18037798213", 'pass':"abcdef7758521"},];
+// let shopName = '西安市雁塔区';
+// 13523472132/18037798213
+//
+// abcdef7758521
+//
+// // 陕西省
+//
+// 西安市雁塔区
+
 
 // _phones.forEach(item => {
 //   originPhones.push({

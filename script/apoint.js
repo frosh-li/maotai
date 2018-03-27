@@ -43,7 +43,13 @@ let _phones = [
     '13040779904',
     '13175100647',
 ]
-let phones = require("../accounts/zhuxiaodi2.json");
+// let phones = require("../accounts/zhuxiaodi2.json");
+let phones = [
+    {"phone":"15288939130","pass":"123456"},
+    {"phone":"17602663277","pass":"wf1982"},
+    {"phone":"13093401696","pass":"Y199013"},
+    {"phone":"18776571180","pass":"19940j"}
+]
 // let phones = [];
 // _phones.forEach(phone => {
 //     phones.push({
