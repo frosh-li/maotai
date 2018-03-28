@@ -1,9 +1,10 @@
 var request = require("request");
+const proxy = require('../controllers/proxy');
 var FileCookieStore = require('tough-cookie-filestore');
 var j = request.jar(new FileCookieStore('cookies.json'));
-console.log(j)
 request = request.defaults({
-    jar: true
+    jar: true,
+    proxy: 'http://'+proxy.proxyUser+':'+proxy.proxyPass+'@'+proxy.proxyHost+':'+proxy.proxyPort,
 })
 var AliVerify = require('./startAliVerify');
 const crypto = require('crypto');
@@ -13,8 +14,13 @@ const colors = require('colors/safe');
 const DELAY = 1000;
 
 class MaotaiService {
+    initCookiePath(path){
+      j = request.jar(new FileCookieStore('./cookies/'+path+'.json'));
+    }
+
     headers (userAgent) {
       return {
+        "proxy-authorization" : "Basic " + proxy.proxyAuth,
         'cache-control': 'no-cache',
         'accept-language': 'zh-CN,en-US;q=0.8',
         'accept': 'application/json, text/javascript, */*; q=0.01',
@@ -54,7 +60,7 @@ class MaotaiService {
         if (tel == "15330066919") {
             pass = "110520";
         }
-        j = request.jar();
+        request.jar();
         let options = {
             method: 'POST',
             url: 'https://www.cmaotai.com/API/Servers.ashx',
@@ -65,7 +71,7 @@ class MaotaiService {
                 pwd: pass,
                 timestamp121: now
             },
-            jar: j
+            json:true
         };
 
         return new Promise((resolve, reject) => {
@@ -73,7 +79,6 @@ class MaotaiService {
                 if (error) {
                     return reject(error);
                 }
-                body = JSON.parse(body);
                 if (body.state === true && body.code === 0) {
                     return resolve(body);
                 } else {
@@ -99,13 +104,13 @@ class MaotaiService {
               address: address,
               shipTo:shipTo,
               callPhone: callPhone,
-              zipcode:'000000',
+              zipcode:zipcode,
               isDef: isDef,
               lng:lng,
               lat: lat,
               timestamp121: now
           },
-          jar: j
+          json:true
       };
       return new Promise((resolve, reject) => {
         request(options, function(error, response, body) {
@@ -113,7 +118,6 @@ class MaotaiService {
                 return reject(error);
             }
             console.log(body);
-            body = JSON.parse(body);
             if (body.state === true && body.code === 0) {
                 return resolve(body);
             } else {
@@ -143,8 +147,7 @@ class MaotaiService {
               lng:lng,
               lat: lat,
               timestamp121: now
-          },
-          jar: j
+          }
       };
       return new Promise((resolve, reject) => {
         request(options, function(error, response, body) {
@@ -172,8 +175,7 @@ class MaotaiService {
                 action: 'AddressManager.delete',
                 Sid: addressId,
                 timestamp121: now
-            },
-            jar: j
+            }
         };
         return new Promise((resolve, reject) => {
           request(options, function(error, response, body) {
@@ -199,6 +201,21 @@ class MaotaiService {
      * @return {type}          description
      */
     checkAliToken(callback) {
+        // redisClient.RANDOMKEY(function(err, reply){
+        //   if(err){
+        //     this.checkAliToken(callback);
+        //   }else{
+        //     redisClient.get(reply, function(err, reply){
+        //       if(err){
+        //         this.checkAliToken(callback);
+        //       }else{
+        //         console.log('token成功获取到', reply);
+        //         redisClient.del(reply);
+        //         callback(reply);
+        //       }
+        //     })
+        //   }
+        // });
         if (!aliSessionId) {
             setTimeout(() => {
                 this.checkAliToken(callback);
@@ -230,6 +247,8 @@ class MaotaiService {
                 method: 'POST',
                 url: 'https://www.cmaotai.com/API/LBSServer.ashx',
                 headers: {
+                    "proxy-authorization" : "Basic " + proxy.proxyAuth,
+
                     'cache-control': 'no-cache',
                     'accept-language': 'zh-CN,en-US;q=0.8',
                     'accept': 'application/json, text/javascript, */*; q=0.01',
@@ -243,18 +262,17 @@ class MaotaiService {
                     quant: 6,
                     timestamp121: now
                 },
-                jar: j,
                 json:true
             };
             request(options, function(error, response, body) {
                 if (error) {
                   console.log("定位信息获取错误", error);
-                    return reject(error);
+                  return reject(error);
                 };
                 console.log('定位查询结果', body);
                 return resolve({
-                    addressID: addressID,
-                    lbsdata: body
+                  addressID: addressID,
+                  lbsdata: body
                 });
             });
         })
@@ -263,7 +281,7 @@ class MaotaiService {
     fixShop(network, shopName) {
       let result = false;
       let allShopNames = shopName.split("|");
-      console.log(allShopNames);
+      // console.log(allShopNames);
       allShopNames.forEach(item=>{
         if(
             network.SName.indexOf(item) > -1
@@ -302,7 +320,7 @@ class MaotaiService {
         let shopName = fixedShopName;
         let now = +new Date();
         let scopeAddress = null;
-        console.log('useragent createorder', userAgent);
+
         return new Promise((resolve, reject) => {
             this.login(tel, pass, userAgent)
                 .then(data => {
@@ -325,7 +343,10 @@ class MaotaiService {
                         shopId = data.lbsdata.data.network.Sid;
                         return AliVerify.connectSidFromHard();
                       }else {
-                        return reject(new Error("该网点无库存或可购买数量不够"));
+                        let StockCount = data.lbsdata.data.stock.StockCount;
+                        let LimitCount = data.lbsdata.data.limit.LimitCount;
+                        console.log(colors.red(`该网点无库存或可购买数量不够:stock:${StockCount}limit:${LimitCount}`));
+                        return reject(new Error(`该网点无库存或可购买数量不够:stock:${StockCount}limit:${LimitCount}`));
                       }
 
                     } else {
@@ -338,6 +359,8 @@ class MaotaiService {
                               method: 'POST',
                               url: 'https://www.cmaotai.com/YSApp_API/YSAppServer.ashx',
                               headers: {
+                                  "proxy-authorization" : "Basic " + proxy.proxyAuth,
+
                                   'cache-control': 'no-cache',
                                   'accept-language': 'zh-CN,en-US;q=0.8',
                                   accept: 'application/json, text/javascript, */*; q=0.01',
@@ -352,21 +375,19 @@ class MaotaiService {
                                 pid: pid,
                                 count: quantity
                               },
-                              json:true,
-                              jar: j
+                              json:true
                           };
                           request(options, function(error, response, body) {
                               if (error) {
                                   return reject(error);
                               };
-
-                              console.log(colors.green('获取优惠券'+JSON.stringify(body)));
                               let couponsId = body.data.Cid;
                               // 如果找到对应shopID
                               let options = {
                                   method: 'POST',
                                   url: 'https://www.cmaotai.com/API/CreateOrder.ashx',
                                   headers: {
+                                      "proxy-authorization" : "Basic " + proxy.proxyAuth,
                                       'cache-control': 'no-cache',
                                       'accept-language': 'zh-CN,en-US;q=0.8',
                                       accept: 'application/json, text/javascript, */*; q=0.01',
@@ -388,11 +409,10 @@ class MaotaiService {
                                       remark: '',
                                       subinfoId: '',
                                       timestamp121: now
-                                  },
-                                  jar: j
+                                  }
                               };
-                              aliSessionId = null;
                               request(options, function(error, response, body) {
+                                  aliSessionId = null;
                                   if (error) {
                                       return reject(error);
                                   };
@@ -417,6 +437,8 @@ class MaotaiService {
             method: 'POST',
             url: 'https://www.cmaotai.com/YSApp_API/YSAppServer.ashx',
             headers: {
+                "proxy-authorization" : "Basic " + proxy.proxyAuth,
+
                 'cache-control': 'no-cache',
                 'content-type': 'application/x-www-form-urlencoded'
             },
@@ -425,8 +447,7 @@ class MaotaiService {
                 index: '1',
                 size: '10',
                 timestamp121: now
-            },
-            jar: j
+            }
         };
 
         return new Promise((resolve, reject) => {
@@ -437,8 +458,8 @@ class MaotaiService {
               let bodyJSON = JSON.parse(body);
               // console.log(bodyJSON.data.list[0])
               if(bodyJSON.data && bodyJSON.data.list && bodyJSON.data.list.length > 0){
-                console.log('获取的地址id', bodyJSON.data.list[0].SId);
-                console.log('获取的地址id', bodyJSON.data.list[0]);
+                //console.log('获取的地址id', bodyJSON.data.list[0].SId);
+                // console.log('获取的地址id', bodyJSON.data.list[0]);
 
                 return resolve(bodyJSON.data.list[0].SId);
               }else{
@@ -458,6 +479,8 @@ class MaotaiService {
             method: 'POST',
             url: 'https://www.cmaotai.com/YSApp_API/YSAppServer.ashx',
             headers: {
+                "proxy-authorization" : "Basic " + proxy.proxyAuth,
+
                 'cache-control': 'no-cache',
                 'content-type': 'application/x-www-form-urlencoded'
             },
@@ -466,8 +489,7 @@ class MaotaiService {
                 index: '1',
                 size: '10',
                 timestamp121: now
-            },
-            jar: j
+            }
         };
 
         return new Promise((resolve, reject) => {
@@ -489,6 +511,8 @@ class MaotaiService {
             method: 'POST',
             url: 'https://www.cmaotai.com/YSApp_API/YSAppServer.ashx',
             headers: {
+                "proxy-authorization" : "Basic " + proxy.proxyAuth,
+
                 'cache-control': 'no-cache',
                 'content-type': 'application/x-www-form-urlencoded'
             },
@@ -499,8 +523,7 @@ class MaotaiService {
                 size: '10',
                 timestamp121: now
             },
-            json:true,
-            jar: j
+            json:true
         };
 
         return new Promise((resolve, reject) => {
@@ -542,7 +565,6 @@ class MaotaiService {
               size:10,
               timestamp121: now
           },
-          jar: j,
           json:true
       };
 
@@ -582,8 +604,7 @@ class MaotaiService {
                 addressID: addressID,
                 pid: pid,
                 timestamp121: now
-            },
-            jar: j
+            }
         };
 
         return new Promise((resolve, reject) => {
@@ -652,40 +673,43 @@ class MaotaiService {
         }
         userAgent = this.userAgent(phone);
         console.log('开始预约:', phone);
-        this.login(phone, pass, userAgent)
-          .then(userinfo => {
-              return this.getAddressId(phone)
-          })
-          .then((addressID) => {
-              return this.LBSServer(addressID, phone, userAgent);
-          })
-          .then(data => {
-              let addressID = data.addressID;
-              return this.apointment(addressID, userAgent)
-          })
-          .then(apointmentRet => {
-              let obj = {};
-              obj[phone] = apointmentRet;
-              this.apintmentResults.push(obj);
-              console.log('预约结果', phone, apointmentRet);
-              if(JSON.parse(apointmentRet).code === 101){
-                //被封号
-                console.log('被封号:', phone);
-              }
-              setTimeout(() => {
-                  this.apointmentBySinglePhone(phones, userAgent, callback);
-              }, 3000)
+        proxy.switchIp.then(() => {
+          this.login(phone, pass, userAgent)
+            .then(userinfo => {
+                return this.getAddressId(phone)
+            })
+            .then((addressID) => {
+                return this.LBSServer(addressID, phone, userAgent);
+            })
+            .then(data => {
+                let addressID = data.addressID;
+                return this.apointment(addressID, userAgent)
+            })
+            .then(apointmentRet => {
+                let obj = {};
+                obj[phone] = apointmentRet;
+                this.apintmentResults.push(obj);
+                console.log('预约结果', phone, apointmentRet);
+                if(JSON.parse(apointmentRet).code === 101){
+                  //被封号
+                  console.log('被封号:', phone);
+                }
+                setTimeout(() => {
+                    this.apointmentBySinglePhone(phones, userAgent, callback);
+                }, 3000)
 
-          })
-          .catch(e => {
-              console.log('error', e);
-              let obj = {};
-              obj[phone] = e.message;
-              this.apintmentResults.push(obj);
-              setTimeout(() => {
-                  this.apointmentBySinglePhone(phones, userAgent, callback);
-              }, 3000)
-          })
+            })
+            .catch(e => {
+                console.log('error', e);
+                let obj = {};
+                obj[phone] = e.message;
+                this.apintmentResults.push(obj);
+                setTimeout(() => {
+                    this.apointmentBySinglePhone(phones, userAgent, callback);
+                }, 3000)
+            })
+        })
+
     }
 
     /**

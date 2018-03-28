@@ -48,6 +48,7 @@ class AliVerify {
          * @return {type}  description
          */
     openAliUI() {
+        console.log('start to open ali ui')
         let pressX = 126;
         let pressY = 98;
         let dur = 10;
@@ -152,14 +153,14 @@ class AliVerify {
                         Points[1][1] == 0
                     ) {
                         // 重试进行截屏
-                        return this.captureAndCalcPos(resolve, reject);
+                        return resolve(true);
                     }
                     this.swipeToCircle(Points[0], Points[1]);
                     return resolve(true);
                     return reject(new Error('未知错误'));
                 });
-            }, 500)
-        }, 2000);
+            }, 100)
+        }, 500);
     }
 }
 

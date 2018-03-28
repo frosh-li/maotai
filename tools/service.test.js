@@ -21,5 +21,13 @@ describe('测试Service', () => {
     done();
   })
 
+  it("测试阿里token", (done) => {
+    Service.checkAliToken((token) => {
+      console.log(token);
+      assert.equal(typeof token, 'string');
+      done();
+    })
+  })
+
 
 });
