@@ -43,7 +43,7 @@ let _phones = [
     '13040779904',
     '13175100647',
 ]
-let phones = require("../offs.json");
+let phones = require("../beijing2.json");
 // let phones = [
 //     {"phone":"15288939130","pass":"123456"},
 //     {"phone":"17602663277","pass":"wf1982"},
@@ -59,5 +59,5 @@ let phones = require("../offs.json");
 // })
 
     Service.apointmentMulti(phones, (data) => {
-        console.log(data);
+        //console.log(data);
     })

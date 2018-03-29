@@ -17,7 +17,7 @@ let _phones = [
 ]
 
 
-originPhones = require("../accounts.json");
+originPhones = require("../beijingaccount.json");
 
 // var originPhones = require("../accounts.json");
 // let shopName = '集玉进出口';
@@ -61,11 +61,16 @@ logger.info('to Buy tels', originPhones);
 let pid = '391';
 let quantity = 6;
 let statusResults = [];
+let successAcount = [];
+let failAccount = [];
 function getStatus(){
   let phone = originPhones.shift();
   if(!phone){
     logger.info("检查完成");
-    logger.info(statusResults);
+    console.log("预约成功列表如下");
+    console.log(JSON.stringify(successAcount));
+    console.log("预约失败列表如下");
+    console.log(JSON.stringify(failAccount));
     return;
   }
   logger.info('start to check status', phone);

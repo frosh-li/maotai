@@ -2,6 +2,8 @@ const Service = require('../tools/service');
 const BaiduService = require('../services/baiduService');
 let assert = require("chai").assert;
 let proxy = require('../controllers/proxy.js');
+const randomName = require("chinese-random-name");
+
 // 内存一共100个账号
 //求两个字符串的相似度,返回差别字符数,Levenshtein Distance算法实现
 function Levenshtein_Distance(s,t){
@@ -56,34 +58,54 @@ function Minimum(a,b,c){
     return Math.min(a, b, c);
 }
 
-const names = [
-  "周曼亚",
-  "邬连中",
-  "邬连洪",
-  "田锦玉",
-  "余梦云",
-  "江丽",
-  "龙腾",
-  "刘健",
-  "徐作香",
-  "文波",
-  "邬连珍",
-  "龙翔",
-  "葛徳智",
-  "刘发富",
-  "赵利",
-  "刘发壮",
-  "刘发举",
-  "徐作林",
-  "钟祥英",
-  "范娟",
-  "刘应阳",
-  "刘毅",
-  "黄丹",
-  "葛康宁","宋俊宇","李兴艳","龙小五","王欢","乔兴旺","覃芳","高洁","张发昌","熬绍芳","罗静","张竹青","刘丽","张红","刘义红","刘义霞","姚小虎","罗杰","高梅","王希","冉茂林"
-]
+// const names = [
+//   "周曼亚",
+//   "邬连中",
+//   "邬连洪",
+//   "田锦玉",
+//   "余梦云",
+//   "江丽",
+//   "龙腾",
+//   "刘健",
+//   "徐作香",
+//   "文波",
+//   "邬连珍",
+//   "龙翔",
+//   "葛徳智",
+//   "刘发富",
+//   "赵利",
+//   "刘发壮",
+//   "刘发举",
+//   "徐作林",
+//   "钟祥英",
+//   "范娟",
+//   "刘应阳",
+//   "刘毅",
+//   "黄丹",
+//   "葛康宁",
+//   "宋俊宇",
+//   "李兴艳",
+//   "龙小五",
+//   "王欢",
+//   "乔兴旺",
+//   "覃芳",
+//   "高洁",
+//   "张发昌",
+//   "熬绍芳",
+//   "罗静",
+//   "张竹青",
+//   "刘丽",
+//   "张红",
+//   "刘义红",
+//   "刘义霞",
+//   "姚小虎",
+//   "罗杰",
+//   "高梅",
+//   "王希",
+//   "冉茂林"
+// ]
 let results = [];
-let phones = require('../offs.json');
+let phones = require('../beijing2.json');
 // let phones = require("../accounts/zhuxiaodi2.json");
 // let phones = [
 //     // {"phone":"18369929888","pass":"123456"},
@@ -98,7 +120,7 @@ let address = [];
 let index = 0;
 let totalAddress = 50;
 let ret2 = [];
-let shopAddress = "火星街";
+let shopAddress = "东柏街10号院";
 
 function randomPhone(phone, addNumber) {
     let lastCode = phone.charAt(10);
@@ -110,9 +132,15 @@ function randomPhone(phone, addNumber) {
 }
 describe("地址测试", ()=>{
     it("获取用户地址", (done) => {
+      let successAcount = [];
+      let failAccount = [];
       function checkPhone(){
         let phone = phones.shift();
         if(!phone){
+            console.log("预约成功列表如下");
+            console.log(JSON.stringify(successAcount));
+            console.log("预约失败列表如下");
+            console.log(JSON.stringify(failAccount));
             done();
             return;
         }
@@ -124,6 +152,11 @@ describe("地址测试", ()=>{
         let userAgent = Service.userAgent(user.phone);
         console.log('index:', index);
         let currentAddress = ret2[index];
+        if(!currentAddress){
+          // 超出范围重置为第一个自动地址
+          index = 0;
+          currentAddress = ret2[index];
+        }
         proxy.switchIp().then(() => {
           Service.login(user.phone, user.pass, userAgent)
           .then(data=>{
@@ -131,31 +164,32 @@ describe("地址测试", ()=>{
           })
           .then(addressid => {
               console.log("是否获取到ID", addressid);
+              let name = randomName.generate();
               if(addressid){
                 return Service.editAddress(
                     addressid,
-                    620000,
-                    620100,
-                    620103,
-                    `甘肃省兰州市`,
+                    110000,
+                    110100,
+                    110105,
+                    `北京市朝阳区`,
                     `${currentAddress.address}`,
-                    names[index],
+                    name,
                     randomPhone(user.phone, 1),
-                    zipcode="620103",
+                    zipcode="000000",
                     isDef=1,
                     currentAddress.location.lng,
                     currentAddress.location.lat,
                     userAgent)
               }else{
                 return Service.addAddress(
-                    620000,
-                    620100,
-                    620103,
-                    `甘肃省兰州市`,
+                    110000,
+                    110100,
+                    110105,
+                    `北京市朝阳区`,
                     `${currentAddress.address}`,
-                    names[index],
+                    name,
                     randomPhone(user.phone, 1),
-                    zipcode="620103",
+                    zipcode="000000",
                     isDef=1,
                     currentAddress.location.lng,
                     currentAddress.location.lat,
@@ -163,11 +197,26 @@ describe("地址测试", ()=>{
               }
           })
           .then(data => {
+              if(data.state === true && data.code === 0){
+                successAcount.push(user);
+              }else{
+                failAccount.push({
+                  phone: user.phone,
+                  pass: user.pass,
+                  error: JSON.stringify(data)
+                })
+              }
               index++;
               checkPhone();
           })
           .catch(e=>{
+              index++;
               console.log(e);
+              failAccount.push({
+                  phone: user.phone,
+                  pass: user.pass,
+                  error: e.message
+                })
               checkPhone();
           })
         })

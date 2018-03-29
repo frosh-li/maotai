@@ -121,11 +121,7 @@ class MaotaiService {
                 return reject(error);
             }
             logger.info(body);
-            if (body.state === true && body.code === 0) {
-                return resolve(body);
-            } else {
-                return resolve(body);
-            }
+            return resolve(body);
         });
       })
     }
@@ -160,11 +156,7 @@ class MaotaiService {
             }
             logger.info(body);
             body = JSON.parse(body);
-            if (body.state === true && body.code === 0) {
-                return resolve(body);
-            } else {
-                return reject(new Error(body.msg));
-            }
+            return resolve(body);
         });
       })
     }
@@ -664,7 +656,8 @@ class MaotaiService {
      */
     apointmentMulti(phones, callback) {
         this.apintmentResults = [];
-
+        this.apointSuccess = [];
+        this.apointFail = []
         this.apointmentBySinglePhone(phones, null, callback);
 
     }
@@ -685,6 +678,10 @@ class MaotaiService {
 
         if (!sphone) {
             logger.info("所有手机号预约结束");
+            logger.info("预约成功:")
+            logger.info(JSON.stringify(this.apointSuccess));
+            logger.info("预约失败:")
+            logger.info(JSON.stringify(this.apointFail));
             return callback(this.apintmentResults);
         }
         // phone = phone.trim();
@@ -698,8 +695,10 @@ class MaotaiService {
         }
         userAgent = this.userAgent(phone);
         logger.info('开始预约:', phone);
-        proxy.switchIp().then(() => {
-          this.login(phone, pass, userAgent)
+        proxy.switchIp()
+            .then(() => {
+              return this.login(phone, pass,userAgent);
+            })
             .then(userinfo => {
                 return this.getAddressId(phone)
             })
@@ -711,29 +710,35 @@ class MaotaiService {
                 return this.apointment(addressID, userAgent)
             })
             .then(apointmentRet => {
-                let obj = {};
-                obj[phone] = apointmentRet;
-                this.apintmentResults.push(obj);
                 logger.info('预约结果', phone, apointmentRet);
-                if(JSON.parse(apointmentRet).code === 101){
-                  //被封号
-                  logger.info('被封号:', phone);
+                let ret = JSON.parse(apointmentRet);
+                if(ret.state === true && ret.code === 0){
+                  this.apointSuccess.push({
+                    phone: phone,
+                    pass: pass
+                  })
+                }else{
+                  this.apointFail.push({
+                    phone: phone,
+                    pass: pass,
+                    error: JSON.stringify(ret)
+                  })
                 }
                 setTimeout(() => {
                     this.apointmentBySinglePhone(phones, userAgent, callback);
-                }, 3000)
-
+                }, 1000)
             })
             .catch(e => {
-                logger.info('error', e);
-                let obj = {};
-                obj[phone] = e.message;
-                this.apintmentResults.push(obj);
-                setTimeout(() => {
-                    this.apointmentBySinglePhone(phones, userAgent, callback);
-                }, 3000)
+              logger.info('error', e);
+              this.apointFail.push({
+                phone: phone,
+                pass: pass,
+                error: e.message
+              })
+              setTimeout(() => {
+                  this.apointmentBySinglePhone(phones, userAgent, callback);
+              }, 1000)
             })
-        })
 
     }
 

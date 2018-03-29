@@ -31,7 +31,7 @@ class BaiduService {
             query:"小区",
             tag:"房地产",
             location: `${location.lat},${location.lng}`,
-            radius: 500,
+            radius: 1000,
             output:"json",
             page_num: page_num,
             page_size: 20,
