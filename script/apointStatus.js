@@ -1,6 +1,7 @@
 /**
  * 监控某一个站点是否已经可以抢货了
  */
+const logger = require('../controllers/logger.js');
 const MaotaiService = require('../tools/service');
 let _phones = [
   "15249625137",
@@ -55,31 +56,36 @@ originPhones.forEach(data => {
 })
 tels = tels.join("|");
 
-console.log('to Buy tels', originPhones);
+logger.info('to Buy tels', originPhones);
 let pid = '391';
 let quantity = 6;
 let statusResults = [];
 function getStatus(){
   let phone = originPhones.shift();
   if(!phone){
-    console.log("检查完成");
-    console.dir(statusResults);
+    logger.info("检查完成");
+    logger.info(statusResults);
     return;
   }
-  console.log('start to check status', phone);
+  logger.info('start to check status', phone);
   let userAgent = MaotaiService.userAgent(phone.phone);
   MaotaiService.login(phone.phone, phone.pass, userAgent)
     .then(() => {
         return MaotaiService.apointStatus(userAgent);
     })
     .then(data => {
-      statusResults.push(data);
+      console.log(JSON.stringify(data.dataObj))
+      statusResults.push({
+        receiver: data.receiver,
+        address: data.address,
+        reviewTime: data.reviewTime,
+        status: data.status,
+      });
       getStatus();
     })
     .catch(e => {
-      console.log(e);
+      logger.error(e);
       getStatus();
     })
 }
-
 getStatus()

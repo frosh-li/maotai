@@ -1,6 +1,7 @@
 /**
  * 监控某一个站点是否已经可以抢货了
  */
+const logger = require('../controllers/logger.js');
 const MaotaiService = require('../tools/service');
 const fs = require('fs');
 const colors = require('colors/safe');
@@ -10,7 +11,7 @@ const proxy = require('./proxy');
 let _phones = [
 ]
 
-console.log('params', process.argv);
+logger.info('params', process.argv);
 
 // 是否开启购买
 let needToBuy = process.argv[3];
@@ -54,8 +55,9 @@ if(cookieAddress == "004"){
 }
 if(cookieAddress == "005"){
   //猫咪
-  originPhones = [{"phone":"13523472132", 'pass':"abcdef7758521"},{"phone":"18037798213", 'pass':"abcdef7758521"},];
-  shopName = '紫薇尚层';
+  originPhones = [{"phone":"13523472132", 'pass':"abcdef7758521"}];
+  shopName = '尚品美地';
+  quantity=2;
 }
 
 let tels = [];
@@ -64,17 +66,17 @@ originPhones.forEach(data => {
 })
 tels = tels.join("|");
 
-console.log('to Buy tels', tels);
+logger.info('to Buy tels', tels);
 
 function printInfo(data){
   try{
-    console.log('推送网点信息');
-    console.log("NAME:", data.lbsdata.data.network.Address)
-    console.log("SID:", data.lbsdata.data.stock.Sid);
-    console.log("total:",data.lbsdata.data.stock.StockCount)
-    console.log("limit:", data.lbsdata.data.limit.LimitCount)
+    logger.info('推送网点信息');
+    logger.info("NAME:", data.lbsdata.data.network.Address)
+    logger.info("SID:", data.lbsdata.data.stock.Sid);
+    logger.info("total:",data.lbsdata.data.stock.StockCount)
+    logger.info("limit:", data.lbsdata.data.limit.LimitCount)
   }catch(e){
-    console.log(e);
+    logger.error(e);
   }
 }
 
@@ -82,7 +84,7 @@ function printInfo(data){
 function fixShop(network, shopName) {
   let result = false;
   let allShopNames = shopName.split("|");
-  console.log(allShopNames);
+  logger.info(allShopNames);
   allShopNames.forEach(item=>{
     if(
         network.SName.indexOf(item) > -1
@@ -113,18 +115,17 @@ function watchQuanity(shopName) {
             return MaotaiService.LBSServer(address, tel, userAgent);
         })
         .then(data => {
-          console.log(JSON.stringify(data.lbsdata));
+          logger.info(JSON.stringify(data.lbsdata));
           //if (shopName > 0) {
               if (data && data.lbsdata && data.lbsdata.data && data.lbsdata.data.stock && data.lbsdata.data.stock.Sid) {
                 if(
-                  data.lbsdata.data.stock.StockCount > 0
+                  data.lbsdata.data.stock.StockCount > quantity
                   &&
                   data.lbsdata.data.limit.LimitCount >= quantity
                   &&
                   fixShop(data.lbsdata.data.network, shopName)
-
                 ){
-                  console.log(colors.green("商家已经上货，开始购买流程"));
+                  logger.info(colors.green("商家已经上货，开始购买流程"));
                   printInfo(data);
                   if(needToBuy){
                     startToBy();
@@ -137,20 +138,20 @@ function watchQuanity(shopName) {
                 }
 
               } else {
-                console.log(colors.red("商家还未上货"));
+                logger.info(colors.red("商家还未上货"));
                 setTimeout(() => {
                     watchQuanity(shopName);
                 }, checkInterval);
               }
         }).catch(e => {
-            console.log("位置错误,60秒后重试", e);
+            logger.info("位置错误,60秒后重试", e);
             setTimeout(() => {
                 watchQuanity(shopName);
             }, checkInterval);
         })
   })
   .catch(e => {
-    console.log(e);
+    logger.error(e);
   })
 }
 
@@ -167,11 +168,25 @@ function startToBy() {
     }
   }, function(error, results, body){
     if(error){
-      return console.log(error);
+      return logger.info(error);
     }
-    console.log(body);
+    logger.info(body);
   })
 }
 
-watchQuanity(shopName);
+let interval = setInterval(() => {
+  let now = new Date();
+  let Hour = now.getHours();
+  logger.trace('当前时间:', Hour);
+  if(Hour >= 10) {
+    clearInterval(interval);
+    logger.info('抢购时间开始');
+    watchQuanity(shopName);  
+  }else{
+    logger.trace('继续等待中，等到十点才开始吧');
+  }
+  
+}, 2000);
+
+
 // startToBy();

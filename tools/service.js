@@ -60,7 +60,7 @@ class MaotaiService {
         if (tel == "15330066919") {
             pass = "110520";
         }
-        request.jar();
+        j = request.jar();
         let options = {
             method: 'POST',
             url: 'https://www.cmaotai.com/API/Servers.ashx',
@@ -71,7 +71,8 @@ class MaotaiService {
                 pwd: pass,
                 timestamp121: now
             },
-            json:true
+            json:true,
+            jar:j
         };
 
         return new Promise((resolve, reject) => {
@@ -110,7 +111,8 @@ class MaotaiService {
               lat: lat,
               timestamp121: now
           },
-          json:true
+          json:true,
+          jar:j
       };
       return new Promise((resolve, reject) => {
         request(options, function(error, response, body) {
@@ -147,7 +149,8 @@ class MaotaiService {
               lng:lng,
               lat: lat,
               timestamp121: now
-          }
+          },
+          jar:j
       };
       return new Promise((resolve, reject) => {
         request(options, function(error, response, body) {
@@ -175,7 +178,8 @@ class MaotaiService {
                 action: 'AddressManager.delete',
                 Sid: addressId,
                 timestamp121: now
-            }
+            },
+            jar:j
         };
         return new Promise((resolve, reject) => {
           request(options, function(error, response, body) {
@@ -262,6 +266,7 @@ class MaotaiService {
                     quant: 6,
                     timestamp121: now
                 },
+                jar:j,
                 json:true
             };
             request(options, function(error, response, body) {
@@ -308,6 +313,7 @@ class MaotaiService {
      * @return {type}            description
      */
     createOrder(stel, pid, quantity = 6, userAgent, fixedShopName = -1) {
+        console.log('create order params', arguments);
         if (typeof stel === 'string') {
             var tel = stel;
             var pass = '123456';
@@ -333,28 +339,27 @@ class MaotaiService {
                 .then(data => {
                     console.log(data);
                     if (data && data.lbsdata && data.lbsdata.data && data.lbsdata.data.stock && data.lbsdata.data.stock) {
-                      if(
-                        data.lbsdata.data.stock.StockCount > 0
-                        &&
-                        data.lbsdata.data.limit.LimitCount >= quantity
-                        &&
-                        this.fixShop(data.lbsdata.data.network, shopName)
-                      ){
-                        shopId = data.lbsdata.data.network.Sid;
-                        return AliVerify.connectSidFromHard();
-                      }else {
-                        let StockCount = data.lbsdata.data.stock.StockCount;
-                        let LimitCount = data.lbsdata.data.limit.LimitCount;
-                        console.log(colors.red(`该网点无库存或可购买数量不够:stock:${StockCount}limit:${LimitCount}`));
-                        return reject(new Error(`该网点无库存或可购买数量不够:stock:${StockCount}limit:${LimitCount}`));
+                      let StockCount = data.lbsdata.data.stock.StockCount;
+                      let LimitCount = data.lbsdata.data.limit.LimitCount;
+                      console.log(colors.red(`库存限单:stock:${StockCount}limit:${LimitCount}`));
+                      if(data.lbsdata.data.stock.StockCount <= quantity){
+                        console.log(colors.red(`库存不够:stock:${StockCount}limit:${LimitCount}`));
+                        return reject(new Error(`库存不够:stock:${StockCount}limit:${LimitCount}`));
                       }
-
+                      if(LimitCount < quantity){
+                       return reject(new Error(`每单限购不足:stock:${StockCount}limit:${LimitCount}`)); 
+                      }
+                      if(!this.fixShop(data.lbsdata.data.network, shopName)){
+                       return reject(new Error(`当前网点不是您所需要的网点:stock:${StockCount}limit:${LimitCount}`));  
+                      }
+                      shopId = data.lbsdata.data.network.Sid;
+                      return AliVerify.connectSidFromHard();
                     } else {
                         return reject(new Error("订单错误，因为商家没有上货"));
                     }
                 }).then(data => {
                     if (data === true) {
-                        this.checkAliToken((aliSessionId) => {
+                          let that = this;
                           let options = {
                               method: 'POST',
                               url: 'https://www.cmaotai.com/YSApp_API/YSAppServer.ashx',
@@ -373,53 +378,67 @@ class MaotaiService {
                                 action: "MemberManager.coupon",
                                 sid: shopId,
                                 pid: pid,
-                                count: quantity
+                                count: quantity,
+                                timestamp121: (+new Date())
                               },
+                              jar:j,
                               json:true
                           };
                           request(options, function(error, response, body) {
                               if (error) {
                                   return reject(error);
                               };
+                              console.log('coupon info', body);
                               let couponsId = body.data.Cid;
                               // 如果找到对应shopID
-                              let options = {
-                                  method: 'POST',
-                                  url: 'https://www.cmaotai.com/API/CreateOrder.ashx',
-                                  headers: {
-                                      "proxy-authorization" : "Basic " + proxy.proxyAuth,
-                                      'cache-control': 'no-cache',
-                                      'accept-language': 'zh-CN,en-US;q=0.8',
-                                      accept: 'application/json, text/javascript, */*; q=0.01',
-                                      'content-type': 'application/x-www-form-urlencoded',
-                                      referer: `https://www.cmaotai.com/ysh5/page/BuyInquiry/buyInquiryIndex.html?type=invoiceInfo&productId=${pid}&num=${quantity}`,
-                                      'user-agent': userAgent,
-                                      'x-requested-with': 'XMLHttpRequest'
-                                  },
-                                  form: {
-                                      phoneCode: tel,
-                                      productId: pid,
-                                      quantity: quantity,
-                                      couponsId: couponsId,
-                                      addressId: scopeAddress,
-                                      invioceId: -1,
-                                      express: 14,
-                                      shopId: shopId,
-                                      sessid: aliSessionId,
-                                      remark: '',
-                                      subinfoId: '',
-                                      timestamp121: now
-                                  }
-                              };
-                              request(options, function(error, response, body) {
-                                  aliSessionId = null;
-                                  if (error) {
-                                      return reject(error);
-                                  };
-                                  console.log(colors.green('下单完成'+JSON.stringify(body)));
-                                  return resolve(JSON.parse(body));
-                              });
-                          });
+                              that.checkAliToken((aliSessionId) => {
+                                let options = {
+                                    method: 'POST',
+                                    url: 'https://www.cmaotai.com/API/CreateOrder.ashx',
+                                    headers: {
+                                        "proxy-authorization" : "Basic " + proxy.proxyAuth,
+                                        'cache-control': 'no-cache',
+                                        'accept-language': 'zh-CN,en-US;q=0.8',
+                                        accept: 'application/json, text/javascript, */*; q=0.01',
+                                        'content-type': 'application/x-www-form-urlencoded',
+                                        referer: `https://www.cmaotai.com/ysh5/page/BuyInquiry/buyInquiryIndex.html?type=invoiceInfo&productId=${pid}&num=${quantity}`,
+                                        'user-agent': userAgent,
+                                        'x-requested-with': 'XMLHttpRequest'
+                                    },
+                                    jar:j,
+                                    form: {
+                                        productId: pid,
+                                        quantity: quantity,
+                                        couponsId: couponsId,
+                                        addressId: scopeAddress,
+                                        invioceId: -1,
+                                        express: 14,
+                                        shopId: shopId,
+                                        sessid: aliSessionId,
+                                        remark: '',
+                                        timestamp121: (+new Date())
+                                    }
+                                };
+                                // productId 391
+                                // quantity  6
+                                // couponsId 5bdf091be6ab4837a0ecf6d624c41f26
+                                // addressId 1924110
+                                // invioceId -1
+                                // express 14
+                                // shopId  161610100018
+                                // sessid  nc1-01W8fUo7tiNBKrkhR8ACXXKa7iBBDH1y3J0CDrEthFzlTNpsPjtpYek3o3FHpHt3fZ-nc2-0561M3bob-R8gv1KNXk15v5Zpzwr5-aA0d72EwzdOiQ4yF_oZXhNR3wj9Ui770CX4eKbPK7vEuAXN6pqFY62tiCddhKDzzaVVBi1QL1KGNBX47HA687xzvBLbSMxProRMf6YwLBXaxmIci5uutEeL13GykCvJb4lfdA4B5mO7sXuxrBIslSrNkdZL0myaCGppz51RYEogBMwUazCe0Gmu_4rZ-u5smNUCcFL4ya7FiHf5iekkXdiY3Q2fNkKGdQPu77n45tVC52LG_H0SCfbLMqtoU1tmCuQ7gQ1UZzDp9ONxSGYQ8dIgJJjigUtXuBLOTSPXdQOdFkqIs6JjFsXAkp1sAxQHojeOF39MSL4bxBD6ECAAYd4722G4Y2yIX3dXl7S9KEx_7rE6J4_Qe-tKZvj0s5vNYP0vJP7P4Wv4Z6jM-nc3-01TzB8fzgmvi9w1w4Zzf-Aou5wAmuHVmzkWmgqL_rJEAfWDAe5-mM9bYVdvGJY2qVCFybtUWb9qd-2xX8YIpqSIDLmQJpgazyeLOv1rOhNl5mqdxjkB3iFVFv0N8IigAoPdXEJxKKKUu7F2-cvvWc-lg-nc4-FFFFA0000000016A858A
+                                // remark  
+                                // timestamp121  1522290257472
+                                aliSessionId = null;
+                                console.log(options.form);
+                                request(options, function(error, response, body) {
+                                    if (error) {
+                                        return reject(error);
+                                    };
+                                    console.log(colors.green('下单完成'+JSON.stringify(body)));
+                                    return resolve(JSON.parse(body));
+                                });
+                            });
                         })
                     }
                 }).catch(e => {
@@ -435,6 +454,7 @@ class MaotaiService {
 
         let options = {
             method: 'POST',
+            jar:j,
             url: 'https://www.cmaotai.com/YSApp_API/YSAppServer.ashx',
             headers: {
                 "proxy-authorization" : "Basic " + proxy.proxyAuth,
@@ -477,6 +497,7 @@ class MaotaiService {
 
         var options = {
             method: 'POST',
+            jar:j,
             url: 'https://www.cmaotai.com/YSApp_API/YSAppServer.ashx',
             headers: {
                 "proxy-authorization" : "Basic " + proxy.proxyAuth,
@@ -509,6 +530,7 @@ class MaotaiService {
 
         var options = {
             method: 'POST',
+            jar:j,
             url: 'https://www.cmaotai.com/YSApp_API/YSAppServer.ashx',
             headers: {
                 "proxy-authorization" : "Basic " + proxy.proxyAuth,
@@ -557,6 +579,7 @@ class MaotaiService {
       let now = +new Date();
       var options = {
           method: 'POST',
+          jar:j,
           url: 'https://www.cmaotai.com/API/Servers.ashx',
           headers: this.headers(userAgent),
           form: {
@@ -597,6 +620,7 @@ class MaotaiService {
         let now = +new Date();
         var options = {
             method: 'POST',
+            jar:j,
             url: 'https://www.cmaotai.com/API/Servers.ashx',
             headers: this.headers(userAgent),
             form: {
