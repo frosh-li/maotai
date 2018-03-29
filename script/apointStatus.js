@@ -71,6 +71,7 @@ function getStatus(){
     console.log(JSON.stringify(successAcount));
     console.log("预约失败列表如下");
     console.log(JSON.stringify(failAccount));
+    console.log(statusResults);
     return;
   }
   logger.info('start to check status', phone);
