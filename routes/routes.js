@@ -142,6 +142,7 @@ router.post('/maotai/multiOrder', (req, res, next) => {
   function createOne() {
     let tel = tels.shift();
     if(!tel){
+      console.log(ret);
       return res.json({
         status: 200,
         msg:"alldone",

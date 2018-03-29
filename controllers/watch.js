@@ -28,14 +28,14 @@ let pid = '391';
 let quantity = 6;
 
 var originPhones = require("../accounts.json");
-let shopName = '集玉进出口';
+let shopName = '东柏街|祥瑞丰源';
 if(cookieAddress == "001"){
-  quantity = 12;
+  originPhones = require("../beijingaccount.json");
 }
 if(cookieAddress == "002"){
   // 猪小弟 两单
   originPhones = require("../accounts/zhuxiaodi.json");
-  shopName = '七里河区';
+  shopName = '七里河区|甘南路';
   // const originPhones = require("../accounts/zhuxiaodi2.json");
   // let shopName = '甘南路';
 }
@@ -128,7 +128,7 @@ function watchQuanity(shopName) {
                   logger.info(colors.green("商家已经上货，开始购买流程"));
                   printInfo(data);
                   if(needToBuy){
-                    startToBy();
+                    startToBy(data.lbsdata.data.limit.LimitCount);
                   }
                 }else {
                   printInfo(data);
@@ -156,14 +156,14 @@ function watchQuanity(shopName) {
 }
 
 
-function startToBy() {
+function startToBy(limit) {
   request({
     url:"http://127.0.0.1:10010/api/maotai/multiOrder",
     method:"post",
     form: {
       tels: tels,
       pid: pid,
-      quantity: quantity,
+      quantity: limit || 6,
       shopName: shopName
     }
   }, function(error, results, body){
@@ -178,7 +178,7 @@ let interval = setInterval(() => {
   let now = new Date();
   let Hour = now.getHours();
   logger.trace('当前时间:', Hour);
-  if(Hour >= 10) {
+  if(Hour >= 10 && Hour <= 11) {
     clearInterval(interval);
     logger.info('抢购时间开始');
     watchQuanity(shopName);  
