@@ -1,6 +1,7 @@
 const Service = require('../tools/service');
 const BaiduService = require('../services/baiduService');
 let assert = require("chai").assert;
+let proxy = require('../controllers/proxy.js');
 // 内存一共100个账号
 //求两个字符串的相似度,返回差别字符数,Levenshtein Distance算法实现
 function Levenshtein_Distance(s,t){
@@ -82,26 +83,26 @@ const names = [
   "葛康宁","宋俊宇","李兴艳","龙小五","王欢","乔兴旺","覃芳","高洁","张发昌","熬绍芳","罗静","张竹青","刘丽","张红","刘义红","刘义霞","姚小虎","罗杰","高梅","王希","冉茂林"
 ]
 let results = [];
-//let phones = require('../accounts.json');
+let phones = require('../offs.json');
 // let phones = require("../accounts/zhuxiaodi2.json");
-let phones = [
-    // {"phone":"18369929888","pass":"123456"},
-    // {"phone":"15206614333","pass":"123456"},
-    {"phone":"15288939130","pass":"123456"},
-    {"phone":"17602663277","pass":"wf1982"},
-    {"phone":"13093401696","pass":"Y199013"},
-    {"phone":"18776571180","pass":"19940j"}
-]
+// let phones = [
+//     // {"phone":"18369929888","pass":"123456"},
+//     // {"phone":"15206614333","pass":"123456"},
+//     {"phone":"15288939130","pass":"123456"},
+//     {"phone":"17602663277","pass":"wf1982"},
+//     {"phone":"13093401696","pass":"Y199013"},
+//     {"phone":"18776571180","pass":"19940j"}
+// ]
 // phones.length = 5;
 let address = [];
 let index = 0;
 let totalAddress = 50;
 let ret2 = [];
-let shopAddress = "贵州市北京路贵州饭店";
+let shopAddress = "火星街";
 
-function randomPhone(phone) {
+function randomPhone(phone, addNumber) {
     let lastCode = phone.charAt(10);
-    lastCode = lastCode + 2;
+    lastCode = lastCode + addNumber;
     if(lastCode >= 10){
         lastCode = 0;
     }
@@ -110,8 +111,6 @@ function randomPhone(phone) {
 describe("地址测试", ()=>{
     it("获取用户地址", (done) => {
       function checkPhone(){
-        console.log(phones, phones.length);
-
         let phone = phones.shift();
         if(!phone){
             done();
@@ -125,55 +124,53 @@ describe("地址测试", ()=>{
         let userAgent = Service.userAgent(user.phone);
         console.log('index:', index);
         let currentAddress = ret2[index];
-        Service.login(user.phone, user.pass, userAgent)
-        .then(data=>{
-          return Service.getAddressId(user.phone)
+        proxy.switchIp().then(() => {
+          Service.login(user.phone, user.pass, userAgent)
+          .then(data=>{
+            return Service.getAddressId(user.phone)
+          })
+          .then(addressid => {
+              console.log("是否获取到ID", addressid);
+              if(addressid){
+                return Service.editAddress(
+                    addressid,
+                    620000,
+                    620100,
+                    620103,
+                    `甘肃省兰州市`,
+                    `${currentAddress.address}`,
+                    names[index],
+                    randomPhone(user.phone, 1),
+                    zipcode="620103",
+                    isDef=1,
+                    currentAddress.location.lng,
+                    currentAddress.location.lat,
+                    userAgent)
+              }else{
+                return Service.addAddress(
+                    620000,
+                    620100,
+                    620103,
+                    `甘肃省兰州市`,
+                    `${currentAddress.address}`,
+                    names[index],
+                    randomPhone(user.phone, 1),
+                    zipcode="620103",
+                    isDef=1,
+                    currentAddress.location.lng,
+                    currentAddress.location.lat,
+                    userAgent)
+              }
+          })
+          .then(data => {
+              index++;
+              checkPhone();
+          })
+          .catch(e=>{
+              console.log(e);
+              checkPhone();
+          })
         })
-        .then(addressid => {
-            console.log("是否获取到ID", addressid);
-            if(addressid){
-              return Service.editAddress(
-                  addressid,
-                  520000,
-                  520100,
-                  520103,
-                  `贵州省贵阳市云岩区`,
-                  `${currentAddress.address}`,
-                  names[index],
-                  randomPhone(user.phone),
-                  zipcode="520000",
-                  isDef=1,
-                  currentAddress.location.lng,
-                  currentAddress.location.lat,
-                  userAgent)
-            }else{
-              return Service.addAddress(
-                  520000,
-                  520100,
-                  520103,
-                  `贵州省贵阳市云岩区`,
-                  `${currentAddress.address}`,
-                  names[index],
-                  user.phone,
-                  zipcode="520000",
-                  isDef=1,
-                  currentAddress.location.lng,
-                  currentAddress.location.lat,
-                  userAgent)
-            }
-        })
-        .then(data => {
-            index++;
-            // assert.equal(data.length === 0, true)
-
-            checkPhone();
-        })
-        .catch(e=>{
-            console.log(e);
-            assert.equal(false, true);
-            checkPhone();
-        })
-
 
       }
       // 北京中恒实信  丰台

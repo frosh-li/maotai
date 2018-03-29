@@ -10,6 +10,7 @@ var AliVerify = require('./startAliVerify');
 const crypto = require('crypto');
 const uuid = require('uuid/v4');
 const colors = require('colors/safe');
+var logger = require('../controllers/logger');
 
 const DELAY = 1000;
 
@@ -119,7 +120,7 @@ class MaotaiService {
             if (error) {
                 return reject(error);
             }
-            console.log(body);
+            logger.info(body);
             if (body.state === true && body.code === 0) {
                 return resolve(body);
             } else {
@@ -157,7 +158,7 @@ class MaotaiService {
             if (error) {
                 return reject(error);
             }
-            console.log(body);
+            logger.info(body);
             body = JSON.parse(body);
             if (body.state === true && body.code === 0) {
                 return resolve(body);
@@ -186,7 +187,7 @@ class MaotaiService {
               if (error) {
                   return reject(error);
               }
-              console.log(body);
+              logger.info(body);
               body = JSON.parse(body);
               if (body.state === true && body.code === 0) {
                   return resolve(body);
@@ -213,7 +214,7 @@ class MaotaiService {
         //       if(err){
         //         this.checkAliToken(callback);
         //       }else{
-        //         console.log('token成功获取到', reply);
+        //         logger.info('token成功获取到', reply);
         //         redisClient.del(reply);
         //         callback(reply);
         //       }
@@ -225,7 +226,7 @@ class MaotaiService {
                 this.checkAliToken(callback);
             }, 100);
         } else {
-            console.log('token成功获取到', aliSessionId);
+            logger.info('token成功获取到', aliSessionId);
             callback(aliSessionId);
         }
     }
@@ -271,10 +272,10 @@ class MaotaiService {
             };
             request(options, function(error, response, body) {
                 if (error) {
-                  console.log("定位信息获取错误", error);
+                  logger.info("定位信息获取错误", error);
                   return reject(error);
                 };
-                console.log('定位查询结果', body);
+                logger.info('定位查询结果', body);
                 return resolve({
                   addressID: addressID,
                   lbsdata: body
@@ -286,7 +287,7 @@ class MaotaiService {
     fixShop(network, shopName) {
       let result = false;
       let allShopNames = shopName.split("|");
-      // console.log(allShopNames);
+      // logger.info(allShopNames);
       allShopNames.forEach(item=>{
         if(
             network.SName.indexOf(item) > -1
@@ -313,7 +314,7 @@ class MaotaiService {
      * @return {type}            description
      */
     createOrder(stel, pid, quantity = 6, userAgent, fixedShopName = -1) {
-        console.log('create order params', arguments);
+        logger.info('create order params', arguments);
         if (typeof stel === 'string') {
             var tel = stel;
             var pass = '123456';
@@ -337,13 +338,13 @@ class MaotaiService {
                     return this.LBSServer(address, tel, userAgent);
                 })
                 .then(data => {
-                    console.log(data);
+                    logger.info(data);
                     if (data && data.lbsdata && data.lbsdata.data && data.lbsdata.data.stock && data.lbsdata.data.stock) {
                       let StockCount = data.lbsdata.data.stock.StockCount;
                       let LimitCount = data.lbsdata.data.limit.LimitCount;
-                      console.log(colors.red(`库存限单:stock:${StockCount}limit:${LimitCount}`));
+                      logger.info(colors.red(`库存限单:stock:${StockCount}limit:${LimitCount}`));
                       if(data.lbsdata.data.stock.StockCount <= quantity){
-                        console.log(colors.red(`库存不够:stock:${StockCount}limit:${LimitCount}`));
+                        logger.info(colors.red(`库存不够:stock:${StockCount}limit:${LimitCount}`));
                         return reject(new Error(`库存不够:stock:${StockCount}limit:${LimitCount}`));
                       }
                       if(LimitCount < quantity){
@@ -388,7 +389,7 @@ class MaotaiService {
                               if (error) {
                                   return reject(error);
                               };
-                              console.log('coupon info', body);
+                              logger.info('coupon info', body);
                               let couponsId = body.data.Cid;
                               // 如果找到对应shopID
                               that.checkAliToken((aliSessionId) => {
@@ -430,26 +431,26 @@ class MaotaiService {
                                 // remark  
                                 // timestamp121  1522290257472
                                 aliSessionId = null;
-                                console.log(options.form);
+                                logger.info(options.form);
                                 request(options, function(error, response, body) {
                                     if (error) {
                                         return reject(error);
                                     };
-                                    console.log(colors.green('下单完成'+JSON.stringify(body)));
+                                    logger.info(colors.green('下单完成'+JSON.stringify(body)));
                                     return resolve(JSON.parse(body));
                                 });
                             });
                         })
                     }
                 }).catch(e => {
-                    console.log(e);
+                    logger.info(e);
                     return reject(e);
                 })
         })
     }
 
     getAddressId(tel) {
-        console.log('start get addressID from mobile:', tel);
+        logger.info('start get addressID from mobile:', tel);
         let now = +new Date();
 
         let options = {
@@ -476,10 +477,10 @@ class MaotaiService {
                   return reject(error);
               }
               let bodyJSON = JSON.parse(body);
-              // console.log(bodyJSON.data.list[0])
+              // logger.info(bodyJSON.data.list[0])
               if(bodyJSON.data && bodyJSON.data.list && bodyJSON.data.list.length > 0){
-                //console.log('获取的地址id', bodyJSON.data.list[0].SId);
-                // console.log('获取的地址id', bodyJSON.data.list[0]);
+                //logger.info('获取的地址id', bodyJSON.data.list[0].SId);
+                // logger.info('获取的地址id', bodyJSON.data.list[0]);
 
                 return resolve(bodyJSON.data.list[0].SId);
               }else{
@@ -492,7 +493,7 @@ class MaotaiService {
     }
 
     getAllAddress(tel) {
-        console.log('start get addressID from mobile:', tel);
+        logger.info('start get addressID from mobile:', tel);
         let now = +new Date();
 
         var options = {
@@ -553,7 +554,7 @@ class MaotaiService {
               if (error) {
                   return reject(error);
               }
-              console.log(JSON.stringify(body));
+              logger.info(JSON.stringify(body));
               return resolve(body.data.Data);
           });
         })
@@ -594,10 +595,10 @@ class MaotaiService {
       return new Promise((resolve, reject) => {
           request(options, function(error, response, body) {
               if (error) {
-                  console.log(error);
+                  logger.info(error);
                   return reject(error);
               } else {
-                console.log("预约列表查看");
+                logger.info("预约列表查看");
                 console.dir(body.data);
                 if(body && body.data && body.data.datas && body.data.datas.length > 0)
                   return resolve(body.data.datas[0]);
@@ -635,10 +636,10 @@ class MaotaiService {
 
             request(options, function(error, response, body) {
                 if (error) {
-                    console.log(error);
+                    logger.info(error);
                     return reject(error);
                 } else {
-                    console.log("预约结果", body);
+                    logger.info("预约结果", body);
                     let ret = JSON.stringify(body);
                     if (body.state === false) {
                         return reject("预约失败:" + body.msg);
@@ -683,11 +684,11 @@ class MaotaiService {
         let sphone = phones.shift();
 
         if (!sphone) {
-            console.log("所有手机号预约结束");
+            logger.info("所有手机号预约结束");
             return callback(this.apintmentResults);
         }
         // phone = phone.trim();
-        console.log(typeof sphone);
+        logger.info(typeof sphone);
         if (typeof sphone === 'string') {
             var phone = sphone.trim();
             var pass = "123456"
@@ -696,8 +697,8 @@ class MaotaiService {
             var pass = sphone.pass.trim();
         }
         userAgent = this.userAgent(phone);
-        console.log('开始预约:', phone);
-        proxy.switchIp.then(() => {
+        logger.info('开始预约:', phone);
+        proxy.switchIp().then(() => {
           this.login(phone, pass, userAgent)
             .then(userinfo => {
                 return this.getAddressId(phone)
@@ -713,10 +714,10 @@ class MaotaiService {
                 let obj = {};
                 obj[phone] = apointmentRet;
                 this.apintmentResults.push(obj);
-                console.log('预约结果', phone, apointmentRet);
+                logger.info('预约结果', phone, apointmentRet);
                 if(JSON.parse(apointmentRet).code === 101){
                   //被封号
-                  console.log('被封号:', phone);
+                  logger.info('被封号:', phone);
                 }
                 setTimeout(() => {
                     this.apointmentBySinglePhone(phones, userAgent, callback);
@@ -724,7 +725,7 @@ class MaotaiService {
 
             })
             .catch(e => {
-                console.log('error', e);
+                logger.info('error', e);
                 let obj = {};
                 obj[phone] = e.message;
                 this.apintmentResults.push(obj);
@@ -749,7 +750,7 @@ class MaotaiService {
     _apointmentBySinglePhone(phone, callback) {
         phone = phone.trim();
         let userAgent = this.userAgent(phone);
-        console.log('开始预约:', phone);
+        logger.info('开始预约:', phone);
         this.login(phone, '123456', userAgent)
           .then(userinfo => {
             return this.getAddressId(phone)
@@ -762,11 +763,11 @@ class MaotaiService {
             return this.apointment(addressID, userAgent)
           })
           .then(apointmentRet => {
-            console.log('预约结果', phone, apointmentRet);
+            logger.info('预约结果', phone, apointmentRet);
             callback(apointmentRet)
           })
           .catch(e => {
-            console.log('error', e);
+            logger.info('error', e);
             callback(e)
           })
     }

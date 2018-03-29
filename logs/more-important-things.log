@@ -1,429 +1,943 @@
-[2018-03-29T10:00:01.504] [INFO] things - 抢购时间开始
-[2018-03-29T10:00:04.073] [INFO] things - {"state":true,"code":0,"data":{"Reservation":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":true,"Certificate":{"ID":"2657604","UID":2257029,"PID":"391","Status":3,"Address":{"ID":1947927,"IsDefault":false,"IsPushAddreess":true,"Name":"姜利娜","TelPhone":"13523472132","Zipcode":"000000","ProvCode":"610000","CityCode":"610100","AreaCode":"610116","Remark":"","IsVerification":false,"AddressDetails":"陕西省西安市长安区,西安市高新区sotyre博士路站,","Longitude":108.869519,"Latitude":34.172172,"Address":"西安市高新区sotyre博士路站,","AddressText":"陕西省西安市长安区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-03 00:00:00"},"EnterTimeSlot":{"Start":"2018-03-29 00:00:00","End":"2018-03-29 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-03-29 10:00:00","End":"2018-03-29 16:00:00","InTime":true}},"address":{"ID":1947927,"IsDefault":false,"IsPushAddreess":true,"Name":"姜利娜","TelPhone":"13523472132","Zipcode":"000000","ProvCode":"610000","CityCode":"610100","AreaCode":"610116","Remark":"","IsVerification":false,"AddressDetails":"陕西省西安市长安区,西安市高新区sotyre博士路站,","Longitude":108.869519,"Latitude":34.172172,"Address":"西安市高新区sotyre博士路站,","AddressText":"陕西省西安市长安区"},"stock":{"Sid":"161610100018","Pid":391,"Pcode":"23","CanSale":true,"CanLocation":true,"Longitude":108.899683010032,"Latitude":34.2230999484468,"LocationCode":"610000","StockCount":15,"QuotasStockCount":15,"LocationDistance":6312.99964602576,"HasSelfDelivery":true,"HasOtherDelivery":false,"HasCityDelivery":false,"IsVirtual":false,"IsPlatform":false},"customer":{"SMNo":null,"Sid":"161610100018","Name":"13523472132","TelPhone":"13523472132","Points":0,"Level":1,"State":2,"Amount":0},"priceRule":[{"Quant":1,"Price":1499}],"limit":{"Sid":"161610100018","Pid":391,"UserOrderCount":0,"LimitCount":6,"LimitTimeCycle":1440,"LimitOrderCount":1,"IsPlatform":false},"network":{"Sid":"161610100018","SName":"茅台云商陕西省西安市高新区服务网点","Did":"610100029","DName":"西安德润酒业销售有限公司","SHBegin":"09:00:00","SHEnd":"17:00:00","Address":"西安市高新区锦业路尚品美地城1号楼20101商铺","LinkMan":"马女士","LinkTel":"029-81107816  13022929292","InvoiceCost":0,"State":1,"HasPlainInvoice":1,"HasVATInvoice":0,"Description":"1、支持到店自提\r\n2、自提工作时间为每周一至周六，9:00至17:00点。\r\n3、遇节假日，请提前致电，确认时间后，方便您的提货","InvoiceCompany":"西安德润酒业销售有限公司","Coordinate":{"ProvCode":"610000","CityCode":"610100","AreaCode":"610101","Longitude":108.906303405762,"Latitude":34.2287788391113},"NetworkType":0,"WorkingDay":"[{\"EnDay\":\"Monday\",\"CnDay\":\"星期一\"},{\"EnDay\":\"Tuesday\",\"CnDay\":\"星期二\"},{\"EnDay\":\"Wednesday\",\"CnDay\":\"星期三\"},{\"EnDay\":\"Thursday\",\"CnDay\":\"星期四\"},{\"EnDay\":\"Friday\",\"CnDay\":\"星期五\"},{\"EnDay\":\"Saturday\",\"CnDay\":\"星期六\"}]","ProvCode":"610000","CityCode":"610100","AreaCode":"610101","IsPlatform":false}}}
-[2018-03-29T10:00:04.074] [INFO] things - [ '雁塔区' ]
-[2018-03-29T10:00:04.075] [INFO] things - 推送网点信息
-[2018-03-29T10:00:04.076] [INFO] things - NAME: 西安市高新区锦业路尚品美地城1号楼20101商铺
-[2018-03-29T10:00:04.076] [INFO] things - SID: 161610100018
-[2018-03-29T10:00:04.076] [INFO] things - total: 15
-[2018-03-29T10:00:04.076] [INFO] things - limit: 6
-[2018-03-29T10:00:07.651] [INFO] things - {"state":true,"code":0,"data":{"Reservation":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":true,"Certificate":{"ID":"2657604","UID":2257029,"PID":"391","Status":3,"Address":{"ID":1947927,"IsDefault":false,"IsPushAddreess":true,"Name":"姜利娜","TelPhone":"13523472132","Zipcode":"000000","ProvCode":"610000","CityCode":"610100","AreaCode":"610116","Remark":"","IsVerification":false,"AddressDetails":"陕西省西安市长安区,西安市高新区sotyre博士路站,","Longitude":108.869519,"Latitude":34.172172,"Address":"西安市高新区sotyre博士路站,","AddressText":"陕西省西安市长安区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-03 00:00:00"},"EnterTimeSlot":{"Start":"2018-03-29 00:00:00","End":"2018-03-29 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-03-29 10:00:00","End":"2018-03-29 16:00:00","InTime":true}},"address":{"ID":1947927,"IsDefault":false,"IsPushAddreess":true,"Name":"姜利娜","TelPhone":"13523472132","Zipcode":"000000","ProvCode":"610000","CityCode":"610100","AreaCode":"610116","Remark":"","IsVerification":false,"AddressDetails":"陕西省西安市长安区,西安市高新区sotyre博士路站,","Longitude":108.869519,"Latitude":34.172172,"Address":"西安市高新区sotyre博士路站,","AddressText":"陕西省西安市长安区"},"stock":{"Sid":"161610100018","Pid":391,"Pcode":"23","CanSale":true,"CanLocation":true,"Longitude":108.899683010032,"Latitude":34.2230999484468,"LocationCode":"610000","StockCount":15,"QuotasStockCount":15,"LocationDistance":6312.99964602576,"HasSelfDelivery":true,"HasOtherDelivery":false,"HasCityDelivery":false,"IsVirtual":false,"IsPlatform":false},"customer":{"SMNo":null,"Sid":"161610100018","Name":"13523472132","TelPhone":"13523472132","Points":0,"Level":1,"State":2,"Amount":0},"priceRule":[{"Quant":1,"Price":1499}],"limit":{"Sid":"161610100018","Pid":391,"UserOrderCount":0,"LimitCount":6,"LimitTimeCycle":1440,"LimitOrderCount":1,"IsPlatform":false},"network":{"Sid":"161610100018","SName":"茅台云商陕西省西安市高新区服务网点","Did":"610100029","DName":"西安德润酒业销售有限公司","SHBegin":"09:00:00","SHEnd":"17:00:00","Address":"西安市高新区锦业路尚品美地城1号楼20101商铺","LinkMan":"马女士","LinkTel":"029-81107816  13022929292","InvoiceCost":0,"State":1,"HasPlainInvoice":1,"HasVATInvoice":0,"Description":"1、支持到店自提\r\n2、自提工作时间为每周一至周六，9:00至17:00点。\r\n3、遇节假日，请提前致电，确认时间后，方便您的提货","InvoiceCompany":"西安德润酒业销售有限公司","Coordinate":{"ProvCode":"610000","CityCode":"610100","AreaCode":"610101","Longitude":108.906303405762,"Latitude":34.2287788391113},"NetworkType":0,"WorkingDay":"[{\"EnDay\":\"Monday\",\"CnDay\":\"星期一\"},{\"EnDay\":\"Tuesday\",\"CnDay\":\"星期二\"},{\"EnDay\":\"Wednesday\",\"CnDay\":\"星期三\"},{\"EnDay\":\"Thursday\",\"CnDay\":\"星期四\"},{\"EnDay\":\"Friday\",\"CnDay\":\"星期五\"},{\"EnDay\":\"Saturday\",\"CnDay\":\"星期六\"}]","ProvCode":"610000","CityCode":"610100","AreaCode":"610101","IsPlatform":false}}}
-[2018-03-29T10:00:07.651] [INFO] things - [ '雁塔区' ]
-[2018-03-29T10:00:07.651] [INFO] things - 推送网点信息
-[2018-03-29T10:00:07.652] [INFO] things - NAME: 西安市高新区锦业路尚品美地城1号楼20101商铺
-[2018-03-29T10:00:07.652] [INFO] things - SID: 161610100018
-[2018-03-29T10:00:07.652] [INFO] things - total: 15
-[2018-03-29T10:00:07.652] [INFO] things - limit: 6
-[2018-03-29T10:00:11.442] [INFO] things - {"state":true,"code":0,"data":{"Reservation":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":true,"Certificate":{"ID":"2657604","UID":2257029,"PID":"391","Status":3,"Address":{"ID":1947927,"IsDefault":false,"IsPushAddreess":true,"Name":"姜利娜","TelPhone":"13523472132","Zipcode":"000000","ProvCode":"610000","CityCode":"610100","AreaCode":"610116","Remark":"","IsVerification":false,"AddressDetails":"陕西省西安市长安区,西安市高新区sotyre博士路站,","Longitude":108.869519,"Latitude":34.172172,"Address":"西安市高新区sotyre博士路站,","AddressText":"陕西省西安市长安区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-03 00:00:00"},"EnterTimeSlot":{"Start":"2018-03-29 00:00:00","End":"2018-03-29 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-03-29 10:00:00","End":"2018-03-29 16:00:00","InTime":true}},"address":{"ID":1947927,"IsDefault":false,"IsPushAddreess":true,"Name":"姜利娜","TelPhone":"13523472132","Zipcode":"000000","ProvCode":"610000","CityCode":"610100","AreaCode":"610116","Remark":"","IsVerification":false,"AddressDetails":"陕西省西安市长安区,西安市高新区sotyre博士路站,","Longitude":108.869519,"Latitude":34.172172,"Address":"西安市高新区sotyre博士路站,","AddressText":"陕西省西安市长安区"},"stock":{"Sid":"161610100018","Pid":391,"Pcode":"23","CanSale":true,"CanLocation":true,"Longitude":108.899683010032,"Latitude":34.2230999484468,"LocationCode":"610000","StockCount":15,"QuotasStockCount":15,"LocationDistance":6312.99964602576,"HasSelfDelivery":true,"HasOtherDelivery":false,"HasCityDelivery":false,"IsVirtual":false,"IsPlatform":false},"customer":{"SMNo":null,"Sid":"161610100018","Name":"13523472132","TelPhone":"13523472132","Points":0,"Level":1,"State":2,"Amount":0},"priceRule":[{"Quant":1,"Price":1499}],"limit":{"Sid":"161610100018","Pid":391,"UserOrderCount":0,"LimitCount":6,"LimitTimeCycle":1440,"LimitOrderCount":1,"IsPlatform":false},"network":{"Sid":"161610100018","SName":"茅台云商陕西省西安市高新区服务网点","Did":"610100029","DName":"西安德润酒业销售有限公司","SHBegin":"09:00:00","SHEnd":"17:00:00","Address":"西安市高新区锦业路尚品美地城1号楼20101商铺","LinkMan":"马女士","LinkTel":"029-81107816  13022929292","InvoiceCost":0,"State":1,"HasPlainInvoice":1,"HasVATInvoice":0,"Description":"1、支持到店自提\r\n2、自提工作时间为每周一至周六，9:00至17:00点。\r\n3、遇节假日，请提前致电，确认时间后，方便您的提货","InvoiceCompany":"西安德润酒业销售有限公司","Coordinate":{"ProvCode":"610000","CityCode":"610100","AreaCode":"610101","Longitude":108.906303405762,"Latitude":34.2287788391113},"NetworkType":0,"WorkingDay":"[{\"EnDay\":\"Monday\",\"CnDay\":\"星期一\"},{\"EnDay\":\"Tuesday\",\"CnDay\":\"星期二\"},{\"EnDay\":\"Wednesday\",\"CnDay\":\"星期三\"},{\"EnDay\":\"Thursday\",\"CnDay\":\"星期四\"},{\"EnDay\":\"Friday\",\"CnDay\":\"星期五\"},{\"EnDay\":\"Saturday\",\"CnDay\":\"星期六\"}]","ProvCode":"610000","CityCode":"610100","AreaCode":"610101","IsPlatform":false}}}
-[2018-03-29T10:00:11.446] [INFO] things - [ '雁塔区' ]
-[2018-03-29T10:00:11.446] [INFO] things - 推送网点信息
-[2018-03-29T10:00:11.447] [INFO] things - NAME: 西安市高新区锦业路尚品美地城1号楼20101商铺
-[2018-03-29T10:00:11.447] [INFO] things - SID: 161610100018
-[2018-03-29T10:00:11.448] [INFO] things - total: 15
-[2018-03-29T10:00:11.448] [INFO] things - limit: 6
-[2018-03-29T10:00:15.451] [INFO] things - {"state":true,"code":0,"data":{"Reservation":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":true,"Certificate":{"ID":"2657604","UID":2257029,"PID":"391","Status":3,"Address":{"ID":1947927,"IsDefault":false,"IsPushAddreess":true,"Name":"姜利娜","TelPhone":"13523472132","Zipcode":"000000","ProvCode":"610000","CityCode":"610100","AreaCode":"610116","Remark":"","IsVerification":false,"AddressDetails":"陕西省西安市长安区,西安市高新区sotyre博士路站,","Longitude":108.869519,"Latitude":34.172172,"Address":"西安市高新区sotyre博士路站,","AddressText":"陕西省西安市长安区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-03 00:00:00"},"EnterTimeSlot":{"Start":"2018-03-29 00:00:00","End":"2018-03-29 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-03-29 10:00:00","End":"2018-03-29 16:00:00","InTime":true}},"address":{"ID":1947927,"IsDefault":false,"IsPushAddreess":true,"Name":"姜利娜","TelPhone":"13523472132","Zipcode":"000000","ProvCode":"610000","CityCode":"610100","AreaCode":"610116","Remark":"","IsVerification":false,"AddressDetails":"陕西省西安市长安区,西安市高新区sotyre博士路站,","Longitude":108.869519,"Latitude":34.172172,"Address":"西安市高新区sotyre博士路站,","AddressText":"陕西省西安市长安区"},"stock":{"Sid":"161610100018","Pid":391,"Pcode":"23","CanSale":true,"CanLocation":true,"Longitude":108.899683010032,"Latitude":34.2230999484468,"LocationCode":"610000","StockCount":15,"QuotasStockCount":15,"LocationDistance":6312.99964602576,"HasSelfDelivery":true,"HasOtherDelivery":false,"HasCityDelivery":false,"IsVirtual":false,"IsPlatform":false},"customer":{"SMNo":null,"Sid":"161610100018","Name":"13523472132","TelPhone":"13523472132","Points":0,"Level":1,"State":2,"Amount":0},"priceRule":[{"Quant":1,"Price":1499}],"limit":{"Sid":"161610100018","Pid":391,"UserOrderCount":0,"LimitCount":6,"LimitTimeCycle":1440,"LimitOrderCount":1,"IsPlatform":false},"network":{"Sid":"161610100018","SName":"茅台云商陕西省西安市高新区服务网点","Did":"610100029","DName":"西安德润酒业销售有限公司","SHBegin":"09:00:00","SHEnd":"17:00:00","Address":"西安市高新区锦业路尚品美地城1号楼20101商铺","LinkMan":"马女士","LinkTel":"029-81107816  13022929292","InvoiceCost":0,"State":1,"HasPlainInvoice":1,"HasVATInvoice":0,"Description":"1、支持到店自提\r\n2、自提工作时间为每周一至周六，9:00至17:00点。\r\n3、遇节假日，请提前致电，确认时间后，方便您的提货","InvoiceCompany":"西安德润酒业销售有限公司","Coordinate":{"ProvCode":"610000","CityCode":"610100","AreaCode":"610101","Longitude":108.906303405762,"Latitude":34.2287788391113},"NetworkType":0,"WorkingDay":"[{\"EnDay\":\"Monday\",\"CnDay\":\"星期一\"},{\"EnDay\":\"Tuesday\",\"CnDay\":\"星期二\"},{\"EnDay\":\"Wednesday\",\"CnDay\":\"星期三\"},{\"EnDay\":\"Thursday\",\"CnDay\":\"星期四\"},{\"EnDay\":\"Friday\",\"CnDay\":\"星期五\"},{\"EnDay\":\"Saturday\",\"CnDay\":\"星期六\"}]","ProvCode":"610000","CityCode":"610100","AreaCode":"610101","IsPlatform":false}}}
-[2018-03-29T10:00:15.452] [INFO] things - [ '雁塔区' ]
-[2018-03-29T10:00:15.452] [INFO] things - 推送网点信息
-[2018-03-29T10:00:15.452] [INFO] things - NAME: 西安市高新区锦业路尚品美地城1号楼20101商铺
-[2018-03-29T10:00:15.452] [INFO] things - SID: 161610100018
-[2018-03-29T10:00:15.453] [INFO] things - total: 15
-[2018-03-29T10:00:15.453] [INFO] things - limit: 6
-[2018-03-29T10:00:21.480] [INFO] things - {"state":true,"code":0,"data":{"Reservation":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":true,"Certificate":{"ID":"2657604","UID":2257029,"PID":"391","Status":3,"Address":{"ID":1947927,"IsDefault":false,"IsPushAddreess":true,"Name":"姜利娜","TelPhone":"13523472132","Zipcode":"000000","ProvCode":"610000","CityCode":"610100","AreaCode":"610116","Remark":"","IsVerification":false,"AddressDetails":"陕西省西安市长安区,西安市高新区sotyre博士路站,","Longitude":108.869519,"Latitude":34.172172,"Address":"西安市高新区sotyre博士路站,","AddressText":"陕西省西安市长安区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-03 00:00:00"},"EnterTimeSlot":{"Start":"2018-03-29 00:00:00","End":"2018-03-29 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-03-29 10:00:00","End":"2018-03-29 16:00:00","InTime":true}},"address":{"ID":1947927,"IsDefault":false,"IsPushAddreess":true,"Name":"姜利娜","TelPhone":"13523472132","Zipcode":"000000","ProvCode":"610000","CityCode":"610100","AreaCode":"610116","Remark":"","IsVerification":false,"AddressDetails":"陕西省西安市长安区,西安市高新区sotyre博士路站,","Longitude":108.869519,"Latitude":34.172172,"Address":"西安市高新区sotyre博士路站,","AddressText":"陕西省西安市长安区"},"stock":{"Sid":"161610100018","Pid":391,"Pcode":"23","CanSale":true,"CanLocation":true,"Longitude":108.899683010032,"Latitude":34.2230999484468,"LocationCode":"610000","StockCount":15,"QuotasStockCount":15,"LocationDistance":6312.99964602576,"HasSelfDelivery":true,"HasOtherDelivery":false,"HasCityDelivery":false,"IsVirtual":false,"IsPlatform":false},"customer":{"SMNo":null,"Sid":"161610100018","Name":"13523472132","TelPhone":"13523472132","Points":0,"Level":1,"State":2,"Amount":0},"priceRule":[{"Quant":1,"Price":1499}],"limit":{"Sid":"161610100018","Pid":391,"UserOrderCount":0,"LimitCount":6,"LimitTimeCycle":1440,"LimitOrderCount":1,"IsPlatform":false},"network":{"Sid":"161610100018","SName":"茅台云商陕西省西安市高新区服务网点","Did":"610100029","DName":"西安德润酒业销售有限公司","SHBegin":"09:00:00","SHEnd":"17:00:00","Address":"西安市高新区锦业路尚品美地城1号楼20101商铺","LinkMan":"马女士","LinkTel":"029-81107816  13022929292","InvoiceCost":0,"State":1,"HasPlainInvoice":1,"HasVATInvoice":0,"Description":"1、支持到店自提\r\n2、自提工作时间为每周一至周六，9:00至17:00点。\r\n3、遇节假日，请提前致电，确认时间后，方便您的提货","InvoiceCompany":"西安德润酒业销售有限公司","Coordinate":{"ProvCode":"610000","CityCode":"610100","AreaCode":"610101","Longitude":108.906303405762,"Latitude":34.2287788391113},"NetworkType":0,"WorkingDay":"[{\"EnDay\":\"Monday\",\"CnDay\":\"星期一\"},{\"EnDay\":\"Tuesday\",\"CnDay\":\"星期二\"},{\"EnDay\":\"Wednesday\",\"CnDay\":\"星期三\"},{\"EnDay\":\"Thursday\",\"CnDay\":\"星期四\"},{\"EnDay\":\"Friday\",\"CnDay\":\"星期五\"},{\"EnDay\":\"Saturday\",\"CnDay\":\"星期六\"}]","ProvCode":"610000","CityCode":"610100","AreaCode":"610101","IsPlatform":false}}}
-[2018-03-29T10:00:21.481] [INFO] things - [ '雁塔区' ]
-[2018-03-29T10:00:21.481] [INFO] things - 推送网点信息
-[2018-03-29T10:00:21.481] [INFO] things - NAME: 西安市高新区锦业路尚品美地城1号楼20101商铺
-[2018-03-29T10:00:21.481] [INFO] things - SID: 161610100018
-[2018-03-29T10:00:21.482] [INFO] things - total: 15
-[2018-03-29T10:00:21.482] [INFO] things - limit: 6
-[2018-03-29T10:00:25.265] [INFO] things - {"state":true,"code":0,"data":{"Reservation":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":true,"Certificate":{"ID":"2657604","UID":2257029,"PID":"391","Status":3,"Address":{"ID":1947927,"IsDefault":false,"IsPushAddreess":true,"Name":"姜利娜","TelPhone":"13523472132","Zipcode":"000000","ProvCode":"610000","CityCode":"610100","AreaCode":"610116","Remark":"","IsVerification":false,"AddressDetails":"陕西省西安市长安区,西安市高新区sotyre博士路站,","Longitude":108.869519,"Latitude":34.172172,"Address":"西安市高新区sotyre博士路站,","AddressText":"陕西省西安市长安区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-03 00:00:00"},"EnterTimeSlot":{"Start":"2018-03-29 00:00:00","End":"2018-03-29 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-03-29 10:00:00","End":"2018-03-29 16:00:00","InTime":true}},"address":{"ID":1947927,"IsDefault":false,"IsPushAddreess":true,"Name":"姜利娜","TelPhone":"13523472132","Zipcode":"000000","ProvCode":"610000","CityCode":"610100","AreaCode":"610116","Remark":"","IsVerification":false,"AddressDetails":"陕西省西安市长安区,西安市高新区sotyre博士路站,","Longitude":108.869519,"Latitude":34.172172,"Address":"西安市高新区sotyre博士路站,","AddressText":"陕西省西安市长安区"},"stock":{"Sid":"161610100018","Pid":391,"Pcode":"23","CanSale":true,"CanLocation":true,"Longitude":108.899683010032,"Latitude":34.2230999484468,"LocationCode":"610000","StockCount":15,"QuotasStockCount":15,"LocationDistance":6312.99964602576,"HasSelfDelivery":true,"HasOtherDelivery":false,"HasCityDelivery":false,"IsVirtual":false,"IsPlatform":false},"customer":{"SMNo":null,"Sid":"161610100018","Name":"13523472132","TelPhone":"13523472132","Points":0,"Level":1,"State":2,"Amount":0},"priceRule":[{"Quant":1,"Price":1499}],"limit":{"Sid":"161610100018","Pid":391,"UserOrderCount":0,"LimitCount":6,"LimitTimeCycle":1440,"LimitOrderCount":1,"IsPlatform":false},"network":{"Sid":"161610100018","SName":"茅台云商陕西省西安市高新区服务网点","Did":"610100029","DName":"西安德润酒业销售有限公司","SHBegin":"09:00:00","SHEnd":"17:00:00","Address":"西安市高新区锦业路尚品美地城1号楼20101商铺","LinkMan":"马女士","LinkTel":"029-81107816  13022929292","InvoiceCost":0,"State":1,"HasPlainInvoice":1,"HasVATInvoice":0,"Description":"1、支持到店自提\r\n2、自提工作时间为每周一至周六，9:00至17:00点。\r\n3、遇节假日，请提前致电，确认时间后，方便您的提货","InvoiceCompany":"西安德润酒业销售有限公司","Coordinate":{"ProvCode":"610000","CityCode":"610100","AreaCode":"610101","Longitude":108.906303405762,"Latitude":34.2287788391113},"NetworkType":0,"WorkingDay":"[{\"EnDay\":\"Monday\",\"CnDay\":\"星期一\"},{\"EnDay\":\"Tuesday\",\"CnDay\":\"星期二\"},{\"EnDay\":\"Wednesday\",\"CnDay\":\"星期三\"},{\"EnDay\":\"Thursday\",\"CnDay\":\"星期四\"},{\"EnDay\":\"Friday\",\"CnDay\":\"星期五\"},{\"EnDay\":\"Saturday\",\"CnDay\":\"星期六\"}]","ProvCode":"610000","CityCode":"610100","AreaCode":"610101","IsPlatform":false}}}
-[2018-03-29T10:00:25.266] [INFO] things - [ '雁塔区' ]
-[2018-03-29T10:00:25.266] [INFO] things - 推送网点信息
-[2018-03-29T10:00:25.266] [INFO] things - NAME: 西安市高新区锦业路尚品美地城1号楼20101商铺
-[2018-03-29T10:00:25.266] [INFO] things - SID: 161610100018
-[2018-03-29T10:00:25.266] [INFO] things - total: 15
-[2018-03-29T10:00:25.267] [INFO] things - limit: 6
-[2018-03-29T10:00:30.353] [INFO] things - {"state":true,"code":0,"data":{"Reservation":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":true,"Certificate":{"ID":"2657604","UID":2257029,"PID":"391","Status":3,"Address":{"ID":1947927,"IsDefault":false,"IsPushAddreess":true,"Name":"姜利娜","TelPhone":"13523472132","Zipcode":"000000","ProvCode":"610000","CityCode":"610100","AreaCode":"610116","Remark":"","IsVerification":false,"AddressDetails":"陕西省西安市长安区,西安市高新区sotyre博士路站,","Longitude":108.869519,"Latitude":34.172172,"Address":"西安市高新区sotyre博士路站,","AddressText":"陕西省西安市长安区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-03 00:00:00"},"EnterTimeSlot":{"Start":"2018-03-29 00:00:00","End":"2018-03-29 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-03-29 10:00:00","End":"2018-03-29 16:00:00","InTime":true}},"address":{"ID":1947927,"IsDefault":false,"IsPushAddreess":true,"Name":"姜利娜","TelPhone":"13523472132","Zipcode":"000000","ProvCode":"610000","CityCode":"610100","AreaCode":"610116","Remark":"","IsVerification":false,"AddressDetails":"陕西省西安市长安区,西安市高新区sotyre博士路站,","Longitude":108.869519,"Latitude":34.172172,"Address":"西安市高新区sotyre博士路站,","AddressText":"陕西省西安市长安区"},"stock":{"Sid":"161610100018","Pid":391,"Pcode":"23","CanSale":true,"CanLocation":true,"Longitude":108.899683010032,"Latitude":34.2230999484468,"LocationCode":"610000","StockCount":15,"QuotasStockCount":15,"LocationDistance":6312.99964602576,"HasSelfDelivery":true,"HasOtherDelivery":false,"HasCityDelivery":false,"IsVirtual":false,"IsPlatform":false},"customer":{"SMNo":null,"Sid":"161610100018","Name":"13523472132","TelPhone":"13523472132","Points":0,"Level":1,"State":2,"Amount":0},"priceRule":[{"Quant":1,"Price":1499}],"limit":{"Sid":"161610100018","Pid":391,"UserOrderCount":0,"LimitCount":6,"LimitTimeCycle":1440,"LimitOrderCount":1,"IsPlatform":false},"network":{"Sid":"161610100018","SName":"茅台云商陕西省西安市高新区服务网点","Did":"610100029","DName":"西安德润酒业销售有限公司","SHBegin":"09:00:00","SHEnd":"17:00:00","Address":"西安市高新区锦业路尚品美地城1号楼20101商铺","LinkMan":"马女士","LinkTel":"029-81107816  13022929292","InvoiceCost":0,"State":1,"HasPlainInvoice":1,"HasVATInvoice":0,"Description":"1、支持到店自提\r\n2、自提工作时间为每周一至周六，9:00至17:00点。\r\n3、遇节假日，请提前致电，确认时间后，方便您的提货","InvoiceCompany":"西安德润酒业销售有限公司","Coordinate":{"ProvCode":"610000","CityCode":"610100","AreaCode":"610101","Longitude":108.906303405762,"Latitude":34.2287788391113},"NetworkType":0,"WorkingDay":"[{\"EnDay\":\"Monday\",\"CnDay\":\"星期一\"},{\"EnDay\":\"Tuesday\",\"CnDay\":\"星期二\"},{\"EnDay\":\"Wednesday\",\"CnDay\":\"星期三\"},{\"EnDay\":\"Thursday\",\"CnDay\":\"星期四\"},{\"EnDay\":\"Friday\",\"CnDay\":\"星期五\"},{\"EnDay\":\"Saturday\",\"CnDay\":\"星期六\"}]","ProvCode":"610000","CityCode":"610100","AreaCode":"610101","IsPlatform":false}}}
-[2018-03-29T10:00:30.353] [INFO] things - [ '雁塔区' ]
-[2018-03-29T10:00:30.354] [INFO] things - 推送网点信息
-[2018-03-29T10:00:30.354] [INFO] things - NAME: 西安市高新区锦业路尚品美地城1号楼20101商铺
-[2018-03-29T10:00:30.354] [INFO] things - SID: 161610100018
-[2018-03-29T10:00:30.354] [INFO] things - total: 15
-[2018-03-29T10:00:30.354] [INFO] things - limit: 6
-[2018-03-29T10:00:34.179] [INFO] things - {"state":true,"code":0,"data":{"Reservation":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":true,"Certificate":{"ID":"2657604","UID":2257029,"PID":"391","Status":3,"Address":{"ID":1947927,"IsDefault":false,"IsPushAddreess":true,"Name":"姜利娜","TelPhone":"13523472132","Zipcode":"000000","ProvCode":"610000","CityCode":"610100","AreaCode":"610116","Remark":"","IsVerification":false,"AddressDetails":"陕西省西安市长安区,西安市高新区sotyre博士路站,","Longitude":108.869519,"Latitude":34.172172,"Address":"西安市高新区sotyre博士路站,","AddressText":"陕西省西安市长安区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-03 00:00:00"},"EnterTimeSlot":{"Start":"2018-03-29 00:00:00","End":"2018-03-29 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-03-29 10:00:00","End":"2018-03-29 16:00:00","InTime":true}},"address":{"ID":1947927,"IsDefault":false,"IsPushAddreess":true,"Name":"姜利娜","TelPhone":"13523472132","Zipcode":"000000","ProvCode":"610000","CityCode":"610100","AreaCode":"610116","Remark":"","IsVerification":false,"AddressDetails":"陕西省西安市长安区,西安市高新区sotyre博士路站,","Longitude":108.869519,"Latitude":34.172172,"Address":"西安市高新区sotyre博士路站,","AddressText":"陕西省西安市长安区"},"stock":{"Sid":"161610100018","Pid":391,"Pcode":"23","CanSale":true,"CanLocation":true,"Longitude":108.899683010032,"Latitude":34.2230999484468,"LocationCode":"610000","StockCount":15,"QuotasStockCount":15,"LocationDistance":6312.99964602576,"HasSelfDelivery":true,"HasOtherDelivery":false,"HasCityDelivery":false,"IsVirtual":false,"IsPlatform":false},"customer":{"SMNo":null,"Sid":"161610100018","Name":"13523472132","TelPhone":"13523472132","Points":0,"Level":1,"State":2,"Amount":0},"priceRule":[{"Quant":1,"Price":1499}],"limit":{"Sid":"161610100018","Pid":391,"UserOrderCount":0,"LimitCount":6,"LimitTimeCycle":1440,"LimitOrderCount":1,"IsPlatform":false},"network":{"Sid":"161610100018","SName":"茅台云商陕西省西安市高新区服务网点","Did":"610100029","DName":"西安德润酒业销售有限公司","SHBegin":"09:00:00","SHEnd":"17:00:00","Address":"西安市高新区锦业路尚品美地城1号楼20101商铺","LinkMan":"马女士","LinkTel":"029-81107816  13022929292","InvoiceCost":0,"State":1,"HasPlainInvoice":1,"HasVATInvoice":0,"Description":"1、支持到店自提\r\n2、自提工作时间为每周一至周六，9:00至17:00点。\r\n3、遇节假日，请提前致电，确认时间后，方便您的提货","InvoiceCompany":"西安德润酒业销售有限公司","Coordinate":{"ProvCode":"610000","CityCode":"610100","AreaCode":"610101","Longitude":108.906303405762,"Latitude":34.2287788391113},"NetworkType":0,"WorkingDay":"[{\"EnDay\":\"Monday\",\"CnDay\":\"星期一\"},{\"EnDay\":\"Tuesday\",\"CnDay\":\"星期二\"},{\"EnDay\":\"Wednesday\",\"CnDay\":\"星期三\"},{\"EnDay\":\"Thursday\",\"CnDay\":\"星期四\"},{\"EnDay\":\"Friday\",\"CnDay\":\"星期五\"},{\"EnDay\":\"Saturday\",\"CnDay\":\"星期六\"}]","ProvCode":"610000","CityCode":"610100","AreaCode":"610101","IsPlatform":false}}}
-[2018-03-29T10:00:34.179] [INFO] things - [ '雁塔区' ]
-[2018-03-29T10:00:34.180] [INFO] things - 推送网点信息
-[2018-03-29T10:00:34.180] [INFO] things - NAME: 西安市高新区锦业路尚品美地城1号楼20101商铺
-[2018-03-29T10:00:34.180] [INFO] things - SID: 161610100018
-[2018-03-29T10:00:34.180] [INFO] things - total: 15
-[2018-03-29T10:00:34.180] [INFO] things - limit: 6
-[2018-03-29T10:00:38.233] [INFO] things - {"state":true,"code":0,"data":{"Reservation":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":true,"Certificate":{"ID":"2657604","UID":2257029,"PID":"391","Status":3,"Address":{"ID":1947927,"IsDefault":false,"IsPushAddreess":true,"Name":"姜利娜","TelPhone":"13523472132","Zipcode":"000000","ProvCode":"610000","CityCode":"610100","AreaCode":"610116","Remark":"","IsVerification":false,"AddressDetails":"陕西省西安市长安区,西安市高新区sotyre博士路站,","Longitude":108.869519,"Latitude":34.172172,"Address":"西安市高新区sotyre博士路站,","AddressText":"陕西省西安市长安区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-03 00:00:00"},"EnterTimeSlot":{"Start":"2018-03-29 00:00:00","End":"2018-03-29 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-03-29 10:00:00","End":"2018-03-29 16:00:00","InTime":true}},"address":{"ID":1947927,"IsDefault":false,"IsPushAddreess":true,"Name":"姜利娜","TelPhone":"13523472132","Zipcode":"000000","ProvCode":"610000","CityCode":"610100","AreaCode":"610116","Remark":"","IsVerification":false,"AddressDetails":"陕西省西安市长安区,西安市高新区sotyre博士路站,","Longitude":108.869519,"Latitude":34.172172,"Address":"西安市高新区sotyre博士路站,","AddressText":"陕西省西安市长安区"},"stock":{"Sid":"161610100018","Pid":391,"Pcode":"23","CanSale":true,"CanLocation":true,"Longitude":108.899683010032,"Latitude":34.2230999484468,"LocationCode":"610000","StockCount":15,"QuotasStockCount":15,"LocationDistance":6312.99964602576,"HasSelfDelivery":true,"HasOtherDelivery":false,"HasCityDelivery":false,"IsVirtual":false,"IsPlatform":false},"customer":{"SMNo":null,"Sid":"161610100018","Name":"13523472132","TelPhone":"13523472132","Points":0,"Level":1,"State":2,"Amount":0},"priceRule":[{"Quant":1,"Price":1499}],"limit":{"Sid":"161610100018","Pid":391,"UserOrderCount":0,"LimitCount":6,"LimitTimeCycle":1440,"LimitOrderCount":1,"IsPlatform":false},"network":{"Sid":"161610100018","SName":"茅台云商陕西省西安市高新区服务网点","Did":"610100029","DName":"西安德润酒业销售有限公司","SHBegin":"09:00:00","SHEnd":"17:00:00","Address":"西安市高新区锦业路尚品美地城1号楼20101商铺","LinkMan":"马女士","LinkTel":"029-81107816  13022929292","InvoiceCost":0,"State":1,"HasPlainInvoice":1,"HasVATInvoice":0,"Description":"1、支持到店自提\r\n2、自提工作时间为每周一至周六，9:00至17:00点。\r\n3、遇节假日，请提前致电，确认时间后，方便您的提货","InvoiceCompany":"西安德润酒业销售有限公司","Coordinate":{"ProvCode":"610000","CityCode":"610100","AreaCode":"610101","Longitude":108.906303405762,"Latitude":34.2287788391113},"NetworkType":0,"WorkingDay":"[{\"EnDay\":\"Monday\",\"CnDay\":\"星期一\"},{\"EnDay\":\"Tuesday\",\"CnDay\":\"星期二\"},{\"EnDay\":\"Wednesday\",\"CnDay\":\"星期三\"},{\"EnDay\":\"Thursday\",\"CnDay\":\"星期四\"},{\"EnDay\":\"Friday\",\"CnDay\":\"星期五\"},{\"EnDay\":\"Saturday\",\"CnDay\":\"星期六\"}]","ProvCode":"610000","CityCode":"610100","AreaCode":"610101","IsPlatform":false}}}
-[2018-03-29T10:00:38.234] [INFO] things - [ '雁塔区' ]
-[2018-03-29T10:00:38.234] [INFO] things - 推送网点信息
-[2018-03-29T10:00:38.234] [INFO] things - NAME: 西安市高新区锦业路尚品美地城1号楼20101商铺
-[2018-03-29T10:00:38.234] [INFO] things - SID: 161610100018
-[2018-03-29T10:00:38.234] [INFO] things - total: 15
-[2018-03-29T10:00:38.235] [INFO] things - limit: 6
-[2018-03-29T10:00:46.155] [INFO] things - {"state":true,"code":0,"data":{"Reservation":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":true,"Certificate":{"ID":"2657604","UID":2257029,"PID":"391","Status":3,"Address":{"ID":1947927,"IsDefault":false,"IsPushAddreess":true,"Name":"姜利娜","TelPhone":"13523472132","Zipcode":"000000","ProvCode":"610000","CityCode":"610100","AreaCode":"610116","Remark":"","IsVerification":false,"AddressDetails":"陕西省西安市长安区,西安市高新区sotyre博士路站,","Longitude":108.869519,"Latitude":34.172172,"Address":"西安市高新区sotyre博士路站,","AddressText":"陕西省西安市长安区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-03 00:00:00"},"EnterTimeSlot":{"Start":"2018-03-29 00:00:00","End":"2018-03-29 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-03-29 10:00:00","End":"2018-03-29 16:00:00","InTime":true}},"address":{"ID":1947927,"IsDefault":false,"IsPushAddreess":true,"Name":"姜利娜","TelPhone":"13523472132","Zipcode":"000000","ProvCode":"610000","CityCode":"610100","AreaCode":"610116","Remark":"","IsVerification":false,"AddressDetails":"陕西省西安市长安区,西安市高新区sotyre博士路站,","Longitude":108.869519,"Latitude":34.172172,"Address":"西安市高新区sotyre博士路站,","AddressText":"陕西省西安市长安区"},"stock":{"Sid":"161610100018","Pid":391,"Pcode":"23","CanSale":true,"CanLocation":true,"Longitude":108.899683010032,"Latitude":34.2230999484468,"LocationCode":"610000","StockCount":15,"QuotasStockCount":15,"LocationDistance":6312.99964602576,"HasSelfDelivery":true,"HasOtherDelivery":false,"HasCityDelivery":false,"IsVirtual":false,"IsPlatform":false},"customer":{"SMNo":null,"Sid":"161610100018","Name":"13523472132","TelPhone":"13523472132","Points":0,"Level":1,"State":2,"Amount":0},"priceRule":[{"Quant":1,"Price":1499}],"limit":{"Sid":"161610100018","Pid":391,"UserOrderCount":0,"LimitCount":6,"LimitTimeCycle":1440,"LimitOrderCount":1,"IsPlatform":false},"network":{"Sid":"161610100018","SName":"茅台云商陕西省西安市高新区服务网点","Did":"610100029","DName":"西安德润酒业销售有限公司","SHBegin":"09:00:00","SHEnd":"17:00:00","Address":"西安市高新区锦业路尚品美地城1号楼20101商铺","LinkMan":"马女士","LinkTel":"029-81107816  13022929292","InvoiceCost":0,"State":1,"HasPlainInvoice":1,"HasVATInvoice":0,"Description":"1、支持到店自提\r\n2、自提工作时间为每周一至周六，9:00至17:00点。\r\n3、遇节假日，请提前致电，确认时间后，方便您的提货","InvoiceCompany":"西安德润酒业销售有限公司","Coordinate":{"ProvCode":"610000","CityCode":"610100","AreaCode":"610101","Longitude":108.906303405762,"Latitude":34.2287788391113},"NetworkType":0,"WorkingDay":"[{\"EnDay\":\"Monday\",\"CnDay\":\"星期一\"},{\"EnDay\":\"Tuesday\",\"CnDay\":\"星期二\"},{\"EnDay\":\"Wednesday\",\"CnDay\":\"星期三\"},{\"EnDay\":\"Thursday\",\"CnDay\":\"星期四\"},{\"EnDay\":\"Friday\",\"CnDay\":\"星期五\"},{\"EnDay\":\"Saturday\",\"CnDay\":\"星期六\"}]","ProvCode":"610000","CityCode":"610100","AreaCode":"610101","IsPlatform":false}}}
-[2018-03-29T10:00:46.156] [INFO] things - [ '雁塔区' ]
-[2018-03-29T10:00:46.156] [INFO] things - 推送网点信息
-[2018-03-29T10:00:46.156] [INFO] things - NAME: 西安市高新区锦业路尚品美地城1号楼20101商铺
-[2018-03-29T10:00:46.157] [INFO] things - SID: 161610100018
-[2018-03-29T10:00:46.157] [INFO] things - total: 15
-[2018-03-29T10:00:46.157] [INFO] things - limit: 6
-[2018-03-29T10:00:49.736] [INFO] things - {"state":true,"code":0,"data":{"Reservation":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":true,"Certificate":{"ID":"2657604","UID":2257029,"PID":"391","Status":3,"Address":{"ID":1947927,"IsDefault":false,"IsPushAddreess":true,"Name":"姜利娜","TelPhone":"13523472132","Zipcode":"000000","ProvCode":"610000","CityCode":"610100","AreaCode":"610116","Remark":"","IsVerification":false,"AddressDetails":"陕西省西安市长安区,西安市高新区sotyre博士路站,","Longitude":108.869519,"Latitude":34.172172,"Address":"西安市高新区sotyre博士路站,","AddressText":"陕西省西安市长安区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-03 00:00:00"},"EnterTimeSlot":{"Start":"2018-03-29 00:00:00","End":"2018-03-29 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-03-29 10:00:00","End":"2018-03-29 16:00:00","InTime":true}},"address":{"ID":1947927,"IsDefault":false,"IsPushAddreess":true,"Name":"姜利娜","TelPhone":"13523472132","Zipcode":"000000","ProvCode":"610000","CityCode":"610100","AreaCode":"610116","Remark":"","IsVerification":false,"AddressDetails":"陕西省西安市长安区,西安市高新区sotyre博士路站,","Longitude":108.869519,"Latitude":34.172172,"Address":"西安市高新区sotyre博士路站,","AddressText":"陕西省西安市长安区"},"stock":{"Sid":"161610100018","Pid":391,"Pcode":"23","CanSale":true,"CanLocation":true,"Longitude":108.899683010032,"Latitude":34.2230999484468,"LocationCode":"610000","StockCount":15,"QuotasStockCount":15,"LocationDistance":6312.99964602576,"HasSelfDelivery":true,"HasOtherDelivery":false,"HasCityDelivery":false,"IsVirtual":false,"IsPlatform":false},"customer":{"SMNo":null,"Sid":"161610100018","Name":"13523472132","TelPhone":"13523472132","Points":0,"Level":1,"State":2,"Amount":0},"priceRule":[{"Quant":1,"Price":1499}],"limit":{"Sid":"161610100018","Pid":391,"UserOrderCount":0,"LimitCount":6,"LimitTimeCycle":1440,"LimitOrderCount":1,"IsPlatform":false},"network":{"Sid":"161610100018","SName":"茅台云商陕西省西安市高新区服务网点","Did":"610100029","DName":"西安德润酒业销售有限公司","SHBegin":"09:00:00","SHEnd":"17:00:00","Address":"西安市高新区锦业路尚品美地城1号楼20101商铺","LinkMan":"马女士","LinkTel":"029-81107816  13022929292","InvoiceCost":0,"State":1,"HasPlainInvoice":1,"HasVATInvoice":0,"Description":"1、支持到店自提\r\n2、自提工作时间为每周一至周六，9:00至17:00点。\r\n3、遇节假日，请提前致电，确认时间后，方便您的提货","InvoiceCompany":"西安德润酒业销售有限公司","Coordinate":{"ProvCode":"610000","CityCode":"610100","AreaCode":"610101","Longitude":108.906303405762,"Latitude":34.2287788391113},"NetworkType":0,"WorkingDay":"[{\"EnDay\":\"Monday\",\"CnDay\":\"星期一\"},{\"EnDay\":\"Tuesday\",\"CnDay\":\"星期二\"},{\"EnDay\":\"Wednesday\",\"CnDay\":\"星期三\"},{\"EnDay\":\"Thursday\",\"CnDay\":\"星期四\"},{\"EnDay\":\"Friday\",\"CnDay\":\"星期五\"},{\"EnDay\":\"Saturday\",\"CnDay\":\"星期六\"}]","ProvCode":"610000","CityCode":"610100","AreaCode":"610101","IsPlatform":false}}}
-[2018-03-29T10:00:49.737] [INFO] things - [ '雁塔区' ]
-[2018-03-29T10:00:49.737] [INFO] things - 推送网点信息
-[2018-03-29T10:00:49.738] [INFO] things - NAME: 西安市高新区锦业路尚品美地城1号楼20101商铺
-[2018-03-29T10:00:49.738] [INFO] things - SID: 161610100018
-[2018-03-29T10:00:49.739] [INFO] things - total: 15
-[2018-03-29T10:00:49.739] [INFO] things - limit: 6
-[2018-03-29T10:00:53.983] [INFO] things - {"state":true,"code":0,"data":{"Reservation":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":true,"Certificate":{"ID":"2657604","UID":2257029,"PID":"391","Status":3,"Address":{"ID":1947927,"IsDefault":false,"IsPushAddreess":true,"Name":"姜利娜","TelPhone":"13523472132","Zipcode":"000000","ProvCode":"610000","CityCode":"610100","AreaCode":"610116","Remark":"","IsVerification":false,"AddressDetails":"陕西省西安市长安区,西安市高新区sotyre博士路站,","Longitude":108.869519,"Latitude":34.172172,"Address":"西安市高新区sotyre博士路站,","AddressText":"陕西省西安市长安区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-03 00:00:00"},"EnterTimeSlot":{"Start":"2018-03-29 00:00:00","End":"2018-03-29 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-03-29 10:00:00","End":"2018-03-29 16:00:00","InTime":true}},"address":{"ID":1947927,"IsDefault":false,"IsPushAddreess":true,"Name":"姜利娜","TelPhone":"13523472132","Zipcode":"000000","ProvCode":"610000","CityCode":"610100","AreaCode":"610116","Remark":"","IsVerification":false,"AddressDetails":"陕西省西安市长安区,西安市高新区sotyre博士路站,","Longitude":108.869519,"Latitude":34.172172,"Address":"西安市高新区sotyre博士路站,","AddressText":"陕西省西安市长安区"},"stock":{"Sid":"161610100018","Pid":391,"Pcode":"23","CanSale":true,"CanLocation":true,"Longitude":108.899683010032,"Latitude":34.2230999484468,"LocationCode":"610000","StockCount":15,"QuotasStockCount":15,"LocationDistance":6312.99964602576,"HasSelfDelivery":true,"HasOtherDelivery":false,"HasCityDelivery":false,"IsVirtual":false,"IsPlatform":false},"customer":{"SMNo":null,"Sid":"161610100018","Name":"13523472132","TelPhone":"13523472132","Points":0,"Level":1,"State":2,"Amount":0},"priceRule":[{"Quant":1,"Price":1499}],"limit":{"Sid":"161610100018","Pid":391,"UserOrderCount":0,"LimitCount":6,"LimitTimeCycle":1440,"LimitOrderCount":1,"IsPlatform":false},"network":{"Sid":"161610100018","SName":"茅台云商陕西省西安市高新区服务网点","Did":"610100029","DName":"西安德润酒业销售有限公司","SHBegin":"09:00:00","SHEnd":"17:00:00","Address":"西安市高新区锦业路尚品美地城1号楼20101商铺","LinkMan":"马女士","LinkTel":"029-81107816  13022929292","InvoiceCost":0,"State":1,"HasPlainInvoice":1,"HasVATInvoice":0,"Description":"1、支持到店自提\r\n2、自提工作时间为每周一至周六，9:00至17:00点。\r\n3、遇节假日，请提前致电，确认时间后，方便您的提货","InvoiceCompany":"西安德润酒业销售有限公司","Coordinate":{"ProvCode":"610000","CityCode":"610100","AreaCode":"610101","Longitude":108.906303405762,"Latitude":34.2287788391113},"NetworkType":0,"WorkingDay":"[{\"EnDay\":\"Monday\",\"CnDay\":\"星期一\"},{\"EnDay\":\"Tuesday\",\"CnDay\":\"星期二\"},{\"EnDay\":\"Wednesday\",\"CnDay\":\"星期三\"},{\"EnDay\":\"Thursday\",\"CnDay\":\"星期四\"},{\"EnDay\":\"Friday\",\"CnDay\":\"星期五\"},{\"EnDay\":\"Saturday\",\"CnDay\":\"星期六\"}]","ProvCode":"610000","CityCode":"610100","AreaCode":"610101","IsPlatform":false}}}
-[2018-03-29T10:00:53.984] [INFO] things - [ '雁塔区' ]
-[2018-03-29T10:00:53.984] [INFO] things - 推送网点信息
-[2018-03-29T10:00:53.984] [INFO] things - NAME: 西安市高新区锦业路尚品美地城1号楼20101商铺
-[2018-03-29T10:00:53.985] [INFO] things - SID: 161610100018
-[2018-03-29T10:00:53.985] [INFO] things - total: 15
-[2018-03-29T10:00:53.985] [INFO] things - limit: 6
-[2018-03-29T10:01:34.263] [INFO] things - 位置错误,60秒后重试 { Error: socket hang up
-    at createHangUpError (_http_client.js:331:15)
-    at TLSSocket.socketOnEnd (_http_client.js:423:23)
+[2018-03-29T16:00:22.422] [INFO] things - start get addressID from mobile: 13153185002
+[2018-03-29T16:00:26.717] [INFO] things - start get addressID from mobile: 13343192376
+[2018-03-29T16:03:52.155] [INFO] things - params [ '/usr/local/bin/node',
+  '/Users/junliang/server/www/maotaiServer/controllers/watch.js' ]
+[2018-03-29T16:03:52.161] [INFO] things - to Buy tels {"phone":"13464686175","pass":"a123456"}|{"phone":"17853697903","pass":"a123456"}|{"phone":"15835086989","pass":"a123456"}|{"phone":"17393232815","pass":"a123456"}|{"phone":"15830750275","pass":"a123456"}|{"phone":"13513642792","pass":"a123456"}|{"phone":"15837437823","pass":"a123456"}|{"phone":"13230672756","pass":"a123456"}|{"phone":"18533703270","pass":"a123456"}|{"phone":"18183062125","pass":"a123456"}|{"phone":"18438063310","pass":"a123456"}|{"phone":"15082907866","pass":"a123456"}|{"phone":"17631880252","pass":"a123456"}
+[2018-03-29T16:03:54.167] [TRACE] things - 当前时间: 16
+[2018-03-29T16:03:54.168] [INFO] things - 抢购时间开始
+[2018-03-29T16:04:38.759] [INFO] things - params [ '/usr/local/bin/node',
+  '/Users/junliang/server/www/maotaiServer/controllers/watch.js' ]
+[2018-03-29T16:04:38.764] [INFO] things - to Buy tels {"phone":"13464686175","pass":"a123456"}|{"phone":"17853697903","pass":"a123456"}|{"phone":"15835086989","pass":"a123456"}|{"phone":"17393232815","pass":"a123456"}|{"phone":"15830750275","pass":"a123456"}|{"phone":"13513642792","pass":"a123456"}|{"phone":"15837437823","pass":"a123456"}|{"phone":"13230672756","pass":"a123456"}|{"phone":"18533703270","pass":"a123456"}|{"phone":"18183062125","pass":"a123456"}|{"phone":"18438063310","pass":"a123456"}|{"phone":"15082907866","pass":"a123456"}|{"phone":"17631880252","pass":"a123456"}
+[2018-03-29T16:04:40.768] [TRACE] things - 当前时间: 16
+[2018-03-29T16:04:40.769] [INFO] things - 抢购时间开始
+[2018-03-29T16:05:41.078] [INFO] things - start get addressID from mobile: 13153185002
+[2018-03-29T16:05:50.944] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { ID: 1893802,
+     IsDefault: true,
+     IsPushAddreess: false,
+     Name: '周曼亚',
+     TelPhone: '13153185000',
+     Zipcode: '620103',
+     ProvCode: '620000',
+     CityCode: '620100',
+     AreaCode: '620103',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '甘肃省兰州市,任家庄1145号',
+     Longitude: 103.770701,
+     Latitude: 36.083598,
+     Address: '任家庄1145号',
+     AddressText: '甘肃省兰州市' } }
+[2018-03-29T16:05:52.074] [INFO] things - start get addressID from mobile: 13343192376
+[2018-03-29T16:05:53.668] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { ID: 1885157,
+     IsDefault: true,
+     IsPushAddreess: false,
+     Name: '邬连中',
+     TelPhone: '13343192370',
+     Zipcode: '620103',
+     ProvCode: '620000',
+     CityCode: '620100',
+     AreaCode: '620103',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '甘肃省兰州市,敦煌路473-497',
+     Longitude: 103.772171,
+     Latitude: 36.082012,
+     Address: '敦煌路473-497',
+     AddressText: '甘肃省兰州市' } }
+[2018-03-29T16:05:54.893] [INFO] things - start get addressID from mobile: 13485665212
+[2018-03-29T16:06:03.228] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { ID: 1676457,
+     IsDefault: true,
+     IsPushAddreess: false,
+     Name: '邬连洪',
+     TelPhone: '13485665210',
+     Zipcode: '620103',
+     ProvCode: '620000',
+     CityCode: '620100',
+     AreaCode: '620103',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '甘肃省兰州市,甘肃省兰州市七里河区任家庄1197号',
+     Longitude: 103.770956,
+     Latitude: 36.084303,
+     Address: '甘肃省兰州市七里河区任家庄1197号',
+     AddressText: '甘肃省兰州市' } }
+[2018-03-29T16:06:06.240] [INFO] things - start get addressID from mobile: 13700077519
+[2018-03-29T16:06:07.546] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { ID: 1892989,
+     IsDefault: true,
+     IsPushAddreess: false,
+     Name: '田锦玉',
+     TelPhone: '13700077510',
+     Zipcode: '620103',
+     ProvCode: '620000',
+     CityCode: '620100',
+     AreaCode: '620103',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '甘肃省兰州市,任家庄17号',
+     Longitude: 103.771827,
+     Latitude: 36.080168,
+     Address: '任家庄17号',
+     AddressText: '甘肃省兰州市' } }
+[2018-03-29T16:06:08.292] [INFO] things - start get addressID from mobile: 15063527328
+[2018-03-29T16:06:09.932] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { ID: 1893768,
+     IsDefault: false,
+     IsPushAddreess: false,
+     Name: '余梦云',
+     TelPhone: '15063527320',
+     Zipcode: '620103',
+     ProvCode: '620000',
+     CityCode: '620100',
+     AreaCode: '620103',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '甘肃省兰州市,甘肃省兰州市七里河区任家庄小区(敦煌路小学西南100米)',
+     Longitude: 103.772561,
+     Latitude: 36.080468,
+     Address: '甘肃省兰州市七里河区任家庄小区(敦煌路小学西南100米)',
+     AddressText: '甘肃省兰州市' } }
+[2018-03-29T16:06:12.109] [INFO] things - start get addressID from mobile: 15022156584
+[2018-03-29T16:06:13.648] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { ID: 1858262,
+     IsDefault: false,
+     IsPushAddreess: false,
+     Name: '江丽',
+     TelPhone: '15022156580',
+     Zipcode: '620103',
+     ProvCode: '620000',
+     CityCode: '620100',
+     AreaCode: '620103',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '甘肃省兰州市,任家庄街413号附近',
+     Longitude: 103.769077,
+     Latitude: 36.081978,
+     Address: '任家庄街413号附近',
+     AddressText: '甘肃省兰州市' } }
+[2018-03-29T16:06:14.401] [INFO] things - start get addressID from mobile: 15075870950
+[2018-03-29T16:06:16.074] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { ID: 1712578,
+     IsDefault: true,
+     IsPushAddreess: false,
+     Name: '龙腾',
+     TelPhone: '150758709501',
+     Zipcode: '620103',
+     ProvCode: '620000',
+     CityCode: '620100',
+     AreaCode: '620103',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '甘肃省兰州市,西站郑家庄，光华街102号',
+     Longitude: 103.766567,
+     Latitude: 36.085497,
+     Address: '西站郑家庄，光华街102号',
+     AddressText: '甘肃省兰州市' } }
+[2018-03-29T16:06:17.638] [INFO] things - start get addressID from mobile: 15206334886
+[2018-03-29T16:06:19.528] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { ID: 1903115,
+     IsDefault: true,
+     IsPushAddreess: false,
+     Name: '刘健',
+     TelPhone: '15206334880',
+     Zipcode: '620103',
+     ProvCode: '620000',
+     CityCode: '620100',
+     AreaCode: '620103',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '甘肃省兰州市,郑家庄121号附近',
+     Longitude: 103.765327,
+     Latitude: 36.083134,
+     Address: '郑家庄121号附近',
+     AddressText: '甘肃省兰州市' } }
+[2018-03-29T16:06:20.590] [INFO] things - start get addressID from mobile: 15303199414
+[2018-03-29T16:06:22.547] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { ID: 1885243,
+     IsDefault: true,
+     IsPushAddreess: false,
+     Name: '徐作香',
+     TelPhone: '15303199410',
+     Zipcode: '620103',
+     ProvCode: '620000',
+     CityCode: '620100',
+     AreaCode: '620103',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '甘肃省兰州市,火星街228-468号',
+     Longitude: 103.768471,
+     Latitude: 36.082895,
+     Address: '火星街228-468号',
+     AddressText: '甘肃省兰州市' } }
+[2018-03-29T16:06:23.304] [INFO] things - start get addressID from mobile: 15354193781
+[2018-03-29T16:06:25.016] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { ID: 1879769,
+     IsDefault: false,
+     IsPushAddreess: false,
+     Name: '文波',
+     TelPhone: '15354193780',
+     Zipcode: '620103',
+     ProvCode: '620000',
+     CityCode: '620100',
+     AreaCode: '620103',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '甘肃省兰州市,火星街南150米',
+     Longitude: 103.76905,
+     Latitude: 36.081025,
+     Address: '火星街南150米',
+     AddressText: '甘肃省兰州市' } }
+[2018-03-29T16:06:28.699] [INFO] things - start get addressID from mobile: 15373204143
+[2018-03-29T16:06:34.243] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { ID: 1885212,
+     IsDefault: false,
+     IsPushAddreess: false,
+     Name: '邬连珍',
+     TelPhone: '15373204140',
+     Zipcode: '620103',
+     ProvCode: '620000',
+     CityCode: '620100',
+     AreaCode: '620103',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '甘肃省兰州市,甘肃省兰州市七里河区火星街明珠家园',
+     Longitude: 103.76446,
+     Latitude: 36.082481,
+     Address: '甘肃省兰州市七里河区火星街明珠家园',
+     AddressText: '甘肃省兰州市' } }
+[2018-03-29T16:06:35.470] [INFO] things - start get addressID from mobile: 15399130078
+[2018-03-29T16:06:38.219] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { ID: 1697988,
+     IsDefault: false,
+     IsPushAddreess: false,
+     Name: '龙翔',
+     TelPhone: '15399130070',
+     Zipcode: '620103',
+     ProvCode: '620000',
+     CityCode: '620100',
+     AreaCode: '620103',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '甘肃省兰州市,敦煌路559～565',
+     Longitude: 103.773042,
+     Latitude: 36.083907,
+     Address: '敦煌路559～565',
+     AddressText: '甘肃省兰州市' } }
+[2018-03-29T16:06:38.944] [INFO] things - start get addressID from mobile: 15515970953
+[2018-03-29T16:06:40.231] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { ID: 1843374,
+     IsDefault: false,
+     IsPushAddreess: false,
+     Name: '葛徳智',
+     TelPhone: '15515970950',
+     Zipcode: '620103',
+     ProvCode: '620000',
+     CityCode: '620100',
+     AreaCode: '620103',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '甘肃省兰州市,七里河区任家庄154-164号',
+     Longitude: 103.771581,
+     Latitude: 36.084014,
+     Address: '七里河区任家庄154-164号',
+     AddressText: '甘肃省兰州市' } }
+[2018-03-29T16:06:40.973] [INFO] things - start get addressID from mobile: 15627944858
+[2018-03-29T16:06:42.310] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { ID: 1894176,
+     IsDefault: false,
+     IsPushAddreess: false,
+     Name: '刘发富',
+     TelPhone: '15627944850',
+     Zipcode: '620103',
+     ProvCode: '620000',
+     CityCode: '620100',
+     AreaCode: '620103',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '甘肃省兰州市,光华街136-226号',
+     Longitude: 103.765535,
+     Latitude: 36.08628,
+     Address: '光华街136-226号',
+     AddressText: '甘肃省兰州市' } }
+[2018-03-29T16:06:47.311] [INFO] things - start get addressID from mobile: 15937230461
+[2018-03-29T16:06:49.013] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { ID: 1845446,
+     IsDefault: true,
+     IsPushAddreess: false,
+     Name: '赵利',
+     TelPhone: '15937230460',
+     Zipcode: '620103',
+     ProvCode: '620000',
+     CityCode: '620100',
+     AreaCode: '620103',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '甘肃省兰州市,七里河敦煌路357号',
+     Longitude: 103.774135,
+     Latitude: 36.0799,
+     Address: '七里河敦煌路357号',
+     AddressText: '甘肃省兰州市' } }
+[2018-03-29T16:06:49.746] [INFO] things - start get addressID from mobile: 15951853170
+[2018-03-29T16:06:53.813] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { ID: 1885124,
+     IsDefault: true,
+     IsPushAddreess: false,
+     Name: '刘发壮',
+     TelPhone: '159518531701',
+     Zipcode: '620103',
+     ProvCode: '620000',
+     CityCode: '620100',
+     AreaCode: '620103',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '甘肃省兰州市,甘肃省兰州市七里河区一建集团2号职工公寓(明珠家园北)',
+     Longitude: 103.764264,
+     Latitude: 36.083125,
+     Address: '甘肃省兰州市七里河区一建集团2号职工公寓(明珠家园北)',
+     AddressText: '甘肃省兰州市' } }
+[2018-03-29T16:06:55.846] [INFO] things - start get addressID from mobile: 17379324087
+[2018-03-29T16:07:05.782] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { ID: 1858864,
+     IsDefault: false,
+     IsPushAddreess: false,
+     Name: '刘发举',
+     TelPhone: '17379324080',
+     Zipcode: '620103',
+     ProvCode: '620000',
+     CityCode: '620100',
+     AreaCode: '620103',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '甘肃省兰州市,甘肃省兰州市七里河区柳家营137-145号',
+     Longitude: 103.77261,
+     Latitude: 36.077863,
+     Address: '甘肃省兰州市七里河区柳家营137-145号',
+     AddressText: '甘肃省兰州市' } }
+[2018-03-29T16:07:51.363] [INFO] things - object
+[2018-03-29T16:07:51.366] [INFO] things - 开始预约: 13153185002
+[2018-03-29T16:08:02.556] [INFO] things - start get addressID from mobile: 13153185002
+[2018-03-29T16:08:06.020] [INFO] things - 定位查询结果 { state: true,
+  code: 10,
+  data: 
+   { IsNeedReservation: true,
+     IsIntercept: false,
+     ProductID: 0,
+     CanUseCredence: false,
+     Certificate: null,
+     EnterTimeSlot: 
+      { Start: '2018-03-29 00:00:00',
+        End: '2018-03-29 23:59:59',
+        InTime: true },
+     BuyTimeSlot: 
+      { Start: '2018-03-30 10:00:00',
+        End: '2018-03-30 16:00:00',
+        InTime: false } } }
+[2018-03-29T16:08:36.196] [INFO] things - { Error: socket hang up
+    at TLSSocket.onHangUp (_tls_wrap.js:1135:19)
+    at Object.onceWrapper (events.js:313:30)
     at emitNone (events.js:111:20)
     at TLSSocket.emit (events.js:208:7)
     at endReadableNT (_stream_readable.js:1055:12)
     at _combinedTickCallback (internal/process/next_tick.js:138:11)
-    at process._tickCallback (internal/process/next_tick.js:180:9) code: 'ECONNRESET' }
-[2018-03-29T10:01:45.140] [INFO] things - {"state":true,"code":0,"data":{"Reservation":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":true,"Certificate":{"ID":"2657604","UID":2257029,"PID":"391","Status":3,"Address":{"ID":1947927,"IsDefault":false,"IsPushAddreess":true,"Name":"姜利娜","TelPhone":"13523472132","Zipcode":"000000","ProvCode":"610000","CityCode":"610100","AreaCode":"610116","Remark":"","IsVerification":false,"AddressDetails":"陕西省西安市长安区,西安市高新区sotyre博士路站,","Longitude":108.869519,"Latitude":34.172172,"Address":"西安市高新区sotyre博士路站,","AddressText":"陕西省西安市长安区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-03 00:00:00"},"EnterTimeSlot":{"Start":"2018-03-29 00:00:00","End":"2018-03-29 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-03-29 10:00:00","End":"2018-03-29 16:00:00","InTime":true}},"address":{"ID":1947927,"IsDefault":false,"IsPushAddreess":true,"Name":"姜利娜","TelPhone":"13523472132","Zipcode":"000000","ProvCode":"610000","CityCode":"610100","AreaCode":"610116","Remark":"","IsVerification":false,"AddressDetails":"陕西省西安市长安区,西安市高新区sotyre博士路站,","Longitude":108.869519,"Latitude":34.172172,"Address":"西安市高新区sotyre博士路站,","AddressText":"陕西省西安市长安区"},"stock":{"Sid":"161610100018","Pid":391,"Pcode":"23","CanSale":true,"CanLocation":true,"Longitude":108.899683010032,"Latitude":34.2230999484468,"LocationCode":"610000","StockCount":15,"QuotasStockCount":15,"LocationDistance":6312.99964602576,"HasSelfDelivery":true,"HasOtherDelivery":false,"HasCityDelivery":false,"IsVirtual":false,"IsPlatform":false},"customer":{"SMNo":null,"Sid":"161610100018","Name":"13523472132","TelPhone":"13523472132","Points":0,"Level":1,"State":2,"Amount":0},"priceRule":[{"Quant":1,"Price":1499}],"limit":{"Sid":"161610100018","Pid":391,"UserOrderCount":0,"LimitCount":6,"LimitTimeCycle":1440,"LimitOrderCount":1,"IsPlatform":false},"network":{"Sid":"161610100018","SName":"茅台云商陕西省西安市高新区服务网点","Did":"610100029","DName":"西安德润酒业销售有限公司","SHBegin":"09:00:00","SHEnd":"17:00:00","Address":"西安市高新区锦业路尚品美地城1号楼20101商铺","LinkMan":"马女士","LinkTel":"029-81107816  13022929292","InvoiceCost":0,"State":1,"HasPlainInvoice":1,"HasVATInvoice":0,"Description":"1、支持到店自提\r\n2、自提工作时间为每周一至周六，9:00至17:00点。\r\n3、遇节假日，请提前致电，确认时间后，方便您的提货","InvoiceCompany":"西安德润酒业销售有限公司","Coordinate":{"ProvCode":"610000","CityCode":"610100","AreaCode":"610101","Longitude":108.906303405762,"Latitude":34.2287788391113},"NetworkType":0,"WorkingDay":"[{\"EnDay\":\"Monday\",\"CnDay\":\"星期一\"},{\"EnDay\":\"Tuesday\",\"CnDay\":\"星期二\"},{\"EnDay\":\"Wednesday\",\"CnDay\":\"星期三\"},{\"EnDay\":\"Thursday\",\"CnDay\":\"星期四\"},{\"EnDay\":\"Friday\",\"CnDay\":\"星期五\"},{\"EnDay\":\"Saturday\",\"CnDay\":\"星期六\"}]","ProvCode":"610000","CityCode":"610100","AreaCode":"610101","IsPlatform":false}}}
-[2018-03-29T10:01:45.141] [INFO] things - [ '雁塔区' ]
-[2018-03-29T10:01:45.141] [INFO] things - 推送网点信息
-[2018-03-29T10:01:45.141] [INFO] things - NAME: 西安市高新区锦业路尚品美地城1号楼20101商铺
-[2018-03-29T10:01:45.141] [INFO] things - SID: 161610100018
-[2018-03-29T10:01:45.142] [INFO] things - total: 15
-[2018-03-29T10:01:45.142] [INFO] things - limit: 6
-[2018-03-29T10:01:49.448] [INFO] things - {"state":true,"code":0,"data":{"Reservation":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":true,"Certificate":{"ID":"2657604","UID":2257029,"PID":"391","Status":3,"Address":{"ID":1947927,"IsDefault":false,"IsPushAddreess":true,"Name":"姜利娜","TelPhone":"13523472132","Zipcode":"000000","ProvCode":"610000","CityCode":"610100","AreaCode":"610116","Remark":"","IsVerification":false,"AddressDetails":"陕西省西安市长安区,西安市高新区sotyre博士路站,","Longitude":108.869519,"Latitude":34.172172,"Address":"西安市高新区sotyre博士路站,","AddressText":"陕西省西安市长安区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-03 00:00:00"},"EnterTimeSlot":{"Start":"2018-03-29 00:00:00","End":"2018-03-29 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-03-29 10:00:00","End":"2018-03-29 16:00:00","InTime":true}},"address":{"ID":1947927,"IsDefault":false,"IsPushAddreess":true,"Name":"姜利娜","TelPhone":"13523472132","Zipcode":"000000","ProvCode":"610000","CityCode":"610100","AreaCode":"610116","Remark":"","IsVerification":false,"AddressDetails":"陕西省西安市长安区,西安市高新区sotyre博士路站,","Longitude":108.869519,"Latitude":34.172172,"Address":"西安市高新区sotyre博士路站,","AddressText":"陕西省西安市长安区"},"stock":{"Sid":"161610100018","Pid":391,"Pcode":"23","CanSale":true,"CanLocation":true,"Longitude":108.899683010032,"Latitude":34.2230999484468,"LocationCode":"610000","StockCount":15,"QuotasStockCount":15,"LocationDistance":6312.99964602576,"HasSelfDelivery":true,"HasOtherDelivery":false,"HasCityDelivery":false,"IsVirtual":false,"IsPlatform":false},"customer":{"SMNo":null,"Sid":"161610100018","Name":"13523472132","TelPhone":"13523472132","Points":0,"Level":1,"State":2,"Amount":0},"priceRule":[{"Quant":1,"Price":1499}],"limit":{"Sid":"161610100018","Pid":391,"UserOrderCount":0,"LimitCount":6,"LimitTimeCycle":1440,"LimitOrderCount":1,"IsPlatform":false},"network":{"Sid":"161610100018","SName":"茅台云商陕西省西安市高新区服务网点","Did":"610100029","DName":"西安德润酒业销售有限公司","SHBegin":"09:00:00","SHEnd":"17:00:00","Address":"西安市高新区锦业路尚品美地城1号楼20101商铺","LinkMan":"马女士","LinkTel":"029-81107816  13022929292","InvoiceCost":0,"State":1,"HasPlainInvoice":1,"HasVATInvoice":0,"Description":"1、支持到店自提\r\n2、自提工作时间为每周一至周六，9:00至17:00点。\r\n3、遇节假日，请提前致电，确认时间后，方便您的提货","InvoiceCompany":"西安德润酒业销售有限公司","Coordinate":{"ProvCode":"610000","CityCode":"610100","AreaCode":"610101","Longitude":108.906303405762,"Latitude":34.2287788391113},"NetworkType":0,"WorkingDay":"[{\"EnDay\":\"Monday\",\"CnDay\":\"星期一\"},{\"EnDay\":\"Tuesday\",\"CnDay\":\"星期二\"},{\"EnDay\":\"Wednesday\",\"CnDay\":\"星期三\"},{\"EnDay\":\"Thursday\",\"CnDay\":\"星期四\"},{\"EnDay\":\"Friday\",\"CnDay\":\"星期五\"},{\"EnDay\":\"Saturday\",\"CnDay\":\"星期六\"}]","ProvCode":"610000","CityCode":"610100","AreaCode":"610101","IsPlatform":false}}}
-[2018-03-29T10:01:49.448] [INFO] things - [ '雁塔区' ]
-[2018-03-29T10:01:49.449] [INFO] things - 推送网点信息
-[2018-03-29T10:01:49.449] [INFO] things - NAME: 西安市高新区锦业路尚品美地城1号楼20101商铺
-[2018-03-29T10:01:49.449] [INFO] things - SID: 161610100018
-[2018-03-29T10:01:49.450] [INFO] things - total: 15
-[2018-03-29T10:01:49.450] [INFO] things - limit: 6
-[2018-03-29T10:01:53.052] [INFO] things - {"state":true,"code":0,"data":{"Reservation":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":true,"Certificate":{"ID":"2657604","UID":2257029,"PID":"391","Status":3,"Address":{"ID":1947927,"IsDefault":false,"IsPushAddreess":true,"Name":"姜利娜","TelPhone":"13523472132","Zipcode":"000000","ProvCode":"610000","CityCode":"610100","AreaCode":"610116","Remark":"","IsVerification":false,"AddressDetails":"陕西省西安市长安区,西安市高新区sotyre博士路站,","Longitude":108.869519,"Latitude":34.172172,"Address":"西安市高新区sotyre博士路站,","AddressText":"陕西省西安市长安区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-03 00:00:00"},"EnterTimeSlot":{"Start":"2018-03-29 00:00:00","End":"2018-03-29 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-03-29 10:00:00","End":"2018-03-29 16:00:00","InTime":true}},"address":{"ID":1947927,"IsDefault":false,"IsPushAddreess":true,"Name":"姜利娜","TelPhone":"13523472132","Zipcode":"000000","ProvCode":"610000","CityCode":"610100","AreaCode":"610116","Remark":"","IsVerification":false,"AddressDetails":"陕西省西安市长安区,西安市高新区sotyre博士路站,","Longitude":108.869519,"Latitude":34.172172,"Address":"西安市高新区sotyre博士路站,","AddressText":"陕西省西安市长安区"},"stock":{"Sid":"161610100018","Pid":391,"Pcode":"23","CanSale":true,"CanLocation":true,"Longitude":108.899683010032,"Latitude":34.2230999484468,"LocationCode":"610000","StockCount":15,"QuotasStockCount":15,"LocationDistance":6312.99964602576,"HasSelfDelivery":true,"HasOtherDelivery":false,"HasCityDelivery":false,"IsVirtual":false,"IsPlatform":false},"customer":{"SMNo":null,"Sid":"161610100018","Name":"13523472132","TelPhone":"13523472132","Points":0,"Level":1,"State":2,"Amount":0},"priceRule":[{"Quant":1,"Price":1499}],"limit":{"Sid":"161610100018","Pid":391,"UserOrderCount":0,"LimitCount":6,"LimitTimeCycle":1440,"LimitOrderCount":1,"IsPlatform":false},"network":{"Sid":"161610100018","SName":"茅台云商陕西省西安市高新区服务网点","Did":"610100029","DName":"西安德润酒业销售有限公司","SHBegin":"09:00:00","SHEnd":"17:00:00","Address":"西安市高新区锦业路尚品美地城1号楼20101商铺","LinkMan":"马女士","LinkTel":"029-81107816  13022929292","InvoiceCost":0,"State":1,"HasPlainInvoice":1,"HasVATInvoice":0,"Description":"1、支持到店自提\r\n2、自提工作时间为每周一至周六，9:00至17:00点。\r\n3、遇节假日，请提前致电，确认时间后，方便您的提货","InvoiceCompany":"西安德润酒业销售有限公司","Coordinate":{"ProvCode":"610000","CityCode":"610100","AreaCode":"610101","Longitude":108.906303405762,"Latitude":34.2287788391113},"NetworkType":0,"WorkingDay":"[{\"EnDay\":\"Monday\",\"CnDay\":\"星期一\"},{\"EnDay\":\"Tuesday\",\"CnDay\":\"星期二\"},{\"EnDay\":\"Wednesday\",\"CnDay\":\"星期三\"},{\"EnDay\":\"Thursday\",\"CnDay\":\"星期四\"},{\"EnDay\":\"Friday\",\"CnDay\":\"星期五\"},{\"EnDay\":\"Saturday\",\"CnDay\":\"星期六\"}]","ProvCode":"610000","CityCode":"610100","AreaCode":"610101","IsPlatform":false}}}
-[2018-03-29T10:01:53.053] [INFO] things - [ '雁塔区' ]
-[2018-03-29T10:01:53.053] [INFO] things - 推送网点信息
-[2018-03-29T10:01:53.053] [INFO] things - NAME: 西安市高新区锦业路尚品美地城1号楼20101商铺
-[2018-03-29T10:01:53.053] [INFO] things - SID: 161610100018
-[2018-03-29T10:01:53.053] [INFO] things - total: 15
-[2018-03-29T10:01:53.054] [INFO] things - limit: 6
-[2018-03-29T10:01:56.842] [INFO] things - {"state":true,"code":0,"data":{"Reservation":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":true,"Certificate":{"ID":"2657604","UID":2257029,"PID":"391","Status":3,"Address":{"ID":1947927,"IsDefault":false,"IsPushAddreess":true,"Name":"姜利娜","TelPhone":"13523472132","Zipcode":"000000","ProvCode":"610000","CityCode":"610100","AreaCode":"610116","Remark":"","IsVerification":false,"AddressDetails":"陕西省西安市长安区,西安市高新区sotyre博士路站,","Longitude":108.869519,"Latitude":34.172172,"Address":"西安市高新区sotyre博士路站,","AddressText":"陕西省西安市长安区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-03 00:00:00"},"EnterTimeSlot":{"Start":"2018-03-29 00:00:00","End":"2018-03-29 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-03-29 10:00:00","End":"2018-03-29 16:00:00","InTime":true}},"address":{"ID":1947927,"IsDefault":false,"IsPushAddreess":true,"Name":"姜利娜","TelPhone":"13523472132","Zipcode":"000000","ProvCode":"610000","CityCode":"610100","AreaCode":"610116","Remark":"","IsVerification":false,"AddressDetails":"陕西省西安市长安区,西安市高新区sotyre博士路站,","Longitude":108.869519,"Latitude":34.172172,"Address":"西安市高新区sotyre博士路站,","AddressText":"陕西省西安市长安区"},"stock":{"Sid":"161610100018","Pid":391,"Pcode":"23","CanSale":true,"CanLocation":true,"Longitude":108.899683010032,"Latitude":34.2230999484468,"LocationCode":"610000","StockCount":15,"QuotasStockCount":15,"LocationDistance":6312.99964602576,"HasSelfDelivery":true,"HasOtherDelivery":false,"HasCityDelivery":false,"IsVirtual":false,"IsPlatform":false},"customer":{"SMNo":null,"Sid":"161610100018","Name":"13523472132","TelPhone":"13523472132","Points":0,"Level":1,"State":2,"Amount":0},"priceRule":[{"Quant":1,"Price":1499}],"limit":{"Sid":"161610100018","Pid":391,"UserOrderCount":0,"LimitCount":6,"LimitTimeCycle":1440,"LimitOrderCount":1,"IsPlatform":false},"network":{"Sid":"161610100018","SName":"茅台云商陕西省西安市高新区服务网点","Did":"610100029","DName":"西安德润酒业销售有限公司","SHBegin":"09:00:00","SHEnd":"17:00:00","Address":"西安市高新区锦业路尚品美地城1号楼20101商铺","LinkMan":"马女士","LinkTel":"029-81107816  13022929292","InvoiceCost":0,"State":1,"HasPlainInvoice":1,"HasVATInvoice":0,"Description":"1、支持到店自提\r\n2、自提工作时间为每周一至周六，9:00至17:00点。\r\n3、遇节假日，请提前致电，确认时间后，方便您的提货","InvoiceCompany":"西安德润酒业销售有限公司","Coordinate":{"ProvCode":"610000","CityCode":"610100","AreaCode":"610101","Longitude":108.906303405762,"Latitude":34.2287788391113},"NetworkType":0,"WorkingDay":"[{\"EnDay\":\"Monday\",\"CnDay\":\"星期一\"},{\"EnDay\":\"Tuesday\",\"CnDay\":\"星期二\"},{\"EnDay\":\"Wednesday\",\"CnDay\":\"星期三\"},{\"EnDay\":\"Thursday\",\"CnDay\":\"星期四\"},{\"EnDay\":\"Friday\",\"CnDay\":\"星期五\"},{\"EnDay\":\"Saturday\",\"CnDay\":\"星期六\"}]","ProvCode":"610000","CityCode":"610100","AreaCode":"610101","IsPlatform":false}}}
-[2018-03-29T10:01:56.843] [INFO] things - [ '雁塔区' ]
-[2018-03-29T10:01:56.843] [INFO] things - 推送网点信息
-[2018-03-29T10:01:56.843] [INFO] things - NAME: 西安市高新区锦业路尚品美地城1号楼20101商铺
-[2018-03-29T10:01:56.844] [INFO] things - SID: 161610100018
-[2018-03-29T10:01:56.845] [INFO] things - total: 15
-[2018-03-29T10:01:56.845] [INFO] things - limit: 6
-[2018-03-29T10:02:01.074] [INFO] things - {"state":true,"code":0,"data":{"Reservation":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":true,"Certificate":{"ID":"2657604","UID":2257029,"PID":"391","Status":3,"Address":{"ID":1947927,"IsDefault":false,"IsPushAddreess":true,"Name":"姜利娜","TelPhone":"13523472132","Zipcode":"000000","ProvCode":"610000","CityCode":"610100","AreaCode":"610116","Remark":"","IsVerification":false,"AddressDetails":"陕西省西安市长安区,西安市高新区sotyre博士路站,","Longitude":108.869519,"Latitude":34.172172,"Address":"西安市高新区sotyre博士路站,","AddressText":"陕西省西安市长安区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-03 00:00:00"},"EnterTimeSlot":{"Start":"2018-03-29 00:00:00","End":"2018-03-29 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-03-29 10:00:00","End":"2018-03-29 16:00:00","InTime":true}},"address":{"ID":1947927,"IsDefault":false,"IsPushAddreess":true,"Name":"姜利娜","TelPhone":"13523472132","Zipcode":"000000","ProvCode":"610000","CityCode":"610100","AreaCode":"610116","Remark":"","IsVerification":false,"AddressDetails":"陕西省西安市长安区,西安市高新区sotyre博士路站,","Longitude":108.869519,"Latitude":34.172172,"Address":"西安市高新区sotyre博士路站,","AddressText":"陕西省西安市长安区"},"stock":{"Sid":"161610100018","Pid":391,"Pcode":"23","CanSale":true,"CanLocation":true,"Longitude":108.899683010032,"Latitude":34.2230999484468,"LocationCode":"610000","StockCount":15,"QuotasStockCount":15,"LocationDistance":6312.99964602576,"HasSelfDelivery":true,"HasOtherDelivery":false,"HasCityDelivery":false,"IsVirtual":false,"IsPlatform":false},"customer":{"SMNo":null,"Sid":"161610100018","Name":"13523472132","TelPhone":"13523472132","Points":0,"Level":1,"State":2,"Amount":0},"priceRule":[{"Quant":1,"Price":1499}],"limit":{"Sid":"161610100018","Pid":391,"UserOrderCount":0,"LimitCount":6,"LimitTimeCycle":1440,"LimitOrderCount":1,"IsPlatform":false},"network":{"Sid":"161610100018","SName":"茅台云商陕西省西安市高新区服务网点","Did":"610100029","DName":"西安德润酒业销售有限公司","SHBegin":"09:00:00","SHEnd":"17:00:00","Address":"西安市高新区锦业路尚品美地城1号楼20101商铺","LinkMan":"马女士","LinkTel":"029-81107816  13022929292","InvoiceCost":0,"State":1,"HasPlainInvoice":1,"HasVATInvoice":0,"Description":"1、支持到店自提\r\n2、自提工作时间为每周一至周六，9:00至17:00点。\r\n3、遇节假日，请提前致电，确认时间后，方便您的提货","InvoiceCompany":"西安德润酒业销售有限公司","Coordinate":{"ProvCode":"610000","CityCode":"610100","AreaCode":"610101","Longitude":108.906303405762,"Latitude":34.2287788391113},"NetworkType":0,"WorkingDay":"[{\"EnDay\":\"Monday\",\"CnDay\":\"星期一\"},{\"EnDay\":\"Tuesday\",\"CnDay\":\"星期二\"},{\"EnDay\":\"Wednesday\",\"CnDay\":\"星期三\"},{\"EnDay\":\"Thursday\",\"CnDay\":\"星期四\"},{\"EnDay\":\"Friday\",\"CnDay\":\"星期五\"},{\"EnDay\":\"Saturday\",\"CnDay\":\"星期六\"}]","ProvCode":"610000","CityCode":"610100","AreaCode":"610101","IsPlatform":false}}}
-[2018-03-29T10:02:01.075] [INFO] things - [ '雁塔区' ]
-[2018-03-29T10:02:01.075] [INFO] things - 推送网点信息
-[2018-03-29T10:02:01.075] [INFO] things - NAME: 西安市高新区锦业路尚品美地城1号楼20101商铺
-[2018-03-29T10:02:01.075] [INFO] things - SID: 161610100018
-[2018-03-29T10:02:01.076] [INFO] things - total: 15
-[2018-03-29T10:02:01.076] [INFO] things - limit: 6
-[2018-03-29T10:02:04.457] [INFO] things - {"state":true,"code":0,"data":{"Reservation":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":true,"Certificate":{"ID":"2657604","UID":2257029,"PID":"391","Status":3,"Address":{"ID":1947927,"IsDefault":false,"IsPushAddreess":true,"Name":"姜利娜","TelPhone":"13523472132","Zipcode":"000000","ProvCode":"610000","CityCode":"610100","AreaCode":"610116","Remark":"","IsVerification":false,"AddressDetails":"陕西省西安市长安区,西安市高新区sotyre博士路站,","Longitude":108.869519,"Latitude":34.172172,"Address":"西安市高新区sotyre博士路站,","AddressText":"陕西省西安市长安区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-03 00:00:00"},"EnterTimeSlot":{"Start":"2018-03-29 00:00:00","End":"2018-03-29 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-03-29 10:00:00","End":"2018-03-29 16:00:00","InTime":true}},"address":{"ID":1947927,"IsDefault":false,"IsPushAddreess":true,"Name":"姜利娜","TelPhone":"13523472132","Zipcode":"000000","ProvCode":"610000","CityCode":"610100","AreaCode":"610116","Remark":"","IsVerification":false,"AddressDetails":"陕西省西安市长安区,西安市高新区sotyre博士路站,","Longitude":108.869519,"Latitude":34.172172,"Address":"西安市高新区sotyre博士路站,","AddressText":"陕西省西安市长安区"},"stock":{"Sid":"161610100018","Pid":391,"Pcode":"23","CanSale":true,"CanLocation":true,"Longitude":108.899683010032,"Latitude":34.2230999484468,"LocationCode":"610000","StockCount":15,"QuotasStockCount":15,"LocationDistance":6312.99964602576,"HasSelfDelivery":true,"HasOtherDelivery":false,"HasCityDelivery":false,"IsVirtual":false,"IsPlatform":false},"customer":{"SMNo":null,"Sid":"161610100018","Name":"13523472132","TelPhone":"13523472132","Points":0,"Level":1,"State":2,"Amount":0},"priceRule":[{"Quant":1,"Price":1499}],"limit":{"Sid":"161610100018","Pid":391,"UserOrderCount":0,"LimitCount":6,"LimitTimeCycle":1440,"LimitOrderCount":1,"IsPlatform":false},"network":{"Sid":"161610100018","SName":"茅台云商陕西省西安市高新区服务网点","Did":"610100029","DName":"西安德润酒业销售有限公司","SHBegin":"09:00:00","SHEnd":"17:00:00","Address":"西安市高新区锦业路尚品美地城1号楼20101商铺","LinkMan":"马女士","LinkTel":"029-81107816  13022929292","InvoiceCost":0,"State":1,"HasPlainInvoice":1,"HasVATInvoice":0,"Description":"1、支持到店自提\r\n2、自提工作时间为每周一至周六，9:00至17:00点。\r\n3、遇节假日，请提前致电，确认时间后，方便您的提货","InvoiceCompany":"西安德润酒业销售有限公司","Coordinate":{"ProvCode":"610000","CityCode":"610100","AreaCode":"610101","Longitude":108.906303405762,"Latitude":34.2287788391113},"NetworkType":0,"WorkingDay":"[{\"EnDay\":\"Monday\",\"CnDay\":\"星期一\"},{\"EnDay\":\"Tuesday\",\"CnDay\":\"星期二\"},{\"EnDay\":\"Wednesday\",\"CnDay\":\"星期三\"},{\"EnDay\":\"Thursday\",\"CnDay\":\"星期四\"},{\"EnDay\":\"Friday\",\"CnDay\":\"星期五\"},{\"EnDay\":\"Saturday\",\"CnDay\":\"星期六\"}]","ProvCode":"610000","CityCode":"610100","AreaCode":"610101","IsPlatform":false}}}
-[2018-03-29T10:02:04.459] [INFO] things - [ '雁塔区' ]
-[2018-03-29T10:02:04.460] [INFO] things - 推送网点信息
-[2018-03-29T10:02:04.460] [INFO] things - NAME: 西安市高新区锦业路尚品美地城1号楼20101商铺
-[2018-03-29T10:02:04.460] [INFO] things - SID: 161610100018
-[2018-03-29T10:02:04.460] [INFO] things - total: 15
-[2018-03-29T10:02:04.460] [INFO] things - limit: 6
-[2018-03-29T10:02:28.666] [INFO] things - params [ '/usr/local/bin/node',
-  '/Users/junliang/server/www/maotaiServer/controllers/watch.js',
-  '005',
-  '1' ]
-[2018-03-29T10:02:28.671] [INFO] things - to Buy tels {"phone":"13523472132","pass":"abcdef7758521"}|{"phone":"18037798213","pass":"abcdef7758521"}
-[2018-03-29T10:02:30.676] [TRACE] things - 当前时间: 10
-[2018-03-29T10:02:30.676] [INFO] things - 抢购时间开始
-[2018-03-29T10:02:37.052] [INFO] things - {"state":true,"code":0,"data":{"Reservation":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":true,"Certificate":{"ID":"2657604","UID":2257029,"PID":"391","Status":3,"Address":{"ID":1947927,"IsDefault":false,"IsPushAddreess":true,"Name":"姜利娜","TelPhone":"13523472132","Zipcode":"000000","ProvCode":"610000","CityCode":"610100","AreaCode":"610116","Remark":"","IsVerification":false,"AddressDetails":"陕西省西安市长安区,西安市高新区sotyre博士路站,","Longitude":108.869519,"Latitude":34.172172,"Address":"西安市高新区sotyre博士路站,","AddressText":"陕西省西安市长安区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-03 00:00:00"},"EnterTimeSlot":{"Start":"2018-03-29 00:00:00","End":"2018-03-29 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-03-29 10:00:00","End":"2018-03-29 16:00:00","InTime":true}},"address":{"ID":1947927,"IsDefault":false,"IsPushAddreess":true,"Name":"姜利娜","TelPhone":"13523472132","Zipcode":"000000","ProvCode":"610000","CityCode":"610100","AreaCode":"610116","Remark":"","IsVerification":false,"AddressDetails":"陕西省西安市长安区,西安市高新区sotyre博士路站,","Longitude":108.869519,"Latitude":34.172172,"Address":"西安市高新区sotyre博士路站,","AddressText":"陕西省西安市长安区"},"stock":{"Sid":"161610100018","Pid":391,"Pcode":"23","CanSale":true,"CanLocation":true,"Longitude":108.899683010032,"Latitude":34.2230999484468,"LocationCode":"610000","StockCount":15,"QuotasStockCount":15,"LocationDistance":6312.99964602576,"HasSelfDelivery":true,"HasOtherDelivery":false,"HasCityDelivery":false,"IsVirtual":false,"IsPlatform":false},"customer":{"SMNo":null,"Sid":"161610100018","Name":"13523472132","TelPhone":"13523472132","Points":0,"Level":1,"State":2,"Amount":0},"priceRule":[{"Quant":1,"Price":1499}],"limit":{"Sid":"161610100018","Pid":391,"UserOrderCount":0,"LimitCount":6,"LimitTimeCycle":1440,"LimitOrderCount":1,"IsPlatform":false},"network":{"Sid":"161610100018","SName":"茅台云商陕西省西安市高新区服务网点","Did":"610100029","DName":"西安德润酒业销售有限公司","SHBegin":"09:00:00","SHEnd":"17:00:00","Address":"西安市高新区锦业路尚品美地城1号楼20101商铺","LinkMan":"马女士","LinkTel":"029-81107816  13022929292","InvoiceCost":0,"State":1,"HasPlainInvoice":1,"HasVATInvoice":0,"Description":"1、支持到店自提\r\n2、自提工作时间为每周一至周六，9:00至17:00点。\r\n3、遇节假日，请提前致电，确认时间后，方便您的提货","InvoiceCompany":"西安德润酒业销售有限公司","Coordinate":{"ProvCode":"610000","CityCode":"610100","AreaCode":"610101","Longitude":108.906303405762,"Latitude":34.2287788391113},"NetworkType":0,"WorkingDay":"[{\"EnDay\":\"Monday\",\"CnDay\":\"星期一\"},{\"EnDay\":\"Tuesday\",\"CnDay\":\"星期二\"},{\"EnDay\":\"Wednesday\",\"CnDay\":\"星期三\"},{\"EnDay\":\"Thursday\",\"CnDay\":\"星期四\"},{\"EnDay\":\"Friday\",\"CnDay\":\"星期五\"},{\"EnDay\":\"Saturday\",\"CnDay\":\"星期六\"}]","ProvCode":"610000","CityCode":"610100","AreaCode":"610101","IsPlatform":false}}}
-[2018-03-29T10:02:37.053] [INFO] things - [ '尚品美地城' ]
-[2018-03-29T10:02:37.054] [INFO] things - [32m商家已经上货，开始购买流程[39m
-[2018-03-29T10:02:37.055] [INFO] things - 推送网点信息
-[2018-03-29T10:02:37.055] [INFO] things - NAME: 西安市高新区锦业路尚品美地城1号楼20101商铺
-[2018-03-29T10:02:37.055] [INFO] things - SID: 161610100018
-[2018-03-29T10:02:37.055] [INFO] things - total: 15
-[2018-03-29T10:02:37.055] [INFO] things - limit: 6
-[2018-03-29T10:03:07.667] [INFO] things - {"status":200,"msg":"alldone","datas":[{"tel":"{\"phone\":\"13523472132\",\"pass\":\"abcdef7758521\"}","status":"FAIL","data":{"state":true,"code":99,"msg":"服务器正忙，请稍后再试"}},{"tel":"{\"phone\":\"18037798213\",\"pass\":\"abcdef7758521\"}","status":"FAIL","data":{"state":false,"msg":"未设置参数addressId"}}]}
-[2018-03-29T10:03:08.004] [INFO] things - {"status":200,"msg":"alldone","datas":[{"tel":"{\"phone\":\"13523472132\",\"pass\":\"abcdef7758521\"}","status":"FAIL","data":{"state":true,"code":13,"msg":"验证码效验失败"}},{"tel":"{\"phone\":\"18037798213\",\"pass\":\"abcdef7758521\"}","status":"FAIL","data":{"state":true,"code":99,"msg":"服务器正忙，请稍后再试"}}]}
-[2018-03-29T10:05:54.777] [INFO] things - params [ '/usr/local/bin/node',
-  '/Users/junliang/server/www/maotaiServer/controllers/watch.js',
-  '005',
-  '1' ]
-[2018-03-29T10:05:54.784] [INFO] things - to Buy tels {"phone":"13523472132","pass":"abcdef7758521"}|{"phone":"18037798213","pass":"abcdef7758521"}
-[2018-03-29T10:05:56.790] [TRACE] things - 当前时间: 10
-[2018-03-29T10:05:56.791] [INFO] things - 抢购时间开始
-[2018-03-29T10:06:00.107] [INFO] things - {"state":true,"code":0,"data":{"Reservation":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":true,"Certificate":{"ID":"2657604","UID":2257029,"PID":"391","Status":3,"Address":{"ID":1947927,"IsDefault":false,"IsPushAddreess":true,"Name":"姜利娜","TelPhone":"13523472132","Zipcode":"000000","ProvCode":"610000","CityCode":"610100","AreaCode":"610116","Remark":"","IsVerification":false,"AddressDetails":"陕西省西安市长安区,西安市高新区sotyre博士路站,","Longitude":108.869519,"Latitude":34.172172,"Address":"西安市高新区sotyre博士路站,","AddressText":"陕西省西安市长安区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-03 00:00:00"},"EnterTimeSlot":{"Start":"2018-03-29 00:00:00","End":"2018-03-29 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-03-29 10:00:00","End":"2018-03-29 16:00:00","InTime":true}},"address":{"ID":1947927,"IsDefault":false,"IsPushAddreess":true,"Name":"姜利娜","TelPhone":"13523472132","Zipcode":"000000","ProvCode":"610000","CityCode":"610100","AreaCode":"610116","Remark":"","IsVerification":false,"AddressDetails":"陕西省西安市长安区,西安市高新区sotyre博士路站,","Longitude":108.869519,"Latitude":34.172172,"Address":"西安市高新区sotyre博士路站,","AddressText":"陕西省西安市长安区"},"stock":{"Sid":"161610100018","Pid":391,"Pcode":"23","CanSale":true,"CanLocation":true,"Longitude":108.899683010032,"Latitude":34.2230999484468,"LocationCode":"610000","StockCount":15,"QuotasStockCount":15,"LocationDistance":6312.99964602576,"HasSelfDelivery":true,"HasOtherDelivery":false,"HasCityDelivery":false,"IsVirtual":false,"IsPlatform":false},"customer":{"SMNo":null,"Sid":"161610100018","Name":"13523472132","TelPhone":"13523472132","Points":0,"Level":1,"State":2,"Amount":0},"priceRule":[{"Quant":1,"Price":1499}],"limit":{"Sid":"161610100018","Pid":391,"UserOrderCount":0,"LimitCount":6,"LimitTimeCycle":1440,"LimitOrderCount":1,"IsPlatform":false},"network":{"Sid":"161610100018","SName":"茅台云商陕西省西安市高新区服务网点","Did":"610100029","DName":"西安德润酒业销售有限公司","SHBegin":"09:00:00","SHEnd":"17:00:00","Address":"西安市高新区锦业路尚品美地城1号楼20101商铺","LinkMan":"马女士","LinkTel":"029-81107816  13022929292","InvoiceCost":0,"State":1,"HasPlainInvoice":1,"HasVATInvoice":0,"Description":"1、支持到店自提\r\n2、自提工作时间为每周一至周六，9:00至17:00点。\r\n3、遇节假日，请提前致电，确认时间后，方便您的提货","InvoiceCompany":"西安德润酒业销售有限公司","Coordinate":{"ProvCode":"610000","CityCode":"610100","AreaCode":"610101","Longitude":108.906303405762,"Latitude":34.2287788391113},"NetworkType":0,"WorkingDay":"[{\"EnDay\":\"Monday\",\"CnDay\":\"星期一\"},{\"EnDay\":\"Tuesday\",\"CnDay\":\"星期二\"},{\"EnDay\":\"Wednesday\",\"CnDay\":\"星期三\"},{\"EnDay\":\"Thursday\",\"CnDay\":\"星期四\"},{\"EnDay\":\"Friday\",\"CnDay\":\"星期五\"},{\"EnDay\":\"Saturday\",\"CnDay\":\"星期六\"}]","ProvCode":"610000","CityCode":"610100","AreaCode":"610101","IsPlatform":false}}}
-[2018-03-29T10:06:00.107] [INFO] things - [ '尚品美地城' ]
-[2018-03-29T10:06:00.108] [INFO] things - [32m商家已经上货，开始购买流程[39m
-[2018-03-29T10:06:00.108] [INFO] things - 推送网点信息
-[2018-03-29T10:06:00.108] [INFO] things - NAME: 西安市高新区锦业路尚品美地城1号楼20101商铺
-[2018-03-29T10:06:00.108] [INFO] things - SID: 161610100018
-[2018-03-29T10:06:00.108] [INFO] things - total: 15
-[2018-03-29T10:06:00.109] [INFO] things - limit: 6
-[2018-03-29T10:06:21.801] [INFO] things - {"status":200,"msg":"alldone","datas":[{"tel":"{\"phone\":\"13523472132\",\"pass\":\"abcdef7758521\"}","status":"FAIL","data":{"state":false,"msg":"未设置参数addressId"}},{"tel":"{\"phone\":\"18037798213\",\"pass\":\"abcdef7758521\"}","status":"FAIL","data":{"state":false,"msg":"未设置参数addressId"}}]}
-[2018-03-29T10:06:22.001] [INFO] things - {"status":200,"msg":"alldone","datas":[{"tel":"{\"phone\":\"13523472132\",\"pass\":\"abcdef7758521\"}","status":"FAIL","data":{"state":true,"code":99,"msg":"服务器正忙，请稍后再试"}},{"tel":"{\"phone\":\"18037798213\",\"pass\":\"abcdef7758521\"}","status":"FAIL","data":{"state":true,"code":13,"msg":"验证码效验失败"}}]}
-[2018-03-29T10:07:04.074] [INFO] things - params [ '/usr/local/bin/node',
-  '/Users/junliang/server/www/maotaiServer/controllers/watch.js',
-  '005',
-  '1' ]
-[2018-03-29T10:07:04.080] [INFO] things - to Buy tels {"phone":"13523472132","pass":"abcdef7758521"}|{"phone":"18037798213","pass":"abcdef7758521"}
-[2018-03-29T10:07:06.084] [TRACE] things - 当前时间: 10
-[2018-03-29T10:07:06.085] [INFO] things - 抢购时间开始
-[2018-03-29T10:07:12.963] [INFO] things - {"state":true,"code":0,"data":{"Reservation":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":true,"Certificate":{"ID":"2657604","UID":2257029,"PID":"391","Status":3,"Address":{"ID":1947927,"IsDefault":false,"IsPushAddreess":true,"Name":"姜利娜","TelPhone":"13523472132","Zipcode":"000000","ProvCode":"610000","CityCode":"610100","AreaCode":"610116","Remark":"","IsVerification":false,"AddressDetails":"陕西省西安市长安区,西安市高新区sotyre博士路站,","Longitude":108.869519,"Latitude":34.172172,"Address":"西安市高新区sotyre博士路站,","AddressText":"陕西省西安市长安区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-03 00:00:00"},"EnterTimeSlot":{"Start":"2018-03-29 00:00:00","End":"2018-03-29 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-03-29 10:00:00","End":"2018-03-29 16:00:00","InTime":true}},"address":{"ID":1947927,"IsDefault":false,"IsPushAddreess":true,"Name":"姜利娜","TelPhone":"13523472132","Zipcode":"000000","ProvCode":"610000","CityCode":"610100","AreaCode":"610116","Remark":"","IsVerification":false,"AddressDetails":"陕西省西安市长安区,西安市高新区sotyre博士路站,","Longitude":108.869519,"Latitude":34.172172,"Address":"西安市高新区sotyre博士路站,","AddressText":"陕西省西安市长安区"},"stock":{"Sid":"161610100018","Pid":391,"Pcode":"23","CanSale":true,"CanLocation":true,"Longitude":108.899683010032,"Latitude":34.2230999484468,"LocationCode":"610000","StockCount":15,"QuotasStockCount":15,"LocationDistance":6312.99964602576,"HasSelfDelivery":true,"HasOtherDelivery":false,"HasCityDelivery":false,"IsVirtual":false,"IsPlatform":false},"customer":{"SMNo":null,"Sid":"161610100018","Name":"13523472132","TelPhone":"13523472132","Points":0,"Level":1,"State":2,"Amount":0},"priceRule":[{"Quant":1,"Price":1499}],"limit":{"Sid":"161610100018","Pid":391,"UserOrderCount":0,"LimitCount":6,"LimitTimeCycle":1440,"LimitOrderCount":1,"IsPlatform":false},"network":{"Sid":"161610100018","SName":"茅台云商陕西省西安市高新区服务网点","Did":"610100029","DName":"西安德润酒业销售有限公司","SHBegin":"09:00:00","SHEnd":"17:00:00","Address":"西安市高新区锦业路尚品美地城1号楼20101商铺","LinkMan":"马女士","LinkTel":"029-81107816  13022929292","InvoiceCost":0,"State":1,"HasPlainInvoice":1,"HasVATInvoice":0,"Description":"1、支持到店自提\r\n2、自提工作时间为每周一至周六，9:00至17:00点。\r\n3、遇节假日，请提前致电，确认时间后，方便您的提货","InvoiceCompany":"西安德润酒业销售有限公司","Coordinate":{"ProvCode":"610000","CityCode":"610100","AreaCode":"610101","Longitude":108.906303405762,"Latitude":34.2287788391113},"NetworkType":0,"WorkingDay":"[{\"EnDay\":\"Monday\",\"CnDay\":\"星期一\"},{\"EnDay\":\"Tuesday\",\"CnDay\":\"星期二\"},{\"EnDay\":\"Wednesday\",\"CnDay\":\"星期三\"},{\"EnDay\":\"Thursday\",\"CnDay\":\"星期四\"},{\"EnDay\":\"Friday\",\"CnDay\":\"星期五\"},{\"EnDay\":\"Saturday\",\"CnDay\":\"星期六\"}]","ProvCode":"610000","CityCode":"610100","AreaCode":"610101","IsPlatform":false}}}
-[2018-03-29T10:07:12.964] [INFO] things - [ '尚品美地城' ]
-[2018-03-29T10:07:12.965] [INFO] things - [32m商家已经上货，开始购买流程[39m
-[2018-03-29T10:07:12.965] [INFO] things - 推送网点信息
-[2018-03-29T10:07:12.965] [INFO] things - NAME: 西安市高新区锦业路尚品美地城1号楼20101商铺
-[2018-03-29T10:07:12.965] [INFO] things - SID: 161610100018
-[2018-03-29T10:07:12.965] [INFO] things - total: 15
-[2018-03-29T10:07:12.965] [INFO] things - limit: 6
-[2018-03-29T10:07:27.029] [INFO] things - { Error: socket hang up
-    at createHangUpError (_http_client.js:331:15)
-    at Socket.socketOnEnd (_http_client.js:423:23)
-    at emitNone (events.js:111:20)
-    at Socket.emit (events.js:208:7)
-    at endReadableNT (_stream_readable.js:1055:12)
-    at _combinedTickCallback (internal/process/next_tick.js:138:11)
-    at process._tickCallback (internal/process/next_tick.js:180:9) code: 'ECONNRESET' }
-[2018-03-29T10:07:27.045] [INFO] things - { Error: socket hang up
-    at createHangUpError (_http_client.js:331:15)
-    at Socket.socketOnEnd (_http_client.js:423:23)
-    at emitNone (events.js:111:20)
-    at Socket.emit (events.js:208:7)
-    at endReadableNT (_stream_readable.js:1055:12)
-    at _combinedTickCallback (internal/process/next_tick.js:138:11)
-    at process._tickCallback (internal/process/next_tick.js:180:9) code: 'ECONNRESET' }
-[2018-03-29T10:09:10.618] [INFO] things - params [ '/usr/local/bin/node',
-  '/Users/junliang/server/www/maotaiServer/controllers/watch.js',
-  '005',
-  '1' ]
-[2018-03-29T10:09:10.623] [INFO] things - to Buy tels {"phone":"13523472132","pass":"abcdef7758521"}|{"phone":"18037798213","pass":"abcdef7758521"}
-[2018-03-29T10:09:12.627] [TRACE] things - 当前时间: 10
-[2018-03-29T10:09:12.628] [INFO] things - 抢购时间开始
-[2018-03-29T10:09:15.493] [INFO] things - {"state":true,"code":0,"data":{"Reservation":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":true,"Certificate":{"ID":"2657604","UID":2257029,"PID":"391","Status":3,"Address":{"ID":1947927,"IsDefault":false,"IsPushAddreess":true,"Name":"姜利娜","TelPhone":"13523472132","Zipcode":"000000","ProvCode":"610000","CityCode":"610100","AreaCode":"610116","Remark":"","IsVerification":false,"AddressDetails":"陕西省西安市长安区,西安市高新区sotyre博士路站,","Longitude":108.869519,"Latitude":34.172172,"Address":"西安市高新区sotyre博士路站,","AddressText":"陕西省西安市长安区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-03 00:00:00"},"EnterTimeSlot":{"Start":"2018-03-29 00:00:00","End":"2018-03-29 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-03-29 10:00:00","End":"2018-03-29 16:00:00","InTime":true}},"address":{"ID":1947927,"IsDefault":false,"IsPushAddreess":true,"Name":"姜利娜","TelPhone":"13523472132","Zipcode":"000000","ProvCode":"610000","CityCode":"610100","AreaCode":"610116","Remark":"","IsVerification":false,"AddressDetails":"陕西省西安市长安区,西安市高新区sotyre博士路站,","Longitude":108.869519,"Latitude":34.172172,"Address":"西安市高新区sotyre博士路站,","AddressText":"陕西省西安市长安区"},"stock":{"Sid":"161610100018","Pid":391,"Pcode":"23","CanSale":true,"CanLocation":true,"Longitude":108.899683010032,"Latitude":34.2230999484468,"LocationCode":"610000","StockCount":15,"QuotasStockCount":15,"LocationDistance":6312.99964602576,"HasSelfDelivery":true,"HasOtherDelivery":false,"HasCityDelivery":false,"IsVirtual":false,"IsPlatform":false},"customer":{"SMNo":null,"Sid":"161610100018","Name":"13523472132","TelPhone":"13523472132","Points":0,"Level":1,"State":2,"Amount":0},"priceRule":[{"Quant":1,"Price":1499}],"limit":{"Sid":"161610100018","Pid":391,"UserOrderCount":0,"LimitCount":6,"LimitTimeCycle":1440,"LimitOrderCount":1,"IsPlatform":false},"network":{"Sid":"161610100018","SName":"茅台云商陕西省西安市高新区服务网点","Did":"610100029","DName":"西安德润酒业销售有限公司","SHBegin":"09:00:00","SHEnd":"17:00:00","Address":"西安市高新区锦业路尚品美地城1号楼20101商铺","LinkMan":"马女士","LinkTel":"029-81107816  13022929292","InvoiceCost":0,"State":1,"HasPlainInvoice":1,"HasVATInvoice":0,"Description":"1、支持到店自提\r\n2、自提工作时间为每周一至周六，9:00至17:00点。\r\n3、遇节假日，请提前致电，确认时间后，方便您的提货","InvoiceCompany":"西安德润酒业销售有限公司","Coordinate":{"ProvCode":"610000","CityCode":"610100","AreaCode":"610101","Longitude":108.906303405762,"Latitude":34.2287788391113},"NetworkType":0,"WorkingDay":"[{\"EnDay\":\"Monday\",\"CnDay\":\"星期一\"},{\"EnDay\":\"Tuesday\",\"CnDay\":\"星期二\"},{\"EnDay\":\"Wednesday\",\"CnDay\":\"星期三\"},{\"EnDay\":\"Thursday\",\"CnDay\":\"星期四\"},{\"EnDay\":\"Friday\",\"CnDay\":\"星期五\"},{\"EnDay\":\"Saturday\",\"CnDay\":\"星期六\"}]","ProvCode":"610000","CityCode":"610100","AreaCode":"610101","IsPlatform":false}}}
-[2018-03-29T10:09:15.494] [INFO] things - [ '尚品美地城' ]
-[2018-03-29T10:09:15.495] [INFO] things - [32m商家已经上货，开始购买流程[39m
-[2018-03-29T10:09:15.495] [INFO] things - 推送网点信息
-[2018-03-29T10:09:15.495] [INFO] things - NAME: 西安市高新区锦业路尚品美地城1号楼20101商铺
-[2018-03-29T10:09:15.495] [INFO] things - SID: 161610100018
-[2018-03-29T10:09:15.495] [INFO] things - total: 15
-[2018-03-29T10:09:15.496] [INFO] things - limit: 6
-[2018-03-29T10:09:22.601] [INFO] things - { Error: socket hang up
-    at createHangUpError (_http_client.js:331:15)
-    at Socket.socketOnEnd (_http_client.js:423:23)
-    at emitNone (events.js:111:20)
-    at Socket.emit (events.js:208:7)
-    at endReadableNT (_stream_readable.js:1055:12)
-    at _combinedTickCallback (internal/process/next_tick.js:138:11)
-    at process._tickCallback (internal/process/next_tick.js:180:9) code: 'ECONNRESET' }
-[2018-03-29T10:09:22.612] [INFO] things - { Error: socket hang up
-    at createHangUpError (_http_client.js:331:15)
-    at Socket.socketOnEnd (_http_client.js:423:23)
-    at emitNone (events.js:111:20)
-    at Socket.emit (events.js:208:7)
-    at endReadableNT (_stream_readable.js:1055:12)
-    at _combinedTickCallback (internal/process/next_tick.js:138:11)
-    at process._tickCallback (internal/process/next_tick.js:180:9) code: 'ECONNRESET' }
-[2018-03-29T10:09:53.606] [INFO] things - params [ '/usr/local/bin/node',
-  '/Users/junliang/server/www/maotaiServer/controllers/watch.js',
-  '005',
-  '1' ]
-[2018-03-29T10:09:53.611] [INFO] things - to Buy tels {"phone":"13523472132","pass":"abcdef7758521"}|{"phone":"18037798213","pass":"abcdef7758521"}
-[2018-03-29T10:09:55.615] [TRACE] things - 当前时间: 10
-[2018-03-29T10:09:55.616] [INFO] things - 抢购时间开始
-[2018-03-29T10:10:00.781] [INFO] things - {"state":true,"code":0,"data":{"Reservation":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":true,"Certificate":{"ID":"2657604","UID":2257029,"PID":"391","Status":3,"Address":{"ID":1947927,"IsDefault":false,"IsPushAddreess":true,"Name":"姜利娜","TelPhone":"13523472132","Zipcode":"000000","ProvCode":"610000","CityCode":"610100","AreaCode":"610116","Remark":"","IsVerification":false,"AddressDetails":"陕西省西安市长安区,西安市高新区sotyre博士路站,","Longitude":108.869519,"Latitude":34.172172,"Address":"西安市高新区sotyre博士路站,","AddressText":"陕西省西安市长安区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-03 00:00:00"},"EnterTimeSlot":{"Start":"2018-03-29 00:00:00","End":"2018-03-29 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-03-29 10:00:00","End":"2018-03-29 16:00:00","InTime":true}},"address":{"ID":1947927,"IsDefault":false,"IsPushAddreess":true,"Name":"姜利娜","TelPhone":"13523472132","Zipcode":"000000","ProvCode":"610000","CityCode":"610100","AreaCode":"610116","Remark":"","IsVerification":false,"AddressDetails":"陕西省西安市长安区,西安市高新区sotyre博士路站,","Longitude":108.869519,"Latitude":34.172172,"Address":"西安市高新区sotyre博士路站,","AddressText":"陕西省西安市长安区"},"stock":{"Sid":"161610100018","Pid":391,"Pcode":"23","CanSale":true,"CanLocation":true,"Longitude":108.899683010032,"Latitude":34.2230999484468,"LocationCode":"610000","StockCount":15,"QuotasStockCount":15,"LocationDistance":6312.99964602576,"HasSelfDelivery":true,"HasOtherDelivery":false,"HasCityDelivery":false,"IsVirtual":false,"IsPlatform":false},"customer":{"SMNo":null,"Sid":"161610100018","Name":"13523472132","TelPhone":"13523472132","Points":0,"Level":1,"State":2,"Amount":0},"priceRule":[{"Quant":1,"Price":1499}],"limit":{"Sid":"161610100018","Pid":391,"UserOrderCount":0,"LimitCount":6,"LimitTimeCycle":1440,"LimitOrderCount":1,"IsPlatform":false},"network":{"Sid":"161610100018","SName":"茅台云商陕西省西安市高新区服务网点","Did":"610100029","DName":"西安德润酒业销售有限公司","SHBegin":"09:00:00","SHEnd":"17:00:00","Address":"西安市高新区锦业路尚品美地城1号楼20101商铺","LinkMan":"马女士","LinkTel":"029-81107816  13022929292","InvoiceCost":0,"State":1,"HasPlainInvoice":1,"HasVATInvoice":0,"Description":"1、支持到店自提\r\n2、自提工作时间为每周一至周六，9:00至17:00点。\r\n3、遇节假日，请提前致电，确认时间后，方便您的提货","InvoiceCompany":"西安德润酒业销售有限公司","Coordinate":{"ProvCode":"610000","CityCode":"610100","AreaCode":"610101","Longitude":108.906303405762,"Latitude":34.2287788391113},"NetworkType":0,"WorkingDay":"[{\"EnDay\":\"Monday\",\"CnDay\":\"星期一\"},{\"EnDay\":\"Tuesday\",\"CnDay\":\"星期二\"},{\"EnDay\":\"Wednesday\",\"CnDay\":\"星期三\"},{\"EnDay\":\"Thursday\",\"CnDay\":\"星期四\"},{\"EnDay\":\"Friday\",\"CnDay\":\"星期五\"},{\"EnDay\":\"Saturday\",\"CnDay\":\"星期六\"}]","ProvCode":"610000","CityCode":"610100","AreaCode":"610101","IsPlatform":false}}}
-[2018-03-29T10:10:00.781] [INFO] things - [ '尚品美地城' ]
-[2018-03-29T10:10:00.782] [INFO] things - [32m商家已经上货，开始购买流程[39m
-[2018-03-29T10:10:00.782] [INFO] things - 推送网点信息
-[2018-03-29T10:10:00.783] [INFO] things - NAME: 西安市高新区锦业路尚品美地城1号楼20101商铺
-[2018-03-29T10:10:00.783] [INFO] things - SID: 161610100018
-[2018-03-29T10:10:00.783] [INFO] things - total: 15
-[2018-03-29T10:10:00.783] [INFO] things - limit: 6
-[2018-03-29T10:10:16.835] [INFO] things - { Error: socket hang up
-    at createHangUpError (_http_client.js:331:15)
-    at Socket.socketOnEnd (_http_client.js:423:23)
-    at emitNone (events.js:111:20)
-    at Socket.emit (events.js:208:7)
-    at endReadableNT (_stream_readable.js:1055:12)
-    at _combinedTickCallback (internal/process/next_tick.js:138:11)
-    at process._tickCallback (internal/process/next_tick.js:180:9) code: 'ECONNRESET' }
-[2018-03-29T10:10:16.841] [INFO] things - { Error: socket hang up
-    at createHangUpError (_http_client.js:331:15)
-    at Socket.socketOnEnd (_http_client.js:423:23)
-    at emitNone (events.js:111:20)
-    at Socket.emit (events.js:208:7)
-    at endReadableNT (_stream_readable.js:1055:12)
-    at _combinedTickCallback (internal/process/next_tick.js:138:11)
-    at process._tickCallback (internal/process/next_tick.js:180:9) code: 'ECONNRESET' }
-[2018-03-29T10:12:15.899] [INFO] things - params [ '/usr/local/bin/node',
-  '/Users/junliang/server/www/maotaiServer/controllers/watch.js',
-  '005',
-  '1' ]
-[2018-03-29T10:12:15.904] [INFO] things - to Buy tels {"phone":"13523472132","pass":"abcdef7758521"}|{"phone":"18037798213","pass":"abcdef7758521"}
-[2018-03-29T10:12:17.910] [TRACE] things - 当前时间: 10
-[2018-03-29T10:12:17.911] [INFO] things - 抢购时间开始
-[2018-03-29T10:12:23.206] [INFO] things - {"state":true,"code":0,"data":{"Reservation":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":true,"Certificate":{"ID":"2657604","UID":2257029,"PID":"391","Status":3,"Address":{"ID":1947927,"IsDefault":false,"IsPushAddreess":true,"Name":"姜利娜","TelPhone":"13523472132","Zipcode":"000000","ProvCode":"610000","CityCode":"610100","AreaCode":"610116","Remark":"","IsVerification":false,"AddressDetails":"陕西省西安市长安区,西安市高新区sotyre博士路站,","Longitude":108.869519,"Latitude":34.172172,"Address":"西安市高新区sotyre博士路站,","AddressText":"陕西省西安市长安区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-03 00:00:00"},"EnterTimeSlot":{"Start":"2018-03-29 00:00:00","End":"2018-03-29 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-03-29 10:00:00","End":"2018-03-29 16:00:00","InTime":true}},"address":{"ID":1947927,"IsDefault":false,"IsPushAddreess":true,"Name":"姜利娜","TelPhone":"13523472132","Zipcode":"000000","ProvCode":"610000","CityCode":"610100","AreaCode":"610116","Remark":"","IsVerification":false,"AddressDetails":"陕西省西安市长安区,西安市高新区sotyre博士路站,","Longitude":108.869519,"Latitude":34.172172,"Address":"西安市高新区sotyre博士路站,","AddressText":"陕西省西安市长安区"},"stock":{"Sid":"161610100018","Pid":391,"Pcode":"23","CanSale":true,"CanLocation":true,"Longitude":108.899683010032,"Latitude":34.2230999484468,"LocationCode":"610000","StockCount":15,"QuotasStockCount":15,"LocationDistance":6312.99964602576,"HasSelfDelivery":true,"HasOtherDelivery":false,"HasCityDelivery":false,"IsVirtual":false,"IsPlatform":false},"customer":{"SMNo":null,"Sid":"161610100018","Name":"13523472132","TelPhone":"13523472132","Points":0,"Level":1,"State":2,"Amount":0},"priceRule":[{"Quant":1,"Price":1499}],"limit":{"Sid":"161610100018","Pid":391,"UserOrderCount":0,"LimitCount":6,"LimitTimeCycle":1440,"LimitOrderCount":1,"IsPlatform":false},"network":{"Sid":"161610100018","SName":"茅台云商陕西省西安市高新区服务网点","Did":"610100029","DName":"西安德润酒业销售有限公司","SHBegin":"09:00:00","SHEnd":"17:00:00","Address":"西安市高新区锦业路尚品美地城1号楼20101商铺","LinkMan":"马女士","LinkTel":"029-81107816  13022929292","InvoiceCost":0,"State":1,"HasPlainInvoice":1,"HasVATInvoice":0,"Description":"1、支持到店自提\r\n2、自提工作时间为每周一至周六，9:00至17:00点。\r\n3、遇节假日，请提前致电，确认时间后，方便您的提货","InvoiceCompany":"西安德润酒业销售有限公司","Coordinate":{"ProvCode":"610000","CityCode":"610100","AreaCode":"610101","Longitude":108.906303405762,"Latitude":34.2287788391113},"NetworkType":0,"WorkingDay":"[{\"EnDay\":\"Monday\",\"CnDay\":\"星期一\"},{\"EnDay\":\"Tuesday\",\"CnDay\":\"星期二\"},{\"EnDay\":\"Wednesday\",\"CnDay\":\"星期三\"},{\"EnDay\":\"Thursday\",\"CnDay\":\"星期四\"},{\"EnDay\":\"Friday\",\"CnDay\":\"星期五\"},{\"EnDay\":\"Saturday\",\"CnDay\":\"星期六\"}]","ProvCode":"610000","CityCode":"610100","AreaCode":"610101","IsPlatform":false}}}
-[2018-03-29T10:12:23.207] [INFO] things - [ '尚品美地城' ]
-[2018-03-29T10:12:23.207] [INFO] things - [32m商家已经上货，开始购买流程[39m
-[2018-03-29T10:12:23.208] [INFO] things - 推送网点信息
-[2018-03-29T10:12:23.208] [INFO] things - NAME: 西安市高新区锦业路尚品美地城1号楼20101商铺
-[2018-03-29T10:12:23.208] [INFO] things - SID: 161610100018
-[2018-03-29T10:12:23.208] [INFO] things - total: 15
-[2018-03-29T10:12:23.208] [INFO] things - limit: 6
-[2018-03-29T10:12:29.245] [INFO] things - { Error: socket hang up
-    at createHangUpError (_http_client.js:331:15)
-    at Socket.socketOnEnd (_http_client.js:423:23)
-    at emitNone (events.js:111:20)
-    at Socket.emit (events.js:208:7)
-    at endReadableNT (_stream_readable.js:1055:12)
-    at _combinedTickCallback (internal/process/next_tick.js:138:11)
-    at process._tickCallback (internal/process/next_tick.js:180:9) code: 'ECONNRESET' }
-[2018-03-29T10:12:29.252] [INFO] things - { Error: socket hang up
-    at createHangUpError (_http_client.js:331:15)
-    at Socket.socketOnEnd (_http_client.js:423:23)
-    at emitNone (events.js:111:20)
-    at Socket.emit (events.js:208:7)
-    at endReadableNT (_stream_readable.js:1055:12)
-    at _combinedTickCallback (internal/process/next_tick.js:138:11)
-    at process._tickCallback (internal/process/next_tick.js:180:9) code: 'ECONNRESET' }
-[2018-03-29T10:15:14.640] [INFO] things - params [ '/usr/local/bin/node',
-  '/Users/junliang/server/www/maotaiServer/controllers/watch.js',
-  '005',
-  '1' ]
-[2018-03-29T10:15:14.645] [INFO] things - to Buy tels {"phone":"13523472132","pass":"abcdef7758521"}|{"phone":"18037798213","pass":"abcdef7758521"}
-[2018-03-29T10:15:16.647] [TRACE] things - 当前时间: 10
-[2018-03-29T10:15:16.648] [INFO] things - 抢购时间开始
-[2018-03-29T10:15:26.019] [INFO] things - {"state":true,"code":0,"data":{"Reservation":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":true,"Certificate":{"ID":"2657604","UID":2257029,"PID":"391","Status":3,"Address":{"ID":1947927,"IsDefault":false,"IsPushAddreess":true,"Name":"姜利娜","TelPhone":"13523472132","Zipcode":"000000","ProvCode":"610000","CityCode":"610100","AreaCode":"610116","Remark":"","IsVerification":false,"AddressDetails":"陕西省西安市长安区,西安市高新区sotyre博士路站,","Longitude":108.869519,"Latitude":34.172172,"Address":"西安市高新区sotyre博士路站,","AddressText":"陕西省西安市长安区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-03 00:00:00"},"EnterTimeSlot":{"Start":"2018-03-29 00:00:00","End":"2018-03-29 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-03-29 10:00:00","End":"2018-03-29 16:00:00","InTime":true}},"address":{"ID":1947927,"IsDefault":false,"IsPushAddreess":true,"Name":"姜利娜","TelPhone":"13523472132","Zipcode":"000000","ProvCode":"610000","CityCode":"610100","AreaCode":"610116","Remark":"","IsVerification":false,"AddressDetails":"陕西省西安市长安区,西安市高新区sotyre博士路站,","Longitude":108.869519,"Latitude":34.172172,"Address":"西安市高新区sotyre博士路站,","AddressText":"陕西省西安市长安区"},"stock":{"Sid":"161610100018","Pid":391,"Pcode":"23","CanSale":true,"CanLocation":true,"Longitude":108.899683010032,"Latitude":34.2230999484468,"LocationCode":"610000","StockCount":15,"QuotasStockCount":15,"LocationDistance":6312.99964602576,"HasSelfDelivery":true,"HasOtherDelivery":false,"HasCityDelivery":false,"IsVirtual":false,"IsPlatform":false},"customer":{"SMNo":null,"Sid":"161610100018","Name":"13523472132","TelPhone":"13523472132","Points":0,"Level":1,"State":2,"Amount":0},"priceRule":[{"Quant":1,"Price":1499}],"limit":{"Sid":"161610100018","Pid":391,"UserOrderCount":0,"LimitCount":6,"LimitTimeCycle":1440,"LimitOrderCount":1,"IsPlatform":false},"network":{"Sid":"161610100018","SName":"茅台云商陕西省西安市高新区服务网点","Did":"610100029","DName":"西安德润酒业销售有限公司","SHBegin":"09:00:00","SHEnd":"17:00:00","Address":"西安市高新区锦业路尚品美地城1号楼20101商铺","LinkMan":"马女士","LinkTel":"029-81107816  13022929292","InvoiceCost":0,"State":1,"HasPlainInvoice":1,"HasVATInvoice":0,"Description":"1、支持到店自提\r\n2、自提工作时间为每周一至周六，9:00至17:00点。\r\n3、遇节假日，请提前致电，确认时间后，方便您的提货","InvoiceCompany":"西安德润酒业销售有限公司","Coordinate":{"ProvCode":"610000","CityCode":"610100","AreaCode":"610101","Longitude":108.906303405762,"Latitude":34.2287788391113},"NetworkType":0,"WorkingDay":"[{\"EnDay\":\"Monday\",\"CnDay\":\"星期一\"},{\"EnDay\":\"Tuesday\",\"CnDay\":\"星期二\"},{\"EnDay\":\"Wednesday\",\"CnDay\":\"星期三\"},{\"EnDay\":\"Thursday\",\"CnDay\":\"星期四\"},{\"EnDay\":\"Friday\",\"CnDay\":\"星期五\"},{\"EnDay\":\"Saturday\",\"CnDay\":\"星期六\"}]","ProvCode":"610000","CityCode":"610100","AreaCode":"610101","IsPlatform":false}}}
-[2018-03-29T10:15:26.020] [INFO] things - [ '尚品美地城' ]
-[2018-03-29T10:15:26.020] [INFO] things - [32m商家已经上货，开始购买流程[39m
-[2018-03-29T10:15:26.021] [INFO] things - 推送网点信息
-[2018-03-29T10:15:26.021] [INFO] things - NAME: 西安市高新区锦业路尚品美地城1号楼20101商铺
-[2018-03-29T10:15:26.021] [INFO] things - SID: 161610100018
-[2018-03-29T10:15:26.021] [INFO] things - total: 15
-[2018-03-29T10:15:26.021] [INFO] things - limit: 6
-[2018-03-29T10:15:49.388] [INFO] things - {"status":200,"msg":"alldone","datas":[{"tel":"{\"phone\":\"13523472132\",\"pass\":\"abcdef7758521\"}","status":"FAIL","error":"tunneling socket could not be established, cause=socket hang up"},{"tel":"{\"phone\":\"18037798213\",\"pass\":\"abcdef7758521\"}","status":"FAIL","data":{"state":true,"code":99,"msg":"服务器正忙，请稍后再试"}}]}
-[2018-03-29T10:16:18.308] [INFO] things - {"status":200,"msg":"alldone","datas":[{"tel":"{\"phone\":\"13523472132\",\"pass\":\"abcdef7758521\"}","status":"FAIL","error":"socket hang up"},{"tel":"{\"phone\":\"18037798213\",\"pass\":\"abcdef7758521\"}","status":"FAIL","error":"socket hang up"}]}
-[2018-03-29T10:16:40.074] [INFO] things - params [ '/usr/local/bin/node',
-  '/Users/junliang/server/www/maotaiServer/controllers/watch.js',
-  '005',
-  '1' ]
-[2018-03-29T10:16:40.080] [INFO] things - to Buy tels {"phone":"13523472132","pass":"abcdef7758521"}|{"phone":"18037798213","pass":"abcdef7758521"}
-[2018-03-29T10:16:42.086] [TRACE] things - 当前时间: 10
-[2018-03-29T10:16:42.088] [INFO] things - 抢购时间开始
-[2018-03-29T10:16:52.228] [INFO] things - {"state":true,"code":0,"data":{"Reservation":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":true,"Certificate":{"ID":"2657604","UID":2257029,"PID":"391","Status":3,"Address":{"ID":1947927,"IsDefault":false,"IsPushAddreess":true,"Name":"姜利娜","TelPhone":"13523472132","Zipcode":"000000","ProvCode":"610000","CityCode":"610100","AreaCode":"610116","Remark":"","IsVerification":false,"AddressDetails":"陕西省西安市长安区,西安市高新区sotyre博士路站,","Longitude":108.869519,"Latitude":34.172172,"Address":"西安市高新区sotyre博士路站,","AddressText":"陕西省西安市长安区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-03 00:00:00"},"EnterTimeSlot":{"Start":"2018-03-29 00:00:00","End":"2018-03-29 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-03-29 10:00:00","End":"2018-03-29 16:00:00","InTime":true}},"address":{"ID":1947927,"IsDefault":false,"IsPushAddreess":true,"Name":"姜利娜","TelPhone":"13523472132","Zipcode":"000000","ProvCode":"610000","CityCode":"610100","AreaCode":"610116","Remark":"","IsVerification":false,"AddressDetails":"陕西省西安市长安区,西安市高新区sotyre博士路站,","Longitude":108.869519,"Latitude":34.172172,"Address":"西安市高新区sotyre博士路站,","AddressText":"陕西省西安市长安区"},"stock":{"Sid":"161610100018","Pid":391,"Pcode":"23","CanSale":true,"CanLocation":true,"Longitude":108.899683010032,"Latitude":34.2230999484468,"LocationCode":"610000","StockCount":15,"QuotasStockCount":15,"LocationDistance":6312.99964602576,"HasSelfDelivery":true,"HasOtherDelivery":false,"HasCityDelivery":false,"IsVirtual":false,"IsPlatform":false},"customer":{"SMNo":null,"Sid":"161610100018","Name":"13523472132","TelPhone":"13523472132","Points":0,"Level":1,"State":2,"Amount":0},"priceRule":[{"Quant":1,"Price":1499}],"limit":{"Sid":"161610100018","Pid":391,"UserOrderCount":0,"LimitCount":6,"LimitTimeCycle":1440,"LimitOrderCount":1,"IsPlatform":false},"network":{"Sid":"161610100018","SName":"茅台云商陕西省西安市高新区服务网点","Did":"610100029","DName":"西安德润酒业销售有限公司","SHBegin":"09:00:00","SHEnd":"17:00:00","Address":"西安市高新区锦业路尚品美地城1号楼20101商铺","LinkMan":"马女士","LinkTel":"029-81107816  13022929292","InvoiceCost":0,"State":1,"HasPlainInvoice":1,"HasVATInvoice":0,"Description":"1、支持到店自提\r\n2、自提工作时间为每周一至周六，9:00至17:00点。\r\n3、遇节假日，请提前致电，确认时间后，方便您的提货","InvoiceCompany":"西安德润酒业销售有限公司","Coordinate":{"ProvCode":"610000","CityCode":"610100","AreaCode":"610101","Longitude":108.906303405762,"Latitude":34.2287788391113},"NetworkType":0,"WorkingDay":"[{\"EnDay\":\"Monday\",\"CnDay\":\"星期一\"},{\"EnDay\":\"Tuesday\",\"CnDay\":\"星期二\"},{\"EnDay\":\"Wednesday\",\"CnDay\":\"星期三\"},{\"EnDay\":\"Thursday\",\"CnDay\":\"星期四\"},{\"EnDay\":\"Friday\",\"CnDay\":\"星期五\"},{\"EnDay\":\"Saturday\",\"CnDay\":\"星期六\"}]","ProvCode":"610000","CityCode":"610100","AreaCode":"610101","IsPlatform":false}}}
-[2018-03-29T10:16:52.229] [INFO] things - [ '尚品美地城' ]
-[2018-03-29T10:16:52.229] [INFO] things - [32m商家已经上货，开始购买流程[39m
-[2018-03-29T10:16:52.229] [INFO] things - 推送网点信息
-[2018-03-29T10:16:52.230] [INFO] things - NAME: 西安市高新区锦业路尚品美地城1号楼20101商铺
-[2018-03-29T10:16:52.230] [INFO] things - SID: 161610100018
-[2018-03-29T10:16:52.230] [INFO] things - total: 15
-[2018-03-29T10:16:52.230] [INFO] things - limit: 6
-[2018-03-29T10:17:05.991] [INFO] things - {"status":200,"msg":"alldone","datas":[{"tel":"{\"phone\":\"13523472132\",\"pass\":\"abcdef7758521\"}","status":"FAIL","data":{"state":true,"code":99,"msg":"服务器正忙，请稍后再试"}},{"tel":"{\"phone\":\"18037798213\",\"pass\":\"abcdef7758521\"}","status":"FAIL","error":"订单错误，因为商家没有上货"}]}
-[2018-03-29T10:17:22.666] [INFO] things - {"status":200,"msg":"alldone","datas":[{"tel":"{\"phone\":\"13523472132\",\"pass\":\"abcdef7758521\"}","status":"FAIL","error":"订单错误，因为商家没有上货"},{"tel":"{\"phone\":\"18037798213\",\"pass\":\"abcdef7758521\"}","status":"FAIL","data":{"state":true,"code":99,"msg":"服务器正忙，请稍后再试"}}]}
-[2018-03-29T10:18:25.170] [INFO] things - params [ '/usr/local/bin/node',
-  '/Users/junliang/server/www/maotaiServer/controllers/watch.js',
-  '005',
-  '1' ]
-[2018-03-29T10:18:25.175] [INFO] things - to Buy tels {"phone":"13523472132","pass":"abcdef7758521"}|{"phone":"18037798213","pass":"abcdef7758521"}
-[2018-03-29T10:18:27.182] [TRACE] things - 当前时间: 10
-[2018-03-29T10:18:27.182] [INFO] things - 抢购时间开始
-[2018-03-29T10:19:09.626] [INFO] things - 位置错误,60秒后重试 { Error: socket hang up
-    at createHangUpError (_http_client.js:331:15)
-    at TLSSocket.socketOnEnd (_http_client.js:423:23)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+  code: 'ECONNRESET',
+  path: undefined,
+  host: undefined,
+  port: 0,
+  localAddress: undefined }
+[2018-03-29T16:08:36.199] [INFO] things - error { Error: socket hang up
+    at TLSSocket.onHangUp (_tls_wrap.js:1135:19)
+    at Object.onceWrapper (events.js:313:30)
     at emitNone (events.js:111:20)
     at TLSSocket.emit (events.js:208:7)
     at endReadableNT (_stream_readable.js:1055:12)
     at _combinedTickCallback (internal/process/next_tick.js:138:11)
-    at process._tickCallback (internal/process/next_tick.js:180:9) code: 'ECONNRESET' }
-[2018-03-29T10:19:30.694] [INFO] things - { Error: socket hang up
-    at createHangUpError (_http_client.js:331:15)
-    at Socket.socketOnEnd (_http_client.js:423:23)
-    at emitNone (events.js:111:20)
-    at Socket.emit (events.js:208:7)
-    at endReadableNT (_stream_readable.js:1055:12)
-    at _combinedTickCallback (internal/process/next_tick.js:138:11)
-    at process._tickCallback (internal/process/next_tick.js:180:9) code: 'ECONNRESET' }
-[2018-03-29T10:19:37.615] [INFO] things - params [ '/usr/local/bin/node',
-  '/Users/junliang/server/www/maotaiServer/controllers/watch.js',
-  '005',
-  '1' ]
-[2018-03-29T10:19:37.619] [INFO] things - to Buy tels {"phone":"13523472132","pass":"abcdef7758521"}|{"phone":"18037798213","pass":"abcdef7758521"}
-[2018-03-29T10:19:58.811] [INFO] things - {"status":200,"msg":"alldone","datas":[{"tel":"{\"phone\":\"13523472132\",\"pass\":\"abcdef7758521\"}","status":"FAIL","data":{"state":true,"code":99,"msg":"服务器正忙，请稍后再试"}},{"tel":"{\"phone\":\"18037798213\",\"pass\":\"abcdef7758521\"}","status":"FAIL","data":{"state":true,"code":99,"msg":"服务器正忙，请稍后再试"}}]}
-[2018-03-29T10:21:07.907] [INFO] things - params [ '/usr/local/bin/node',
-  '/Users/junliang/server/www/maotaiServer/controllers/watch.js',
-  '005',
-  '1' ]
-[2018-03-29T10:21:07.912] [INFO] things - to Buy tels {"phone":"13523472132","pass":"abcdef7758521"}|{"phone":"18037798213","pass":"abcdef7758521"}
-[2018-03-29T10:21:58.992] [INFO] things - {"status":200,"msg":"alldone","datas":[{"tel":"{\"phone\":\"13523472132\",\"pass\":\"abcdef7758521\"}","status":"FAIL","data":{"state":true,"code":99,"msg":"服务器正忙，请稍后再试"}},{"tel":"{\"phone\":\"18037798213\",\"pass\":\"abcdef7758521\"}","status":"FAIL","error":"socket hang up"}]}
-[2018-03-29T10:31:57.085] [INFO] things - params [ '/usr/local/bin/node',
-  '/Users/junliang/server/www/maotaiServer/controllers/watch.js',
-  '005',
-  '1' ]
-[2018-03-29T10:31:57.090] [INFO] things - to Buy tels {"phone":"13523472132","pass":"abcdef7758521"}
-[2018-03-29T10:32:07.725] [INFO] things - {"status":200,"msg":"alldone","datas":[{"tel":"{\"phone\":\"13523472132\",\"pass\":\"abcdef7758521\"}","status":"FAIL","error":"该网点无库存或可购买数量不够:stock:25limit:2"}]}
-[2018-03-29T10:32:36.890] [INFO] things - params [ '/usr/local/bin/node',
-  '/Users/junliang/server/www/maotaiServer/controllers/watch.js',
-  '005',
-  '1' ]
-[2018-03-29T10:32:36.894] [INFO] things - to Buy tels {"phone":"13523472132","pass":"abcdef7758521"}
-[2018-03-29T10:32:47.228] [INFO] things - {"status":200,"msg":"alldone","datas":[{"tel":"{\"phone\":\"13523472132\",\"pass\":\"abcdef7758521\"}","status":"FAIL","error":"该网点无库存或可购买数量不够:stock:25limit:2"}]}
-[2018-03-29T10:34:10.552] [INFO] things - params [ '/usr/local/bin/node',
-  '/Users/junliang/server/www/maotaiServer/controllers/watch.js',
-  '005',
-  '1' ]
-[2018-03-29T10:34:10.557] [INFO] things - to Buy tels {"phone":"13523472132","pass":"abcdef7758521"}
-[2018-03-29T10:34:15.666] [INFO] things - {"status":200,"msg":"alldone","datas":[{"tel":"{\"phone\":\"13523472132\",\"pass\":\"abcdef7758521\"}","status":"FAIL","error":"该网点无库存或可购买数量不够:stock:25limit:2"}]}
-[2018-03-29T10:35:07.259] [INFO] things - params [ '/usr/local/bin/node',
-  '/Users/junliang/server/www/maotaiServer/controllers/watch.js',
-  '005',
-  '1' ]
-[2018-03-29T10:35:07.264] [INFO] things - to Buy tels {"phone":"13523472132","pass":"abcdef7758521"}
-[2018-03-29T10:35:55.503] [INFO] things - {"status":200,"msg":"alldone","datas":[{"tel":"{\"phone\":\"13523472132\",\"pass\":\"abcdef7758521\"}","status":"SUCCESS","data":{"state":true,"code":0,"data":{"OrderId":"MTYS201803290040989","OrderPayMoney":2998,"outoCloseTimeText":"03月29日13时35分"}}}]}
-[2018-03-29T10:44:39.161] [INFO] things - params [ '/usr/local/bin/node',
-  '/Users/junliang/server/www/maotaiServer/controllers/watch.js',
-  '001',
-  '1' ]
-[2018-03-29T10:44:39.167] [INFO] things - to Buy tels {"phone":"13464686175","pass":"a123456"}|{"phone":"17853697903","pass":"a123456"}|{"phone":"15835086989","pass":"a123456"}|{"phone":"17393232815","pass":"a123456"}|{"phone":"15830750275","pass":"a123456"}|{"phone":"13513642792","pass":"a123456"}|{"phone":"15837437823","pass":"a123456"}|{"phone":"13230672756","pass":"a123456"}|{"phone":"18533703270","pass":"a123456"}|{"phone":"18183062125","pass":"a123456"}|{"phone":"18438063310","pass":"a123456"}|{"phone":"15082907866","pass":"a123456"}|{"phone":"17631880252","pass":"a123456"}
-[2018-03-29T10:44:41.173] [TRACE] things - 当前时间: 10
-[2018-03-29T10:44:41.174] [INFO] things - 抢购时间开始
-[2018-03-29T10:44:48.104] [INFO] things - {"state":true,"code":0,"data":{"Reservation":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":true,"Certificate":{"ID":"2669487","UID":2246148,"PID":"391","Status":3,"Address":{"ID":1951803,"IsDefault":true,"IsPushAddreess":true,"Name":"乔兴旺","TelPhone":"15837437823","Zipcode":"000000","ProvCode":"310000","CityCode":"310100","AreaCode":"310115","Remark":"","IsVerification":false,"AddressDetails":"上海市浦东新区,盛夏路1107弄32幢100-103号","Longitude":121.640831,"Latitude":31.204686,"Address":"盛夏路1107弄32幢100-103号","AddressText":"上海市浦东新区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-04 00:00:00"},"EnterTimeSlot":{"Start":"2018-03-29 00:00:00","End":"2018-03-29 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-03-29 10:00:00","End":"2018-03-29 16:00:00","InTime":true}},"address":{"ID":1951803,"IsDefault":true,"IsPushAddreess":true,"Name":"乔兴旺","TelPhone":"15837437823","Zipcode":"000000","ProvCode":"310000","CityCode":"310100","AreaCode":"310115","Remark":"","IsVerification":false,"AddressDetails":"上海市浦东新区,盛夏路1107弄32幢100-103号","Longitude":121.640831,"Latitude":31.204686,"Address":"盛夏路1107弄32幢100-103号","AddressText":"上海市浦东新区"},"stock":{"Sid":"152520100037","Pid":391,"Pcode":"23","CanSale":true,"CanLocation":true,"Longitude":0,"Latitude":0,"LocationCode":"310000","StockCount":948,"QuotasStockCount":948,"LocationDistance":0,"HasSelfDelivery":false,"HasOtherDelivery":true,"HasCityDelivery":false,"IsVirtual":false,"IsPlatform":true},"customer":null,"priceRule":[{"Quant":1,"Price":1499}],"limit":{"Sid":"152520100037","Pid":391,"UserOrderCount":0,"LimitCount":2,"LimitTimeCycle":1440,"LimitOrderCount":1,"IsPlatform":false},"network":{"Sid":"152520100037","SName":"茅台云商总部服务网点","Did":"520382018","DName":"贵州茅台集团电子商务股份有限公司","SHBegin":"09:30:00","SHEnd":"17:00:00","Address":"贵阳市","LinkMan":"贵州茅台集团电子商务股份有限公司","LinkTel":"400-010-9999","InvoiceCost":0,"State":1,"HasPlainInvoice":1,"HasVATInvoice":1,"Description":"","InvoiceCompany":"贵州茅台集团电子商务股份有限公司","Coordinate":{"ProvCode":"520000","CityCode":"520100","AreaCode":"520184","Longitude":106.752799987793,"Latitude":26.4076194763184},"NetworkType":0,"WorkingDay":"[{\"EnDay\":\"Monday\",\"CnDay\":\"星期一\"},{\"EnDay\":\"Tuesday\",\"CnDay\":\"星期二\"},{\"EnDay\":\"Wednesday\",\"CnDay\":\"星期三\"},{\"EnDay\":\"Thursday\",\"CnDay\":\"星期四\"},{\"EnDay\":\"Friday\",\"CnDay\":\"星期五\"},{\"EnDay\":\"Saturday\",\"CnDay\":\"星期六\"},{\"EnDay\":\"Sunday\",\"CnDay\":\"星期日\"}]","ProvCode":"520000","CityCode":"520100","AreaCode":"520184","IsPlatform":true}}}
-[2018-03-29T10:44:48.105] [INFO] things - 推送网点信息
-[2018-03-29T10:44:48.105] [INFO] things - NAME: 贵阳市
-[2018-03-29T10:44:48.105] [INFO] things - SID: 152520100037
-[2018-03-29T10:44:48.105] [INFO] things - total: 948
-[2018-03-29T10:44:48.106] [INFO] things - limit: 2
-[2018-03-29T10:45:04.691] [INFO] things - {"state":true,"code":0,"data":{"Reservation":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":true,"Certificate":{"ID":"2669390","UID":2245981,"PID":"391","Status":3,"Address":{"ID":1951715,"IsDefault":true,"IsPushAddreess":true,"Name":"邬连洪","TelPhone":"17853697903","Zipcode":"000000","ProvCode":"310000","CityCode":"310100","AreaCode":"310115","Remark":"","IsVerification":false,"AddressDetails":"上海市浦东新区,孙环路601弄1～223号","Longitude":121.64938,"Latitude":31.183321,"Address":"孙环路601弄1～223号","AddressText":"上海市浦东新区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-04 00:00:00"},"EnterTimeSlot":{"Start":"2018-03-29 00:00:00","End":"2018-03-29 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-03-29 10:00:00","End":"2018-03-29 16:00:00","InTime":true}},"address":{"ID":1951715,"IsDefault":true,"IsPushAddreess":true,"Name":"邬连洪","TelPhone":"17853697903","Zipcode":"000000","ProvCode":"310000","CityCode":"310100","AreaCode":"310115","Remark":"","IsVerification":false,"AddressDetails":"上海市浦东新区,孙环路601弄1～223号","Longitude":121.64938,"Latitude":31.183321,"Address":"孙环路601弄1～223号","AddressText":"上海市浦东新区"},"stock":{"Sid":"152520100037","Pid":391,"Pcode":"23","CanSale":true,"CanLocation":true,"Longitude":0,"Latitude":0,"LocationCode":"310000","StockCount":946,"QuotasStockCount":946,"LocationDistance":0,"HasSelfDelivery":false,"HasOtherDelivery":true,"HasCityDelivery":false,"IsVirtual":false,"IsPlatform":true},"customer":null,"priceRule":[{"Quant":1,"Price":1499}],"limit":{"Sid":"152520100037","Pid":391,"UserOrderCount":0,"LimitCount":2,"LimitTimeCycle":1440,"LimitOrderCount":1,"IsPlatform":false},"network":{"Sid":"152520100037","SName":"茅台云商总部服务网点","Did":"520382018","DName":"贵州茅台集团电子商务股份有限公司","SHBegin":"09:30:00","SHEnd":"17:00:00","Address":"贵阳市","LinkMan":"贵州茅台集团电子商务股份有限公司","LinkTel":"400-010-9999","InvoiceCost":0,"State":1,"HasPlainInvoice":1,"HasVATInvoice":1,"Description":"","InvoiceCompany":"贵州茅台集团电子商务股份有限公司","Coordinate":{"ProvCode":"520000","CityCode":"520100","AreaCode":"520184","Longitude":106.752799987793,"Latitude":26.4076194763184},"NetworkType":0,"WorkingDay":"[{\"EnDay\":\"Monday\",\"CnDay\":\"星期一\"},{\"EnDay\":\"Tuesday\",\"CnDay\":\"星期二\"},{\"EnDay\":\"Wednesday\",\"CnDay\":\"星期三\"},{\"EnDay\":\"Thursday\",\"CnDay\":\"星期四\"},{\"EnDay\":\"Friday\",\"CnDay\":\"星期五\"},{\"EnDay\":\"Saturday\",\"CnDay\":\"星期六\"},{\"EnDay\":\"Sunday\",\"CnDay\":\"星期日\"}]","ProvCode":"520000","CityCode":"520100","AreaCode":"520184","IsPlatform":true}}}
-[2018-03-29T10:45:04.692] [INFO] things - 推送网点信息
-[2018-03-29T10:45:04.692] [INFO] things - NAME: 贵阳市
-[2018-03-29T10:45:04.693] [INFO] things - SID: 152520100037
-[2018-03-29T10:45:04.693] [INFO] things - total: 946
-[2018-03-29T10:45:04.693] [INFO] things - limit: 2
-[2018-03-29T10:45:08.709] [INFO] things - {"state":true,"code":0,"data":{"Reservation":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":true,"Certificate":{"ID":"2669467","UID":2246017,"PID":"391","Status":3,"Address":{"ID":1951737,"IsDefault":true,"IsPushAddreess":true,"Name":"刘应阳","TelPhone":"13513642792","Zipcode":"000000","ProvCode":"310000","CityCode":"310100","AreaCode":"310115","Remark":"","IsVerification":false,"AddressDetails":"上海市浦东新区,紫薇路35弄1-33号","Longitude":121.619623,"Latitude":31.206579,"Address":"紫薇路35弄1-33号","AddressText":"上海市浦东新区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-04 00:00:00"},"EnterTimeSlot":{"Start":"2018-03-29 00:00:00","End":"2018-03-29 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-03-29 10:00:00","End":"2018-03-29 16:00:00","InTime":true}},"address":{"ID":1951737,"IsDefault":true,"IsPushAddreess":true,"Name":"刘应阳","TelPhone":"13513642792","Zipcode":"000000","ProvCode":"310000","CityCode":"310100","AreaCode":"310115","Remark":"","IsVerification":false,"AddressDetails":"上海市浦东新区,紫薇路35弄1-33号","Longitude":121.619623,"Latitude":31.206579,"Address":"紫薇路35弄1-33号","AddressText":"上海市浦东新区"},"stock":{"Sid":"152520100037","Pid":391,"Pcode":"23","CanSale":true,"CanLocation":true,"Longitude":0,"Latitude":0,"LocationCode":"310000","StockCount":946,"QuotasStockCount":946,"LocationDistance":0,"HasSelfDelivery":false,"HasOtherDelivery":true,"HasCityDelivery":false,"IsVirtual":false,"IsPlatform":true},"customer":null,"priceRule":[{"Quant":1,"Price":1499}],"limit":{"Sid":"152520100037","Pid":391,"UserOrderCount":0,"LimitCount":2,"LimitTimeCycle":1440,"LimitOrderCount":1,"IsPlatform":false},"network":{"Sid":"152520100037","SName":"茅台云商总部服务网点","Did":"520382018","DName":"贵州茅台集团电子商务股份有限公司","SHBegin":"09:30:00","SHEnd":"17:00:00","Address":"贵阳市","LinkMan":"贵州茅台集团电子商务股份有限公司","LinkTel":"400-010-9999","InvoiceCost":0,"State":1,"HasPlainInvoice":1,"HasVATInvoice":1,"Description":"","InvoiceCompany":"贵州茅台集团电子商务股份有限公司","Coordinate":{"ProvCode":"520000","CityCode":"520100","AreaCode":"520184","Longitude":106.752799987793,"Latitude":26.4076194763184},"NetworkType":0,"WorkingDay":"[{\"EnDay\":\"Monday\",\"CnDay\":\"星期一\"},{\"EnDay\":\"Tuesday\",\"CnDay\":\"星期二\"},{\"EnDay\":\"Wednesday\",\"CnDay\":\"星期三\"},{\"EnDay\":\"Thursday\",\"CnDay\":\"星期四\"},{\"EnDay\":\"Friday\",\"CnDay\":\"星期五\"},{\"EnDay\":\"Saturday\",\"CnDay\":\"星期六\"},{\"EnDay\":\"Sunday\",\"CnDay\":\"星期日\"}]","ProvCode":"520000","CityCode":"520100","AreaCode":"520184","IsPlatform":true}}}
-[2018-03-29T10:45:08.709] [INFO] things - 推送网点信息
-[2018-03-29T10:45:08.709] [INFO] things - NAME: 贵阳市
-[2018-03-29T10:45:08.709] [INFO] things - SID: 152520100037
-[2018-03-29T10:45:08.709] [INFO] things - total: 946
-[2018-03-29T10:45:08.710] [INFO] things - limit: 2
-[2018-03-29T10:45:20.732] [INFO] things - {"state":true,"code":0,"data":{"Reservation":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":true,"Certificate":{"ID":"2669498","UID":2245827,"PID":"391","Status":3,"Address":{"ID":1951811,"IsDefault":true,"IsPushAddreess":true,"Name":"熬绍芳","TelPhone":"18438063310","Zipcode":"000000","ProvCode":"310000","CityCode":"310100","AreaCode":"310115","Remark":"","IsVerification":false,"AddressDetails":"上海市浦东新区,益丰路55弄16幢52-55号","Longitude":121.628988,"Latitude":31.207096,"Address":"益丰路55弄16幢52-55号","AddressText":"上海市浦东新区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-04 00:00:00"},"EnterTimeSlot":{"Start":"2018-03-29 00:00:00","End":"2018-03-29 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-03-29 10:00:00","End":"2018-03-29 16:00:00","InTime":true}},"address":{"ID":1951811,"IsDefault":true,"IsPushAddreess":true,"Name":"熬绍芳","TelPhone":"18438063310","Zipcode":"000000","ProvCode":"310000","CityCode":"310100","AreaCode":"310115","Remark":"","IsVerification":false,"AddressDetails":"上海市浦东新区,益丰路55弄16幢52-55号","Longitude":121.628988,"Latitude":31.207096,"Address":"益丰路55弄16幢52-55号","AddressText":"上海市浦东新区"},"stock":{"Sid":"152520100037","Pid":391,"Pcode":"23","CanSale":true,"CanLocation":true,"Longitude":0,"Latitude":0,"LocationCode":"310000","StockCount":946,"QuotasStockCount":946,"LocationDistance":0,"HasSelfDelivery":false,"HasOtherDelivery":true,"HasCityDelivery":false,"IsVirtual":false,"IsPlatform":true},"customer":null,"priceRule":[{"Quant":1,"Price":1499}],"limit":{"Sid":"152520100037","Pid":391,"UserOrderCount":0,"LimitCount":2,"LimitTimeCycle":1440,"LimitOrderCount":1,"IsPlatform":false},"network":{"Sid":"152520100037","SName":"茅台云商总部服务网点","Did":"520382018","DName":"贵州茅台集团电子商务股份有限公司","SHBegin":"09:30:00","SHEnd":"17:00:00","Address":"贵阳市","LinkMan":"贵州茅台集团电子商务股份有限公司","LinkTel":"400-010-9999","InvoiceCost":0,"State":1,"HasPlainInvoice":1,"HasVATInvoice":1,"Description":"","InvoiceCompany":"贵州茅台集团电子商务股份有限公司","Coordinate":{"ProvCode":"520000","CityCode":"520100","AreaCode":"520184","Longitude":106.752799987793,"Latitude":26.4076194763184},"NetworkType":0,"WorkingDay":"[{\"EnDay\":\"Monday\",\"CnDay\":\"星期一\"},{\"EnDay\":\"Tuesday\",\"CnDay\":\"星期二\"},{\"EnDay\":\"Wednesday\",\"CnDay\":\"星期三\"},{\"EnDay\":\"Thursday\",\"CnDay\":\"星期四\"},{\"EnDay\":\"Friday\",\"CnDay\":\"星期五\"},{\"EnDay\":\"Saturday\",\"CnDay\":\"星期六\"},{\"EnDay\":\"Sunday\",\"CnDay\":\"星期日\"}]","ProvCode":"520000","CityCode":"520100","AreaCode":"520184","IsPlatform":true}}}
-[2018-03-29T10:45:20.733] [INFO] things - 推送网点信息
-[2018-03-29T10:45:20.733] [INFO] things - NAME: 贵阳市
-[2018-03-29T10:45:20.733] [INFO] things - SID: 152520100037
-[2018-03-29T10:45:20.733] [INFO] things - total: 946
-[2018-03-29T10:45:20.734] [INFO] things - limit: 2
-[2018-03-29T10:45:26.044] [INFO] things - {"state":true,"code":0,"data":{"Reservation":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":true,"Certificate":{"ID":"2669421","UID":2245955,"PID":"391","Status":3,"Address":{"ID":1951729,"IsDefault":true,"IsPushAddreess":true,"Name":"葛徳智","TelPhone":"17393232815","Zipcode":"000000","ProvCode":"310000","CityCode":"310100","AreaCode":"310115","Remark":"","IsVerification":false,"AddressDetails":"上海市浦东新区,古铜南路117弄1-53号","Longitude":121.622327,"Latitude":31.20666,"Address":"古铜南路117弄1-53号","AddressText":"上海市浦东新区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-04 00:00:00"},"EnterTimeSlot":{"Start":"2018-03-29 00:00:00","End":"2018-03-29 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-03-29 10:00:00","End":"2018-03-29 16:00:00","InTime":true}},"address":{"ID":1951729,"IsDefault":true,"IsPushAddreess":true,"Name":"葛徳智","TelPhone":"17393232815","Zipcode":"000000","ProvCode":"310000","CityCode":"310100","AreaCode":"310115","Remark":"","IsVerification":false,"AddressDetails":"上海市浦东新区,古铜南路117弄1-53号","Longitude":121.622327,"Latitude":31.20666,"Address":"古铜南路117弄1-53号","AddressText":"上海市浦东新区"},"stock":{"Sid":"152520100037","Pid":391,"Pcode":"23","CanSale":true,"CanLocation":true,"Longitude":0,"Latitude":0,"LocationCode":"310000","StockCount":946,"QuotasStockCount":946,"LocationDistance":0,"HasSelfDelivery":false,"HasOtherDelivery":true,"HasCityDelivery":false,"IsVirtual":false,"IsPlatform":true},"customer":null,"priceRule":[{"Quant":1,"Price":1499}],"limit":{"Sid":"152520100037","Pid":391,"UserOrderCount":0,"LimitCount":2,"LimitTimeCycle":1440,"LimitOrderCount":1,"IsPlatform":false},"network":{"Sid":"152520100037","SName":"茅台云商总部服务网点","Did":"520382018","DName":"贵州茅台集团电子商务股份有限公司","SHBegin":"09:30:00","SHEnd":"17:00:00","Address":"贵阳市","LinkMan":"贵州茅台集团电子商务股份有限公司","LinkTel":"400-010-9999","InvoiceCost":0,"State":1,"HasPlainInvoice":1,"HasVATInvoice":1,"Description":"","InvoiceCompany":"贵州茅台集团电子商务股份有限公司","Coordinate":{"ProvCode":"520000","CityCode":"520100","AreaCode":"520184","Longitude":106.752799987793,"Latitude":26.4076194763184},"NetworkType":0,"WorkingDay":"[{\"EnDay\":\"Monday\",\"CnDay\":\"星期一\"},{\"EnDay\":\"Tuesday\",\"CnDay\":\"星期二\"},{\"EnDay\":\"Wednesday\",\"CnDay\":\"星期三\"},{\"EnDay\":\"Thursday\",\"CnDay\":\"星期四\"},{\"EnDay\":\"Friday\",\"CnDay\":\"星期五\"},{\"EnDay\":\"Saturday\",\"CnDay\":\"星期六\"},{\"EnDay\":\"Sunday\",\"CnDay\":\"星期日\"}]","ProvCode":"520000","CityCode":"520100","AreaCode":"520184","IsPlatform":true}}}
-[2018-03-29T10:45:26.044] [INFO] things - 推送网点信息
-[2018-03-29T10:45:26.044] [INFO] things - NAME: 贵阳市
-[2018-03-29T10:45:26.044] [INFO] things - SID: 152520100037
-[2018-03-29T10:45:26.045] [INFO] things - total: 946
-[2018-03-29T10:45:26.045] [INFO] things - limit: 2
-[2018-03-29T10:45:36.972] [INFO] things - {"state":true,"code":0,"data":{"Reservation":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":true,"Certificate":{"ID":"2669390","UID":2245981,"PID":"391","Status":3,"Address":{"ID":1951715,"IsDefault":true,"IsPushAddreess":true,"Name":"邬连洪","TelPhone":"17853697903","Zipcode":"000000","ProvCode":"310000","CityCode":"310100","AreaCode":"310115","Remark":"","IsVerification":false,"AddressDetails":"上海市浦东新区,孙环路601弄1～223号","Longitude":121.64938,"Latitude":31.183321,"Address":"孙环路601弄1～223号","AddressText":"上海市浦东新区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-04 00:00:00"},"EnterTimeSlot":{"Start":"2018-03-29 00:00:00","End":"2018-03-29 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-03-29 10:00:00","End":"2018-03-29 16:00:00","InTime":true}},"address":{"ID":1951715,"IsDefault":true,"IsPushAddreess":true,"Name":"邬连洪","TelPhone":"17853697903","Zipcode":"000000","ProvCode":"310000","CityCode":"310100","AreaCode":"310115","Remark":"","IsVerification":false,"AddressDetails":"上海市浦东新区,孙环路601弄1～223号","Longitude":121.64938,"Latitude":31.183321,"Address":"孙环路601弄1～223号","AddressText":"上海市浦东新区"},"stock":{"Sid":"152520100037","Pid":391,"Pcode":"23","CanSale":true,"CanLocation":true,"Longitude":0,"Latitude":0,"LocationCode":"310000","StockCount":946,"QuotasStockCount":946,"LocationDistance":0,"HasSelfDelivery":false,"HasOtherDelivery":true,"HasCityDelivery":false,"IsVirtual":false,"IsPlatform":true},"customer":null,"priceRule":[{"Quant":1,"Price":1499}],"limit":{"Sid":"152520100037","Pid":391,"UserOrderCount":0,"LimitCount":2,"LimitTimeCycle":1440,"LimitOrderCount":1,"IsPlatform":false},"network":{"Sid":"152520100037","SName":"茅台云商总部服务网点","Did":"520382018","DName":"贵州茅台集团电子商务股份有限公司","SHBegin":"09:30:00","SHEnd":"17:00:00","Address":"贵阳市","LinkMan":"贵州茅台集团电子商务股份有限公司","LinkTel":"400-010-9999","InvoiceCost":0,"State":1,"HasPlainInvoice":1,"HasVATInvoice":1,"Description":"","InvoiceCompany":"贵州茅台集团电子商务股份有限公司","Coordinate":{"ProvCode":"520000","CityCode":"520100","AreaCode":"520184","Longitude":106.752799987793,"Latitude":26.4076194763184},"NetworkType":0,"WorkingDay":"[{\"EnDay\":\"Monday\",\"CnDay\":\"星期一\"},{\"EnDay\":\"Tuesday\",\"CnDay\":\"星期二\"},{\"EnDay\":\"Wednesday\",\"CnDay\":\"星期三\"},{\"EnDay\":\"Thursday\",\"CnDay\":\"星期四\"},{\"EnDay\":\"Friday\",\"CnDay\":\"星期五\"},{\"EnDay\":\"Saturday\",\"CnDay\":\"星期六\"},{\"EnDay\":\"Sunday\",\"CnDay\":\"星期日\"}]","ProvCode":"520000","CityCode":"520100","AreaCode":"520184","IsPlatform":true}}}
-[2018-03-29T10:45:36.972] [INFO] things - 推送网点信息
-[2018-03-29T10:45:36.972] [INFO] things - NAME: 贵阳市
-[2018-03-29T10:45:36.973] [INFO] things - SID: 152520100037
-[2018-03-29T10:45:36.973] [INFO] things - total: 946
-[2018-03-29T10:45:36.973] [INFO] things - limit: 2
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+  code: 'ECONNRESET',
+  path: undefined,
+  host: undefined,
+  port: 0,
+  localAddress: undefined }
+[2018-03-29T16:08:39.204] [INFO] things - object
+[2018-03-29T16:08:39.204] [INFO] things - 开始预约: 13343192376
+[2018-03-29T16:08:40.086] [INFO] things - start get addressID from mobile: 13343192376
+[2018-03-29T16:08:44.545] [INFO] things - 定位查询结果 { state: true,
+  code: 10,
+  data: 
+   { IsNeedReservation: true,
+     IsIntercept: false,
+     ProductID: 0,
+     CanUseCredence: false,
+     Certificate: null,
+     EnterTimeSlot: 
+      { Start: '2018-03-29 00:00:00',
+        End: '2018-03-29 23:59:59',
+        InTime: true },
+     BuyTimeSlot: 
+      { Start: '2018-03-30 10:00:00',
+        End: '2018-03-30 16:00:00',
+        InTime: false } } }
+[2018-03-29T16:08:45.754] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-03-29T16:08:45.754] [INFO] things - 预约结果 13343192376 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-03-29T16:08:48.758] [INFO] things - object
+[2018-03-29T16:08:48.758] [INFO] things - 开始预约: 13485665212
+[2018-03-29T16:08:58.024] [INFO] things - start get addressID from mobile: 13485665212
+[2018-03-29T16:09:17.661] [INFO] things - 定位查询结果 { state: true,
+  code: 10,
+  data: 
+   { IsNeedReservation: true,
+     IsIntercept: false,
+     ProductID: 0,
+     CanUseCredence: false,
+     Certificate: null,
+     EnterTimeSlot: 
+      { Start: '2018-03-29 00:00:00',
+        End: '2018-03-29 23:59:59',
+        InTime: true },
+     BuyTimeSlot: 
+      { Start: '2018-03-30 10:00:00',
+        End: '2018-03-30 16:00:00',
+        InTime: false } } }
+[2018-03-29T16:09:22.498] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-03-29T16:09:22.498] [INFO] things - 预约结果 13485665212 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-03-29T16:09:25.502] [INFO] things - object
+[2018-03-29T16:09:25.503] [INFO] things - 开始预约: 13700077519
+[2018-03-29T16:09:26.805] [INFO] things - start get addressID from mobile: 13700077519
+[2018-03-29T16:09:31.791] [INFO] things - 定位查询结果 { state: true,
+  code: 10,
+  data: 
+   { IsNeedReservation: true,
+     IsIntercept: false,
+     ProductID: 0,
+     CanUseCredence: false,
+     Certificate: null,
+     EnterTimeSlot: 
+      { Start: '2018-03-29 00:00:00',
+        End: '2018-03-29 23:59:59',
+        InTime: true },
+     BuyTimeSlot: 
+      { Start: '2018-03-30 10:00:00',
+        End: '2018-03-30 16:00:00',
+        InTime: false } } }
+[2018-03-29T16:09:33.943] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-03-29T16:09:33.944] [INFO] things - 预约结果 13700077519 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-03-29T16:09:36.948] [INFO] things - object
+[2018-03-29T16:09:36.949] [INFO] things - 开始预约: 15063527328
+[2018-03-29T16:09:41.804] [INFO] things - start get addressID from mobile: 15063527328
+[2018-03-29T16:09:43.691] [INFO] things - 定位查询结果 { state: true,
+  code: 10,
+  data: 
+   { IsNeedReservation: true,
+     IsIntercept: false,
+     ProductID: 391,
+     CanUseCredence: false,
+     Certificate: 
+      { ID: '2602744',
+        UID: 2225390,
+        PID: '391',
+        Status: 3,
+        Address: [Object],
+        Product: [Object],
+        FailureTime: '2018-03-29 00:00:00' },
+     EnterTimeSlot: 
+      { Start: '2018-03-29 00:00:00',
+        End: '2018-03-29 23:59:59',
+        InTime: true },
+     BuyTimeSlot: 
+      { Start: '2018-03-30 10:00:00',
+        End: '2018-03-30 16:00:00',
+        InTime: false } } }
+[2018-03-29T16:09:44.715] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-03-29T16:09:44.715] [INFO] things - 预约结果 15063527328 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-03-29T16:09:47.719] [INFO] things - object
+[2018-03-29T16:09:47.721] [INFO] things - 开始预约: 15022156584
+[2018-03-29T16:09:48.836] [INFO] things - start get addressID from mobile: 15022156584
+[2018-03-29T16:09:52.905] [INFO] things - 定位查询结果 { state: true,
+  code: 10,
+  data: 
+   { IsNeedReservation: true,
+     IsIntercept: false,
+     ProductID: 0,
+     CanUseCredence: false,
+     Certificate: null,
+     EnterTimeSlot: 
+      { Start: '2018-03-29 00:00:00',
+        End: '2018-03-29 23:59:59',
+        InTime: true },
+     BuyTimeSlot: 
+      { Start: '2018-03-30 10:00:00',
+        End: '2018-03-30 16:00:00',
+        InTime: false } } }
+[2018-03-29T16:09:54.030] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-03-29T16:09:54.031] [INFO] things - 预约结果 15022156584 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-03-29T16:09:57.032] [INFO] things - object
+[2018-03-29T16:09:57.033] [INFO] things - 开始预约: 15075870950
+[2018-03-29T16:09:57.965] [INFO] things - start get addressID from mobile: 15075870950
+[2018-03-29T16:09:59.147] [INFO] things - 定位查询结果 { state: true,
+  code: 10,
+  data: 
+   { IsNeedReservation: true,
+     IsIntercept: false,
+     ProductID: 0,
+     CanUseCredence: false,
+     Certificate: null,
+     EnterTimeSlot: 
+      { Start: '2018-03-29 00:00:00',
+        End: '2018-03-29 23:59:59',
+        InTime: true },
+     BuyTimeSlot: 
+      { Start: '2018-03-30 10:00:00',
+        End: '2018-03-30 16:00:00',
+        InTime: false } } }
+[2018-03-29T16:09:59.756] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-03-29T16:09:59.757] [INFO] things - 预约结果 15075870950 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-03-29T16:10:02.761] [INFO] things - object
+[2018-03-29T16:10:02.761] [INFO] things - 开始预约: 15206334886
+[2018-03-29T16:10:03.703] [INFO] things - start get addressID from mobile: 15206334886
+[2018-03-29T16:10:05.306] [INFO] things - 定位查询结果 { state: true,
+  code: 10,
+  data: 
+   { IsNeedReservation: true,
+     IsIntercept: false,
+     ProductID: 0,
+     CanUseCredence: false,
+     Certificate: null,
+     EnterTimeSlot: 
+      { Start: '2018-03-29 00:00:00',
+        End: '2018-03-29 23:59:59',
+        InTime: true },
+     BuyTimeSlot: 
+      { Start: '2018-03-30 10:00:00',
+        End: '2018-03-30 16:00:00',
+        InTime: false } } }
+[2018-03-29T16:10:06.039] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-03-29T16:10:06.039] [INFO] things - 预约结果 15206334886 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-03-29T16:10:09.044] [INFO] things - object
+[2018-03-29T16:10:09.044] [INFO] things - 开始预约: 15303199414
+[2018-03-29T16:10:12.650] [INFO] things - start get addressID from mobile: 15303199414
+[2018-03-29T16:10:15.720] [INFO] things - 定位查询结果 { state: true,
+  code: 10,
+  data: 
+   { IsNeedReservation: true,
+     IsIntercept: false,
+     ProductID: 0,
+     CanUseCredence: false,
+     Certificate: null,
+     EnterTimeSlot: 
+      { Start: '2018-03-29 00:00:00',
+        End: '2018-03-29 23:59:59',
+        InTime: true },
+     BuyTimeSlot: 
+      { Start: '2018-03-30 10:00:00',
+        End: '2018-03-30 16:00:00',
+        InTime: false } } }
+[2018-03-29T16:10:17.575] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-03-29T16:10:17.575] [INFO] things - 预约结果 15303199414 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-03-29T16:10:20.579] [INFO] things - object
+[2018-03-29T16:10:20.580] [INFO] things - 开始预约: 15354193781
+[2018-03-29T16:10:21.320] [INFO] things - start get addressID from mobile: 15354193781
+[2018-03-29T16:10:22.519] [INFO] things - 定位查询结果 { state: true,
+  code: 10,
+  data: 
+   { IsNeedReservation: true,
+     IsIntercept: false,
+     ProductID: 0,
+     CanUseCredence: false,
+     Certificate: null,
+     EnterTimeSlot: 
+      { Start: '2018-03-29 00:00:00',
+        End: '2018-03-29 23:59:59',
+        InTime: true },
+     BuyTimeSlot: 
+      { Start: '2018-03-30 10:00:00',
+        End: '2018-03-30 16:00:00',
+        InTime: false } } }
+[2018-03-29T16:10:23.174] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-03-29T16:10:23.174] [INFO] things - 预约结果 15354193781 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-03-29T16:10:26.177] [INFO] things - object
+[2018-03-29T16:10:26.177] [INFO] things - 开始预约: 15373204143
+[2018-03-29T16:10:29.184] [INFO] things - start get addressID from mobile: 15373204143
+[2018-03-29T16:10:35.993] [INFO] things - 定位查询结果 { state: true,
+  code: 10,
+  data: 
+   { IsNeedReservation: true,
+     IsIntercept: false,
+     ProductID: 0,
+     CanUseCredence: false,
+     Certificate: null,
+     EnterTimeSlot: 
+      { Start: '2018-03-29 00:00:00',
+        End: '2018-03-29 23:59:59',
+        InTime: true },
+     BuyTimeSlot: 
+      { Start: '2018-03-30 10:00:00',
+        End: '2018-03-30 16:00:00',
+        InTime: false } } }
+[2018-03-29T16:10:39.074] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-03-29T16:10:39.074] [INFO] things - 预约结果 15373204143 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-03-29T16:10:42.080] [INFO] things - object
+[2018-03-29T16:10:42.081] [INFO] things - 开始预约: 15399130078
+[2018-03-29T16:10:43.449] [INFO] things - start get addressID from mobile: 15399130078
+[2018-03-29T16:10:47.473] [INFO] things - 定位查询结果 { state: true,
+  code: 10,
+  data: 
+   { IsNeedReservation: true,
+     IsIntercept: false,
+     ProductID: 0,
+     CanUseCredence: false,
+     Certificate: null,
+     EnterTimeSlot: 
+      { Start: '2018-03-29 00:00:00',
+        End: '2018-03-29 23:59:59',
+        InTime: true },
+     BuyTimeSlot: 
+      { Start: '2018-03-30 10:00:00',
+        End: '2018-03-30 16:00:00',
+        InTime: false } } }
+[2018-03-29T16:10:48.355] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-03-29T16:10:48.355] [INFO] things - 预约结果 15399130078 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-03-29T16:10:51.358] [INFO] things - object
+[2018-03-29T16:10:51.358] [INFO] things - 开始预约: 15515970953
+[2018-03-29T16:10:52.367] [INFO] things - start get addressID from mobile: 15515970953
+[2018-03-29T16:10:54.816] [INFO] things - 定位查询结果 { state: true,
+  code: 10,
+  data: 
+   { IsNeedReservation: true,
+     IsIntercept: false,
+     ProductID: 0,
+     CanUseCredence: false,
+     Certificate: null,
+     EnterTimeSlot: 
+      { Start: '2018-03-29 00:00:00',
+        End: '2018-03-29 23:59:59',
+        InTime: true },
+     BuyTimeSlot: 
+      { Start: '2018-03-30 10:00:00',
+        End: '2018-03-30 16:00:00',
+        InTime: false } } }
+[2018-03-29T16:10:55.914] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-03-29T16:10:55.914] [INFO] things - 预约结果 15515970953 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-03-29T16:10:58.918] [INFO] things - object
+[2018-03-29T16:10:58.918] [INFO] things - 开始预约: 15627944858
+[2018-03-29T16:10:59.588] [INFO] things - start get addressID from mobile: 15627944858
+[2018-03-29T16:11:01.018] [INFO] things - 定位查询结果 { state: true,
+  code: 10,
+  data: 
+   { IsNeedReservation: true,
+     IsIntercept: false,
+     ProductID: 0,
+     CanUseCredence: false,
+     Certificate: null,
+     EnterTimeSlot: 
+      { Start: '2018-03-29 00:00:00',
+        End: '2018-03-29 23:59:59',
+        InTime: true },
+     BuyTimeSlot: 
+      { Start: '2018-03-30 10:00:00',
+        End: '2018-03-30 16:00:00',
+        InTime: false } } }
+[2018-03-29T16:11:01.923] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-03-29T16:11:01.923] [INFO] things - 预约结果 15627944858 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-03-29T16:11:01.923] [INFO] things - 被封号: 15627944858
+[2018-03-29T16:11:04.928] [INFO] things - object
+[2018-03-29T16:11:04.929] [INFO] things - 开始预约: 15937230461
+[2018-03-29T16:11:06.410] [INFO] things - start get addressID from mobile: 15937230461
+[2018-03-29T16:11:07.754] [INFO] things - 定位查询结果 { state: true,
+  code: 10,
+  data: 
+   { IsNeedReservation: true,
+     IsIntercept: false,
+     ProductID: 0,
+     CanUseCredence: false,
+     Certificate: null,
+     EnterTimeSlot: 
+      { Start: '2018-03-29 00:00:00',
+        End: '2018-03-29 23:59:59',
+        InTime: true },
+     BuyTimeSlot: 
+      { Start: '2018-03-30 10:00:00',
+        End: '2018-03-30 16:00:00',
+        InTime: false } } }
+[2018-03-29T16:11:08.408] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-03-29T16:11:08.408] [INFO] things - 预约结果 15937230461 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-03-29T16:11:11.412] [INFO] things - object
+[2018-03-29T16:11:11.413] [INFO] things - 开始预约: 15951853170
+[2018-03-29T16:11:12.140] [INFO] things - start get addressID from mobile: 15951853170
+[2018-03-29T16:11:14.109] [INFO] things - 定位查询结果 { state: true,
+  code: 10,
+  data: 
+   { IsNeedReservation: true,
+     IsIntercept: false,
+     ProductID: 0,
+     CanUseCredence: false,
+     Certificate: null,
+     EnterTimeSlot: 
+      { Start: '2018-03-29 00:00:00',
+        End: '2018-03-29 23:59:59',
+        InTime: true },
+     BuyTimeSlot: 
+      { Start: '2018-03-30 10:00:00',
+        End: '2018-03-30 16:00:00',
+        InTime: false } } }
+[2018-03-29T16:11:15.020] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-03-29T16:11:15.021] [INFO] things - 预约结果 15951853170 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-03-29T16:11:18.026] [INFO] things - object
+[2018-03-29T16:11:18.027] [INFO] things - 开始预约: 17379324087
+[2018-03-29T16:11:22.396] [INFO] things - start get addressID from mobile: 17379324087
+[2018-03-29T16:11:23.959] [INFO] things - 定位查询结果 { state: true,
+  code: 10,
+  data: 
+   { IsNeedReservation: true,
+     IsIntercept: false,
+     ProductID: 0,
+     CanUseCredence: false,
+     Certificate: null,
+     EnterTimeSlot: 
+      { Start: '2018-03-29 00:00:00',
+        End: '2018-03-29 23:59:59',
+        InTime: true },
+     BuyTimeSlot: 
+      { Start: '2018-03-30 10:00:00',
+        End: '2018-03-30 16:00:00',
+        InTime: false } } }
+[2018-03-29T16:11:24.871] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-03-29T16:11:24.871] [INFO] things - 预约结果 17379324087 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-03-29T16:11:27.874] [INFO] things - 所有手机号预约结束
+[2018-03-29T16:37:19.036] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '15330066919',
+     NickName: '15330066919',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: 'a4655395fc589925e765f1afc665f669',
+     UserId: 2230370,
+     Name: '&15330066919' } }
+[2018-03-29T16:37:19.039] [INFO] things - start get addressID from mobile: 15330066919
+[2018-03-29T16:37:24.047] [INFO] things - 所有地址条数为 2
+[2018-03-29T16:37:24.047] [INFO] things - { rownumber: 1,
+  SId: 1953185,
+  UserId: '2230370',
+  TelPhone: '15330066918',
+  Zipcode: '000000',
+  Address: '通州区妇幼保健院,',
+  AddressInfo: '北京市通州区',
+  ShipTo: '李俊良',
+  Remark: '',
+  ProvinceId: '110000',
+  CityId: '110100',
+  DistrictsId: '110112',
+  IsDefault: true,
+  SMNo: null,
+  RelPhone: null,
+  Longitude: '116.683192',
+  Latitude: '39.887158',
+  IsVerification: false,
+  TimeStamp: '2018-03-28 00:48:09' }
+[2018-03-29T16:37:29.728] [INFO] things - {"state":true,"code":0,"data":{"index":1,"size":"10","count":"1","Data":[{"rownumber":1,"OrderId":"MTYS201803280132715","OrderDate":"2018-03-28 17:08:47","FinalPrice":null,"autoCloseDate":"2018-03-28 20:08:47","Productid":621,"Quantity":1,"ItemListPrice":398,"ItemDescription":"茅台王子酒（酱香经典）53%vol 500ml","PayDetailStatus":null,"AccountAmount":null,"ThumbnailsUrl":"/upload/fileStore/20180117/6365179167918234672489658.jpg","OrderStatus":4,"UserId":2230370,"OrderType":null,"PaymentTypeId":-4,"ReducedPromotionId":-4,"OrderTotal":398,"Favorable":null,"ShopId":"152520100037","PayStatus":0,"zt":null,"isException":false,"ExceptionText":null,"ExceptionTime":null},{"rownumber":2,"OrderId":"MTYS201803280093277","OrderDate":"2018-03-28 13:47:47","FinalPrice":null,"autoCloseDate":"2018-03-28 16:47:47","Productid":387,"Quantity":1,"ItemListPrice":4999,"ItemDescription":"贵州茅台酒 (15年茅台) 53%vol 500ml","PayDetailStatus":null,"AccountAmount":null,"ThumbnailsUrl":"/Storage/master/product/thumbs160/160_0b2f75d4eb0c40bbb019ea193d760547.jpg","OrderStatus":4,"UserId":2230370,"OrderType":null,"PaymentTypeId":-4,"ReducedPromotionId":-4,"OrderTotal":4999,"Favorable":null,"ShopId":"152520100037","PayStatus":0,"zt":null,"isException":false,"ExceptionText":null,"ExceptionTime":null},{"rownumber":3,"OrderId":"MTYS201803160004337","OrderDate":"2018-03-16 10:13:35","FinalPrice":null,"autoCloseDate":"2018-03-16 13:13:35","Productid":391,"Quantity":6,"ItemListPrice":1499,"ItemDescription":"贵州茅台酒 (新飞天) 53%vol 500ml","PayDetailStatus":null,"AccountAmount":null,"ThumbnailsUrl":"/Storage/master/product/thumbs160/160_4c7cd945371d4d95b7432d87b1b51a10.jpg","OrderStatus":4,"UserId":2230370,"OrderType":null,"PaymentTypeId":-4,"ReducedPromotionId":-4,"OrderTotal":8994,"Favorable":null,"ShopId":"122220100011","PayStatus":0,"zt":null,"isException":false,"ExceptionText":null,"ExceptionTime":null},{"rownumber":4,"OrderId":"MTYS201803150024938","OrderDate":"2018-03-15 14:09:05","FinalPrice":null,"autoCloseDate":"2018-03-15 17:09:05","Productid":572,"Quantity":1,"ItemListPrice":288,"ItemDescription":"茅乡醇（佳酿）52%vol 500ml","PayDetailStatus":null,"AccountAmount":null,"ThumbnailsUrl":"/upload/fileStore/20171106/6364557749361983723704642.jpg","OrderStatus":4,"UserId":2230370,"OrderType":null,"PaymentTypeId":-4,"ReducedPromotionId":-4,"OrderTotal":288,"Favorable":null,"ShopId":"152520100037","PayStatus":0,"zt":null,"isException":false,"ExceptionText":null,"ExceptionTime":null}]}}
+[2018-03-29T16:37:29.729] [INFO] things - order info [ { rownumber: 1,
+    OrderId: 'MTYS201803280132715',
+    OrderDate: '2018-03-28 17:08:47',
+    FinalPrice: null,
+    autoCloseDate: '2018-03-28 20:08:47',
+    Productid: 621,
+    Quantity: 1,
+    ItemListPrice: 398,
+    ItemDescription: '茅台王子酒（酱香经典）53%vol 500ml',
+    PayDetailStatus: null,
+    AccountAmount: null,
+    ThumbnailsUrl: '/upload/fileStore/20180117/6365179167918234672489658.jpg',
+    OrderStatus: 4,
+    UserId: 2230370,
+    OrderType: null,
+    PaymentTypeId: -4,
+    ReducedPromotionId: -4,
+    OrderTotal: 398,
+    Favorable: null,
+    ShopId: '152520100037',
+    PayStatus: 0,
+    zt: null,
+    isException: false,
+    ExceptionText: null,
+    ExceptionTime: null },
+  { rownumber: 2,
+    OrderId: 'MTYS201803280093277',
+    OrderDate: '2018-03-28 13:47:47',
+    FinalPrice: null,
+    autoCloseDate: '2018-03-28 16:47:47',
+    Productid: 387,
+    Quantity: 1,
+    ItemListPrice: 4999,
+    ItemDescription: '贵州茅台酒 (15年茅台) 53%vol 500ml',
+    PayDetailStatus: null,
+    AccountAmount: null,
+    ThumbnailsUrl: '/Storage/master/product/thumbs160/160_0b2f75d4eb0c40bbb019ea193d760547.jpg',
+    OrderStatus: 4,
+    UserId: 2230370,
+    OrderType: null,
+    PaymentTypeId: -4,
+    ReducedPromotionId: -4,
+    OrderTotal: 4999,
+    Favorable: null,
+    ShopId: '152520100037',
+    PayStatus: 0,
+    zt: null,
+    isException: false,
+    ExceptionText: null,
+    ExceptionTime: null },
+  { rownumber: 3,
+    OrderId: 'MTYS201803160004337',
+    OrderDate: '2018-03-16 10:13:35',
+    FinalPrice: null,
+    autoCloseDate: '2018-03-16 13:13:35',
+    Productid: 391,
+    Quantity: 6,
+    ItemListPrice: 1499,
+    ItemDescription: '贵州茅台酒 (新飞天) 53%vol 500ml',
+    PayDetailStatus: null,
+    AccountAmount: null,
+    ThumbnailsUrl: '/Storage/master/product/thumbs160/160_4c7cd945371d4d95b7432d87b1b51a10.jpg',
+    OrderStatus: 4,
+    UserId: 2230370,
+    OrderType: null,
+    PaymentTypeId: -4,
+    ReducedPromotionId: -4,
+    OrderTotal: 8994,
+    Favorable: null,
+    ShopId: '122220100011',
+    PayStatus: 0,
+    zt: null,
+    isException: false,
+    ExceptionText: null,
+    ExceptionTime: null },
+  { rownumber: 4,
+    OrderId: 'MTYS201803150024938',
+    OrderDate: '2018-03-15 14:09:05',
+    FinalPrice: null,
+    autoCloseDate: '2018-03-15 17:09:05',
+    Productid: 572,
+    Quantity: 1,
+    ItemListPrice: 288,
+    ItemDescription: '茅乡醇（佳酿）52%vol 500ml',
+    PayDetailStatus: null,
+    AccountAmount: null,
+    ThumbnailsUrl: '/upload/fileStore/20171106/6364557749361983723704642.jpg',
+    OrderStatus: 4,
+    UserId: 2230370,
+    OrderType: null,
+    PaymentTypeId: -4,
+    ReducedPromotionId: -4,
+    OrderTotal: 288,
+    Favorable: null,
+    ShopId: '152520100037',
+    PayStatus: 0,
+    zt: null,
+    isException: false,
+    ExceptionText: null,
+    ExceptionTime: null } ]
+[2018-03-29T16:54:42.282] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '15330066919',
+     NickName: '15330066919',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: 'a4655395fc589925e765f1afc665f669',
+     UserId: 2230370,
+     Name: '&15330066919' } }
+[2018-03-29T16:54:42.287] [INFO] things - start get addressID from mobile: 15330066919
+[2018-03-29T16:54:47.032] [INFO] things - 所有地址条数为 2
+[2018-03-29T16:54:47.032] [INFO] things - { rownumber: 1,
+  SId: 1953185,
+  UserId: '2230370',
+  TelPhone: '15330066918',
+  Zipcode: '000000',
+  Address: '通州区妇幼保健院,',
+  AddressInfo: '北京市通州区',
+  ShipTo: '李俊良',
+  Remark: '',
+  ProvinceId: '110000',
+  CityId: '110100',
+  DistrictsId: '110112',
+  IsDefault: true,
+  SMNo: null,
+  RelPhone: null,
+  Longitude: '116.683192',
+  Latitude: '39.887158',
+  IsVerification: false,
+  TimeStamp: '2018-03-28 00:48:09' }
+[2018-03-29T16:54:51.969] [INFO] things - {"state":true,"code":0,"data":{"index":1,"size":"10","count":"1","Data":[{"rownumber":1,"OrderId":"MTYS201803280132715","OrderDate":"2018-03-28 17:08:47","FinalPrice":null,"autoCloseDate":"2018-03-28 20:08:47","Productid":621,"Quantity":1,"ItemListPrice":398,"ItemDescription":"茅台王子酒（酱香经典）53%vol 500ml","PayDetailStatus":null,"AccountAmount":null,"ThumbnailsUrl":"/upload/fileStore/20180117/6365179167918234672489658.jpg","OrderStatus":4,"UserId":2230370,"OrderType":null,"PaymentTypeId":-4,"ReducedPromotionId":-4,"OrderTotal":398,"Favorable":null,"ShopId":"152520100037","PayStatus":0,"zt":null,"isException":false,"ExceptionText":null,"ExceptionTime":null},{"rownumber":2,"OrderId":"MTYS201803280093277","OrderDate":"2018-03-28 13:47:47","FinalPrice":null,"autoCloseDate":"2018-03-28 16:47:47","Productid":387,"Quantity":1,"ItemListPrice":4999,"ItemDescription":"贵州茅台酒 (15年茅台) 53%vol 500ml","PayDetailStatus":null,"AccountAmount":null,"ThumbnailsUrl":"/Storage/master/product/thumbs160/160_0b2f75d4eb0c40bbb019ea193d760547.jpg","OrderStatus":4,"UserId":2230370,"OrderType":null,"PaymentTypeId":-4,"ReducedPromotionId":-4,"OrderTotal":4999,"Favorable":null,"ShopId":"152520100037","PayStatus":0,"zt":null,"isException":false,"ExceptionText":null,"ExceptionTime":null},{"rownumber":3,"OrderId":"MTYS201803160004337","OrderDate":"2018-03-16 10:13:35","FinalPrice":null,"autoCloseDate":"2018-03-16 13:13:35","Productid":391,"Quantity":6,"ItemListPrice":1499,"ItemDescription":"贵州茅台酒 (新飞天) 53%vol 500ml","PayDetailStatus":null,"AccountAmount":null,"ThumbnailsUrl":"/Storage/master/product/thumbs160/160_4c7cd945371d4d95b7432d87b1b51a10.jpg","OrderStatus":4,"UserId":2230370,"OrderType":null,"PaymentTypeId":-4,"ReducedPromotionId":-4,"OrderTotal":8994,"Favorable":null,"ShopId":"122220100011","PayStatus":0,"zt":null,"isException":false,"ExceptionText":null,"ExceptionTime":null},{"rownumber":4,"OrderId":"MTYS201803150024938","OrderDate":"2018-03-15 14:09:05","FinalPrice":null,"autoCloseDate":"2018-03-15 17:09:05","Productid":572,"Quantity":1,"ItemListPrice":288,"ItemDescription":"茅乡醇（佳酿）52%vol 500ml","PayDetailStatus":null,"AccountAmount":null,"ThumbnailsUrl":"/upload/fileStore/20171106/6364557749361983723704642.jpg","OrderStatus":4,"UserId":2230370,"OrderType":null,"PaymentTypeId":-4,"ReducedPromotionId":-4,"OrderTotal":288,"Favorable":null,"ShopId":"152520100037","PayStatus":0,"zt":null,"isException":false,"ExceptionText":null,"ExceptionTime":null}]}}
+[2018-03-29T16:54:51.970] [INFO] things - order info { rownumber: 1,
+  OrderId: 'MTYS201803280132715',
+  OrderDate: '2018-03-28 17:08:47',
+  FinalPrice: null,
+  autoCloseDate: '2018-03-28 20:08:47',
+  Productid: 621,
+  Quantity: 1,
+  ItemListPrice: 398,
+  ItemDescription: '茅台王子酒（酱香经典）53%vol 500ml',
+  PayDetailStatus: null,
+  AccountAmount: null,
+  ThumbnailsUrl: '/upload/fileStore/20180117/6365179167918234672489658.jpg',
+  OrderStatus: 4,
+  UserId: 2230370,
+  OrderType: null,
+  PaymentTypeId: -4,
+  ReducedPromotionId: -4,
+  OrderTotal: 398,
+  Favorable: null,
+  ShopId: '152520100037',
+  PayStatus: 0,
+  zt: null,
+  isException: false,
+  ExceptionText: null,
+  ExceptionTime: null }

@@ -65,7 +65,8 @@ router.post('/maotai/login', (req, res, next) => {
     return res.json({
       status: 500,
       tel:tel,
-      pass:pass
+      pass:pass,
+      e: e.message
     })
   })
 })

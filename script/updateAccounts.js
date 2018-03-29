@@ -1,4 +1,6 @@
-
+const proxy = require('../controllers/proxy');
+const logger = require('../controllers/logger');
+const Service = require('../tools/service.js');
 /**
  * 更新数据库所有的账号信息
  * 1、更新收货地址
@@ -37,4 +39,35 @@
    updateOrderId() {
 
    }
+
+   updateAccount(user){
+    let userid = "";
+    let userAgent = Service.userAgent(user.phone);
+    proxy.switchIp()
+      .then(() => {
+        // 登录
+        return Service.login(user.phone, user.pass, userAgent);
+      })
+      .then((userinfo) => {
+        // 获取第一条地址信息
+        logger.info(userinfo);
+        userid = userinfo.UserId;
+        return Service.getAllAddress(user.phone);
+      })
+      .then((addressList) => {
+        logger.info('所有地址条数为',addressList.length);
+        logger.info(addressList[0]);
+        return Service._getOrders(userid);
+      })
+      .then((orderInfo) => {
+        if(orderInfo.length > 0){
+          logger.info('order info', orderInfo[0]);
+        }
+      }).catch(e => {
+        console.log(e);
+      });
+   }
  }
+
+
+ module.exports = new AccountInfo();

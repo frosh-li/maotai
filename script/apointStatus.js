@@ -2,6 +2,7 @@
  * 监控某一个站点是否已经可以抢货了
  */
 const logger = require('../controllers/logger.js');
+const proxy = require('../controllers/proxy.js');
 const MaotaiService = require('../tools/service');
 let _phones = [
   "15249625137",
@@ -16,7 +17,7 @@ let _phones = [
 ]
 
 
-originPhones = require("../accounts/zhuxiaodi2.json");
+originPhones = require("../accounts.json");
 
 // var originPhones = require("../accounts.json");
 // let shopName = '集玉进出口';
@@ -49,7 +50,7 @@ originPhones = require("../accounts/zhuxiaodi2.json");
 //   originPhones = [{"phone":"13523472132", 'pass':"abcdef7758521"},{"phone":"18037798213", 'pass':"abcdef7758521"},];
 //   shopName = '紫薇尚层';
 // }
-originPhones = [{"phone":"13523472132", 'pass':"abcdef7758521"},{"phone":"18037798213", 'pass':"abcdef7758521"}];
+// originPhones = [{"phone":"13523472132", 'pass':"abcdef7758521"},{"phone":"18037798213", 'pass':"abcdef7758521"}];
 let tels = [];
 originPhones.forEach(data => {
   tels.push(JSON.stringify(data));
@@ -69,23 +70,28 @@ function getStatus(){
   }
   logger.info('start to check status', phone);
   let userAgent = MaotaiService.userAgent(phone.phone);
-  MaotaiService.login(phone.phone, phone.pass, userAgent)
-    .then(() => {
-        return MaotaiService.apointStatus(userAgent);
-    })
-    .then(data => {
-      console.log(JSON.stringify(data.dataObj))
-      statusResults.push({
-        receiver: data.receiver,
-        address: data.address,
-        reviewTime: data.reviewTime,
-        status: data.status,
-      });
-      getStatus();
-    })
-    .catch(e => {
-      logger.error(e);
-      getStatus();
-    })
+  proxy.switchIp.then(() => {
+    MaotaiService.login(phone.phone, phone.pass, userAgent)
+      .then(() => {
+          return MaotaiService.apointStatus(userAgent);
+      })
+      .then(data => {
+        console.log(JSON.stringify(data.dataObj))
+        statusResults.push({
+          receiver: data.receiver,
+          address: data.address,
+          reviewTime: data.reviewTime,
+          status: data.status,
+        });
+        getStatus();
+      })
+      .catch(e => {
+        logger.error(e);
+        getStatus();
+      })
+  }).catch(e => {
+    logger.error("代理切换失败", e);
+    getStatus()
+  })
 }
 getStatus()
