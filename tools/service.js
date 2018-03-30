@@ -590,11 +590,13 @@ class MaotaiService {
                   logger.info(error);
                   return reject(error);
               } else {
-                logger.info("预约列表查看");
-                console.dir(body.data);
-                if(body && body.data && body.data.datas && body.data.datas.length > 0)
-                  return resolve(body.data.datas[0]);
-                else{
+                logger.info("预约结果查询");
+                
+                if(body && body.data && body.data.datas && body.data.datas.length > 0){
+                  let ret = body.data.datas[0];
+                  logger.info(ret);
+                  return resolve(ret);
+                }else{
                   return reject('没有预约列表');
                 }
               }
