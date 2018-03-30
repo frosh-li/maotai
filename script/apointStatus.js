@@ -76,12 +76,19 @@ function getStatus(){
   }
   logger.info('start to check status', phone);
   let userAgent = MaotaiService.userAgent(phone.phone);
-  proxy.switchIp.then(() => {
+  proxy.switchIp().then(() => {
     MaotaiService.login(phone.phone, phone.pass, userAgent)
       .then(() => {
           return MaotaiService.apointStatus(userAgent);
       })
       .then(data => {
+        if(data.status == 3){
+          // 3位审核成功
+          successAcount.push({
+            phone: phone.phone,
+            pass:phone.pass
+          })
+        }
         console.log(JSON.stringify(data.dataObj))
         statusResults.push({
           receiver: data.receiver,

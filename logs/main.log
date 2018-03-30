@@ -1,0 +1,21 @@
+[2018-03-30T00:59:56.759] [INFO] things - params [ '/usr/local/bin/node',
+  '/Users/junliang/server/www/maotaiServer/controllers/watch.js',
+  '002',
+  '1' ]
+[2018-03-30T00:59:56.766] [INFO] things - to Buy tels {"phone":"13767768674","pass":"123456"}|{"phone":"15083751423","pass":"123456"}|{"phone":"13807972045","pass":"123456"}|{"phone":"18370472926","pass":"123456"}|{"phone":"13343192376","pass":"123456","status":0,"province":null,"city":null,"area":null,"address":null,"apointStartTime":null,"apointEndTime":null,"buyStartTime":null,"buyEndTime":null,"orderId":null,"order_status":null}|{"phone":"13485665212","pass":"123456","status":0,"province":null,"city":null,"area":null,"address":null,"apointStartTime":null,"apointEndTime":null,"buyStartTime":null,"buyEndTime":null,"orderId":null,"order_status":null}|{"phone":"13700077519","pass":"123456","status":0,"province":null,"city":null,"area":null,"address":null,"apointStartTime":null,"apointEndTime":null,"buyStartTime":null,"buyEndTime":null,"orderId":null,"order_status":null}|{"phone":"15063527328","pass":"123456","status":0,"province":null,"city":null,"area":null,"address":null,"apointStartTime":null,"apointEndTime":null,"buyStartTime":null,"buyEndTime":null,"orderId":null,"order_status":null}|{"phone":"15022156584","pass":"123456","status":0,"province":null,"city":null,"area":null,"address":null,"apointStartTime":null,"apointEndTime":null,"buyStartTime":null,"buyEndTime":null,"orderId":null,"order_status":null}|{"phone":"15075870950","pass":"123456","status":0,"province":null,"city":null,"area":null,"address":null,"apointStartTime":null,"apointEndTime":null,"buyStartTime":null,"buyEndTime":null,"orderId":null,"order_status":null}|{"phone":"15206334886","pass":"123456","status":0,"province":null,"city":null,"area":null,"address":null,"apointStartTime":null,"apointEndTime":null,"buyStartTime":null,"buyEndTime":null,"orderId":null,"order_status":null}|{"phone":"15303199414","pass":"123456","status":0,"province":null,"city":null,"area":null,"address":null,"apointStartTime":null,"apointEndTime":null,"buyStartTime":null,"buyEndTime":null,"orderId":null,"order_status":null}|{"phone":"15354193781","pass":"123456","status":0,"province":null,"city":null,"area":null,"address":null,"apointStartTime":null,"apointEndTime":null,"buyStartTime":null,"buyEndTime":null,"orderId":null,"order_status":null}|{"phone":"15373204143","pass":"123456","status":0,"province":null,"city":null,"area":null,"address":null,"apointStartTime":null,"apointEndTime":null,"buyStartTime":null,"buyEndTime":null,"orderId":null,"order_status":null}|{"phone":"15399130078","pass":"125018adg","status":0,"province":null,"city":null,"area":null,"address":null,"apointStartTime":null,"apointEndTime":null,"buyStartTime":null,"buyEndTime":null,"orderId":null,"order_status":null}|{"phone":"15515970953","pass":"123456","status":0,"province":null,"city":null,"area":null,"address":null,"apointStartTime":null,"apointEndTime":null,"buyStartTime":null,"buyEndTime":null,"orderId":null,"order_status":null}|{"phone":"15937230461","pass":"123456"}|{"phone":"15951853170","pass":"123456"}|{"phone":"17379324087","pass":"123456"}
+[2018-03-30T00:59:58.773] [TRACE] things - 当前时间: 0
+[2018-03-30T00:59:58.773] [TRACE] things - 继续等待中，等到十点才开始吧
+[2018-03-30T01:00:00.777] [TRACE] things - 当前时间: 1
+[2018-03-30T01:00:00.778] [TRACE] things - 继续等待中，等到十点才开始吧
+[2018-03-30T01:00:02.779] [TRACE] things - 当前时间: 1
+[2018-03-30T01:00:02.779] [TRACE] things - 继续等待中，等到十点才开始吧
+[2018-03-30T01:00:04.784] [TRACE] things - 当前时间: 1
+[2018-03-30T01:00:04.785] [TRACE] things - 继续等待中，等到十点才开始吧
+[2018-03-30T01:00:06.789] [TRACE] things - 当前时间: 1
+[2018-03-30T01:00:06.789] [TRACE] things - 继续等待中，等到十点才开始吧
+[2018-03-30T01:00:08.792] [TRACE] things - 当前时间: 1
+[2018-03-30T01:00:08.792] [TRACE] things - 继续等待中，等到十点才开始吧
+[2018-03-30T01:00:10.796] [TRACE] things - 当前时间: 1
+[2018-03-30T01:00:10.796] [TRACE] things - 继续等待中，等到十点才开始吧
+[2018-03-30T01:00:12.799] [TRACE] things - 当前时间: 1
+[2018-03-30T01:00:12.800] [TRACE] things - 继续等待中，等到十点才开始吧
