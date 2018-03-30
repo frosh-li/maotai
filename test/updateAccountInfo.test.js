@@ -15,8 +15,12 @@ describe('测试账号信息提取', () => {
 
   it("测试账号信息提取", (done) => {
       AccountService.updateAccount({
-        phone: "15330066919",
-        pass: "110520"
+        phone: "15249625137",
+        pass: "a123456"
+      }).then(data => {
+        console.info(data);
+      }).catch(e => {
+        console.error(e);
       })
   })
 });

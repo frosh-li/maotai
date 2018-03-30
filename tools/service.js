@@ -340,10 +340,10 @@ class MaotaiService {
                         return reject(new Error(`库存不够:stock:${StockCount}limit:${LimitCount}`));
                       }
                       if(LimitCount < quantity){
-                       return reject(new Error(`每单限购不足:stock:${StockCount}limit:${LimitCount}`)); 
+                       return reject(new Error(`每单限购不足:stock:${StockCount}limit:${LimitCount}`));
                       }
                       if(!this.fixShop(data.lbsdata.data.network, shopName)){
-                       return reject(new Error(`当前网点不是您所需要的网点:stock:${StockCount}limit:${LimitCount}`));  
+                       return reject(new Error(`当前网点不是您所需要的网点:stock:${StockCount}limit:${LimitCount}`));
                       }
                       shopId = data.lbsdata.data.network.Sid;
                       return AliVerify.connectSidFromHard();
@@ -420,7 +420,7 @@ class MaotaiService {
                                 // express 14
                                 // shopId  161610100018
                                 // sessid  nc1-01W8fUo7tiNBKrkhR8ACXXKa7iBBDH1y3J0CDrEthFzlTNpsPjtpYek3o3FHpHt3fZ-nc2-0561M3bob-R8gv1KNXk15v5Zpzwr5-aA0d72EwzdOiQ4yF_oZXhNR3wj9Ui770CX4eKbPK7vEuAXN6pqFY62tiCddhKDzzaVVBi1QL1KGNBX47HA687xzvBLbSMxProRMf6YwLBXaxmIci5uutEeL13GykCvJb4lfdA4B5mO7sXuxrBIslSrNkdZL0myaCGppz51RYEogBMwUazCe0Gmu_4rZ-u5smNUCcFL4ya7FiHf5iekkXdiY3Q2fNkKGdQPu77n45tVC52LG_H0SCfbLMqtoU1tmCuQ7gQ1UZzDp9ONxSGYQ8dIgJJjigUtXuBLOTSPXdQOdFkqIs6JjFsXAkp1sAxQHojeOF39MSL4bxBD6ECAAYd4722G4Y2yIX3dXl7S9KEx_7rE6J4_Qe-tKZvj0s5vNYP0vJP7P4Wv4Z6jM-nc3-01TzB8fzgmvi9w1w4Zzf-Aou5wAmuHVmzkWmgqL_rJEAfWDAe5-mM9bYVdvGJY2qVCFybtUWb9qd-2xX8YIpqSIDLmQJpgazyeLOv1rOhNl5mqdxjkB3iFVFv0N8IigAoPdXEJxKKKUu7F2-cvvWc-lg-nc4-FFFFA0000000016A858A
-                                // remark  
+                                // remark
                                 // timestamp121  1522290257472
                                 aliSessionId = null;
                                 logger.info(options.form);
@@ -547,7 +547,10 @@ class MaotaiService {
                   return reject(error);
               }
               logger.info(JSON.stringify(body));
-              return resolve(body.data.Data);
+              if(body.data && body.data.Data)
+                return resolve(body.data.Data);
+              else
+                return resolve([]);
           });
         })
     }
@@ -569,6 +572,12 @@ class MaotaiService {
     }
 
     apointStatus(userAgent) {
+      // state_1: "审核中",
+      // state_2: "预约失败",
+      // state_3: "预约成功",
+      // state_4: "已使用",
+      // state_5: "申诉中",
+      // state_6: "已失效"
       let now = +new Date();
       var options = {
           method: 'POST',
@@ -591,7 +600,7 @@ class MaotaiService {
                   return reject(error);
               } else {
                 logger.info("预约结果查询");
-                
+
                 if(body && body.data && body.data.datas && body.data.datas.length > 0){
                   let ret = body.data.datas[0];
                   logger.info(ret);
