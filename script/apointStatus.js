@@ -17,7 +17,7 @@ let _phones = [
 ]
 
 
-originPhones = require("../accounts/zhuxiaodi.json");
+originPhones = require("../beijingaccount.json");
 
 // var originPhones = require("../accounts.json");
 // let shopName = '集玉进出口';

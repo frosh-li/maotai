@@ -11,7 +11,7 @@ class BaiduService {
   }
 
   get apiURL() {
-    return `https://api.map.baidu.com/place/v2/search?ak=${this.baiduAK}`;
+    return `https://restapi.amap.com/v3/assistant/inputtips?s=rsv3&key=462f27e00614a30baa9ed1864455213f&city=&callback=&platform=JS&logversion=2.0&sdkversion=1.4.0`;
   }
 
   get loc() {
@@ -24,39 +24,7 @@ class BaiduService {
 
   getPoit(address, page_num=0){
     let url = `${this.apiURL}`;
-    return new Promise((resolve, reject) => {
-      this.geoDecoder(address)
-        .then(location => {
-          let params = {
-            query:"小区",
-            tag:"房地产",
-            location: `${location.lat},${location.lng}`,
-            radius: 1000,
-            output:"json",
-            page_num: page_num,
-            page_size: 20,
-          }
-          let reqUrl = this.buildUrl(url, params);
-          console.log('poit',reqUrl);
-          request({
-            url:reqUrl,
-            method:'get',
-            json:true,
-          }, function(error, response, body){
-            if(error){
-              console.log(error);
-              return reject(error);
-            }
-
-            console.log('body:',body);
-            return resolve(body);
-
-          })
-        })
-        .catch(e => {
-          return reject(e);
-        })
-    })
+    return this.geoDecoder(address, page_num);
 
   }
 
@@ -75,8 +43,10 @@ class BaiduService {
    * @param  {type} address description
    * @return {type}         description
    */
-  geoDecoder(address){
-    let url = `http://api.map.baidu.com/geocoder/v2/?address=${encodeURIComponent(address)}&output=json&ak=${baiduAK}`;
+  geoDecoder(address, page_num=1){
+    let offset = 25;
+    let page = page_num;
+    let url = `${this.apiURL}&keywords=${encodeURIComponent(address)}&offset=${offset}&page=${page}`;
     return new Promise((resolve, reject) => {
       console.log(url);
       request({
@@ -89,11 +59,8 @@ class BaiduService {
           return reject(error);
         }
         console.log(body);
-        if(body.status === 0 && body.result){
-          return resolve({
-            lng: body.result.location.lng,
-            lat: body.result.location.lat
-          })
+        if(body.status == 1 && body.tips && body.tips.length > 0){
+          return resolve(body.tips)
         }else{
           return reject(new Error('解析失败'))
         }
