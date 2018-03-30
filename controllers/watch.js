@@ -178,14 +178,14 @@ let interval = setInterval(() => {
   let now = new Date();
   let Hour = now.getHours();
   logger.trace('当前时间:', Hour);
-  if(Hour >= 10 && Hour <= 11) {
+  if(Hour >= 10 && Hour <= 16) {
     clearInterval(interval);
     logger.info('抢购时间开始');
-    watchQuanity(shopName);  
+    watchQuanity(shopName);
   }else{
     logger.trace('继续等待中，等到十点才开始吧');
   }
-  
+
 }, 2000);
 
 

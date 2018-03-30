@@ -1,1157 +1,493 @@
-[2018-03-30T11:09:46.732] [INFO] things - start get addressID from mobile: 13343192376
-[2018-03-30T11:09:51.190] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { ID: 1885157,
-     IsDefault: true,
-     IsPushAddreess: false,
-     Name: '公羊切',
-     TelPhone: '13343192370',
-     Zipcode: '000000',
-     ProvCode: '110000',
-     CityCode: '110100',
-     AreaCode: '620103',
-     Remark: '',
-     IsVerification: false,
-     AddressDetails: '甘肃省兰州市七里河区,2路;118路,烟酒专卖店',
-     Longitude: 103.770691,
-     Latitude: 36.077709,
-     Address: '2路;118路,烟酒专卖店',
-     AddressText: '甘肃省兰州市七里河区' } }
-[2018-03-30T11:09:52.082] [INFO] things - start get addressID from mobile: 13485665212
-[2018-03-30T11:09:55.289] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { ID: 1676457,
-     IsDefault: true,
-     IsPushAddreess: false,
-     Name: '印溥郁',
-     TelPhone: '13485665210',
-     Zipcode: '000000',
-     ProvCode: '110000',
-     CityCode: '110100',
-     AreaCode: '620103',
-     Remark: '',
-     IsVerification: false,
-     AddressDetails: '甘肃省兰州市七里河区,郑家庄121号,摄影器材店',
-     Longitude: 103.753095,
-     Latitude: 36.07734,
-     Address: '郑家庄121号,摄影器材店',
-     AddressText: '甘肃省兰州市七里河区' } }
-[2018-03-30T11:09:56.413] [INFO] things - start get addressID from mobile: 13700077519
-[2018-03-30T11:10:02.226] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { ID: 1892989,
-     IsDefault: true,
-     IsPushAddreess: false,
-     Name: '严嗣',
-     TelPhone: '13700077510',
-     Zipcode: '000000',
-     ProvCode: '110000',
-     CityCode: '110100',
-     AreaCode: '620103',
-     Remark: '',
-     IsVerification: false,
-     AddressDetails: '甘肃省兰州市七里河区,西站郑家庄什字西南角(兰石小学东侧),茶馆',
-     Longitude: 103.757097,
-     Latitude: 36.075809,
-     Address: '西站郑家庄什字西南角(兰石小学东侧),茶馆',
-     AddressText: '甘肃省兰州市七里河区' } }
-[2018-03-30T11:10:04.201] [INFO] things - start get addressID from mobile: 15063527328
-[2018-03-30T11:10:08.642] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { ID: 1893768,
-     IsDefault: true,
-     IsPushAddreess: false,
-     Name: '伍编等',
-     TelPhone: '15063527320',
-     Zipcode: '000000',
-     ProvCode: '110000',
-     CityCode: '110100',
-     AreaCode: '620103',
-     Remark: '',
-     IsVerification: false,
-     AddressDetails: '甘肃省兰州市七里河区,火星街228-468号,土特产专卖店',
-     Longitude: 103.761902,
-     Latitude: 36.077349,
-     Address: '火星街228-468号,土特产专卖店',
-     AddressText: '甘肃省兰州市七里河区' } }
-[2018-03-30T11:10:10.860] [INFO] things - start get addressID from mobile: 15075870950
-[2018-03-30T11:10:15.591] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { ID: 1712578,
-     IsDefault: true,
-     IsPushAddreess: false,
-     Name: '孟依投',
-     TelPhone: '150758709505',
-     Zipcode: '000000',
-     ProvCode: '110000',
-     CityCode: '110100',
-     AreaCode: '620103',
-     Remark: '',
-     IsVerification: false,
-     AddressDetails: '甘肃省兰州市七里河区,郑家庄56-58号,摄影器材店',
-     Longitude: 103.752239,
-     Latitude: 36.078736,
-     Address: '郑家庄56-58号,摄影器材店',
-     AddressText: '甘肃省兰州市七里河区' } }
-[2018-03-30T11:10:16.782] [INFO] things - start get addressID from mobile: 15206334886
-[2018-03-30T11:10:19.087] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { ID: 1903115,
-     IsDefault: true,
-     IsPushAddreess: false,
-     Name: '钭巷沚',
-     TelPhone: '15206334880',
-     Zipcode: '000000',
-     ProvCode: '110000',
-     CityCode: '110100',
-     AreaCode: '620103',
-     Remark: '',
-     IsVerification: false,
-     AddressDetails: '甘肃省兰州市七里河区,火星街郑家庄17号,健身中心',
-     Longitude: 103.758872,
-     Latitude: 36.077387,
-     Address: '火星街郑家庄17号,健身中心',
-     AddressText: '甘肃省兰州市七里河区' } }
-[2018-03-30T11:10:20.134] [INFO] things - start get addressID from mobile: 15303199414
-[2018-03-30T11:10:22.389] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { ID: 1885243,
-     IsDefault: true,
-     IsPushAddreess: false,
-     Name: '仇由',
-     TelPhone: '15303199410',
-     Zipcode: '000000',
-     ProvCode: '110000',
-     CityCode: '110100',
-     AreaCode: '620103',
-     Remark: '',
-     IsVerification: false,
-     AddressDetails: '甘肃省兰州市七里河区,建兰路火星街45-97号,KTV',
-     Longitude: 103.768942,
-     Latitude: 36.07686,
-     Address: '建兰路火星街45-97号,KTV',
-     AddressText: '甘肃省兰州市七里河区' } }
-[2018-03-30T11:10:25.232] [INFO] things - start get addressID from mobile: 15354193781
-[2018-03-30T11:10:26.864] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { ID: 1879769,
-     IsDefault: true,
-     IsPushAddreess: false,
-     Name: '季渊颔',
-     TelPhone: '15354193780',
-     Zipcode: '000000',
-     ProvCode: '110000',
-     CityCode: '110100',
-     AreaCode: '620103',
-     Remark: '',
-     IsVerification: false,
-     AddressDetails: '甘肃省兰州市七里河区,2路;118路,茶馆',
-     Longitude: 103.770691,
-     Latitude: 36.077709,
-     Address: '2路;118路,茶馆',
-     AddressText: '甘肃省兰州市七里河区' } }
-[2018-03-30T11:10:28.145] [INFO] things - start get addressID from mobile: 15373204143
-[2018-03-30T11:10:31.584] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { ID: 1885212,
-     IsDefault: true,
-     IsPushAddreess: false,
-     Name: '刁韵',
-     TelPhone: '15373204140',
-     Zipcode: '000000',
-     ProvCode: '110000',
-     CityCode: '110100',
-     AreaCode: '620103',
-     Remark: '',
-     IsVerification: false,
-     AddressDetails: '甘肃省兰州市七里河区,郑家庄121号,中国联通营业厅',
-     Longitude: 103.753095,
-     Latitude: 36.07734,
-     Address: '郑家庄121号,中国联通营业厅',
-     AddressText: '甘肃省兰州市七里河区' } }
-[2018-03-30T11:10:35.716] [INFO] things - start get addressID from mobile: 15399130078
-[2018-03-30T11:10:39.375] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { ID: 1697988,
-     IsDefault: true,
-     IsPushAddreess: false,
-     Name: '钟遇筹',
-     TelPhone: '15399130070',
-     Zipcode: '000000',
-     ProvCode: '110000',
-     CityCode: '110100',
-     AreaCode: '620103',
-     Remark: '',
-     IsVerification: false,
-     AddressDetails: '甘肃省兰州市七里河区,西站郑家庄什字西南角(兰石小学东侧),土特产专卖店',
-     Longitude: 103.757097,
-     Latitude: 36.075809,
-     Address: '西站郑家庄什字西南角(兰石小学东侧),土特产专卖店',
-     AddressText: '甘肃省兰州市七里河区' } }
-[2018-03-30T11:11:07.534] [INFO] things - start get addressID from mobile: 15515970953
-[2018-03-30T11:11:09.307] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { ID: 1843374,
-     IsDefault: true,
-     IsPushAddreess: false,
-     Name: '阙豌蠡',
-     TelPhone: '15515970950',
-     Zipcode: '000000',
-     ProvCode: '110000',
-     CityCode: '110100',
-     AreaCode: '620103',
-     Remark: '',
-     IsVerification: false,
-     AddressDetails: '甘肃省兰州市七里河区,火星街228-468号,电影院',
-     Longitude: 103.761902,
-     Latitude: 36.077349,
-     Address: '火星街228-468号,电影院',
-     AddressText: '甘肃省兰州市七里河区' } }
-[2018-03-30T11:11:10.282] [INFO] things - start get addressID from mobile: 15937230461
-[2018-03-30T11:11:16.432] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { ID: 1845446,
-     IsDefault: true,
-     IsPushAddreess: false,
-     Name: '丁墀',
-     TelPhone: '15937230460',
-     Zipcode: '000000',
-     ProvCode: '110000',
-     CityCode: '110100',
-     AreaCode: '620103',
-     Remark: '',
-     IsVerification: false,
-     AddressDetails: '甘肃省兰州市七里河区,火星街100号附近,网吧',
-     Longitude: 103.76866,
-     Latitude: 36.078772,
-     Address: '火星街100号附近,网吧',
-     AddressText: '甘肃省兰州市七里河区' } }
-[2018-03-30T11:11:23.302] [INFO] things - start get addressID from mobile: 15951853170
-[2018-03-30T11:12:04.970] [INFO] things - start get addressID from mobile: 17379324087
-[2018-03-30T11:12:06.813] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { ID: 1858864,
-     IsDefault: true,
-     IsPushAddreess: false,
-     Name: '闻人欧',
-     TelPhone: '17379324080',
-     Zipcode: '000000',
-     ProvCode: '110000',
-     CityCode: '110100',
-     AreaCode: '620103',
-     Remark: '',
-     IsVerification: false,
-     AddressDetails: '甘肃省兰州市七里河区,火星街郑家庄17号,专营店',
-     Longitude: 103.758872,
-     Latitude: 36.077387,
-     Address: '火星街郑家庄17号,专营店',
-     AddressText: '甘肃省兰州市七里河区' } }
-[2018-03-30T11:12:54.894] [INFO] things - object
-[2018-03-30T11:12:54.900] [INFO] things - 开始预约: 13343192376
-[2018-03-30T11:12:59.577] [INFO] things - start get addressID from mobile: 13343192376
-[2018-03-30T11:13:01.987] [INFO] things - 定位查询结果 { state: true,
-  code: 10,
-  data: 
-   { IsNeedReservation: true,
-     IsIntercept: false,
-     ProductID: 391,
-     CanUseCredence: false,
-     Certificate: 
-      { ID: '2695725',
-        UID: 2218069,
-        PID: '391',
-        Status: 2,
-        Address: [Object],
-        Product: [Object],
-        FailureTime: '2018-04-01 09:34:19' },
-     EnterTimeSlot: 
-      { Start: '2018-03-30 00:00:00',
-        End: '2018-03-30 23:59:59',
-        InTime: true },
-     BuyTimeSlot: 
-      { Start: '2018-03-30 10:00:00',
-        End: '2018-03-30 16:00:00',
-        InTime: true } } }
-[2018-03-30T11:13:03.134] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
-[2018-03-30T11:13:03.135] [INFO] things - 预约结果 13343192376 {"state":true,"code":0,"msg":"提交预约信息成功"}
-[2018-03-30T11:13:04.140] [INFO] things - object
-[2018-03-30T11:13:04.141] [INFO] things - 开始预约: 13485665212
-[2018-03-30T11:13:07.417] [INFO] things - start get addressID from mobile: 13485665212
-[2018-03-30T11:13:13.784] [INFO] things - 定位查询结果 { state: true,
-  code: 10,
-  data: 
-   { IsNeedReservation: true,
-     IsIntercept: false,
-     ProductID: 391,
-     CanUseCredence: false,
-     Certificate: 
-      { ID: '2695729',
-        UID: 2072874,
-        PID: '391',
-        Status: 2,
-        Address: [Object],
-        Product: [Object],
-        FailureTime: '2018-04-01 09:34:19' },
-     EnterTimeSlot: 
-      { Start: '2018-03-30 00:00:00',
-        End: '2018-03-30 23:59:59',
-        InTime: true },
-     BuyTimeSlot: 
-      { Start: '2018-03-30 10:00:00',
-        End: '2018-03-30 16:00:00',
-        InTime: true } } }
-[2018-03-30T11:13:16.790] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
-[2018-03-30T11:13:16.791] [INFO] things - 预约结果 13485665212 {"state":true,"code":0,"msg":"提交预约信息成功"}
-[2018-03-30T11:13:17.796] [INFO] things - object
-[2018-03-30T11:13:17.797] [INFO] things - 开始预约: 13700077519
-[2018-03-30T11:13:20.825] [INFO] things - start get addressID from mobile: 13700077519
-[2018-03-30T11:13:23.448] [INFO] things - 定位查询结果 { state: true,
-  code: 10,
-  data: 
-   { IsNeedReservation: true,
-     IsIntercept: false,
-     ProductID: 391,
-     CanUseCredence: false,
-     Certificate: 
-      { ID: '2695732',
-        UID: 2224996,
-        PID: '391',
-        Status: 2,
-        Address: [Object],
-        Product: [Object],
-        FailureTime: '2018-04-01 09:34:19' },
-     EnterTimeSlot: 
-      { Start: '2018-03-30 00:00:00',
-        End: '2018-03-30 23:59:59',
-        InTime: true },
-     BuyTimeSlot: 
-      { Start: '2018-03-30 10:00:00',
-        End: '2018-03-30 16:00:00',
-        InTime: true } } }
-[2018-03-30T11:13:24.368] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
-[2018-03-30T11:13:24.368] [INFO] things - 预约结果 13700077519 {"state":true,"code":0,"msg":"提交预约信息成功"}
-[2018-03-30T11:13:25.373] [INFO] things - object
-[2018-03-30T11:13:25.373] [INFO] things - 开始预约: 15063527328
-[2018-03-30T11:13:26.382] [INFO] things - start get addressID from mobile: 15063527328
-[2018-03-30T11:13:29.181] [INFO] things - 定位查询结果 { state: true,
-  code: 10,
-  data: 
-   { IsNeedReservation: true,
-     IsIntercept: false,
-     ProductID: 391,
-     CanUseCredence: false,
-     Certificate: 
-      { ID: '2695735',
-        UID: 2225390,
-        PID: '391',
-        Status: 2,
-        Address: [Object],
-        Product: [Object],
-        FailureTime: '2018-04-01 09:34:19' },
-     EnterTimeSlot: 
-      { Start: '2018-03-30 00:00:00',
-        End: '2018-03-30 23:59:59',
-        InTime: true },
-     BuyTimeSlot: 
-      { Start: '2018-03-30 10:00:00',
-        End: '2018-03-30 16:00:00',
-        InTime: true } } }
-[2018-03-30T11:13:29.990] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
-[2018-03-30T11:13:29.990] [INFO] things - 预约结果 15063527328 {"state":true,"code":0,"msg":"提交预约信息成功"}
-[2018-03-30T11:13:30.995] [INFO] things - object
-[2018-03-30T11:13:30.996] [INFO] things - 开始预约: 15075870950
-[2018-03-30T11:13:37.031] [INFO] things - start get addressID from mobile: 15075870950
-[2018-03-30T11:13:43.799] [INFO] things - 定位查询结果 { state: true,
-  code: 10,
-  data: 
-   { IsNeedReservation: true,
-     IsIntercept: false,
-     ProductID: 391,
-     CanUseCredence: false,
-     Certificate: 
-      { ID: '2695741',
-        UID: 2082064,
-        PID: '391',
-        Status: 2,
-        Address: [Object],
-        Product: [Object],
-        FailureTime: '2018-04-01 09:34:19' },
-     EnterTimeSlot: 
-      { Start: '2018-03-30 00:00:00',
-        End: '2018-03-30 23:59:59',
-        InTime: true },
-     BuyTimeSlot: 
-      { Start: '2018-03-30 10:00:00',
-        End: '2018-03-30 16:00:00',
-        InTime: true } } }
-[2018-03-30T11:13:48.937] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
-[2018-03-30T11:13:48.937] [INFO] things - 预约结果 15075870950 {"state":true,"code":0,"msg":"提交预约信息成功"}
-[2018-03-30T11:13:49.942] [INFO] things - object
-[2018-03-30T11:13:49.943] [INFO] things - 开始预约: 15206334886
-[2018-03-30T11:13:53.346] [INFO] things - start get addressID from mobile: 15206334886
-[2018-03-30T11:13:55.666] [INFO] things - 定位查询结果 { state: true,
-  code: 10,
-  data: 
-   { IsNeedReservation: true,
-     IsIntercept: false,
-     ProductID: 391,
-     CanUseCredence: false,
-     Certificate: 
-      { ID: '2695742',
-        UID: 2225192,
-        PID: '391',
-        Status: 2,
-        Address: [Object],
-        Product: [Object],
-        FailureTime: '2018-04-01 09:34:19' },
-     EnterTimeSlot: 
-      { Start: '2018-03-30 00:00:00',
-        End: '2018-03-30 23:59:59',
-        InTime: true },
-     BuyTimeSlot: 
-      { Start: '2018-03-30 10:00:00',
-        End: '2018-03-30 16:00:00',
-        InTime: true } } }
-[2018-03-30T11:13:56.895] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
-[2018-03-30T11:13:56.895] [INFO] things - 预约结果 15206334886 {"state":true,"code":0,"msg":"提交预约信息成功"}
-[2018-03-30T11:13:57.901] [INFO] things - object
-[2018-03-30T11:13:57.901] [INFO] things - 开始预约: 15303199414
-[2018-03-30T11:13:59.967] [INFO] things - start get addressID from mobile: 15303199414
-[2018-03-30T11:14:06.118] [INFO] things - 定位查询结果 { state: true,
-  code: 10,
-  data: 
-   { IsNeedReservation: true,
-     IsIntercept: false,
-     ProductID: 391,
-     CanUseCredence: false,
-     Certificate: 
-      { ID: '2695743',
-        UID: 2216934,
-        PID: '391',
-        Status: 2,
-        Address: [Object],
-        Product: [Object],
-        FailureTime: '2018-04-01 09:34:19' },
-     EnterTimeSlot: 
-      { Start: '2018-03-30 00:00:00',
-        End: '2018-03-30 23:59:59',
-        InTime: true },
-     BuyTimeSlot: 
-      { Start: '2018-03-30 10:00:00',
-        End: '2018-03-30 16:00:00',
-        InTime: true } } }
-[2018-03-30T11:14:07.095] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
-[2018-03-30T11:14:07.095] [INFO] things - 预约结果 15303199414 {"state":true,"code":0,"msg":"提交预约信息成功"}
-[2018-03-30T11:14:08.100] [INFO] things - object
-[2018-03-30T11:14:08.101] [INFO] things - 开始预约: 15354193781
-[2018-03-30T11:14:09.272] [INFO] things - start get addressID from mobile: 15354193781
-[2018-03-30T11:14:11.490] [INFO] things - 定位查询结果 { state: true,
-  code: 10,
-  data: 
-   { IsNeedReservation: true,
-     IsIntercept: false,
-     ProductID: 391,
-     CanUseCredence: false,
-     Certificate: 
-      { ID: '2695745',
-        UID: 2214358,
-        PID: '391',
-        Status: 2,
-        Address: [Object],
-        Product: [Object],
-        FailureTime: '2018-04-01 09:34:19' },
-     EnterTimeSlot: 
-      { Start: '2018-03-30 00:00:00',
-        End: '2018-03-30 23:59:59',
-        InTime: true },
-     BuyTimeSlot: 
-      { Start: '2018-03-30 10:00:00',
-        End: '2018-03-30 16:00:00',
-        InTime: true } } }
-[2018-03-30T11:14:12.446] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
-[2018-03-30T11:14:12.446] [INFO] things - 预约结果 15354193781 {"state":true,"code":0,"msg":"提交预约信息成功"}
-[2018-03-30T11:14:13.451] [INFO] things - object
-[2018-03-30T11:14:13.452] [INFO] things - 开始预约: 15373204143
-[2018-03-30T11:14:14.460] [INFO] things - start get addressID from mobile: 15373204143
-[2018-03-30T11:14:16.883] [INFO] things - 定位查询结果 { state: true,
-  code: 10,
-  data: 
-   { IsNeedReservation: true,
-     IsIntercept: false,
-     ProductID: 391,
-     CanUseCredence: false,
-     Certificate: 
-      { ID: '2695748',
-        UID: 2218078,
-        PID: '391',
-        Status: 2,
-        Address: [Object],
-        Product: [Object],
-        FailureTime: '2018-04-01 09:34:19' },
-     EnterTimeSlot: 
-      { Start: '2018-03-30 00:00:00',
-        End: '2018-03-30 23:59:59',
-        InTime: true },
-     BuyTimeSlot: 
-      { Start: '2018-03-30 10:00:00',
-        End: '2018-03-30 16:00:00',
-        InTime: true } } }
-[2018-03-30T11:14:17.766] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
-[2018-03-30T11:14:17.766] [INFO] things - 预约结果 15373204143 {"state":true,"code":0,"msg":"提交预约信息成功"}
-[2018-03-30T11:14:18.773] [INFO] things - object
-[2018-03-30T11:14:18.774] [INFO] things - 开始预约: 15399130078
-[2018-03-30T11:14:20.095] [INFO] things - start get addressID from mobile: 15399130078
-[2018-03-30T11:14:22.581] [INFO] things - 定位查询结果 { state: true,
-  code: 10,
-  data: 
-   { IsNeedReservation: true,
-     IsIntercept: false,
-     ProductID: 391,
-     CanUseCredence: false,
-     Certificate: 
-      { ID: '2695751',
-        UID: 2087546,
-        PID: '391',
-        Status: 2,
-        Address: [Object],
-        Product: [Object],
-        FailureTime: '2018-04-01 09:34:19' },
-     EnterTimeSlot: 
-      { Start: '2018-03-30 00:00:00',
-        End: '2018-03-30 23:59:59',
-        InTime: true },
-     BuyTimeSlot: 
-      { Start: '2018-03-30 10:00:00',
-        End: '2018-03-30 16:00:00',
-        InTime: true } } }
-[2018-03-30T11:14:23.826] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
-[2018-03-30T11:14:23.827] [INFO] things - 预约结果 15399130078 {"state":true,"code":0,"msg":"提交预约信息成功"}
-[2018-03-30T11:14:24.831] [INFO] things - object
-[2018-03-30T11:14:24.832] [INFO] things - 开始预约: 15515970953
-[2018-03-30T11:14:25.827] [INFO] things - start get addressID from mobile: 15515970953
-[2018-03-30T11:14:27.820] [INFO] things - 定位查询结果 { state: true,
-  code: 10,
-  data: 
-   { IsNeedReservation: true,
-     IsIntercept: false,
-     ProductID: 391,
-     CanUseCredence: false,
-     Certificate: 
-      { ID: '2695753',
-        UID: 2190378,
-        PID: '391',
-        Status: 2,
-        Address: [Object],
-        Product: [Object],
-        FailureTime: '2018-04-01 09:34:19' },
-     EnterTimeSlot: 
-      { Start: '2018-03-30 00:00:00',
-        End: '2018-03-30 23:59:59',
-        InTime: true },
-     BuyTimeSlot: 
-      { Start: '2018-03-30 10:00:00',
-        End: '2018-03-30 16:00:00',
-        InTime: true } } }
-[2018-03-30T11:14:29.035] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
-[2018-03-30T11:14:29.035] [INFO] things - 预约结果 15515970953 {"state":true,"code":0,"msg":"提交预约信息成功"}
-[2018-03-30T11:14:30.040] [INFO] things - object
-[2018-03-30T11:14:30.041] [INFO] things - 开始预约: 15937230461
-[2018-03-30T11:14:30.951] [INFO] things - start get addressID from mobile: 15937230461
-[2018-03-30T11:14:32.635] [INFO] things - 定位查询结果 { state: true,
-  code: 10,
-  data: 
-   { IsNeedReservation: true,
-     IsIntercept: false,
-     ProductID: 391,
-     CanUseCredence: false,
-     Certificate: 
-      { ID: '2695757',
-        UID: 2188112,
-        PID: '391',
-        Status: 2,
-        Address: [Object],
-        Product: [Object],
-        FailureTime: '2018-04-01 09:34:19' },
-     EnterTimeSlot: 
-      { Start: '2018-03-30 00:00:00',
-        End: '2018-03-30 23:59:59',
-        InTime: true },
-     BuyTimeSlot: 
-      { Start: '2018-03-30 10:00:00',
-        End: '2018-03-30 16:00:00',
-        InTime: true } } }
-[2018-03-30T11:14:33.457] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
-[2018-03-30T11:14:33.457] [INFO] things - 预约结果 15937230461 {"state":true,"code":0,"msg":"提交预约信息成功"}
-[2018-03-30T11:14:34.463] [INFO] things - object
-[2018-03-30T11:14:34.463] [INFO] things - 开始预约: 17379324087
-[2018-03-30T11:14:35.477] [INFO] things - start get addressID from mobile: 17379324087
-[2018-03-30T11:14:37.415] [INFO] things - 定位查询结果 { state: true,
-  code: 10,
-  data: 
-   { IsNeedReservation: true,
-     IsIntercept: false,
-     ProductID: 391,
-     CanUseCredence: false,
-     Certificate: 
-      { ID: '2695763',
-        UID: 2200673,
-        PID: '391',
-        Status: 2,
-        Address: [Object],
-        Product: [Object],
-        FailureTime: '2018-04-01 09:34:20' },
-     EnterTimeSlot: 
-      { Start: '2018-03-30 00:00:00',
-        End: '2018-03-30 23:59:59',
-        InTime: true },
-     BuyTimeSlot: 
-      { Start: '2018-03-30 10:00:00',
-        End: '2018-03-30 16:00:00',
-        InTime: true } } }
-[2018-03-30T11:14:38.351] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
-[2018-03-30T11:14:38.351] [INFO] things - 预约结果 17379324087 {"state":true,"code":0,"msg":"提交预约信息成功"}
-[2018-03-30T11:14:39.356] [INFO] things - 所有手机号预约结束
-[2018-03-30T11:14:39.357] [INFO] things - 预约成功:
-[2018-03-30T11:14:39.357] [INFO] things - [{"phone":"13343192376","pass":"123456"},{"phone":"13485665212","pass":"123456"},{"phone":"13700077519","pass":"123456"},{"phone":"15063527328","pass":"123456"},{"phone":"15075870950","pass":"123456"},{"phone":"15206334886","pass":"123456"},{"phone":"15303199414","pass":"123456"},{"phone":"15354193781","pass":"123456"},{"phone":"15373204143","pass":"123456"},{"phone":"15399130078","pass":"125018adg"},{"phone":"15515970953","pass":"123456"},{"phone":"15937230461","pass":"123456"},{"phone":"17379324087","pass":"123456"}]
-[2018-03-30T11:14:39.357] [INFO] things - 预约失败:
-[2018-03-30T11:14:39.358] [INFO] things - []
-[2018-03-30T11:16:48.978] [INFO] things - start get addressID from mobile: 18593078244
-[2018-03-30T11:16:50.557] [INFO] things - { state: true,
+[2018-03-30T16:46:01.261] [INFO] things - start get addressID from mobile: 18593078244
+[2018-03-30T16:46:10.210] [INFO] things - start get addressID from mobile: 15635316166
+[2018-03-30T16:46:11.966] [INFO] things - start get addressID from mobile: 15535874373
+[2018-03-30T16:46:13.798] [INFO] things - start get addressID from mobile: 13052107547
+[2018-03-30T16:46:50.794] [INFO] things - start get addressID from mobile: 18593078244
+[2018-03-30T16:46:52.697] [INFO] things - { state: true,
   code: 0,
   data: 
    { ID: 1961823,
      IsDefault: true,
      IsPushAddreess: false,
-     Name: '郗赔究',
-     TelPhone: '18593078240',
+     Name: '繁峡呼',
+     TelPhone: '18593078204',
      Zipcode: '000000',
      ProvCode: '110000',
      CityCode: '110100',
      AreaCode: '110105',
      Remark: '',
      IsVerification: false,
-     AddressDetails: '北京市朝阳区,,医院',
-     Longitude: 116.469286,
-     Latitude: 39.895267,
-     Address: ',医院',
+     AddressDetails: '北京市朝阳区,食百汇美食城(双井店)',
+     Longitude: 116.479551,
+     Latitude: 39.899691,
+     Address: '食百汇美食城(双井店)',
      AddressText: '北京市朝阳区' } }
-[2018-03-30T11:16:51.802] [INFO] things - start get addressID from mobile: 15635316166
-[2018-03-30T11:16:58.658] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { ID: 1961824,
-     IsDefault: true,
-     IsPushAddreess: false,
-     Name: '彭佩回',
-     TelPhone: '15635316160',
-     Zipcode: '000000',
-     ProvCode: '110000',
-     CityCode: '110100',
-     AreaCode: '110105',
-     Remark: '',
-     IsVerification: false,
-     AddressDetails: '北京市朝阳区,时代国际嘉园4号楼,超市',
-     Longitude: 116.465865,
-     Latitude: 39.895024,
-     Address: '时代国际嘉园4号楼,超市',
-     AddressText: '北京市朝阳区' } }
-[2018-03-30T11:16:59.785] [INFO] things - start get addressID from mobile: 15535874373
-[2018-03-30T11:17:01.345] [INFO] things - { state: true,
+[2018-03-30T16:46:53.707] [INFO] things - start get addressID from mobile: 15635316166
+[2018-03-30T16:47:24.870] [INFO] things - start get addressID from mobile: 15535874373
+[2018-03-30T16:47:26.477] [INFO] things - { state: true,
   code: 0,
   data: 
    { ID: 1961826,
      IsDefault: true,
      IsPushAddreess: false,
-     Name: '殳帆',
-     TelPhone: '15535874370',
+     Name: '裴觉宏',
+     TelPhone: '15535874303',
      Zipcode: '000000',
      ProvCode: '110000',
      CityCode: '110100',
      AreaCode: '110105',
      Remark: '',
      IsVerification: false,
-     AddressDetails: '北京市朝阳区,东柏街路10号院,电影院',
-     Longitude: 116.465305,
-     Latitude: 39.894719,
-     Address: '东柏街路10号院,电影院',
+     AddressDetails: '北京市朝阳区,呷哺呷哺(广渠路店)',
+     Longitude: 116.481483,
+     Latitude: 39.899481,
+     Address: '呷哺呷哺(广渠路店)',
      AddressText: '北京市朝阳区' } }
-[2018-03-30T11:17:04.328] [INFO] things - start get addressID from mobile: 13052107547
-[2018-03-30T11:17:07.034] [INFO] things - { state: true,
+[2018-03-30T16:47:27.412] [INFO] things - start get addressID from mobile: 13052107547
+[2018-03-30T16:47:29.160] [INFO] things - { state: true,
   code: 0,
   data: 
    { ID: 1961828,
      IsDefault: true,
      IsPushAddreess: false,
-     Name: '申胤裳',
-     TelPhone: '13052107540',
+     Name: '胡医亿',
+     TelPhone: '13052107507',
      Zipcode: '000000',
      ProvCode: '110000',
      CityCode: '110100',
      AreaCode: '110105',
      Remark: '',
      IsVerification: false,
-     AddressDetails: '北京市朝阳区,广渠路29号,中国铁通营业厅',
-     Longitude: 116.470039,
-     Latitude: 39.894377,
-     Address: '广渠路29号,中国铁通营业厅',
+     AddressDetails: '北京市朝阳区,宽板凳老灶火锅(广渠门店)',
+     Longitude: 116.481879,
+     Latitude: 39.900075,
+     Address: '宽板凳老灶火锅(广渠门店)',
      AddressText: '北京市朝阳区' } }
-[2018-03-30T11:17:08.126] [INFO] things - start get addressID from mobile: 15535874823
-[2018-03-30T11:17:10.410] [INFO] things - { state: true,
+[2018-03-30T16:47:32.430] [INFO] things - start get addressID from mobile: 15535874823
+[2018-03-30T16:47:34.771] [INFO] things - { state: true,
   code: 0,
   data: 
    { ID: 1961833,
      IsDefault: true,
      IsPushAddreess: false,
-     Name: '冉孜快璩',
-     TelPhone: '15535874820',
+     Name: '干象巴',
+     TelPhone: '15535874803',
      Zipcode: '000000',
      ProvCode: '110000',
      CityCode: '110100',
      AreaCode: '110105',
      Remark: '',
      IsVerification: false,
-     AddressDetails: '北京市朝阳区,东柏街11号,自行车专卖店',
-     Longitude: 116.46258,
-     Latitude: 39.895753,
-     Address: '东柏街11号,自行车专卖店',
+     AddressDetails: '北京市朝阳区,望京小腰(总店)',
+     Longitude: 116.472335,
+     Latitude: 39.898533,
+     Address: '望京小腰(总店)',
      AddressText: '北京市朝阳区' } }
-[2018-03-30T11:17:11.450] [INFO] things - start get addressID from mobile: 15525146023
-[2018-03-30T11:17:13.152] [INFO] things - { state: true,
+[2018-03-30T16:47:35.632] [INFO] things - start get addressID from mobile: 15525146023
+[2018-03-30T16:47:37.250] [INFO] things - { state: true,
   code: 0,
   data: 
    { ID: 1961836,
      IsDefault: true,
      IsPushAddreess: false,
-     Name: '裴一钞',
-     TelPhone: '15525146020',
+     Name: '冯赞',
+     TelPhone: '15525146003',
      Zipcode: '000000',
      ProvCode: '110000',
      CityCode: '110100',
      AreaCode: '110105',
      Remark: '',
      IsVerification: false,
-     AddressDetails: '北京市朝阳区,,医院',
-     Longitude: 116.469286,
-     Latitude: 39.895267,
-     Address: ',医院',
+     AddressDetails: '北京市朝阳区,张妈妈特色川味馆(百子湾店)',
+     Longitude: 116.471846,
+     Latitude: 39.906571,
+     Address: '张妈妈特色川味馆(百子湾店)',
      AddressText: '北京市朝阳区' } }
-[2018-03-30T11:17:14.277] [INFO] things - start get addressID from mobile: 17331831740
-[2018-03-30T11:17:16.341] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { ID: 1961841,
-     IsDefault: true,
-     IsPushAddreess: false,
-     Name: '钮草',
-     TelPhone: '173318317405',
-     Zipcode: '000000',
-     ProvCode: '110000',
-     CityCode: '110100',
-     AreaCode: '110105',
-     Remark: '',
-     IsVerification: false,
-     AddressDetails: '北京市朝阳区,时代国际嘉园4号楼,电影院',
-     Longitude: 116.465865,
-     Latitude: 39.895024,
-     Address: '时代国际嘉园4号楼,电影院',
-     AddressText: '北京市朝阳区' } }
-[2018-03-30T11:17:20.630] [INFO] things - start get addressID from mobile: 15582882641
-[2018-03-30T11:17:33.068] [INFO] things - { state: true,
+[2018-03-30T16:47:39.027] [INFO] things - start get addressID from mobile: 17331831740
+[2018-03-30T16:48:10.388] [INFO] things - start get addressID from mobile: 15582882641
+[2018-03-30T16:48:12.026] [INFO] things - { state: true,
   code: 0,
   data: 
    { ID: 1961845,
      IsDefault: true,
      IsPushAddreess: false,
-     Name: '乐罡',
-     TelPhone: '15582882640',
+     Name: '应小',
+     TelPhone: '15582882601',
      Zipcode: '000000',
      ProvCode: '110000',
      CityCode: '110100',
      AreaCode: '110105',
      Remark: '',
      IsVerification: false,
-     AddressDetails: '北京市朝阳区,东柏街路10号院,电影院',
-     Longitude: 116.465305,
-     Latitude: 39.894719,
-     Address: '东柏街路10号院,电影院',
+     AddressDetails: '北京市朝阳区,小小酒家',
+     Longitude: 116.475852,
+     Latitude: 39.905665,
+     Address: '小小酒家',
      AddressText: '北京市朝阳区' } }
-[2018-03-30T11:17:34.167] [INFO] things - start get addressID from mobile: 15564917183
-[2018-03-30T11:17:36.024] [INFO] things - { state: true,
+[2018-03-30T16:48:13.347] [INFO] things - start get addressID from mobile: 15564917183
+[2018-03-30T16:48:15.758] [INFO] things - { state: true,
   code: 0,
   data: 
    { ID: 1961852,
      IsDefault: true,
      IsPushAddreess: false,
-     Name: '闻人挂习羹',
-     TelPhone: '15564917180',
+     Name: '汪拆',
+     TelPhone: '15564917103',
      Zipcode: '000000',
      ProvCode: '110000',
      CityCode: '110100',
      AreaCode: '110105',
      Remark: '',
      IsVerification: false,
-     AddressDetails: '北京市朝阳区,广渠路29号,中国铁通营业厅',
-     Longitude: 116.470039,
-     Latitude: 39.894377,
-     Address: '广渠路29号,中国铁通营业厅',
+     AddressDetails: '北京市朝阳区,渝焱火锅',
+     Longitude: 116.473104,
+     Latitude: 39.90651,
+     Address: '渝焱火锅',
      AddressText: '北京市朝阳区' } }
-[2018-03-30T11:17:37.090] [INFO] things - start get addressID from mobile: 18545086596
-[2018-03-30T11:17:38.856] [INFO] things - { state: true,
+[2018-03-30T16:48:16.945] [INFO] things - start get addressID from mobile: 18545086596
+[2018-03-30T16:48:19.073] [INFO] things - { state: true,
   code: 0,
   data: 
    { ID: 1961858,
      IsDefault: true,
      IsPushAddreess: false,
-     Name: '邓发诈刊',
-     TelPhone: '18545086590',
+     Name: '臧央',
+     TelPhone: '18545086506',
      Zipcode: '000000',
      ProvCode: '110000',
      CityCode: '110100',
      AreaCode: '110105',
      Remark: '',
      IsVerification: false,
-     AddressDetails: '北京市朝阳区,东柏街11号,健身中心',
-     Longitude: 116.46258,
-     Latitude: 39.895753,
-     Address: '东柏街11号,健身中心',
+     AddressDetails: '北京市朝阳区,龙庭酒家(西大望路店)',
+     Longitude: 116.484851,
+     Latitude: 39.896533,
+     Address: '龙庭酒家(西大望路店)',
      AddressText: '北京市朝阳区' } }
-[2018-03-30T11:17:39.884] [INFO] things - start get addressID from mobile: 17732510974
-[2018-03-30T11:17:43.203] [INFO] things - { state: true,
+[2018-03-30T16:48:24.208] [INFO] things - start get addressID from mobile: 17732510974
+[2018-03-30T16:48:25.910] [INFO] things - { state: true,
   code: 0,
   data: 
    { ID: 1961859,
      IsDefault: true,
      IsPushAddreess: false,
-     Name: '步妣',
-     TelPhone: '17732510970',
+     Name: '孔璎',
+     TelPhone: '17732510904',
      Zipcode: '000000',
      ProvCode: '110000',
      CityCode: '110100',
      AreaCode: '110105',
      Remark: '',
      IsVerification: false,
-     AddressDetails: '北京市朝阳区,,自行车专卖店',
-     Longitude: 116.469286,
-     Latitude: 39.895267,
-     Address: ',自行车专卖店',
+     AddressDetails: '北京市朝阳区,人民公社大食堂(双井店)',
+     Longitude: 116.469769,
+     Latitude: 39.896893,
+     Address: '人民公社大食堂(双井店)',
      AddressText: '北京市朝阳区' } }
-[2018-03-30T11:17:44.702] [INFO] things - start get addressID from mobile: 18241816845
-[2018-03-30T11:17:47.298] [INFO] things - { state: true,
+[2018-03-30T16:48:26.895] [INFO] things - start get addressID from mobile: 18241816845
+[2018-03-30T16:48:28.659] [INFO] things - { state: true,
   code: 0,
   data: 
    { ID: 1961860,
      IsDefault: true,
      IsPushAddreess: false,
-     Name: '邴矶役',
-     TelPhone: '18241816840',
+     Name: '厉熙燕',
+     TelPhone: '18241816805',
      Zipcode: '000000',
      ProvCode: '110000',
      CityCode: '110100',
      AreaCode: '110105',
      Remark: '',
      IsVerification: false,
-     AddressDetails: '北京市朝阳区,时代国际嘉园4号楼,专营店',
-     Longitude: 116.465865,
-     Latitude: 39.895024,
-     Address: '时代国际嘉园4号楼,专营店',
+     AddressDetails: '北京市朝阳区,大关人东北烤肉',
+     Longitude: 116.472535,
+     Latitude: 39.901072,
+     Address: '大关人东北烤肉',
      AddressText: '北京市朝阳区' } }
-[2018-03-30T11:17:50.851] [INFO] things - start get addressID from mobile: 15682637686
-[2018-03-30T11:17:53.442] [INFO] things - { state: true,
+[2018-03-30T16:48:29.626] [INFO] things - start get addressID from mobile: 15682637686
+[2018-03-30T16:48:31.752] [INFO] things - { state: true,
   code: 0,
   data: 
    { ID: 1961861,
      IsDefault: true,
      IsPushAddreess: false,
-     Name: '蒲儿',
-     TelPhone: '15682637680',
+     Name: '刁俟黍',
+     TelPhone: '15682637606',
      Zipcode: '000000',
      ProvCode: '110000',
      CityCode: '110100',
      AreaCode: '110105',
      Remark: '',
      IsVerification: false,
-     AddressDetails: '北京市朝阳区,东柏街路10号院,中国卫通营业厅',
-     Longitude: 116.465305,
-     Latitude: 39.894719,
-     Address: '东柏街路10号院,中国卫通营业厅',
+     AddressDetails: '北京市朝阳区,虾吃虾涮(双井店)',
+     Longitude: 116.46902,
+     Latitude: 39.902103,
+     Address: '虾吃虾涮(双井店)',
      AddressText: '北京市朝阳区' } }
-[2018-03-30T11:17:54.620] [INFO] things - start get addressID from mobile: 15934072914
-[2018-03-30T11:17:56.278] [INFO] things - { state: true,
+[2018-03-30T16:48:32.712] [INFO] things - start get addressID from mobile: 15934072914
+[2018-03-30T16:48:38.325] [INFO] things - { state: true,
   code: 0,
   data: 
    { ID: 1961865,
      IsDefault: true,
      IsPushAddreess: false,
-     Name: '穆尧',
-     TelPhone: '15934072910',
+     Name: '充玑枚',
+     TelPhone: '15934072904',
      Zipcode: '000000',
      ProvCode: '110000',
      CityCode: '110100',
      AreaCode: '110105',
      Remark: '',
      IsVerification: false,
-     AddressDetails: '北京市朝阳区,广渠路29号,网吧',
-     Longitude: 116.470039,
-     Latitude: 39.894377,
-     Address: '广渠路29号,网吧',
+     AddressDetails: '北京市朝阳区,酷湘',
+     Longitude: 116.482341,
+     Latitude: 39.906568,
+     Address: '酷湘',
      AddressText: '北京市朝阳区' } }
-[2018-03-30T11:17:57.098] [INFO] things - start get addressID from mobile: 18909564220
-[2018-03-30T11:17:58.554] [INFO] things - { state: true,
+[2018-03-30T16:48:39.559] [INFO] things - start get addressID from mobile: 18909564220
+[2018-03-30T16:48:41.968] [INFO] things - { state: true,
   code: 0,
   data: 
    { ID: 1961867,
      IsDefault: true,
      IsPushAddreess: false,
-     Name: '索袋',
-     TelPhone: '189095642205',
+     Name: '宰曾',
+     TelPhone: '18909564200',
      Zipcode: '000000',
      ProvCode: '110000',
      CityCode: '110100',
      AreaCode: '110105',
      Remark: '',
      IsVerification: false,
-     AddressDetails: '北京市朝阳区,东柏街11号,专营店',
-     Longitude: 116.46258,
-     Latitude: 39.895753,
-     Address: '东柏街11号,专营店',
+     AddressDetails: '北京市朝阳区,冰城老太太烧烤',
+     Longitude: 116.48123,
+     Latitude: 39.906433,
+     Address: '冰城老太太烧烤',
      AddressText: '北京市朝阳区' } }
-[2018-03-30T11:17:59.605] [INFO] things - start get addressID from mobile: 13843910857
-[2018-03-30T11:18:01.330] [INFO] things - { state: true,
+[2018-03-30T16:48:42.915] [INFO] things - start get addressID from mobile: 13843910857
+[2018-03-30T16:48:45.139] [INFO] things - { state: true,
   code: 0,
   data: 
    { ID: 1961870,
      IsDefault: true,
      IsPushAddreess: false,
-     Name: '蔺夷龛',
-     TelPhone: '13843910850',
+     Name: '郎甯',
+     TelPhone: '13843910807',
      Zipcode: '000000',
      ProvCode: '110000',
      CityCode: '110100',
      AreaCode: '110105',
      Remark: '',
      IsVerification: false,
-     AddressDetails: '北京市朝阳区,,电影院',
-     Longitude: 116.469286,
-     Latitude: 39.895267,
-     Address: ',电影院',
+     AddressDetails: '北京市朝阳区,江边渔村',
+     Longitude: 116.471801,
+     Latitude: 39.900815,
+     Address: '江边渔村',
      AddressText: '北京市朝阳区' } }
-[2018-03-30T11:18:02.281] [INFO] things - start get addressID from mobile: 17073020029
-[2018-03-30T11:18:05.252] [INFO] things - { state: true,
+[2018-03-30T16:48:46.434] [INFO] things - start get addressID from mobile: 17073020029
+[2018-03-30T16:48:48.829] [INFO] things - { state: true,
   code: 0,
   data: 
    { ID: 1961871,
      IsDefault: true,
      IsPushAddreess: false,
-     Name: '滑悠',
-     TelPhone: '17073020020',
+     Name: '康顼',
+     TelPhone: '17073020009',
      Zipcode: '000000',
      ProvCode: '110000',
      CityCode: '110100',
      AreaCode: '110105',
      Remark: '',
      IsVerification: false,
-     AddressDetails: '北京市朝阳区,时代国际嘉园4号楼,肯德基',
-     Longitude: 116.465865,
-     Latitude: 39.895024,
-     Address: '时代国际嘉园4号楼,肯德基',
+     AddressDetails: '北京市朝阳区,桐毅小院儿',
+     Longitude: 116.479593,
+     Latitude: 39.906521,
+     Address: '桐毅小院儿',
      AddressText: '北京市朝阳区' } }
-[2018-03-30T11:18:06.177] [INFO] things - start get addressID from mobile: 15535890431
-[2018-03-30T11:18:07.974] [INFO] things - { state: true,
+[2018-03-30T16:48:49.827] [INFO] things - start get addressID from mobile: 15535890431
+[2018-03-30T16:48:55.375] [INFO] things - { state: true,
   code: 0,
   data: 
    { ID: 1961873,
      IsDefault: true,
      IsPushAddreess: false,
-     Name: '隗知',
-     TelPhone: '15535890430',
+     Name: '邢奠顼',
+     TelPhone: '15535890401',
      Zipcode: '000000',
      ProvCode: '110000',
      CityCode: '110100',
      AreaCode: '110105',
      Remark: '',
      IsVerification: false,
-     AddressDetails: '北京市朝阳区,东柏街路10号院,洗浴中心',
-     Longitude: 116.465305,
-     Latitude: 39.894719,
-     Address: '东柏街路10号院,洗浴中心',
+     AddressDetails: '北京市朝阳区,家范儿',
+     Longitude: 116.471139,
+     Latitude: 39.897,
+     Address: '家范儿',
      AddressText: '北京市朝阳区' } }
-[2018-03-30T11:18:08.945] [INFO] things - start get addressID from mobile: 15303529430
-[2018-03-30T11:18:10.858] [INFO] things - { state: true,
+[2018-03-30T16:48:57.314] [INFO] things - start get addressID from mobile: 15303529430
+[2018-03-30T16:48:59.915] [INFO] things - { state: true,
   code: 0,
   data: 
    { ID: 1961875,
      IsDefault: true,
      IsPushAddreess: false,
-     Name: '裴委酉',
-     TelPhone: '153035294305',
+     Name: '王墩',
+     TelPhone: '15303529400',
      Zipcode: '000000',
      ProvCode: '110000',
      CityCode: '110100',
      AreaCode: '110105',
      Remark: '',
      IsVerification: false,
-     AddressDetails: '北京市朝阳区,广渠路29号,医院',
-     Longitude: 116.470039,
-     Latitude: 39.894377,
-     Address: '广渠路29号,医院',
+     AddressDetails: '北京市朝阳区,大龙燚火锅(双井店)',
+     Longitude: 116.474068,
+     Latitude: 39.903725,
+     Address: '大龙燚火锅(双井店)',
      AddressText: '北京市朝阳区' } }
-[2018-03-30T11:18:11.933] [INFO] things - start get addressID from mobile: 17635568238
-[2018-03-30T11:18:14.742] [INFO] things - { state: true,
+[2018-03-30T16:49:00.822] [INFO] things - start get addressID from mobile: 17635568238
+[2018-03-30T16:49:02.548] [INFO] things - { state: true,
   code: 0,
   data: 
    { ID: 1961943,
      IsDefault: true,
      IsPushAddreess: false,
-     Name: '喻扶',
-     TelPhone: '17635568230',
+     Name: '农惟瑕',
+     TelPhone: '17635568208',
      Zipcode: '000000',
      ProvCode: '110000',
      CityCode: '110100',
      AreaCode: '110105',
      Remark: '',
      IsVerification: false,
-     AddressDetails: '北京市朝阳区,东柏街11号,电影院',
-     Longitude: 116.46258,
-     Latitude: 39.895753,
-     Address: '东柏街11号,电影院',
+     AddressDetails: '北京市朝阳区,漫牛韩式烤肉',
+     Longitude: 116.471659,
+     Latitude: 39.900765,
+     Address: '漫牛韩式烤肉',
      AddressText: '北京市朝阳区' } }
-[2018-03-30T11:18:19.862] [INFO] things - start get addressID from mobile: 15535486077
-[2018-03-30T11:18:21.823] [INFO] things - { state: true,
+[2018-03-30T16:49:04.373] [INFO] things - start get addressID from mobile: 15535486077
+[2018-03-30T16:49:10.816] [INFO] things - { state: true,
   code: 0,
   data: 
    { ID: 1961944,
      IsDefault: true,
      IsPushAddreess: false,
-     Name: '韩琬',
-     TelPhone: '15535486070',
+     Name: '符香蛮',
+     TelPhone: '15535486007',
      Zipcode: '000000',
      ProvCode: '110000',
      CityCode: '110100',
      AreaCode: '110105',
      Remark: '',
      IsVerification: false,
-     AddressDetails: '北京市朝阳区,,儿童用品店',
-     Longitude: 116.469286,
-     Latitude: 39.895267,
-     Address: ',儿童用品店',
+     AddressDetails: '北京市朝阳区,汉丽轩烤肉超市(双井店)',
+     Longitude: 116.472273,
+     Latitude: 39.897059,
+     Address: '汉丽轩烤肉超市(双井店)',
      AddressText: '北京市朝阳区' } }
-[2018-03-30T11:18:22.769] [INFO] things - start get addressID from mobile: 18754955373
-[2018-03-30T11:18:24.276] [INFO] things - { state: true,
+[2018-03-30T16:49:12.002] [INFO] things - start get addressID from mobile: 18754955373
+[2018-03-30T16:49:13.940] [INFO] things - { state: true,
   code: 0,
   data: 
    { ID: 1961946,
      IsDefault: true,
      IsPushAddreess: false,
-     Name: '计欧晏',
-     TelPhone: '18754955370',
+     Name: '崔型',
+     TelPhone: '18754955303',
      Zipcode: '000000',
      ProvCode: '110000',
      CityCode: '110100',
      AreaCode: '110105',
      Remark: '',
      IsVerification: false,
-     AddressDetails: '北京市朝阳区,时代国际嘉园4号楼,珠宝首饰工艺品',
-     Longitude: 116.465865,
-     Latitude: 39.895024,
-     Address: '时代国际嘉园4号楼,珠宝首饰工艺品',
+     AddressDetails: '北京市朝阳区,金刚山烤肉',
+     Longitude: 116.483477,
+     Latitude: 39.899658,
+     Address: '金刚山烤肉',
      AddressText: '北京市朝阳区' } }
-[2018-03-30T11:18:26.621] [INFO] things - start get addressID from mobile: 18154567585
-[2018-03-30T11:18:29.385] [INFO] things - { state: true,
+[2018-03-30T16:49:14.921] [INFO] things - start get addressID from mobile: 18154567585
+[2018-03-30T16:49:16.681] [INFO] things - { state: true,
   code: 0,
   data: 
    { ID: 1961948,
      IsDefault: true,
      IsPushAddreess: false,
-     Name: '王阴夷',
-     TelPhone: '18154567580',
+     Name: '宿婉弟',
+     TelPhone: '18154567505',
      Zipcode: '000000',
      ProvCode: '110000',
      CityCode: '110100',
      AreaCode: '110105',
      Remark: '',
      IsVerification: false,
-     AddressDetails: '北京市朝阳区,东柏街路10号院,肯德基',
-     Longitude: 116.465305,
-     Latitude: 39.894719,
-     Address: '东柏街路10号院,肯德基',
+     AddressDetails: '北京市朝阳区,汕头八合里海记牛肉店(国贸店)',
+     Longitude: 116.469968,
+     Latitude: 39.906681,
+     Address: '汕头八合里海记牛肉店(国贸店)',
      AddressText: '北京市朝阳区' } }
-[2018-03-30T11:18:31.425] [INFO] things - start get addressID from mobile: 15834343940
-[2018-03-30T11:18:33.195] [INFO] things - { state: true,
+[2018-03-30T16:49:17.624] [INFO] things - start get addressID from mobile: 15834343940
+[2018-03-30T16:49:19.267] [INFO] things - { state: true,
   code: 0,
   data: 
    { ID: 1961950,
      IsDefault: true,
      IsPushAddreess: false,
-     Name: '杭育俦',
-     TelPhone: '158343439405',
+     Name: '叶枫通',
+     TelPhone: '15834343900',
      Zipcode: '000000',
      ProvCode: '110000',
      CityCode: '110100',
      AreaCode: '110105',
      Remark: '',
      IsVerification: false,
-     AddressDetails: '北京市朝阳区,广渠路29号,宝马生活方式',
-     Longitude: 116.470039,
-     Latitude: 39.894377,
-     Address: '广渠路29号,宝马生活方式',
+     AddressDetails: '北京市朝阳区,鲜牛记牛肉火锅',
+     Longitude: 116.485018,
+     Latitude: 39.894815,
+     Address: '鲜牛记牛肉火锅',
      AddressText: '北京市朝阳区' } }
-[2018-03-30T11:18:34.464] [INFO] things - start get addressID from mobile: 17196748368
-[2018-03-30T11:18:36.996] [INFO] things - { state: true,
+[2018-03-30T16:49:20.615] [INFO] things - start get addressID from mobile: 17196748368
+[2018-03-30T16:49:22.991] [INFO] things - { state: true,
   code: 0,
   data: 
    { ID: 1961953,
      IsDefault: true,
      IsPushAddreess: false,
-     Name: '车粹',
-     TelPhone: '17196748360',
+     Name: '彭淹',
+     TelPhone: '17196748308',
      Zipcode: '000000',
      ProvCode: '110000',
      CityCode: '110100',
      AreaCode: '110105',
      Remark: '',
      IsVerification: false,
-     AddressDetails: '北京市朝阳区,东柏街11号,古玩字画店',
-     Longitude: 116.46258,
-     Latitude: 39.895753,
-     Address: '东柏街11号,古玩字画店',
+     AddressDetails: '北京市朝阳区,桐爷春饼店',
+     Longitude: 116.47551,
+     Latitude: 39.905825,
+     Address: '桐爷春饼店',
      AddressText: '北京市朝阳区' } }
-[2018-03-30T11:18:38.378] [INFO] things - start get addressID from mobile: 15330512791
-[2018-03-30T11:18:42.083] [INFO] things - { state: true,
+[2018-03-30T16:49:23.985] [INFO] things - start get addressID from mobile: 15330512791
+[2018-03-30T16:49:25.847] [INFO] things - { state: true,
   code: 0,
   data: 
    { ID: 1961959,
      IsDefault: true,
      IsPushAddreess: false,
-     Name: '祖析镒',
-     TelPhone: '15330512790',
+     Name: '段壕破',
+     TelPhone: '15330512701',
      Zipcode: '000000',
      ProvCode: '110000',
      CityCode: '110100',
      AreaCode: '110105',
      Remark: '',
      IsVerification: false,
-     AddressDetails: '北京市朝阳区,,儿童用品店',
-     Longitude: 116.469286,
-     Latitude: 39.895267,
-     Address: ',儿童用品店',
+     AddressDetails: '北京市朝阳区,常赢三兄弟餐厅',
+     Longitude: 116.46942,
+     Latitude: 39.906515,
+     Address: '常赢三兄弟餐厅',
      AddressText: '北京市朝阳区' } }
-[2018-03-30T11:19:17.906] [INFO] things - object
-[2018-03-30T11:19:17.910] [INFO] things - 开始预约: 18593078244
-[2018-03-30T11:19:22.964] [INFO] things - start get addressID from mobile: 18593078244
-[2018-03-30T11:19:24.391] [INFO] things - 定位查询结果 { state: true,
+[2018-03-30T16:49:58.574] [INFO] things - object
+[2018-03-30T16:49:58.580] [INFO] things - 开始预约: 18593078244
+[2018-03-30T16:50:00.041] [INFO] things - start get addressID from mobile: 18593078244
+[2018-03-30T16:50:06.408] [INFO] things - 定位查询结果 { state: true,
   code: 10,
   data: 
    { IsNeedReservation: true,
@@ -1164,15 +500,15 @@
         End: '2018-03-30 23:59:59',
         InTime: true },
      BuyTimeSlot: 
-      { Start: '2018-03-30 10:00:00',
-        End: '2018-03-30 16:00:00',
-        InTime: true } } }
-[2018-03-30T11:19:27.357] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
-[2018-03-30T11:19:27.357] [INFO] things - 预约结果 18593078244 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
-[2018-03-30T11:19:28.360] [INFO] things - object
-[2018-03-30T11:19:28.361] [INFO] things - 开始预约: 15635316166
-[2018-03-30T11:19:29.434] [INFO] things - start get addressID from mobile: 15635316166
-[2018-03-30T11:19:31.524] [INFO] things - 定位查询结果 { state: true,
+      { Start: '2018-03-31 10:00:00',
+        End: '2018-03-31 16:00:00',
+        InTime: false } } }
+[2018-03-30T16:50:07.941] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-03-30T16:50:07.942] [INFO] things - 预约结果 18593078244 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-03-30T16:50:08.948] [INFO] things - object
+[2018-03-30T16:50:08.949] [INFO] things - 开始预约: 15535874373
+[2018-03-30T16:50:14.018] [INFO] things - start get addressID from mobile: 15535874373
+[2018-03-30T16:50:16.129] [INFO] things - 定位查询结果 { state: true,
   code: 10,
   data: 
    { IsNeedReservation: true,
@@ -1185,15 +521,15 @@
         End: '2018-03-30 23:59:59',
         InTime: true },
      BuyTimeSlot: 
-      { Start: '2018-03-30 10:00:00',
-        End: '2018-03-30 16:00:00',
-        InTime: true } } }
-[2018-03-30T11:19:32.669] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
-[2018-03-30T11:19:32.669] [INFO] things - 预约结果 15635316166 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
-[2018-03-30T11:19:33.673] [INFO] things - object
-[2018-03-30T11:19:33.674] [INFO] things - 开始预约: 15535874373
-[2018-03-30T11:19:35.844] [INFO] things - start get addressID from mobile: 15535874373
-[2018-03-30T11:19:39.018] [INFO] things - 定位查询结果 { state: true,
+      { Start: '2018-03-31 10:00:00',
+        End: '2018-03-31 16:00:00',
+        InTime: false } } }
+[2018-03-30T16:50:21.663] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-03-30T16:50:21.663] [INFO] things - 预约结果 15535874373 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-03-30T16:50:22.668] [INFO] things - object
+[2018-03-30T16:50:22.668] [INFO] things - 开始预约: 13052107547
+[2018-03-30T16:50:26.125] [INFO] things - start get addressID from mobile: 13052107547
+[2018-03-30T16:50:30.616] [INFO] things - 定位查询结果 { state: true,
   code: 10,
   data: 
    { IsNeedReservation: true,
@@ -1206,15 +542,15 @@
         End: '2018-03-30 23:59:59',
         InTime: true },
      BuyTimeSlot: 
-      { Start: '2018-03-30 10:00:00',
-        End: '2018-03-30 16:00:00',
-        InTime: true } } }
-[2018-03-30T11:19:40.759] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
-[2018-03-30T11:19:40.759] [INFO] things - 预约结果 15535874373 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
-[2018-03-30T11:19:41.762] [INFO] things - object
-[2018-03-30T11:19:41.763] [INFO] things - 开始预约: 13052107547
-[2018-03-30T11:19:42.724] [INFO] things - start get addressID from mobile: 13052107547
-[2018-03-30T11:19:44.521] [INFO] things - 定位查询结果 { state: true,
+      { Start: '2018-03-31 10:00:00',
+        End: '2018-03-31 16:00:00',
+        InTime: false } } }
+[2018-03-30T16:50:32.016] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-03-30T16:50:32.016] [INFO] things - 预约结果 13052107547 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-03-30T16:50:33.021] [INFO] things - object
+[2018-03-30T16:50:33.022] [INFO] things - 开始预约: 15535874823
+[2018-03-30T16:50:34.261] [INFO] things - start get addressID from mobile: 15535874823
+[2018-03-30T16:50:40.580] [INFO] things - 定位查询结果 { state: true,
   code: 10,
   data: 
    { IsNeedReservation: true,
@@ -1227,15 +563,15 @@
         End: '2018-03-30 23:59:59',
         InTime: true },
      BuyTimeSlot: 
-      { Start: '2018-03-30 10:00:00',
-        End: '2018-03-30 16:00:00',
-        InTime: true } } }
-[2018-03-30T11:19:45.879] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
-[2018-03-30T11:19:45.879] [INFO] things - 预约结果 13052107547 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
-[2018-03-30T11:19:46.885] [INFO] things - object
-[2018-03-30T11:19:46.885] [INFO] things - 开始预约: 15535874823
-[2018-03-30T11:19:47.950] [INFO] things - start get addressID from mobile: 15535874823
-[2018-03-30T11:19:51.822] [INFO] things - 定位查询结果 { state: true,
+      { Start: '2018-03-31 10:00:00',
+        End: '2018-03-31 16:00:00',
+        InTime: false } } }
+[2018-03-30T16:50:42.512] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-03-30T16:50:42.512] [INFO] things - 预约结果 15535874823 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-03-30T16:50:43.517] [INFO] things - object
+[2018-03-30T16:50:43.518] [INFO] things - 开始预约: 15525146023
+[2018-03-30T16:50:44.793] [INFO] things - start get addressID from mobile: 15525146023
+[2018-03-30T16:50:46.974] [INFO] things - 定位查询结果 { state: true,
   code: 10,
   data: 
    { IsNeedReservation: true,
@@ -1248,15 +584,15 @@
         End: '2018-03-30 23:59:59',
         InTime: true },
      BuyTimeSlot: 
-      { Start: '2018-03-30 10:00:00',
-        End: '2018-03-30 16:00:00',
-        InTime: true } } }
-[2018-03-30T11:19:52.827] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
-[2018-03-30T11:19:52.827] [INFO] things - 预约结果 15535874823 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
-[2018-03-30T11:19:53.832] [INFO] things - object
-[2018-03-30T11:19:53.833] [INFO] things - 开始预约: 15525146023
-[2018-03-30T11:19:57.003] [INFO] things - start get addressID from mobile: 15525146023
-[2018-03-30T11:19:58.867] [INFO] things - 定位查询结果 { state: true,
+      { Start: '2018-03-31 10:00:00',
+        End: '2018-03-31 16:00:00',
+        InTime: false } } }
+[2018-03-30T16:50:48.595] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-03-30T16:50:48.595] [INFO] things - 预约结果 15525146023 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-03-30T16:50:49.599] [INFO] things - object
+[2018-03-30T16:50:49.599] [INFO] things - 开始预约: 15582882641
+[2018-03-30T16:50:50.715] [INFO] things - start get addressID from mobile: 15582882641
+[2018-03-30T16:50:52.247] [INFO] things - 定位查询结果 { state: true,
   code: 10,
   data: 
    { IsNeedReservation: true,
@@ -1269,15 +605,15 @@
         End: '2018-03-30 23:59:59',
         InTime: true },
      BuyTimeSlot: 
-      { Start: '2018-03-30 10:00:00',
-        End: '2018-03-30 16:00:00',
-        InTime: true } } }
-[2018-03-30T11:20:00.010] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
-[2018-03-30T11:20:00.010] [INFO] things - 预约结果 15525146023 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
-[2018-03-30T11:20:01.015] [INFO] things - object
-[2018-03-30T11:20:01.016] [INFO] things - 开始预约: 17331831740
-[2018-03-30T11:20:02.101] [INFO] things - start get addressID from mobile: 17331831740
-[2018-03-30T11:20:03.803] [INFO] things - 定位查询结果 { state: true,
+      { Start: '2018-03-31 10:00:00',
+        End: '2018-03-31 16:00:00',
+        InTime: false } } }
+[2018-03-30T16:50:53.553] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-03-30T16:50:53.554] [INFO] things - 预约结果 15582882641 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-03-30T16:50:54.557] [INFO] things - object
+[2018-03-30T16:50:54.557] [INFO] things - 开始预约: 15564917183
+[2018-03-30T16:50:55.845] [INFO] things - start get addressID from mobile: 15564917183
+[2018-03-30T16:50:57.854] [INFO] things - 定位查询结果 { state: true,
   code: 10,
   data: 
    { IsNeedReservation: true,
@@ -1290,15 +626,15 @@
         End: '2018-03-30 23:59:59',
         InTime: true },
      BuyTimeSlot: 
-      { Start: '2018-03-30 10:00:00',
-        End: '2018-03-30 16:00:00',
-        InTime: true } } }
-[2018-03-30T11:20:04.692] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
-[2018-03-30T11:20:04.692] [INFO] things - 预约结果 17331831740 {"state":true,"code":0,"msg":"提交预约信息成功"}
-[2018-03-30T11:20:05.698] [INFO] things - object
-[2018-03-30T11:20:05.699] [INFO] things - 开始预约: 15582882641
-[2018-03-30T11:20:08.613] [INFO] things - start get addressID from mobile: 15582882641
-[2018-03-30T11:20:18.852] [INFO] things - 定位查询结果 { state: true,
+      { Start: '2018-03-31 10:00:00',
+        End: '2018-03-31 16:00:00',
+        InTime: false } } }
+[2018-03-30T16:50:59.561] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-03-30T16:50:59.562] [INFO] things - 预约结果 15564917183 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-03-30T16:51:00.565] [INFO] things - object
+[2018-03-30T16:51:00.566] [INFO] things - 开始预约: 18545086596
+[2018-03-30T16:51:01.603] [INFO] things - start get addressID from mobile: 18545086596
+[2018-03-30T16:51:07.668] [INFO] things - 定位查询结果 { state: true,
   code: 10,
   data: 
    { IsNeedReservation: true,
@@ -1311,15 +647,15 @@
         End: '2018-03-30 23:59:59',
         InTime: true },
      BuyTimeSlot: 
-      { Start: '2018-03-30 10:00:00',
-        End: '2018-03-30 16:00:00',
-        InTime: true } } }
-[2018-03-30T11:20:24.076] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
-[2018-03-30T11:20:24.077] [INFO] things - 预约结果 15582882641 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
-[2018-03-30T11:20:25.082] [INFO] things - object
-[2018-03-30T11:20:25.083] [INFO] things - 开始预约: 15564917183
-[2018-03-30T11:20:26.129] [INFO] things - start get addressID from mobile: 15564917183
-[2018-03-30T11:20:28.074] [INFO] things - 定位查询结果 { state: true,
+      { Start: '2018-03-31 10:00:00',
+        End: '2018-03-31 16:00:00',
+        InTime: false } } }
+[2018-03-30T16:51:12.940] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-03-30T16:51:12.940] [INFO] things - 预约结果 18545086596 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-03-30T16:51:13.945] [INFO] things - object
+[2018-03-30T16:51:13.945] [INFO] things - 开始预约: 17732510974
+[2018-03-30T16:51:15.009] [INFO] things - start get addressID from mobile: 17732510974
+[2018-03-30T16:51:16.914] [INFO] things - 定位查询结果 { state: true,
   code: 10,
   data: 
    { IsNeedReservation: true,
@@ -1332,15 +668,306 @@
         End: '2018-03-30 23:59:59',
         InTime: true },
      BuyTimeSlot: 
-      { Start: '2018-03-30 10:00:00',
-        End: '2018-03-30 16:00:00',
-        InTime: true } } }
-[2018-03-30T11:20:29.399] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
-[2018-03-30T11:20:29.400] [INFO] things - 预约结果 15564917183 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
-[2018-03-30T11:20:30.404] [INFO] things - object
-[2018-03-30T11:20:30.404] [INFO] things - 开始预约: 18545086596
-[2018-03-30T11:20:32.471] [INFO] things - start get addressID from mobile: 18545086596
-[2018-03-30T11:20:53.874] [INFO] things - error { Error: socket hang up
+      { Start: '2018-03-31 10:00:00',
+        End: '2018-03-31 16:00:00',
+        InTime: false } } }
+[2018-03-30T16:51:18.291] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-03-30T16:51:18.292] [INFO] things - 预约结果 17732510974 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-03-30T16:51:19.294] [INFO] things - object
+[2018-03-30T16:51:19.294] [INFO] things - 开始预约: 18241816845
+[2018-03-30T16:51:20.252] [INFO] things - start get addressID from mobile: 18241816845
+[2018-03-30T16:51:23.022] [INFO] things - 定位查询结果 { state: true,
+  code: 10,
+  data: 
+   { IsNeedReservation: true,
+     IsIntercept: false,
+     ProductID: 0,
+     CanUseCredence: false,
+     Certificate: null,
+     EnterTimeSlot: 
+      { Start: '2018-03-30 00:00:00',
+        End: '2018-03-30 23:59:59',
+        InTime: true },
+     BuyTimeSlot: 
+      { Start: '2018-03-31 10:00:00',
+        End: '2018-03-31 16:00:00',
+        InTime: false } } }
+[2018-03-30T16:51:24.851] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-03-30T16:51:24.851] [INFO] things - 预约结果 18241816845 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-03-30T16:51:25.856] [INFO] things - object
+[2018-03-30T16:51:25.857] [INFO] things - 开始预约: 15682637686
+[2018-03-30T16:51:27.124] [INFO] things - start get addressID from mobile: 15682637686
+[2018-03-30T16:51:29.576] [INFO] things - 定位查询结果 { state: true,
+  code: 10,
+  data: 
+   { IsNeedReservation: true,
+     IsIntercept: false,
+     ProductID: 0,
+     CanUseCredence: false,
+     Certificate: null,
+     EnterTimeSlot: 
+      { Start: '2018-03-30 00:00:00',
+        End: '2018-03-30 23:59:59',
+        InTime: true },
+     BuyTimeSlot: 
+      { Start: '2018-03-31 10:00:00',
+        End: '2018-03-31 16:00:00',
+        InTime: false } } }
+[2018-03-30T16:51:30.639] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-03-30T16:51:30.640] [INFO] things - 预约结果 15682637686 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-03-30T16:51:31.642] [INFO] things - object
+[2018-03-30T16:51:31.642] [INFO] things - 开始预约: 15934072914
+[2018-03-30T16:51:33.256] [INFO] things - start get addressID from mobile: 15934072914
+[2018-03-30T16:51:35.198] [INFO] things - 定位查询结果 { state: true,
+  code: 10,
+  data: 
+   { IsNeedReservation: true,
+     IsIntercept: false,
+     ProductID: 0,
+     CanUseCredence: false,
+     Certificate: null,
+     EnterTimeSlot: 
+      { Start: '2018-03-30 00:00:00',
+        End: '2018-03-30 23:59:59',
+        InTime: true },
+     BuyTimeSlot: 
+      { Start: '2018-03-31 10:00:00',
+        End: '2018-03-31 16:00:00',
+        InTime: false } } }
+[2018-03-30T16:51:37.122] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-03-30T16:51:37.122] [INFO] things - 预约结果 15934072914 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-03-30T16:51:38.126] [INFO] things - object
+[2018-03-30T16:51:38.127] [INFO] things - 开始预约: 18909564220
+[2018-03-30T16:51:39.216] [INFO] things - start get addressID from mobile: 18909564220
+[2018-03-30T16:51:41.288] [INFO] things - 定位查询结果 { state: true,
+  code: 10,
+  data: 
+   { IsNeedReservation: true,
+     IsIntercept: false,
+     ProductID: 391,
+     CanUseCredence: false,
+     Certificate: 
+      { ID: '2705004',
+        UID: 2265248,
+        PID: '391',
+        Status: 1,
+        Address: [Object],
+        Product: [Object],
+        FailureTime: null },
+     EnterTimeSlot: 
+      { Start: '2018-03-30 00:00:00',
+        End: '2018-03-30 23:59:59',
+        InTime: true },
+     BuyTimeSlot: 
+      { Start: '2018-03-31 10:00:00',
+        End: '2018-03-31 16:00:00',
+        InTime: false } } }
+[2018-03-30T16:51:42.393] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-03-30T16:51:42.394] [INFO] things - 预约结果 18909564220 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-03-30T16:51:43.397] [INFO] things - object
+[2018-03-30T16:51:43.398] [INFO] things - 开始预约: 13843910857
+[2018-03-30T16:51:44.513] [INFO] things - start get addressID from mobile: 13843910857
+[2018-03-30T16:51:46.651] [INFO] things - 定位查询结果 { state: true,
+  code: 10,
+  data: 
+   { IsNeedReservation: true,
+     IsIntercept: false,
+     ProductID: 0,
+     CanUseCredence: false,
+     Certificate: null,
+     EnterTimeSlot: 
+      { Start: '2018-03-30 00:00:00',
+        End: '2018-03-30 23:59:59',
+        InTime: true },
+     BuyTimeSlot: 
+      { Start: '2018-03-31 10:00:00',
+        End: '2018-03-31 16:00:00',
+        InTime: false } } }
+[2018-03-30T16:51:47.810] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-03-30T16:51:47.811] [INFO] things - 预约结果 13843910857 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-03-30T16:51:48.815] [INFO] things - object
+[2018-03-30T16:51:48.816] [INFO] things - 开始预约: 17073020029
+[2018-03-30T16:51:50.461] [INFO] things - start get addressID from mobile: 17073020029
+[2018-03-30T16:51:52.488] [INFO] things - 定位查询结果 { state: true,
+  code: 10,
+  data: 
+   { IsNeedReservation: true,
+     IsIntercept: false,
+     ProductID: 0,
+     CanUseCredence: false,
+     Certificate: null,
+     EnterTimeSlot: 
+      { Start: '2018-03-30 00:00:00',
+        End: '2018-03-30 23:59:59',
+        InTime: true },
+     BuyTimeSlot: 
+      { Start: '2018-03-31 10:00:00',
+        End: '2018-03-31 16:00:00',
+        InTime: false } } }
+[2018-03-30T16:51:53.574] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-03-30T16:51:53.575] [INFO] things - 预约结果 17073020029 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-03-30T16:51:54.581] [INFO] things - object
+[2018-03-30T16:51:54.583] [INFO] things - 开始预约: 15535890431
+[2018-03-30T16:51:55.763] [INFO] things - start get addressID from mobile: 15535890431
+[2018-03-30T16:51:58.847] [INFO] things - 定位查询结果 { state: true,
+  code: 10,
+  data: 
+   { IsNeedReservation: true,
+     IsIntercept: false,
+     ProductID: 0,
+     CanUseCredence: false,
+     Certificate: null,
+     EnterTimeSlot: 
+      { Start: '2018-03-30 00:00:00',
+        End: '2018-03-30 23:59:59',
+        InTime: true },
+     BuyTimeSlot: 
+      { Start: '2018-03-31 10:00:00',
+        End: '2018-03-31 16:00:00',
+        InTime: false } } }
+[2018-03-30T16:52:00.202] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-03-30T16:52:00.202] [INFO] things - 预约结果 15535890431 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-03-30T16:52:01.208] [INFO] things - object
+[2018-03-30T16:52:01.208] [INFO] things - 开始预约: 15303529430
+[2018-03-30T16:52:08.930] [INFO] things - start get addressID from mobile: 15303529430
+[2018-03-30T16:52:16.090] [INFO] things - 定位信息获取错误 { Error: tunneling socket could not be established, cause=socket hang up
+    at ClientRequest.onError (/Users/frosh/server/www/maotai/node_modules/tunnel-agent/index.js:177:17)
+    at Object.onceWrapper (events.js:315:30)
+    at emitOne (events.js:116:13)
+    at ClientRequest.emit (events.js:211:7)
+    at Socket.socketOnEnd (_http_client.js:423:9)
+    at emitNone (events.js:111:20)
+    at Socket.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1056:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+    at process._tickCallback (internal/process/next_tick.js:180:9) code: 'ECONNRESET' }
+[2018-03-30T16:52:16.094] [INFO] things - error { Error: tunneling socket could not be established, cause=socket hang up
+    at ClientRequest.onError (/Users/frosh/server/www/maotai/node_modules/tunnel-agent/index.js:177:17)
+    at Object.onceWrapper (events.js:315:30)
+    at emitOne (events.js:116:13)
+    at ClientRequest.emit (events.js:211:7)
+    at Socket.socketOnEnd (_http_client.js:423:9)
+    at emitNone (events.js:111:20)
+    at Socket.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1056:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+    at process._tickCallback (internal/process/next_tick.js:180:9) code: 'ECONNRESET' }
+[2018-03-30T16:52:17.099] [INFO] things - object
+[2018-03-30T16:52:17.100] [INFO] things - 开始预约: 17635568238
+[2018-03-30T16:52:18.094] [INFO] things - start get addressID from mobile: 17635568238
+[2018-03-30T16:52:19.902] [INFO] things - 定位查询结果 { state: true,
+  code: 10,
+  data: 
+   { IsNeedReservation: true,
+     IsIntercept: false,
+     ProductID: 0,
+     CanUseCredence: false,
+     Certificate: null,
+     EnterTimeSlot: 
+      { Start: '2018-03-30 00:00:00',
+        End: '2018-03-30 23:59:59',
+        InTime: true },
+     BuyTimeSlot: 
+      { Start: '2018-03-31 10:00:00',
+        End: '2018-03-31 16:00:00',
+        InTime: false } } }
+[2018-03-30T16:52:20.933] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-03-30T16:52:20.933] [INFO] things - 预约结果 17635568238 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-03-30T16:52:21.939] [INFO] things - object
+[2018-03-30T16:52:21.940] [INFO] things - 开始预约: 15535486077
+[2018-03-30T16:52:22.957] [INFO] things - start get addressID from mobile: 15535486077
+[2018-03-30T16:52:24.785] [INFO] things - 定位查询结果 { state: true,
+  code: 10,
+  data: 
+   { IsNeedReservation: true,
+     IsIntercept: false,
+     ProductID: 0,
+     CanUseCredence: false,
+     Certificate: null,
+     EnterTimeSlot: 
+      { Start: '2018-03-30 00:00:00',
+        End: '2018-03-30 23:59:59',
+        InTime: true },
+     BuyTimeSlot: 
+      { Start: '2018-03-31 10:00:00',
+        End: '2018-03-31 16:00:00',
+        InTime: false } } }
+[2018-03-30T16:52:26.191] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-03-30T16:52:26.192] [INFO] things - 预约结果 15535486077 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-03-30T16:52:27.196] [INFO] things - object
+[2018-03-30T16:52:27.196] [INFO] things - 开始预约: 18754955373
+[2018-03-30T16:52:28.117] [INFO] things - start get addressID from mobile: 18754955373
+[2018-03-30T16:52:29.820] [INFO] things - 定位查询结果 { state: true,
+  code: 10,
+  data: 
+   { IsNeedReservation: true,
+     IsIntercept: false,
+     ProductID: 0,
+     CanUseCredence: false,
+     Certificate: null,
+     EnterTimeSlot: 
+      { Start: '2018-03-30 00:00:00',
+        End: '2018-03-30 23:59:59',
+        InTime: true },
+     BuyTimeSlot: 
+      { Start: '2018-03-31 10:00:00',
+        End: '2018-03-31 16:00:00',
+        InTime: false } } }
+[2018-03-30T16:52:30.991] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-03-30T16:52:30.991] [INFO] things - 预约结果 18754955373 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-03-30T16:52:31.996] [INFO] things - object
+[2018-03-30T16:52:31.997] [INFO] things - 开始预约: 18154567585
+[2018-03-30T16:52:33.336] [INFO] things - start get addressID from mobile: 18154567585
+[2018-03-30T16:52:36.727] [INFO] things - 定位查询结果 { state: true,
+  code: 10,
+  data: 
+   { IsNeedReservation: true,
+     IsIntercept: false,
+     ProductID: 0,
+     CanUseCredence: false,
+     Certificate: null,
+     EnterTimeSlot: 
+      { Start: '2018-03-30 00:00:00',
+        End: '2018-03-30 23:59:59',
+        InTime: true },
+     BuyTimeSlot: 
+      { Start: '2018-03-31 10:00:00',
+        End: '2018-03-31 16:00:00',
+        InTime: false } } }
+[2018-03-30T16:52:38.576] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-03-30T16:52:38.576] [INFO] things - 预约结果 18154567585 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-03-30T16:52:39.582] [INFO] things - object
+[2018-03-30T16:52:39.582] [INFO] things - 开始预约: 15834343940
+[2018-03-30T16:52:40.573] [INFO] things - start get addressID from mobile: 15834343940
+[2018-03-30T16:52:42.372] [INFO] things - 定位查询结果 { state: true,
+  code: 10,
+  data: 
+   { IsNeedReservation: true,
+     IsIntercept: false,
+     ProductID: 391,
+     CanUseCredence: false,
+     Certificate: 
+      { ID: '2705015',
+        UID: 2265208,
+        PID: '391',
+        Status: 1,
+        Address: [Object],
+        Product: [Object],
+        FailureTime: null },
+     EnterTimeSlot: 
+      { Start: '2018-03-30 00:00:00',
+        End: '2018-03-30 23:59:59',
+        InTime: true },
+     BuyTimeSlot: 
+      { Start: '2018-03-31 10:00:00',
+        End: '2018-03-31 16:00:00',
+        InTime: false } } }
+[2018-03-30T16:52:43.245] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-03-30T16:52:43.246] [INFO] things - 预约结果 15834343940 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-03-30T16:52:44.250] [INFO] things - object
+[2018-03-30T16:52:44.251] [INFO] things - 开始预约: 17196748368
+[2018-03-30T16:52:48.324] [INFO] things - start get addressID from mobile: 17196748368
+[2018-03-30T16:53:18.540] [INFO] things - error { Error: socket hang up
     at TLSSocket.onHangUp (_tls_wrap.js:1135:19)
     at Object.onceWrapper (events.js:313:30)
     at emitNone (events.js:111:20)
@@ -1353,344 +980,24 @@
   host: undefined,
   port: 0,
   localAddress: undefined }
-[2018-03-30T11:20:54.883] [INFO] things - object
-[2018-03-30T11:20:54.883] [INFO] things - 开始预约: 17732510974
-[2018-03-30T11:20:56.214] [INFO] things - start get addressID from mobile: 17732510974
-[2018-03-30T11:20:58.584] [INFO] things - 定位查询结果 { state: true,
-  code: 10,
-  data: 
-   { IsNeedReservation: true,
-     IsIntercept: false,
-     ProductID: 0,
-     CanUseCredence: false,
-     Certificate: null,
-     EnterTimeSlot: 
-      { Start: '2018-03-30 00:00:00',
-        End: '2018-03-30 23:59:59',
-        InTime: true },
-     BuyTimeSlot: 
-      { Start: '2018-03-30 10:00:00',
-        End: '2018-03-30 16:00:00',
-        InTime: true } } }
-[2018-03-30T11:21:01.127] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
-[2018-03-30T11:21:01.128] [INFO] things - 预约结果 17732510974 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
-[2018-03-30T11:21:02.132] [INFO] things - object
-[2018-03-30T11:21:02.133] [INFO] things - 开始预约: 18241816845
-[2018-03-30T11:21:03.250] [INFO] things - start get addressID from mobile: 18241816845
-[2018-03-30T11:21:09.234] [INFO] things - 定位查询结果 { state: true,
-  code: 10,
-  data: 
-   { IsNeedReservation: true,
-     IsIntercept: false,
-     ProductID: 0,
-     CanUseCredence: false,
-     Certificate: null,
-     EnterTimeSlot: 
-      { Start: '2018-03-30 00:00:00',
-        End: '2018-03-30 23:59:59',
-        InTime: true },
-     BuyTimeSlot: 
-      { Start: '2018-03-30 10:00:00',
-        End: '2018-03-30 16:00:00',
-        InTime: true } } }
-[2018-03-30T11:21:10.462] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
-[2018-03-30T11:21:10.463] [INFO] things - 预约结果 18241816845 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
-[2018-03-30T11:21:11.464] [INFO] things - object
-[2018-03-30T11:21:11.465] [INFO] things - 开始预约: 15682637686
-[2018-03-30T11:21:12.517] [INFO] things - start get addressID from mobile: 15682637686
-[2018-03-30T11:21:14.558] [INFO] things - 定位查询结果 { state: true,
-  code: 10,
-  data: 
-   { IsNeedReservation: true,
-     IsIntercept: false,
-     ProductID: 0,
-     CanUseCredence: false,
-     Certificate: null,
-     EnterTimeSlot: 
-      { Start: '2018-03-30 00:00:00',
-        End: '2018-03-30 23:59:59',
-        InTime: true },
-     BuyTimeSlot: 
-      { Start: '2018-03-30 10:00:00',
-        End: '2018-03-30 16:00:00',
-        InTime: true } } }
-[2018-03-30T11:21:15.685] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
-[2018-03-30T11:21:15.685] [INFO] things - 预约结果 15682637686 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
-[2018-03-30T11:21:16.689] [INFO] things - object
-[2018-03-30T11:21:16.689] [INFO] things - 开始预约: 15934072914
-[2018-03-30T11:21:17.780] [INFO] things - start get addressID from mobile: 15934072914
-[2018-03-30T11:21:19.766] [INFO] things - 定位查询结果 { state: true,
-  code: 10,
-  data: 
-   { IsNeedReservation: true,
-     IsIntercept: false,
-     ProductID: 0,
-     CanUseCredence: false,
-     Certificate: null,
-     EnterTimeSlot: 
-      { Start: '2018-03-30 00:00:00',
-        End: '2018-03-30 23:59:59',
-        InTime: true },
-     BuyTimeSlot: 
-      { Start: '2018-03-30 10:00:00',
-        End: '2018-03-30 16:00:00',
-        InTime: true } } }
-[2018-03-30T11:21:20.920] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
-[2018-03-30T11:21:20.921] [INFO] things - 预约结果 15934072914 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
-[2018-03-30T11:21:21.923] [INFO] things - object
-[2018-03-30T11:21:21.924] [INFO] things - 开始预约: 18909564220
-[2018-03-30T11:21:23.190] [INFO] things - start get addressID from mobile: 18909564220
-[2018-03-30T11:21:25.720] [INFO] things - 定位查询结果 { state: true,
-  code: 10,
-  data: 
-   { IsNeedReservation: true,
-     IsIntercept: false,
-     ProductID: 0,
-     CanUseCredence: false,
-     Certificate: null,
-     EnterTimeSlot: 
-      { Start: '2018-03-30 00:00:00',
-        End: '2018-03-30 23:59:59',
-        InTime: true },
-     BuyTimeSlot: 
-      { Start: '2018-03-30 10:00:00',
-        End: '2018-03-30 16:00:00',
-        InTime: true } } }
-[2018-03-30T11:21:27.141] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
-[2018-03-30T11:21:27.141] [INFO] things - 预约结果 18909564220 {"state":true,"code":0,"msg":"提交预约信息成功"}
-[2018-03-30T11:21:28.146] [INFO] things - object
-[2018-03-30T11:21:28.147] [INFO] things - 开始预约: 13843910857
-[2018-03-30T11:21:34.936] [INFO] things - start get addressID from mobile: 13843910857
-[2018-03-30T11:21:38.930] [INFO] things - 定位查询结果 { state: true,
-  code: 10,
-  data: 
-   { IsNeedReservation: true,
-     IsIntercept: false,
-     ProductID: 0,
-     CanUseCredence: false,
-     Certificate: null,
-     EnterTimeSlot: 
-      { Start: '2018-03-30 00:00:00',
-        End: '2018-03-30 23:59:59',
-        InTime: true },
-     BuyTimeSlot: 
-      { Start: '2018-03-30 10:00:00',
-        End: '2018-03-30 16:00:00',
-        InTime: true } } }
-[2018-03-30T11:21:42.206] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
-[2018-03-30T11:21:42.207] [INFO] things - 预约结果 13843910857 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
-[2018-03-30T11:21:43.212] [INFO] things - object
-[2018-03-30T11:21:43.213] [INFO] things - 开始预约: 17073020029
-[2018-03-30T11:21:44.375] [INFO] things - start get addressID from mobile: 17073020029
-[2018-03-30T11:21:46.610] [INFO] things - 定位查询结果 { state: true,
-  code: 10,
-  data: 
-   { IsNeedReservation: true,
-     IsIntercept: false,
-     ProductID: 0,
-     CanUseCredence: false,
-     Certificate: null,
-     EnterTimeSlot: 
-      { Start: '2018-03-30 00:00:00',
-        End: '2018-03-30 23:59:59',
-        InTime: true },
-     BuyTimeSlot: 
-      { Start: '2018-03-30 10:00:00',
-        End: '2018-03-30 16:00:00',
-        InTime: true } } }
-[2018-03-30T11:21:48.146] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
-[2018-03-30T11:21:48.147] [INFO] things - 预约结果 17073020029 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
-[2018-03-30T11:21:49.147] [INFO] things - object
-[2018-03-30T11:21:49.148] [INFO] things - 开始预约: 15535890431
-[2018-03-30T11:21:50.470] [INFO] things - start get addressID from mobile: 15535890431
-[2018-03-30T11:21:52.959] [INFO] things - 定位查询结果 { state: true,
-  code: 10,
-  data: 
-   { IsNeedReservation: true,
-     IsIntercept: false,
-     ProductID: 0,
-     CanUseCredence: false,
-     Certificate: null,
-     EnterTimeSlot: 
-      { Start: '2018-03-30 00:00:00',
-        End: '2018-03-30 23:59:59',
-        InTime: true },
-     BuyTimeSlot: 
-      { Start: '2018-03-30 10:00:00',
-        End: '2018-03-30 16:00:00',
-        InTime: true } } }
-[2018-03-30T11:21:54.393] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
-[2018-03-30T11:21:54.393] [INFO] things - 预约结果 15535890431 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
-[2018-03-30T11:21:55.396] [INFO] things - object
-[2018-03-30T11:21:55.397] [INFO] things - 开始预约: 15303529430
-[2018-03-30T11:21:56.543] [INFO] things - start get addressID from mobile: 15303529430
-[2018-03-30T11:21:58.489] [INFO] things - 定位查询结果 { state: true,
-  code: 10,
-  data: 
-   { IsNeedReservation: true,
-     IsIntercept: false,
-     ProductID: 0,
-     CanUseCredence: false,
-     Certificate: null,
-     EnterTimeSlot: 
-      { Start: '2018-03-30 00:00:00',
-        End: '2018-03-30 23:59:59',
-        InTime: true },
-     BuyTimeSlot: 
-      { Start: '2018-03-30 10:00:00',
-        End: '2018-03-30 16:00:00',
-        InTime: true } } }
-[2018-03-30T11:22:00.437] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
-[2018-03-30T11:22:00.437] [INFO] things - 预约结果 15303529430 {"state":true,"code":0,"msg":"提交预约信息成功"}
-[2018-03-30T11:22:01.442] [INFO] things - object
-[2018-03-30T11:22:01.443] [INFO] things - 开始预约: 17635568238
-[2018-03-30T11:22:02.460] [INFO] things - start get addressID from mobile: 17635568238
-[2018-03-30T11:22:04.445] [INFO] things - 定位查询结果 { state: true,
-  code: 10,
-  data: 
-   { IsNeedReservation: true,
-     IsIntercept: false,
-     ProductID: 0,
-     CanUseCredence: false,
-     Certificate: null,
-     EnterTimeSlot: 
-      { Start: '2018-03-30 00:00:00',
-        End: '2018-03-30 23:59:59',
-        InTime: true },
-     BuyTimeSlot: 
-      { Start: '2018-03-30 10:00:00',
-        End: '2018-03-30 16:00:00',
-        InTime: true } } }
-[2018-03-30T11:22:05.554] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
-[2018-03-30T11:22:05.555] [INFO] things - 预约结果 17635568238 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
-[2018-03-30T11:22:06.559] [INFO] things - object
-[2018-03-30T11:22:06.559] [INFO] things - 开始预约: 15535486077
-[2018-03-30T11:22:09.387] [INFO] things - start get addressID from mobile: 15535486077
-[2018-03-30T11:22:12.210] [INFO] things - 定位查询结果 { state: true,
-  code: 10,
-  data: 
-   { IsNeedReservation: true,
-     IsIntercept: false,
-     ProductID: 0,
-     CanUseCredence: false,
-     Certificate: null,
-     EnterTimeSlot: 
-      { Start: '2018-03-30 00:00:00',
-        End: '2018-03-30 23:59:59',
-        InTime: true },
-     BuyTimeSlot: 
-      { Start: '2018-03-30 10:00:00',
-        End: '2018-03-30 16:00:00',
-        InTime: true } } }
-[2018-03-30T11:22:13.439] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
-[2018-03-30T11:22:13.439] [INFO] things - 预约结果 15535486077 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
-[2018-03-30T11:22:14.445] [INFO] things - object
-[2018-03-30T11:22:14.445] [INFO] things - 开始预约: 18754955373
-[2018-03-30T11:22:15.692] [INFO] things - start get addressID from mobile: 18754955373
-[2018-03-30T11:22:17.945] [INFO] things - 定位查询结果 { state: true,
-  code: 10,
-  data: 
-   { IsNeedReservation: true,
-     IsIntercept: false,
-     ProductID: 0,
-     CanUseCredence: false,
-     Certificate: null,
-     EnterTimeSlot: 
-      { Start: '2018-03-30 00:00:00',
-        End: '2018-03-30 23:59:59',
-        InTime: true },
-     BuyTimeSlot: 
-      { Start: '2018-03-30 10:00:00',
-        End: '2018-03-30 16:00:00',
-        InTime: true } } }
-[2018-03-30T11:22:19.276] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
-[2018-03-30T11:22:19.276] [INFO] things - 预约结果 18754955373 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
-[2018-03-30T11:22:20.281] [INFO] things - object
-[2018-03-30T11:22:20.282] [INFO] things - 开始预约: 18154567585
-[2018-03-30T11:22:21.633] [INFO] things - start get addressID from mobile: 18154567585
-[2018-03-30T11:22:24.089] [INFO] things - 定位查询结果 { state: true,
-  code: 10,
-  data: 
-   { IsNeedReservation: true,
-     IsIntercept: false,
-     ProductID: 0,
-     CanUseCredence: false,
-     Certificate: null,
-     EnterTimeSlot: 
-      { Start: '2018-03-30 00:00:00',
-        End: '2018-03-30 23:59:59',
-        InTime: true },
-     BuyTimeSlot: 
-      { Start: '2018-03-30 10:00:00',
-        End: '2018-03-30 16:00:00',
-        InTime: true } } }
-[2018-03-30T11:22:25.480] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
-[2018-03-30T11:22:25.481] [INFO] things - 预约结果 18154567585 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
-[2018-03-30T11:22:26.485] [INFO] things - object
-[2018-03-30T11:22:26.486] [INFO] things - 开始预约: 15834343940
-[2018-03-30T11:22:27.537] [INFO] things - start get addressID from mobile: 15834343940
-[2018-03-30T11:22:29.823] [INFO] things - 定位查询结果 { state: true,
-  code: 10,
-  data: 
-   { IsNeedReservation: true,
-     IsIntercept: false,
-     ProductID: 0,
-     CanUseCredence: false,
-     Certificate: null,
-     EnterTimeSlot: 
-      { Start: '2018-03-30 00:00:00',
-        End: '2018-03-30 23:59:59',
-        InTime: true },
-     BuyTimeSlot: 
-      { Start: '2018-03-30 10:00:00',
-        End: '2018-03-30 16:00:00',
-        InTime: true } } }
-[2018-03-30T11:22:30.848] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
-[2018-03-30T11:22:30.849] [INFO] things - 预约结果 15834343940 {"state":true,"code":0,"msg":"提交预约信息成功"}
-[2018-03-30T11:22:31.854] [INFO] things - object
-[2018-03-30T11:22:31.854] [INFO] things - 开始预约: 17196748368
-[2018-03-30T11:22:33.291] [INFO] things - start get addressID from mobile: 17196748368
-[2018-03-30T11:22:35.833] [INFO] things - 定位查询结果 { state: true,
-  code: 10,
-  data: 
-   { IsNeedReservation: true,
-     IsIntercept: false,
-     ProductID: 0,
-     CanUseCredence: false,
-     Certificate: null,
-     EnterTimeSlot: 
-      { Start: '2018-03-30 00:00:00',
-        End: '2018-03-30 23:59:59',
-        InTime: true },
-     BuyTimeSlot: 
-      { Start: '2018-03-30 10:00:00',
-        End: '2018-03-30 16:00:00',
-        InTime: true } } }
-[2018-03-30T11:22:37.196] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
-[2018-03-30T11:22:37.196] [INFO] things - 预约结果 17196748368 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
-[2018-03-30T11:22:38.199] [INFO] things - object
-[2018-03-30T11:22:38.200] [INFO] things - 开始预约: 15330512791
-[2018-03-30T11:22:39.806] [INFO] things - start get addressID from mobile: 15330512791
-[2018-03-30T11:22:41.783] [INFO] things - 定位查询结果 { state: true,
-  code: 10,
-  data: 
-   { IsNeedReservation: true,
-     IsIntercept: false,
-     ProductID: 0,
-     CanUseCredence: false,
-     Certificate: null,
-     EnterTimeSlot: 
-      { Start: '2018-03-30 00:00:00',
-        End: '2018-03-30 23:59:59',
-        InTime: true },
-     BuyTimeSlot: 
-      { Start: '2018-03-30 10:00:00',
-        End: '2018-03-30 16:00:00',
-        InTime: true } } }
-[2018-03-30T11:22:43.135] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
-[2018-03-30T11:22:43.136] [INFO] things - 预约结果 15330512791 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
-[2018-03-30T11:22:44.143] [INFO] things - 所有手机号预约结束
-[2018-03-30T11:22:44.143] [INFO] things - 预约成功:
-[2018-03-30T11:22:44.144] [INFO] things - [{"phone":"17331831740","pass":"a123456"},{"phone":"18909564220","pass":"a123456"},{"phone":"15303529430","pass":"a123456"},{"phone":"15834343940","pass":"a123456"}]
-[2018-03-30T11:22:44.144] [INFO] things - 预约失败:
-[2018-03-30T11:22:44.144] [INFO] things - [{"phone":"18593078244","pass":"a123456","error":"{\"state\":true,\"code\":101,\"msg\":\"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)\"}"},{"phone":"15635316166","pass":"a123456","error":"{\"state\":true,\"code\":101,\"msg\":\"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)\"}"},{"phone":"15535874373","pass":"a123456","error":"{\"state\":true,\"code\":101,\"msg\":\"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)\"}"},{"phone":"13052107547","pass":"a123456","error":"{\"state\":true,\"code\":101,\"msg\":\"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)\"}"},{"phone":"15535874823","pass":"a123456","error":"{\"state\":true,\"code\":101,\"msg\":\"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)\"}"},{"phone":"15525146023","pass":"a123456","error":"{\"state\":true,\"code\":101,\"msg\":\"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)\"}"},{"phone":"15582882641","pass":"a123456","error":"{\"state\":true,\"code\":101,\"msg\":\"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)\"}"},{"phone":"15564917183","pass":"a123456","error":"{\"state\":true,\"code\":101,\"msg\":\"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)\"}"},{"phone":"18545086596","pass":"a123456","error":"socket hang up"},{"phone":"17732510974","pass":"a123456","error":"{\"state\":true,\"code\":101,\"msg\":\"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)\"}"},{"phone":"18241816845","pass":"a123456","error":"{\"state\":true,\"code\":101,\"msg\":\"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)\"}"},{"phone":"15682637686","pass":"a123456","error":"{\"state\":true,\"code\":101,\"msg\":\"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)\"}"},{"phone":"15934072914","pass":"a123456","error":"{\"state\":true,\"code\":101,\"msg\":\"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)\"}"},{"phone":"13843910857","pass":"a123456","error":"{\"state\":true,\"code\":101,\"msg\":\"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)\"}"},{"phone":"17073020029","pass":"a123456","error":"{\"state\":true,\"code\":101,\"msg\":\"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)\"}"},{"phone":"15535890431","pass":"a123456","error":"{\"state\":true,\"code\":101,\"msg\":\"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)\"}"},{"phone":"17635568238","pass":"a123456","error":"{\"state\":true,\"code\":101,\"msg\":\"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)\"}"},{"phone":"15535486077","pass":"a123456","error":"{\"state\":true,\"code\":101,\"msg\":\"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)\"}"},{"phone":"18754955373","pass":"a123456","error":"{\"state\":true,\"code\":101,\"msg\":\"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)\"}"},{"phone":"18154567585","pass":"a123456","error":"{\"state\":true,\"code\":101,\"msg\":\"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)\"}"},{"phone":"17196748368","pass":"a123456","error":"{\"state\":true,\"code\":101,\"msg\":\"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)\"}"},{"phone":"15330512791","pass":"a123456","error":"{\"state\":true,\"code\":101,\"msg\":\"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)\"}"}]
+[2018-03-30T16:53:19.545] [INFO] things - object
+[2018-03-30T16:53:19.545] [INFO] things - 开始预约: 15330512791
+[2018-03-30T16:53:26.254] [INFO] things - start get addressID from mobile: 15330512791
+[2018-03-30T16:53:41.643] [INFO] things - error { Error: socket hang up
+    at TLSSocket.onHangUp (_tls_wrap.js:1135:19)
+    at Object.onceWrapper (events.js:313:30)
+    at emitNone (events.js:111:20)
+    at TLSSocket.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1056:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+  code: 'ECONNRESET',
+  path: undefined,
+  host: undefined,
+  port: 0,
+  localAddress: undefined }
+[2018-03-30T16:53:42.648] [INFO] things - 所有手机号预约结束
+[2018-03-30T16:53:42.649] [INFO] things - 预约成功:
+[2018-03-30T16:53:42.649] [INFO] things - [{"phone":"15535874823","pass":"a123456"},{"phone":"15525146023","pass":"a123456"},{"phone":"15582882641","pass":"a123456"},{"phone":"18909564220","pass":"a123456"},{"phone":"15535890431","pass":"a123456"},{"phone":"15535486077","pass":"a123456"},{"phone":"15834343940","pass":"a123456"}]
+[2018-03-30T16:53:42.649] [INFO] things - 预约失败:
+[2018-03-30T16:53:42.650] [INFO] things - [{"phone":"18593078244","pass":"a123456","error":"{\"state\":true,\"code\":101,\"msg\":\"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)\"}"},{"phone":"15535874373","pass":"a123456","error":"{\"state\":true,\"code\":101,\"msg\":\"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)\"}"},{"phone":"13052107547","pass":"a123456","error":"{\"state\":true,\"code\":101,\"msg\":\"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)\"}"},{"phone":"15564917183","pass":"a123456","error":"{\"state\":true,\"code\":101,\"msg\":\"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)\"}"},{"phone":"18545086596","pass":"a123456","error":"{\"state\":true,\"code\":101,\"msg\":\"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)\"}"},{"phone":"17732510974","pass":"a123456","error":"{\"state\":true,\"code\":101,\"msg\":\"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)\"}"},{"phone":"18241816845","pass":"a123456","error":"{\"state\":true,\"code\":101,\"msg\":\"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)\"}"},{"phone":"15682637686","pass":"a123456","error":"{\"state\":true,\"code\":101,\"msg\":\"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)\"}"},{"phone":"15934072914","pass":"a123456","error":"{\"state\":true,\"code\":101,\"msg\":\"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)\"}"},{"phone":"13843910857","pass":"a123456","error":"{\"state\":true,\"code\":101,\"msg\":\"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)\"}"},{"phone":"17073020029","pass":"a123456","error":"{\"state\":true,\"code\":101,\"msg\":\"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)\"}"},{"phone":"15303529430","pass":"a123456","error":"tunneling socket could not be established, cause=socket hang up"},{"phone":"17635568238","pass":"a123456","error":"{\"state\":true,\"code\":101,\"msg\":\"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)\"}"},{"phone":"18754955373","pass":"a123456","error":"{\"state\":true,\"code\":101,\"msg\":\"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)\"}"},{"phone":"18154567585","pass":"a123456","error":"{\"state\":true,\"code\":101,\"msg\":\"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)\"}"},{"phone":"17196748368","pass":"a123456","error":"socket hang up"},{"phone":"15330512791","pass":"a123456","error":"socket hang up"}]

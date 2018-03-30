@@ -71,6 +71,42 @@ router.post('/maotai/login', (req, res, next) => {
   })
 })
 
+router.get('/maotai/address', (req,res, next) => {
+  let tel = req.query.tel,
+      pass = req.query.pass;
+  MaotaiService.login(tel, pass).then(data => {
+    if(data.code === 0){
+      MaotaiService.getAllAddress(tel)
+        .then(data => {
+          return res.json({
+            status: 200,
+            tel: tel,
+            address: data
+          })
+        })
+        .catch(e => {
+          return res.json({
+            status: 500,
+            data:e
+          })
+        })
+
+    }else{
+      return res.json({
+        status: 500,
+        data:data
+      })
+    }
+  }).catch(e=>{
+    return res.json({
+      status: 500,
+      tel:tel,
+      pass:pass,
+      e: e.message
+    })
+  })
+})
+
 router.post('/maotai/createOrder', (req, res, next) => {
   let tel = req.body.tel;
   let pid = req.body.pid;

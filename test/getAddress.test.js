@@ -123,12 +123,12 @@ let ret2 = [];
 let shopAddress = "北京市东柏街";
 
 function randomPhone(phone, addNumber) {
-    let lastCode = phone.charAt(10);
+    let lastCode = phone.charAt(9);
     lastCode = lastCode + addNumber;
     if(lastCode >= 10){
         lastCode = 0;
     }
-    return phone.substring(0,10)+lastCode.toString();
+    return phone.substring(0,9)+lastCode.toString()+phone.charAt(10);
 }
 
 function randomAddressName() {
@@ -211,29 +211,29 @@ describe("地址测试", ()=>{
                     addressid,
                     110000,
                     110100,
-                    currentAddress.adcode,
-                    `${currentAddress.district}`,
-                    `${currentAddress.address},${randomAddressName()}`,
+                    110105,
+                    `北京市朝阳区`,
+                    `${currentAddress.name}`,
                     name,
                     randomPhone(user.phone, 5),
                     zipcode="000000",
                     isDef=1,
-                    currentAddress.location.split(",")[0],
-                    currentAddress.location.split(",")[1],
+                    currentAddress.location.lng,
+                    currentAddress.location.lat,
                     userAgent)
               }else{
                 return Service.addAddress(
                     110000,
                     110100,
-                    currentAddress.adcode,
-                    `${currentAddress.district}`,
-                    `${currentAddress.address},${randomAddressName()}`,
+                    110105,
+                    `北京市朝阳区`,
+                    `${currentAddress.name}`,
                     name,
                     randomPhone(user.phone, 5),
                     zipcode="000000",
                     isDef=1,
-                    currentAddress.location.split(",")[0],
-                    currentAddress.location.split(",")[1],
+                    currentAddress.location.lng,
+                    currentAddress.location.lat,
                     userAgent)
               }
           })
@@ -268,27 +268,41 @@ describe("地址测试", ()=>{
       let startPage = 0;
       BaiduService.getPoit(shopAddress,startPage)
         .then(data=>{
-          results = results.concat(data);
+          results = results.concat(data.results);
           startPage++;
           return BaiduService.getPoit(shopAddress, startPage);
       })
       .then(data => {
-          results = results.concat(data);
+          results = results.concat(data.results);
           startPage++;
           return BaiduService.getPoit(shopAddress, startPage);
       })
       .then(data => {
-          results = results.concat(data);
+          results = results.concat(data.results);
           startPage++;
           return BaiduService.getPoit(shopAddress, startPage);
       })
-      .then(data => {
-          results = results.concat(data);
-          startPage++;
-          return BaiduService.getPoit(shopAddress, startPage);
-      })
+      // .then(data => {
+      //     results = results.concat(data);
+      //     startPage++;
+      //     return BaiduService.getPoit(shopAddress, startPage);
+      // })
       .then(data=>{
-        ret2 = results;
+        ret2 = [];
+        results.forEach(item => {
+
+          let canPush = true;
+          ret2.forEach(citem => {
+            let sim = Levenshtein_Distance_Percent(citem.name, item.name);
+            if(sim > 0.5){
+              canPush = false;
+            }
+          })
+          if(canPush) {
+            ret2.push(item)
+          }
+        })
+        console.log(ret2, ret2.length);
         checkPhone();
       })
       .catch(e=>{
