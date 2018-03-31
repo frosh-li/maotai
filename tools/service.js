@@ -1,6 +1,7 @@
 var request = require("request");
 const proxy = require('../controllers/proxy');
 var FileCookieStore = require('tough-cookie-filestore');
+const fs = require('fs');
 var j = request.jar(new FileCookieStore('cookies.json'));
 request = request.defaults({
     jar: true,
@@ -691,8 +692,10 @@ class MaotaiService {
             logger.info("所有手机号预约结束");
             logger.info("预约成功:")
             logger.info(JSON.stringify(this.apointSuccess));
+            fs.writeFileSync('./apointSuccess.json', JSON.stringify(this.apointSuccess));
             logger.info("预约失败:")
             logger.info(JSON.stringify(this.apointFail));
+            fs.writeFileSync('./apointFail.json', JSON.stringify(this.apointFail));
             return callback(this.apintmentResults);
         }
         // phone = phone.trim();

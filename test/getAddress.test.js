@@ -105,7 +105,7 @@ function Minimum(a,b,c){
 //   "冉茂林"
 // ]
 let results = [];
-let phones = require('../beijingfail.json');
+let phones = require('../notyonggui.json');
 // let phones = require("../accounts/zhuxiaodi2.json");
 // let phones = [
 //     // {"phone":"18369929888","pass":"123456"},
@@ -215,7 +215,7 @@ describe("地址测试", ()=>{
                     `北京市朝阳区`,
                     `${currentAddress.name}`,
                     name,
-                    randomPhone(user.phone, 5),
+                    randomPhone(user.phone, 0),
                     zipcode="000000",
                     isDef=1,
                     currentAddress.location.lng,
@@ -229,7 +229,7 @@ describe("地址测试", ()=>{
                     `北京市朝阳区`,
                     `${currentAddress.name}`,
                     name,
-                    randomPhone(user.phone, 5),
+                    randomPhone(user.phone, 0),
                     zipcode="000000",
                     isDef=1,
                     currentAddress.location.lng,

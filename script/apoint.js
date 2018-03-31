@@ -43,7 +43,7 @@ let _phones = [
     '13040779904',
     '13175100647',
 ]
-let phones = require("../beijingfail.json");
+let phones = require("../notyonggui.json");
 // let phones = [
 //     {"phone":"15288939130","pass":"123456"},
 //     {"phone":"17602663277","pass":"wf1982"},
