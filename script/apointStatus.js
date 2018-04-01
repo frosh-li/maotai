@@ -15,9 +15,10 @@ let _phones = [
   "13191162477",
   "15613794675",
 ]
+const fs = require('fs');
 
 
-originPhones = require("../beijingaccount.json");
+originPhones = require("../4.1.json");
 
 // var originPhones = require("../accounts.json");
 // let shopName = '集玉进出口';
@@ -65,13 +66,15 @@ let successAcount = [];
 let failAccount = [];
 function getStatus(){
   let phone = originPhones.shift();
+  logger.info('还剩下'+originPhones.length+'个检测');
   if(!phone){
     logger.info("检查完成");
     console.log("预约成功列表如下");
     console.log(JSON.stringify(successAcount));
+    fs.writeFileSync('./4.1.successAcount.json', JSON.stringify(successAcount))
     console.log("预约失败列表如下");
     console.log(JSON.stringify(failAccount));
-    console.log(statusResults);
+    fs.writeFileSync('./4.1.failAccount.json', JSON.stringify(failAccount))
     return;
   }
   logger.info('start to check status', phone);
@@ -86,7 +89,20 @@ function getStatus(){
           // 3位审核成功
           successAcount.push({
             phone: phone.phone,
-            pass:phone.pass
+            pass:phone.pass,
+            address: data.address,
+            registPhone: data.registPhone,
+            receivePhone: data.receivePhone,
+            reviewInfo:'',
+          })
+        }else{
+          failAccount.push({
+            phone: phone.phone,
+            pass:phone.pass,
+            address: data.address,
+            registPhone: data.registPhone,
+            receivePhone: data.receivePhone,
+            reviewInfo:data.reviewInfo.split('。')[0],
           })
         }
         console.log(JSON.stringify(data.dataObj))
