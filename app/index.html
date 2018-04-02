@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<title>蓬莱阁</title>
+<link rel='stylesheet' href='./css/reset.css' type='text/css' media='all' />
+<link rel='stylesheet' href='./css/index.css' type='text/css' media='all' />
+</head>
+<body>
+	<header class="maingrid clearfix">
+		<div class="logo">
+			<a href="/bisite/"><img src="images/logo.png"></a>
+		</div>
+		<ul class="nav clearfix">
+			<li><a href="javascript:simulator()">模拟器测试<span>simulator</span></a></li>
+			<li class="navline"></li>
+			<li><a href="###">预约管理<span>APOINT</span></a></li>
+			<li class="navline"></li>
+			<li><a href="javascript:watchAndBuy()"><i id="startbuy">开始抢购</i><span>AUTO BUY</span></a></li>
+		</ul>
+	</header>
+	
+		<div class='index-page'>
+		<div class="section section-one">
+	        <div class="intro-wrapper"  id="large-header">
+	            <div class="content" id="logger">
+	            </div>
+	        </div>
+	    </div>
+	    </div>
+	
+	<footer class="footer-white">
+		<div class="maingrid">
+			恒丰银行大数据板块版权所有
+		</div>
+		<div>
+			Copyright © 2017 HFBank Big Data Section
+		</div>
+	</footer>
+	<script src="../jquery.js"></script>
+	<script src="./js/TweenLite.min.js"></script>
+	<script src="./js/EasePack.min.js"></script>
+	<script>
+		function simulator() {
+			const AliVerify = require('electron').remote.require('./tools/startAliVerify')
+			AliVerify.clearOldToken();
+			jQuery('<div>测试开始，测试自动打开滑块</div>').appendTo("#logger");
+			
+		  AliVerify.connectSidFromHard();
+		  
+		  jQuery('<div>开始获取阿里验证结果</div>').appendTo("#logger");
+		  let startTime = +new Date();
+		  var interval = setInterval(() => {
+		  	let aliSessionId = require('electron').remote.getGlobal('aliSessionId');
+		  	if(aliSessionId){
+		  		jQuery('<div>'+aliSessionId+'</div>').appendTo("#logger");
+		  		jQuery('<div>测试成功,耗时'+(new Date() - startTime)+'ms</div>').appendTo("#logger");
+		  		clearInterval(interval);
+		  		return;
+		  	}
+		  	let now = +new Date();
+		  	if(now - startTime > 1000*10){
+		  		// 如果10秒后还无法获取，结束测试
+		  		jQuery('<div>测试失败，请进行调试</div>').appendTo("#logger");
+		  		clearInterval(interval);
+		  	}
+		  }, 50);
+		}
+
+		const watchController = require('electron').remote.require('./controllers/watch.js');
+		// 购买函数
+		function watchAndBuy() {
+			$('#logger').html("");
+			$('#startbuy').html($('#startbuy').text() === "开始抢购" ? "停止抢购":"开始抢购")
+			watchController((content) => {
+				jQuery('<div>'+content+'</div>').appendTo("#logger");
+			});
+		}
+
+	</script>
+</body>
+</html>

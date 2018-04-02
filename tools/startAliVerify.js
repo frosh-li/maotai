@@ -13,7 +13,9 @@ function avg(arr){
   return totals/arr.length;
 }
 class AliVerify {
-
+    clearOldToken() {
+      global.aliSessionId = "";
+    }
     /**
      * swipeToCircle - 移动到圈圈内
      *

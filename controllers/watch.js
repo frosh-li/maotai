@@ -25,7 +25,7 @@ let checkInterval = 1*1000;
 // 上海购买
 // 地址信息
 let pid = '391';
-let quantity = 6;
+let quantity = 1;
 
 var originPhones = require("../accounts.json");
 let shopName = '东柏街|祥瑞丰源|SOHO现代城C|嘉禾国信大厦|西城区|文峰商贸';
@@ -120,34 +120,35 @@ function watchQuanity(shopName) {
             return MaotaiService.LBSServer(address, tel, userAgent);
         })
         .then(data => {
-          logger.info(JSON.stringify(data.lbsdata));
-          //if (shopName > 0) {
-              if (data && data.lbsdata && data.lbsdata.data && data.lbsdata.data.stock && data.lbsdata.data.stock.Sid) {
-                if(
-                  data.lbsdata.data.stock.StockCount >= quantity
-                  &&
-                  data.lbsdata.data.limit.LimitCount >= quantity
-                  && 
-                  fixShop(data.lbsdata.data.network, shopName)
-                ){
-                  logger.info(colors.green("商家已经上货，开始购买流程"));
-                  printInfo(data);
-                  if(needToBuy){
-                    startToBy(tel, pass, data.lbsdata.data.limit.LimitCount);
-                  }
-                }else {
-                  printInfo(data);
-                  setTimeout(() => {
-                      watchQuanity(shopName);
-                  }, checkInterval);
-                }
+          if (data && data.lbsdata && data.lbsdata.data && data.lbsdata.data.stock && data.lbsdata.data.stock.Sid) {
+            if(
+              data.lbsdata.data.stock.StockCount >= quantity
+              &&
+              data.lbsdata.data.limit.LimitCount >= quantity
+              // && 
+              // fixShop(data.lbsdata.data.network, shopName)
+            ){
+              logger.info(colors.green("商家已经上货，开始购买流程"));
+              printInfo(data);
+              return MaotaiService.createOrder(tel, pid , data.lbsdata.data.limit.LimitCount, userAgent, scopeAddress, data.lbsdata.data.network.Sid);
+            }else {
+              printInfo(data);
+              return Promise.resolve({code: 500});  
+            }
 
-              } else {
-                logger.info(colors.red("商家还未上货"));
-                setTimeout(() => {
-                    watchQuanity(shopName);
-                }, checkInterval);
-              }
+          } else {
+            logger.info(colors.green("您所在区域无法购买"))
+            return Promise.resolve({code: 500});
+          }
+        }).then( data => {
+            if(data.code === 0){
+              // 购买成功，进行下一个账号的处理逻辑
+              logger.info('购买成功'+tel+":"+pass+JSON.stringify(data));
+              return;
+            }
+            setTimeout(() => {
+                  watchQuanity(shopName);
+            }, checkInterval);
         }).catch(e => {
             logger.info("位置错误,60秒后重试", e);
             setTimeout(() => {
@@ -157,30 +158,6 @@ function watchQuanity(shopName) {
   })
   .catch(e => {
     logger.error(e);
-  })
-}
-
-
-function startToBy(tel,pass,limit) {
-  request({
-    url:"http://127.0.0.1:10010/api/maotai/createOrder",
-    method:"post",
-    form: {
-      tels: tel,
-      pass: pass,
-      pid: pid,
-      quantity: limit || 6
-    }
-  }, function(error, results, body){
-    if(error){
-      return logger.info(error);
-    }
-    // logger.info(body);
-    if(body.status === 200){
-      setTimeout(() => {
-          watchQuanity(shopName);
-      }, checkInterval);
-    }
   })
 }
 
@@ -197,6 +174,5 @@ let interval = setInterval(() => {
   }else{
     logger.trace('继续等待中，等到十点才开始吧');
   }
-
 }, 2000);
 

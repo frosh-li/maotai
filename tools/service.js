@@ -2,6 +2,7 @@ var request = require("request");
 const proxy = require('../controllers/proxy');
 var FileCookieStore = require('tough-cookie-filestore');
 const fs = require('fs');
+const path = require('path');
 var j = request.jar(new FileCookieStore('cookies.json'));
 request = request.defaults({
     jar: true,
@@ -199,21 +200,7 @@ class MaotaiService {
      * @return {type}          description
      */
     checkAliToken(callback) {
-        // redisClient.RANDOMKEY(function(err, reply){
-        //   if(err){
-        //     this.checkAliToken(callback);
-        //   }else{
-        //     redisClient.get(reply, function(err, reply){
-        //       if(err){
-        //         this.checkAliToken(callback);
-        //       }else{
-        //         logger.info('token成功获取到', reply);
-        //         redisClient.del(reply);
-        //         callback(reply);
-        //       }
-        //     })
-        //   }
-        // });
+        let aliSessionId = fs.readFileSync(path.resolve(__dirname,'../aliSessionId.txt')).toString('utf8');
         if (!aliSessionId) {
             setTimeout(() => {
                 this.checkAliToken(callback);
@@ -307,7 +294,8 @@ class MaotaiService {
      * @param  {string} fixedShopName 是否锁定购买某一家 -1为不锁定  211110102007雍贵中心 211110105003双龙
      * @return {type}            description
      */
-    createOrder(stel, pid, quantity = 6, userAgent, fixedShopName = -1) {
+
+    createOrder(stel, pid, quantity = 6, userAgent, scopeAddress, shopId, fixedShopName = -1) {
         logger.info('create order params', arguments);
         if (typeof stel === 'string') {
             var tel = stel;
@@ -316,43 +304,14 @@ class MaotaiService {
             var tel = stel.phone;
             var pass = stel.pass;
         }
-        let shopId = -1;
+        
         userAgent = userAgent || this.userAgent(tel);
         let shopName = fixedShopName;
         let now = +new Date();
-        let scopeAddress = null;
-
+        fs.writeFileSync(path.resolve(__dirname,"../aliSessionId.txt"), "");
         return new Promise((resolve, reject) => {
-            this.login(tel, pass, userAgent)
-                .then(data => {
-                    return this.getAddressId(tel)
-                })
-                .then(address => {
-                    scopeAddress = address;
-                    return this.LBSServer(address, tel, userAgent);
-                })
-                .then(data => {
-                    logger.info(JSON.stringify(data));
-                    if (data && data.lbsdata && data.lbsdata.data && data.lbsdata.data.stock && data.lbsdata.data.stock) {
-                      let StockCount = data.lbsdata.data.stock.StockCount;
-                      let LimitCount = data.lbsdata.data.limit.LimitCount;
-                      logger.info(colors.red(`库存限单:stock:${StockCount}limit:${LimitCount}`));
-                      if(data.lbsdata.data.stock.StockCount < quantity){
-                        logger.info(colors.red(`库存不够:stock:${StockCount}limit:${LimitCount}`));
-                        return reject(new Error(`库存不够:stock:${StockCount}limit:${LimitCount}`));
-                      }
-                      if(LimitCount < quantity){
-                       return reject(new Error(`每单限购不足:stock:${StockCount}limit:${LimitCount}`));
-                      }
-                      // if(!this.fixShop(data.lbsdata.data.network, shopName)){
-                      //  return reject(new Error(`当前网点不是您所需要的网点:stock:${StockCount}limit:${LimitCount}`));
-                      // }
-                      shopId = data.lbsdata.data.network.Sid;
-                      return AliVerify.connectSidFromHard();
-                    } else {
-                        return reject(new Error("订单错误，因为商家没有上货"));
-                    }
-                }).then(data => {
+            AliVerify.connectSidFromHard()
+                  .then(data => {
                     if (data === true) {
                           let that = this;
                           let options = {
@@ -360,7 +319,6 @@ class MaotaiService {
                               url: 'https://www.cmaotai.com/YSApp_API/YSAppServer.ashx',
                               headers: {
                                   "proxy-authorization" : "Basic " + proxy.proxyAuth,
-
                                   'cache-control': 'no-cache',
                                   'accept-language': 'zh-CN,en-US;q=0.8',
                                   accept: 'application/json, text/javascript, */*; q=0.01',
@@ -425,6 +383,7 @@ class MaotaiService {
                                 // remark
                                 // timestamp121  1522290257472
                                 aliSessionId = null;
+                                fs.writeFileSync("../aliSessionId.txt", "");
                                 logger.info(options.form);
                                 request(options, function(error, response, body) {
                                     if (error) {

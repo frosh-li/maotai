@@ -5,6 +5,8 @@ var MaotaiService = require('../tools/service');
 var uuid = require('uuid/v4');
 var request = require('request');
 const proxy = require('../controllers/proxy');
+const fs = require('fs');
+const path = require('path');
 
 
 /**
@@ -19,7 +21,11 @@ const proxy = require('../controllers/proxy');
 router.post('/maotai', function(req, res, next) {
   let sid = req.body.sid;
   aliSessionId = sid;
-  redisClient.setex('ali:token:'+uuid(), 60, sid);
+  try{
+    fs.writeFileSync(path.resolve(__dirname,'../aliSessionId.txt'), sid);
+  }catch(e){
+    console.log(e);
+  }
   console.log('SID from Android', sid);
   res.json({
     status: 200,

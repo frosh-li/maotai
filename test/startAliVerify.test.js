@@ -1,4 +1,7 @@
 const AliVerify = require('../tools/startAliVerify');
+const MaotaiService = require('../tools/service');
+const fs = require('fs');
+const path = require('path');
 let assert = require("chai").assert;
 
 describe('阿里组建测试', () => {
@@ -14,13 +17,13 @@ describe('阿里组建测试', () => {
   // })
 
   it("测试打开阿里验证组建", (done) => {
+
+      fs.writeFileSync(path.resolve(__dirname,"../aliSessionId.txt"), "");
       AliVerify.connectSidFromHard()
         .then((ok) => {
-            //assert.notEqual(ok, true);
-            if(ok === true){
-                assert.equal(ok, true);
-                done();
-            }
+            MaotaiService.checkAliToken((token)=>{
+              done();
+            })
         })
         .catch(e => {
             console.log('ali error', e);
