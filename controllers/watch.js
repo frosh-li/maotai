@@ -28,9 +28,10 @@ let pid = '391';
 let quantity = 6;
 
 var originPhones = require("../accounts.json");
-let shopName = '东柏街|祥瑞丰源';
+let shopName = '东柏街|祥瑞丰源|SOHO现代城C|嘉禾国信大厦|西城区|文峰商贸';
 if(cookieAddress == "001"){
-  originPhones = require("../beijingaccount.json");
+  originPhones = require("../beijing4.2buy.json");
+  // originPhones = [{phone:"15697680921",pass:123456}]
 }
 if(cookieAddress == "002"){
   // 猪小弟 两单
@@ -71,7 +72,9 @@ logger.info('to Buy tels', tels);
 function printInfo(data){
   try{
     logger.info('推送网点信息');
-    logger.info("NAME:", data.lbsdata.data.network.Address)
+    logger.info("Address:", data.lbsdata.data.network.Address)
+    logger.info("SName:", data.lbsdata.data.network.SName)
+    logger.info("DName:", data.lbsdata.data.network.DName)
     logger.info("SID:", data.lbsdata.data.stock.Sid);
     logger.info("total:",data.lbsdata.data.stock.StockCount)
     logger.info("limit:", data.lbsdata.data.limit.LimitCount)
@@ -102,7 +105,9 @@ function fixShop(network, shopName) {
 function watchQuanity(shopName) {
   let randomIndex = Math.floor(Math.random()*(originPhones.length-1));
   let tel = originPhones[randomIndex].phone;
+  // let tel = "13720689056";
   let pass = originPhones[randomIndex].pass;
+  // let pass = "a123456";
   let userAgent = MaotaiService.userAgent(tel);
   let scopeAddress = "";
   proxy.switchIp().then(() => {
@@ -119,16 +124,16 @@ function watchQuanity(shopName) {
           //if (shopName > 0) {
               if (data && data.lbsdata && data.lbsdata.data && data.lbsdata.data.stock && data.lbsdata.data.stock.Sid) {
                 if(
-                  data.lbsdata.data.stock.StockCount > quantity
+                  data.lbsdata.data.stock.StockCount >= quantity
                   &&
                   data.lbsdata.data.limit.LimitCount >= quantity
-                  &&
+                  && 
                   fixShop(data.lbsdata.data.network, shopName)
                 ){
                   logger.info(colors.green("商家已经上货，开始购买流程"));
                   printInfo(data);
                   if(needToBuy){
-                    startToBy(data.lbsdata.data.limit.LimitCount);
+                    startToBy(tel, pass, data.lbsdata.data.limit.LimitCount);
                   }
                 }else {
                   printInfo(data);
@@ -156,21 +161,26 @@ function watchQuanity(shopName) {
 }
 
 
-function startToBy(limit) {
+function startToBy(tel,pass,limit) {
   request({
-    url:"http://127.0.0.1:10010/api/maotai/multiOrder",
+    url:"http://127.0.0.1:10010/api/maotai/createOrder",
     method:"post",
     form: {
-      tels: tels,
+      tels: tel,
+      pass: pass,
       pid: pid,
-      quantity: limit || 6,
-      shopName: shopName
+      quantity: limit || 6
     }
   }, function(error, results, body){
     if(error){
       return logger.info(error);
     }
-    logger.info(body);
+    // logger.info(body);
+    if(body.status === 200){
+      setTimeout(() => {
+          watchQuanity(shopName);
+      }, checkInterval);
+    }
   })
 }
 
@@ -181,6 +191,8 @@ let interval = setInterval(() => {
   if(Hour >= 10 && Hour <= 16) {
     clearInterval(interval);
     logger.info('抢购时间开始');
+    // todo
+    // 去掉每次都登陆的逻辑，登陆一次就开始监控，只需要刷新lbs接口即可
     watchQuanity(shopName);
   }else{
     logger.trace('继续等待中，等到十点才开始吧');
@@ -188,5 +200,3 @@ let interval = setInterval(() => {
 
 }, 2000);
 
-
-// startToBy();

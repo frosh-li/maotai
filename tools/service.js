@@ -280,7 +280,8 @@ class MaotaiService {
     fixShop(network, shopName) {
       let result = false;
       let allShopNames = shopName.split("|");
-      // logger.info(allShopNames);
+      logger.info(allShopNames);
+      logger.info(network);
       allShopNames.forEach(item=>{
         if(
             network.SName.indexOf(item) > -1
@@ -331,21 +332,21 @@ class MaotaiService {
                     return this.LBSServer(address, tel, userAgent);
                 })
                 .then(data => {
-                    logger.info(data);
+                    logger.info(JSON.stringify(data));
                     if (data && data.lbsdata && data.lbsdata.data && data.lbsdata.data.stock && data.lbsdata.data.stock) {
                       let StockCount = data.lbsdata.data.stock.StockCount;
                       let LimitCount = data.lbsdata.data.limit.LimitCount;
                       logger.info(colors.red(`库存限单:stock:${StockCount}limit:${LimitCount}`));
-                      if(data.lbsdata.data.stock.StockCount <= quantity){
+                      if(data.lbsdata.data.stock.StockCount < quantity){
                         logger.info(colors.red(`库存不够:stock:${StockCount}limit:${LimitCount}`));
                         return reject(new Error(`库存不够:stock:${StockCount}limit:${LimitCount}`));
                       }
                       if(LimitCount < quantity){
                        return reject(new Error(`每单限购不足:stock:${StockCount}limit:${LimitCount}`));
                       }
-                      if(!this.fixShop(data.lbsdata.data.network, shopName)){
-                       return reject(new Error(`当前网点不是您所需要的网点:stock:${StockCount}limit:${LimitCount}`));
-                      }
+                      // if(!this.fixShop(data.lbsdata.data.network, shopName)){
+                      //  return reject(new Error(`当前网点不是您所需要的网点:stock:${StockCount}limit:${LimitCount}`));
+                      // }
                       shopId = data.lbsdata.data.network.Sid;
                       return AliVerify.connectSidFromHard();
                     } else {
