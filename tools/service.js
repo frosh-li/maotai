@@ -2,6 +2,8 @@ var request = require("request");
 const proxy = require('../controllers/proxy');
 var FileCookieStore = require('tough-cookie-filestore');
 const fs = require('fs');
+var redis = require('redis');
+var redisClient = redis.createClient();
 const path = require('path');
 var j = request.jar(new FileCookieStore('cookies.json'));
 request = request.defaults({
@@ -264,6 +266,23 @@ class MaotaiService {
         })
     }
 
+    getToken() {
+      return new Promise((resolve, reject) => {
+        redisClient.RANDOMKEY((err, reply) => {
+          if(err){
+            logger.error(err);
+            return reject(err);
+          }
+          redisClient.get(reply, (err, token) => {
+            if(err){
+              return reject(err);
+            }
+            return resolve({key:reply,token:token});
+          })
+        })
+      })
+    }
+
     fixShop(network, shopName) {
       let result = false;
       let allShopNames = shopName.split("|");
@@ -310,96 +329,97 @@ class MaotaiService {
         let now = +new Date();
         fs.writeFileSync(path.resolve(__dirname,"../aliSessionId.txt"), "");
         return new Promise((resolve, reject) => {
-            AliVerify.connectSidFromHard()
-                  .then(data => {
-                    if (data === true) {
-                          let that = this;
-                          let options = {
-                              method: 'POST',
-                              url: 'https://www.cmaotai.com/YSApp_API/YSAppServer.ashx',
-                              headers: {
-                                  "proxy-authorization" : "Basic " + proxy.proxyAuth,
-                                  'cache-control': 'no-cache',
-                                  'accept-language': 'zh-CN,en-US;q=0.8',
-                                  accept: 'application/json, text/javascript, */*; q=0.01',
-                                  'content-type': 'application/x-www-form-urlencoded',
-                                  referer: `https://www.cmaotai.com/ysh5/page/BuyInquiry/buyInquiryIndex.html?type=invoiceInfo&productId=${pid}&num=${quantity}`,
-                                  'user-agent': userAgent,
-                                  'x-requested-with': 'XMLHttpRequest'
-                              },
-                              form: {
-                                action: "MemberManager.coupon",
-                                sid: shopId,
-                                pid: pid,
-                                count: quantity,
-                                timestamp121: (+new Date())
-                              },
-                              jar:j,
-                              json:true
+            this.getToken()
+              .then(aliSessionId => {
+                
+                  let that = this;
+                  let options = {
+                      method: 'POST',
+                      url: 'https://www.cmaotai.com/YSApp_API/YSAppServer.ashx',
+                      headers: {
+                          "proxy-authorization" : "Basic " + proxy.proxyAuth,
+                          'cache-control': 'no-cache',
+                          'accept-language': 'zh-CN,en-US;q=0.8',
+                          accept: 'application/json, text/javascript, */*; q=0.01',
+                          'content-type': 'application/x-www-form-urlencoded',
+                          referer: `https://www.cmaotai.com/ysh5/page/BuyInquiry/buyInquiryIndex.html?type=invoiceInfo&productId=${pid}&num=${quantity}`,
+                          'user-agent': userAgent,
+                          'x-requested-with': 'XMLHttpRequest'
+                      },
+                      form: {
+                        action: "MemberManager.coupon",
+                        sid: shopId,
+                        pid: pid,
+                        count: quantity,
+                        timestamp121: (+new Date())
+                      },
+                      jar:j,
+                      json:true
+                  };
+                  request(options, function(error, response, body) {
+                      if (error) {
+                          return reject(error);
+                      };
+                      logger.info('coupon info', body);
+                      let couponsId = body.data.Cid;
+                      // let couponsId = 'b1b99dd3e5664458afa839e3e7c52724'
+                      // 如果找到对应shopID
+                      
+                      let options = {
+                          method: 'POST',
+                          url: 'https://www.cmaotai.com/API/CreateOrder.ashx',
+                          headers: {
+                              "proxy-authorization" : "Basic " + proxy.proxyAuth,
+                              'cache-control': 'no-cache',
+                              'accept-language': 'zh-CN,en-US;q=0.8',
+                              accept: 'application/json, text/javascript, */*; q=0.01',
+                              'content-type': 'application/x-www-form-urlencoded',
+                              referer: `https://www.cmaotai.com/ysh5/page/BuyInquiry/buyInquiryIndex.html?type=invoiceInfo&productId=${pid}&num=${quantity}`,
+                              'user-agent': userAgent,
+                              'x-requested-with': 'XMLHttpRequest'
+                          },
+                          jar:j,
+                          form: {
+                              productId: pid,
+                              quantity: quantity,
+                              couponsId: couponsId,
+                              addressId: scopeAddress,
+                              invioceId: -1,
+                              express: 14,
+                              shopId: shopId,
+                              sessid: aliSessionId.token,
+                              remark: '',
+                              timestamp121: (+new Date())
+                          }
+                      };
+                      // productId 391
+                      // quantity  6
+                      // couponsId 5bdf091be6ab4837a0ecf6d624c41f26
+                      // addressId 1924110
+                      // invioceId -1
+                      // express 14
+                      // shopId  161610100018
+                      // sessid  nc1-01W8fUo7tiNBKrkhR8ACXXKa7iBBDH1y3J0CDrEthFzlTNpsPjtpYek3o3FHpHt3fZ-nc2-0561M3bob-R8gv1KNXk15v5Zpzwr5-aA0d72EwzdOiQ4yF_oZXhNR3wj9Ui770CX4eKbPK7vEuAXN6pqFY62tiCddhKDzzaVVBi1QL1KGNBX47HA687xzvBLbSMxProRMf6YwLBXaxmIci5uutEeL13GykCvJb4lfdA4B5mO7sXuxrBIslSrNkdZL0myaCGppz51RYEogBMwUazCe0Gmu_4rZ-u5smNUCcFL4ya7FiHf5iekkXdiY3Q2fNkKGdQPu77n45tVC52LG_H0SCfbLMqtoU1tmCuQ7gQ1UZzDp9ONxSGYQ8dIgJJjigUtXuBLOTSPXdQOdFkqIs6JjFsXAkp1sAxQHojeOF39MSL4bxBD6ECAAYd4722G4Y2yIX3dXl7S9KEx_7rE6J4_Qe-tKZvj0s5vNYP0vJP7P4Wv4Z6jM-nc3-01TzB8fzgmvi9w1w4Zzf-Aou5wAmuHVmzkWmgqL_rJEAfWDAe5-mM9bYVdvGJY2qVCFybtUWb9qd-2xX8YIpqSIDLmQJpgazyeLOv1rOhNl5mqdxjkB3iFVFv0N8IigAoPdXEJxKKKUu7F2-cvvWc-lg-nc4-FFFFA0000000016A858A
+                      // remark
+                      // timestamp121  1522290257472
+                      // aliSessionId = null;
+                      // fs.writeFileSync("../aliSessionId.txt", "");
+                      logger.info(options.form);
+                      redisClient.del(aliSessionId.key);
+                      request(options, function(error, response, body) {
+                          if (error) {
+                              return reject(error);
                           };
-                          // request(options, function(error, response, body) {
-                          //     if (error) {
-                          //         return reject(error);
-                          //     };
-                              // logger.info('coupon info', body);
-                              // let couponsId = body.data.Cid;
-                              let couponsId = 'b1b99dd3e5664458afa839e3e7c52724'
-                              // 如果找到对应shopID
-                              that.checkAliToken((aliSessionId) => {
-                                let options = {
-                                    method: 'POST',
-                                    url: 'https://www.cmaotai.com/API/CreateOrder.ashx',
-                                    headers: {
-                                        "proxy-authorization" : "Basic " + proxy.proxyAuth,
-                                        'cache-control': 'no-cache',
-                                        'accept-language': 'zh-CN,en-US;q=0.8',
-                                        accept: 'application/json, text/javascript, */*; q=0.01',
-                                        'content-type': 'application/x-www-form-urlencoded',
-                                        referer: `https://www.cmaotai.com/ysh5/page/BuyInquiry/buyInquiryIndex.html?type=invoiceInfo&productId=${pid}&num=${quantity}`,
-                                        'user-agent': userAgent,
-                                        'x-requested-with': 'XMLHttpRequest'
-                                    },
-                                    jar:j,
-                                    form: {
-                                        productId: pid,
-                                        quantity: quantity,
-                                        couponsId: couponsId,
-                                        addressId: scopeAddress,
-                                        invioceId: -1,
-                                        express: 14,
-                                        shopId: shopId,
-                                        sessid: aliSessionId,
-                                        remark: '',
-                                        timestamp121: (+new Date())
-                                    }
-                                };
-                                // productId 391
-                                // quantity  6
-                                // couponsId 5bdf091be6ab4837a0ecf6d624c41f26
-                                // addressId 1924110
-                                // invioceId -1
-                                // express 14
-                                // shopId  161610100018
-                                // sessid  nc1-01W8fUo7tiNBKrkhR8ACXXKa7iBBDH1y3J0CDrEthFzlTNpsPjtpYek3o3FHpHt3fZ-nc2-0561M3bob-R8gv1KNXk15v5Zpzwr5-aA0d72EwzdOiQ4yF_oZXhNR3wj9Ui770CX4eKbPK7vEuAXN6pqFY62tiCddhKDzzaVVBi1QL1KGNBX47HA687xzvBLbSMxProRMf6YwLBXaxmIci5uutEeL13GykCvJb4lfdA4B5mO7sXuxrBIslSrNkdZL0myaCGppz51RYEogBMwUazCe0Gmu_4rZ-u5smNUCcFL4ya7FiHf5iekkXdiY3Q2fNkKGdQPu77n45tVC52LG_H0SCfbLMqtoU1tmCuQ7gQ1UZzDp9ONxSGYQ8dIgJJjigUtXuBLOTSPXdQOdFkqIs6JjFsXAkp1sAxQHojeOF39MSL4bxBD6ECAAYd4722G4Y2yIX3dXl7S9KEx_7rE6J4_Qe-tKZvj0s5vNYP0vJP7P4Wv4Z6jM-nc3-01TzB8fzgmvi9w1w4Zzf-Aou5wAmuHVmzkWmgqL_rJEAfWDAe5-mM9bYVdvGJY2qVCFybtUWb9qd-2xX8YIpqSIDLmQJpgazyeLOv1rOhNl5mqdxjkB3iFVFv0N8IigAoPdXEJxKKKUu7F2-cvvWc-lg-nc4-FFFFA0000000016A858A
-                                // remark
-                                // timestamp121  1522290257472
-                                aliSessionId = null;
-                                fs.writeFileSync("../aliSessionId.txt", "");
-                                logger.info(options.form);
-                                request(options, function(error, response, body) {
-                                    if (error) {
-                                        return reject(error);
-                                    };
-                                    logger.info(colors.green('下单完成'+JSON.stringify(body)));
-                                    return resolve(JSON.parse(body));
-                                });
-                            //});
-                        })
-                    }
-                }).catch(e => {
-                    logger.info(e);
-                    return reject(e);
-                })
+                          logger.info(colors.green('下单完成'+JSON.stringify(body)));
+                          return resolve(JSON.parse(body));
+                      });
+                    
+                  })
+                
+              }).catch(e => {
+                  logger.info(e);
+                  return reject(e);
+              })
         })
     }
 

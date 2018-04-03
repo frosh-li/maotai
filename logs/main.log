@@ -1,257 +1,50 @@
-[2018-04-03T14:32:45.510] [INFO] things - params [ '/usr/local/bin/node',
-  '/Users/junliang/server/www/maotaiServer/controllers/buyFixed.js',
+[2018-04-03T16:41:26.394] [INFO] things - params [ '/usr/local/bin/node',
+  '/Users/bigdata/project/maotai/controllers/buyFixed.js',
   '001' ]
-[2018-04-03T14:32:46.437] [INFO] things - start get addressID from mobile: 17783920137
-[2018-04-03T14:32:47.177] [INFO] things - create order params { '0': '17783920137',
-  '1': '391',
-  '2': 6,
-  '3': 'Mozilla/5.0 (Linux; Android 4.4.4; LA2-SN Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36[android/1.0.23/20af1a343953c3353f72a76156ac7b77/de40afb8f42e3d6813f513cdc3ef74c8]',
-  '4': 1965982,
-  '5': 233330186001 }
-[2018-04-03T14:32:50.348] [INFO] things - token成功获取到 nc1-01W8fUo7tiNBKrkhR8ACXXKXI9w6-c74vlWpdS9ne25n8nFXloritT2gblwPcfHCWM-nc2-0561M3bob-R8gv1KNXk15v5Zpzwr5-aA0d72EwzdOiQ4z1gV33fgIko08cF8EhcjSgOexsg0JeYCk3tluhENYkzqNFN4IFg8ukSjmi8I5HkB3rplk5o60JXXds7ZrMa4iM6YwLBXaxmIci5uutEeL13CxhQcbRcq_VUut8askw8S4d0LRMqWfgIf3xXdv4g1rjQoyKdYD3utPeD8BOjXZo1NWaLgL4Rn_nAecBsEdcgNJF5ng5hoqITz4owa2POCawu7Bevon3q861sY9wdYVf4toU1tmCuQ7gQ1UZzDp9ONxSGYQ8dIgJJjigUtXuBLOTd4aAR9kH_fQau0q4NhbWnVsAxQHojeOF39MSL4bxBD7potw848PZtmqblckNoY3CqQDoWI509Cl7IEnuTZ2JrrcTQEdoDB0niH_LA-oeH6M-nc3-01TzB8fzgmvi9w1w4Zzf-AojyAAqw5hfBpTsBAd4lEKHFkcgftNPWKRwlb3vV27hBeb7CR1Gw9KkuloCQoclQcV9D8sxx8_TY5MlpEJktVnB2qdxjkB3iFVFv0N8IigAoPdXEJxKKKUu7F2-cvvWc-lg-nc4-FFFFA0000000016A858A
-[2018-04-03T14:32:50.350] [INFO] things - { productId: '391',
-  quantity: 6,
-  couponsId: 'b1b99dd3e5664458afa839e3e7c52724',
-  addressId: 1965982,
-  invioceId: -1,
-  express: 14,
-  shopId: 233330186001,
-  sessid: 'nc1-01W8fUo7tiNBKrkhR8ACXXKXI9w6-c74vlWpdS9ne25n8nFXloritT2gblwPcfHCWM-nc2-0561M3bob-R8gv1KNXk15v5Zpzwr5-aA0d72EwzdOiQ4z1gV33fgIko08cF8EhcjSgOexsg0JeYCk3tluhENYkzqNFN4IFg8ukSjmi8I5HkB3rplk5o60JXXds7ZrMa4iM6YwLBXaxmIci5uutEeL13CxhQcbRcq_VUut8askw8S4d0LRMqWfgIf3xXdv4g1rjQoyKdYD3utPeD8BOjXZo1NWaLgL4Rn_nAecBsEdcgNJF5ng5hoqITz4owa2POCawu7Bevon3q861sY9wdYVf4toU1tmCuQ7gQ1UZzDp9ONxSGYQ8dIgJJjigUtXuBLOTd4aAR9kH_fQau0q4NhbWnVsAxQHojeOF39MSL4bxBD7potw848PZtmqblckNoY3CqQDoWI509Cl7IEnuTZ2JrrcTQEdoDB0niH_LA-oeH6M-nc3-01TzB8fzgmvi9w1w4Zzf-AojyAAqw5hfBpTsBAd4lEKHFkcgftNPWKRwlb3vV27hBeb7CR1Gw9KkuloCQoclQcV9D8sxx8_TY5MlpEJktVnB2qdxjkB3iFVFv0N8IigAoPdXEJxKKKUu7F2-cvvWc-lg-nc4-FFFFA0000000016A858A',
-  remark: '',
-  timestamp121: 1522737170350 }
-[2018-04-03T14:32:51.184] [INFO] things - [32m下单完成"{\"state\":true,\"code\":1045,\"msg\":\"购买用户效验失败\"}"[39m
-[2018-04-03T14:32:53.086] [INFO] things - start get addressID from mobile: 17753583852
-[2018-04-03T14:32:53.903] [INFO] things - create order params { '0': '17753583852',
-  '1': '391',
-  '2': 6,
-  '3': 'Mozilla/5.0 (Linux; Android 4.4.4; LA2-SN Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36[android/1.0.23/54db24d85fef75931e7e226ae2b400e5/b38e7fe3b4ebcb8d758c2fe265d7483a]',
-  '4': 1970650,
-  '5': 233330186001 }
-[2018-04-03T14:33:08.965] [INFO] things - token成功获取到 nc1-01W8fUo7tiNBKrkhR8ACXXKecl2tZzxMVquvpPN5bJMYRVvx3c-UEqJ6D0S3cybk3L-nc2-0561M3bob-R8gv1KNXk15v5Zpzwr5-aA0d72EwzdOiQ4z27MtxO74ul7LHuQ5MYIhphwyH5zwCxkYOz-sqgtI1hqr6VClNCIw0qu6XZUzqNUHv2NGS9KehWcZFRnbyIDaH6YwLBXaxmIci5uutEeL13KTkq2edJYiZ4rmD14HX3arYqAZ76y8QWMUxEz28cF9uafUElVKss9A1j5F_MWK4XmT-32BKpDsLdwqmN7wqoF5A6rhV25A7CNK8o7QrYXwwqzpL6x68zOjxax606S7ov9oU1tmCuQ7gQ1UZzDp9ONxSGYQ8dIgJJjigUtXuBLOTn6L9jmgAkAjjhvo1geIBdVsAxQHojeOF39MSL4bxBD7fZhbvtlPoOl7x7Zul_TXK-iQ4ieFSYcftvgPU3BVG2m0ySSmWNNSZfHE4hFObg6A-nc3-01TzB8fzgmvi9w1w4Zzf-AooDcYrODz3OQHX3kFZGUiGfv3oiPDMFxaoYqEdUdSL0-CCk7busptmZdTg9I-pjHSSzyw3KwDoPiGKg4iozIt8CqdxjkB3iFVFv0N8IigAoPdXEJxKKKUu7F2-cvvWc-lg-nc4-FFFFA0000000016A858A
-[2018-04-03T14:33:08.966] [INFO] things - { productId: '391',
-  quantity: 6,
-  couponsId: 'b1b99dd3e5664458afa839e3e7c52724',
-  addressId: 1970650,
-  invioceId: -1,
-  express: 14,
-  shopId: 233330186001,
-  sessid: 'nc1-01W8fUo7tiNBKrkhR8ACXXKecl2tZzxMVquvpPN5bJMYRVvx3c-UEqJ6D0S3cybk3L-nc2-0561M3bob-R8gv1KNXk15v5Zpzwr5-aA0d72EwzdOiQ4z27MtxO74ul7LHuQ5MYIhphwyH5zwCxkYOz-sqgtI1hqr6VClNCIw0qu6XZUzqNUHv2NGS9KehWcZFRnbyIDaH6YwLBXaxmIci5uutEeL13KTkq2edJYiZ4rmD14HX3arYqAZ76y8QWMUxEz28cF9uafUElVKss9A1j5F_MWK4XmT-32BKpDsLdwqmN7wqoF5A6rhV25A7CNK8o7QrYXwwqzpL6x68zOjxax606S7ov9oU1tmCuQ7gQ1UZzDp9ONxSGYQ8dIgJJjigUtXuBLOTn6L9jmgAkAjjhvo1geIBdVsAxQHojeOF39MSL4bxBD7fZhbvtlPoOl7x7Zul_TXK-iQ4ieFSYcftvgPU3BVG2m0ySSmWNNSZfHE4hFObg6A-nc3-01TzB8fzgmvi9w1w4Zzf-AooDcYrODz3OQHX3kFZGUiGfv3oiPDMFxaoYqEdUdSL0-CCk7busptmZdTg9I-pjHSSzyw3KwDoPiGKg4iozIt8CqdxjkB3iFVFv0N8IigAoPdXEJxKKKUu7F2-cvvWc-lg-nc4-FFFFA0000000016A858A',
-  remark: '',
-  timestamp121: 1522737188965 }
-[2018-04-03T14:33:09.988] [INFO] things - [32m下单完成"{\"state\":true,\"code\":1045,\"msg\":\"购买用户效验失败\"}"[39m
-[2018-04-03T14:33:12.483] [INFO] things - start get addressID from mobile: 15213163729
-[2018-04-03T14:33:13.322] [INFO] things - create order params { '0': '15213163729',
+[2018-04-03T16:41:28.631] [INFO] things - start get addressID from mobile: 15213163729
+[2018-04-03T16:41:30.854] [INFO] things - create order params { '0': '15213163729',
   '1': '391',
   '2': 6,
   '3': 'Mozilla/5.0 (Linux; Android 4.4.4; LA2-SN Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36[android/1.0.23/24832c13e0721ad2c021be6f2692a3f3/a7e13361e36abc40ffb16b04ed3f342c]',
   '4': 1970634,
   '5': 233330186001 }
-[2018-04-03T14:33:16.462] [INFO] things - token成功获取到 nc1-01W8fUo7tiNBKrkhR8ACXXKQL0GoGBcV_s32M0ixBcJ8LtlI3sLwOWPYpM70K8FX0Vm-sTtpWZiubQ2qcBTOIznQ-nc2-0561M3bob-R8gv1KNXk15v5bkS76NYlEyqbuKhC0ArCxcclsUH_9Zm6CbaM_Qhy1OihhJbyD-TT4MBRyQIN9Rww6qdA_BpkIujVJHl76jLuiHcxmO0D9H6EFIQaqwJfc9cse8HH7Rt6xf8uI2S7O9yw3bau4a0Zxm6bGQk-zLc0VaO6JhcKUugiQ7xU38r8XSj7rFrRjdJOjT2yTJ-PBp6Wyg2m2VGTlWV-39aXw8lQuhs0EoIwZJYQH8Rwmo0p6Hy9HhMVhNlS9h1ho-JpQUTM1J8Fi3vtO-bBbyCz4aFlrY_DsgD9yqt_PWRtHc9YPcU7cHiYqKjyRVTkzX1vY_F1GA2D5lvaLcQNTJoFSAcnCPK5uYQEqmzuOWLJDNObZvl4Tmba5AIBJo-zRkvYuQD-5KK69xrALFGlq3UY7i11hZlxxlCNMDQnrNbBJAc7NH10DyjoS-UYhBMPD85D3omnw-nc3-01YGjVYP56xB8j7o4jZfyVfyCpwSFwuKWzJDn-w_7j8Uerzs_cnFe7JLs7GdQh4HeHysFTa7DcVk70ZElaqxGUqNwWSEXrmpLrrwYcfnnB2flJiI6y0Bg9ZX6HXOUTX0SGMMZ987Yl-MRjNiTyO13Nl9aQEVn7ikm7TMTYnShy4sQ-nc4-FFFFA0000000016A858A
-[2018-04-03T14:33:16.464] [INFO] things - { productId: '391',
+[2018-04-03T16:41:33.848] [INFO] things - coupon info { state: true,
+  code: 0,
+  data: 
+   { Cid: '94e192cf528e41628ca6a32d3ce763b4',
+     Name: '茅台云商浙江省杭州市上城区服务网点',
+     DName: '浙商糖酒集团有限公司',
+     Address: '杭州市中山中路甘泽坊巷9号',
+     InvoiceCompany: '浙商糖酒集团有限公司',
+     SHBegin: '10:00:00',
+     SHEnd: '17:00:00',
+     Amount: 1499,
+     Level: 1,
+     DisAmount: 1499,
+     DisCost: 0,
+     LocalCost: -1,
+     LocalZero: -1,
+     LocalZeroCost: -1,
+     OtherCost: -1,
+     OtherZero: -1,
+     OtherZeroCost: -1,
+     InvoiceCost: 22,
+     TakeDeliveryLimit: 7,
+     HasPlainInvoice: true,
+     HasVATInvoice: true,
+     Description: '仅限自提',
+     StateCode: 0,
+     NetworkType: 0,
+     WorkingDay: '[{"EnDay":"Monday","CnDay":"星期一"},{"EnDay":"Tuesday","CnDay":"星期二"},{"EnDay":"Wednesday","CnDay":"星期三"},{"EnDay":"Thursday","CnDay":"星期四"},{"EnDay":"Friday","CnDay":"星期五"},{"EnDay":"Saturday","CnDay":"星期六"},{"EnDay":"Sunday","CnDay":"星期日"}]' } }
+[2018-04-03T16:41:33.850] [INFO] things - { productId: '391',
   quantity: 6,
-  couponsId: 'b1b99dd3e5664458afa839e3e7c52724',
+  couponsId: '94e192cf528e41628ca6a32d3ce763b4',
   addressId: 1970634,
   invioceId: -1,
   express: 14,
   shopId: 233330186001,
-  sessid: 'nc1-01W8fUo7tiNBKrkhR8ACXXKQL0GoGBcV_s32M0ixBcJ8LtlI3sLwOWPYpM70K8FX0Vm-sTtpWZiubQ2qcBTOIznQ-nc2-0561M3bob-R8gv1KNXk15v5bkS76NYlEyqbuKhC0ArCxcclsUH_9Zm6CbaM_Qhy1OihhJbyD-TT4MBRyQIN9Rww6qdA_BpkIujVJHl76jLuiHcxmO0D9H6EFIQaqwJfc9cse8HH7Rt6xf8uI2S7O9yw3bau4a0Zxm6bGQk-zLc0VaO6JhcKUugiQ7xU38r8XSj7rFrRjdJOjT2yTJ-PBp6Wyg2m2VGTlWV-39aXw8lQuhs0EoIwZJYQH8Rwmo0p6Hy9HhMVhNlS9h1ho-JpQUTM1J8Fi3vtO-bBbyCz4aFlrY_DsgD9yqt_PWRtHc9YPcU7cHiYqKjyRVTkzX1vY_F1GA2D5lvaLcQNTJoFSAcnCPK5uYQEqmzuOWLJDNObZvl4Tmba5AIBJo-zRkvYuQD-5KK69xrALFGlq3UY7i11hZlxxlCNMDQnrNbBJAc7NH10DyjoS-UYhBMPD85D3omnw-nc3-01YGjVYP56xB8j7o4jZfyVfyCpwSFwuKWzJDn-w_7j8Uerzs_cnFe7JLs7GdQh4HeHysFTa7DcVk70ZElaqxGUqNwWSEXrmpLrrwYcfnnB2flJiI6y0Bg9ZX6HXOUTX0SGMMZ987Yl-MRjNiTyO13Nl9aQEVn7ikm7TMTYnShy4sQ-nc4-FFFFA0000000016A858A',
+  sessid: 'nc1-01W8fUo7tiNBKrkhR8ACXXKbpOQZ-H75Q4nEJfnUgamMFB05RyH0tooCacEwkm2kxh-nc2-0561M3bob-R8gv1KNXk15v5Zpzwr5-aA0d72EwzdOiQ4xyfgbNJh38I0NiL8RWRzP0Y0qqsBFV-Fq4wOtRwaoreQCodrAX96R538YreN1xDrKPbkEkrFXdmGv7wGSngLhX6YwLBXaxmIci5uutEeL13C7p5LouwcGl3R5f1_gz2u50G6ohEWaLXCOUMpzb0UY9IgsAoccKsUNT1crMKtdGeY5UWtN-K_AZQw56zhQ3bEHcFCF7MgtpAjzzC1F0F4DN3y7uMjJ0RQES737__4wGiNoU1tmCuQ7gQ1UZzDp9ONxSGYQ8dIgJJjigUtXuBLOTCxz3UkPziHA6gwB7sQoyilsAxQHojeOF39MSL4bxBD6h-soTwxtiHB0OFLOAJToBHNAO-pk9mH9c6QW5stb-qj0s5vNYP0vJP7P4Wv4Z6jM-nc3-01TzB8fzgmvi9w1w4Zzf-AolUTuKhVRvUO2OYdE36E7Lr5Ge_sW2h-Hb6WUew9mYhqORASueZ42mMOw19yySGrgCc2bXMJcdIU2iPY5X2r9kCqdxjkB3iFVFv0N8IigAoPdXEJxKKKUu7F2-cvvWc-lg-nc4-FFFFA0000000016A858A',
   remark: '',
-  timestamp121: 1522737196464 }
-[2018-04-03T14:33:31.798] [INFO] things - [32m下单完成"{\"state\":true,\"code\":1045,\"msg\":\"购买用户效验失败\"}"[39m
-[2018-04-03T14:33:33.640] [INFO] things - start get addressID from mobile: 13686135579
-[2018-04-03T14:33:34.498] [INFO] things - create order params { '0': '13686135579',
-  '1': '391',
-  '2': 6,
-  '3': 'Mozilla/5.0 (Linux; Android 4.4.4; LA2-SN Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36[android/1.0.23/edfa692d22614ee4994553870a1adf93/fea813479f2cd70216e41c440f76058e]',
-  '4': 1949487,
-  '5': 233330186001 }
-[2018-04-03T14:33:37.726] [INFO] things - token成功获取到 nc1-01W8fUo7tiNBKrkhR8ACXXKQq2iwKei4hQ7tTYJ2pKaBnfuJoKKsg9w2ldf31wzWgU-nc2-0561M3bob-R8gv1KNXk15v5Zpzwr5-aA0d72EwzdOiQ4wclsUH_9Zm6CbaM_Qhy1Oiu1u0h4sYbz6IDAkekdlMGjXtt8sg_V7pqi7B7IIpnlcvdhyOEbVU4RfXrvm0ANbr6YwLBXaxmIci5uutEeL13ELRTAixIwLTc3BtNBcqqwIRDQFXRri9zh0u1MOm2ByKCqw2aW62LQ-5rse2xJ49dpbSCs3bKhNONo7tarYmsajAw8npkqo-LBHoI341d_RJIlihv46QxoPEzpTXq6wwt9oU1tmCuQ7gQ1UZzDp9ONxSGYQ8dIgJJjigUtXuBLOTZ9Bgbs-XdhpvHY8TmOX6D1sAxQHojeOF39MSL4bxBD6Kyd_moJeSSDm-HlGdoir9a7nuqOnr2uqWNTJQe7a2G3bbuz7oHgLmSPs0qTpNYjQ-nc3-01TzB8fzgmvi9w1w4Zzf-AokasPNLR8TX6IBJuc7bGc4--0z4a5Awupd7mAbpMLTGybCcpc-gE1NrKzXCO7woqFEjaJYED9NNg-Lt9OvfGwdCqdxjkB3iFVFv0N8IigAoPdXEJxKKKUu7F2-cvvWc-lg-nc4-FFFFA0000000016A858A
-[2018-04-03T14:33:37.728] [INFO] things - { productId: '391',
-  quantity: 6,
-  couponsId: 'b1b99dd3e5664458afa839e3e7c52724',
-  addressId: 1949487,
-  invioceId: -1,
-  express: 14,
-  shopId: 233330186001,
-  sessid: 'nc1-01W8fUo7tiNBKrkhR8ACXXKQq2iwKei4hQ7tTYJ2pKaBnfuJoKKsg9w2ldf31wzWgU-nc2-0561M3bob-R8gv1KNXk15v5Zpzwr5-aA0d72EwzdOiQ4wclsUH_9Zm6CbaM_Qhy1Oiu1u0h4sYbz6IDAkekdlMGjXtt8sg_V7pqi7B7IIpnlcvdhyOEbVU4RfXrvm0ANbr6YwLBXaxmIci5uutEeL13ELRTAixIwLTc3BtNBcqqwIRDQFXRri9zh0u1MOm2ByKCqw2aW62LQ-5rse2xJ49dpbSCs3bKhNONo7tarYmsajAw8npkqo-LBHoI341d_RJIlihv46QxoPEzpTXq6wwt9oU1tmCuQ7gQ1UZzDp9ONxSGYQ8dIgJJjigUtXuBLOTZ9Bgbs-XdhpvHY8TmOX6D1sAxQHojeOF39MSL4bxBD6Kyd_moJeSSDm-HlGdoir9a7nuqOnr2uqWNTJQe7a2G3bbuz7oHgLmSPs0qTpNYjQ-nc3-01TzB8fzgmvi9w1w4Zzf-AokasPNLR8TX6IBJuc7bGc4--0z4a5Awupd7mAbpMLTGybCcpc-gE1NrKzXCO7woqFEjaJYED9NNg-Lt9OvfGwdCqdxjkB3iFVFv0N8IigAoPdXEJxKKKUu7F2-cvvWc-lg-nc4-FFFFA0000000016A858A',
-  remark: '',
-  timestamp121: 1522737217727 }
-[2018-04-03T14:33:38.542] [INFO] things - [32m下单完成"{\"state\":true,\"code\":1,\"data\":{\"Sid\":\"233330186001\",\"Pid\":391,\"UserOrderCount\":0,\"LimitCount\":5,\"LimitTimeCycle\":1440,\"LimitOrderCount\":1,\"IsPlatform\":false}}"[39m
-[2018-04-03T14:33:40.624] [INFO] things - start get addressID from mobile: 15084425825
-[2018-04-03T14:33:41.314] [INFO] things - create order params { '0': '15084425825',
-  '1': '391',
-  '2': 6,
-  '3': 'Mozilla/5.0 (Linux; Android 4.4.4; LA2-SN Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36[android/1.0.23/c059836905345354b3dc80ebc8b2506a/3b4f3a29cd25f578922b9659d4fd03c0]',
-  '4': 1664081,
-  '5': 233330186001 }
-[2018-04-03T14:33:44.374] [INFO] things - token成功获取到 nc1-01W8fUo7tiNBKrkhR8ACXXKbdnxDeVVlbASTZupdH1aTwWbZYFxVZpkNbGasyheko0-nc2-0561M3bob-R8gv1KNXk15v5Zpzwr5-aA0d72EwzdOiQ4xyfgbNJh38I0NiL8RWRzP0jsvz6xDPdsc1ljKa-0VhNaHFRnMag1nmyRIva_9AYznPg08vIm1PdR1MweQHUj1t6YwLBXaxmIci5uutEeL13O-beMXBRii469rXcG98onyNc9i3UvJJIK5TUR3SatsEhWg8jvlrgqahRR98xYYo52fKX5x2FbYIVW1851cGzv-0fnBgswFlhD7erBoBcotMeNVuDqoDfwQiG9gEdrEsmtoU1tmCuQ7gQ1UZzDp9ONxSGYQ8dIgJJjigUtXuBLOTb-JQTVCzZWHCGfHFlzw0AlsAxQHojeOF39MSL4bxBD7TI_SCRbrAekhe_ClrgUkrdm1C2UA3GzSaIT-2U3Dcj3I_Qn9MtCcFZ-OwWJny4fc-nc3-01TzB8fzgmvi9w1w4Zzf-Aokg_Rgypq4_C1m3XVouzVeClf5J0xVtIPTZR_gqE1Q5uCho7bioCKpITgUSOktPHlkLrRLWjoBF-3zKJI1k9VVOqdxjkB3iFVFv0N8IigAoPdXEJxKKKUu7F2-cvvWc-lg-nc4-FFFFA0000000016A858A
-[2018-04-03T14:33:44.376] [INFO] things - { productId: '391',
-  quantity: 6,
-  couponsId: 'b1b99dd3e5664458afa839e3e7c52724',
-  addressId: 1664081,
-  invioceId: -1,
-  express: 14,
-  shopId: 233330186001,
-  sessid: 'nc1-01W8fUo7tiNBKrkhR8ACXXKbdnxDeVVlbASTZupdH1aTwWbZYFxVZpkNbGasyheko0-nc2-0561M3bob-R8gv1KNXk15v5Zpzwr5-aA0d72EwzdOiQ4xyfgbNJh38I0NiL8RWRzP0jsvz6xDPdsc1ljKa-0VhNaHFRnMag1nmyRIva_9AYznPg08vIm1PdR1MweQHUj1t6YwLBXaxmIci5uutEeL13O-beMXBRii469rXcG98onyNc9i3UvJJIK5TUR3SatsEhWg8jvlrgqahRR98xYYo52fKX5x2FbYIVW1851cGzv-0fnBgswFlhD7erBoBcotMeNVuDqoDfwQiG9gEdrEsmtoU1tmCuQ7gQ1UZzDp9ONxSGYQ8dIgJJjigUtXuBLOTb-JQTVCzZWHCGfHFlzw0AlsAxQHojeOF39MSL4bxBD7TI_SCRbrAekhe_ClrgUkrdm1C2UA3GzSaIT-2U3Dcj3I_Qn9MtCcFZ-OwWJny4fc-nc3-01TzB8fzgmvi9w1w4Zzf-Aokg_Rgypq4_C1m3XVouzVeClf5J0xVtIPTZR_gqE1Q5uCho7bioCKpITgUSOktPHlkLrRLWjoBF-3zKJI1k9VVOqdxjkB3iFVFv0N8IigAoPdXEJxKKKUu7F2-cvvWc-lg-nc4-FFFFA0000000016A858A',
-  remark: '',
-  timestamp121: 1522737224376 }
-[2018-04-03T14:33:45.399] [INFO] things - [32m下单完成"{\"state\":true,\"code\":1045,\"msg\":\"购买用户效验失败\"}"[39m
-[2018-04-03T14:33:47.395] [INFO] things - start get addressID from mobile: 15084425825
-[2018-04-03T14:33:48.966] [INFO] things - create order params { '0': '15084425825',
-  '1': '391',
-  '2': 6,
-  '3': 'Mozilla/5.0 (Linux; Android 4.4.4; LA2-SN Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36[android/1.0.23/c059836905345354b3dc80ebc8b2506a/3b4f3a29cd25f578922b9659d4fd03c0]',
-  '4': 1664081,
-  '5': 233330186001 }
-[2018-04-03T14:33:52.037] [INFO] things - token成功获取到 nc1-01W8fUo7tiNBKrkhR8ACXXKfZdb6pf8vNxBi2Rp8hpnOC4nBiyuM5BmVsggFBIrPXO-nc2-0561M3bob-R8gv1KNXk15v5Zpzwr5-aA0d72EwzdOiQ4yXvGU04qOCRRffdJUDTppTC-KRKWs271c7b8IgWbXid_ALdUN5zasRdDzBs1wVhTrCY85i5RNFnwcfxREsBuZB6YwLBXaxmIci5uutEeL13PclBXxJN1URFYQ8Y9V1O1i2izUlFj-vdhqiYEW0XIShT8nLlM5GBT5awJECh0JSEmbfNtuTUIE_qKi9eMVOUwquVVF6Bl_Vj3qN780uos1H3F8CivySyebr8Tueo5BoxdoU1tmCuQ7gQ1UZzDp9ONxSGYQ8dIgJJjigUtXuBLOTGAB24Kn2DdfJzRaD105zYFsAxQHojeOF39MSL4bxBD5-K3O8ZmKV6j1oGPGBDW8oweQwLr3cNKZM3VLigUYtkp8SU0KaFKL23Bl3s9KXsKg-nc3-01TzB8fzgmvi9w1w4Zzf-AombeDUQgbaIh3KoE3elpWCSJAqClUrdhLteSR8EFL5h61OnWfefz8hmDXNEKtcHuMLKTp5iZnRdGKXafQ035lGeqdxjkB3iFVFv0N8IigAoPdXEJxKKKUu7F2-cvvWc-lg-nc4-FFFFA0000000016A858A
-[2018-04-03T14:33:52.037] [INFO] things - { productId: '391',
-  quantity: 6,
-  couponsId: 'b1b99dd3e5664458afa839e3e7c52724',
-  addressId: 1664081,
-  invioceId: -1,
-  express: 14,
-  shopId: 233330186001,
-  sessid: 'nc1-01W8fUo7tiNBKrkhR8ACXXKfZdb6pf8vNxBi2Rp8hpnOC4nBiyuM5BmVsggFBIrPXO-nc2-0561M3bob-R8gv1KNXk15v5Zpzwr5-aA0d72EwzdOiQ4yXvGU04qOCRRffdJUDTppTC-KRKWs271c7b8IgWbXid_ALdUN5zasRdDzBs1wVhTrCY85i5RNFnwcfxREsBuZB6YwLBXaxmIci5uutEeL13PclBXxJN1URFYQ8Y9V1O1i2izUlFj-vdhqiYEW0XIShT8nLlM5GBT5awJECh0JSEmbfNtuTUIE_qKi9eMVOUwquVVF6Bl_Vj3qN780uos1H3F8CivySyebr8Tueo5BoxdoU1tmCuQ7gQ1UZzDp9ONxSGYQ8dIgJJjigUtXuBLOTGAB24Kn2DdfJzRaD105zYFsAxQHojeOF39MSL4bxBD5-K3O8ZmKV6j1oGPGBDW8oweQwLr3cNKZM3VLigUYtkp8SU0KaFKL23Bl3s9KXsKg-nc3-01TzB8fzgmvi9w1w4Zzf-AombeDUQgbaIh3KoE3elpWCSJAqClUrdhLteSR8EFL5h61OnWfefz8hmDXNEKtcHuMLKTp5iZnRdGKXafQ035lGeqdxjkB3iFVFv0N8IigAoPdXEJxKKKUu7F2-cvvWc-lg-nc4-FFFFA0000000016A858A',
-  remark: '',
-  timestamp121: 1522737232037 }
-[2018-04-03T14:33:53.178] [INFO] things - [32m下单完成"{\"state\":true,\"code\":1045,\"msg\":\"购买用户效验失败\"}"[39m
-[2018-04-03T14:33:55.080] [INFO] things - start get addressID from mobile: 15084425825
-[2018-04-03T14:33:56.312] [INFO] things - create order params { '0': '15084425825',
-  '1': '391',
-  '2': 6,
-  '3': 'Mozilla/5.0 (Linux; Android 4.4.4; LA2-SN Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36[android/1.0.23/c059836905345354b3dc80ebc8b2506a/3b4f3a29cd25f578922b9659d4fd03c0]',
-  '4': 1664081,
-  '5': 233330186001 }
-[2018-04-03T14:33:59.449] [INFO] things - token成功获取到 nc1-01W8fUo7tiNBKrkhR8ACXXKaeNf-X464tTzlvPfafA8aPFUi7zkorq11H0bmeykjI9-nc2-0561M3bob-R8gv1KNXk15v5Zpzwr5-aA0d72EwzdOiQ4yF_oZXhNR3wj9Ui770CX4el2NicMeVCSjEdb06y-q6mWuM_NapzjtAhvWEGrB7kvAObkyqwh3vGqw-IxbwRyca6YwLBXaxmIci5uutEeL13NOgOXD5MlEv6j2rllD14Q8178m-AQZRSNM7bqZ8dBbrokT8Zfmvz37O5rrVoUO1JhBKM_a_9dDsvR9LK8D04a81qQDBv2Fquku_Oyn3XkIdxm8_gu5u_DYP0Nf7DCAdAtoU1tmCuQ7gQ1UZzDp9ONxSGYQ8dIgJJjigUtXuBLOTngtYiEPH2KH9r_T5ancurVsAxQHojeOF39MSL4bxBD6vTFn4O2b0veNXtWmefoywVRIM5BW5xiuDEc7f5b8zoBTcSptCeBZYK4PwmnlBa0w-nc3-01TzB8fzgmvi9w1w4Zzf-AokkLREqgaYgHxPUaAmH7iBVUSS1N4vEvkb6CbT2jDk4zKQbTpEldWAmbAxnG9XxjAgfgX3nZaWGILRZ8UflEz5GqdxjkB3iFVFv0N8IigAoPdXEJxKKKUu7F2-cvvWc-lg-nc4-FFFFA0000000016A858A
-[2018-04-03T14:33:59.451] [INFO] things - { productId: '391',
-  quantity: 6,
-  couponsId: 'b1b99dd3e5664458afa839e3e7c52724',
-  addressId: 1664081,
-  invioceId: -1,
-  express: 14,
-  shopId: 233330186001,
-  sessid: 'nc1-01W8fUo7tiNBKrkhR8ACXXKaeNf-X464tTzlvPfafA8aPFUi7zkorq11H0bmeykjI9-nc2-0561M3bob-R8gv1KNXk15v5Zpzwr5-aA0d72EwzdOiQ4yF_oZXhNR3wj9Ui770CX4el2NicMeVCSjEdb06y-q6mWuM_NapzjtAhvWEGrB7kvAObkyqwh3vGqw-IxbwRyca6YwLBXaxmIci5uutEeL13NOgOXD5MlEv6j2rllD14Q8178m-AQZRSNM7bqZ8dBbrokT8Zfmvz37O5rrVoUO1JhBKM_a_9dDsvR9LK8D04a81qQDBv2Fquku_Oyn3XkIdxm8_gu5u_DYP0Nf7DCAdAtoU1tmCuQ7gQ1UZzDp9ONxSGYQ8dIgJJjigUtXuBLOTngtYiEPH2KH9r_T5ancurVsAxQHojeOF39MSL4bxBD6vTFn4O2b0veNXtWmefoywVRIM5BW5xiuDEc7f5b8zoBTcSptCeBZYK4PwmnlBa0w-nc3-01TzB8fzgmvi9w1w4Zzf-AokkLREqgaYgHxPUaAmH7iBVUSS1N4vEvkb6CbT2jDk4zKQbTpEldWAmbAxnG9XxjAgfgX3nZaWGILRZ8UflEz5GqdxjkB3iFVFv0N8IigAoPdXEJxKKKUu7F2-cvvWc-lg-nc4-FFFFA0000000016A858A',
-  remark: '',
-  timestamp121: 1522737239451 }
-[2018-04-03T14:34:00.387] [INFO] things - [32m下单完成"{\"state\":true,\"code\":1045,\"msg\":\"购买用户效验失败\"}"[39m
-[2018-04-03T14:34:04.077] [INFO] things - start get addressID from mobile: 17783920137
-[2018-04-03T14:34:04.849] [INFO] things - create order params { '0': '17783920137',
-  '1': '391',
-  '2': 6,
-  '3': 'Mozilla/5.0 (Linux; Android 4.4.4; LA2-SN Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36[android/1.0.23/20af1a343953c3353f72a76156ac7b77/de40afb8f42e3d6813f513cdc3ef74c8]',
-  '4': 1965982,
-  '5': 233330186001 }
-[2018-04-03T14:34:07.953] [INFO] things - token成功获取到 nc1-01W8fUo7tiNBKrkhR8ACXXKdEiupfxrQ0BhfFy9UFD0E6BaVwHDjj6gdBRmz4ZcEzd-nc2-0561M3bob-R8gv1KNXk15v5Zpzwr5-aA0d72EwzdOiQ4xAOXU60w_GnfscLGZfn6B14XIYP9SOl3nUJWqfhcnn7qvE6E6TmqGu8blf-7UK6NGxL3P1kYqapnjKHdHKzhPz6YwLBXaxmIci5uutEeL13KL2s2X7Qs7c1s5WYfzmXq0XjUZ--8fnxlLRshCJIiLYGI_HpYx-oziAw_YuG4ML0xEaIHp1qlvZvwPFtc3RbtQOPLJZJ3zL4HqRvVPfPgDExb0bFGEd9lvjjGtKG2MfhNoU1tmCuQ7gQ1UZzDp9ONxSGYQ8dIgJJjigUtXuBLOTcANrSZbk_kcdcpWNNsmfMVsAxQHojeOF39MSL4bxBD5QHVTpiHcDIS0EW3XCG8LvolbXl9shoI7vHbvEJcD6Cp8SU0KaFKL23Bl3s9KXsKg-nc3-01TzB8fzgmvi9w1w4Zzf-Aom8w1R9W_KD0DxBYwB94z6P34hQscCyzV7Ll_AQ0b6aHKbUZM4Q3SttCfFcY0vDl4OqBq0o4IrwGK8zFBMqVAMmqdxjkB3iFVFv0N8IigAoPdXEJxKKKUu7F2-cvvWc-lg-nc4-FFFFA0000000016A858A
-[2018-04-03T14:34:07.960] [INFO] things - { productId: '391',
-  quantity: 6,
-  couponsId: 'b1b99dd3e5664458afa839e3e7c52724',
-  addressId: 1965982,
-  invioceId: -1,
-  express: 14,
-  shopId: 233330186001,
-  sessid: 'nc1-01W8fUo7tiNBKrkhR8ACXXKdEiupfxrQ0BhfFy9UFD0E6BaVwHDjj6gdBRmz4ZcEzd-nc2-0561M3bob-R8gv1KNXk15v5Zpzwr5-aA0d72EwzdOiQ4xAOXU60w_GnfscLGZfn6B14XIYP9SOl3nUJWqfhcnn7qvE6E6TmqGu8blf-7UK6NGxL3P1kYqapnjKHdHKzhPz6YwLBXaxmIci5uutEeL13KL2s2X7Qs7c1s5WYfzmXq0XjUZ--8fnxlLRshCJIiLYGI_HpYx-oziAw_YuG4ML0xEaIHp1qlvZvwPFtc3RbtQOPLJZJ3zL4HqRvVPfPgDExb0bFGEd9lvjjGtKG2MfhNoU1tmCuQ7gQ1UZzDp9ONxSGYQ8dIgJJjigUtXuBLOTcANrSZbk_kcdcpWNNsmfMVsAxQHojeOF39MSL4bxBD5QHVTpiHcDIS0EW3XCG8LvolbXl9shoI7vHbvEJcD6Cp8SU0KaFKL23Bl3s9KXsKg-nc3-01TzB8fzgmvi9w1w4Zzf-Aom8w1R9W_KD0DxBYwB94z6P34hQscCyzV7Ll_AQ0b6aHKbUZM4Q3SttCfFcY0vDl4OqBq0o4IrwGK8zFBMqVAMmqdxjkB3iFVFv0N8IigAoPdXEJxKKKUu7F2-cvvWc-lg-nc4-FFFFA0000000016A858A',
-  remark: '',
-  timestamp121: 1522737247960 }
-[2018-04-03T14:34:08.652] [INFO] things - [32m下单完成"{\"state\":true,\"code\":1045,\"msg\":\"购买用户效验失败\"}"[39m
-[2018-04-03T14:34:10.961] [INFO] things - start get addressID from mobile: 17753583852
-[2018-04-03T14:34:11.967] [INFO] things - create order params { '0': '17753583852',
-  '1': '391',
-  '2': 6,
-  '3': 'Mozilla/5.0 (Linux; Android 4.4.4; LA2-SN Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36[android/1.0.23/54db24d85fef75931e7e226ae2b400e5/b38e7fe3b4ebcb8d758c2fe265d7483a]',
-  '4': 1970650,
-  '5': 233330186001 }
-[2018-04-03T14:34:15.104] [INFO] things - token成功获取到 nc1-01W8fUo7tiNBKrkhR8ACXXKc0LEKgQoJjGntglTU0E2NE31RpvA875XVoB-Dnw2L1hm-sTtpWZiubQ2qcBTOIznQ-nc2-0561M3bob-R8gv1KNXk15v5bkS76NYlEyqbuKhC0ArCxdwYr2l0LihFILUZXQPPHe0T-ftCJ1DS2FTzSZ-XzxEqB4lLQgud8XOHkege_me0gDkblKGfRNOcen58Bx6rS-Gse8HH7Rt6xf8uI2S7O9yw3bau4a0Zxm6bGQk-zLc0VYwKOnUG5ZbynFsD3bV__Fe-oxUIunoi-m3fS8V6Iqfzf3_lpiBOX3nmg5psSQgmUMhv4Bzb13dXspFYdMeA1Uka2n2UHxjnMYNVMHjRVBY1ADtDlZHPtZnWJwPqMP9yCZcD4nhYbPXGVc9TtGCrJ3kE5QK2xlnEUsfRWkdKakFwWA2D5lvaLcQNTJoFSAcnCPK5uYQEqmzuOWLJDNObZvl3Du6EIVaK94CxvlyuIOTTSAzr5B7kf9O-9Ezz5iBlCW8w7UO_jvMyHXwO7V4I-jOcy-HtQy0bC2fV-d4uxi7rw-nc3-01YGjVYP56xB8j7o4jZfyVf73Ob7BiCz0f2PRl8ez9rEkF7Jz6iykB9IgoS_TcY2-XLfY6f3D7pCvvJCS-JM52tH8QwEo9ZHr9gTuG1PGaNrMnc8t8f3NNw-er5q0nzKH8MMZ987Yl-MRjNiTyO13Nl9aQEVn7ikm7TMTYnShy4sQ-nc4-FFFFA0000000016A858A
-[2018-04-03T14:34:15.105] [INFO] things - { productId: '391',
-  quantity: 6,
-  couponsId: 'b1b99dd3e5664458afa839e3e7c52724',
-  addressId: 1970650,
-  invioceId: -1,
-  express: 14,
-  shopId: 233330186001,
-  sessid: 'nc1-01W8fUo7tiNBKrkhR8ACXXKc0LEKgQoJjGntglTU0E2NE31RpvA875XVoB-Dnw2L1hm-sTtpWZiubQ2qcBTOIznQ-nc2-0561M3bob-R8gv1KNXk15v5bkS76NYlEyqbuKhC0ArCxdwYr2l0LihFILUZXQPPHe0T-ftCJ1DS2FTzSZ-XzxEqB4lLQgud8XOHkege_me0gDkblKGfRNOcen58Bx6rS-Gse8HH7Rt6xf8uI2S7O9yw3bau4a0Zxm6bGQk-zLc0VYwKOnUG5ZbynFsD3bV__Fe-oxUIunoi-m3fS8V6Iqfzf3_lpiBOX3nmg5psSQgmUMhv4Bzb13dXspFYdMeA1Uka2n2UHxjnMYNVMHjRVBY1ADtDlZHPtZnWJwPqMP9yCZcD4nhYbPXGVc9TtGCrJ3kE5QK2xlnEUsfRWkdKakFwWA2D5lvaLcQNTJoFSAcnCPK5uYQEqmzuOWLJDNObZvl3Du6EIVaK94CxvlyuIOTTSAzr5B7kf9O-9Ezz5iBlCW8w7UO_jvMyHXwO7V4I-jOcy-HtQy0bC2fV-d4uxi7rw-nc3-01YGjVYP56xB8j7o4jZfyVf73Ob7BiCz0f2PRl8ez9rEkF7Jz6iykB9IgoS_TcY2-XLfY6f3D7pCvvJCS-JM52tH8QwEo9ZHr9gTuG1PGaNrMnc8t8f3NNw-er5q0nzKH8MMZ987Yl-MRjNiTyO13Nl9aQEVn7ikm7TMTYnShy4sQ-nc4-FFFFA0000000016A858A',
-  remark: '',
-  timestamp121: 1522737255105 }
-[2018-04-03T14:34:15.932] [INFO] things - [32m下单完成"{\"state\":true,\"code\":1045,\"msg\":\"购买用户效验失败\"}"[39m
-[2018-04-03T14:34:20.847] [INFO] things - start get addressID from mobile: 18236877936
-[2018-04-03T14:34:21.572] [INFO] things - create order params { '0': '18236877936',
-  '1': '391',
-  '2': 6,
-  '3': 'Mozilla/5.0 (Linux; Android 4.4.4; LA2-SN Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36[android/1.0.23/6b2649358d2116cd26defd51a6dfa216/d733ce65e959a7c7dc1e6d52cfb3e028]',
-  '4': 1965909,
-  '5': 233330186001 }
-[2018-04-03T14:34:24.831] [INFO] things - token成功获取到 nc1-01W8fUo7tiNBKrkhR8ACXXKauSRb5w7KE1cNfICPJRu-oIa5UnLlITrcBvUz2FnXjv-nc2-0561M3bob-R8gv1KNXk15v5Zpzwr5-aA0d72EwzdOiQ4yF_oZXhNR3wj9Ui770CX4e3gApesE17ixO6oES6xo55tfx4WxOONC0-wCcGClvU0qTW47q_TgNkMhPp9d-ZR9y6YwLBXaxmIci5uutEeL13M88X_lU6rZ3Sim0Ie5Z3eHXx6AcB0jqe_8RwFwLq8wxa6EEsplLGa7d6lm5Fkt6w0cFqsdTndEBuvZpQv2-DdwmiC2J1l73JzAfABY6zpUUrjeT98BNrsUljepHGGf_jNoU1tmCuQ7gQ1UZzDp9ONxSGYQ8dIgJJjigUtXuBLOTDYG1RPSR6Qq0CSxCSx8nElsAxQHojeOF39MSL4bxBD5Y3nDo2SXmqePIh9FFr1zv4UzaZictnY6ryBF_tjZpdBTcSptCeBZYK4PwmnlBa0w-nc3-01TzB8fzgmvi9w1w4Zzf-Aos2BJzhMMpTwlvHpbFvBZXa6b9g8YB3F-z1C6O5NaZI4IhtOxoMo77af4GDX-vN2RTCxQHVgzzSbn9DaRcDPnnaqdxjkB3iFVFv0N8IigAoPdXEJxKKKUu7F2-cvvWc-lg-nc4-FFFFA0000000016A858A
-[2018-04-03T14:34:24.835] [INFO] things - { productId: '391',
-  quantity: 6,
-  couponsId: 'b1b99dd3e5664458afa839e3e7c52724',
-  addressId: 1965909,
-  invioceId: -1,
-  express: 14,
-  shopId: 233330186001,
-  sessid: 'nc1-01W8fUo7tiNBKrkhR8ACXXKauSRb5w7KE1cNfICPJRu-oIa5UnLlITrcBvUz2FnXjv-nc2-0561M3bob-R8gv1KNXk15v5Zpzwr5-aA0d72EwzdOiQ4yF_oZXhNR3wj9Ui770CX4e3gApesE17ixO6oES6xo55tfx4WxOONC0-wCcGClvU0qTW47q_TgNkMhPp9d-ZR9y6YwLBXaxmIci5uutEeL13M88X_lU6rZ3Sim0Ie5Z3eHXx6AcB0jqe_8RwFwLq8wxa6EEsplLGa7d6lm5Fkt6w0cFqsdTndEBuvZpQv2-DdwmiC2J1l73JzAfABY6zpUUrjeT98BNrsUljepHGGf_jNoU1tmCuQ7gQ1UZzDp9ONxSGYQ8dIgJJjigUtXuBLOTDYG1RPSR6Qq0CSxCSx8nElsAxQHojeOF39MSL4bxBD5Y3nDo2SXmqePIh9FFr1zv4UzaZictnY6ryBF_tjZpdBTcSptCeBZYK4PwmnlBa0w-nc3-01TzB8fzgmvi9w1w4Zzf-Aos2BJzhMMpTwlvHpbFvBZXa6b9g8YB3F-z1C6O5NaZI4IhtOxoMo77af4GDX-vN2RTCxQHVgzzSbn9DaRcDPnnaqdxjkB3iFVFv0N8IigAoPdXEJxKKKUu7F2-cvvWc-lg-nc4-FFFFA0000000016A858A',
-  remark: '',
-  timestamp121: 1522737264834 }
-[2018-04-03T14:34:25.669] [INFO] things - [32m下单完成"{\"state\":true,\"code\":1045,\"msg\":\"购买用户效验失败\"}"[39m
-[2018-04-03T14:34:27.487] [INFO] things - start get addressID from mobile: 15084425825
-[2018-04-03T14:34:28.148] [INFO] things - create order params { '0': '15084425825',
-  '1': '391',
-  '2': 6,
-  '3': 'Mozilla/5.0 (Linux; Android 4.4.4; LA2-SN Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36[android/1.0.23/c059836905345354b3dc80ebc8b2506a/3b4f3a29cd25f578922b9659d4fd03c0]',
-  '4': 1664081,
-  '5': 233330186001 }
-[2018-04-03T14:34:31.266] [INFO] things - token成功获取到 nc1-01W8fUo7tiNBKrkhR8ACXXKVgxUeI2_fIytluX184Mra5Lqg-Erpd7reJnRyz-JAhb-nc2-0561M3bob-R8gv1KNXk15v5Zpzwr5-aA0d72EwzdOiQ4zSEVe8dEJBce9ghPJHPJ068NlJR8SzNRwo1C3Hrz-JWeDhi8lYsm0qMDfaLqaNevuVYV-60FHKjCgxdKbEWABP6YwLBXaxmIci5uutEeL13A_sfyFk4nimRi0kbJiHxTop-DJjN7Hk6hVKTvaGMZO9iXS7xWgXYYgW35XFVVTuHCyJg9CM-PNLofr_2QN6ltkvQ2ssNfake9PwLAFUZl9dn4VFG5UEY2mf-4FXWO1EA9oU1tmCuQ7gQ1UZzDp9ONxSGYQ8dIgJJjigUtXuBLOTy8HI3O8MncZpMDdbI-eBVVsAxQHojeOF39MSL4bxBD5XmVMdE3pifu3ed-0k7lSb9Yes_c1oBReyXqPRXTWgvZ8SU0KaFKL23Bl3s9KXsKg-nc3-01TzB8fzgmvi9w1w4Zzf-AohsLUh0iUjgtmb6LlPVa0_1zJ5OAioJ_5yR8br39Kof8J_SF5xAFmynKlxR7n8af4F9_82m8mPWGvtQlPrTFbKqqdxjkB3iFVFv0N8IigAoPdXEJxKKKUu7F2-cvvWc-lg-nc4-FFFFA0000000016A858A
-[2018-04-03T14:34:31.267] [INFO] things - { productId: '391',
-  quantity: 6,
-  couponsId: 'b1b99dd3e5664458afa839e3e7c52724',
-  addressId: 1664081,
-  invioceId: -1,
-  express: 14,
-  shopId: 233330186001,
-  sessid: 'nc1-01W8fUo7tiNBKrkhR8ACXXKVgxUeI2_fIytluX184Mra5Lqg-Erpd7reJnRyz-JAhb-nc2-0561M3bob-R8gv1KNXk15v5Zpzwr5-aA0d72EwzdOiQ4zSEVe8dEJBce9ghPJHPJ068NlJR8SzNRwo1C3Hrz-JWeDhi8lYsm0qMDfaLqaNevuVYV-60FHKjCgxdKbEWABP6YwLBXaxmIci5uutEeL13A_sfyFk4nimRi0kbJiHxTop-DJjN7Hk6hVKTvaGMZO9iXS7xWgXYYgW35XFVVTuHCyJg9CM-PNLofr_2QN6ltkvQ2ssNfake9PwLAFUZl9dn4VFG5UEY2mf-4FXWO1EA9oU1tmCuQ7gQ1UZzDp9ONxSGYQ8dIgJJjigUtXuBLOTy8HI3O8MncZpMDdbI-eBVVsAxQHojeOF39MSL4bxBD5XmVMdE3pifu3ed-0k7lSb9Yes_c1oBReyXqPRXTWgvZ8SU0KaFKL23Bl3s9KXsKg-nc3-01TzB8fzgmvi9w1w4Zzf-AohsLUh0iUjgtmb6LlPVa0_1zJ5OAioJ_5yR8br39Kof8J_SF5xAFmynKlxR7n8af4F9_82m8mPWGvtQlPrTFbKqqdxjkB3iFVFv0N8IigAoPdXEJxKKKUu7F2-cvvWc-lg-nc4-FFFFA0000000016A858A',
-  remark: '',
-  timestamp121: 1522737271267 }
-[2018-04-03T14:34:32.419] [INFO] things - [32m下单完成"{\"state\":true,\"code\":1045,\"msg\":\"购买用户效验失败\"}"[39m
-[2018-04-03T14:34:34.187] [INFO] things - start get addressID from mobile: 13786958413
-[2018-04-03T14:34:34.934] [INFO] things - create order params { '0': '13786958413',
-  '1': '391',
-  '2': 6,
-  '3': 'Mozilla/5.0 (Linux; Android 4.4.4; LA2-SN Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36[android/1.0.23/c7f7a889904652e76586a9e479154037/fae2606ee2a50af580f23debfbf67e2b]',
-  '4': 1970381,
-  '5': 233330186001 }
-[2018-04-03T14:34:38.008] [INFO] things - token成功获取到 nc1-01W8fUo7tiNBKrkhR8ACXXKZMzbhPF734d1QP604BN6ltTSwD3bh1lZVOSiMdYeSZr-nc2-0561M3bob-R8gv1KNXk15v5Zpzwr5-aA0d72EwzdOiQ4zaoLbsAh-Jru_9FifR4E4LAm4jaolBE1OgLM4EOk26pj-h12hc44gCTZUo7E40lAdqHxKYuvx4DvNldYqufFpm6YwLBXaxmIci5uutEeL13D3_U_SQD63DJ1cvhcItbpIOVXWUQGOyIFlBNJope3GOrSv8DsrAdAvzwT4C18x5exPSONrdYc8ztQknifwk_8U81ZkgLxVL5t1RXU003g0dAmNsBxhr7rtI5n84SURUR9oU1tmCuQ7gQ1UZzDp9ONxSGYQ8dIgJJjigUtXuBLOTwT7jLHAc-ySIttSSiNvj71sAxQHojeOF39MSL4bxBD5jzZXIfBv53LCe6pBIrDqM2x5dp2ho4DjaA9WFuQVVWJPNThqCjJRtnSiGzmuQNUY-nc3-01TzB8fzgmvi9w1w4Zzf-AogSra8LpACq3EDZ9ViZefnbMwACU3vPqoawxn_zdkVXggOeZ8ARC7rjaSkAyMt01b7XErvno3qAmbAwTtwQ6a2KqdxjkB3iFVFv0N8IigAoPdXEJxKKKUu7F2-cvvWc-lg-nc4-FFFFA0000000016A858A
-[2018-04-03T14:34:38.010] [INFO] things - { productId: '391',
-  quantity: 6,
-  couponsId: 'b1b99dd3e5664458afa839e3e7c52724',
-  addressId: 1970381,
-  invioceId: -1,
-  express: 14,
-  shopId: 233330186001,
-  sessid: 'nc1-01W8fUo7tiNBKrkhR8ACXXKZMzbhPF734d1QP604BN6ltTSwD3bh1lZVOSiMdYeSZr-nc2-0561M3bob-R8gv1KNXk15v5Zpzwr5-aA0d72EwzdOiQ4zaoLbsAh-Jru_9FifR4E4LAm4jaolBE1OgLM4EOk26pj-h12hc44gCTZUo7E40lAdqHxKYuvx4DvNldYqufFpm6YwLBXaxmIci5uutEeL13D3_U_SQD63DJ1cvhcItbpIOVXWUQGOyIFlBNJope3GOrSv8DsrAdAvzwT4C18x5exPSONrdYc8ztQknifwk_8U81ZkgLxVL5t1RXU003g0dAmNsBxhr7rtI5n84SURUR9oU1tmCuQ7gQ1UZzDp9ONxSGYQ8dIgJJjigUtXuBLOTwT7jLHAc-ySIttSSiNvj71sAxQHojeOF39MSL4bxBD5jzZXIfBv53LCe6pBIrDqM2x5dp2ho4DjaA9WFuQVVWJPNThqCjJRtnSiGzmuQNUY-nc3-01TzB8fzgmvi9w1w4Zzf-AogSra8LpACq3EDZ9ViZefnbMwACU3vPqoawxn_zdkVXggOeZ8ARC7rjaSkAyMt01b7XErvno3qAmbAwTtwQ6a2KqdxjkB3iFVFv0N8IigAoPdXEJxKKKUu7F2-cvvWc-lg-nc4-FFFFA0000000016A858A',
-  remark: '',
-  timestamp121: 1522737278010 }
-[2018-04-03T14:34:39.131] [INFO] things - [32m下单完成"{\"state\":true,\"code\":1045,\"msg\":\"购买用户效验失败\"}"[39m
-[2018-04-03T14:34:40.974] [INFO] things - start get addressID from mobile: 13786958413
-[2018-04-03T14:34:41.692] [INFO] things - create order params { '0': '13786958413',
-  '1': '391',
-  '2': 6,
-  '3': 'Mozilla/5.0 (Linux; Android 4.4.4; LA2-SN Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36[android/1.0.23/c7f7a889904652e76586a9e479154037/fae2606ee2a50af580f23debfbf67e2b]',
-  '4': 1970381,
-  '5': 233330186001 }
-[2018-04-03T14:34:44.816] [INFO] things - token成功获取到 nc1-01W8fUo7tiNBKrkhR8ACXXKZuXnAmMBub6RCxC48Q0-B0ivqnzjcxo8nyFFaFHpfqD-nc2-0561M3bob-R8gv1KNXk15v5Zpzwr5-aA0d72EwzdOiQ4zaoLbsAh-Jru_9FifR4E4LQGEJgRPPMViqRbt7XZT3CE03JmKCUe7fYWd7yMoMRpjGpr8zoD618aMBAM3ak0ym6YwLBXaxmIci5uutEeL13HvDYPl_heSkbJVIAsPqd29I4y5vXYJ4lW3bP0cSk4Bgwnj8lVyLZ5WddrZQd2bXBbkAq-5H6-xaPGhhSQwDCXBeZtU16Ib8NZj51DR0oazL6edFE4cFF6cRnbSDHNVeZtoU1tmCuQ7gQ1UZzDp9ONxSGYQ8dIgJJjigUtXuBLOTgoRaWZjlZ1jPP-QyJvzQAFsAxQHojeOF39MSL4bxBD5UsO2HEgIdrjvwFc5oIZKDgYQpQBiQcb6aRpN8brD5CHbbuz7oHgLmSPs0qTpNYjQ-nc3-01TzB8fzgmvi9w1w4Zzf-AojdXFImcWTPqcVwr8JQgdKKwbl-zWCEGgBQrofKayyrr8vkcQz6m3ix926UYXfXpQaaWHGXHrARInjc6doaqnMiqdxjkB3iFVFv0N8IigAoPdXEJxKKKUu7F2-cvvWc-lg-nc4-FFFFA0000000016A858A
-[2018-04-03T14:34:44.818] [INFO] things - { productId: '391',
-  quantity: 6,
-  couponsId: 'b1b99dd3e5664458afa839e3e7c52724',
-  addressId: 1970381,
-  invioceId: -1,
-  express: 14,
-  shopId: 233330186001,
-  sessid: 'nc1-01W8fUo7tiNBKrkhR8ACXXKZuXnAmMBub6RCxC48Q0-B0ivqnzjcxo8nyFFaFHpfqD-nc2-0561M3bob-R8gv1KNXk15v5Zpzwr5-aA0d72EwzdOiQ4zaoLbsAh-Jru_9FifR4E4LQGEJgRPPMViqRbt7XZT3CE03JmKCUe7fYWd7yMoMRpjGpr8zoD618aMBAM3ak0ym6YwLBXaxmIci5uutEeL13HvDYPl_heSkbJVIAsPqd29I4y5vXYJ4lW3bP0cSk4Bgwnj8lVyLZ5WddrZQd2bXBbkAq-5H6-xaPGhhSQwDCXBeZtU16Ib8NZj51DR0oazL6edFE4cFF6cRnbSDHNVeZtoU1tmCuQ7gQ1UZzDp9ONxSGYQ8dIgJJjigUtXuBLOTgoRaWZjlZ1jPP-QyJvzQAFsAxQHojeOF39MSL4bxBD5UsO2HEgIdrjvwFc5oIZKDgYQpQBiQcb6aRpN8brD5CHbbuz7oHgLmSPs0qTpNYjQ-nc3-01TzB8fzgmvi9w1w4Zzf-AojdXFImcWTPqcVwr8JQgdKKwbl-zWCEGgBQrofKayyrr8vkcQz6m3ix926UYXfXpQaaWHGXHrARInjc6doaqnMiqdxjkB3iFVFv0N8IigAoPdXEJxKKKUu7F2-cvvWc-lg-nc4-FFFFA0000000016A858A',
-  remark: '',
-  timestamp121: 1522737284817 }
-[2018-04-03T14:34:45.598] [INFO] things - [32m下单完成"{\"state\":true,\"code\":1045,\"msg\":\"购买用户效验失败\"}"[39m
-[2018-04-03T14:34:47.924] [INFO] things - start get addressID from mobile: 15178421370
-[2018-04-03T14:34:48.535] [INFO] things - create order params { '0': '15178421370',
-  '1': '391',
-  '2': 6,
-  '3': 'Mozilla/5.0 (Linux; Android 4.4.4; LA2-SN Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36[android/1.0.23/b656f32eda5819e9e948769da63ac1a1/bab5e598ca8bf373b131462d7598398f]',
-  '4': 1978318,
-  '5': 233330186001 }
+  timestamp121: 1522744893850 }
+[2018-04-03T16:41:38.764] [INFO] things - [32m下单完成"{\"state\":true,\"code\":202,\"data\":{\"IsNeedReservation\":true,\"IsIntercept\":false,\"ProductID\":391,\"CanUseCredence\":false,\"Certificate\":{\"ID\":\"2725385\",\"UID\":2072242,\"PID\":\"391\",\"Status\":3,\"Address\":{\"ID\":1970634,\"IsDefault\":true,\"IsPushAddreess\":true,\"Name\":\"张瑞敏\",\"TelPhone\":\"15213163729\",\"Zipcode\":\"000000\",\"ProvCode\":\"330000\",\"CityCode\":\"330100\",\"AreaCode\":\"330102\",\"Remark\":\"\",\"IsVerification\":false,\"AddressDetails\":\"浙江省杭州市上城区,杭州市上城区市场和质量监督管理局,对面延安西路园卡佳苑小区2单元一楼服务中心收\",\"Longitude\":120.165228,\"Latitude\":30.241706,\"Address\":\"杭州市上城区市场和质量监督管理局,对面延安西路园卡佳苑小区2单元一楼服务中心收\",\"AddressText\":\"浙江省杭州市上城区\"},\"Product\":{\"Pid\":391,\"PCode\":\"23\",\"PName\":\"贵州茅台酒 (新飞天) 53%vol 500ml\",\"CoverImage\":\"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg\"},\"FailureTime\":\"2018-04-08 00:00:00\"},\"EnterTimeSlot\":{\"Start\":\"2018-04-03 00:00:00\",\"End\":\"2018-04-03 23:59:59\",\"InTime\":true},\"BuyTimeSlot\":{\"Start\":\"2018-04-04 10:00:00\",\"End\":\"2018-04-04 16:00:00\",\"InTime\":false}}}"[39m
+[2018-04-03T16:41:38.765] [INFO] things - 下单时间12237ms

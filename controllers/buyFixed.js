@@ -19,7 +19,7 @@ let checkInterval = 1*1000;
 // 上海购买
 // 地址信息
 let pid = '391';
-let quantity = 5;
+let quantity = 6;
 // 13618484713+zxcvbnm
 // 17753583852+123456
 // 15213163729+123456
@@ -100,15 +100,19 @@ function watchQuanity(number) {
     return;
   }
   proxy.switchIp().then(() => {
+    let _startTime = +new Date();
     MaotaiService.login(tel, pass, userAgent)
         .then(data => {
+            console.log('login data', JSON.stringify(data));
             return MaotaiService.getAddressId(tel)
         })
         .then(address => {
           scopeAddress = address;
           return MaotaiService.createOrder(tel, pid , 6, userAgent, scopeAddress, fixedShopId);
         }).then( data => {
+            logger.info("下单时间"+(new Date() - _startTime)+"ms");
             if(data.code === 0){
+
               // 购买成功，进行下一个账号的处理逻辑
               logger.info('购买成功'+tel+":"+pass+JSON.stringify(data));
               successOrder++;

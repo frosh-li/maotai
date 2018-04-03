@@ -4,7 +4,7 @@ const {
 const getPixels = require('get-pixels');
 const path = require('path');
 
-const adb = "adb -s emulator-5554";
+const adb = "/Users/bigdata/Library/Android/sdk/platform-tools/adb -s emulator-5554";
 function avg(arr){
   let totals = 0;
   arr.forEach(item => {
@@ -123,14 +123,14 @@ class AliVerify {
 
         return new Promise((resolve, reject) => {
             this.openAliUI();
-            return this.captureAndCalcPos(resolve, reject);
-            // this.captureAndCalcPos((status) => {
-            //   if(status){
-            //     return resolve(true)
-            //   }else{
-            //     return this.captureAndCalcPos(resolve, reject)
-            //   }
-            // });
+            //return this.captureAndCalcPos(resolve, reject);
+            this.captureAndCalcPos((status) => {
+              if(status){
+                return resolve(true)
+              }else{
+                return this.captureAndCalcPos(resolve, reject)
+              }
+            });
         })
 
     }
