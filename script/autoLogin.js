@@ -2,21 +2,6 @@ const logger = require('../controllers/logger.js');
 const MaotaiService = require('../tools/service');
 
 var originPhones = require("../beijing4.2buy.json");
-originPhones = [
-  {"phone":"13618484713","pass":"zxcvbnm"},
-  {"phone":"17753583852","pass":"123456"},
-  {"phone":"15213163729","pass":"123456"},
-  {"phone":"17783920137","pass":"xqh19950703"},
-  {"phone":"18236877936","pass":"wxp800614"},
-  {"phone":"15178421370","pass":"2016whczg"},
-  {"phone":"15084425825","pass":"lh25802580"},
-  {"phone":"17772324023","pass":"lh25802580"},
-  {"phone":"13786958413","pass":"58585858"},
-  {"phone":"13711949575","pass":"wy40324700"},
-  {"phone":"13686135579","pass":"wy40324700"},
-  {"phone":"15717350785","pass":"dyj395799."},
-  {"phone":"18273181619","pass":"dyj395799."},
-]
 
 function start() {
   let user = originPhones.shift();
@@ -36,4 +21,24 @@ function start() {
     })
 }
 
-start();
+// start();
+const fs = require('fs');
+const path = require('path')
+function checkDone() {
+  console.log("开始检查是否有未登录账号");
+  let hasLogin = false;
+  originPhones.forEach(item => {
+    let cpath = path.resolve(__dirname,"../cookies/"+item.phone+".json");
+    let out = fs.existsSync(cpath);
+    if(!out){
+      hasLogin = true;
+      console.log(out)
+    }
+  })
+  if(hasLogin === false){
+    console.log("全部登录成功，请放心");
+  }
+  process.exit(0);
+}
+
+checkDone();

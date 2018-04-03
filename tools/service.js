@@ -1,11 +1,14 @@
 var request = require("request");
 const proxy = require('../controllers/proxy');
-var FileCookieStore = require('tough-cookie-filestore');
+var Filecookietore = require('tough-cookie-filestore');
 const fs = require('fs');
 var redis = require('redis');
 var redisClient = redis.createClient();
+redisClient.on('error', (error) => {
+  // console.log(error);
+})
 const path = require('path');
-var j = request.jar(new FileCookieStore('cookies.json'));
+var j = '';
 request = request.defaults({
     jar: true,
     proxy: 'http://'+proxy.proxyUser+':'+proxy.proxyPass+'@'+proxy.proxyHost+':'+proxy.proxyPort,
@@ -20,19 +23,24 @@ const DELAY = 1000;
 
 class MaotaiService {
     initCookiePath(path){
-      j = request.jar(new FileCookieStore('./cookies/'+path+'.json'));
+      j = request.jar(new Filecookietore('./cookies/'+path+'.json'));
     }
-    getCurrentJar(tel,callback) {
+    getCurrentJar(tel) {
       return new Promise((resolve, reject) => {
-        var v = new FileCookieStore('./cookies/'+tel+'.json')
-        v.findCookies('www.cmaotai.com','/', function(err, cookies){
+        let path = './cookies/'+tel+'.json';
+        console.log('cookie path', path)
+        var v = new Filecookietore(path);
+        console.log(v,tel);
+        v.findCookies('www.cmaotai.com','/', function(err, cookie){
           if(err){
+            console.log('cookie error');
             return reject(err);
           }
-          return resolve(cookies.join(";"))
-        })  
+          console.log('getcookie', cookie);
+          return resolve(cookie.join(";"))
+        })
       })
-      
+
     }
     headers (userAgent) {
       return {
@@ -77,7 +85,7 @@ class MaotaiService {
             pass = "110520";
         }
         fs.writeFileSync('./cookies/'+tel+'.json', "");
-        j = request.jar(new FileCookieStore('./cookies/'+tel+'.json'));
+        j = request.jar(new Filecookietore('./cookies/'+tel+'.json'));
         let options = {
             method: 'POST',
             url: 'https://www.cmaotai.com/API/Servers.ashx',
@@ -269,7 +277,7 @@ class MaotaiService {
                   logger.info("定位信息获取错误", error);
                   return reject(error);
                 };
-                
+
                 return resolve({
                   addressID: addressID,
                   lbsdata: body
@@ -335,7 +343,7 @@ class MaotaiService {
             var tel = stel.phone;
             var pass = stel.pass;
         }
-        
+
         userAgent = userAgent || this.userAgent(tel);
         let shopName = fixedShopName;
         let now = +new Date();
@@ -343,13 +351,12 @@ class MaotaiService {
         return new Promise((resolve, reject) => {
             this.getToken()
               .then(aliSessionId => {
-                
                   let that = this;
                   let options = {
                       method: 'POST',
                       url: 'https://www.cmaotai.com/YSApp_API/YSAppServer.ashx',
                       headers: {
-                          'cookies':j,
+                          'cookie':j,
                           "proxy-authorization" : "Basic " + proxy.proxyAuth,
                           'cache-control': 'no-cache',
                           'accept-language': 'zh-CN,en-US;q=0.8',
@@ -366,7 +373,7 @@ class MaotaiService {
                         count: quantity,
                         timestamp121: (+new Date())
                       },
-                      
+
                       json:true
                   };
                   request(options, function(error, response, body) {
@@ -377,7 +384,7 @@ class MaotaiService {
                       let couponsId = body.data.Cid;
                       // let couponsId = 'b1b99dd3e5664458afa839e3e7c52724'
                       // 如果找到对应shopID
-                      
+
                       let options = {
                           method: 'POST',
                           url: 'https://www.cmaotai.com/API/CreateOrder.ashx',
@@ -390,9 +397,9 @@ class MaotaiService {
                               referer: `https://www.cmaotai.com/ysh5/page/BuyInquiry/buyInquiryIndex.html?type=invoiceInfo&productId=${pid}&num=${quantity}`,
                               'user-agent': userAgent,
                               'x-requested-with': 'XMLHttpRequest',
-                              'cookies':j,
+                              'cookie':j,
                           },
-                          
+
                           form: {
                               productId: pid,
                               quantity: quantity,
@@ -418,22 +425,22 @@ class MaotaiService {
                       // timestamp121  1522290257472
                       // aliSessionId = null;
                       // fs.writeFileSync("../aliSessionId.txt", "");
-                      logger.info(options.form);
-                      aliSessionId.key && redisClient.del(aliSessionId.key, (err) => {
-                        if(err){
-                          logger.error(err);
-                        }
-                      });
-                      request(options, function(error, response, body) {
-                          if (error) {
-                              return reject(error);
-                          };
-                          logger.info(colors.green('下单完成'+JSON.stringify(body)));
-                          return resolve(JSON.parse(body));
-                      });
-                    
+                        logger.info(options.form);
+                        aliSessionId.key && redisClient.del(aliSessionId.key, (err) => {
+                          if(err){
+                            logger.error(err);
+                          }
+                        });
+                        request(options, function(error, response, body) {
+                            if (error) {
+                                return reject(error);
+                            };
+                            logger.info(colors.green('下单完成'+JSON.stringify(body)));
+                            return resolve(JSON.parse(body));
+                        });
+
                   })
-                
+
               }).catch(e => {
                   logger.info(e);
                   return reject(e);
@@ -441,22 +448,133 @@ class MaotaiService {
         })
     }
 
+    /**
+     * createOrder - 创建订单
+     * fixedShopName:
+     * 雍贵中心网店ID 211110105003
+     * 不限制为-1
+     * @param  {type} tel        手机号
+     * @param  {type} pid        商品编号 茅台飞天53°的ID为391
+     * @param  {type} quantity=6 购买数量 6瓶为一箱，优先购买一箱
+     * @param  {userAgent} userAgent 固定分配的登录手机号
+     * @param  {string} fixedShopName 是否锁定购买某一家 -1为不锁定  211110102007雍贵中心 211110105003双龙
+     * @return {type}            description
+     */
+
+    createOrderByScan(stel, pid, quantity = 6,StockCount, userAgent, scopeAddress, shopId, fixedShopName = -1, j) {
+        logger.info('create order params', arguments);
+        if (typeof stel === 'string') {
+            var tel = stel;
+            var pass = '123456';
+        } else {
+            var tel = stel.phone;
+            var pass = stel.pass;
+        }
+
+        userAgent = userAgent || this.userAgent(tel);
+        let shopName = fixedShopName;
+        let now = +new Date();
+        fs.writeFileSync(path.resolve(__dirname,"../aliSessionId.txt"), "");
+        return new Promise((resolve, reject) => {
+          let that = this;
+          let options = {
+              method: 'POST',
+              url: 'https://www.cmaotai.com/YSApp_API/YSAppServer.ashx',
+              headers: {
+                  'cookie':j,
+                  "proxy-authorization" : "Basic " + proxy.proxyAuth,
+                  'cache-control': 'no-cache',
+                  'accept-language': 'zh-CN,en-US;q=0.8',
+                  accept: 'application/json, text/javascript, */*; q=0.01',
+                  'content-type': 'application/x-www-form-urlencoded',
+                  referer: `https://www.cmaotai.com/ysh5/page/BuyInquiry/buyInquiryIndex.html?type=invoiceInfo&productId=${pid}&num=${quantity}`,
+                  'user-agent': userAgent,
+                  'x-requested-with': 'XMLHttpRequest'
+              },
+              form: {
+                action: "MemberManager.coupon",
+                sid: shopId,
+                pid: pid,
+                count: quantity,
+                timestamp121: (+new Date())
+              },
+
+              json:true
+          };
+          request(options, function(error, response, body) {
+              if (error) {
+                  return reject(error);
+              };
+              logger.info('coupon info', body);
+              let couponsId = body.data.Cid;
+              // let couponsId = 'b1b99dd3e5664458afa839e3e7c52724'
+              // 如果找到对应shopID
+              let options = {
+                  method: 'POST',
+                  url: 'https://www.cmaotai.com/API/CreateOrder.ashx',
+                  headers: {
+                      "proxy-authorization" : "Basic " + proxy.proxyAuth,
+                      'cache-control': 'no-cache',
+                      'accept-language': 'zh-CN,en-US;q=0.8',
+                      accept: 'application/json, text/javascript, */*; q=0.01',
+                      'content-type': 'application/x-www-form-urlencoded',
+                      referer: `https://www.cmaotai.com/ysh5/page/BuyInquiry/buyInquiryIndex.html?type=invoiceInfo&productId=${pid}&num=${quantity}`,
+                      'user-agent': userAgent,
+                      'x-requested-with': 'XMLHttpRequest',
+                      'cookie':j,
+                  },
+
+                  form: {
+                      productId: pid,
+                      quantity: quantity,
+                      couponsId: couponsId,
+                      addressId: scopeAddress,
+                      invioceId: -1,
+                      express: 14,
+                      shopId: shopId,
+                      sessid: '',
+                      remark: '',
+                      timestamp121: (+new Date())
+                  }
+              };
+              AliVerify.connectSidFromHard()
+                .then(data => {
+                  this.checkAliToken(token => {
+                    options.form.sessid = token;
+                    request(options, function(error, response, body) {
+                        if (error) {
+                            return reject(error);
+                        };
+                        logger.info(colors.green('下单完成'+JSON.stringify(body)));
+                        return resolve({
+                          data:JSON.parse(body),
+                          StockCount: StockCount,
+                          buyLimit: quantity,
+                        });
+                    });
+                  })
+
+                })
+          })
+        })
+    }
+
     getAddressId(tel,j) {
         logger.info('start get addressID from mobile:', tel);
         var jar = request.jar();
-        // var cookies = request.cookie(j);
-        jar.setCookie(j,'www.maotai.com');
+        // var cookie = request.cookie(j);
+        jar.setCookie(j,'www.cmaotai.com');
         console.log(jar);
         let now = +new Date();
         logger.info(j);
         let options = {
             method: 'POST',
-            jar: jar,
+            jar: true,
             url: 'https://www.cmaotai.com/YSApp_API/YSAppServer.ashx',
             headers: {
                 "proxy-authorization" : "Basic " + proxy.proxyAuth,
                 'cache-control': 'no-cache',
-                'cookies':j,
+                'cookie':j,
                 'content-type': 'application/x-www-form-urlencoded'
             },
             form: {
@@ -467,15 +585,13 @@ class MaotaiService {
             }
         };
 
-        
-
         return new Promise((resolve, reject) => {
           request(options, function(error, response, body) {
               if (error) {
                   return reject(error);
               }
               let bodyJSON = JSON.parse(body);
-              logger.info(bodyJSON);
+              logger.info(body);
               // logger.info(bodyJSON.data.list[0])
               if(bodyJSON.data && bodyJSON.data.list && bodyJSON.data.list.length > 0){
                 //logger.info('获取的地址id', bodyJSON.data.list[0].SId);

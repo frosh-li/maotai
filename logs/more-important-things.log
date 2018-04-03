@@ -1,930 +1,369 @@
-[2018-04-03T17:00:48.619] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { TelPhone: '13618484713',
-     NickName: '13618484713',
-     HeadPortrait: '',
-     SalemanState: -1,
-     AuthState: -1,
-     IsLock: false,
-     IsConfirmationProtocol: true,
-     Certificate: null,
-     CertIdent: 'none',
-     HasPassword: true,
-     DeviceIdent: 'e39160db1b19d361b4e7bc77b8d5c5b1',
-     UserId: 2197733,
-     Name: '&13618484713' } }
-[2018-04-03T17:00:51.215] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { TelPhone: '17753583852',
-     NickName: '17753583852',
-     HeadPortrait: '',
-     SalemanState: -1,
-     AuthState: -1,
-     IsLock: false,
-     IsConfirmationProtocol: true,
-     Certificate: null,
-     CertIdent: 'none',
-     HasPassword: true,
-     DeviceIdent: '54db24d85fef75931e7e226ae2b400e5',
-     UserId: 1842116,
-     Name: '&17753583852' } }
-[2018-04-03T17:00:51.783] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { TelPhone: '15213163729',
-     NickName: '15213163729',
-     HeadPortrait: '',
-     SalemanState: -1,
-     AuthState: -1,
-     IsLock: false,
-     IsConfirmationProtocol: true,
-     Certificate: null,
-     CertIdent: 'none',
-     HasPassword: true,
-     DeviceIdent: '24832c13e0721ad2c021be6f2692a3f3',
-     UserId: 2072242,
-     Name: '&15213163729' } }
-[2018-04-03T17:00:55.475] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { TelPhone: '17783920137',
-     NickName: '17783920137',
-     HeadPortrait: '',
-     SalemanState: -1,
-     AuthState: -1,
-     IsLock: false,
-     IsConfirmationProtocol: true,
-     Certificate: null,
-     CertIdent: 'none',
-     HasPassword: true,
-     DeviceIdent: '20af1a343953c3353f72a76156ac7b77',
-     UserId: 1840710,
-     Name: '&17783920137' } }
-[2018-04-03T17:00:56.039] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { TelPhone: '18236877936',
-     NickName: '18236877936',
-     HeadPortrait: '',
-     SalemanState: -1,
-     AuthState: -1,
-     IsLock: false,
-     IsConfirmationProtocol: true,
-     Certificate: null,
-     CertIdent: 'none',
-     HasPassword: true,
-     DeviceIdent: '6b2649358d2116cd26defd51a6dfa216',
-     UserId: 2268139,
-     Name: '&18236877936' } }
-[2018-04-03T17:00:56.604] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { TelPhone: '15178421370',
-     NickName: '15178421370',
-     HeadPortrait: '',
-     SalemanState: -1,
-     AuthState: -1,
-     IsLock: false,
-     IsConfirmationProtocol: true,
-     Certificate: null,
-     CertIdent: 'none',
-     HasPassword: true,
-     DeviceIdent: 'b656f32eda5819e9e948769da63ac1a1',
-     UserId: 2161640,
-     Name: '&15178421370' } }
-[2018-04-03T17:01:02.118] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { TelPhone: '15084425825',
-     NickName: '15084425825',
-     HeadPortrait: '',
-     SalemanState: -1,
-     AuthState: -1,
-     IsLock: false,
-     IsConfirmationProtocol: true,
-     Certificate: null,
-     CertIdent: 'none',
-     HasPassword: true,
-     DeviceIdent: 'c059836905345354b3dc80ebc8b2506a',
-     UserId: 2064055,
-     Name: '&15084425825' } }
-[2018-04-03T17:01:02.742] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { TelPhone: '17772324023',
-     NickName: '岁月静好',
-     HeadPortrait: '',
-     SalemanState: -1,
-     AuthState: -1,
-     IsLock: false,
-     IsConfirmationProtocol: true,
-     Certificate: null,
-     CertIdent: 'none',
-     HasPassword: true,
-     DeviceIdent: 'f6da0be190a47ec598cd95e4d600b66c',
-     UserId: 2270399,
-     Name: '&17772324023' } }
-[2018-04-03T17:01:07.956] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { TelPhone: '13786958413',
-     NickName: '13786958413',
-     HeadPortrait: '',
-     SalemanState: -1,
-     AuthState: -1,
-     IsLock: false,
-     IsConfirmationProtocol: true,
-     Certificate: null,
-     CertIdent: 'none',
-     HasPassword: true,
-     DeviceIdent: 'c7f7a889904652e76586a9e479154037',
-     UserId: 1838448,
-     Name: '&13786958413' } }
-[2018-04-03T17:01:12.606] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { TelPhone: '13711949575',
-     NickName: '为你解忧',
-     HeadPortrait: '',
-     SalemanState: -1,
-     AuthState: -1,
-     IsLock: false,
-     IsConfirmationProtocol: true,
-     Certificate: null,
-     CertIdent: 'none',
-     HasPassword: true,
-     DeviceIdent: '892c15ea8260af3328677aa7b3f7d677',
-     UserId: 1404829,
-     Name: '&13711949575' } }
-[2018-04-03T17:01:13.415] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { TelPhone: '13686135579',
-     NickName: '13686135579',
-     HeadPortrait: '',
-     SalemanState: -1,
-     AuthState: -1,
-     IsLock: false,
-     IsConfirmationProtocol: true,
-     Certificate: null,
-     CertIdent: 'none',
-     HasPassword: true,
-     DeviceIdent: 'edfa692d22614ee4994553870a1adf93',
-     UserId: 1879375,
-     Name: '&13686135579' } }
-[2018-04-03T17:01:14.283] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { TelPhone: '15717350785',
-     NickName: '15717350785',
-     HeadPortrait: '',
-     SalemanState: -1,
-     AuthState: -1,
-     IsLock: false,
-     IsConfirmationProtocol: true,
-     Certificate: null,
-     CertIdent: 'none',
-     HasPassword: true,
-     DeviceIdent: 'f8f975e440679edf445f68bc13723d5a',
-     UserId: 2178661,
-     Name: '&15717350785' } }
-[2018-04-03T17:01:16.818] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { TelPhone: '18273181619',
-     NickName: '18273181619',
-     HeadPortrait: '',
-     SalemanState: -1,
-     AuthState: -1,
-     IsLock: false,
-     IsConfirmationProtocol: true,
-     Certificate: null,
-     CertIdent: 'none',
-     HasPassword: true,
-     DeviceIdent: 'fc5a5454208590dea8dcbad15b5cd81f',
-     UserId: 2169601,
-     Name: '&18273181619' } }
-[2018-04-03T17:01:16.819] [ERROR] things - TypeError: Cannot read property 'phone' of undefined
-    at start (/Users/junliang/server/www/maotaiServer/script/autoLogin.js:23:48)
-    at MaotaiService.login.then.data (/Users/junliang/server/www/maotaiServer/script/autoLogin.js:31:7)
+[2018-04-03T21:00:18.459] [INFO] things - 位置错误,60秒后重试 TypeError: cb is not a function
+    at FileCookieStore.findCookie (/Users/frosh/server/www/maotai/node_modules/tough-cookie-filestore/lib/filestore.js:36:12)
+    at Promise (/Users/frosh/server/www/maotai/tools/service.js:32:11)
+    at new Promise (<anonymous>)
+    at MaotaiService.getCurrentJar (/Users/frosh/server/www/maotai/tools/service.js:29:14)
+    at proxy.switchIp.then (/Users/frosh/server/www/maotai/script/watchBeijing.js:70:19)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:188:7)
-[2018-04-03T17:06:37.291] [INFO] things - params [ '/usr/local/bin/node',
-  '/Users/junliang/server/www/maotaiServer/controllers/buyFixed.js' ]
-[2018-04-03T17:06:37.393] [INFO] things - start get addressID from mobile: 13686135579
-[2018-04-03T17:06:38.183] [INFO] things - create order params { '0': '13686135579',
-  '1': '391',
-  '2': 6,
-  '3': 'Mozilla/5.0 (Linux; Android 4.4.4; LA2-SN Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36[android/1.0.23/edfa692d22614ee4994553870a1adf93/fea813479f2cd70216e41c440f76058e]',
-  '4': 1949487,
-  '5': 233330186001 }
-[2018-04-03T17:06:38.820] [INFO] things - coupon info { state: false, code: 9999, msg: '用户未登陆' }
-[2018-04-03T17:07:06.291] [INFO] things - params [ '/usr/local/bin/node',
-  '/Users/junliang/server/www/maotaiServer/controllers/buyFixed.js' ]
-[2018-04-03T17:07:06.401] [INFO] things - start get addressID from mobile: 15717350785
-[2018-04-03T17:07:07.385] [INFO] things - { rownumber: 1,
-  SId: 1826720,
-  UserId: '2178661',
-  TelPhone: '15717350785',
-  Zipcode: '000000',
-  Address: '正安精密工业(天津)有限公司,',
-  AddressInfo: '天津市北辰区',
-  ShipTo: '李洋',
-  Remark: '',
-  ProvinceId: '120000',
-  CityId: '120100',
-  DistrictsId: '120113',
-  IsDefault: true,
-  SMNo: null,
-  RelPhone: null,
-  Longitude: '117.209941',
-  Latitude: '39.217404',
-  IsVerification: true,
-  TimeStamp: '2018-02-23 17:53:42' }
-[2018-04-03T17:07:07.387] [INFO] things - create order params { '0': '15717350785',
-  '1': '391',
-  '2': 6,
-  '3': 'Mozilla/5.0 (Linux; Android 4.4.4; LA2-SN Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36[android/1.0.23/f8f975e440679edf445f68bc13723d5a/9af5345bfae598b9d31e94157d4f6a66]',
-  '4': 1826720,
-  '5': 233330186001 }
-[2018-04-03T17:07:11.687] [INFO] things - coupon info { state: false, code: 9999, msg: '用户未登陆' }
-[2018-04-03T17:07:55.779] [INFO] things - params [ '/usr/local/bin/node',
-  '/Users/junliang/server/www/maotaiServer/controllers/buyFixed.js' ]
-[2018-04-03T17:07:55.888] [INFO] things - start get addressID from mobile: 13711949575
-[2018-04-03T17:08:01.484] [INFO] things - create order params { '0': '13711949575',
-  '1': '391',
-  '2': 6,
-  '3': 'Mozilla/5.0 (Linux; Android 4.4.4; LA2-SN Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36[android/1.0.23/892c15ea8260af3328677aa7b3f7d677/bef17c73adfe653d63b36e0baaedc962]',
-  '4': 1633701,
-  '5': 233330186001 }
-[2018-04-03T17:09:36.938] [INFO] things - params [ '/usr/local/bin/node',
-  '/Users/junliang/server/www/maotaiServer/controllers/buyFixed.js' ]
-[2018-04-03T17:09:37.045] [INFO] things - start get addressID from mobile: 15178421370
-[2018-04-03T17:09:37.740] [INFO] things - create order params { '0': '15178421370',
-  '1': '391',
-  '2': 6,
-  '3': 'Mozilla/5.0 (Linux; Android 4.4.4; LA2-SN Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36[android/1.0.23/b656f32eda5819e9e948769da63ac1a1/bab5e598ca8bf373b131462d7598398f]',
-  '4': 1978318,
-  '5': 233330186001 }
-[2018-04-03T17:09:38.429] [INFO] things - coupon info { state: true,
-  code: 0,
-  data: 
-   { Cid: '09ef058b26734d9584790ff446f04c78',
-     Name: '茅台云商浙江省杭州市上城区服务网点',
-     DName: '浙商糖酒集团有限公司',
-     Address: '杭州市中山中路甘泽坊巷9号',
-     InvoiceCompany: '浙商糖酒集团有限公司',
-     SHBegin: '10:00:00',
-     SHEnd: '17:00:00',
-     Amount: 1499,
-     Level: 1,
-     DisAmount: 1499,
-     DisCost: 0,
-     LocalCost: -1,
-     LocalZero: -1,
-     LocalZeroCost: -1,
-     OtherCost: -1,
-     OtherZero: -1,
-     OtherZeroCost: -1,
-     InvoiceCost: 22,
-     TakeDeliveryLimit: 7,
-     HasPlainInvoice: true,
-     HasVATInvoice: true,
-     Description: '仅限自提',
-     StateCode: 0,
-     NetworkType: 0,
-     WorkingDay: '[{"EnDay":"Monday","CnDay":"星期一"},{"EnDay":"Tuesday","CnDay":"星期二"},{"EnDay":"Wednesday","CnDay":"星期三"},{"EnDay":"Thursday","CnDay":"星期四"},{"EnDay":"Friday","CnDay":"星期五"},{"EnDay":"Saturday","CnDay":"星期六"},{"EnDay":"Sunday","CnDay":"星期日"}]' } }
-[2018-04-03T17:09:38.430] [INFO] things - { productId: '391',
-  quantity: 6,
-  couponsId: '09ef058b26734d9584790ff446f04c78',
-  addressId: 1978318,
-  invioceId: -1,
-  express: 14,
-  shopId: 233330186001,
-  sessid: null,
-  remark: '',
-  timestamp121: 1522746578430 }
-[2018-04-03T17:09:41.271] [INFO] things - [32m下单完成"{\"state\":true,\"code\":9999,\"msg\":\"用户未登陆\"}"[39m
-[2018-04-03T17:09:41.272] [INFO] things - 下单时间4227ms
-[2018-04-03T17:09:42.351] [INFO] things - start get addressID from mobile: 18236877936
-[2018-04-03T17:09:45.397] [INFO] things - create order params { '0': '18236877936',
-  '1': '391',
-  '2': 6,
-  '3': 'Mozilla/5.0 (Linux; Android 4.4.4; LA2-SN Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36[android/1.0.23/6b2649358d2116cd26defd51a6dfa216/d733ce65e959a7c7dc1e6d52cfb3e028]',
-  '4': 1965909,
-  '5': 233330186001 }
-[2018-04-03T17:09:46.371] [INFO] things - coupon info { state: true,
-  code: 0,
-  data: 
-   { Cid: '7249e0b14d8b4269a13ae50bbba77366',
-     Name: '茅台云商浙江省杭州市上城区服务网点',
-     DName: '浙商糖酒集团有限公司',
-     Address: '杭州市中山中路甘泽坊巷9号',
-     InvoiceCompany: '浙商糖酒集团有限公司',
-     SHBegin: '10:00:00',
-     SHEnd: '17:00:00',
-     Amount: 1499,
-     Level: 1,
-     DisAmount: 1499,
-     DisCost: 0,
-     LocalCost: -1,
-     LocalZero: -1,
-     LocalZeroCost: -1,
-     OtherCost: -1,
-     OtherZero: -1,
-     OtherZeroCost: -1,
-     InvoiceCost: 22,
-     TakeDeliveryLimit: 7,
-     HasPlainInvoice: true,
-     HasVATInvoice: true,
-     Description: '仅限自提',
-     StateCode: 0,
-     NetworkType: 0,
-     WorkingDay: '[{"EnDay":"Monday","CnDay":"星期一"},{"EnDay":"Tuesday","CnDay":"星期二"},{"EnDay":"Wednesday","CnDay":"星期三"},{"EnDay":"Thursday","CnDay":"星期四"},{"EnDay":"Friday","CnDay":"星期五"},{"EnDay":"Saturday","CnDay":"星期六"},{"EnDay":"Sunday","CnDay":"星期日"}]' } }
-[2018-04-03T17:09:46.375] [INFO] things - { productId: '391',
-  quantity: 6,
-  couponsId: '7249e0b14d8b4269a13ae50bbba77366',
-  addressId: 1965909,
-  invioceId: -1,
-  express: 14,
-  shopId: 233330186001,
-  sessid: null,
-  remark: '',
-  timestamp121: 1522746586375 }
-[2018-04-03T17:09:47.533] [INFO] things - [32m下单完成"{\"state\":true,\"code\":9999,\"msg\":\"用户未登陆\"}"[39m
-[2018-04-03T17:09:47.534] [INFO] things - 下单时间5183ms
-[2018-04-03T17:09:48.638] [INFO] things - start get addressID from mobile: 13711949575
-[2018-04-03T17:09:49.346] [INFO] things - create order params { '0': '13711949575',
-  '1': '391',
-  '2': 6,
-  '3': 'Mozilla/5.0 (Linux; Android 4.4.4; LA2-SN Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36[android/1.0.23/892c15ea8260af3328677aa7b3f7d677/bef17c73adfe653d63b36e0baaedc962]',
-  '4': 1633701,
-  '5': 233330186001 }
-[2018-04-03T17:09:50.004] [INFO] things - coupon info { state: true,
-  code: 0,
-  data: 
-   { Cid: '109d152dc5b5434da5e6dafa7dde97f6',
-     Name: '茅台云商浙江省杭州市上城区服务网点',
-     DName: '浙商糖酒集团有限公司',
-     Address: '杭州市中山中路甘泽坊巷9号',
-     InvoiceCompany: '浙商糖酒集团有限公司',
-     SHBegin: '10:00:00',
-     SHEnd: '17:00:00',
-     Amount: 1499,
-     Level: 1,
-     DisAmount: 1499,
-     DisCost: 0,
-     LocalCost: -1,
-     LocalZero: -1,
-     LocalZeroCost: -1,
-     OtherCost: -1,
-     OtherZero: -1,
-     OtherZeroCost: -1,
-     InvoiceCost: 22,
-     TakeDeliveryLimit: 7,
-     HasPlainInvoice: true,
-     HasVATInvoice: true,
-     Description: '仅限自提',
-     StateCode: 0,
-     NetworkType: 0,
-     WorkingDay: '[{"EnDay":"Monday","CnDay":"星期一"},{"EnDay":"Tuesday","CnDay":"星期二"},{"EnDay":"Wednesday","CnDay":"星期三"},{"EnDay":"Thursday","CnDay":"星期四"},{"EnDay":"Friday","CnDay":"星期五"},{"EnDay":"Saturday","CnDay":"星期六"},{"EnDay":"Sunday","CnDay":"星期日"}]' } }
-[2018-04-03T17:09:50.005] [INFO] things - { productId: '391',
-  quantity: 6,
-  couponsId: '109d152dc5b5434da5e6dafa7dde97f6',
-  addressId: 1633701,
-  invioceId: -1,
-  express: 14,
-  shopId: 233330186001,
-  sessid: null,
-  remark: '',
-  timestamp121: 1522746590005 }
-[2018-04-03T17:09:50.706] [INFO] things - [32m下单完成"{\"state\":true,\"code\":9999,\"msg\":\"用户未登陆\"}"[39m
-[2018-04-03T17:09:50.707] [INFO] things - 下单时间2069ms
-[2018-04-03T17:10:07.525] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { TelPhone: '13618484713',
-     NickName: '13618484713',
-     HeadPortrait: '',
-     SalemanState: -1,
-     AuthState: -1,
-     IsLock: false,
-     IsConfirmationProtocol: true,
-     Certificate: null,
-     CertIdent: 'none',
-     HasPassword: true,
-     DeviceIdent: 'e39160db1b19d361b4e7bc77b8d5c5b1',
-     UserId: 2197733,
-     Name: '&13618484713' } }
-[2018-04-03T17:10:08.188] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { TelPhone: '17753583852',
-     NickName: '17753583852',
-     HeadPortrait: '',
-     SalemanState: -1,
-     AuthState: -1,
-     IsLock: false,
-     IsConfirmationProtocol: true,
-     Certificate: null,
-     CertIdent: 'none',
-     HasPassword: true,
-     DeviceIdent: '54db24d85fef75931e7e226ae2b400e5',
-     UserId: 1842116,
-     Name: '&17753583852' } }
-[2018-04-03T17:10:08.809] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { TelPhone: '15213163729',
-     NickName: '15213163729',
-     HeadPortrait: '',
-     SalemanState: -1,
-     AuthState: -1,
-     IsLock: false,
-     IsConfirmationProtocol: true,
-     Certificate: null,
-     CertIdent: 'none',
-     HasPassword: true,
-     DeviceIdent: '24832c13e0721ad2c021be6f2692a3f3',
-     UserId: 2072242,
-     Name: '&15213163729' } }
-[2018-04-03T17:10:09.480] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { TelPhone: '17783920137',
-     NickName: '17783920137',
-     HeadPortrait: '',
-     SalemanState: -1,
-     AuthState: -1,
-     IsLock: false,
-     IsConfirmationProtocol: true,
-     Certificate: null,
-     CertIdent: 'none',
-     HasPassword: true,
-     DeviceIdent: '20af1a343953c3353f72a76156ac7b77',
-     UserId: 1840710,
-     Name: '&17783920137' } }
-[2018-04-03T17:10:14.110] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { TelPhone: '18236877936',
-     NickName: '18236877936',
-     HeadPortrait: '',
-     SalemanState: -1,
-     AuthState: -1,
-     IsLock: false,
-     IsConfirmationProtocol: true,
-     Certificate: null,
-     CertIdent: 'none',
-     HasPassword: true,
-     DeviceIdent: '6b2649358d2116cd26defd51a6dfa216',
-     UserId: 2268139,
-     Name: '&18236877936' } }
-[2018-04-03T17:10:14.772] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { TelPhone: '15178421370',
-     NickName: '15178421370',
-     HeadPortrait: '',
-     SalemanState: -1,
-     AuthState: -1,
-     IsLock: false,
-     IsConfirmationProtocol: true,
-     Certificate: null,
-     CertIdent: 'none',
-     HasPassword: true,
-     DeviceIdent: 'b656f32eda5819e9e948769da63ac1a1',
-     UserId: 2161640,
-     Name: '&15178421370' } }
-[2018-04-03T17:10:15.363] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { TelPhone: '15084425825',
-     NickName: '15084425825',
-     HeadPortrait: '',
-     SalemanState: -1,
-     AuthState: -1,
-     IsLock: false,
-     IsConfirmationProtocol: true,
-     Certificate: null,
-     CertIdent: 'none',
-     HasPassword: true,
-     DeviceIdent: 'c059836905345354b3dc80ebc8b2506a',
-     UserId: 2064055,
-     Name: '&15084425825' } }
-[2018-04-03T17:10:16.000] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { TelPhone: '17772324023',
-     NickName: '岁月静好',
-     HeadPortrait: '',
-     SalemanState: -1,
-     AuthState: -1,
-     IsLock: false,
-     IsConfirmationProtocol: true,
-     Certificate: null,
-     CertIdent: 'none',
-     HasPassword: true,
-     DeviceIdent: 'f6da0be190a47ec598cd95e4d600b66c',
-     UserId: 2270399,
-     Name: '&17772324023' } }
-[2018-04-03T17:10:16.675] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { TelPhone: '13786958413',
-     NickName: '13786958413',
-     HeadPortrait: '',
-     SalemanState: -1,
-     AuthState: -1,
-     IsLock: false,
-     IsConfirmationProtocol: true,
-     Certificate: null,
-     CertIdent: 'none',
-     HasPassword: true,
-     DeviceIdent: 'c7f7a889904652e76586a9e479154037',
-     UserId: 1838448,
-     Name: '&13786958413' } }
-[2018-04-03T17:10:21.438] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { TelPhone: '13711949575',
-     NickName: '为你解忧',
-     HeadPortrait: '',
-     SalemanState: -1,
-     AuthState: -1,
-     IsLock: false,
-     IsConfirmationProtocol: true,
-     Certificate: null,
-     CertIdent: 'none',
-     HasPassword: true,
-     DeviceIdent: '892c15ea8260af3328677aa7b3f7d677',
-     UserId: 1404829,
-     Name: '&13711949575' } }
-[2018-04-03T17:10:28.606] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { TelPhone: '13686135579',
-     NickName: '13686135579',
-     HeadPortrait: '',
-     SalemanState: -1,
-     AuthState: -1,
-     IsLock: false,
-     IsConfirmationProtocol: true,
-     Certificate: null,
-     CertIdent: 'none',
-     HasPassword: true,
-     DeviceIdent: 'edfa692d22614ee4994553870a1adf93',
-     UserId: 1879375,
-     Name: '&13686135579' } }
-[2018-04-03T17:10:29.267] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { TelPhone: '15717350785',
-     NickName: '15717350785',
-     HeadPortrait: '',
-     SalemanState: -1,
-     AuthState: -1,
-     IsLock: false,
-     IsConfirmationProtocol: true,
-     Certificate: null,
-     CertIdent: 'none',
-     HasPassword: true,
-     DeviceIdent: 'f8f975e440679edf445f68bc13723d5a',
-     UserId: 2178661,
-     Name: '&15717350785' } }
-[2018-04-03T17:10:29.922] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { TelPhone: '18273181619',
-     NickName: '18273181619',
-     HeadPortrait: '',
-     SalemanState: -1,
-     AuthState: -1,
-     IsLock: false,
-     IsConfirmationProtocol: true,
-     Certificate: null,
-     CertIdent: 'none',
-     HasPassword: true,
-     DeviceIdent: 'fc5a5454208590dea8dcbad15b5cd81f',
-     UserId: 2169601,
-     Name: '&18273181619' } }
-[2018-04-03T17:10:29.923] [INFO] things - 全部登录完成
-[2018-04-03T17:28:54.237] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { TelPhone: '13618484713',
-     NickName: '13618484713',
-     HeadPortrait: '',
-     SalemanState: -1,
-     AuthState: -1,
-     IsLock: false,
-     IsConfirmationProtocol: true,
-     Certificate: null,
-     CertIdent: 'none',
-     HasPassword: true,
-     DeviceIdent: 'e39160db1b19d361b4e7bc77b8d5c5b1',
-     UserId: 2197733,
-     Name: '&13618484713' } }
-[2018-04-03T17:28:55.393] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { TelPhone: '17753583852',
-     NickName: '17753583852',
-     HeadPortrait: '',
-     SalemanState: -1,
-     AuthState: -1,
-     IsLock: false,
-     IsConfirmationProtocol: true,
-     Certificate: null,
-     CertIdent: 'none',
-     HasPassword: true,
-     DeviceIdent: '54db24d85fef75931e7e226ae2b400e5',
-     UserId: 1842116,
-     Name: '&17753583852' } }
-[2018-04-03T17:28:56.188] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { TelPhone: '15213163729',
-     NickName: '15213163729',
-     HeadPortrait: '',
-     SalemanState: -1,
-     AuthState: -1,
-     IsLock: false,
-     IsConfirmationProtocol: true,
-     Certificate: null,
-     CertIdent: 'none',
-     HasPassword: true,
-     DeviceIdent: '24832c13e0721ad2c021be6f2692a3f3',
-     UserId: 2072242,
-     Name: '&15213163729' } }
-[2018-04-03T17:28:56.922] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { TelPhone: '17783920137',
-     NickName: '17783920137',
-     HeadPortrait: '',
-     SalemanState: -1,
-     AuthState: -1,
-     IsLock: false,
-     IsConfirmationProtocol: true,
-     Certificate: null,
-     CertIdent: 'none',
-     HasPassword: true,
-     DeviceIdent: '20af1a343953c3353f72a76156ac7b77',
-     UserId: 1840710,
-     Name: '&17783920137' } }
-[2018-04-03T17:28:57.578] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { TelPhone: '18236877936',
-     NickName: '18236877936',
-     HeadPortrait: '',
-     SalemanState: -1,
-     AuthState: -1,
-     IsLock: false,
-     IsConfirmationProtocol: true,
-     Certificate: null,
-     CertIdent: 'none',
-     HasPassword: true,
-     DeviceIdent: '6b2649358d2116cd26defd51a6dfa216',
-     UserId: 2268139,
-     Name: '&18236877936' } }
-[2018-04-03T17:28:58.219] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { TelPhone: '15178421370',
-     NickName: '15178421370',
-     HeadPortrait: '',
-     SalemanState: -1,
-     AuthState: -1,
-     IsLock: false,
-     IsConfirmationProtocol: true,
-     Certificate: null,
-     CertIdent: 'none',
-     HasPassword: true,
-     DeviceIdent: 'b656f32eda5819e9e948769da63ac1a1',
-     UserId: 2161640,
-     Name: '&15178421370' } }
-[2018-04-03T17:28:58.923] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { TelPhone: '15084425825',
-     NickName: '15084425825',
-     HeadPortrait: '',
-     SalemanState: -1,
-     AuthState: -1,
-     IsLock: false,
-     IsConfirmationProtocol: true,
-     Certificate: null,
-     CertIdent: 'none',
-     HasPassword: true,
-     DeviceIdent: 'c059836905345354b3dc80ebc8b2506a',
-     UserId: 2064055,
-     Name: '&15084425825' } }
-[2018-04-03T17:28:59.672] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { TelPhone: '17772324023',
-     NickName: '岁月静好',
-     HeadPortrait: '',
-     SalemanState: -1,
-     AuthState: -1,
-     IsLock: false,
-     IsConfirmationProtocol: true,
-     Certificate: null,
-     CertIdent: 'none',
-     HasPassword: true,
-     DeviceIdent: 'f6da0be190a47ec598cd95e4d600b66c',
-     UserId: 2270399,
-     Name: '&17772324023' } }
-[2018-04-03T17:29:00.343] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { TelPhone: '13786958413',
-     NickName: '13786958413',
-     HeadPortrait: '',
-     SalemanState: -1,
-     AuthState: -1,
-     IsLock: false,
-     IsConfirmationProtocol: true,
-     Certificate: null,
-     CertIdent: 'none',
-     HasPassword: true,
-     DeviceIdent: 'c7f7a889904652e76586a9e479154037',
-     UserId: 1838448,
-     Name: '&13786958413' } }
-[2018-04-03T17:29:04.034] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { TelPhone: '13711949575',
-     NickName: '为你解忧',
-     HeadPortrait: '',
-     SalemanState: -1,
-     AuthState: -1,
-     IsLock: false,
-     IsConfirmationProtocol: true,
-     Certificate: null,
-     CertIdent: 'none',
-     HasPassword: true,
-     DeviceIdent: '892c15ea8260af3328677aa7b3f7d677',
-     UserId: 1404829,
-     Name: '&13711949575' } }
-[2018-04-03T17:29:04.697] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { TelPhone: '13686135579',
-     NickName: '13686135579',
-     HeadPortrait: '',
-     SalemanState: -1,
-     AuthState: -1,
-     IsLock: false,
-     IsConfirmationProtocol: true,
-     Certificate: null,
-     CertIdent: 'none',
-     HasPassword: true,
-     DeviceIdent: 'edfa692d22614ee4994553870a1adf93',
-     UserId: 1879375,
-     Name: '&13686135579' } }
-[2018-04-03T17:29:05.406] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { TelPhone: '15717350785',
-     NickName: '15717350785',
-     HeadPortrait: '',
-     SalemanState: -1,
-     AuthState: -1,
-     IsLock: false,
-     IsConfirmationProtocol: true,
-     Certificate: null,
-     CertIdent: 'none',
-     HasPassword: true,
-     DeviceIdent: 'f8f975e440679edf445f68bc13723d5a',
-     UserId: 2178661,
-     Name: '&15717350785' } }
-[2018-04-03T17:29:06.354] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { TelPhone: '18273181619',
-     NickName: '18273181619',
-     HeadPortrait: '',
-     SalemanState: -1,
-     AuthState: -1,
-     IsLock: false,
-     IsConfirmationProtocol: true,
-     Certificate: null,
-     CertIdent: 'none',
-     HasPassword: true,
-     DeviceIdent: 'fc5a5454208590dea8dcbad15b5cd81f',
-     UserId: 2169601,
-     Name: '&18273181619' } }
-[2018-04-03T17:29:06.354] [INFO] things - 全部登录完成
-[2018-04-03T17:29:10.507] [INFO] things - params [ '/usr/local/bin/node',
-  '/Users/junliang/server/www/maotaiServer/controllers/buyFixed.js' ]
-[2018-04-03T17:29:10.843] [ERROR] things - TypeError: callback is not a function
-    at /Users/junliang/server/www/maotaiServer/tools/service.js:28:9
-    at FileCookieStore.findCookies (/Users/junliang/server/www/maotaiServer/node_modules/tough-cookie-filestore/lib/filestore.js:93:5)
-    at MaotaiService.getCurrentJar (/Users/junliang/server/www/maotaiServer/tools/service.js:27:9)
-    at proxy.switchIp.then (/Users/junliang/server/www/maotaiServer/controllers/buyFixed.js:103:19)
+[2018-04-03T21:00:19.593] [INFO] things - 位置错误,60秒后重试 TypeError: cb is not a function
+    at FileCookieStore.findCookie (/Users/frosh/server/www/maotai/node_modules/tough-cookie-filestore/lib/filestore.js:31:16)
+    at Promise (/Users/frosh/server/www/maotai/tools/service.js:32:11)
+    at new Promise (<anonymous>)
+    at MaotaiService.getCurrentJar (/Users/frosh/server/www/maotai/tools/service.js:29:14)
+    at proxy.switchIp.then (/Users/frosh/server/www/maotai/script/watchBeijing.js:70:19)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:188:7)
-[2018-04-03T17:30:05.068] [INFO] things - params [ '/usr/local/bin/node',
-  '/Users/junliang/server/www/maotaiServer/controllers/buyFixed.js' ]
-[2018-04-03T17:30:05.201] [INFO] things - start get addressID from mobile: 13711949575
-[2018-04-03T17:30:06.042] [INFO] things - create order params { '0': '13711949575',
-  '1': '391',
-  '2': 6,
-  '3': 'Mozilla/5.0 (Linux; Android 4.4.4; LA2-SN Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36[android/1.0.23/892c15ea8260af3328677aa7b3f7d677/bef17c73adfe653d63b36e0baaedc962]',
-  '4': '',
-  '5': 233330186001,
-  '6': 'acw_tc=AQAAAM45L0FswQYAI8jmcnAdspdc27mI; Path=/; HttpOnly;ASP.NET_SessionId=obsf2f04b4x2gjmgoo2x0glu; Path=/; HttpOnly;Vshop-Member=4f208ffed34c4c84a6a3fe17e18848e1; Expires=Wed, 03 Apr 2019 09:29:00 GMT; Path=/;SERVERID=e0be7116fc95174c0c92660b6cc51b85|1522747741|1522747741; Path=/' }
-[2018-04-03T17:30:06.810] [INFO] things - coupon info { state: false, code: 9999, msg: '用户未登陆' }
-[2018-04-03T17:31:37.763] [INFO] things - params [ '/usr/local/bin/node',
-  '/Users/junliang/server/www/maotaiServer/controllers/buyFixed.js' ]
-[2018-04-03T17:31:41.962] [INFO] things - start get addressID from mobile: 17772324023
-[2018-04-03T17:32:11.780] [INFO] things - params [ '/usr/local/bin/node',
-  '/Users/junliang/server/www/maotaiServer/controllers/buyFixed.js' ]
-[2018-04-03T17:32:11.906] [INFO] things - start get addressID from mobile: 17772324023
-[2018-04-03T17:32:16.083] [INFO] things - { state: false, code: 9999, msg: '用户未登陆' }
-[2018-04-03T17:32:16.084] [INFO] things - create order params { '0': '17772324023',
-  '1': '391',
-  '2': 6,
-  '3': 'Mozilla/5.0 (Linux; Android 4.4.4; LA2-SN Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36[android/1.0.23/f6da0be190a47ec598cd95e4d600b66c/5fb715230ddfd7c9a97dfac77c04a53d]',
-  '4': '',
-  '5': 233330186001,
-  '6': 'acw_tc=AQAAAFqwkRrp3AgAI8jmcis0c+f8akCA; Path=/; HttpOnly;ASP.NET_SessionId=hs5w3zncevaug2gqvtdvt05u; Path=/; HttpOnly;Vshop-Member=c9192a9c0f7848fb99df5900b605b954; Expires=Wed, 03 Apr 2019 09:28:56 GMT; Path=/;SERVERID=73717107c680adffd3c04c75b05bf592|1522747739|1522747739; Path=/' }
-[2018-04-03T17:32:17.461] [INFO] things - coupon info { state: false, code: 9999, msg: '用户未登陆' }
-[2018-04-03T17:32:57.735] [INFO] things - params [ '/usr/local/bin/node',
-  '/Users/junliang/server/www/maotaiServer/controllers/buyFixed.js' ]
-[2018-04-03T17:32:57.864] [INFO] things - start get addressID from mobile: 15084425825
-[2018-04-03T17:32:57.865] [INFO] things - acw_tc=AQAAAKdo1C8arwwAI8jmcmCiJ4tkK8lT; Path=/; HttpOnly;ASP.NET_SessionId=ldu5zvw3keogxostrbgyakvp; Path=/; HttpOnly;Vshop-Member=e578b27f977d43138e11c1018299c828; Expires=Wed, 03 Apr 2019 09:28:56 GMT; Path=/;SERVERID=f8ea4c3ae1c03eb905c9ff5aec4903d9|1522747738|1522747738; Path=/
-[2018-04-03T17:33:02.646] [INFO] things - { state: false, code: 9999, msg: '用户未登陆' }
-[2018-04-03T17:33:02.648] [INFO] things - create order params { '0': '15084425825',
-  '1': '391',
-  '2': 6,
-  '3': 'Mozilla/5.0 (Linux; Android 4.4.4; LA2-SN Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36[android/1.0.23/c059836905345354b3dc80ebc8b2506a/3b4f3a29cd25f578922b9659d4fd03c0]',
-  '4': '',
-  '5': 233330186001,
-  '6': 'acw_tc=AQAAAKdo1C8arwwAI8jmcmCiJ4tkK8lT; Path=/; HttpOnly;ASP.NET_SessionId=ldu5zvw3keogxostrbgyakvp; Path=/; HttpOnly;Vshop-Member=e578b27f977d43138e11c1018299c828; Expires=Wed, 03 Apr 2019 09:28:56 GMT; Path=/;SERVERID=f8ea4c3ae1c03eb905c9ff5aec4903d9|1522747738|1522747738; Path=/' }
-[2018-04-03T17:33:09.706] [INFO] things - coupon info { state: false, code: 9999, msg: '用户未登陆' }
-[2018-04-03T17:33:17.496] [INFO] things - params [ '/usr/local/bin/node',
-  '/Users/junliang/server/www/maotaiServer/controllers/buyFixed.js' ]
-[2018-04-03T17:33:17.613] [INFO] things - start get addressID from mobile: 15084425825
-[2018-04-03T17:33:17.614] [INFO] things - acw_tc=AQAAAKdo1C8arwwAI8jmcmCiJ4tkK8lT; Path=/; HttpOnly;ASP.NET_SessionId=ldu5zvw3keogxostrbgyakvp; Path=/; HttpOnly;Vshop-Member=e578b27f977d43138e11c1018299c828; Expires=Wed, 03 Apr 2019 09:28:56 GMT; Path=/;SERVERID=f8ea4c3ae1c03eb905c9ff5aec4903d9|1522747738|1522747738; Path=/
-[2018-04-03T17:33:18.215] [INFO] things - { state: false, code: 9999, msg: '用户未登陆' }
-[2018-04-03T17:33:18.216] [INFO] things - create order params { '0': '15084425825',
-  '1': '391',
-  '2': 6,
-  '3': 'Mozilla/5.0 (Linux; Android 4.4.4; LA2-SN Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36[android/1.0.23/c059836905345354b3dc80ebc8b2506a/3b4f3a29cd25f578922b9659d4fd03c0]',
-  '4': '',
-  '5': 233330186001,
-  '6': 'acw_tc=AQAAAKdo1C8arwwAI8jmcmCiJ4tkK8lT; Path=/; HttpOnly;ASP.NET_SessionId=ldu5zvw3keogxostrbgyakvp; Path=/; HttpOnly;Vshop-Member=e578b27f977d43138e11c1018299c828; Expires=Wed, 03 Apr 2019 09:28:56 GMT; Path=/;SERVERID=f8ea4c3ae1c03eb905c9ff5aec4903d9|1522747738|1522747738; Path=/' }
-[2018-04-03T17:33:23.010] [INFO] things - coupon info { state: false, code: 9999, msg: '用户未登陆' }
-[2018-04-03T17:35:01.887] [INFO] things - params [ '/usr/local/bin/node',
-  '/Users/junliang/server/www/maotaiServer/controllers/buyFixed.js' ]
-[2018-04-03T17:35:01.991] [INFO] things - start get addressID from mobile: 13711949575
-[2018-04-03T17:35:01.991] [INFO] things - acw_tc=AQAAAM45L0FswQYAI8jmcnAdspdc27mI; Path=/; HttpOnly;ASP.NET_SessionId=obsf2f04b4x2gjmgoo2x0glu; Path=/; HttpOnly;Vshop-Member=4f208ffed34c4c84a6a3fe17e18848e1; Expires=Wed, 03 Apr 2019 09:29:00 GMT; Path=/;SERVERID=e0be7116fc95174c0c92660b6cc51b85|1522747741|1522747741; Path=/
-[2018-04-03T17:35:08.169] [INFO] things - { state: false, code: 9999, msg: '用户未登陆' }
-[2018-04-03T17:35:08.171] [INFO] things - create order params { '0': '13711949575',
-  '1': '391',
-  '2': 6,
-  '3': 'Mozilla/5.0 (Linux; Android 4.4.4; LA2-SN Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36[android/1.0.23/892c15ea8260af3328677aa7b3f7d677/bef17c73adfe653d63b36e0baaedc962]',
-  '4': '',
-  '5': 233330186001,
-  '6': 'acw_tc=AQAAAM45L0FswQYAI8jmcnAdspdc27mI; Path=/; HttpOnly;ASP.NET_SessionId=obsf2f04b4x2gjmgoo2x0glu; Path=/; HttpOnly;Vshop-Member=4f208ffed34c4c84a6a3fe17e18848e1; Expires=Wed, 03 Apr 2019 09:29:00 GMT; Path=/;SERVERID=e0be7116fc95174c0c92660b6cc51b85|1522747741|1522747741; Path=/' }
-[2018-04-03T17:35:09.239] [INFO] things - coupon info { state: false, code: 9999, msg: '用户未登陆' }
-[2018-04-03T17:36:40.378] [INFO] things - params [ '/usr/local/bin/node',
-  '/Users/junliang/server/www/maotaiServer/controllers/buyFixed.js' ]
-[2018-04-03T17:36:40.500] [INFO] things - start get addressID from mobile: 13686135579
-[2018-04-03T17:36:40.509] [INFO] things - acw_tc=AQAAAD0l0mOAXQkAI8jmcs1xM7eAYDxj; Path=/; HttpOnly;ASP.NET_SessionId=uatj3c4gdnvbabqccv1ed0bk; Path=/; HttpOnly;Vshop-Member=174152e965cb4c4792b7cd01a6db1917; Expires=Wed, 03 Apr 2019 09:29:01 GMT; Path=/;SERVERID=1b9bd15d33a2062233e6a70bd3d8dc61|1522747744|1522747744; Path=/
-[2018-04-03T17:36:45.274] [INFO] things - { state: false, code: 9999, msg: '用户未登陆' }
-[2018-04-03T17:36:45.275] [INFO] things - create order params { '0': '13686135579',
-  '1': '391',
-  '2': 6,
-  '3': 'Mozilla/5.0 (Linux; Android 4.4.4; LA2-SN Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36[android/1.0.23/edfa692d22614ee4994553870a1adf93/fea813479f2cd70216e41c440f76058e]',
-  '4': '',
-  '5': 233330186001,
-  '6': 'acw_tc=AQAAAD0l0mOAXQkAI8jmcs1xM7eAYDxj; Path=/; HttpOnly;ASP.NET_SessionId=uatj3c4gdnvbabqccv1ed0bk; Path=/; HttpOnly;Vshop-Member=174152e965cb4c4792b7cd01a6db1917; Expires=Wed, 03 Apr 2019 09:29:01 GMT; Path=/;SERVERID=1b9bd15d33a2062233e6a70bd3d8dc61|1522747744|1522747744; Path=/' }
-[2018-04-03T17:36:45.901] [INFO] things - coupon info { state: false, code: 9999, msg: '用户未登陆' }
-[2018-04-03T17:37:10.557] [INFO] things - params [ '/usr/local/bin/node',
-  '/Users/junliang/server/www/maotaiServer/controllers/buyFixed.js' ]
-[2018-04-03T17:37:10.664] [INFO] things - start get addressID from mobile: 18236877936
-[2018-04-03T17:37:10.671] [INFO] things - acw_tc=AQAAAEm/J2WfrgcAI8jmcuwjgaEnwogx; Path=/; HttpOnly;ASP.NET_SessionId=akjiocaqembhkmgwbzh13tip; Path=/; HttpOnly;Vshop-Member=82c8953cc6054e62b6378ada0a98d739; Expires=Wed, 03 Apr 2019 09:28:54 GMT; Path=/;SERVERID=8438f30ad0357ca7b03a23fe6e9923a1|1522747737|1522747737; Path=/
-[2018-04-03T17:37:16.239] [INFO] things - { state: false, code: 9999, msg: '用户未登陆' }
-[2018-04-03T17:37:16.240] [INFO] things - create order params { '0': '18236877936',
-  '1': '391',
-  '2': 6,
-  '3': 'Mozilla/5.0 (Linux; Android 4.4.4; LA2-SN Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36[android/1.0.23/6b2649358d2116cd26defd51a6dfa216/d733ce65e959a7c7dc1e6d52cfb3e028]',
-  '4': '',
-  '5': 233330186001,
-  '6': 'acw_tc=AQAAAEm/J2WfrgcAI8jmcuwjgaEnwogx; Path=/; HttpOnly;ASP.NET_SessionId=akjiocaqembhkmgwbzh13tip; Path=/; HttpOnly;Vshop-Member=82c8953cc6054e62b6378ada0a98d739; Expires=Wed, 03 Apr 2019 09:28:54 GMT; Path=/;SERVERID=8438f30ad0357ca7b03a23fe6e9923a1|1522747737|1522747737; Path=/' }
-[2018-04-03T17:37:50.440] [INFO] things - 位置错误,60秒后重试 { Error: socket hang up
+[2018-04-03T21:00:20.732] [INFO] things - 位置错误,60秒后重试 TypeError: cb is not a function
+    at FileCookieStore.findCookie (/Users/frosh/server/www/maotai/node_modules/tough-cookie-filestore/lib/filestore.js:36:12)
+    at Promise (/Users/frosh/server/www/maotai/tools/service.js:32:11)
+    at new Promise (<anonymous>)
+    at MaotaiService.getCurrentJar (/Users/frosh/server/www/maotai/tools/service.js:29:14)
+    at proxy.switchIp.then (/Users/frosh/server/www/maotai/script/watchBeijing.js:70:19)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+[2018-04-03T21:01:38.723] [INFO] things - 位置错误,60秒后重试 SyntaxError: Unexpected token E in JSON at position 731
+    at JSON.parse (<anonymous>)
+    at loadFromFile (/Users/frosh/server/www/maotai/node_modules/tough-cookie-filestore/lib/filestore.js:148:32)
+    at new FileCookieStore (/Users/frosh/server/www/maotai/node_modules/tough-cookie-filestore/lib/filestore.js:14:5)
+    at Promise (/Users/frosh/server/www/maotai/tools/service.js:30:17)
+    at new Promise (<anonymous>)
+    at MaotaiService.getCurrentJar (/Users/frosh/server/www/maotai/tools/service.js:29:14)
+    at proxy.switchIp.then (/Users/frosh/server/www/maotai/script/watchBeijing.js:70:19)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+[2018-04-03T21:01:39.866] [INFO] things - 位置错误,60秒后重试 TypeError: cb is not a function
+    at FileCookieStore.findCookie (/Users/frosh/server/www/maotai/node_modules/tough-cookie-filestore/lib/filestore.js:36:12)
+    at Promise (/Users/frosh/server/www/maotai/tools/service.js:32:11)
+    at new Promise (<anonymous>)
+    at MaotaiService.getCurrentJar (/Users/frosh/server/www/maotai/tools/service.js:29:14)
+    at proxy.switchIp.then (/Users/frosh/server/www/maotai/script/watchBeijing.js:70:19)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+[2018-04-03T21:02:11.754] [INFO] things - 位置错误,60秒后重试 SyntaxError: Unexpected token E in JSON at position 731
+    at JSON.parse (<anonymous>)
+    at loadFromFile (/Users/frosh/server/www/maotai/node_modules/tough-cookie-filestore/lib/filestore.js:148:32)
+    at new FileCookieStore (/Users/frosh/server/www/maotai/node_modules/tough-cookie-filestore/lib/filestore.js:14:5)
+    at Promise (/Users/frosh/server/www/maotai/tools/service.js:30:17)
+    at new Promise (<anonymous>)
+    at MaotaiService.getCurrentJar (/Users/frosh/server/www/maotai/tools/service.js:29:14)
+    at proxy.switchIp.then (/Users/frosh/server/www/maotai/script/watchBeijing.js:70:19)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+[2018-04-03T21:02:14.920] [INFO] things - 位置错误,60秒后重试 SyntaxError: Unexpected token E in JSON at position 731
+    at JSON.parse (<anonymous>)
+    at loadFromFile (/Users/frosh/server/www/maotai/node_modules/tough-cookie-filestore/lib/filestore.js:148:32)
+    at new FileCookieStore (/Users/frosh/server/www/maotai/node_modules/tough-cookie-filestore/lib/filestore.js:14:5)
+    at Promise (/Users/frosh/server/www/maotai/tools/service.js:30:17)
+    at new Promise (<anonymous>)
+    at MaotaiService.getCurrentJar (/Users/frosh/server/www/maotai/tools/service.js:29:14)
+    at proxy.switchIp.then (/Users/frosh/server/www/maotai/script/watchBeijing.js:70:19)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+[2018-04-03T21:03:00.315] [INFO] things - 位置错误,60秒后重试 TypeError: cb is not a function
+    at FileCookieStore.findCookie (/Users/frosh/server/www/maotai/node_modules/tough-cookie-filestore/lib/filestore.js:36:12)
+    at Promise (/Users/frosh/server/www/maotai/tools/service.js:34:11)
+    at new Promise (<anonymous>)
+    at MaotaiService.getCurrentJar (/Users/frosh/server/www/maotai/tools/service.js:29:14)
+    at proxy.switchIp.then (/Users/frosh/server/www/maotai/script/watchBeijing.js:70:19)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+[2018-04-03T21:03:01.455] [INFO] things - 位置错误,60秒后重试 TypeError: cb is not a function
+    at FileCookieStore.findCookie (/Users/frosh/server/www/maotai/node_modules/tough-cookie-filestore/lib/filestore.js:36:12)
+    at Promise (/Users/frosh/server/www/maotai/tools/service.js:34:11)
+    at new Promise (<anonymous>)
+    at MaotaiService.getCurrentJar (/Users/frosh/server/www/maotai/tools/service.js:29:14)
+    at proxy.switchIp.then (/Users/frosh/server/www/maotai/script/watchBeijing.js:70:19)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+[2018-04-03T21:03:02.609] [INFO] things - 位置错误,60秒后重试 TypeError: cb is not a function
+    at FileCookieStore.findCookie (/Users/frosh/server/www/maotai/node_modules/tough-cookie-filestore/lib/filestore.js:36:12)
+    at Promise (/Users/frosh/server/www/maotai/tools/service.js:34:11)
+    at new Promise (<anonymous>)
+    at MaotaiService.getCurrentJar (/Users/frosh/server/www/maotai/tools/service.js:29:14)
+    at proxy.switchIp.then (/Users/frosh/server/www/maotai/script/watchBeijing.js:70:19)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+[2018-04-03T21:03:03.752] [INFO] things - 位置错误,60秒后重试 TypeError: cb is not a function
+    at FileCookieStore.findCookie (/Users/frosh/server/www/maotai/node_modules/tough-cookie-filestore/lib/filestore.js:36:12)
+    at Promise (/Users/frosh/server/www/maotai/tools/service.js:34:11)
+    at new Promise (<anonymous>)
+    at MaotaiService.getCurrentJar (/Users/frosh/server/www/maotai/tools/service.js:29:14)
+    at proxy.switchIp.then (/Users/frosh/server/www/maotai/script/watchBeijing.js:70:19)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+[2018-04-03T21:03:04.889] [INFO] things - 位置错误,60秒后重试 TypeError: cb is not a function
+    at FileCookieStore.findCookie (/Users/frosh/server/www/maotai/node_modules/tough-cookie-filestore/lib/filestore.js:36:12)
+    at Promise (/Users/frosh/server/www/maotai/tools/service.js:34:11)
+    at new Promise (<anonymous>)
+    at MaotaiService.getCurrentJar (/Users/frosh/server/www/maotai/tools/service.js:29:14)
+    at proxy.switchIp.then (/Users/frosh/server/www/maotai/script/watchBeijing.js:70:19)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+[2018-04-03T21:03:25.774] [INFO] things - start get addressID from mobile: 15084425825
+[2018-04-03T21:03:25.782] [INFO] things - acw_tc=AQAAAIivaWztSwsAQxNMcadpcNZ4sUBF; Path=/; HttpOnly;ASP.NET_SessionId=j5ynitssxkkqxhrumdnnfi10; Path=/; HttpOnly;Vshop-Member=d56717fd854844ad9fc79c0d99555811; Expires=Wed, 03 Apr 2019 12:14:54 GMT; Path=/;SERVERID=dcd9be7705f12c52b59c3e649cb5f894|1522757697|1522757697; Path=/
+[2018-04-03T21:03:28.909] [INFO] things - {"state":true,"code":0,"data":{"size":10,"index":1,"count":1,"datacount":1,"list":[{"rownumber":1,"SId":1664081,"UserId":"2064055","TelPhone":"15084425825","Zipcode":"000000","Address":"杭州市公安局交通警察支队上城大队交通违法处理处,上城区佑圣观路68-1号开心厨娘","AddressInfo":"浙江省杭州市上城区","ShipTo":"吕文杰","Remark":"","ProvinceId":"330000","CityId":"330100","DistrictsId":"330102","IsDefault":true,"SMNo":null,"RelPhone":null,"Longitude":"120.174731","Latitude":"30.24108","IsVerification":false,"TimeStamp":"2018-03-31 15:43:15"}]}}
+[2018-04-03T21:03:29.776] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T21:03:29.776] [INFO] things - 位置错误,60秒后重试 TypeError: Cannot read property 'code' of undefined
+    at MaotaiService.getCurrentJar.then.then.then.then.data (/Users/frosh/server/www/maotai/script/watchBeijing.js:100:26)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+[2018-04-03T21:03:30.917] [INFO] things - 位置错误,60秒后重试 SyntaxError: Unexpected token E in JSON at position 731
+    at JSON.parse (<anonymous>)
+    at loadFromFile (/Users/frosh/server/www/maotai/node_modules/tough-cookie-filestore/lib/filestore.js:148:32)
+    at new FileCookieStore (/Users/frosh/server/www/maotai/node_modules/tough-cookie-filestore/lib/filestore.js:14:5)
+    at Promise (/Users/frosh/server/www/maotai/tools/service.js:32:17)
+    at new Promise (<anonymous>)
+    at MaotaiService.getCurrentJar (/Users/frosh/server/www/maotai/tools/service.js:29:14)
+    at proxy.switchIp.then (/Users/frosh/server/www/maotai/script/watchBeijing.js:70:19)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+[2018-04-03T21:03:32.063] [INFO] things - start get addressID from mobile: 15213163729
+[2018-04-03T21:03:32.064] [INFO] things - acw_tc=AQAAAIXytGoXkQUAQxNMcbaWu91WgkGo; Path=/; HttpOnly;ASP.NET_SessionId=4wjyukdn0g0hfd3re21mfw53; Path=/; HttpOnly;Vshop-Member=12f0375fc5af472f91c7ee8a5d3f4bcd; Expires=Wed, 03 Apr 2019 12:14:41 GMT; Path=/;SERVERID=d7ff3566a46564dfbddba0bd72787651|1522757684|1522757684; Path=/
+[2018-04-03T21:03:32.931] [INFO] things - {"state":true,"code":0,"data":{"size":10,"index":1,"count":1,"datacount":3,"list":[{"rownumber":1,"SId":1970634,"UserId":"2072242","TelPhone":"15213163729","Zipcode":"000000","Address":"杭州市上城区市场和质量监督管理局,对面延安西路园卡佳苑小区2单元一楼服务中心收","AddressInfo":"浙江省杭州市上城区","ShipTo":"张瑞敏","Remark":"","ProvinceId":"330000","CityId":"330100","DistrictsId":"330102","IsDefault":true,"SMNo":null,"RelPhone":null,"Longitude":"120.165228","Latitude":"30.241706","IsVerification":false,"TimeStamp":"2018-03-31 23:41:57"},{"rownumber":2,"SId":1933947,"UserId":"2072242","TelPhone":"15213163729","Zipcode":"000000","Address":"上海弘丰纺织品有限公司,a座6楼人力资源部6588室","AddressInfo":"上海市普陀区","ShipTo":"张佩云","Remark":"","ProvinceId":"310000","CityId":"310100","DistrictsId":"310107","IsDefault":false,"SMNo":null,"RelPhone":null,"Longitude":"121.387548","Latitude":"31.235687","IsVerification":false,"TimeStamp":"2018-03-22 22:56:52"},{"rownumber":3,"SId":1929882,"UserId":"2072242","TelPhone":"15213163729","Zipcode":"000000","Address":"上海市静安区南西幼儿园,附近鑫阳公寓12弄12-365号","AddressInfo":"上海市静安区","ShipTo":"胡燕","Remark":"","ProvinceId":"310000","CityId":"310100","DistrictsId":"310106","IsDefault":false,"SMNo":null,"RelPhone":null,"Longitude":"121.429429","Latitude":"31.224009","IsVerification":false,"TimeStamp":"2018-03-21 22:50:43"}]}}
+[2018-04-03T21:05:59.840] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '13618484713',
+     NickName: '13618484713',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: 'e39160db1b19d361b4e7bc77b8d5c5b1',
+     UserId: 2197733,
+     Name: '&13618484713' } }
+[2018-04-03T21:06:01.453] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '17753583852',
+     NickName: '17753583852',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: '54db24d85fef75931e7e226ae2b400e5',
+     UserId: 1842116,
+     Name: '&17753583852' } }
+[2018-04-03T21:06:17.190] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '15213163729',
+     NickName: '15213163729',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: '24832c13e0721ad2c021be6f2692a3f3',
+     UserId: 2072242,
+     Name: '&15213163729' } }
+[2018-04-03T21:06:19.625] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '17783920137',
+     NickName: '17783920137',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: '20af1a343953c3353f72a76156ac7b77',
+     UserId: 1840710,
+     Name: '&17783920137' } }
+[2018-04-03T21:06:29.170] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '18236877936',
+     NickName: '18236877936',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: '6b2649358d2116cd26defd51a6dfa216',
+     UserId: 2268139,
+     Name: '&18236877936' } }
+[2018-04-03T21:06:30.041] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '15178421370',
+     NickName: '15178421370',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: 'b656f32eda5819e9e948769da63ac1a1',
+     UserId: 2161640,
+     Name: '&15178421370' } }
+[2018-04-03T21:06:30.756] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '15084425825',
+     NickName: '15084425825',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: 'c059836905345354b3dc80ebc8b2506a',
+     UserId: 2064055,
+     Name: '&15084425825' } }
+[2018-04-03T21:06:35.219] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '17772324023',
+     NickName: '岁月静好',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: 'f6da0be190a47ec598cd95e4d600b66c',
+     UserId: 2270399,
+     Name: '&17772324023' } }
+[2018-04-03T21:06:36.048] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '13786958413',
+     NickName: '13786958413',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: 'c7f7a889904652e76586a9e479154037',
+     UserId: 1838448,
+     Name: '&13786958413' } }
+[2018-04-03T21:06:39.216] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '13711949575',
+     NickName: '为你解忧',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: '892c15ea8260af3328677aa7b3f7d677',
+     UserId: 1404829,
+     Name: '&13711949575' } }
+[2018-04-03T21:06:43.143] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '13686135579',
+     NickName: '13686135579',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: 'edfa692d22614ee4994553870a1adf93',
+     UserId: 1879375,
+     Name: '&13686135579' } }
+[2018-04-03T21:06:44.428] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '15717350785',
+     NickName: '15717350785',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: 'f8f975e440679edf445f68bc13723d5a',
+     UserId: 2178661,
+     Name: '&15717350785' } }
+[2018-04-03T21:06:46.075] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '18273181619',
+     NickName: '18273181619',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: 'fc5a5454208590dea8dcbad15b5cd81f',
+     UserId: 2169601,
+     Name: '&18273181619' } }
+[2018-04-03T21:06:46.076] [INFO] things - 全部登录完成
+[2018-04-03T21:06:57.809] [INFO] things - start get addressID from mobile: 15717350785
+[2018-04-03T21:06:57.814] [INFO] things - acw_tc=AQAAAL/aonUzvgMADk/mc5m2rIftITn9; Path=/; HttpOnly;ASP.NET_SessionId=f4beoqlcyddiz0ffrveljtlj; Path=/; HttpOnly;Vshop-Member=95bec2eb87524ffdba0758d999694f09; Expires=Wed, 03 Apr 2019 13:06:41 GMT; Path=/;SERVERID=2fa397870239218a49136d91e984b8ea|1522760804|1522760804; Path=/
+[2018-04-03T21:06:59.318] [INFO] things - {"state":true,"code":0,"data":{"size":10,"index":1,"count":1,"datacount":3,"list":[{"rownumber":1,"SId":1826720,"UserId":"2178661","TelPhone":"15717350785","Zipcode":"000000","Address":"正安精密工业(天津)有限公司,","AddressInfo":"天津市北辰区","ShipTo":"李洋","Remark":"","ProvinceId":"120000","CityId":"120100","DistrictsId":"120113","IsDefault":true,"SMNo":null,"RelPhone":null,"Longitude":"117.209941","Latitude":"39.217404","IsVerification":true,"TimeStamp":"2018-02-23 17:53:42"},{"rownumber":2,"SId":1968509,"UserId":"2178661","TelPhone":"15717350785","Zipcode":"000000","Address":"甘泽坊巷,后市街143幢302","AddressInfo":"浙江省杭州市上城区","ShipTo":"苗礼","Remark":"","ProvinceId":"330000","CityId":"330100","DistrictsId":"330102","IsDefault":false,"SMNo":null,"RelPhone":null,"Longitude":"120.169826","Latitude":"30.244229","IsVerification":false,"TimeStamp":"2018-04-02 10:19:21"},{"rownumber":3,"SId":1827485,"UserId":"2178661","TelPhone":"15717350785","Zipcode":"000000","Address":"花明园小区,2号楼302","AddressInfo":"天津市滨海新区","ShipTo":"刘冰","Remark":"","ProvinceId":"120000","CityId":"120100","DistrictsId":"120116","IsDefault":false,"SMNo":null,"RelPhone":null,"Longitude":"117.681643","Latitude":"39.03846","IsVerification":true,"TimeStamp":"2018-02-23 21:54:54"}]}}
+[2018-04-03T21:07:00.536] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T21:07:00.537] [INFO] things - 位置错误,60秒后重试 TypeError: Cannot read property 'code' of undefined
+    at MaotaiService.getCurrentJar.then.then.then.then.data (/Users/frosh/server/www/maotai/script/watchBeijing.js:100:26)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+[2018-04-03T21:07:01.673] [INFO] things - start get addressID from mobile: 17753583852
+[2018-04-03T21:07:01.674] [INFO] things - acw_tc=AQAAAF3wpQCzmgQADk/mc9dKG9w4YdHe; Path=/; HttpOnly;ASP.NET_SessionId=mnub2a3wlme2erx12vumoy2u; Path=/; HttpOnly;Vshop-Member=6eebdf7eb4f744b493a0ef406df25f82; Expires=Wed, 03 Apr 2019 13:05:58 GMT; Path=/;SERVERID=dd0e8d182c58be79b01ce789b76259bc|1522760761|1522760761; Path=/
+[2018-04-03T21:07:02.704] [INFO] things - {"state":true,"code":0,"data":{"size":10,"index":1,"count":1,"datacount":3,"list":[{"rownumber":1,"SId":1970650,"UserId":"1842116","TelPhone":"17753583852","Zipcode":"000000","Address":"杭州上城百货经营有限公司,对面花泰大厦 b座18楼云泰资产管理有限公司服务中心","AddressInfo":"浙江省杭州市上城区","ShipTo":"李云岩","Remark":"","ProvinceId":"330000","CityId":"330100","DistrictsId":"330102","IsDefault":true,"SMNo":null,"RelPhone":null,"Longitude":"120.170579","Latitude":"30.243946","IsVerification":false,"TimeStamp":"2018-03-31 23:48:29"},{"rownumber":2,"SId":1925463,"UserId":"1842116","TelPhone":"17753583852","Zipcode":"000000","Address":"万航渡路858弄28号楼,静安陆舍12弄12/58号收","AddressInfo":"上海市静安区","ShipTo":"张洺瑞","Remark":"","ProvinceId":"310000","CityId":"310100","DistrictsId":"310106","IsDefault":false,"SMNo":null,"RelPhone":null,"Longitude":"121.430544","Latitude":"31.226628","IsVerification":false,"TimeStamp":"2018-03-20 21:24:01"},{"rownumber":3,"SId":1365363,"UserId":"1842116","TelPhone":"17753583852","Zipcode":"000000","Address":"布丁酒店(西安钟鼓楼回民街店),右拐300米大千超市107号","AddressInfo":"陕西省西安市莲湖区","ShipTo":"李志超","Remark":"","ProvinceId":"610000","CityId":"610100","DistrictsId":"610104","IsDefault":false,"SMNo":null,"RelPhone":null,"Longitude":"108.943864","Latitude":"34.26162","IsVerification":true,"TimeStamp":"2018-01-22 23:06:10"}]}}
+[2018-04-03T21:07:03.679] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T21:07:03.679] [INFO] things - 位置错误,60秒后重试 TypeError: Cannot read property 'code' of undefined
+    at MaotaiService.getCurrentJar.then.then.then.then.data (/Users/frosh/server/www/maotai/script/watchBeijing.js:100:26)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+[2018-04-03T21:07:04.813] [INFO] things - start get addressID from mobile: 15717350785
+[2018-04-03T21:07:04.814] [INFO] things - acw_tc=AQAAAL/aonUzvgMADk/mc5m2rIftITn9; Path=/; HttpOnly;ASP.NET_SessionId=f4beoqlcyddiz0ffrveljtlj; Path=/; HttpOnly;Vshop-Member=95bec2eb87524ffdba0758d999694f09; Expires=Wed, 03 Apr 2019 13:06:41 GMT; Path=/;SERVERID=2fa397870239218a49136d91e984b8ea|1522760804|1522760804; Path=/
+[2018-04-03T21:07:06.854] [INFO] things - {"state":true,"code":0,"data":{"size":10,"index":1,"count":1,"datacount":3,"list":[{"rownumber":1,"SId":1826720,"UserId":"2178661","TelPhone":"15717350785","Zipcode":"000000","Address":"正安精密工业(天津)有限公司,","AddressInfo":"天津市北辰区","ShipTo":"李洋","Remark":"","ProvinceId":"120000","CityId":"120100","DistrictsId":"120113","IsDefault":true,"SMNo":null,"RelPhone":null,"Longitude":"117.209941","Latitude":"39.217404","IsVerification":true,"TimeStamp":"2018-02-23 17:53:42"},{"rownumber":2,"SId":1968509,"UserId":"2178661","TelPhone":"15717350785","Zipcode":"000000","Address":"甘泽坊巷,后市街143幢302","AddressInfo":"浙江省杭州市上城区","ShipTo":"苗礼","Remark":"","ProvinceId":"330000","CityId":"330100","DistrictsId":"330102","IsDefault":false,"SMNo":null,"RelPhone":null,"Longitude":"120.169826","Latitude":"30.244229","IsVerification":false,"TimeStamp":"2018-04-02 10:19:21"},{"rownumber":3,"SId":1827485,"UserId":"2178661","TelPhone":"15717350785","Zipcode":"000000","Address":"花明园小区,2号楼302","AddressInfo":"天津市滨海新区","ShipTo":"刘冰","Remark":"","ProvinceId":"120000","CityId":"120100","DistrictsId":"120116","IsDefault":false,"SMNo":null,"RelPhone":null,"Longitude":"117.681643","Latitude":"39.03846","IsVerification":true,"TimeStamp":"2018-02-23 21:54:54"}]}}
+[2018-04-03T21:08:24.014] [INFO] things - start get addressID from mobile: 15213163729
+[2018-04-03T21:08:24.020] [INFO] things - acw_tc=AQAAAMxbalQ2pAkADk/mcym6BpSWjc51; Path=/; HttpOnly;ASP.NET_SessionId=l2sciv3etgxr0rullljlu2fd; Path=/; HttpOnly;Vshop-Member=2a16434090b54f74b42726bfd9601205; Expires=Wed, 03 Apr 2019 13:06:14 GMT; Path=/;SERVERID=e0be7116fc95174c0c92660b6cc51b85|1522760773|1522760773; Path=/
+[2018-04-03T21:08:25.162] [INFO] things - {"state":true,"code":0,"data":{"size":10,"index":1,"count":1,"datacount":3,"list":[{"rownumber":1,"SId":1970634,"UserId":"2072242","TelPhone":"15213163729","Zipcode":"000000","Address":"杭州市上城区市场和质量监督管理局,对面延安西路园卡佳苑小区2单元一楼服务中心收","AddressInfo":"浙江省杭州市上城区","ShipTo":"张瑞敏","Remark":"","ProvinceId":"330000","CityId":"330100","DistrictsId":"330102","IsDefault":true,"SMNo":null,"RelPhone":null,"Longitude":"120.165228","Latitude":"30.241706","IsVerification":false,"TimeStamp":"2018-03-31 23:41:57"},{"rownumber":2,"SId":1933947,"UserId":"2072242","TelPhone":"15213163729","Zipcode":"000000","Address":"上海弘丰纺织品有限公司,a座6楼人力资源部6588室","AddressInfo":"上海市普陀区","ShipTo":"张佩云","Remark":"","ProvinceId":"310000","CityId":"310100","DistrictsId":"310107","IsDefault":false,"SMNo":null,"RelPhone":null,"Longitude":"121.387548","Latitude":"31.235687","IsVerification":false,"TimeStamp":"2018-03-22 22:56:52"},{"rownumber":3,"SId":1929882,"UserId":"2072242","TelPhone":"15213163729","Zipcode":"000000","Address":"上海市静安区南西幼儿园,附近鑫阳公寓12弄12-365号","AddressInfo":"上海市静安区","ShipTo":"胡燕","Remark":"","ProvinceId":"310000","CityId":"310100","DistrictsId":"310106","IsDefault":false,"SMNo":null,"RelPhone":null,"Longitude":"121.429429","Latitude":"31.224009","IsVerification":false,"TimeStamp":"2018-03-21 22:50:43"}]}}
+[2018-04-03T21:08:27.494] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T21:08:28.629] [INFO] things - start get addressID from mobile: 15084425825
+[2018-04-03T21:08:28.630] [INFO] things - acw_tc=AQAAAJPr4gXnYgkADk/mc0mpmhg4fCNv; Path=/; HttpOnly;ASP.NET_SessionId=eyw1pk150zistotxjlvbqtsp; Path=/; HttpOnly;Vshop-Member=802edabd88514fddbb6f6ce291382c8d; Expires=Wed, 03 Apr 2019 13:06:27 GMT; Path=/;SERVERID=f8ea4c3ae1c03eb905c9ff5aec4903d9|1522760790|1522760790; Path=/
+[2018-04-03T21:08:36.571] [INFO] things - {"state":true,"code":0,"data":{"size":10,"index":1,"count":1,"datacount":1,"list":[{"rownumber":1,"SId":1664081,"UserId":"2064055","TelPhone":"15084425825","Zipcode":"000000","Address":"杭州市公安局交通警察支队上城大队交通违法处理处,上城区佑圣观路68-1号开心厨娘","AddressInfo":"浙江省杭州市上城区","ShipTo":"吕文杰","Remark":"","ProvinceId":"330000","CityId":"330100","DistrictsId":"330102","IsDefault":true,"SMNo":null,"RelPhone":null,"Longitude":"120.174731","Latitude":"30.24108","IsVerification":false,"TimeStamp":"2018-03-31 15:43:15"}]}}
+[2018-04-03T21:09:00.428] [INFO] things - start get addressID from mobile: 13618484713
+[2018-04-03T21:09:00.433] [INFO] things - acw_tc=AQAAAIJvxiIaMwoADk/mcxhd+tv7M7Ya; Path=/; HttpOnly;ASP.NET_SessionId=a42sjpogul2ryxnmy2do1upw; Path=/; HttpOnly;Vshop-Member=6aeb6b5e26754d6e9be40e14ed3e54e5; Expires=Wed, 03 Apr 2019 13:05:56 GMT; Path=/;SERVERID=05fa188dd199f7a27f57ebc8ec96a90d|1522760759|1522760759; Path=/
+[2018-04-03T21:09:31.036] [INFO] things - 位置错误,60秒后重试 { Error: socket hang up
     at TLSSocket.onHangUp (_tls_wrap.js:1135:19)
     at Object.onceWrapper (events.js:313:30)
     at emitNone (events.js:111:20)
     at TLSSocket.emit (events.js:208:7)
-    at endReadableNT (_stream_readable.js:1055:12)
+    at endReadableNT (_stream_readable.js:1056:12)
     at _combinedTickCallback (internal/process/next_tick.js:138:11)
     at process._tickCallback (internal/process/next_tick.js:180:9)
   code: 'ECONNRESET',
@@ -932,27 +371,1679 @@
   host: undefined,
   port: 0,
   localAddress: undefined }
-[2018-04-03T17:37:51.511] [INFO] things - start get addressID from mobile: 13618484713
-[2018-04-03T17:37:51.514] [INFO] things - acw_tc=AQAAAAor8AqX9wEAI8jmclp/o1GWTPxg; Path=/; HttpOnly;ASP.NET_SessionId=4wxj2d4tokqpgsspjshecjea; Path=/; HttpOnly;Vshop-Member=c51d9bf946d14df5b4f09639454c3ef7; Expires=Wed, 03 Apr 2019 09:28:51 GMT; Path=/;SERVERID=d7ff3566a46564dfbddba0bd72787651|1522747734|1522747734; Path=/
-[2018-04-03T17:37:52.418] [INFO] things - { state: false, code: 9999, msg: '用户未登陆' }
-[2018-04-03T17:37:52.419] [INFO] things - create order params { '0': '13618484713',
+[2018-04-03T21:09:32.190] [INFO] things - start get addressID from mobile: 15084425825
+[2018-04-03T21:09:32.191] [INFO] things - acw_tc=AQAAAJPr4gXnYgkADk/mc0mpmhg4fCNv; Path=/; HttpOnly;ASP.NET_SessionId=eyw1pk150zistotxjlvbqtsp; Path=/; HttpOnly;Vshop-Member=802edabd88514fddbb6f6ce291382c8d; Expires=Wed, 03 Apr 2019 13:06:27 GMT; Path=/;SERVERID=f8ea4c3ae1c03eb905c9ff5aec4903d9|1522760790|1522760790; Path=/
+[2018-04-03T21:09:33.115] [INFO] things - {"state":true,"code":0,"data":{"size":10,"index":1,"count":1,"datacount":1,"list":[{"rownumber":1,"SId":1664081,"UserId":"2064055","TelPhone":"15084425825","Zipcode":"000000","Address":"杭州市公安局交通警察支队上城大队交通违法处理处,上城区佑圣观路68-1号开心厨娘","AddressInfo":"浙江省杭州市上城区","ShipTo":"吕文杰","Remark":"","ProvinceId":"330000","CityId":"330100","DistrictsId":"330102","IsDefault":true,"SMNo":null,"RelPhone":null,"Longitude":"120.174731","Latitude":"30.24108","IsVerification":false,"TimeStamp":"2018-03-31 15:43:15"}]}}
+[2018-04-03T21:09:35.993] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T21:09:35.994] [INFO] things - 位置错误,60秒后重试 ReferenceError: maxOrder is not defined
+    at MaotaiService.getCurrentJar.then.then.then.then.data (/Users/frosh/server/www/maotai/script/watchBeijing.js:100:45)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+[2018-04-03T21:09:37.133] [INFO] things - start get addressID from mobile: 17753583852
+[2018-04-03T21:09:37.134] [INFO] things - acw_tc=AQAAAF3wpQCzmgQADk/mc9dKG9w4YdHe; Path=/; HttpOnly;ASP.NET_SessionId=mnub2a3wlme2erx12vumoy2u; Path=/; HttpOnly;Vshop-Member=6eebdf7eb4f744b493a0ef406df25f82; Expires=Wed, 03 Apr 2019 13:05:58 GMT; Path=/;SERVERID=dd0e8d182c58be79b01ce789b76259bc|1522760761|1522760761; Path=/
+[2018-04-03T21:09:37.839] [INFO] things - {"state":true,"code":0,"data":{"size":10,"index":1,"count":1,"datacount":3,"list":[{"rownumber":1,"SId":1970650,"UserId":"1842116","TelPhone":"17753583852","Zipcode":"000000","Address":"杭州上城百货经营有限公司,对面花泰大厦 b座18楼云泰资产管理有限公司服务中心","AddressInfo":"浙江省杭州市上城区","ShipTo":"李云岩","Remark":"","ProvinceId":"330000","CityId":"330100","DistrictsId":"330102","IsDefault":true,"SMNo":null,"RelPhone":null,"Longitude":"120.170579","Latitude":"30.243946","IsVerification":false,"TimeStamp":"2018-03-31 23:48:29"},{"rownumber":2,"SId":1925463,"UserId":"1842116","TelPhone":"17753583852","Zipcode":"000000","Address":"万航渡路858弄28号楼,静安陆舍12弄12/58号收","AddressInfo":"上海市静安区","ShipTo":"张洺瑞","Remark":"","ProvinceId":"310000","CityId":"310100","DistrictsId":"310106","IsDefault":false,"SMNo":null,"RelPhone":null,"Longitude":"121.430544","Latitude":"31.226628","IsVerification":false,"TimeStamp":"2018-03-20 21:24:01"},{"rownumber":3,"SId":1365363,"UserId":"1842116","TelPhone":"17753583852","Zipcode":"000000","Address":"布丁酒店(西安钟鼓楼回民街店),右拐300米大千超市107号","AddressInfo":"陕西省西安市莲湖区","ShipTo":"李志超","Remark":"","ProvinceId":"610000","CityId":"610100","DistrictsId":"610104","IsDefault":false,"SMNo":null,"RelPhone":null,"Longitude":"108.943864","Latitude":"34.26162","IsVerification":true,"TimeStamp":"2018-01-22 23:06:10"}]}}
+[2018-04-03T21:09:40.595] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T21:09:40.596] [INFO] things - 位置错误,60秒后重试 ReferenceError: maxOrder is not defined
+    at MaotaiService.getCurrentJar.then.then.then.then.data (/Users/frosh/server/www/maotai/script/watchBeijing.js:100:45)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+[2018-04-03T21:09:41.740] [INFO] things - start get addressID from mobile: 17772324023
+[2018-04-03T21:09:41.741] [INFO] things - acw_tc=AQAAAI0Y6TlPLQEADk/mc71skvQ9nfbE; Path=/; HttpOnly;ASP.NET_SessionId=vkvgicomdlwhxxb1sp4lhlxu; Path=/; HttpOnly;Vshop-Member=ead7af41dad7498fb9713e2e1e7f64ce; Expires=Wed, 03 Apr 2019 13:06:32 GMT; Path=/;SERVERID=d7ff3566a46564dfbddba0bd72787651|1522760795|1522760795; Path=/
+[2018-04-03T21:10:22.280] [INFO] things - start get addressID from mobile: 17772324023
+[2018-04-03T21:10:22.292] [INFO] things - acw_tc=AQAAAI0Y6TlPLQEADk/mc71skvQ9nfbE; Path=/; HttpOnly;ASP.NET_SessionId=vkvgicomdlwhxxb1sp4lhlxu; Path=/; HttpOnly;Vshop-Member=ead7af41dad7498fb9713e2e1e7f64ce; Expires=Wed, 03 Apr 2019 13:06:32 GMT; Path=/;SERVERID=d7ff3566a46564dfbddba0bd72787651|1522760795|1522760795; Path=/
+[2018-04-03T21:10:23.514] [INFO] things - {"state":true,"code":0,"data":{"size":10,"index":1,"count":1,"datacount":1,"list":[{"rownumber":1,"SId":1970205,"UserId":"2270399","TelPhone":"17772324023","Zipcode":"000000","Address":"杭州口腔医院,上城区平海路3号金穗子砂锅点内萧山迎乐饭店","AddressInfo":"浙江省杭州市上城区","ShipTo":"熊昊天","Remark":"","ProvinceId":"330000","CityId":"330100","DistrictsId":"330102","IsDefault":true,"SMNo":null,"RelPhone":null,"Longitude":"120.171253","Latitude":"30.254029","IsVerification":false,"TimeStamp":"2018-03-31 21:59:10"}]}}
+[2018-04-03T21:10:24.732] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T21:10:24.862] [INFO] things - start get addressID from mobile: 15717350785
+[2018-04-03T21:10:24.863] [INFO] things - acw_tc=AQAAAL/aonUzvgMADk/mc5m2rIftITn9; Path=/; HttpOnly;ASP.NET_SessionId=f4beoqlcyddiz0ffrveljtlj; Path=/; HttpOnly;Vshop-Member=95bec2eb87524ffdba0758d999694f09; Expires=Wed, 03 Apr 2019 13:06:41 GMT; Path=/;SERVERID=2fa397870239218a49136d91e984b8ea|1522760804|1522760804; Path=/
+[2018-04-03T21:10:25.953] [INFO] things - {"state":true,"code":0,"data":{"size":10,"index":1,"count":1,"datacount":3,"list":[{"rownumber":1,"SId":1826720,"UserId":"2178661","TelPhone":"15717350785","Zipcode":"000000","Address":"正安精密工业(天津)有限公司,","AddressInfo":"天津市北辰区","ShipTo":"李洋","Remark":"","ProvinceId":"120000","CityId":"120100","DistrictsId":"120113","IsDefault":true,"SMNo":null,"RelPhone":null,"Longitude":"117.209941","Latitude":"39.217404","IsVerification":true,"TimeStamp":"2018-02-23 17:53:42"},{"rownumber":2,"SId":1968509,"UserId":"2178661","TelPhone":"15717350785","Zipcode":"000000","Address":"甘泽坊巷,后市街143幢302","AddressInfo":"浙江省杭州市上城区","ShipTo":"苗礼","Remark":"","ProvinceId":"330000","CityId":"330100","DistrictsId":"330102","IsDefault":false,"SMNo":null,"RelPhone":null,"Longitude":"120.169826","Latitude":"30.244229","IsVerification":false,"TimeStamp":"2018-04-02 10:19:21"},{"rownumber":3,"SId":1827485,"UserId":"2178661","TelPhone":"15717350785","Zipcode":"000000","Address":"花明园小区,2号楼302","AddressInfo":"天津市滨海新区","ShipTo":"刘冰","Remark":"","ProvinceId":"120000","CityId":"120100","DistrictsId":"120116","IsDefault":false,"SMNo":null,"RelPhone":null,"Longitude":"117.681643","Latitude":"39.03846","IsVerification":true,"TimeStamp":"2018-02-23 21:54:54"}]}}
+[2018-04-03T21:10:25.954] [INFO] things - 位置错误,60秒后重试 ReferenceError: j is not defined
+    at MaotaiService.getCurrentJar.then.then.address (/Users/frosh/server/www/maotai/script/watchBeijing.js:169:13)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+[2018-04-03T21:10:27.102] [INFO] things - start get addressID from mobile: 15178421370
+[2018-04-03T21:10:27.103] [INFO] things - acw_tc=AQAAAJ44NiiNNA0ADk/mc/OoFbDuqSnc; Path=/; HttpOnly;ASP.NET_SessionId=vuz0zslgkdzsmylvc0lzooe5; Path=/; HttpOnly;Vshop-Member=b713ec0015f44773a0c3845e27d65032; Expires=Wed, 03 Apr 2019 13:06:27 GMT; Path=/;SERVERID=19df48d02d2df737cbba18bd9d142364|1522760789|1522760789; Path=/
+[2018-04-03T21:11:28.997] [INFO] things - start get addressID from mobile: 15717350785
+[2018-04-03T21:11:29.003] [INFO] things - acw_tc=AQAAAL/aonUzvgMADk/mc5m2rIftITn9; Path=/; HttpOnly;ASP.NET_SessionId=f4beoqlcyddiz0ffrveljtlj; Path=/; HttpOnly;Vshop-Member=95bec2eb87524ffdba0758d999694f09; Expires=Wed, 03 Apr 2019 13:06:41 GMT; Path=/;SERVERID=2fa397870239218a49136d91e984b8ea|1522760804|1522760804; Path=/
+[2018-04-03T21:11:30.059] [INFO] things - {"state":true,"code":0,"data":{"size":10,"index":1,"count":1,"datacount":3,"list":[{"rownumber":1,"SId":1826720,"UserId":"2178661","TelPhone":"15717350785","Zipcode":"000000","Address":"正安精密工业(天津)有限公司,","AddressInfo":"天津市北辰区","ShipTo":"李洋","Remark":"","ProvinceId":"120000","CityId":"120100","DistrictsId":"120113","IsDefault":true,"SMNo":null,"RelPhone":null,"Longitude":"117.209941","Latitude":"39.217404","IsVerification":true,"TimeStamp":"2018-02-23 17:53:42"},{"rownumber":2,"SId":1968509,"UserId":"2178661","TelPhone":"15717350785","Zipcode":"000000","Address":"甘泽坊巷,后市街143幢302","AddressInfo":"浙江省杭州市上城区","ShipTo":"苗礼","Remark":"","ProvinceId":"330000","CityId":"330100","DistrictsId":"330102","IsDefault":false,"SMNo":null,"RelPhone":null,"Longitude":"120.169826","Latitude":"30.244229","IsVerification":false,"TimeStamp":"2018-04-02 10:19:21"},{"rownumber":3,"SId":1827485,"UserId":"2178661","TelPhone":"15717350785","Zipcode":"000000","Address":"花明园小区,2号楼302","AddressInfo":"天津市滨海新区","ShipTo":"刘冰","Remark":"","ProvinceId":"120000","CityId":"120100","DistrictsId":"120116","IsDefault":false,"SMNo":null,"RelPhone":null,"Longitude":"117.681643","Latitude":"39.03846","IsVerification":true,"TimeStamp":"2018-02-23 21:54:54"}]}}
+[2018-04-03T21:11:30.870] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T21:11:31.006] [INFO] things - start get addressID from mobile: 17783920137
+[2018-04-03T21:11:31.008] [INFO] things - acw_tc=AQAAAHJt1GNaBAcADk/mc3XEpxPCDKn+; Path=/; HttpOnly;ASP.NET_SessionId=jt0duhgo3lhyhemlpysbhhrj; Path=/; HttpOnly;Vshop-Member=4ac87d42005c4e218e6182fa62cd2c93; Expires=Wed, 03 Apr 2019 13:06:16 GMT; Path=/;SERVERID=73717107c680adffd3c04c75b05bf592|1522760779|1522760779; Path=/
+[2018-04-03T21:11:31.981] [INFO] things - {"state":true,"code":0,"data":{"size":10,"index":1,"count":1,"datacount":2,"list":[{"rownumber":1,"SId":1965982,"UserId":"1840710","TelPhone":"15369087530","Zipcode":"000000","Address":"浙江甘泽农产品发展有限公司,农产品有限公司正门对面太细南路53号楼上9806","AddressInfo":"浙江省杭州市上城区","ShipTo":"陈葛","Remark":"","ProvinceId":"330000","CityId":"330100","DistrictsId":"330102","IsDefault":true,"SMNo":null,"RelPhone":null,"Longitude":"120.170432","Latitude":"30.244271","IsVerification":false,"TimeStamp":"2018-03-30 21:01:45"},{"rownumber":2,"SId":1366711,"UserId":"1840710","TelPhone":"17783920137","Zipcode":"000000","Address":"西安市雁塔区人民政府,313","AddressInfo":"陕西省西安市雁塔区","ShipTo":"向秋红","Remark":"","ProvinceId":"610000","CityId":"610100","DistrictsId":"610113","IsDefault":false,"SMNo":null,"RelPhone":null,"Longitude":"108.948605","Latitude":"34.222517","IsVerification":true,"TimeStamp":"2018-01-23 09:08:40"}]}}
+[2018-04-03T21:11:31.982] [INFO] things - create order params { '0': '17783920137',
   '1': '391',
   '2': 6,
-  '3': 'Mozilla/5.0 (Linux; Android 4.4.4; LA2-SN Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36[android/1.0.23/e39160db1b19d361b4e7bc77b8d5c5b1/b27a293cc5efd12ddcf88a75f06f77c1]',
-  '4': '',
-  '5': 233330186001,
-  '6': 'acw_tc=AQAAAAor8AqX9wEAI8jmclp/o1GWTPxg; Path=/; HttpOnly;ASP.NET_SessionId=4wxj2d4tokqpgsspjshecjea; Path=/; HttpOnly;Vshop-Member=c51d9bf946d14df5b4f09639454c3ef7; Expires=Wed, 03 Apr 2019 09:28:51 GMT; Path=/;SERVERID=d7ff3566a46564dfbddba0bd72787651|1522747734|1522747734; Path=/' }
-[2018-04-03T17:37:56.727] [INFO] things - coupon info { state: false, code: 9999, msg: '用户未登陆' }
-[2018-04-03T17:38:11.727] [INFO] things - params [ '/usr/local/bin/node',
-  '/Users/junliang/server/www/maotaiServer/controllers/buyFixed.js' ]
-[2018-04-03T17:38:13.941] [INFO] things - start get addressID from mobile: 13786958413
-[2018-04-03T17:38:13.946] [INFO] things - acw_tc=AQAAAFjjm3IYogMAI8jmcvU8fVMW6M5g; Path=/; HttpOnly;ASP.NET_SessionId=dzavqvfsibmegx3qay3p1vzp; Path=/; HttpOnly;Vshop-Member=5faf1bd7a2284446a05d27ab447b4b71; Expires=Wed, 03 Apr 2019 09:28:57 GMT; Path=/;SERVERID=1e1f01ab954be5273c933e00471b178a|1522747740|1522747740; Path=/
-[2018-04-03T17:38:15.011] [INFO] things - { state: false, code: 9999, msg: '用户未登陆' }
-[2018-04-03T17:38:15.014] [INFO] things - create order params { '0': '13786958413',
-  '1': '391',
-  '2': 6,
-  '3': 'Mozilla/5.0 (Linux; Android 4.4.4; LA2-SN Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36[android/1.0.23/c7f7a889904652e76586a9e479154037/fae2606ee2a50af580f23debfbf67e2b]',
-  '4': '',
-  '5': 233330186001,
-  '6': 'acw_tc=AQAAAFjjm3IYogMAI8jmcvU8fVMW6M5g; Path=/; HttpOnly;ASP.NET_SessionId=dzavqvfsibmegx3qay3p1vzp; Path=/; HttpOnly;Vshop-Member=5faf1bd7a2284446a05d27ab447b4b71; Expires=Wed, 03 Apr 2019 09:28:57 GMT; Path=/;SERVERID=1e1f01ab954be5273c933e00471b178a|1522747740|1522747740; Path=/' }
-[2018-04-03T17:38:15.967] [INFO] things - coupon info { state: false, code: 9999, msg: '用户未登陆' }
+  '3': 100,
+  '4': 'Mozilla/5.0 (Linux; Android 4.4.4; LA2-SN Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36[android/1.0.23/20af1a343953c3353f72a76156ac7b77/de40afb8f42e3d6813f513cdc3ef74c8]',
+  '5': 1965982,
+  '6': 233330186001,
+  '7': -1,
+  '8': 'acw_tc=AQAAAHJt1GNaBAcADk/mc3XEpxPCDKn+; Path=/; HttpOnly;ASP.NET_SessionId=jt0duhgo3lhyhemlpysbhhrj; Path=/; HttpOnly;Vshop-Member=4ac87d42005c4e218e6182fa62cd2c93; Expires=Wed, 03 Apr 2019 13:06:16 GMT; Path=/;SERVERID=73717107c680adffd3c04c75b05bf592|1522760779|1522760779; Path=/' }
+[2018-04-03T21:11:32.917] [INFO] things - coupon info { state: true,
+  code: 0,
+  data: 
+   { Cid: '6340944e55b340e3a08a3c3e9ecb42a9',
+     Name: '茅台云商浙江省杭州市上城区服务网点',
+     DName: '浙商糖酒集团有限公司',
+     Address: '杭州市中山中路甘泽坊巷9号',
+     InvoiceCompany: '浙商糖酒集团有限公司',
+     SHBegin: '10:00:00',
+     SHEnd: '17:00:00',
+     Amount: 1499,
+     Level: 1,
+     DisAmount: 1499,
+     DisCost: 0,
+     LocalCost: -1,
+     LocalZero: -1,
+     LocalZeroCost: -1,
+     OtherCost: -1,
+     OtherZero: -1,
+     OtherZeroCost: -1,
+     InvoiceCost: 22,
+     TakeDeliveryLimit: 7,
+     HasPlainInvoice: true,
+     HasVATInvoice: true,
+     Description: '仅限自提',
+     StateCode: 0,
+     NetworkType: 0,
+     WorkingDay: '[{"EnDay":"Monday","CnDay":"星期一"},{"EnDay":"Tuesday","CnDay":"星期二"},{"EnDay":"Wednesday","CnDay":"星期三"},{"EnDay":"Thursday","CnDay":"星期四"},{"EnDay":"Friday","CnDay":"星期五"},{"EnDay":"Saturday","CnDay":"星期六"},{"EnDay":"Sunday","CnDay":"星期日"}]' } }
+[2018-04-03T21:11:51.134] [INFO] things - start get addressID from mobile: 18236877936
+[2018-04-03T21:11:51.139] [INFO] things - acw_tc=AQAAAL+BpxRujA4ADk/mc0stvedyIsMe; Path=/; HttpOnly;ASP.NET_SessionId=lubsowywv0ua5icbvbt02hk0; Path=/; HttpOnly;Vshop-Member=dcbeb1423b364b5fa9d940b949cc3bcd; Expires=Wed, 03 Apr 2019 13:06:25 GMT; Path=/;SERVERID=2fa397870239218a49136d91e984b8ea|1522760787|1522760787; Path=/
+[2018-04-03T21:12:32.437] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '13153185002',
+     NickName: '13153185002',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: '14bda1d284d70552a36d9334bdae8b13',
+     UserId: 2225458,
+     Name: '&13153185002' } }
+[2018-04-03T21:13:06.796] [ERROR] things - { Error: socket hang up
+    at TLSSocket.onHangUp (_tls_wrap.js:1135:19)
+    at Object.onceWrapper (events.js:313:30)
+    at emitNone (events.js:111:20)
+    at TLSSocket.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1056:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+  code: 'ECONNRESET',
+  path: undefined,
+  host: undefined,
+  port: 0,
+  localAddress: undefined }
+[2018-04-03T21:13:11.710] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '13485665212',
+     NickName: '13485665212',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: '12d0a2277658034905d00a36fbbd97a7',
+     UserId: 2072874,
+     Name: '&13485665212' } }
+[2018-04-03T21:13:16.515] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '13700077519',
+     NickName: '13700077519',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: 'ad6b2895906a95e37e02c4666be7446f',
+     UserId: 2224996,
+     Name: '&13700077519' } }
+[2018-04-03T21:13:17.289] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '15063527328',
+     NickName: '15063527328',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: 'f4d41f55f6da8efb98684fa929da64e0',
+     UserId: 2225390,
+     Name: '&15063527328' } }
+[2018-04-03T21:13:17.979] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '15075870950',
+     NickName: '15075870950',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: 'f6cd42182b1a52d88de69150273ba480',
+     UserId: 2082064,
+     Name: '&15075870950' } }
+[2018-04-03T21:13:20.117] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '15206334886',
+     NickName: '15206334886',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: '65cf2a6deb51ac8c5dc79c63e122b85f',
+     UserId: 2225192,
+     Name: '&15206334886' } }
+[2018-04-03T21:13:20.885] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '15303199414',
+     NickName: '15303199414',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: 'cd1beb69e856507335e8bbe520e098dd',
+     UserId: 2216934,
+     Name: '&15303199414' } }
+[2018-04-03T21:13:21.613] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '15354193781',
+     NickName: '15354193781',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: '2cc1ccda57ba6a49bb72373f108c6030',
+     UserId: 2214358,
+     Name: '&15354193781' } }
+[2018-04-03T21:13:22.470] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '15373204143',
+     NickName: '15373204143',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: '3b0113ca359c77d823fd65dacb5361e8',
+     UserId: 2218078,
+     Name: '&15373204143' } }
+[2018-04-03T21:13:23.315] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '15399130078',
+     NickName: '15399130078',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: 'ab546e930d7bd2041b9c36653f9e6eea',
+     UserId: 2087546,
+     Name: '&15399130078' } }
+[2018-04-03T21:13:27.993] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '15515970953',
+     NickName: '15515970953',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: '32a91c4d3538cbbd344c0b9f891d9537',
+     UserId: 2190378,
+     Name: '&15515970953' } }
+[2018-04-03T21:13:28.923] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '15937230461',
+     NickName: '15937230461',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: '4e3764dc3e6509ed07789a6b56075e63',
+     UserId: 2188112,
+     Name: '&15937230461' } }
+[2018-04-03T21:13:29.828] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '15951853170',
+     NickName: '15951853170',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: 'bdb5d0a755f9e478709bdc197e82c174',
+     UserId: 2216959,
+     Name: '&15951853170' } }
+[2018-04-03T21:13:32.741] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '17379324087',
+     NickName: '17379324087',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: '422730e6569110fa95293c0401df5e31',
+     UserId: 2200673,
+     Name: '&17379324087' } }
+[2018-04-03T21:13:33.612] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '18537303412',
+     NickName: '18537303412',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: 'c2045eeadc797347ed844dfea40b5213',
+     UserId: 2100828,
+     Name: '&18537303412' } }
+[2018-04-03T21:13:35.878] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '15549208672',
+     NickName: '15549208672',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: '8ae2d5166f887e6816ee43ffeb10052a',
+     UserId: 2192910,
+     Name: '&15549208672' } }
+[2018-04-03T21:13:36.802] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '15777186432',
+     NickName: '15777186432',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: '0d4deda7879c56a3210c6b3d6f545f46',
+     UserId: 2087814,
+     Name: '&15777186432' } }
+[2018-04-03T21:13:37.722] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '15238555689',
+     NickName: '15238555689',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: 'e8f1e1b48bf6deff9acd939a7adf2e24',
+     UserId: 2245989,
+     Name: '&15238555689' } }
+[2018-04-03T21:13:39.462] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '13720689056',
+     NickName: '13720689056',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: '3b065f7bd80ebaf6a6f69c73b0c4217c',
+     UserId: 2245979,
+     Name: '&13720689056' } }
+[2018-04-03T21:13:40.208] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '15835086989',
+     NickName: '15835086989',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: '47bc6d9a063b00b29f80acf227eff978',
+     UserId: 2245966,
+     Name: '&15835086989' } }
+[2018-04-03T21:13:41.057] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '13513642792',
+     NickName: '13513642792',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: '11557bc4d74f28332afc45afb665c8eb',
+     UserId: 2246017,
+     Name: '&13513642792' } }
+[2018-04-03T21:13:41.896] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '13081312422',
+     NickName: '13081312422',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: 'a2281be5b120e04099fd8c2464cec419',
+     UserId: 2245808,
+     Name: '&13081312422' } }
+[2018-04-03T21:13:42.628] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '15082907866',
+     NickName: '15082907866',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: 'b368d55f657557c6241a445c2a2dc416',
+     UserId: 2245927,
+     Name: '&15082907866' } }
+[2018-04-03T21:13:43.450] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '13842111030',
+     NickName: '13842111030',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: '3518eda1a0ca030834bdf6d851ba174c',
+     UserId: 2245946,
+     Name: '&13842111030' } }
+[2018-04-03T21:13:44.288] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '15046846298',
+     NickName: '15046846298',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: 'a9153006d965bbbb42333732e5515994',
+     UserId: 2245889,
+     Name: '&15046846298' } }
+[2018-04-03T21:13:45.001] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '18903188059',
+     NickName: '18903188059',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: '0a387ddab4ee28586ada0e022c51cb92',
+     UserId: 2245801,
+     Name: '&18903188059' } }
+[2018-04-03T21:13:49.788] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '13670589613',
+     NickName: '13670589613',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: 'b3bb0ff1cad6df1fcc86a6a2048ac8d7',
+     UserId: 2245834,
+     Name: '&13670589613' } }
+[2018-04-03T21:13:50.723] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '13792080758',
+     NickName: '13792080758',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: '22e90518fbf514bd4107aa70a5b00142',
+     UserId: 2245800,
+     Name: '&13792080758' } }
+[2018-04-03T21:13:51.488] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '13313181385',
+     NickName: '13313181385',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: '0aeecfd9ead67cbb7169d1069519e6bb',
+     UserId: 2245815,
+     Name: '&13313181385' } }
+[2018-04-03T21:13:52.316] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '13102661153',
+     NickName: '寒冰',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: 'f827d39925c527faca204d53557b8a6f',
+     UserId: 2088128,
+     Name: '&13102661153' } }
+[2018-04-03T21:13:59.124] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '17535275750',
+     NickName: '17535275750',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: '39512d0cc607547c1abf178b86c34770',
+     UserId: 2188122,
+     Name: '&17535275750' } }
+[2018-04-03T21:13:59.936] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '18709222182',
+     NickName: '18709222182',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: '4e9b0041b983b0f56c224c833a85b0b6',
+     UserId: 2198932,
+     Name: '&18709222182' } }
+[2018-04-03T21:14:04.760] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '13351208936',
+     NickName: '13351208936',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: 'f2bab23cfe07a351251fe050b5fc4db2',
+     UserId: 2130267,
+     Name: '&13351208936' } }
+[2018-04-03T21:14:05.680] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '13392151517',
+     NickName: '13392151517',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: '76a167f9da9540b1054d62837cb5b6db',
+     UserId: 2225807,
+     Name: '&13392151517' } }
+[2018-04-03T21:14:06.597] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '13399381732',
+     NickName: '13399381732',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: 'e98061037a1b4c572b48a7691658abeb',
+     UserId: 2177120,
+     Name: '&13399381732' } }
+[2018-04-03T21:14:07.375] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '13413723166',
+     NickName: '13413723166',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: '15ac21b16f511babebb590d778072353',
+     UserId: 2225981,
+     Name: '&13413723166' } }
+[2018-04-03T21:14:08.097] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '13453301621',
+     NickName: '13453301621',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: 'fe63596926b67cbcdd3fd01d1674bd03',
+     UserId: 2181725,
+     Name: '&13453301621' } }
+[2018-04-03T21:14:08.957] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '13512856201',
+     NickName: '13512856201',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: '8a2ed668f2feb8c63dda7370a91ea593',
+     UserId: 2189780,
+     Name: '&13512856201' } }
+[2018-04-03T21:14:09.821] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '13519083633',
+     NickName: '13519083633',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: '900f365fbc94855f9db3ad226bb9acb9',
+     UserId: 2177148,
+     Name: '&13519083633' } }
+[2018-04-03T21:14:10.685] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '13521690981',
+     NickName: '13521690981',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: '594d3db4a33dfe768e0ccf8105cbd507',
+     UserId: 2072706,
+     Name: '&13521690981' } }
+[2018-04-03T21:14:11.661] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '13546886639',
+     NickName: '13546886639',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: '3d44f085d475ae5fa1b3bb2327766687',
+     UserId: 2087536,
+     Name: '&13546886639' } }
+[2018-04-03T21:14:12.693] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '13633696711',
+     NickName: '13633696711',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: '95b19ad1402ad3dd74a09f5030114a79',
+     UserId: 2176436,
+     Name: '&13633696711' } }
+[2018-04-03T21:14:13.663] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '13993852417',
+     NickName: '13993852417',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: '0c374d89b4670f75c52e01789701aa78',
+     UserId: 2177140,
+     Name: '&13993852417' } }
+[2018-04-03T21:14:14.446] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '15131828567',
+     NickName: '15131828567',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: 'db8d7d667c0c0b055e7bd8d42d2e3558',
+     UserId: 2176452,
+     Name: '&15131828567' } }
+[2018-04-03T21:14:19.384] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '15264711001',
+     NickName: '15264711001',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: 'c0c8a41f8f9cf46eef78a930d419e5fd',
+     UserId: 2142080,
+     Name: '&15264711001' } }
+[2018-04-03T21:14:20.157] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '15264711296',
+     NickName: '15264711296',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: 'f71366ea74c2379408ce6a71882fce48',
+     UserId: 2093564,
+     Name: '&15264711296' } }
+[2018-04-03T21:14:20.944] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '15393630594',
+     NickName: '15393630594',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: '6ad232ebf4f740b38176fcf0eae0847e',
+     UserId: 2176511,
+     Name: '&15393630594' } }
+[2018-04-03T21:14:21.866] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '15633523066',
+     NickName: '15633523066',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: '95614a775041d90bb26e81040dbcc672',
+     UserId: 2100829,
+     Name: '&15633523066' } }
+[2018-04-03T21:14:22.693] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '15645919316',
+     NickName: '15645919316',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: '8c3238b0052e9a777912742294a90b3c',
+     UserId: 2202376,
+     Name: '&15645919316' } }
+[2018-04-03T21:14:23.426] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '15699770933',
+     NickName: '15699770933',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: 'aaa9d69d61e2e180db40d249273de669',
+     UserId: 2182387,
+     Name: '&15699770933' } }
+[2018-04-03T21:14:24.188] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '15949806339',
+     NickName: '15949806339',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: '9738b195f5a51973a5e915a09fdb2b9e',
+     UserId: 2097675,
+     Name: '&15949806339' } }
+[2018-04-03T21:14:24.991] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '15981953127',
+     NickName: '15981953127',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: '5027a3efda51b18c6306e7f501b67b7f',
+     UserId: 2189207,
+     Name: '&15981953127' } }
+[2018-04-03T21:14:25.759] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '17505106529',
+     NickName: '17505106529',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: 'b8ef55b325591cc4b3d5de9efd59ed0a',
+     UserId: 2184256,
+     Name: '&17505106529' } }
+[2018-04-03T21:14:26.647] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '17612746321',
+     NickName: '17612746321',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: 'c36072cd4f0530da3c6b5bd442a3771a',
+     UserId: 2183103,
+     Name: '&17612746321' } }
+[2018-04-03T21:14:27.395] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '17753747930',
+     NickName: '17753747930',
+     HeadPortrait: '/upload/fileStore/20180205/6365344056447153854980424.jpg',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: 'a6dd8e8bef7a523681f0cb727be9ad85',
+     UserId: 2090906,
+     Name: '&17753747930' } }
+[2018-04-03T21:14:28.319] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '17757449525',
+     NickName: '17757449525',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: '677286868b87c048d2f2e1861034b09d',
+     UserId: 2225881,
+     Name: '&17757449525' } }
+[2018-04-03T21:14:29.146] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '18232902912',
+     NickName: '18232902912',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: '0d4f9a9e3f3b38c6c66f22ca704e9c49',
+     UserId: 2075087,
+     Name: '&18232902912' } }
+[2018-04-03T21:14:30.071] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '18246626742',
+     NickName: '18246626742',
+     HeadPortrait: '/upload/fileStore/20180207/6365361128753682613708460.jpg',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: '8cb1a9a5754d0f9cde0f62fcd86e7de3',
+     UserId: 2106649,
+     Name: '&18246626742' } }
+[2018-04-03T21:14:30.866] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '18253251389',
+     NickName: '18253251389',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: 'acf54c93543645dc78203ad1549a5df9',
+     UserId: 2190299,
+     Name: '&18253251389' } }
+[2018-04-03T21:14:31.662] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '18382394514',
+     NickName: '18382394514',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: '406f0a2d52150d7e19e2c518ad8326c4',
+     UserId: 2188364,
+     Name: '&18382394514' } }
+[2018-04-03T21:14:32.411] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '18810320392',
+     NickName: '王金璐',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: 'c62304cee56e730615c516adcca6b007',
+     UserId: 2078952,
+     Name: '&18810320392' } }
+[2018-04-03T21:14:33.208] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '18863572962',
+     NickName: '18863572962',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: 'c3ea09bc06a3c3d28f6ebe9877629e3c',
+     UserId: 2225775,
+     Name: '&18863572962' } }
+[2018-04-03T21:14:34.085] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '18946959184',
+     NickName: '18946959184',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: '18f1bc5a8243ef1b9037594043113717',
+     UserId: 2225377,
+     Name: '&18946959184' } }
+[2018-04-03T21:14:34.975] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '18967839427',
+     NickName: '18967839427',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: 'def840b7f4c32a7128b9361ee1af1833',
+     UserId: 2225808,
+     Name: '&18967839427' } }
+[2018-04-03T21:14:37.944] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '15635316166',
+     NickName: '15635316166',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: 'c8b12ac29121f31b7f54828674e4799c',
+     UserId: 2265222,
+     Name: '&15635316166' } }
+[2018-04-03T21:14:38.775] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '13969577793',
+     NickName: '13969577793',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: '042371a0f0c29cf4095bbb4ec308890a',
+     UserId: 2265252,
+     Name: '&13969577793' } }
+[2018-04-03T21:14:39.678] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '15535874823',
+     NickName: '15535874823',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: '64294da92bacee0000a1331bc43169ea',
+     UserId: 2265251,
+     Name: '&15535874823' } }
+[2018-04-03T21:14:40.523] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '15525146023',
+     NickName: '15525146023',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: '1a9a5507fbdf778238e9eb6f90422f86',
+     UserId: 2265241,
+     Name: '&15525146023' } }
+[2018-04-03T21:14:41.305] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '15588159966',
+     NickName: '15588159966',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: '4fc9150f6126e52effba3546fd060ec3',
+     UserId: 2265188,
+     Name: '&15588159966' } }
+[2018-04-03T21:14:42.241] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '18909564220',
+     NickName: '18909564220',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: 'e4c12c448decaa5f6144d84332be3a16',
+     UserId: 2265248,
+     Name: '&18909564220' } }
+[2018-04-03T21:14:43.040] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '15535890431',
+     NickName: '15535890431',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: '4d6c07dc52bc6e31d91a3b462ec0709d',
+     UserId: 2265234,
+     Name: '&15535890431' } }
+[2018-04-03T21:14:43.672] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '15303529430',
+     NickName: '15303529430',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: '89a0e6f2cb5ae27fef4f65c77f7b74b3',
+     UserId: 2265176,
+     Name: '&15303529430' } }
+[2018-04-03T21:14:44.461] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '15535486077',
+     NickName: '15535486077',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: 'e02489027f02e3f79083872b1c3c02cd',
+     UserId: 2265227,
+     Name: '&15535486077' } }
+[2018-04-03T21:14:45.218] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '15834343940',
+     NickName: '15834343940',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: '1c975ddba921a0d8f370533bed4eaa6d',
+     UserId: 2265208,
+     Name: '&15834343940' } }
+[2018-04-03T21:14:45.984] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '13895490886',
+     NickName: '13895490886',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: '888ceef8d25e1ef7417f8603e72a51ea',
+     UserId: 2265218,
+     Name: '&13895490886' } }
+[2018-04-03T21:14:46.750] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '15081664435',
+     NickName: '15081664435',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: '1d8d80469dd7a72e03af59fd29bf4c19',
+     UserId: 2265249,
+     Name: '&15081664435' } }
+[2018-04-03T21:14:51.573] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '13781072791',
+     NickName: '13781072791',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: 'e58e88992f04bc0244c934f62b3a7b8e',
+     UserId: 2265232,
+     Name: '&13781072791' } }
+[2018-04-03T21:14:52.493] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '15330512791',
+     NickName: '15330512791',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: 'cba42788c08cddb06a606a32ac3ac4ac',
+     UserId: 2265170,
+     Name: '&15330512791' } }
+[2018-04-03T21:14:53.322] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '17031887830',
+     NickName: '17031887830',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: '3886f62948f6d8405e1146d5cf8c9e4e',
+     UserId: 2265147,
+     Name: '&17031887830' } }
+[2018-04-03T21:14:54.244] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '13283936032',
+     NickName: '13283936032',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: '8447daf7816a21c27201f052528aa26c',
+     UserId: 2265159,
+     Name: '&13283936032' } }
+[2018-04-03T21:14:55.116] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '15046800490',
+     NickName: '15046800490',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: '89448de0aa870d47fab1ac00d86fbd3d',
+     UserId: 2265174,
+     Name: '&15046800490' } }
+[2018-04-03T21:14:55.958] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '15081820867',
+     NickName: '15081820867',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: '2687425efde5863cae151c41121c4998',
+     UserId: 2265205,
+     Name: '&15081820867' } }
+[2018-04-03T21:14:56.881] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '13831322890',
+     NickName: '13831322890',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: 'cf07c21ecc03157f02aa0348fb2dc102',
+     UserId: 2265142,
+     Name: '&13831322890' } }
+[2018-04-03T21:14:57.694] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '18434763969',
+     NickName: '18434763969',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: 'ef9a912a34a0854f5cf4a895131de526',
+     UserId: 2265048,
+     Name: '&18434763969' } }
+[2018-04-03T21:14:58.634] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '15035399985',
+     NickName: '舍不得',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: false,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: '1f2b01f83be5f66b6008343ba9bb211c',
+     UserId: 2265080,
+     Name: '&15035399985' } }
+[2018-04-03T21:15:04.455] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '18291130651',
+     NickName: '18291130651',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: '77bfb6fec7ee20c8eb042a5f8d3c5b0d',
+     UserId: 2265075,
+     Name: '&18291130651' } }
+[2018-04-03T21:15:05.243] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '13220790090',
+     NickName: '13220790090',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: 'adba4f5777a5ad9433ab24fa3e19b788',
+     UserId: 2265064,
+     Name: '&13220790090' } }
+[2018-04-03T21:15:06.212] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '15003443253',
+     NickName: '15003443253',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: '875f38819ce82bf5649980b1bd97bfe0',
+     UserId: 2265054,
+     Name: '&15003443253' } }
+[2018-04-03T21:15:12.955] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '13676343367',
+     NickName: '13676343367',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: '9ac9f5dbb5710230a35fbe18456b1953',
+     UserId: 2265107,
+     Name: '&13676343367' } }
+[2018-04-03T21:15:13.792] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '15257918657',
+     NickName: '15257918657',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: 'dfdc8f93462a2929784e89cf27e110b4',
+     UserId: 2265097,
+     Name: '&15257918657' } }
+[2018-04-03T21:15:14.700] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '15505201939',
+     NickName: '15505201939',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: '18d4151032ca0522b2e523b22dacba09',
+     UserId: 2265072,
+     Name: '&15505201939' } }
+[2018-04-03T21:15:15.523] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '18831099037',
+     NickName: '18831099037',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: '1692eb6d9b0ea3ddeaf4e85f8bcfdd96',
+     UserId: 2265117,
+     Name: '&18831099037' } }
+[2018-04-03T21:15:16.477] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '15039298864',
+     NickName: '15039298864',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: 'bd16e12149916dbeafd2a4f0268573f9',
+     UserId: 2265095,
+     Name: '&15039298864' } }
+[2018-04-03T21:15:17.289] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '13839228541',
+     NickName: '13839228541',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: '380b2234ca64eee42bead60edec59c94',
+     UserId: 2265115,
+     Name: '&13839228541' } }
+[2018-04-03T21:15:18.160] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '15257918657',
+     NickName: '15257918657',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: 'dfdc8f93462a2929784e89cf27e110b4',
+     UserId: 2265097,
+     Name: '&15257918657' } }
+[2018-04-03T21:15:18.908] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '18331375226',
+     NickName: '18331375226',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: 'fe6bb5d276ab11c2d72ec3558aa38b5e',
+     UserId: 2265258,
+     Name: '&18331375226' } }
+[2018-04-03T21:15:18.909] [INFO] things - 全部登录完成
+[2018-04-03T21:15:30.079] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '13153185002',
+     NickName: '13153185002',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: '14bda1d284d70552a36d9334bdae8b13',
+     UserId: 2225458,
+     Name: '&13153185002' } }
+[2018-04-03T21:15:30.975] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '13343192376',
+     NickName: '13343192376',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: '78515515acaf69f4bfac5537ca209d96',
+     UserId: 2218069,
+     Name: '&13343192376' } }
+[2018-04-03T21:15:42.455] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '13343192376',
+     NickName: '13343192376',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: '78515515acaf69f4bfac5537ca209d96',
+     UserId: 2218069,
+     Name: '&13343192376' } }
+[2018-04-03T21:15:42.459] [INFO] things - 全部登录完成
