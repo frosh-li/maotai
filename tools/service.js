@@ -22,7 +22,18 @@ class MaotaiService {
     initCookiePath(path){
       j = request.jar(new FileCookieStore('./cookies/'+path+'.json'));
     }
-
+    getCurrentJar(tel,callback) {
+      return new Promise((resolve, reject) => {
+        var v = new FileCookieStore('./cookies/'+tel+'.json')
+        v.findCookies('www.cmaotai.com','/', function(err, cookies){
+          if(err){
+            return reject(err);
+          }
+          return resolve(cookies.join(";"))
+        })  
+      })
+      
+    }
     headers (userAgent) {
       return {
         "proxy-authorization" : "Basic " + proxy.proxyAuth,
@@ -65,7 +76,8 @@ class MaotaiService {
         if (tel == "15330066919") {
             pass = "110520";
         }
-        j = request.jar();
+        fs.writeFileSync('./cookies/'+tel+'.json', "");
+        j = request.jar(new FileCookieStore('./cookies/'+tel+'.json'));
         let options = {
             method: 'POST',
             url: 'https://www.cmaotai.com/API/Servers.ashx',
@@ -130,7 +142,7 @@ class MaotaiService {
       })
     }
 
-    addAddress(provinceId,cityId, districtsId, addressInfo, address, shipTo, callPhone, zipcode="100000",isDef=1,lng, lat, userAgent){
+    addAddress(provinceId,cityId, districtsId, addressInfo, address, shipTo, callPhone, zipcode="100000",isDef=1,lng, lat, userAgent,j){
       let now = (+new Date());
       let options = {
           method: 'POST',
@@ -165,7 +177,7 @@ class MaotaiService {
       })
     }
 
-    deleteAddress(addressId, userAgent) {
+    deleteAddress(addressId, userAgent,j) {
         let now = (+new Date());
         let options = {
             method: 'POST',
@@ -227,7 +239,7 @@ class MaotaiService {
      * @param  {type} pid = 391 description
      * @return {type}           description
      */
-    LBSServer(addressID, tel, userAgent, pid = 391) {
+    LBSServer(addressID, tel, userAgent, pid = 391, j) {
         let now = (+new Date());
         return new Promise((resolve, reject) => {
             let options = {
@@ -314,7 +326,7 @@ class MaotaiService {
      * @return {type}            description
      */
 
-    createOrder(stel, pid, quantity = 6, userAgent, scopeAddress, shopId, fixedShopName = -1) {
+    createOrder(stel, pid, quantity = 6, userAgent, scopeAddress, shopId, fixedShopName = -1, j) {
         logger.info('create order params', arguments);
         if (typeof stel === 'string') {
             var tel = stel;
@@ -337,6 +349,7 @@ class MaotaiService {
                       method: 'POST',
                       url: 'https://www.cmaotai.com/YSApp_API/YSAppServer.ashx',
                       headers: {
+                          'cookies':j,
                           "proxy-authorization" : "Basic " + proxy.proxyAuth,
                           'cache-control': 'no-cache',
                           'accept-language': 'zh-CN,en-US;q=0.8',
@@ -353,7 +366,7 @@ class MaotaiService {
                         count: quantity,
                         timestamp121: (+new Date())
                       },
-                      jar:j,
+                      
                       json:true
                   };
                   request(options, function(error, response, body) {
@@ -376,9 +389,10 @@ class MaotaiService {
                               'content-type': 'application/x-www-form-urlencoded',
                               referer: `https://www.cmaotai.com/ysh5/page/BuyInquiry/buyInquiryIndex.html?type=invoiceInfo&productId=${pid}&num=${quantity}`,
                               'user-agent': userAgent,
-                              'x-requested-with': 'XMLHttpRequest'
+                              'x-requested-with': 'XMLHttpRequest',
+                              'cookies':j,
                           },
-                          jar:j,
+                          
                           form: {
                               productId: pid,
                               quantity: quantity,
@@ -427,18 +441,22 @@ class MaotaiService {
         })
     }
 
-    getAddressId(tel) {
+    getAddressId(tel,j) {
         logger.info('start get addressID from mobile:', tel);
+        var jar = request.jar();
+        // var cookies = request.cookie(j);
+        jar.setCookie(j,'www.maotai.com');
+        console.log(jar);
         let now = +new Date();
-
+        logger.info(j);
         let options = {
             method: 'POST',
-            jar:j,
+            jar: jar,
             url: 'https://www.cmaotai.com/YSApp_API/YSAppServer.ashx',
             headers: {
                 "proxy-authorization" : "Basic " + proxy.proxyAuth,
-
                 'cache-control': 'no-cache',
+                'cookies':j,
                 'content-type': 'application/x-www-form-urlencoded'
             },
             form: {
@@ -449,12 +467,15 @@ class MaotaiService {
             }
         };
 
+        
+
         return new Promise((resolve, reject) => {
           request(options, function(error, response, body) {
               if (error) {
                   return reject(error);
               }
               let bodyJSON = JSON.parse(body);
+              logger.info(bodyJSON);
               // logger.info(bodyJSON.data.list[0])
               if(bodyJSON.data && bodyJSON.data.list && bodyJSON.data.list.length > 0){
                 //logger.info('获取的地址id', bodyJSON.data.list[0].SId);
@@ -470,7 +491,7 @@ class MaotaiService {
         })
     }
 
-    getAllAddress(tel) {
+    getAllAddress(tel, j) {
         logger.info('start get addressID from mobile:', tel);
         let now = +new Date();
 
@@ -503,7 +524,7 @@ class MaotaiService {
         })
     }
 
-    _getOrders(userId) {
+    _getOrders(userId, j) {
 
         let now = +new Date();
 
@@ -513,7 +534,6 @@ class MaotaiService {
             url: 'https://www.cmaotai.com/YSApp_API/YSAppServer.ashx',
             headers: {
                 "proxy-authorization" : "Basic " + proxy.proxyAuth,
-
                 'cache-control': 'no-cache',
                 'content-type': 'application/x-www-form-urlencoded'
             },
@@ -541,12 +561,12 @@ class MaotaiService {
         })
     }
 
-    getOrder(user, pass){
+    getOrder(user, pass, j){
       let userAgent = this.userAgent(user);
       return new Promise((resolve, reject) => {
         this.login(user, pass, userAgent)
           .then(userinfo => {
-            return this._getOrders(userinfo.data.UserId);
+            return this._getOrders(userinfo.data.UserId,j );
           })
           .then(data => {
             return resolve(data);
@@ -557,7 +577,7 @@ class MaotaiService {
       })
     }
 
-    apointStatus(userAgent) {
+    apointStatus(userAgent, j) {
       // state_1: "审核中",
       // state_2: "预约失败",
       // state_3: "预约成功",
@@ -606,7 +626,7 @@ class MaotaiService {
      * @param  {type} pid=391   description
      * @return {type}           description
      */
-    apointment(addressID, userAgent, pid = 391) {
+    apointment(addressID, userAgent, pid = 391,j ) {
         let now = +new Date();
         var options = {
             method: 'POST',
@@ -670,7 +690,7 @@ class MaotaiService {
      * @param  {type} phone description
      * @return {type}       description
      */
-    apointmentBySinglePhone(phones, userAgent, callback) {
+    apointmentBySinglePhone(phones, userAgent, callback, j) {
         let sphone = phones.shift();
 
         if (!sphone) {
@@ -699,14 +719,14 @@ class MaotaiService {
               return this.login(phone, pass,userAgent);
             })
             .then(userinfo => {
-                return this.getAddressId(phone)
+                return this.getAddressId(phone, j)
             })
             .then((addressID) => {
-                return this.LBSServer(addressID, phone, userAgent);
+                return this.LBSServer(addressID, phone, userAgent, j);
             })
             .then(data => {
                 let addressID = data.addressID;
-                return this.apointment(addressID, userAgent)
+                return this.apointment(addressID, userAgent, j)
             })
             .then(apointmentRet => {
                 logger.info('预约结果', phone, apointmentRet);
@@ -724,7 +744,7 @@ class MaotaiService {
                   })
                 }
                 setTimeout(() => {
-                    this.apointmentBySinglePhone(phones, userAgent, callback);
+                    this.apointmentBySinglePhone(phones, userAgent, callback, j);
                 }, 1000)
             })
             .catch(e => {
@@ -735,7 +755,7 @@ class MaotaiService {
                 error: e.message
               })
               setTimeout(() => {
-                  this.apointmentBySinglePhone(phones, userAgent, callback);
+                  this.apointmentBySinglePhone(phones, userAgent, callback, j);
               }, 1000)
             })
 
@@ -751,20 +771,20 @@ class MaotaiService {
      * @param  {type} phone description
      * @return {type}       description
      */
-    _apointmentBySinglePhone(phone, callback) {
+    _apointmentBySinglePhone(phone, callback, j) {
         phone = phone.trim();
         let userAgent = this.userAgent(phone);
         logger.info('开始预约:', phone);
         this.login(phone, '123456', userAgent)
           .then(userinfo => {
-            return this.getAddressId(phone)
+            return this.getAddressId(phone, j)
           })
           .then((addressID) => {
-            return this.LBSServer(addressID, phone, userAgent);
+            return this.LBSServer(addressID, phone, userAgent, j);
           })
           .then(data => {
             let addressID = data.addressID
-            return this.apointment(addressID, userAgent)
+            return this.apointment(addressID, userAgent, j)
           })
           .then(apointmentRet => {
             logger.info('预约结果', phone, apointmentRet);

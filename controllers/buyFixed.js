@@ -42,13 +42,11 @@ originPhones = [
   {"phone":"17753583852","pass":"123456"},
   {"phone":"15213163729","pass":"123456"},
   {"phone":"17783920137","pass":"xqh19950703"},
-
   {"phone":"18236877936","pass":"wxp800614"},
   {"phone":"15178421370","pass":"2016whczg"},
   {"phone":"15084425825","pass":"lh25802580"},
   {"phone":"17772324023","pass":"lh25802580"},
   {"phone":"13786958413","pass":"58585858"},
-
   {"phone":"13711949575","pass":"wy40324700"},
   {"phone":"13686135579","pass":"wy40324700"},
   {"phone":"15717350785","pass":"dyj395799."},
@@ -101,14 +99,15 @@ function watchQuanity(number) {
   }
   proxy.switchIp().then(() => {
     let _startTime = +new Date();
-    MaotaiService.login(tel, pass, userAgent)
-        .then(data => {
-            console.log('login data', JSON.stringify(data));
-            return MaotaiService.getAddressId(tel)
+    let currentJar = null;
+    MaotaiService.getCurrentJar(tel)
+        .then(j => {
+          currentJar = j;
+          return MaotaiService.getAddressId(tel, currentJar)
         })
         .then(address => {
           scopeAddress = address;
-          return MaotaiService.createOrder(tel, pid , 6, userAgent, scopeAddress, fixedShopId);
+          return MaotaiService.createOrder(tel, pid , 6, userAgent, scopeAddress, fixedShopId, currentJar);
         }).then( data => {
             logger.info("下单时间"+(new Date() - _startTime)+"ms");
             if(data.code === 0){
