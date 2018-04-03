@@ -26,6 +26,7 @@ router.post('/maotai', function(req, res, next) {
   }catch(e){
     console.log(e);
   }
+  redisClient.setex(`token:${uuid()}`, 300, sid);
   console.log('SID from Android', sid);
   res.json({
     status: 200,
@@ -243,7 +244,7 @@ router.post('/maotai/multiOrder', (req, res, next) => {
 
 
 })
-let userAgent = 'Mozilla/1.6.0 (Linux; U; Android 5.0.0; SM-G900P Build/V312IR)';
+let userAgent = 'iPhone; CPU iPhone OS 10_3 like Mac OS X';
 router.get('/wireless/pageload.json', function(req, res, next){
    // /wireless/pageload.json?&h=451&w=555&a=FFFFA0000000016A858A
    //let userAgent = 'iPhone; CPU iPhone OS 10_4 like Mac OS X';

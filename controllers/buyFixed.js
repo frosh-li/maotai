@@ -65,7 +65,7 @@ function fixShop(network, shopName) {
   return result;
 }
 
-function watchQuanity(shopName) {
+function watchQuanity(number) {
   let randomIndex = Math.floor(Math.random()*(originPhones.length-1));
   let tel = originPhones[randomIndex].phone;
   // let tel = "13720689056";
@@ -73,55 +73,33 @@ function watchQuanity(shopName) {
   // let pass = "a123456";
   let userAgent = MaotaiService.userAgent(tel);
   let scopeAddress = "";
+  if(successOrder >= maxOrder){
+    console.log('购买完成')
+    return;
+  }
   proxy.switchIp().then(() => {
     MaotaiService.login(tel, pass, userAgent)
         .then(data => {
-            if(originPhones[randomIndex].addressId){
-              return new Promise((resolve, reject) => {
-                resolve(originPhones[randomIndex].addressId);
-              })
-            }else{
-              return MaotaiService.getAddressId(tel)  
-            }
+            return MaotaiService.getAddressId(tel)
         })
         .then(address => {
-            scopeAddress = address;
-            originPhones[randomIndex].addressId = address;
-            return MaotaiService.LBSServer(address, tel, userAgent);
-        })
-        .then(data => {
-          if (data && data.lbsdata && data.lbsdata.data && data.lbsdata.data.stock && data.lbsdata.data.stock.Sid) {
-            if(
-              data.lbsdata.data.stock.StockCount >= quantity
-              &&
-              data.lbsdata.data.limit.LimitCount >= quantity
-            ){
-              logger.info(colors.green("商家已经上货，开始购买流程"));
-              printInfo(data);
-              return MaotaiService.createOrder(tel, pid , data.lbsdata.data.limit.LimitCount, userAgent, scopeAddress, data.lbsdata.data.network.Sid);
-            }else {
-              printInfo(data);
-              return Promise.resolve({code: 500});  
-            }
-
-          } else {
-            logger.info(colors.green("您所在区域无法购买"))
-            return Promise.resolve({code: 500});
-          }
+          scopeAddress = address;
+          return MaotaiService.createOrder(tel, pid , 6, userAgent, scopeAddress, fixedShopId);
         }).then( data => {
             if(data.code === 0){
               // 购买成功，进行下一个账号的处理逻辑
               logger.info('购买成功'+tel+":"+pass+JSON.stringify(data));
+              successOrder++;
               fs.writeFileSync("output/20180403.json", `${tel} ${pass}`, 'a+');
               originPhones.splice(randomIndex, 1)
             }
             setTimeout(() => {
-                  watchQuanity(shopName);
+                  watchQuanity(number);
             }, checkInterval);
         }).catch(e => {
             logger.info("位置错误,60秒后重试", e);
             setTimeout(() => {
-                watchQuanity(shopName);
+                watchQuanity(number);
             }, checkInterval);
         })
   })
@@ -130,18 +108,11 @@ function watchQuanity(shopName) {
   })
 }
 
-let interval = setInterval(() => {
-  let now = new Date();
-  let Hour = now.getHours();
-  logger.trace('当前时间:', Hour);
-  if(Hour >= 10 && Hour <= 16) {
-    clearInterval(interval);
-    logger.info('抢购时间开始');
-    // todo
-    // 去掉每次都登陆的逻辑，登陆一次就开始监控，只需要刷新lbs接口即可
-    watchQuanity(shopName);
-  }else{
-    logger.trace('继续等待中，等到十点才开始吧');
-  }
-}, 2000);
+var fixedShopId = 211110105001;
+var maxOrder = 5;
+var successOrder = 0;
+
+
+watchQuanity(number)
+
 

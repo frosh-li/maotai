@@ -26,7 +26,7 @@ class AliVerify {
             let pressY = sPoint[1];
             let pressX1 = ePoint[0];
             let pressY1 = ePoint[1];
-            let dur = 1000;
+            let dur = 500;
             let adbCommand = `${adb} shell input swipe ${pressX} ${pressY} ${pressX1} ${pressY1} ${dur}`;
 
             execSync(adbCommand);

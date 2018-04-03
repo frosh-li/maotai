@@ -1,413 +1,1525 @@
-[2018-04-02T16:01:13.246] [INFO] things - params [ '/usr/local/bin/node',
-  '/Users/junliang/server/www/maotaiServer/controllers/watch.js',
-  '001',
-  '1' ]
-[2018-04-02T16:01:13.254] [INFO] things - to Buy tels {"phone":"13153185002","pass":"123456"}|{"phone":"13343192376","pass":"123456"}|{"phone":"13485665212","pass":"123456"}|{"phone":"13700077519","pass":"123456"}|{"phone":"15063527328","pass":"123456"}|{"phone":"15075870950","pass":"123456"}|{"phone":"15206334886","pass":"123456"}|{"phone":"15303199414","pass":"123456"}|{"phone":"15354193781","pass":"123456"}|{"phone":"15373204143","pass":"123456"}|{"phone":"15399130078","pass":"125018adg"}|{"phone":"15515970953","pass":"123456"}|{"phone":"15937230461","pass":"123456"}|{"phone":"15951853170","pass":"123456"}|{"phone":"17379324087","pass":"123456"}|{"phone":"18537303412","pass":"z410781"}|{"phone":"15549208672","pass":"123456"}|{"phone":"15777186432","pass":"15177909309"}|{"phone":"15238555689","pass":"a123456"}|{"phone":"13720689056","pass":"a123456"}|{"phone":"15835086989","pass":"a123456"}|{"phone":"13513642792","pass":"a123456"}|{"phone":"13081312422","pass":"a123456"}|{"phone":"15082907866","pass":"a123456"}|{"phone":"13842111030","pass":"a123456"}|{"phone":"15046846298","pass":"a123456"}|{"phone":"18903188059","pass":"a123456"}|{"phone":"13670589613","pass":"a123456"}|{"phone":"13792080758","pass":"a123456"}|{"phone":"13313181385","pass":"a123456"}|{"phone":"13102661153","pass":"123456"}|{"phone":"17535275750","pass":"123456"}|{"phone":"18709222182","pass":"123456"}|{"phone":"13351208936","pass":"jss19860529"}|{"phone":"13392151517","pass":"123456"}|{"phone":"13399381732","pass":"q123456"}|{"phone":"13413723166","pass":"123456"}|{"phone":"13453301621","pass":"654321"}|{"phone":"13512856201","pass":"wyp100721"}|{"phone":"13519083633","pass":"q123456"}|{"phone":"13521690981","pass":"123456"}|{"phone":"13546886639","pass":"qin141208"}|{"phone":"13633696711","pass":"w070416"}|{"phone":"13993852417","pass":"q123456"}|{"phone":"15131828567","pass":"123456"}|{"phone":"15264711001","pass":"123456"}|{"phone":"15264711296","pass":"123456"}|{"phone":"15393630594","pass":"123456"}|{"phone":"15633523066","pass":"abc123"}|{"phone":"15645919316","pass":"123456"}|{"phone":"15699770933","pass":"123456"}|{"phone":"15949806339","pass":"lhj0325"}|{"phone":"15981953127","pass":"123456"}|{"phone":"17505106529","pass":"132623"}|{"phone":"17612746321","pass":"123456321654"}|{"phone":"17753747930","pass":"8642569"}|{"phone":"17757449525","pass":"123456"}|{"phone":"18131970041","pass":"123456"}|{"phone":"18232902912","pass":"108108li"}|{"phone":"18246626742","pass":"jss19860529"}|{"phone":"18253251389","pass":"123456"}|{"phone":"18382394514","pass":"123456"}|{"phone":"18810320392","pass":"12345678"}|{"phone":"18863572962","pass":"123456"}|{"phone":"18946959184","pass":"123456"}|{"phone":"18967839427","pass":"123456"}|{"phone":"15635316166","pass":"a123456"}|{"phone":"13969577793","pass":"a123456"}|{"phone":"15535874823","pass":"a123456"}|{"phone":"15525146023","pass":"a123456"}|{"phone":"15582882641","pass":"a123456"}|{"phone":"15588159966","pass":"a123456"}|{"phone":"18909564220","pass":"a123456"}|{"phone":"15535890431","pass":"a123456"}|{"phone":"15303529430","pass":"a123456"}|{"phone":"15535486077","pass":"a123456"}|{"phone":"15834343940","pass":"a123456"}|{"phone":"13895490886","pass":"a123456"}|{"phone":"15081664435","pass":"a123456"}|{"phone":"13781072791","pass":"a123456"}|{"phone":"15330512791","pass":"a123456"}|{"phone":"17031887830","pass":"a123456"}|{"phone":"13283936032","pass":"a123456"}|{"phone":"15046800490","pass":"a123456"}|{"phone":"15081820867","pass":"a123456"}|{"phone":"13831322890","pass":"a123456"}|{"phone":"18434763969","pass":"a123456"}|{"phone":"15035399985","pass":"a123456"}|{"phone":"18291130651","pass":"a123456"}|{"phone":"13220790090","pass":"a123456"}|{"phone":"15003443253","pass":"a123456"}|{"phone":"13676343367","pass":"a123456"}|{"phone":"15257918657","pass":"a123456"}|{"phone":"15505201939","pass":"a123456"}|{"phone":"18831099037","pass":"a123456"}|{"phone":"15039298864","pass":"a123456"}|{"phone":"13839228541","pass":"a123456"}|{"phone":"18818426811","pass":"a123456"}|{"phone":"15257918657","pass":"a123456"}|{"phone":"18331375226","pass":"a123456"}
-[2018-04-02T16:01:15.260] [TRACE] things - 当前时间: 16
-[2018-04-02T16:01:15.261] [INFO] things - 抢购时间开始
-[2018-04-02T16:01:17.198] [INFO] things - start get addressID from mobile: 18967839427
-[2018-04-02T16:01:21.617] [INFO] things - 定位查询结果 { state: true,
-  code: 10,
-  data: 
-   { IsNeedReservation: true,
-     IsIntercept: false,
-     ProductID: 391,
-     CanUseCredence: false,
-     Certificate: 
-      { ID: '2721892',
-        UID: 2225808,
-        PID: '391',
-        Status: 3,
-        Address: [Object],
-        Product: [Object],
-        FailureTime: '2018-04-08 00:00:00' },
-     EnterTimeSlot: 
-      { Start: '2018-04-02 00:00:00',
-        End: '2018-04-02 23:59:59',
-        InTime: true },
-     BuyTimeSlot: 
-      { Start: '2018-04-03 10:00:00',
-        End: '2018-04-03 16:00:00',
-        InTime: false } } }
-[2018-04-02T16:01:21.618] [INFO] things - [32m您所在区域无法购买[39m
-[2018-04-02T16:01:24.373] [INFO] things - start get addressID from mobile: 13633696711
-[2018-04-02T16:01:27.577] [INFO] things - 定位查询结果 { state: true,
-  code: 10,
-  data: 
-   { IsNeedReservation: true,
-     IsIntercept: false,
-     ProductID: 391,
-     CanUseCredence: false,
-     Certificate: 
-      { ID: '2721832',
-        UID: 2176436,
-        PID: '391',
-        Status: 2,
-        Address: [Object],
-        Product: [Object],
-        FailureTime: '2018-04-03 01:48:13' },
-     EnterTimeSlot: 
-      { Start: '2018-04-02 00:00:00',
-        End: '2018-04-02 23:59:59',
-        InTime: true },
-     BuyTimeSlot: 
-      { Start: '2018-04-03 10:00:00',
-        End: '2018-04-03 16:00:00',
-        InTime: false } } }
-[2018-04-02T16:01:27.578] [INFO] things - [32m您所在区域无法购买[39m
-[2018-04-02T16:01:29.492] [INFO] things - start get addressID from mobile: 15633523066
-[2018-04-02T16:01:31.133] [INFO] things - 定位查询结果 { state: true,
-  code: 10,
-  data: 
-   { IsNeedReservation: true,
-     IsIntercept: false,
-     ProductID: 391,
-     CanUseCredence: false,
-     Certificate: 
-      { ID: '2721844',
-        UID: 2100829,
-        PID: '391',
-        Status: 3,
-        Address: [Object],
-        Product: [Object],
-        FailureTime: '2018-04-08 00:00:00' },
-     EnterTimeSlot: 
-      { Start: '2018-04-02 00:00:00',
-        End: '2018-04-02 23:59:59',
-        InTime: true },
-     BuyTimeSlot: 
-      { Start: '2018-04-03 10:00:00',
-        End: '2018-04-03 16:00:00',
-        InTime: false } } }
-[2018-04-02T16:01:31.133] [INFO] things - [32m您所在区域无法购买[39m
-[2018-04-02T16:01:33.181] [INFO] things - start get addressID from mobile: 13720689056
-[2018-04-02T16:01:35.241] [INFO] things - 定位查询结果 { state: true,
-  code: 10,
-  data: 
-   { IsNeedReservation: true,
-     IsIntercept: false,
-     ProductID: 391,
-     CanUseCredence: false,
-     Certificate: 
-      { ID: '2721705',
-        UID: 2245979,
-        PID: '391',
-        Status: 3,
-        Address: [Object],
-        Product: [Object],
-        FailureTime: '2018-04-08 00:00:00' },
-     EnterTimeSlot: 
-      { Start: '2018-04-02 00:00:00',
-        End: '2018-04-02 23:59:59',
-        InTime: true },
-     BuyTimeSlot: 
-      { Start: '2018-04-03 10:00:00',
-        End: '2018-04-03 16:00:00',
-        InTime: false } } }
-[2018-04-02T16:01:35.242] [INFO] things - [32m您所在区域无法购买[39m
-[2018-04-02T16:01:37.392] [INFO] things - start get addressID from mobile: 15264711001
-[2018-04-02T16:01:39.585] [INFO] things - 定位查询结果 { state: true,
-  code: 10,
-  data: 
-   { IsNeedReservation: true,
-     IsIntercept: false,
-     ProductID: 391,
-     CanUseCredence: false,
-     Certificate: 
-      { ID: '2721839',
-        UID: 2142080,
-        PID: '391',
-        Status: 3,
-        Address: [Object],
-        Product: [Object],
-        FailureTime: '2018-04-08 00:00:00' },
-     EnterTimeSlot: 
-      { Start: '2018-04-02 00:00:00',
-        End: '2018-04-02 23:59:59',
-        InTime: true },
-     BuyTimeSlot: 
-      { Start: '2018-04-03 10:00:00',
-        End: '2018-04-03 16:00:00',
-        InTime: false } } }
-[2018-04-02T16:01:39.586] [INFO] things - [32m您所在区域无法购买[39m
-[2018-04-02T16:01:41.576] [INFO] things - start get addressID from mobile: 13313181385
-[2018-04-02T16:01:43.133] [INFO] things - 定位查询结果 { state: true,
-  code: 10,
-  data: 
-   { IsNeedReservation: true,
-     IsIntercept: false,
-     ProductID: 391,
-     CanUseCredence: false,
-     Certificate: 
-      { ID: '2721745',
-        UID: 2245815,
-        PID: '391',
-        Status: 2,
-        Address: [Object],
-        Product: [Object],
-        FailureTime: '2018-04-03 01:48:11' },
-     EnterTimeSlot: 
-      { Start: '2018-04-02 00:00:00',
-        End: '2018-04-02 23:59:59',
-        InTime: true },
-     BuyTimeSlot: 
-      { Start: '2018-04-03 10:00:00',
-        End: '2018-04-03 16:00:00',
-        InTime: false } } }
-[2018-04-02T16:01:43.133] [INFO] things - [32m您所在区域无法购买[39m
-[2018-04-02T16:01:45.204] [INFO] things - start get addressID from mobile: 18818426811
-[2018-04-02T16:01:47.416] [INFO] things - 定位查询结果 { state: true,
-  code: 10,
-  data: 
-   { IsNeedReservation: true,
-     IsIntercept: false,
-     ProductID: 391,
-     CanUseCredence: false,
-     Certificate: 
-      { ID: '2722275',
-        UID: 2265113,
-        PID: '391',
-        Status: 3,
-        Address: [Object],
-        Product: [Object],
-        FailureTime: '2018-04-08 00:00:00' },
-     EnterTimeSlot: 
-      { Start: '2018-04-02 00:00:00',
-        End: '2018-04-02 23:59:59',
-        InTime: true },
-     BuyTimeSlot: 
-      { Start: '2018-04-03 10:00:00',
-        End: '2018-04-03 16:00:00',
-        InTime: false } } }
-[2018-04-02T16:01:47.417] [INFO] things - [32m您所在区域无法购买[39m
-[2018-04-02T16:01:49.247] [INFO] things - start get addressID from mobile: 13399381732
-[2018-04-02T16:01:51.613] [INFO] things - 定位查询结果 { state: true,
-  code: 10,
-  data: 
-   { IsNeedReservation: true,
-     IsIntercept: false,
-     ProductID: 391,
-     CanUseCredence: false,
-     Certificate: 
-      { ID: '2721811',
-        UID: 2177120,
-        PID: '391',
-        Status: 2,
-        Address: [Object],
-        Product: [Object],
-        FailureTime: '2018-04-03 01:48:12' },
-     EnterTimeSlot: 
-      { Start: '2018-04-02 00:00:00',
-        End: '2018-04-02 23:59:59',
-        InTime: true },
-     BuyTimeSlot: 
-      { Start: '2018-04-03 10:00:00',
-        End: '2018-04-03 16:00:00',
-        InTime: false } } }
-[2018-04-02T16:01:51.614] [INFO] things - [32m您所在区域无法购买[39m
-[2018-04-02T16:01:53.740] [INFO] things - start get addressID from mobile: 13399381732
-[2018-04-02T16:01:55.601] [INFO] things - 定位查询结果 { state: true,
-  code: 10,
-  data: 
-   { IsNeedReservation: true,
-     IsIntercept: false,
-     ProductID: 391,
-     CanUseCredence: false,
-     Certificate: 
-      { ID: '2721811',
-        UID: 2177120,
-        PID: '391',
-        Status: 2,
-        Address: [Object],
-        Product: [Object],
-        FailureTime: '2018-04-03 01:48:12' },
-     EnterTimeSlot: 
-      { Start: '2018-04-02 00:00:00',
-        End: '2018-04-02 23:59:59',
-        InTime: true },
-     BuyTimeSlot: 
-      { Start: '2018-04-03 10:00:00',
-        End: '2018-04-03 16:00:00',
-        InTime: false } } }
-[2018-04-02T16:01:55.601] [INFO] things - [32m您所在区域无法购买[39m
-[2018-04-02T16:01:58.050] [INFO] things - start get addressID from mobile: 15949806339
-[2018-04-02T16:02:00.220] [INFO] things - 定位查询结果 { state: true,
-  code: 10,
-  data: 
-   { IsNeedReservation: true,
-     IsIntercept: false,
-     ProductID: 391,
-     CanUseCredence: false,
-     Certificate: 
-      { ID: '2721854',
-        UID: 2097675,
-        PID: '391',
-        Status: 3,
-        Address: [Object],
-        Product: [Object],
-        FailureTime: '2018-04-08 00:00:00' },
-     EnterTimeSlot: 
-      { Start: '2018-04-02 00:00:00',
-        End: '2018-04-02 23:59:59',
-        InTime: true },
-     BuyTimeSlot: 
-      { Start: '2018-04-03 10:00:00',
-        End: '2018-04-03 16:00:00',
-        InTime: false } } }
-[2018-04-02T16:02:00.220] [INFO] things - [32m您所在区域无法购买[39m
-[2018-04-02T16:02:04.002] [INFO] things - start get addressID from mobile: 15238555689
-[2018-04-02T16:02:05.545] [INFO] things - 定位查询结果 { state: true,
-  code: 10,
-  data: 
-   { IsNeedReservation: true,
-     IsIntercept: false,
-     ProductID: 391,
-     CanUseCredence: false,
-     Certificate: 
-      { ID: '2721704',
-        UID: 2245989,
-        PID: '391',
-        Status: 3,
-        Address: [Object],
-        Product: [Object],
-        FailureTime: '2018-04-08 00:00:00' },
-     EnterTimeSlot: 
-      { Start: '2018-04-02 00:00:00',
-        End: '2018-04-02 23:59:59',
-        InTime: true },
-     BuyTimeSlot: 
-      { Start: '2018-04-03 10:00:00',
-        End: '2018-04-03 16:00:00',
-        InTime: false } } }
-[2018-04-02T16:02:05.545] [INFO] things - [32m您所在区域无法购买[39m
-[2018-04-02T16:02:07.242] [INFO] things - start get addressID from mobile: 18232902912
-[2018-04-02T16:02:08.790] [INFO] things - 定位查询结果 { state: true,
-  code: 10,
-  data: 
-   { IsNeedReservation: true,
-     IsIntercept: false,
-     ProductID: 391,
-     CanUseCredence: false,
-     Certificate: 
-      { ID: '2721874',
-        UID: 2075087,
-        PID: '391',
-        Status: 3,
-        Address: [Object],
-        Product: [Object],
-        FailureTime: '2018-04-08 00:00:00' },
-     EnterTimeSlot: 
-      { Start: '2018-04-02 00:00:00',
-        End: '2018-04-02 23:59:59',
-        InTime: true },
-     BuyTimeSlot: 
-      { Start: '2018-04-03 10:00:00',
-        End: '2018-04-03 16:00:00',
-        InTime: false } } }
-[2018-04-02T16:02:08.791] [INFO] things - [32m您所在区域无法购买[39m
-[2018-04-02T16:02:10.319] [INFO] things - start get addressID from mobile: 15035399985
-[2018-04-02T16:02:11.464] [INFO] things - 定位查询结果 { state: true,
-  code: 10,
-  data: 
-   { IsNeedReservation: true,
-     IsIntercept: false,
-     ProductID: 391,
-     CanUseCredence: false,
-     Certificate: 
-      { ID: '2722249',
-        UID: 2265080,
-        PID: '391',
-        Status: 3,
-        Address: [Object],
-        Product: [Object],
-        FailureTime: '2018-04-08 00:00:00' },
-     EnterTimeSlot: 
-      { Start: '2018-04-02 00:00:00',
-        End: '2018-04-02 23:59:59',
-        InTime: true },
-     BuyTimeSlot: 
-      { Start: '2018-04-03 10:00:00',
-        End: '2018-04-03 16:00:00',
-        InTime: false } } }
-[2018-04-02T16:02:11.466] [INFO] things - [32m您所在区域无法购买[39m
-[2018-04-02T16:02:13.285] [INFO] things - start get addressID from mobile: 13895490886
-[2018-04-02T16:02:14.883] [INFO] things - 定位查询结果 { state: true,
-  code: 10,
-  data: 
-   { IsNeedReservation: true,
-     IsIntercept: false,
-     ProductID: 391,
-     CanUseCredence: false,
-     Certificate: 
-      { ID: '2722219',
-        UID: 2265218,
-        PID: '391',
-        Status: 3,
-        Address: [Object],
-        Product: [Object],
-        FailureTime: '2018-04-08 00:00:00' },
-     EnterTimeSlot: 
-      { Start: '2018-04-02 00:00:00',
-        End: '2018-04-02 23:59:59',
-        InTime: true },
-     BuyTimeSlot: 
-      { Start: '2018-04-03 10:00:00',
-        End: '2018-04-03 16:00:00',
-        InTime: false } } }
-[2018-04-02T16:02:14.884] [INFO] things - [32m您所在区域无法购买[39m
-[2018-04-02T16:02:16.720] [INFO] things - start get addressID from mobile: 13485665212
-[2018-04-02T16:02:18.315] [INFO] things - 定位查询结果 { state: true,
-  code: 10,
-  data: 
-   { IsNeedReservation: true,
-     IsIntercept: false,
-     ProductID: 391,
-     CanUseCredence: false,
-     Certificate: 
-      { ID: '2721669',
-        UID: 2072874,
-        PID: '391',
-        Status: 2,
-        Address: [Object],
-        Product: [Object],
-        FailureTime: '2018-04-03 01:48:09' },
-     EnterTimeSlot: 
-      { Start: '2018-04-02 00:00:00',
-        End: '2018-04-02 23:59:59',
-        InTime: true },
-     BuyTimeSlot: 
-      { Start: '2018-04-03 10:00:00',
-        End: '2018-04-03 16:00:00',
-        InTime: false } } }
-[2018-04-02T16:02:18.316] [INFO] things - [32m您所在区域无法购买[39m
-[2018-04-02T16:02:20.447] [INFO] things - start get addressID from mobile: 15039298864
-[2018-04-02T16:02:22.331] [INFO] things - 定位查询结果 { state: true,
-  code: 10,
-  data: 
-   { IsNeedReservation: true,
-     IsIntercept: false,
-     ProductID: 391,
-     CanUseCredence: false,
-     Certificate: 
-      { ID: '2722267',
-        UID: 2265095,
-        PID: '391',
-        Status: 3,
-        Address: [Object],
-        Product: [Object],
-        FailureTime: '2018-04-08 00:00:00' },
-     EnterTimeSlot: 
-      { Start: '2018-04-02 00:00:00',
-        End: '2018-04-02 23:59:59',
-        InTime: true },
-     BuyTimeSlot: 
-      { Start: '2018-04-03 10:00:00',
-        End: '2018-04-03 16:00:00',
-        InTime: false } } }
-[2018-04-02T16:02:22.333] [INFO] things - [32m您所在区域无法购买[39m
-[2018-04-02T16:02:24.118] [INFO] things - start get addressID from mobile: 17031887830
-[2018-04-02T16:08:25.641] [INFO] things - token成功获取到 <Buffer 6e 63 31 2d 30 31 57 38 66 55 6f 37 74 69 4e 42 4b 72 6b 68 52 38 41 43 58 58 4b 65 49 79 41 63 4c 57 64 51 72 44 79 48 72 2d 47 73 30 47 72 77 70 49 ... >
-[2018-04-02T16:13:10.714] [INFO] things - token成功获取到 <Buffer 6e 63 31 2d 30 31 57 38 66 55 6f 37 74 69 4e 42 4b 72 6b 68 52 38 41 43 58 58 4b 61 52 68 49 6b 45 63 36 4b 33 56 56 69 52 70 41 6c 57 6f 2d 75 6c 4d ... >
-[2018-04-02T16:13:24.386] [INFO] things - token成功获取到 <Buffer 6e 63 31 2d 30 31 57 38 66 55 6f 37 74 69 4e 42 4b 72 6b 68 52 38 41 43 58 58 4b 66 36 63 33 50 53 31 2d 4e 4a 38 7a 6d 6e 5a 75 33 6b 43 62 52 31 6e ... >
-[2018-04-02T16:13:54.945] [INFO] things - token成功获取到 nc1-01W8fUo7tiNBKrkhR8ACXXKVaIsYeVz_Vu_Eob8U4kiWvYGhe-I9yu4fmC-x9cRFgJm-sTtpWZiubQ2qcBTOIznQ-nc2-0561M3bob-R8gv1KNXk15v5bkS76NYlEyqbuKhC0ArCxfSEVe8dEJBce9ghPJHPJ069HAH16WsmJnUyXSZ5sFwxdZ6g0IL7ujzfJN1WQRxiPO9JbcoeRmjDXVE9IETN-MZse8HH7Rt6xf8uI2S7O9yw3bau4a0Zxm6bGQk-zLc0Vaev-j62P6Mjk-BCLCPIHgf6mXG3u51-xLuAfLmzUXL1C1p148qr6UYPB3S8OD-LcpWQnn7OxvaINQ2IlKXSMR7_R7Pp7W1e6Ok_FHQXPptsx6hR5VqOdUca3hcz5CYiLJRpMe4PJe_KjziQYhPszkcui-mgkoZzp8PkNiJuwDi9_H_hmnwSVy60E7cGTONV-3K5uYQEqmzuOWLJDNObZvlOQpruVWsdNygpvuRrHhWAKapxSz15UxaJmUVmQAi-5OMHibF1cMn-fy34b1O8QHE6oSz2fyZ5oWe-tAI8_lipw-nc3-01YGjVYP56xB8j7o4jZfyVf22OjvsLTybxrNmyKoQpso0tHCQM7UPkIl6jfu4MevrRlrQ6eLnwgcguaqi9hmhsCpVB4G5BXU26PRiNApWQUvMmzA96t3Ao9gwFXZam28vU4o14umIn_uiSCDh_fPfwo9aQEVn7ikm7TMTYnShy4sQ-nc4-FFFFA0000000016A858A
-[2018-04-02T16:14:16.257] [INFO] things - token成功获取到 nc1-01W8fUo7tiNBKrkhR8ACXXKbbhseG4SOgRdb3KvmiZ17t3OROnRydlef5SUyr7zq6w-nc2-0561M3bob-R8gv1KNXk15v5Zpzwr5-aA0d72EwzdOiQ4xyfgbNJh38I0NiL8RWRzP0lse3GpxidTg06dR8XgLZoBSvxVIhnO9-oMn6_80ZY6Zy0JKtbVpomeurCRpfOkHu6YwLBXaxmIci5uutEeL13KHlJy109KAbexeNdGP35FwvX5UkKBcvncwV19yyY9NBApmwuz3ghk3Tv2_oaB9BVUXwyqmOGxWxoxgLzmTHsrmTdSRqtyfspauhwxVxO5WPKX_xMo8aofEtZR3HrShDwtoU1tmCuQ7gQ1UZzDp9ONxSGYQ8dIgJJjigUtXuBLOTxDOyTBHGJGrUzCrTFpOq_lsAxQHojeOF39MSL4bxBD4bn-9edhpTcb9C0ch7tgL6CrfrQlNwph2ltMvd4UdOh1zn2r-abl-Ipvhy8Cl8bsM-nc3-01TzB8fzgmvi9w1w4Zzf-AogTu6QWw-g0B-KkVz---KIUGWkIsTK3vb6-iV5MBkESIK8XeSZUMN5o1don5C5mcaux8EMLK3sBNNVjxf1PQTJ-qdxjkB3iFVFv0N8IigAoPdXEJxKKKUu7F2-cvvWc-lg-nc4-FFFFA0000000016A858A
+[2018-04-03T13:00:13.650] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:00:16.441] [INFO] things - 推送网点信息
+[2018-04-03T13:00:16.441] [INFO] things - Address: 朝阳区金汇路10号楼世界城Ａ座506室
+[2018-04-03T13:00:16.441] [INFO] things - SName: 茅台云商北京市朝阳区服务网点
+[2018-04-03T13:00:16.441] [INFO] things - DName: 北京志联华信商贸有限公司
+[2018-04-03T13:00:16.442] [INFO] things - SID: 211110105007
+[2018-04-03T13:00:16.442] [INFO] things - total: 12
+[2018-04-03T13:00:16.442] [INFO] things - limit: 2
+[2018-04-03T13:00:20.742] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:00:27.960] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:00:31.594] [INFO] things - 推送网点信息
+[2018-04-03T13:00:31.594] [INFO] things - Address: 朝阳区金汇路10号楼世界城Ａ座506室
+[2018-04-03T13:00:31.594] [INFO] things - SName: 茅台云商北京市朝阳区服务网点
+[2018-04-03T13:00:31.594] [INFO] things - DName: 北京志联华信商贸有限公司
+[2018-04-03T13:00:31.594] [INFO] things - SID: 211110105007
+[2018-04-03T13:00:31.594] [INFO] things - total: 12
+[2018-04-03T13:00:31.594] [INFO] things - limit: 2
+[2018-04-03T13:00:34.168] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:00:37.191] [INFO] things - 推送网点信息
+[2018-04-03T13:00:37.192] [INFO] things - Address: 东城区广渠门内白桥大街15号嘉禾国信大厦8楼
+[2018-04-03T13:00:37.192] [INFO] things - SName: 茅台云商北京市市辖区东城区服务网点
+[2018-04-03T13:00:37.192] [INFO] things - DName: 华致酒行连锁管理股份有限公司
+[2018-04-03T13:00:37.192] [INFO] things - SID: 211110101003
+[2018-04-03T13:00:37.192] [INFO] things - total: 7
+[2018-04-03T13:00:37.192] [INFO] things - limit: 4
+[2018-04-03T13:00:39.928] [INFO] things - 推送网点信息
+[2018-04-03T13:00:39.929] [INFO] things - Address: 朝阳区金汇路10号楼世界城Ａ座506室
+[2018-04-03T13:00:39.929] [INFO] things - SName: 茅台云商北京市朝阳区服务网点
+[2018-04-03T13:00:39.929] [INFO] things - DName: 北京志联华信商贸有限公司
+[2018-04-03T13:00:39.929] [INFO] things - SID: 211110105007
+[2018-04-03T13:00:39.929] [INFO] things - total: 12
+[2018-04-03T13:00:39.930] [INFO] things - limit: 2
+[2018-04-03T13:00:42.520] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:00:47.485] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:00:49.982] [INFO] things - 推送网点信息
+[2018-04-03T13:00:49.983] [INFO] things - Address: 朝阳区双龙南里204楼
+[2018-04-03T13:00:49.983] [INFO] things - SName: 茅台云商北京市朝阳区服务网点
+[2018-04-03T13:00:49.983] [INFO] things - DName: 北京朝批商贸股份有限公司
+[2018-04-03T13:00:49.983] [INFO] things - SID: 211110105003
+[2018-04-03T13:00:49.983] [INFO] things - total: 161
+[2018-04-03T13:00:49.983] [INFO] things - limit: 2
+[2018-04-03T13:00:52.809] [INFO] things - 推送网点信息
+[2018-04-03T13:00:52.810] [INFO] things - Address: 朝阳区金汇路10号楼世界城Ａ座506室
+[2018-04-03T13:00:52.810] [INFO] things - SName: 茅台云商北京市朝阳区服务网点
+[2018-04-03T13:00:52.810] [INFO] things - DName: 北京志联华信商贸有限公司
+[2018-04-03T13:00:52.810] [INFO] things - SID: 211110105007
+[2018-04-03T13:00:52.810] [INFO] things - total: 12
+[2018-04-03T13:00:52.811] [INFO] things - limit: 2
+[2018-04-03T13:00:55.564] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:00:58.316] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:01:01.862] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:01:04.594] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:01:07.686] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:01:10.421] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:01:13.146] [INFO] things - 推送网点信息
+[2018-04-03T13:01:13.147] [INFO] things - Address: 朝阳区双龙南里204楼
+[2018-04-03T13:01:13.147] [INFO] things - SName: 茅台云商北京市朝阳区服务网点
+[2018-04-03T13:01:13.147] [INFO] things - DName: 北京朝批商贸股份有限公司
+[2018-04-03T13:01:13.147] [INFO] things - SID: 211110105003
+[2018-04-03T13:01:13.147] [INFO] things - total: 161
+[2018-04-03T13:01:13.147] [INFO] things - limit: 2
+[2018-04-03T13:01:15.859] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:01:18.405] [INFO] things - 推送网点信息
+[2018-04-03T13:01:18.405] [INFO] things - Address: 东城区广渠门内白桥大街15号嘉禾国信大厦8楼
+[2018-04-03T13:01:18.405] [INFO] things - SName: 茅台云商北京市市辖区东城区服务网点
+[2018-04-03T13:01:18.405] [INFO] things - DName: 华致酒行连锁管理股份有限公司
+[2018-04-03T13:01:18.405] [INFO] things - SID: 211110101003
+[2018-04-03T13:01:18.406] [INFO] things - total: 7
+[2018-04-03T13:01:18.406] [INFO] things - limit: 4
+[2018-04-03T13:01:21.514] [INFO] things - 推送网点信息
+[2018-04-03T13:01:21.514] [INFO] things - Address: 东城区广渠门内白桥大街15号嘉禾国信大厦8楼
+[2018-04-03T13:01:21.514] [INFO] things - SName: 茅台云商北京市市辖区东城区服务网点
+[2018-04-03T13:01:21.514] [INFO] things - DName: 华致酒行连锁管理股份有限公司
+[2018-04-03T13:01:21.515] [INFO] things - SID: 211110101003
+[2018-04-03T13:01:21.515] [INFO] things - total: 7
+[2018-04-03T13:01:21.515] [INFO] things - limit: 4
+[2018-04-03T13:01:24.579] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:01:49.138] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:01:52.032] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:01:54.682] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:01:57.199] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:01:59.778] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:02:02.361] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:02:05.974] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:02:09.289] [INFO] things - 推送网点信息
+[2018-04-03T13:02:09.289] [INFO] things - Address: 东城区广渠门内白桥大街15号嘉禾国信大厦8楼
+[2018-04-03T13:02:09.289] [INFO] things - SName: 茅台云商北京市市辖区东城区服务网点
+[2018-04-03T13:02:09.289] [INFO] things - DName: 华致酒行连锁管理股份有限公司
+[2018-04-03T13:02:09.289] [INFO] things - SID: 211110101003
+[2018-04-03T13:02:09.290] [INFO] things - total: 7
+[2018-04-03T13:02:09.290] [INFO] things - limit: 4
+[2018-04-03T13:02:12.052] [INFO] things - 推送网点信息
+[2018-04-03T13:02:12.052] [INFO] things - Address: 东城区广渠门内白桥大街15号嘉禾国信大厦8楼
+[2018-04-03T13:02:12.052] [INFO] things - SName: 茅台云商北京市市辖区东城区服务网点
+[2018-04-03T13:02:12.052] [INFO] things - DName: 华致酒行连锁管理股份有限公司
+[2018-04-03T13:02:12.052] [INFO] things - SID: 211110101003
+[2018-04-03T13:02:12.052] [INFO] things - total: 7
+[2018-04-03T13:02:12.052] [INFO] things - limit: 4
+[2018-04-03T13:02:14.944] [INFO] things - 推送网点信息
+[2018-04-03T13:02:14.944] [INFO] things - Address: 朝阳区金汇路10号楼世界城Ａ座506室
+[2018-04-03T13:02:14.944] [INFO] things - SName: 茅台云商北京市朝阳区服务网点
+[2018-04-03T13:02:14.944] [INFO] things - DName: 北京志联华信商贸有限公司
+[2018-04-03T13:02:14.945] [INFO] things - SID: 211110105007
+[2018-04-03T13:02:14.945] [INFO] things - total: 12
+[2018-04-03T13:02:14.945] [INFO] things - limit: 2
+[2018-04-03T13:02:17.607] [INFO] things - 推送网点信息
+[2018-04-03T13:02:17.608] [INFO] things - Address: 朝阳区双龙南里204楼
+[2018-04-03T13:02:17.608] [INFO] things - SName: 茅台云商北京市朝阳区服务网点
+[2018-04-03T13:02:17.609] [INFO] things - DName: 北京朝批商贸股份有限公司
+[2018-04-03T13:02:17.610] [INFO] things - SID: 211110105003
+[2018-04-03T13:02:17.610] [INFO] things - total: 161
+[2018-04-03T13:02:17.611] [INFO] things - limit: 2
+[2018-04-03T13:02:20.145] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:02:24.137] [INFO] things - 推送网点信息
+[2018-04-03T13:02:24.137] [INFO] things - Address: 朝阳区金汇路10号楼世界城Ａ座506室
+[2018-04-03T13:02:24.137] [INFO] things - SName: 茅台云商北京市朝阳区服务网点
+[2018-04-03T13:02:24.137] [INFO] things - DName: 北京志联华信商贸有限公司
+[2018-04-03T13:02:24.137] [INFO] things - SID: 211110105007
+[2018-04-03T13:02:24.137] [INFO] things - total: 12
+[2018-04-03T13:02:24.137] [INFO] things - limit: 2
+[2018-04-03T13:02:34.758] [INFO] things - 推送网点信息
+[2018-04-03T13:02:34.758] [INFO] things - Address: 朝阳区金汇路10号楼世界城Ａ座506室
+[2018-04-03T13:02:34.758] [INFO] things - SName: 茅台云商北京市朝阳区服务网点
+[2018-04-03T13:02:34.759] [INFO] things - DName: 北京志联华信商贸有限公司
+[2018-04-03T13:02:34.759] [INFO] things - SID: 211110105007
+[2018-04-03T13:02:34.759] [INFO] things - total: 12
+[2018-04-03T13:02:34.759] [INFO] things - limit: 2
+[2018-04-03T13:02:38.479] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:02:41.358] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:02:45.677] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:02:48.514] [INFO] things - 推送网点信息
+[2018-04-03T13:02:48.515] [INFO] things - Address: 朝阳区金汇路10号楼世界城Ａ座506室
+[2018-04-03T13:02:48.515] [INFO] things - SName: 茅台云商北京市朝阳区服务网点
+[2018-04-03T13:02:48.515] [INFO] things - DName: 北京志联华信商贸有限公司
+[2018-04-03T13:02:48.515] [INFO] things - SID: 211110105007
+[2018-04-03T13:02:48.515] [INFO] things - total: 12
+[2018-04-03T13:02:48.515] [INFO] things - limit: 2
+[2018-04-03T13:02:51.108] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:02:53.902] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:02:57.289] [INFO] things - 推送网点信息
+[2018-04-03T13:02:57.293] [INFO] things - Address: 东城区广渠门内白桥大街15号嘉禾国信大厦8楼
+[2018-04-03T13:02:57.295] [INFO] things - SName: 茅台云商北京市市辖区东城区服务网点
+[2018-04-03T13:02:57.295] [INFO] things - DName: 华致酒行连锁管理股份有限公司
+[2018-04-03T13:02:57.295] [INFO] things - SID: 211110101003
+[2018-04-03T13:02:57.295] [INFO] things - total: 7
+[2018-04-03T13:02:57.295] [INFO] things - limit: 4
+[2018-04-03T13:03:01.246] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:03:03.639] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:03:06.758] [INFO] things - 推送网点信息
+[2018-04-03T13:03:06.759] [INFO] things - Address: 朝阳区金汇路10号楼世界城Ａ座506室
+[2018-04-03T13:03:06.760] [INFO] things - SName: 茅台云商北京市朝阳区服务网点
+[2018-04-03T13:03:06.760] [INFO] things - DName: 北京志联华信商贸有限公司
+[2018-04-03T13:03:06.760] [INFO] things - SID: 211110105007
+[2018-04-03T13:03:06.760] [INFO] things - total: 12
+[2018-04-03T13:03:06.760] [INFO] things - limit: 2
+[2018-04-03T13:03:09.891] [INFO] things - 推送网点信息
+[2018-04-03T13:03:09.891] [INFO] things - Address: 东城区广渠门内白桥大街15号嘉禾国信大厦8楼
+[2018-04-03T13:03:09.891] [INFO] things - SName: 茅台云商北京市市辖区东城区服务网点
+[2018-04-03T13:03:09.891] [INFO] things - DName: 华致酒行连锁管理股份有限公司
+[2018-04-03T13:03:09.891] [INFO] things - SID: 211110101003
+[2018-04-03T13:03:09.891] [INFO] things - total: 7
+[2018-04-03T13:03:09.891] [INFO] things - limit: 4
+[2018-04-03T13:03:13.021] [INFO] things - 推送网点信息
+[2018-04-03T13:03:13.024] [INFO] things - Address: 东城区广渠门内白桥大街15号嘉禾国信大厦8楼
+[2018-04-03T13:03:13.024] [INFO] things - SName: 茅台云商北京市市辖区东城区服务网点
+[2018-04-03T13:03:13.024] [INFO] things - DName: 华致酒行连锁管理股份有限公司
+[2018-04-03T13:03:13.024] [INFO] things - SID: 211110101003
+[2018-04-03T13:03:13.024] [INFO] things - total: 7
+[2018-04-03T13:03:13.024] [INFO] things - limit: 4
+[2018-04-03T13:03:17.016] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:03:19.513] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:03:22.726] [INFO] things - 推送网点信息
+[2018-04-03T13:03:22.726] [INFO] things - Address: 朝阳区金汇路10号楼世界城Ａ座506室
+[2018-04-03T13:03:22.726] [INFO] things - SName: 茅台云商北京市朝阳区服务网点
+[2018-04-03T13:03:22.726] [INFO] things - DName: 北京志联华信商贸有限公司
+[2018-04-03T13:03:22.726] [INFO] things - SID: 211110105007
+[2018-04-03T13:03:22.727] [INFO] things - total: 12
+[2018-04-03T13:03:22.727] [INFO] things - limit: 2
+[2018-04-03T13:03:27.372] [INFO] things - 推送网点信息
+[2018-04-03T13:03:27.372] [INFO] things - Address: 朝阳区金汇路10号楼世界城Ａ座506室
+[2018-04-03T13:03:27.372] [INFO] things - SName: 茅台云商北京市朝阳区服务网点
+[2018-04-03T13:03:27.372] [INFO] things - DName: 北京志联华信商贸有限公司
+[2018-04-03T13:03:27.373] [INFO] things - SID: 211110105007
+[2018-04-03T13:03:27.373] [INFO] things - total: 12
+[2018-04-03T13:03:27.373] [INFO] things - limit: 2
+[2018-04-03T13:03:30.662] [INFO] things - 推送网点信息
+[2018-04-03T13:03:30.663] [INFO] things - Address: 朝阳区双龙南里204楼
+[2018-04-03T13:03:30.663] [INFO] things - SName: 茅台云商北京市朝阳区服务网点
+[2018-04-03T13:03:30.663] [INFO] things - DName: 北京朝批商贸股份有限公司
+[2018-04-03T13:03:30.663] [INFO] things - SID: 211110105003
+[2018-04-03T13:03:30.663] [INFO] things - total: 161
+[2018-04-03T13:03:30.664] [INFO] things - limit: 2
+[2018-04-03T13:03:33.798] [INFO] things - 推送网点信息
+[2018-04-03T13:03:33.798] [INFO] things - Address: 东城区广渠门内白桥大街15号嘉禾国信大厦8楼
+[2018-04-03T13:03:33.798] [INFO] things - SName: 茅台云商北京市市辖区东城区服务网点
+[2018-04-03T13:03:33.798] [INFO] things - DName: 华致酒行连锁管理股份有限公司
+[2018-04-03T13:03:33.798] [INFO] things - SID: 211110101003
+[2018-04-03T13:03:33.799] [INFO] things - total: 7
+[2018-04-03T13:03:33.799] [INFO] things - limit: 4
+[2018-04-03T13:03:37.183] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:03:39.999] [INFO] things - 推送网点信息
+[2018-04-03T13:03:39.999] [INFO] things - Address: 东城区广渠门内白桥大街15号嘉禾国信大厦8楼
+[2018-04-03T13:03:39.999] [INFO] things - SName: 茅台云商北京市市辖区东城区服务网点
+[2018-04-03T13:03:39.999] [INFO] things - DName: 华致酒行连锁管理股份有限公司
+[2018-04-03T13:03:39.999] [INFO] things - SID: 211110101003
+[2018-04-03T13:03:39.999] [INFO] things - total: 7
+[2018-04-03T13:03:39.999] [INFO] things - limit: 4
+[2018-04-03T13:03:43.220] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:03:46.185] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:03:48.810] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:03:51.395] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:03:53.923] [INFO] things - 推送网点信息
+[2018-04-03T13:03:53.923] [INFO] things - Address: 北京市西城区文津街7号平2号
+[2018-04-03T13:03:53.923] [INFO] things - SName: 茅台云商北京市西城区服务网点
+[2018-04-03T13:03:53.923] [INFO] things - DName: 国雅萱（北京）文化发展有限公司
+[2018-04-03T13:03:53.924] [INFO] things - SID: 211110102001
+[2018-04-03T13:03:53.924] [INFO] things - total: 14
+[2018-04-03T13:03:53.924] [INFO] things - limit: 2
+[2018-04-03T13:03:56.689] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:03:59.493] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:04:02.132] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:04:05.252] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:04:13.008] [INFO] things - 推送网点信息
+[2018-04-03T13:04:13.009] [INFO] things - Address: 东城区广渠门内白桥大街15号嘉禾国信大厦8楼
+[2018-04-03T13:04:13.009] [INFO] things - SName: 茅台云商北京市市辖区东城区服务网点
+[2018-04-03T13:04:13.009] [INFO] things - DName: 华致酒行连锁管理股份有限公司
+[2018-04-03T13:04:13.010] [INFO] things - SID: 211110101003
+[2018-04-03T13:04:13.010] [INFO] things - total: 7
+[2018-04-03T13:04:13.010] [INFO] things - limit: 4
+[2018-04-03T13:04:25.171] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:04:46.991] [INFO] things - 位置错误,60秒后重试 { Error: socket hang up
+    at createHangUpError (_http_client.js:331:15)
+    at TLSSocket.socketOnEnd (_http_client.js:423:23)
+    at emitNone (events.js:111:20)
+    at TLSSocket.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1055:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+    at process._tickCallback (internal/process/next_tick.js:180:9) code: 'ECONNRESET' }
+[2018-04-03T13:04:50.046] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:04:52.958] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:04:55.577] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:04:59.699] [INFO] things - 推送网点信息
+[2018-04-03T13:04:59.699] [INFO] things - Address: 北京市西城区文津街7号平2号
+[2018-04-03T13:04:59.700] [INFO] things - SName: 茅台云商北京市西城区服务网点
+[2018-04-03T13:04:59.700] [INFO] things - DName: 国雅萱（北京）文化发展有限公司
+[2018-04-03T13:04:59.700] [INFO] things - SID: 211110102001
+[2018-04-03T13:04:59.700] [INFO] things - total: 14
+[2018-04-03T13:04:59.700] [INFO] things - limit: 2
+[2018-04-03T13:05:02.148] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:05:05.239] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:05:08.280] [INFO] things - 推送网点信息
+[2018-04-03T13:05:08.280] [INFO] things - Address: 东城区广渠门内白桥大街15号嘉禾国信大厦8楼
+[2018-04-03T13:05:08.280] [INFO] things - SName: 茅台云商北京市市辖区东城区服务网点
+[2018-04-03T13:05:08.281] [INFO] things - DName: 华致酒行连锁管理股份有限公司
+[2018-04-03T13:05:08.281] [INFO] things - SID: 211110101003
+[2018-04-03T13:05:08.281] [INFO] things - total: 7
+[2018-04-03T13:05:08.281] [INFO] things - limit: 4
+[2018-04-03T13:05:11.555] [INFO] things - 推送网点信息
+[2018-04-03T13:05:11.555] [INFO] things - Address: 东城区广渠门内白桥大街15号嘉禾国信大厦8楼
+[2018-04-03T13:05:11.556] [INFO] things - SName: 茅台云商北京市市辖区东城区服务网点
+[2018-04-03T13:05:11.556] [INFO] things - DName: 华致酒行连锁管理股份有限公司
+[2018-04-03T13:05:11.556] [INFO] things - SID: 211110101003
+[2018-04-03T13:05:11.557] [INFO] things - total: 7
+[2018-04-03T13:05:11.557] [INFO] things - limit: 4
+[2018-04-03T13:05:14.475] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:05:17.415] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:05:25.180] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:05:49.990] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:05:52.778] [INFO] things - 推送网点信息
+[2018-04-03T13:05:52.778] [INFO] things - Address: 东城区广渠门内白桥大街15号嘉禾国信大厦8楼
+[2018-04-03T13:05:52.778] [INFO] things - SName: 茅台云商北京市市辖区东城区服务网点
+[2018-04-03T13:05:52.778] [INFO] things - DName: 华致酒行连锁管理股份有限公司
+[2018-04-03T13:05:52.778] [INFO] things - SID: 211110101003
+[2018-04-03T13:05:52.778] [INFO] things - total: 7
+[2018-04-03T13:05:52.779] [INFO] things - limit: 4
+[2018-04-03T13:05:58.552] [INFO] things - 推送网点信息
+[2018-04-03T13:05:58.552] [INFO] things - Address: 东城区广渠门内白桥大街15号嘉禾国信大厦8楼
+[2018-04-03T13:05:58.553] [INFO] things - SName: 茅台云商北京市市辖区东城区服务网点
+[2018-04-03T13:05:58.553] [INFO] things - DName: 华致酒行连锁管理股份有限公司
+[2018-04-03T13:05:58.553] [INFO] things - SID: 211110101003
+[2018-04-03T13:05:58.554] [INFO] things - total: 7
+[2018-04-03T13:05:58.555] [INFO] things - limit: 4
+[2018-04-03T13:06:16.485] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:06:22.267] [INFO] things - 推送网点信息
+[2018-04-03T13:06:22.267] [INFO] things - Address: 朝阳区双龙南里204楼
+[2018-04-03T13:06:22.267] [INFO] things - SName: 茅台云商北京市朝阳区服务网点
+[2018-04-03T13:06:22.268] [INFO] things - DName: 北京朝批商贸股份有限公司
+[2018-04-03T13:06:22.268] [INFO] things - SID: 211110105003
+[2018-04-03T13:06:22.268] [INFO] things - total: 161
+[2018-04-03T13:06:22.269] [INFO] things - limit: 2
+[2018-04-03T13:06:29.394] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:06:32.075] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:06:39.225] [INFO] things - 推送网点信息
+[2018-04-03T13:06:39.225] [INFO] things - Address: 北京市西城区文津街7号平2号
+[2018-04-03T13:06:39.225] [INFO] things - SName: 茅台云商北京市西城区服务网点
+[2018-04-03T13:06:39.225] [INFO] things - DName: 国雅萱（北京）文化发展有限公司
+[2018-04-03T13:06:39.226] [INFO] things - SID: 211110102001
+[2018-04-03T13:06:39.226] [INFO] things - total: 14
+[2018-04-03T13:06:39.226] [INFO] things - limit: 2
+[2018-04-03T13:06:42.000] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:06:45.288] [INFO] things - 推送网点信息
+[2018-04-03T13:06:45.288] [INFO] things - Address: 朝阳区双龙南里204楼
+[2018-04-03T13:06:45.288] [INFO] things - SName: 茅台云商北京市朝阳区服务网点
+[2018-04-03T13:06:45.288] [INFO] things - DName: 北京朝批商贸股份有限公司
+[2018-04-03T13:06:45.288] [INFO] things - SID: 211110105003
+[2018-04-03T13:06:45.288] [INFO] things - total: 161
+[2018-04-03T13:06:45.288] [INFO] things - limit: 2
+[2018-04-03T13:06:47.836] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:06:50.975] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:06:53.586] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:06:56.448] [INFO] things - 推送网点信息
+[2018-04-03T13:06:56.448] [INFO] things - Address: 东城区广渠门内白桥大街15号嘉禾国信大厦8楼
+[2018-04-03T13:06:56.448] [INFO] things - SName: 茅台云商北京市市辖区东城区服务网点
+[2018-04-03T13:06:56.448] [INFO] things - DName: 华致酒行连锁管理股份有限公司
+[2018-04-03T13:06:56.449] [INFO] things - SID: 211110101003
+[2018-04-03T13:06:56.449] [INFO] things - total: 7
+[2018-04-03T13:06:56.449] [INFO] things - limit: 4
+[2018-04-03T13:06:59.245] [INFO] things - 推送网点信息
+[2018-04-03T13:06:59.245] [INFO] things - Address: 东城区广渠门内白桥大街15号嘉禾国信大厦8楼
+[2018-04-03T13:06:59.245] [INFO] things - SName: 茅台云商北京市市辖区东城区服务网点
+[2018-04-03T13:06:59.245] [INFO] things - DName: 华致酒行连锁管理股份有限公司
+[2018-04-03T13:06:59.246] [INFO] things - SID: 211110101003
+[2018-04-03T13:06:59.246] [INFO] things - total: 7
+[2018-04-03T13:06:59.246] [INFO] things - limit: 4
+[2018-04-03T13:07:01.848] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:07:06.702] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:07:16.751] [INFO] things - 推送网点信息
+[2018-04-03T13:07:16.752] [INFO] things - Address: 北京市西城区文津街7号平2号
+[2018-04-03T13:07:16.752] [INFO] things - SName: 茅台云商北京市西城区服务网点
+[2018-04-03T13:07:16.752] [INFO] things - DName: 国雅萱（北京）文化发展有限公司
+[2018-04-03T13:07:16.752] [INFO] things - SID: 211110102001
+[2018-04-03T13:07:16.752] [INFO] things - total: 14
+[2018-04-03T13:07:16.752] [INFO] things - limit: 2
+[2018-04-03T13:07:19.427] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:07:22.466] [INFO] things - 推送网点信息
+[2018-04-03T13:07:22.466] [INFO] things - Address: 东城区广渠门内白桥大街15号嘉禾国信大厦8楼
+[2018-04-03T13:07:22.466] [INFO] things - SName: 茅台云商北京市市辖区东城区服务网点
+[2018-04-03T13:07:22.467] [INFO] things - DName: 华致酒行连锁管理股份有限公司
+[2018-04-03T13:07:22.467] [INFO] things - SID: 211110101003
+[2018-04-03T13:07:22.467] [INFO] things - total: 7
+[2018-04-03T13:07:22.467] [INFO] things - limit: 4
+[2018-04-03T13:07:27.817] [INFO] things - 推送网点信息
+[2018-04-03T13:07:27.817] [INFO] things - Address: 东城区广渠门内白桥大街15号嘉禾国信大厦8楼
+[2018-04-03T13:07:27.817] [INFO] things - SName: 茅台云商北京市市辖区东城区服务网点
+[2018-04-03T13:07:27.817] [INFO] things - DName: 华致酒行连锁管理股份有限公司
+[2018-04-03T13:07:27.818] [INFO] things - SID: 211110101003
+[2018-04-03T13:07:27.818] [INFO] things - total: 7
+[2018-04-03T13:07:27.818] [INFO] things - limit: 4
+[2018-04-03T13:07:31.640] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:07:47.137] [INFO] things - params [ '/usr/local/bin/node',
+  '/Users/junliang/server/www/maotaiServer/controllers/watch.js' ]
+[2018-04-03T13:07:49.148] [TRACE] things - 当前时间: 13
+[2018-04-03T13:07:49.149] [INFO] things - 抢购时间开始
+[2018-04-03T13:07:52.710] [INFO] things - start get addressID from mobile: 15777186432
+[2018-04-03T13:07:56.799] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:08:00.610] [INFO] things - start get addressID from mobile: 18434763969
+[2018-04-03T13:08:02.191] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:08:04.216] [INFO] things - start get addressID from mobile: 15082907866
+[2018-04-03T13:08:06.510] [INFO] things - 推送网点信息
+[2018-04-03T13:08:06.511] [INFO] things - Address: 朝阳区金汇路10号楼世界城Ａ座506室
+[2018-04-03T13:08:06.511] [INFO] things - SName: 茅台云商北京市朝阳区服务网点
+[2018-04-03T13:08:06.511] [INFO] things - DName: 北京志联华信商贸有限公司
+[2018-04-03T13:08:06.511] [INFO] things - SID: 211110105007
+[2018-04-03T13:08:06.511] [INFO] things - total: 12
+[2018-04-03T13:08:06.512] [INFO] things - limit: 2
+[2018-04-03T13:08:08.326] [INFO] things - start get addressID from mobile: 13512856201
+[2018-04-03T13:08:09.930] [INFO] things - 推送网点信息
+[2018-04-03T13:08:09.930] [INFO] things - Address: 东城区广渠门内白桥大街15号嘉禾国信大厦8楼
+[2018-04-03T13:08:09.930] [INFO] things - SName: 茅台云商北京市市辖区东城区服务网点
+[2018-04-03T13:08:09.931] [INFO] things - DName: 华致酒行连锁管理股份有限公司
+[2018-04-03T13:08:09.931] [INFO] things - SID: 211110101003
+[2018-04-03T13:08:09.931] [INFO] things - total: 7
+[2018-04-03T13:08:09.931] [INFO] things - limit: 4
+[2018-04-03T13:08:11.756] [INFO] things - start get addressID from mobile: 13513642792
+[2018-04-03T13:08:13.322] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:08:15.155] [INFO] things - start get addressID from mobile: 18537303412
+[2018-04-03T13:08:16.862] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:08:31.183] [INFO] things - start get addressID from mobile: 15937230461
+[2018-04-03T13:08:36.813] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:08:38.690] [INFO] things - start get addressID from mobile: 18382394514
+[2018-04-03T13:08:40.336] [INFO] things - 推送网点信息
+[2018-04-03T13:08:40.337] [INFO] things - Address: 东城区广渠门内白桥大街15号嘉禾国信大厦8楼
+[2018-04-03T13:08:40.337] [INFO] things - SName: 茅台云商北京市市辖区东城区服务网点
+[2018-04-03T13:08:40.338] [INFO] things - DName: 华致酒行连锁管理股份有限公司
+[2018-04-03T13:08:40.338] [INFO] things - SID: 211110101003
+[2018-04-03T13:08:40.338] [INFO] things - total: 7
+[2018-04-03T13:08:40.338] [INFO] things - limit: 4
+[2018-04-03T13:08:42.777] [INFO] things - start get addressID from mobile: 15505201939
+[2018-04-03T13:08:44.164] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:08:53.301] [INFO] things - start get addressID from mobile: 13895490886
+[2018-04-03T13:09:11.110] [INFO] things - 推送网点信息
+[2018-04-03T13:09:11.111] [INFO] things - Address: 朝阳区金汇路10号楼世界城Ａ座506室
+[2018-04-03T13:09:11.111] [INFO] things - SName: 茅台云商北京市朝阳区服务网点
+[2018-04-03T13:09:11.111] [INFO] things - DName: 北京志联华信商贸有限公司
+[2018-04-03T13:09:11.111] [INFO] things - SID: 211110105007
+[2018-04-03T13:09:11.112] [INFO] things - total: 12
+[2018-04-03T13:09:11.112] [INFO] things - limit: 2
+[2018-04-03T13:09:12.919] [INFO] things - start get addressID from mobile: 13399381732
+[2018-04-03T13:09:14.500] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:09:18.137] [INFO] things - start get addressID from mobile: 18291130651
+[2018-04-03T13:09:25.025] [INFO] things - 推送网点信息
+[2018-04-03T13:09:25.025] [INFO] things - Address: 朝阳区金汇路10号楼世界城Ａ座506室
+[2018-04-03T13:09:25.026] [INFO] things - SName: 茅台云商北京市朝阳区服务网点
+[2018-04-03T13:09:25.026] [INFO] things - DName: 北京志联华信商贸有限公司
+[2018-04-03T13:09:25.026] [INFO] things - SID: 211110105007
+[2018-04-03T13:09:25.026] [INFO] things - total: 12
+[2018-04-03T13:09:25.026] [INFO] things - limit: 2
+[2018-04-03T13:09:27.098] [INFO] things - start get addressID from mobile: 18967839427
+[2018-04-03T13:09:28.905] [INFO] things - 推送网点信息
+[2018-04-03T13:09:28.905] [INFO] things - Address: 北京市西城区文津街7号平2号
+[2018-04-03T13:09:28.905] [INFO] things - SName: 茅台云商北京市西城区服务网点
+[2018-04-03T13:09:28.905] [INFO] things - DName: 国雅萱（北京）文化发展有限公司
+[2018-04-03T13:09:28.905] [INFO] things - SID: 211110102001
+[2018-04-03T13:09:28.906] [INFO] things - total: 14
+[2018-04-03T13:09:28.906] [INFO] things - limit: 2
+[2018-04-03T13:09:31.696] [INFO] things - 推送网点信息
+[2018-04-03T13:09:31.697] [INFO] things - Address: 朝阳区金汇路10号楼世界城Ａ座506室
+[2018-04-03T13:09:31.697] [INFO] things - SName: 茅台云商北京市朝阳区服务网点
+[2018-04-03T13:09:31.697] [INFO] things - DName: 北京志联华信商贸有限公司
+[2018-04-03T13:09:31.697] [INFO] things - SID: 211110105007
+[2018-04-03T13:09:31.698] [INFO] things - total: 12
+[2018-04-03T13:09:31.698] [INFO] things - limit: 2
+[2018-04-03T13:09:34.058] [INFO] things - start get addressID from mobile: 15699770933
+[2018-04-03T13:09:35.731] [INFO] things - 推送网点信息
+[2018-04-03T13:09:35.731] [INFO] things - Address: 东城区广渠门内白桥大街15号嘉禾国信大厦8楼
+[2018-04-03T13:09:35.731] [INFO] things - SName: 茅台云商北京市市辖区东城区服务网点
+[2018-04-03T13:09:35.731] [INFO] things - DName: 华致酒行连锁管理股份有限公司
+[2018-04-03T13:09:35.732] [INFO] things - SID: 211110101003
+[2018-04-03T13:09:35.732] [INFO] things - total: 7
+[2018-04-03T13:09:35.732] [INFO] things - limit: 4
+[2018-04-03T13:09:39.793] [INFO] things - start get addressID from mobile: 15003443253
+[2018-04-03T13:09:42.321] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:09:44.825] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:09:46.653] [INFO] things - start get addressID from mobile: 13831322890
+[2018-04-03T13:09:48.233] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:09:53.918] [INFO] things - start get addressID from mobile: 13633696711
+[2018-04-03T13:09:55.567] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:09:58.413] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:10:00.132] [INFO] things - start get addressID from mobile: 15330512791
+[2018-04-03T13:10:02.112] [INFO] things - 推送网点信息
+[2018-04-03T13:10:02.112] [INFO] things - Address: 朝阳区金汇路10号楼世界城Ａ座506室
+[2018-04-03T13:10:02.112] [INFO] things - SName: 茅台云商北京市朝阳区服务网点
+[2018-04-03T13:10:02.112] [INFO] things - DName: 北京志联华信商贸有限公司
+[2018-04-03T13:10:02.114] [INFO] things - SID: 211110105007
+[2018-04-03T13:10:02.114] [INFO] things - total: 12
+[2018-04-03T13:10:02.114] [INFO] things - limit: 2
+[2018-04-03T13:10:03.790] [INFO] things - start get addressID from mobile: 18831099037
+[2018-04-03T13:10:05.536] [INFO] things - 推送网点信息
+[2018-04-03T13:10:05.537] [INFO] things - Address: 朝阳区金汇路10号楼世界城Ａ座506室
+[2018-04-03T13:10:05.538] [INFO] things - SName: 茅台云商北京市朝阳区服务网点
+[2018-04-03T13:10:05.538] [INFO] things - DName: 北京志联华信商贸有限公司
+[2018-04-03T13:10:05.538] [INFO] things - SID: 211110105007
+[2018-04-03T13:10:05.538] [INFO] things - total: 12
+[2018-04-03T13:10:05.538] [INFO] things - limit: 2
+[2018-04-03T13:10:07.520] [INFO] things - start get addressID from mobile: 13839228541
+[2018-04-03T13:10:11.335] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:10:13.065] [INFO] things - start get addressID from mobile: 15633523066
+[2018-04-03T13:10:14.687] [INFO] things - 推送网点信息
+[2018-04-03T13:10:14.688] [INFO] things - Address: 东城区广渠门内白桥大街15号嘉禾国信大厦8楼
+[2018-04-03T13:10:14.688] [INFO] things - SName: 茅台云商北京市市辖区东城区服务网点
+[2018-04-03T13:10:14.688] [INFO] things - DName: 华致酒行连锁管理股份有限公司
+[2018-04-03T13:10:14.688] [INFO] things - SID: 211110101003
+[2018-04-03T13:10:14.688] [INFO] things - total: 7
+[2018-04-03T13:10:14.689] [INFO] things - limit: 4
+[2018-04-03T13:10:19.414] [INFO] things - start get addressID from mobile: 13519083633
+[2018-04-03T13:10:21.624] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:10:29.157] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:10:36.686] [INFO] things - start get addressID from mobile: 15238555689
+[2018-04-03T13:10:44.037] [INFO] things - 推送网点信息
+[2018-04-03T13:10:44.037] [INFO] things - Address: 朝阳区双龙南里204楼
+[2018-04-03T13:10:44.037] [INFO] things - SName: 茅台云商北京市朝阳区服务网点
+[2018-04-03T13:10:44.038] [INFO] things - DName: 北京朝批商贸股份有限公司
+[2018-04-03T13:10:44.038] [INFO] things - SID: 211110105003
+[2018-04-03T13:10:44.038] [INFO] things - total: 161
+[2018-04-03T13:10:44.038] [INFO] things - limit: 2
+[2018-04-03T13:10:46.690] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:11:08.516] [INFO] things - 位置错误,60秒后重试 { Error: socket hang up
+    at createHangUpError (_http_client.js:331:15)
+    at TLSSocket.socketOnEnd (_http_client.js:423:23)
+    at emitNone (events.js:111:20)
+    at TLSSocket.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1055:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+    at process._tickCallback (internal/process/next_tick.js:180:9) code: 'ECONNRESET' }
+[2018-04-03T13:11:11.789] [INFO] things - start get addressID from mobile: 15588159966
+[2018-04-03T13:11:14.943] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:11:19.486] [INFO] things - start get addressID from mobile: 13392151517
+[2018-04-03T13:11:27.413] [INFO] things - 推送网点信息
+[2018-04-03T13:11:27.413] [INFO] things - Address: 东城区广渠门内白桥大街15号嘉禾国信大厦8楼
+[2018-04-03T13:11:27.414] [INFO] things - SName: 茅台云商北京市市辖区东城区服务网点
+[2018-04-03T13:11:27.414] [INFO] things - DName: 华致酒行连锁管理股份有限公司
+[2018-04-03T13:11:27.414] [INFO] things - SID: 211110101003
+[2018-04-03T13:11:27.414] [INFO] things - total: 7
+[2018-04-03T13:11:27.415] [INFO] things - limit: 4
+[2018-04-03T13:11:32.486] [INFO] things - start get addressID from mobile: 18810320392
+[2018-04-03T13:11:36.831] [INFO] things - 推送网点信息
+[2018-04-03T13:11:36.836] [INFO] things - Address: 东城区广渠门内白桥大街15号嘉禾国信大厦8楼
+[2018-04-03T13:11:36.836] [INFO] things - SName: 茅台云商北京市市辖区东城区服务网点
+[2018-04-03T13:11:36.836] [INFO] things - DName: 华致酒行连锁管理股份有限公司
+[2018-04-03T13:11:36.837] [INFO] things - SID: 211110101003
+[2018-04-03T13:11:36.837] [INFO] things - total: 7
+[2018-04-03T13:11:36.837] [INFO] things - limit: 4
+[2018-04-03T13:11:41.086] [INFO] things - start get addressID from mobile: 15264711001
+[2018-04-03T13:11:45.601] [INFO] things - 推送网点信息
+[2018-04-03T13:11:45.602] [INFO] things - Address: 东城区广渠门内白桥大街15号嘉禾国信大厦8楼
+[2018-04-03T13:11:45.602] [INFO] things - SName: 茅台云商北京市市辖区东城区服务网点
+[2018-04-03T13:11:45.603] [INFO] things - DName: 华致酒行连锁管理股份有限公司
+[2018-04-03T13:11:45.603] [INFO] things - SID: 211110101003
+[2018-04-03T13:11:45.603] [INFO] things - total: 7
+[2018-04-03T13:11:45.603] [INFO] things - limit: 4
+[2018-04-03T13:11:48.600] [INFO] things - start get addressID from mobile: 15264711296
+[2018-04-03T13:11:51.882] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:11:58.951] [INFO] things - 推送网点信息
+[2018-04-03T13:11:58.952] [INFO] things - Address: 东城区广渠门内白桥大街15号嘉禾国信大厦8楼
+[2018-04-03T13:11:58.952] [INFO] things - SName: 茅台云商北京市市辖区东城区服务网点
+[2018-04-03T13:11:58.953] [INFO] things - DName: 华致酒行连锁管理股份有限公司
+[2018-04-03T13:11:58.953] [INFO] things - SID: 211110101003
+[2018-04-03T13:11:58.953] [INFO] things - total: 7
+[2018-04-03T13:11:58.953] [INFO] things - limit: 4
+[2018-04-03T13:12:03.363] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:12:06.501] [INFO] things - start get addressID from mobile: 17757449525
+[2018-04-03T13:20:35.928] [INFO] things - params [ '/usr/local/bin/node',
+  '/Users/junliang/server/www/maotaiServer/controllers/watch.js' ]
+[2018-04-03T13:20:37.940] [TRACE] things - 当前时间: 13
+[2018-04-03T13:20:37.940] [INFO] things - 抢购时间开始
+[2018-04-03T13:20:38.716] [INFO] things - start get addressID from mobile: 13413723166
+[2018-04-03T13:20:40.292] [INFO] things - 推送网点信息
+[2018-04-03T13:20:40.292] [INFO] things - Address: 北京市西城区文津街7号平2号
+[2018-04-03T13:20:40.293] [INFO] things - SName: 茅台云商北京市西城区服务网点
+[2018-04-03T13:20:40.293] [INFO] things - DName: 国雅萱（北京）文化发展有限公司
+[2018-04-03T13:20:40.293] [INFO] things - SID: 211110102001
+[2018-04-03T13:20:40.293] [INFO] things - total: 14
+[2018-04-03T13:20:40.293] [INFO] things - limit: 2
+[2018-04-03T13:20:42.203] [INFO] things - start get addressID from mobile: 13153185002
+[2018-04-03T13:20:45.687] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:20:47.499] [INFO] things - start get addressID from mobile: 13792080758
+[2018-04-03T13:20:48.917] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:20:50.763] [INFO] things - start get addressID from mobile: 13351208936
+[2018-04-03T13:20:52.233] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:20:54.015] [INFO] things - start get addressID from mobile: 13081312422
+[2018-04-03T13:20:55.379] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:20:57.392] [INFO] things - start get addressID from mobile: 13399381732
+[2018-04-03T13:20:59.985] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:21:02.284] [INFO] things - start get addressID from mobile: 18709222182
+[2018-04-03T13:21:04.149] [INFO] things - 推送网点信息
+[2018-04-03T13:21:04.149] [INFO] things - Address: 朝阳区双龙南里204楼
+[2018-04-03T13:21:04.149] [INFO] things - SName: 茅台云商北京市朝阳区服务网点
+[2018-04-03T13:21:04.150] [INFO] things - DName: 北京朝批商贸股份有限公司
+[2018-04-03T13:21:04.150] [INFO] things - SID: 211110105003
+[2018-04-03T13:21:04.150] [INFO] things - total: 161
+[2018-04-03T13:21:04.150] [INFO] things - limit: 2
+[2018-04-03T13:21:08.487] [INFO] things - start get addressID from mobile: 15835086989
+[2018-04-03T13:21:41.473] [INFO] things - 定位信息获取错误 { Error: socket hang up
+    at createHangUpError (_http_client.js:331:15)
+    at TLSSocket.socketOnEnd (_http_client.js:423:23)
+    at emitNone (events.js:111:20)
+    at TLSSocket.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1055:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+    at process._tickCallback (internal/process/next_tick.js:180:9) code: 'ECONNRESET' }
+[2018-04-03T13:21:41.478] [INFO] things - 位置错误,60秒后重试 { Error: socket hang up
+    at createHangUpError (_http_client.js:331:15)
+    at TLSSocket.socketOnEnd (_http_client.js:423:23)
+    at emitNone (events.js:111:20)
+    at TLSSocket.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1055:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+    at process._tickCallback (internal/process/next_tick.js:180:9) code: 'ECONNRESET' }
+[2018-04-03T13:21:45.569] [INFO] things - start get addressID from mobile: 15046800490
+[2018-04-03T13:21:47.705] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:21:49.590] [INFO] things - start get addressID from mobile: 13343192376
+[2018-04-03T13:21:51.021] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:21:52.991] [INFO] things - start get addressID from mobile: 13969577793
+[2018-04-03T13:21:54.854] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:22:01.766] [INFO] things - start get addressID from mobile: 15635316166
+[2018-04-03T13:22:05.927] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:22:07.746] [INFO] things - start get addressID from mobile: 15981953127
+[2018-04-03T13:22:09.452] [INFO] things - 推送网点信息
+[2018-04-03T13:22:09.452] [INFO] things - Address: 东城区广渠门内白桥大街15号嘉禾国信大厦8楼
+[2018-04-03T13:22:09.453] [INFO] things - SName: 茅台云商北京市市辖区东城区服务网点
+[2018-04-03T13:22:09.454] [INFO] things - DName: 华致酒行连锁管理股份有限公司
+[2018-04-03T13:22:09.454] [INFO] things - SID: 211110101003
+[2018-04-03T13:22:09.454] [INFO] things - total: 7
+[2018-04-03T13:22:09.454] [INFO] things - limit: 4
+[2018-04-03T13:22:11.272] [INFO] things - start get addressID from mobile: 15633523066
+[2018-04-03T13:22:13.235] [INFO] things - 推送网点信息
+[2018-04-03T13:22:13.235] [INFO] things - Address: 东城区广渠门内白桥大街15号嘉禾国信大厦8楼
+[2018-04-03T13:22:13.236] [INFO] things - SName: 茅台云商北京市市辖区东城区服务网点
+[2018-04-03T13:22:13.236] [INFO] things - DName: 华致酒行连锁管理股份有限公司
+[2018-04-03T13:22:13.236] [INFO] things - SID: 211110101003
+[2018-04-03T13:22:13.236] [INFO] things - total: 7
+[2018-04-03T13:22:13.236] [INFO] things - limit: 4
+[2018-04-03T13:22:15.737] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:22:19.926] [INFO] things - start get addressID from mobile: 15525146023
+[2018-04-03T13:22:34.990] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:22:37.467] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:22:42.808] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:22:44.878] [INFO] things - start get addressID from mobile: 15264711296
+[2018-04-03T13:22:46.673] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:22:48.823] [INFO] things - start get addressID from mobile: 15303529430
+[2018-04-03T13:22:55.005] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:22:56.856] [INFO] things - start get addressID from mobile: 15949806339
+[2018-04-03T13:22:58.552] [INFO] things - 推送网点信息
+[2018-04-03T13:22:58.553] [INFO] things - Address: 东城区广渠门内白桥大街15号嘉禾国信大厦8楼
+[2018-04-03T13:22:58.553] [INFO] things - SName: 茅台云商北京市市辖区东城区服务网点
+[2018-04-03T13:22:58.554] [INFO] things - DName: 华致酒行连锁管理股份有限公司
+[2018-04-03T13:22:58.554] [INFO] things - SID: 211110101003
+[2018-04-03T13:22:58.554] [INFO] things - total: 7
+[2018-04-03T13:22:58.554] [INFO] things - limit: 4
+[2018-04-03T13:23:00.311] [INFO] things - start get addressID from mobile: 15131828567
+[2018-04-03T13:23:01.614] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:23:03.469] [INFO] things - start get addressID from mobile: 15834343940
+[2018-04-03T13:23:04.987] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:23:06.748] [INFO] things - start get addressID from mobile: 13839228541
+[2018-04-03T13:23:08.095] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:23:29.752] [INFO] things - 位置错误,60秒后重试 { Error: socket hang up
+    at createHangUpError (_http_client.js:331:15)
+    at TLSSocket.socketOnEnd (_http_client.js:423:23)
+    at emitNone (events.js:111:20)
+    at TLSSocket.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1055:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+    at process._tickCallback (internal/process/next_tick.js:180:9) code: 'ECONNRESET' }
+[2018-04-03T13:23:33.888] [INFO] things - 位置错误,60秒后重试 { Error: tunneling socket could not be established, cause=socket hang up
+    at ClientRequest.onError (/Users/junliang/server/www/maotaiServer/node_modules/tunnel-agent/index.js:177:17)
+    at Object.onceWrapper (events.js:315:30)
+    at emitOne (events.js:116:13)
+    at ClientRequest.emit (events.js:211:7)
+    at Socket.socketOnEnd (_http_client.js:423:9)
+    at emitNone (events.js:111:20)
+    at Socket.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1055:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+    at process._tickCallback (internal/process/next_tick.js:180:9) code: 'ECONNRESET' }
+[2018-04-03T13:23:37.114] [INFO] things - 推送网点信息
+[2018-04-03T13:23:37.115] [INFO] things - Address: 东城区广渠门内白桥大街15号嘉禾国信大厦8楼
+[2018-04-03T13:23:37.115] [INFO] things - SName: 茅台云商北京市市辖区东城区服务网点
+[2018-04-03T13:23:37.116] [INFO] things - DName: 华致酒行连锁管理股份有限公司
+[2018-04-03T13:23:37.116] [INFO] things - SID: 211110101003
+[2018-04-03T13:23:37.117] [INFO] things - total: 7
+[2018-04-03T13:23:37.117] [INFO] things - limit: 4
+[2018-04-03T13:23:38.948] [INFO] things - start get addressID from mobile: 15354193781
+[2018-04-03T13:23:40.295] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:23:42.267] [INFO] things - start get addressID from mobile: 17612746321
+[2018-04-03T13:23:44.226] [INFO] things - 推送网点信息
+[2018-04-03T13:23:44.229] [INFO] things - Address: 东城区广渠门内白桥大街15号嘉禾国信大厦8楼
+[2018-04-03T13:23:44.231] [INFO] things - SName: 茅台云商北京市市辖区东城区服务网点
+[2018-04-03T13:23:44.235] [INFO] things - DName: 华致酒行连锁管理股份有限公司
+[2018-04-03T13:23:44.236] [INFO] things - SID: 211110101003
+[2018-04-03T13:23:44.236] [INFO] things - total: 7
+[2018-04-03T13:23:44.236] [INFO] things - limit: 4
+[2018-04-03T13:23:46.087] [INFO] things - start get addressID from mobile: 15393630594
+[2018-04-03T13:23:47.727] [INFO] things - 推送网点信息
+[2018-04-03T13:23:47.728] [INFO] things - Address: 东城区广渠门内白桥大街15号嘉禾国信大厦8楼
+[2018-04-03T13:23:47.728] [INFO] things - SName: 茅台云商北京市市辖区东城区服务网点
+[2018-04-03T13:23:47.729] [INFO] things - DName: 华致酒行连锁管理股份有限公司
+[2018-04-03T13:23:47.729] [INFO] things - SID: 211110101003
+[2018-04-03T13:23:47.729] [INFO] things - total: 7
+[2018-04-03T13:23:47.730] [INFO] things - limit: 4
+[2018-04-03T13:23:49.588] [INFO] things - start get addressID from mobile: 15535890431
+[2018-04-03T13:23:51.515] [INFO] things - 推送网点信息
+[2018-04-03T13:23:51.516] [INFO] things - Address: 朝阳区双龙南里204楼
+[2018-04-03T13:23:51.516] [INFO] things - SName: 茅台云商北京市朝阳区服务网点
+[2018-04-03T13:23:51.516] [INFO] things - DName: 北京朝批商贸股份有限公司
+[2018-04-03T13:23:51.517] [INFO] things - SID: 211110105003
+[2018-04-03T13:23:51.517] [INFO] things - total: 161
+[2018-04-03T13:23:51.517] [INFO] things - limit: 2
+[2018-04-03T13:23:53.373] [INFO] things - start get addressID from mobile: 18382394514
+[2018-04-03T13:23:55.162] [INFO] things - 推送网点信息
+[2018-04-03T13:23:55.162] [INFO] things - Address: 东城区广渠门内白桥大街15号嘉禾国信大厦8楼
+[2018-04-03T13:23:55.163] [INFO] things - SName: 茅台云商北京市市辖区东城区服务网点
+[2018-04-03T13:23:55.164] [INFO] things - DName: 华致酒行连锁管理股份有限公司
+[2018-04-03T13:23:55.164] [INFO] things - SID: 211110101003
+[2018-04-03T13:23:55.164] [INFO] things - total: 7
+[2018-04-03T13:23:55.165] [INFO] things - limit: 4
+[2018-04-03T13:23:57.942] [INFO] things - start get addressID from mobile: 15039298864
+[2018-04-03T13:24:02.162] [INFO] things - 推送网点信息
+[2018-04-03T13:24:02.163] [INFO] things - Address: 朝阳区金汇路10号楼世界城Ａ座506室
+[2018-04-03T13:24:02.164] [INFO] things - SName: 茅台云商北京市朝阳区服务网点
+[2018-04-03T13:24:02.164] [INFO] things - DName: 北京志联华信商贸有限公司
+[2018-04-03T13:24:02.164] [INFO] things - SID: 211110105007
+[2018-04-03T13:24:02.165] [INFO] things - total: 12
+[2018-04-03T13:24:02.165] [INFO] things - limit: 2
+[2018-04-03T13:24:04.033] [INFO] things - start get addressID from mobile: 18291130651
+[2018-04-03T13:24:05.610] [INFO] things - 推送网点信息
+[2018-04-03T13:24:05.611] [INFO] things - Address: 朝阳区金汇路10号楼世界城Ａ座506室
+[2018-04-03T13:24:05.612] [INFO] things - SName: 茅台云商北京市朝阳区服务网点
+[2018-04-03T13:24:05.615] [INFO] things - DName: 北京志联华信商贸有限公司
+[2018-04-03T13:24:05.615] [INFO] things - SID: 211110105007
+[2018-04-03T13:24:05.616] [INFO] things - total: 12
+[2018-04-03T13:24:05.616] [INFO] things - limit: 2
+[2018-04-03T13:24:07.502] [INFO] things - start get addressID from mobile: 18909564220
+[2018-04-03T13:24:09.562] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:24:11.713] [INFO] things - start get addressID from mobile: 15699770933
+[2018-04-03T13:24:13.759] [INFO] things - 推送网点信息
+[2018-04-03T13:24:13.759] [INFO] things - Address: 东城区广渠门内白桥大街15号嘉禾国信大厦8楼
+[2018-04-03T13:24:13.759] [INFO] things - SName: 茅台云商北京市市辖区东城区服务网点
+[2018-04-03T13:24:13.759] [INFO] things - DName: 华致酒行连锁管理股份有限公司
+[2018-04-03T13:24:13.760] [INFO] things - SID: 211110101003
+[2018-04-03T13:24:13.760] [INFO] things - total: 7
+[2018-04-03T13:24:13.760] [INFO] things - limit: 4
+[2018-04-03T13:24:19.714] [INFO] things - start get addressID from mobile: 18232902912
+[2018-04-03T13:24:24.988] [INFO] things - 推送网点信息
+[2018-04-03T13:24:24.988] [INFO] things - Address: 东城区广渠门内白桥大街15号嘉禾国信大厦8楼
+[2018-04-03T13:24:24.988] [INFO] things - SName: 茅台云商北京市市辖区东城区服务网点
+[2018-04-03T13:24:24.988] [INFO] things - DName: 华致酒行连锁管理股份有限公司
+[2018-04-03T13:24:24.988] [INFO] things - SID: 211110101003
+[2018-04-03T13:24:24.989] [INFO] things - total: 7
+[2018-04-03T13:24:24.989] [INFO] things - limit: 4
+[2018-04-03T13:24:26.851] [INFO] things - start get addressID from mobile: 17031887830
+[2018-04-03T13:24:28.413] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:24:44.414] [INFO] things - start get addressID from mobile: 17505106529
+[2018-04-03T13:24:55.622] [INFO] things - 推送网点信息
+[2018-04-03T13:24:55.623] [INFO] things - Address: 东城区广渠门内白桥大街15号嘉禾国信大厦8楼
+[2018-04-03T13:24:55.624] [INFO] things - SName: 茅台云商北京市市辖区东城区服务网点
+[2018-04-03T13:24:55.624] [INFO] things - DName: 华致酒行连锁管理股份有限公司
+[2018-04-03T13:24:55.625] [INFO] things - SID: 211110101003
+[2018-04-03T13:24:55.625] [INFO] things - total: 7
+[2018-04-03T13:24:55.625] [INFO] things - limit: 4
+[2018-04-03T13:24:59.041] [INFO] things - 推送网点信息
+[2018-04-03T13:24:59.042] [INFO] things - Address: 东城区广渠门内白桥大街15号嘉禾国信大厦8楼
+[2018-04-03T13:24:59.042] [INFO] things - SName: 茅台云商北京市市辖区东城区服务网点
+[2018-04-03T13:24:59.043] [INFO] things - DName: 华致酒行连锁管理股份有限公司
+[2018-04-03T13:24:59.043] [INFO] things - SID: 211110101003
+[2018-04-03T13:24:59.043] [INFO] things - total: 7
+[2018-04-03T13:24:59.043] [INFO] things - limit: 4
+[2018-04-03T13:25:02.473] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:25:04.222] [INFO] things - start get addressID from mobile: 18810320392
+[2018-04-03T13:25:05.653] [INFO] things - 推送网点信息
+[2018-04-03T13:25:05.653] [INFO] things - Address: 东城区广渠门内白桥大街15号嘉禾国信大厦8楼
+[2018-04-03T13:25:05.653] [INFO] things - SName: 茅台云商北京市市辖区东城区服务网点
+[2018-04-03T13:25:05.654] [INFO] things - DName: 华致酒行连锁管理股份有限公司
+[2018-04-03T13:25:05.654] [INFO] things - SID: 211110101003
+[2018-04-03T13:25:05.654] [INFO] things - total: 7
+[2018-04-03T13:25:05.654] [INFO] things - limit: 4
+[2018-04-03T13:25:08.709] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:25:10.604] [INFO] things - start get addressID from mobile: 15081820867
+[2018-04-03T13:25:12.434] [INFO] things - 推送网点信息
+[2018-04-03T13:25:12.434] [INFO] things - Address: 朝阳区金汇路10号楼世界城Ａ座506室
+[2018-04-03T13:25:12.434] [INFO] things - SName: 茅台云商北京市朝阳区服务网点
+[2018-04-03T13:25:12.434] [INFO] things - DName: 北京志联华信商贸有限公司
+[2018-04-03T13:25:12.437] [INFO] things - SID: 211110105007
+[2018-04-03T13:25:12.437] [INFO] things - total: 12
+[2018-04-03T13:25:12.437] [INFO] things - limit: 2
+[2018-04-03T13:25:23.549] [INFO] things - 推送网点信息
+[2018-04-03T13:25:23.549] [INFO] things - Address: 东城区广渠门内白桥大街15号嘉禾国信大厦8楼
+[2018-04-03T13:25:23.549] [INFO] things - SName: 茅台云商北京市市辖区东城区服务网点
+[2018-04-03T13:25:23.549] [INFO] things - DName: 华致酒行连锁管理股份有限公司
+[2018-04-03T13:25:23.549] [INFO] things - SID: 211110101003
+[2018-04-03T13:25:23.550] [INFO] things - total: 7
+[2018-04-03T13:25:23.550] [INFO] things - limit: 4
+[2018-04-03T13:25:25.431] [INFO] things - start get addressID from mobile: 13283936032
+[2018-04-03T13:25:26.912] [INFO] things - 推送网点信息
+[2018-04-03T13:25:26.912] [INFO] things - Address: 朝阳区金汇路10号楼世界城Ａ座506室
+[2018-04-03T13:25:26.913] [INFO] things - SName: 茅台云商北京市朝阳区服务网点
+[2018-04-03T13:25:26.913] [INFO] things - DName: 北京志联华信商贸有限公司
+[2018-04-03T13:25:26.913] [INFO] things - SID: 211110105007
+[2018-04-03T13:25:26.913] [INFO] things - total: 12
+[2018-04-03T13:25:26.913] [INFO] things - limit: 2
+[2018-04-03T13:25:36.870] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:25:40.651] [INFO] things - start get addressID from mobile: 15046846298
+[2018-04-03T13:25:43.381] [INFO] things - 推送网点信息
+[2018-04-03T13:25:43.382] [INFO] things - Address: 朝阳区金汇路10号楼世界城Ａ座506室
+[2018-04-03T13:25:43.382] [INFO] things - SName: 茅台云商北京市朝阳区服务网点
+[2018-04-03T13:25:43.382] [INFO] things - DName: 北京志联华信商贸有限公司
+[2018-04-03T13:25:43.382] [INFO] things - SID: 211110105007
+[2018-04-03T13:25:43.383] [INFO] things - total: 12
+[2018-04-03T13:25:43.388] [INFO] things - limit: 2
+[2018-04-03T13:25:45.260] [INFO] things - start get addressID from mobile: 18903188059
+[2018-04-03T13:25:47.167] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:25:50.110] [INFO] things - 推送网点信息
+[2018-04-03T13:25:50.111] [INFO] things - Address: 朝阳区金汇路10号楼世界城Ａ座506室
+[2018-04-03T13:25:50.111] [INFO] things - SName: 茅台云商北京市朝阳区服务网点
+[2018-04-03T13:25:50.111] [INFO] things - DName: 北京志联华信商贸有限公司
+[2018-04-03T13:25:50.111] [INFO] things - SID: 211110105007
+[2018-04-03T13:25:50.112] [INFO] things - total: 12
+[2018-04-03T13:25:50.112] [INFO] things - limit: 2
+[2018-04-03T13:25:51.827] [INFO] things - start get addressID from mobile: 18246626742
+[2018-04-03T13:26:21.954] [INFO] things - 位置错误,60秒后重试 { Error: socket hang up
+    at TLSSocket.onHangUp (_tls_wrap.js:1135:19)
+    at Object.onceWrapper (events.js:313:30)
+    at emitNone (events.js:111:20)
+    at TLSSocket.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1055:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+  code: 'ECONNRESET',
+  path: undefined,
+  host: undefined,
+  port: 0,
+  localAddress: undefined }
+[2018-04-03T13:26:23.797] [INFO] things - start get addressID from mobile: 15588159966
+[2018-04-03T13:26:25.396] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:26:34.198] [INFO] things - start get addressID from mobile: 13993852417
+[2018-04-03T13:26:35.600] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:26:37.545] [INFO] things - start get addressID from mobile: 18863572962
+[2018-04-03T13:26:39.152] [INFO] things - 推送网点信息
+[2018-04-03T13:26:39.153] [INFO] things - Address: 东城区广渠门内白桥大街15号嘉禾国信大厦8楼
+[2018-04-03T13:26:39.153] [INFO] things - SName: 茅台云商北京市市辖区东城区服务网点
+[2018-04-03T13:26:39.153] [INFO] things - DName: 华致酒行连锁管理股份有限公司
+[2018-04-03T13:26:39.153] [INFO] things - SID: 211110101003
+[2018-04-03T13:26:39.153] [INFO] things - total: 7
+[2018-04-03T13:26:39.153] [INFO] things - limit: 4
+[2018-04-03T13:26:41.003] [INFO] things - start get addressID from mobile: 15951853170
+[2018-04-03T13:26:42.471] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:26:45.153] [INFO] things - 推送网点信息
+[2018-04-03T13:26:45.154] [INFO] things - Address: 东城区广渠门内白桥大街15号嘉禾国信大厦8楼
+[2018-04-03T13:26:45.154] [INFO] things - SName: 茅台云商北京市市辖区东城区服务网点
+[2018-04-03T13:26:45.154] [INFO] things - DName: 华致酒行连锁管理股份有限公司
+[2018-04-03T13:26:45.154] [INFO] things - SID: 211110101003
+[2018-04-03T13:26:45.154] [INFO] things - total: 7
+[2018-04-03T13:26:45.155] [INFO] things - limit: 4
+[2018-04-03T13:27:06.639] [INFO] things - 位置错误,60秒后重试 { Error: socket hang up
+    at createHangUpError (_http_client.js:331:15)
+    at TLSSocket.socketOnEnd (_http_client.js:423:23)
+    at emitNone (events.js:111:20)
+    at TLSSocket.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1055:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+    at process._tickCallback (internal/process/next_tick.js:180:9) code: 'ECONNRESET' }
+[2018-04-03T13:27:09.354] [INFO] things - 推送网点信息
+[2018-04-03T13:27:09.354] [INFO] things - Address: 东城区广渠门内白桥大街15号嘉禾国信大厦8楼
+[2018-04-03T13:27:09.355] [INFO] things - SName: 茅台云商北京市市辖区东城区服务网点
+[2018-04-03T13:27:09.355] [INFO] things - DName: 华致酒行连锁管理股份有限公司
+[2018-04-03T13:27:09.355] [INFO] things - SID: 211110101003
+[2018-04-03T13:27:09.355] [INFO] things - total: 7
+[2018-04-03T13:27:09.355] [INFO] things - limit: 4
+[2018-04-03T13:27:12.021] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:27:15.099] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:27:20.667] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:27:22.548] [INFO] things - start get addressID from mobile: 15515970953
+[2018-04-03T13:27:24.138] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:27:26.150] [INFO] things - start get addressID from mobile: 15082907866
+[2018-04-03T13:27:27.694] [INFO] things - 推送网点信息
+[2018-04-03T13:27:27.697] [INFO] things - Address: 朝阳区金汇路10号楼世界城Ａ座506室
+[2018-04-03T13:27:27.698] [INFO] things - SName: 茅台云商北京市朝阳区服务网点
+[2018-04-03T13:27:27.698] [INFO] things - DName: 北京志联华信商贸有限公司
+[2018-04-03T13:27:27.698] [INFO] things - SID: 211110105007
+[2018-04-03T13:27:27.698] [INFO] things - total: 12
+[2018-04-03T13:27:27.699] [INFO] things - limit: 2
+[2018-04-03T13:27:29.979] [INFO] things - start get addressID from mobile: 13676343367
+[2018-04-03T13:27:31.457] [INFO] things - 推送网点信息
+[2018-04-03T13:27:31.458] [INFO] things - Address: 东城区广渠门内白桥大街15号嘉禾国信大厦8楼
+[2018-04-03T13:27:31.458] [INFO] things - SName: 茅台云商北京市市辖区东城区服务网点
+[2018-04-03T13:27:31.458] [INFO] things - DName: 华致酒行连锁管理股份有限公司
+[2018-04-03T13:27:31.458] [INFO] things - SID: 211110101003
+[2018-04-03T13:27:31.458] [INFO] things - total: 7
+[2018-04-03T13:27:31.459] [INFO] things - limit: 4
+[2018-04-03T13:27:33.238] [INFO] things - start get addressID from mobile: 15238555689
+[2018-04-03T13:27:34.884] [INFO] things - 推送网点信息
+[2018-04-03T13:27:34.885] [INFO] things - Address: 朝阳区双龙南里204楼
+[2018-04-03T13:27:34.885] [INFO] things - SName: 茅台云商北京市朝阳区服务网点
+[2018-04-03T13:27:34.885] [INFO] things - DName: 北京朝批商贸股份有限公司
+[2018-04-03T13:27:34.885] [INFO] things - SID: 211110105003
+[2018-04-03T13:27:34.885] [INFO] things - total: 161
+[2018-04-03T13:27:34.886] [INFO] things - limit: 2
+[2018-04-03T13:27:36.815] [INFO] things - start get addressID from mobile: 13831322890
+[2018-04-03T13:27:38.862] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:27:41.711] [INFO] things - 推送网点信息
+[2018-04-03T13:27:41.711] [INFO] things - Address: 东城区广渠门内白桥大街15号嘉禾国信大厦8楼
+[2018-04-03T13:27:41.711] [INFO] things - SName: 茅台云商北京市市辖区东城区服务网点
+[2018-04-03T13:27:41.711] [INFO] things - DName: 华致酒行连锁管理股份有限公司
+[2018-04-03T13:27:41.712] [INFO] things - SID: 211110101003
+[2018-04-03T13:27:41.712] [INFO] things - total: 7
+[2018-04-03T13:27:41.712] [INFO] things - limit: 4
+[2018-04-03T13:27:43.842] [INFO] things - start get addressID from mobile: 15257918657
+[2018-04-03T13:27:45.699] [INFO] things - 推送网点信息
+[2018-04-03T13:27:45.699] [INFO] things - Address: 朝阳区金汇路10号楼世界城Ａ座506室
+[2018-04-03T13:27:45.701] [INFO] things - SName: 茅台云商北京市朝阳区服务网点
+[2018-04-03T13:27:45.701] [INFO] things - DName: 北京志联华信商贸有限公司
+[2018-04-03T13:27:45.701] [INFO] things - SID: 211110105007
+[2018-04-03T13:27:45.701] [INFO] things - total: 12
+[2018-04-03T13:27:45.701] [INFO] things - limit: 2
+[2018-04-03T13:27:48.513] [INFO] things - 推送网点信息
+[2018-04-03T13:27:48.513] [INFO] things - Address: 东城区广渠门内白桥大街15号嘉禾国信大厦8楼
+[2018-04-03T13:27:48.514] [INFO] things - SName: 茅台云商北京市市辖区东城区服务网点
+[2018-04-03T13:27:48.514] [INFO] things - DName: 华致酒行连锁管理股份有限公司
+[2018-04-03T13:27:48.515] [INFO] things - SID: 211110101003
+[2018-04-03T13:27:48.515] [INFO] things - total: 7
+[2018-04-03T13:27:48.515] [INFO] things - limit: 4
+[2018-04-03T13:27:51.858] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:27:54.542] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:27:56.952] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:28:00.361] [INFO] things - start get addressID from mobile: 15257918657
+[2018-04-03T13:28:01.703] [INFO] things - 推送网点信息
+[2018-04-03T13:28:01.704] [INFO] things - Address: 朝阳区金汇路10号楼世界城Ａ座506室
+[2018-04-03T13:28:01.704] [INFO] things - SName: 茅台云商北京市朝阳区服务网点
+[2018-04-03T13:28:01.704] [INFO] things - DName: 北京志联华信商贸有限公司
+[2018-04-03T13:28:01.704] [INFO] things - SID: 211110105007
+[2018-04-03T13:28:01.705] [INFO] things - total: 12
+[2018-04-03T13:28:01.705] [INFO] things - limit: 2
+[2018-04-03T13:28:04.821] [INFO] things - 推送网点信息
+[2018-04-03T13:28:04.821] [INFO] things - Address: 朝阳区双龙南里204楼
+[2018-04-03T13:28:04.821] [INFO] things - SName: 茅台云商北京市朝阳区服务网点
+[2018-04-03T13:28:04.821] [INFO] things - DName: 北京朝批商贸股份有限公司
+[2018-04-03T13:28:04.821] [INFO] things - SID: 211110105003
+[2018-04-03T13:28:04.821] [INFO] things - total: 161
+[2018-04-03T13:28:04.822] [INFO] things - limit: 2
+[2018-04-03T13:28:06.803] [INFO] things - start get addressID from mobile: 13670589613
+[2018-04-03T13:28:08.850] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:28:10.653] [INFO] things - start get addressID from mobile: 13220790090
+[2018-04-03T13:28:12.047] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:28:14.125] [INFO] things - start get addressID from mobile: 18946959184
+[2018-04-03T13:28:16.389] [INFO] things - 推送网点信息
+[2018-04-03T13:28:16.390] [INFO] things - Address: 东城区广渠门内白桥大街15号嘉禾国信大厦8楼
+[2018-04-03T13:28:16.390] [INFO] things - SName: 茅台云商北京市市辖区东城区服务网点
+[2018-04-03T13:28:16.390] [INFO] things - DName: 华致酒行连锁管理股份有限公司
+[2018-04-03T13:28:16.391] [INFO] things - SID: 211110101003
+[2018-04-03T13:28:16.391] [INFO] things - total: 7
+[2018-04-03T13:28:16.391] [INFO] things - limit: 4
+[2018-04-03T13:28:18.104] [INFO] things - start get addressID from mobile: 17535275750
+[2018-04-03T13:28:19.701] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:28:22.743] [INFO] things - 推送网点信息
+[2018-04-03T13:28:22.744] [INFO] things - Address: 东城区广渠门内白桥大街15号嘉禾国信大厦8楼
+[2018-04-03T13:28:22.744] [INFO] things - SName: 茅台云商北京市市辖区东城区服务网点
+[2018-04-03T13:28:22.744] [INFO] things - DName: 华致酒行连锁管理股份有限公司
+[2018-04-03T13:28:22.745] [INFO] things - SID: 211110101003
+[2018-04-03T13:28:22.750] [INFO] things - total: 7
+[2018-04-03T13:28:22.750] [INFO] things - limit: 4
+[2018-04-03T13:28:26.115] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:28:29.007] [INFO] things - 推送网点信息
+[2018-04-03T13:28:29.008] [INFO] things - Address: 东城区广渠门内白桥大街15号嘉禾国信大厦8楼
+[2018-04-03T13:28:29.008] [INFO] things - SName: 茅台云商北京市市辖区东城区服务网点
+[2018-04-03T13:28:29.008] [INFO] things - DName: 华致酒行连锁管理股份有限公司
+[2018-04-03T13:28:29.008] [INFO] things - SID: 211110101003
+[2018-04-03T13:28:29.010] [INFO] things - total: 7
+[2018-04-03T13:28:29.011] [INFO] things - limit: 4
+[2018-04-03T13:28:30.738] [INFO] things - start get addressID from mobile: 13513642792
+[2018-04-03T13:28:32.096] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:28:34.724] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:28:36.314] [INFO] things - start get addressID from mobile: 13512856201
+[2018-04-03T13:28:38.003] [INFO] things - 推送网点信息
+[2018-04-03T13:28:38.007] [INFO] things - Address: 东城区广渠门内白桥大街15号嘉禾国信大厦8楼
+[2018-04-03T13:28:38.007] [INFO] things - SName: 茅台云商北京市市辖区东城区服务网点
+[2018-04-03T13:28:38.008] [INFO] things - DName: 华致酒行连锁管理股份有限公司
+[2018-04-03T13:28:38.008] [INFO] things - SID: 211110101003
+[2018-04-03T13:28:38.008] [INFO] things - total: 7
+[2018-04-03T13:28:38.008] [INFO] things - limit: 4
+[2018-04-03T13:28:40.003] [INFO] things - start get addressID from mobile: 13392151517
+[2018-04-03T13:28:42.548] [INFO] things - 推送网点信息
+[2018-04-03T13:28:42.549] [INFO] things - Address: 东城区广渠门内白桥大街15号嘉禾国信大厦8楼
+[2018-04-03T13:28:42.549] [INFO] things - SName: 茅台云商北京市市辖区东城区服务网点
+[2018-04-03T13:28:42.549] [INFO] things - DName: 华致酒行连锁管理股份有限公司
+[2018-04-03T13:28:42.549] [INFO] things - SID: 211110101003
+[2018-04-03T13:28:42.549] [INFO] things - total: 7
+[2018-04-03T13:28:42.550] [INFO] things - limit: 4
+[2018-04-03T13:28:45.075] [INFO] things - 推送网点信息
+[2018-04-03T13:28:45.075] [INFO] things - Address: 朝阳区金汇路10号楼世界城Ａ座506室
+[2018-04-03T13:28:45.076] [INFO] things - SName: 茅台云商北京市朝阳区服务网点
+[2018-04-03T13:28:45.077] [INFO] things - DName: 北京志联华信商贸有限公司
+[2018-04-03T13:28:45.078] [INFO] things - SID: 211110105007
+[2018-04-03T13:28:45.078] [INFO] things - total: 12
+[2018-04-03T13:28:45.078] [INFO] things - limit: 2
+[2018-04-03T13:28:50.494] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:28:52.249] [INFO] things - start get addressID from mobile: 18253251389
+[2018-04-03T13:28:57.437] [INFO] things - 推送网点信息
+[2018-04-03T13:28:57.438] [INFO] things - Address: 东城区广渠门内白桥大街15号嘉禾国信大厦8楼
+[2018-04-03T13:28:57.438] [INFO] things - SName: 茅台云商北京市市辖区东城区服务网点
+[2018-04-03T13:28:57.440] [INFO] things - DName: 华致酒行连锁管理股份有限公司
+[2018-04-03T13:28:57.440] [INFO] things - SID: 211110101003
+[2018-04-03T13:28:57.441] [INFO] things - total: 7
+[2018-04-03T13:28:57.442] [INFO] things - limit: 4
+[2018-04-03T13:29:00.825] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:29:03.811] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:29:05.696] [INFO] things - start get addressID from mobile: 13781072791
+[2018-04-03T13:29:07.222] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:29:10.380] [INFO] things - 推送网点信息
+[2018-04-03T13:29:10.380] [INFO] things - Address: 东城区广渠门内白桥大街15号嘉禾国信大厦8楼
+[2018-04-03T13:29:10.380] [INFO] things - SName: 茅台云商北京市市辖区东城区服务网点
+[2018-04-03T13:29:10.382] [INFO] things - DName: 华致酒行连锁管理股份有限公司
+[2018-04-03T13:29:10.383] [INFO] things - SID: 211110101003
+[2018-04-03T13:29:10.384] [INFO] things - total: 7
+[2018-04-03T13:29:10.384] [INFO] things - limit: 4
+[2018-04-03T13:29:12.292] [INFO] things - start get addressID from mobile: 13633696711
+[2018-04-03T13:29:13.947] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:29:15.766] [INFO] things - start get addressID from mobile: 15081664435
+[2018-04-03T13:29:17.461] [INFO] things - 推送网点信息
+[2018-04-03T13:29:17.461] [INFO] things - Address: 朝阳区双龙南里204楼
+[2018-04-03T13:29:17.461] [INFO] things - SName: 茅台云商北京市朝阳区服务网点
+[2018-04-03T13:29:17.461] [INFO] things - DName: 北京朝批商贸股份有限公司
+[2018-04-03T13:29:17.462] [INFO] things - SID: 211110105003
+[2018-04-03T13:29:17.462] [INFO] things - total: 161
+[2018-04-03T13:29:17.462] [INFO] things - limit: 2
+[2018-04-03T13:29:20.381] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:29:25.727] [INFO] things - 推送网点信息
+[2018-04-03T13:29:25.728] [INFO] things - Address: 东城区广渠门内白桥大街15号嘉禾国信大厦8楼
+[2018-04-03T13:29:25.728] [INFO] things - SName: 茅台云商北京市市辖区东城区服务网点
+[2018-04-03T13:29:25.728] [INFO] things - DName: 华致酒行连锁管理股份有限公司
+[2018-04-03T13:29:25.729] [INFO] things - SID: 211110101003
+[2018-04-03T13:29:25.729] [INFO] things - total: 7
+[2018-04-03T13:29:25.729] [INFO] things - limit: 4
+[2018-04-03T13:29:29.275] [INFO] things - 推送网点信息
+[2018-04-03T13:29:29.275] [INFO] things - Address: 朝阳区金汇路10号楼世界城Ａ座506室
+[2018-04-03T13:29:29.276] [INFO] things - SName: 茅台云商北京市朝阳区服务网点
+[2018-04-03T13:29:29.276] [INFO] things - DName: 北京志联华信商贸有限公司
+[2018-04-03T13:29:29.276] [INFO] things - SID: 211110105007
+[2018-04-03T13:29:29.277] [INFO] things - total: 12
+[2018-04-03T13:29:29.277] [INFO] things - limit: 2
+[2018-04-03T13:29:30.912] [INFO] things - start get addressID from mobile: 18831099037
+[2018-04-03T13:29:32.448] [INFO] things - 推送网点信息
+[2018-04-03T13:29:32.449] [INFO] things - Address: 朝阳区金汇路10号楼世界城Ａ座506室
+[2018-04-03T13:29:32.449] [INFO] things - SName: 茅台云商北京市朝阳区服务网点
+[2018-04-03T13:29:32.449] [INFO] things - DName: 北京志联华信商贸有限公司
+[2018-04-03T13:29:32.449] [INFO] things - SID: 211110105007
+[2018-04-03T13:29:32.449] [INFO] things - total: 12
+[2018-04-03T13:29:32.450] [INFO] things - limit: 2
+[2018-04-03T13:29:34.295] [INFO] things - start get addressID from mobile: 15264711001
+[2018-04-03T13:29:35.986] [INFO] things - 推送网点信息
+[2018-04-03T13:29:35.987] [INFO] things - Address: 东城区广渠门内白桥大街15号嘉禾国信大厦8楼
+[2018-04-03T13:29:35.987] [INFO] things - SName: 茅台云商北京市市辖区东城区服务网点
+[2018-04-03T13:29:35.987] [INFO] things - DName: 华致酒行连锁管理股份有限公司
+[2018-04-03T13:29:35.987] [INFO] things - SID: 211110101003
+[2018-04-03T13:29:35.987] [INFO] things - total: 7
+[2018-04-03T13:29:35.988] [INFO] things - limit: 4
+[2018-04-03T13:29:38.087] [INFO] things - start get addressID from mobile: 13313181385
+[2018-04-03T13:29:42.027] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:29:43.878] [INFO] things - start get addressID from mobile: 13842111030
+[2018-04-03T13:29:45.407] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:29:48.357] [INFO] things - 推送网点信息
+[2018-04-03T13:29:48.358] [INFO] things - Address: 东城区广渠门内白桥大街15号嘉禾国信大厦8楼
+[2018-04-03T13:29:48.359] [INFO] things - SName: 茅台云商北京市市辖区东城区服务网点
+[2018-04-03T13:29:48.359] [INFO] things - DName: 华致酒行连锁管理股份有限公司
+[2018-04-03T13:29:48.359] [INFO] things - SID: 211110101003
+[2018-04-03T13:29:48.363] [INFO] things - total: 7
+[2018-04-03T13:29:48.364] [INFO] things - limit: 4
+[2018-04-03T13:29:50.829] [INFO] things - start get addressID from mobile: 17757449525
+[2018-04-03T13:29:56.531] [INFO] things - 推送网点信息
+[2018-04-03T13:29:56.532] [INFO] things - Address: 北京市西城区文津街7号平2号
+[2018-04-03T13:29:56.532] [INFO] things - SName: 茅台云商北京市西城区服务网点
+[2018-04-03T13:29:56.532] [INFO] things - DName: 国雅萱（北京）文化发展有限公司
+[2018-04-03T13:29:56.532] [INFO] things - SID: 211110102001
+[2018-04-03T13:29:56.532] [INFO] things - total: 14
+[2018-04-03T13:29:56.532] [INFO] things - limit: 2
+[2018-04-03T13:30:00.600] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:30:03.950] [INFO] things - 推送网点信息
+[2018-04-03T13:30:03.952] [INFO] things - Address: 东城区广渠门内白桥大街15号嘉禾国信大厦8楼
+[2018-04-03T13:30:03.954] [INFO] things - SName: 茅台云商北京市市辖区东城区服务网点
+[2018-04-03T13:30:03.954] [INFO] things - DName: 华致酒行连锁管理股份有限公司
+[2018-04-03T13:30:03.954] [INFO] things - SID: 211110101003
+[2018-04-03T13:30:03.955] [INFO] things - total: 7
+[2018-04-03T13:30:03.955] [INFO] things - limit: 4
+[2018-04-03T13:30:09.461] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:30:12.016] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:30:14.863] [INFO] things - 推送网点信息
+[2018-04-03T13:30:14.864] [INFO] things - Address: 朝阳区金汇路10号楼世界城Ａ座506室
+[2018-04-03T13:30:14.864] [INFO] things - SName: 茅台云商北京市朝阳区服务网点
+[2018-04-03T13:30:14.864] [INFO] things - DName: 北京志联华信商贸有限公司
+[2018-04-03T13:30:14.864] [INFO] things - SID: 211110105007
+[2018-04-03T13:30:14.864] [INFO] things - total: 12
+[2018-04-03T13:30:14.865] [INFO] things - limit: 2
+[2018-04-03T13:30:17.242] [INFO] things - start get addressID from mobile: 15535874823
+[2018-04-03T13:30:19.128] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:30:21.128] [INFO] things - start get addressID from mobile: 15399130078
+[2018-04-03T13:30:22.795] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:30:24.476] [INFO] things - start get addressID from mobile: 17753747930
+[2018-04-03T13:30:25.968] [INFO] things - 推送网点信息
+[2018-04-03T13:30:25.968] [INFO] things - Address: 朝阳区金汇路10号楼世界城Ａ座506室
+[2018-04-03T13:30:25.970] [INFO] things - SName: 茅台云商北京市朝阳区服务网点
+[2018-04-03T13:30:25.970] [INFO] things - DName: 北京志联华信商贸有限公司
+[2018-04-03T13:30:25.970] [INFO] things - SID: 211110105007
+[2018-04-03T13:30:25.971] [INFO] things - total: 12
+[2018-04-03T13:30:25.971] [INFO] things - limit: 2
+[2018-04-03T13:30:31.553] [INFO] things - 推送网点信息
+[2018-04-03T13:30:31.554] [INFO] things - Address: 东城区广渠门内白桥大街15号嘉禾国信大厦8楼
+[2018-04-03T13:30:31.555] [INFO] things - SName: 茅台云商北京市市辖区东城区服务网点
+[2018-04-03T13:30:31.555] [INFO] things - DName: 华致酒行连锁管理股份有限公司
+[2018-04-03T13:30:31.555] [INFO] things - SID: 211110101003
+[2018-04-03T13:30:31.556] [INFO] things - total: 7
+[2018-04-03T13:30:31.558] [INFO] things - limit: 4
+[2018-04-03T13:30:36.135] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:30:39.589] [INFO] things - start get addressID from mobile: 15505201939
+[2018-04-03T13:30:44.437] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:30:53.350] [INFO] things - 推送网点信息
+[2018-04-03T13:30:53.350] [INFO] things - Address: 东城区广渠门内白桥大街15号嘉禾国信大厦8楼
+[2018-04-03T13:30:53.350] [INFO] things - SName: 茅台云商北京市市辖区东城区服务网点
+[2018-04-03T13:30:53.350] [INFO] things - DName: 华致酒行连锁管理股份有限公司
+[2018-04-03T13:30:53.351] [INFO] things - SID: 211110101003
+[2018-04-03T13:30:53.351] [INFO] things - total: 7
+[2018-04-03T13:30:53.351] [INFO] things - limit: 4
+[2018-04-03T13:30:57.339] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:31:01.633] [INFO] things - 推送网点信息
+[2018-04-03T13:31:01.633] [INFO] things - Address: 东城区广渠门内白桥大街15号嘉禾国信大厦8楼
+[2018-04-03T13:31:01.633] [INFO] things - SName: 茅台云商北京市市辖区东城区服务网点
+[2018-04-03T13:31:01.633] [INFO] things - DName: 华致酒行连锁管理股份有限公司
+[2018-04-03T13:31:01.634] [INFO] things - SID: 211110101003
+[2018-04-03T13:31:01.634] [INFO] things - total: 7
+[2018-04-03T13:31:01.634] [INFO] things - limit: 4
+[2018-04-03T13:31:05.945] [INFO] things - 推送网点信息
+[2018-04-03T13:31:05.945] [INFO] things - Address: 东城区广渠门内白桥大街15号嘉禾国信大厦8楼
+[2018-04-03T13:31:05.945] [INFO] things - SName: 茅台云商北京市市辖区东城区服务网点
+[2018-04-03T13:31:05.946] [INFO] things - DName: 华致酒行连锁管理股份有限公司
+[2018-04-03T13:31:05.946] [INFO] things - SID: 211110101003
+[2018-04-03T13:31:05.946] [INFO] things - total: 7
+[2018-04-03T13:31:05.946] [INFO] things - limit: 4
+[2018-04-03T13:31:09.235] [INFO] things - 推送网点信息
+[2018-04-03T13:31:09.235] [INFO] things - Address: 东城区广渠门内白桥大街15号嘉禾国信大厦8楼
+[2018-04-03T13:31:09.236] [INFO] things - SName: 茅台云商北京市市辖区东城区服务网点
+[2018-04-03T13:31:09.236] [INFO] things - DName: 华致酒行连锁管理股份有限公司
+[2018-04-03T13:31:09.236] [INFO] things - SID: 211110101003
+[2018-04-03T13:31:09.237] [INFO] things - total: 7
+[2018-04-03T13:31:09.237] [INFO] things - limit: 4
+[2018-04-03T13:31:11.913] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:31:14.856] [INFO] things - 推送网点信息
+[2018-04-03T13:31:14.857] [INFO] things - Address: 朝阳区金汇路10号楼世界城Ａ座506室
+[2018-04-03T13:31:14.857] [INFO] things - SName: 茅台云商北京市朝阳区服务网点
+[2018-04-03T13:31:14.859] [INFO] things - DName: 北京志联华信商贸有限公司
+[2018-04-03T13:31:14.859] [INFO] things - SID: 211110105007
+[2018-04-03T13:31:14.860] [INFO] things - total: 12
+[2018-04-03T13:31:14.861] [INFO] things - limit: 2
+[2018-04-03T13:31:18.535] [INFO] things - 推送网点信息
+[2018-04-03T13:31:18.536] [INFO] things - Address: 朝阳区双龙南里204楼
+[2018-04-03T13:31:18.536] [INFO] things - SName: 茅台云商北京市朝阳区服务网点
+[2018-04-03T13:31:18.536] [INFO] things - DName: 北京朝批商贸股份有限公司
+[2018-04-03T13:31:18.536] [INFO] things - SID: 211110105003
+[2018-04-03T13:31:18.537] [INFO] things - total: 161
+[2018-04-03T13:31:18.539] [INFO] things - limit: 2
+[2018-04-03T13:31:21.410] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:31:24.399] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:31:27.750] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:31:59.712] [INFO] things - 位置错误,60秒后重试 { Error: socket hang up
+    at createHangUpError (_http_client.js:331:15)
+    at TLSSocket.socketOnEnd (_http_client.js:423:23)
+    at emitNone (events.js:111:20)
+    at TLSSocket.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1055:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+    at process._tickCallback (internal/process/next_tick.js:180:9) code: 'ECONNRESET' }
+[2018-04-03T13:32:03.661] [INFO] things - start get addressID from mobile: 15937230461
+[2018-04-03T13:32:04.987] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:32:08.611] [INFO] things - 推送网点信息
+[2018-04-03T13:32:08.611] [INFO] things - Address: 东城区广渠门内白桥大街15号嘉禾国信大厦8楼
+[2018-04-03T13:32:08.611] [INFO] things - SName: 茅台云商北京市市辖区东城区服务网点
+[2018-04-03T13:32:08.612] [INFO] things - DName: 华致酒行连锁管理股份有限公司
+[2018-04-03T13:32:08.612] [INFO] things - SID: 211110101003
+[2018-04-03T13:32:08.613] [INFO] things - total: 7
+[2018-04-03T13:32:08.615] [INFO] things - limit: 4
+[2018-04-03T13:32:10.744] [INFO] things - start get addressID from mobile: 18967839427
+[2018-04-03T13:32:12.608] [INFO] things - 推送网点信息
+[2018-04-03T13:32:12.609] [INFO] things - Address: 北京市西城区文津街7号平2号
+[2018-04-03T13:32:12.610] [INFO] things - SName: 茅台云商北京市西城区服务网点
+[2018-04-03T13:32:12.610] [INFO] things - DName: 国雅萱（北京）文化发展有限公司
+[2018-04-03T13:32:12.611] [INFO] things - SID: 211110102001
+[2018-04-03T13:32:12.611] [INFO] things - total: 14
+[2018-04-03T13:32:12.612] [INFO] things - limit: 2
+[2018-04-03T13:32:16.595] [INFO] things - 推送网点信息
+[2018-04-03T13:32:16.596] [INFO] things - Address: 东城区广渠门内白桥大街15号嘉禾国信大厦8楼
+[2018-04-03T13:32:16.596] [INFO] things - SName: 茅台云商北京市市辖区东城区服务网点
+[2018-04-03T13:32:16.596] [INFO] things - DName: 华致酒行连锁管理股份有限公司
+[2018-04-03T13:32:16.596] [INFO] things - SID: 211110101003
+[2018-04-03T13:32:16.596] [INFO] things - total: 7
+[2018-04-03T13:32:16.596] [INFO] things - limit: 4
+[2018-04-03T13:32:19.667] [INFO] things - 推送网点信息
+[2018-04-03T13:32:19.667] [INFO] things - Address: 朝阳区金汇路10号楼世界城Ａ座506室
+[2018-04-03T13:32:19.667] [INFO] things - SName: 茅台云商北京市朝阳区服务网点
+[2018-04-03T13:32:19.667] [INFO] things - DName: 北京志联华信商贸有限公司
+[2018-04-03T13:32:19.667] [INFO] things - SID: 211110105007
+[2018-04-03T13:32:19.667] [INFO] things - total: 12
+[2018-04-03T13:32:19.668] [INFO] things - limit: 2
+[2018-04-03T13:32:21.796] [INFO] things - start get addressID from mobile: 13521690981
+[2018-04-03T13:32:23.417] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:32:25.594] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:32:30.432] [INFO] things - 推送网点信息
+[2018-04-03T13:32:30.432] [INFO] things - Address: 东城区广渠门内白桥大街15号嘉禾国信大厦8楼
+[2018-04-03T13:32:30.432] [INFO] things - SName: 茅台云商北京市市辖区东城区服务网点
+[2018-04-03T13:32:30.432] [INFO] things - DName: 华致酒行连锁管理股份有限公司
+[2018-04-03T13:32:30.432] [INFO] things - SID: 211110101003
+[2018-04-03T13:32:30.432] [INFO] things - total: 7
+[2018-04-03T13:32:30.433] [INFO] things - limit: 4
+[2018-04-03T13:32:32.543] [INFO] things - start get addressID from mobile: 15303199414
+[2018-04-03T13:32:34.085] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:32:40.484] [INFO] things - start get addressID from mobile: 15330512791
+[2018-04-03T13:32:43.948] [INFO] things - 推送网点信息
+[2018-04-03T13:32:43.948] [INFO] things - Address: 朝阳区金汇路10号楼世界城Ａ座506室
+[2018-04-03T13:32:43.948] [INFO] things - SName: 茅台云商北京市朝阳区服务网点
+[2018-04-03T13:32:43.948] [INFO] things - DName: 北京志联华信商贸有限公司
+[2018-04-03T13:32:43.948] [INFO] things - SID: 211110105007
+[2018-04-03T13:32:43.948] [INFO] things - total: 12
+[2018-04-03T13:32:43.949] [INFO] things - limit: 2
+[2018-04-03T13:32:46.608] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:32:49.568] [INFO] things - 推送网点信息
+[2018-04-03T13:32:49.568] [INFO] things - Address: 东城区广渠门内白桥大街15号嘉禾国信大厦8楼
+[2018-04-03T13:32:49.568] [INFO] things - SName: 茅台云商北京市市辖区东城区服务网点
+[2018-04-03T13:32:49.568] [INFO] things - DName: 华致酒行连锁管理股份有限公司
+[2018-04-03T13:32:49.568] [INFO] things - SID: 211110101003
+[2018-04-03T13:32:49.568] [INFO] things - total: 7
+[2018-04-03T13:32:49.569] [INFO] things - limit: 4
+[2018-04-03T13:33:22.048] [INFO] things - 定位信息获取错误 { Error: socket hang up
+    at TLSSocket.onHangUp (_tls_wrap.js:1135:19)
+    at Object.onceWrapper (events.js:313:30)
+    at emitNone (events.js:111:20)
+    at TLSSocket.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1055:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+  code: 'ECONNRESET',
+  path: undefined,
+  host: undefined,
+  port: 0,
+  localAddress: undefined }
+[2018-04-03T13:33:22.049] [INFO] things - 位置错误,60秒后重试 { Error: socket hang up
+    at TLSSocket.onHangUp (_tls_wrap.js:1135:19)
+    at Object.onceWrapper (events.js:313:30)
+    at emitNone (events.js:111:20)
+    at TLSSocket.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1055:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+  code: 'ECONNRESET',
+  path: undefined,
+  host: undefined,
+  port: 0,
+  localAddress: undefined }
+[2018-04-03T13:33:36.159] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:33:39.232] [INFO] things - 推送网点信息
+[2018-04-03T13:33:39.233] [INFO] things - Address: 东城区广渠门内白桥大街15号嘉禾国信大厦8楼
+[2018-04-03T13:33:39.233] [INFO] things - SName: 茅台云商北京市市辖区东城区服务网点
+[2018-04-03T13:33:39.233] [INFO] things - DName: 华致酒行连锁管理股份有限公司
+[2018-04-03T13:33:39.233] [INFO] things - SID: 211110101003
+[2018-04-03T13:33:39.234] [INFO] things - total: 7
+[2018-04-03T13:33:39.235] [INFO] things - limit: 4
+[2018-04-03T13:33:43.614] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:33:46.838] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:33:49.517] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:33:52.018] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:33:55.541] [INFO] things - 推送网点信息
+[2018-04-03T13:33:55.542] [INFO] things - Address: 东城区广渠门内白桥大街15号嘉禾国信大厦8楼
+[2018-04-03T13:33:55.542] [INFO] things - SName: 茅台云商北京市市辖区东城区服务网点
+[2018-04-03T13:33:55.542] [INFO] things - DName: 华致酒行连锁管理股份有限公司
+[2018-04-03T13:33:55.542] [INFO] things - SID: 211110101003
+[2018-04-03T13:33:55.543] [INFO] things - total: 7
+[2018-04-03T13:33:55.543] [INFO] things - limit: 4
+[2018-04-03T13:34:03.808] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:34:09.220] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:34:10.866] [INFO] things - start get addressID from mobile: 15645919316
+[2018-04-03T13:34:12.349] [INFO] things - 推送网点信息
+[2018-04-03T13:34:12.350] [INFO] things - Address: 东城区广渠门内白桥大街15号嘉禾国信大厦8楼
+[2018-04-03T13:34:12.350] [INFO] things - SName: 茅台云商北京市市辖区东城区服务网点
+[2018-04-03T13:34:12.350] [INFO] things - DName: 华致酒行连锁管理股份有限公司
+[2018-04-03T13:34:12.350] [INFO] things - SID: 211110101003
+[2018-04-03T13:34:12.350] [INFO] things - total: 7
+[2018-04-03T13:34:12.350] [INFO] things - limit: 4
+[2018-04-03T13:34:15.734] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:34:27.952] [INFO] things - 推送网点信息
+[2018-04-03T13:34:27.953] [INFO] things - Address: 朝阳区金汇路10号楼世界城Ａ座506室
+[2018-04-03T13:34:27.954] [INFO] things - SName: 茅台云商北京市朝阳区服务网点
+[2018-04-03T13:34:27.954] [INFO] things - DName: 北京志联华信商贸有限公司
+[2018-04-03T13:34:27.954] [INFO] things - SID: 211110105007
+[2018-04-03T13:34:27.954] [INFO] things - total: 12
+[2018-04-03T13:34:27.955] [INFO] things - limit: 2
+[2018-04-03T13:34:30.554] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:34:32.219] [INFO] things - start get addressID from mobile: 15003443253
+[2018-04-03T13:34:33.521] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:34:40.341] [INFO] things - start get addressID from mobile: 15549208672
+[2018-04-03T13:34:41.734] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:34:44.545] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:34:48.364] [INFO] things - 推送网点信息
+[2018-04-03T13:34:48.365] [INFO] things - Address: 北京市西城区文津街7号平2号
+[2018-04-03T13:34:48.367] [INFO] things - SName: 茅台云商北京市西城区服务网点
+[2018-04-03T13:34:48.367] [INFO] things - DName: 国雅萱（北京）文化发展有限公司
+[2018-04-03T13:34:48.369] [INFO] things - SID: 211110102001
+[2018-04-03T13:34:48.369] [INFO] things - total: 14
+[2018-04-03T13:34:48.369] [INFO] things - limit: 2
+[2018-04-03T13:34:52.353] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:34:57.357] [INFO] things - start get addressID from mobile: 13485665212
+[2018-04-03T13:34:59.071] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:35:07.704] [INFO] things - 推送网点信息
+[2018-04-03T13:35:07.705] [INFO] things - Address: 北京市西城区文津街7号平2号
+[2018-04-03T13:35:07.706] [INFO] things - SName: 茅台云商北京市西城区服务网点
+[2018-04-03T13:35:07.706] [INFO] things - DName: 国雅萱（北京）文化发展有限公司
+[2018-04-03T13:35:07.706] [INFO] things - SID: 211110102001
+[2018-04-03T13:35:07.706] [INFO] things - total: 14
+[2018-04-03T13:35:07.707] [INFO] things - limit: 2
+[2018-04-03T13:35:11.955] [INFO] things - 位置错误,60秒后重试 { Error: tunneling socket could not be established, cause=socket hang up
+    at ClientRequest.onError (/Users/junliang/server/www/maotaiServer/node_modules/tunnel-agent/index.js:177:17)
+    at Object.onceWrapper (events.js:315:30)
+    at emitOne (events.js:116:13)
+    at ClientRequest.emit (events.js:211:7)
+    at Socket.socketOnEnd (_http_client.js:423:9)
+    at emitNone (events.js:111:20)
+    at Socket.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1055:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+    at process._tickCallback (internal/process/next_tick.js:180:9) code: 'ECONNRESET' }
+[2018-04-03T13:35:13.697] [INFO] things - start get addressID from mobile: 15777186432
+[2018-04-03T13:35:15.079] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:35:32.284] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:35:35.837] [INFO] things - 推送网点信息
+[2018-04-03T13:35:35.837] [INFO] things - Address: 朝阳区金汇路10号楼世界城Ａ座506室
+[2018-04-03T13:35:35.837] [INFO] things - SName: 茅台云商北京市朝阳区服务网点
+[2018-04-03T13:35:35.838] [INFO] things - DName: 北京志联华信商贸有限公司
+[2018-04-03T13:35:35.838] [INFO] things - SID: 211110105007
+[2018-04-03T13:35:35.838] [INFO] things - total: 12
+[2018-04-03T13:35:35.838] [INFO] things - limit: 2
+[2018-04-03T13:35:43.953] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:35:47.434] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:35:57.797] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:36:01.337] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:36:15.915] [INFO] things - 推送网点信息
+[2018-04-03T13:36:15.915] [INFO] things - Address: 朝阳区金汇路10号楼世界城Ａ座506室
+[2018-04-03T13:36:15.915] [INFO] things - SName: 茅台云商北京市朝阳区服务网点
+[2018-04-03T13:36:15.916] [INFO] things - DName: 北京志联华信商贸有限公司
+[2018-04-03T13:36:15.916] [INFO] things - SID: 211110105007
+[2018-04-03T13:36:15.918] [INFO] things - total: 12
+[2018-04-03T13:36:15.919] [INFO] things - limit: 2
+[2018-04-03T13:36:18.979] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:36:21.637] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:36:24.740] [INFO] things - 推送网点信息
+[2018-04-03T13:36:24.741] [INFO] things - Address: 朝阳区金汇路10号楼世界城Ａ座506室
+[2018-04-03T13:36:24.741] [INFO] things - SName: 茅台云商北京市朝阳区服务网点
+[2018-04-03T13:36:24.741] [INFO] things - DName: 北京志联华信商贸有限公司
+[2018-04-03T13:36:24.741] [INFO] things - SID: 211110105007
+[2018-04-03T13:36:24.741] [INFO] things - total: 12
+[2018-04-03T13:36:24.741] [INFO] things - limit: 2
+[2018-04-03T13:36:31.022] [INFO] things - 推送网点信息
+[2018-04-03T13:36:31.022] [INFO] things - Address: 东城区广渠门内白桥大街15号嘉禾国信大厦8楼
+[2018-04-03T13:36:31.022] [INFO] things - SName: 茅台云商北京市市辖区东城区服务网点
+[2018-04-03T13:36:31.023] [INFO] things - DName: 华致酒行连锁管理股份有限公司
+[2018-04-03T13:36:31.023] [INFO] things - SID: 211110101003
+[2018-04-03T13:36:31.023] [INFO] things - total: 7
+[2018-04-03T13:36:31.023] [INFO] things - limit: 4
+[2018-04-03T13:36:34.043] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:36:36.843] [INFO] things - 推送网点信息
+[2018-04-03T13:36:36.844] [INFO] things - Address: 东城区广渠门内白桥大街15号嘉禾国信大厦8楼
+[2018-04-03T13:36:36.844] [INFO] things - SName: 茅台云商北京市市辖区东城区服务网点
+[2018-04-03T13:36:36.844] [INFO] things - DName: 华致酒行连锁管理股份有限公司
+[2018-04-03T13:36:36.844] [INFO] things - SID: 211110101003
+[2018-04-03T13:36:36.844] [INFO] things - total: 7
+[2018-04-03T13:36:36.844] [INFO] things - limit: 4
+[2018-04-03T13:36:41.099] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:36:46.939] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:36:50.622] [INFO] things - 推送网点信息
+[2018-04-03T13:36:50.622] [INFO] things - Address: 朝阳区金汇路10号楼世界城Ａ座506室
+[2018-04-03T13:36:50.623] [INFO] things - SName: 茅台云商北京市朝阳区服务网点
+[2018-04-03T13:36:50.623] [INFO] things - DName: 北京志联华信商贸有限公司
+[2018-04-03T13:36:50.623] [INFO] things - SID: 211110105007
+[2018-04-03T13:36:50.623] [INFO] things - total: 12
+[2018-04-03T13:36:50.623] [INFO] things - limit: 2
+[2018-04-03T13:36:54.306] [INFO] things - 推送网点信息
+[2018-04-03T13:36:54.307] [INFO] things - Address: 东城区广渠门内白桥大街15号嘉禾国信大厦8楼
+[2018-04-03T13:36:54.308] [INFO] things - SName: 茅台云商北京市市辖区东城区服务网点
+[2018-04-03T13:36:54.308] [INFO] things - DName: 华致酒行连锁管理股份有限公司
+[2018-04-03T13:36:54.309] [INFO] things - SID: 211110101003
+[2018-04-03T13:36:54.310] [INFO] things - total: 7
+[2018-04-03T13:36:54.310] [INFO] things - limit: 4
+[2018-04-03T13:37:02.296] [INFO] things - 推送网点信息
+[2018-04-03T13:37:02.296] [INFO] things - Address: 东城区广渠门内白桥大街15号嘉禾国信大厦8楼
+[2018-04-03T13:37:02.296] [INFO] things - SName: 茅台云商北京市市辖区东城区服务网点
+[2018-04-03T13:37:02.297] [INFO] things - DName: 华致酒行连锁管理股份有限公司
+[2018-04-03T13:37:02.297] [INFO] things - SID: 211110101003
+[2018-04-03T13:37:02.297] [INFO] things - total: 7
+[2018-04-03T13:37:02.297] [INFO] things - limit: 4
+[2018-04-03T13:37:24.261] [INFO] things - 位置错误,60秒后重试 { Error: socket hang up
+    at createHangUpError (_http_client.js:331:15)
+    at TLSSocket.socketOnEnd (_http_client.js:423:23)
+    at emitNone (events.js:111:20)
+    at TLSSocket.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1055:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+    at process._tickCallback (internal/process/next_tick.js:180:9) code: 'ECONNRESET' }
+[2018-04-03T13:37:26.038] [INFO] things - start get addressID from mobile: 18537303412
+[2018-04-03T13:37:27.525] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:37:30.272] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:37:41.973] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:37:45.002] [INFO] things - 推送网点信息
+[2018-04-03T13:37:45.003] [INFO] things - Address: 朝阳区双龙南里204楼
+[2018-04-03T13:37:45.003] [INFO] things - SName: 茅台云商北京市朝阳区服务网点
+[2018-04-03T13:37:45.004] [INFO] things - DName: 北京朝批商贸股份有限公司
+[2018-04-03T13:37:45.004] [INFO] things - SID: 211110105003
+[2018-04-03T13:37:45.004] [INFO] things - total: 161
+[2018-04-03T13:37:45.004] [INFO] things - limit: 2
+[2018-04-03T13:37:49.583] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:38:01.897] [INFO] things - 位置错误,60秒后重试 { Error: socket hang up
+    at TLSSocket.onHangUp (_tls_wrap.js:1135:19)
+    at Object.onceWrapper (events.js:313:30)
+    at emitNone (events.js:111:20)
+    at TLSSocket.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1055:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+  code: 'ECONNRESET',
+  path: undefined,
+  host: undefined,
+  port: 0,
+  localAddress: undefined }
+[2018-04-03T13:38:04.959] [INFO] things - 推送网点信息
+[2018-04-03T13:38:04.959] [INFO] things - Address: 朝阳区金汇路10号楼世界城Ａ座506室
+[2018-04-03T13:38:04.959] [INFO] things - SName: 茅台云商北京市朝阳区服务网点
+[2018-04-03T13:38:04.960] [INFO] things - DName: 北京志联华信商贸有限公司
+[2018-04-03T13:38:04.962] [INFO] things - SID: 211110105007
+[2018-04-03T13:38:04.962] [INFO] things - total: 12
+[2018-04-03T13:38:04.963] [INFO] things - limit: 2
+[2018-04-03T13:38:09.262] [INFO] things - 推送网点信息
+[2018-04-03T13:38:09.262] [INFO] things - Address: 朝阳区金汇路10号楼世界城Ａ座506室
+[2018-04-03T13:38:09.263] [INFO] things - SName: 茅台云商北京市朝阳区服务网点
+[2018-04-03T13:38:09.263] [INFO] things - DName: 北京志联华信商贸有限公司
+[2018-04-03T13:38:09.263] [INFO] things - SID: 211110105007
+[2018-04-03T13:38:09.263] [INFO] things - total: 12
+[2018-04-03T13:38:09.263] [INFO] things - limit: 2
+[2018-04-03T13:38:11.784] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:38:14.917] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:38:23.696] [INFO] things - 推送网点信息
+[2018-04-03T13:38:23.696] [INFO] things - Address: 北京市西城区文津街7号平2号
+[2018-04-03T13:38:23.696] [INFO] things - SName: 茅台云商北京市西城区服务网点
+[2018-04-03T13:38:23.696] [INFO] things - DName: 国雅萱（北京）文化发展有限公司
+[2018-04-03T13:38:23.696] [INFO] things - SID: 211110102001
+[2018-04-03T13:38:23.696] [INFO] things - total: 14
+[2018-04-03T13:38:23.697] [INFO] things - limit: 2
+[2018-04-03T13:38:27.078] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:38:30.516] [INFO] things - 推送网点信息
+[2018-04-03T13:38:30.517] [INFO] things - Address: 东城区广渠门内白桥大街15号嘉禾国信大厦8楼
+[2018-04-03T13:38:30.517] [INFO] things - SName: 茅台云商北京市市辖区东城区服务网点
+[2018-04-03T13:38:30.518] [INFO] things - DName: 华致酒行连锁管理股份有限公司
+[2018-04-03T13:38:30.519] [INFO] things - SID: 211110101003
+[2018-04-03T13:38:30.519] [INFO] things - total: 7
+[2018-04-03T13:38:30.523] [INFO] things - limit: 4
+[2018-04-03T13:38:34.141] [INFO] things - 推送网点信息
+[2018-04-03T13:38:34.142] [INFO] things - Address: 东城区广渠门内白桥大街15号嘉禾国信大厦8楼
+[2018-04-03T13:38:34.142] [INFO] things - SName: 茅台云商北京市市辖区东城区服务网点
+[2018-04-03T13:38:34.142] [INFO] things - DName: 华致酒行连锁管理股份有限公司
+[2018-04-03T13:38:34.142] [INFO] things - SID: 211110101003
+[2018-04-03T13:38:34.142] [INFO] things - total: 7
+[2018-04-03T13:38:34.142] [INFO] things - limit: 4
+[2018-04-03T13:38:37.144] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:38:40.593] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:38:42.332] [INFO] things - start get addressID from mobile: 13700077519
+[2018-04-03T13:38:43.789] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:38:50.115] [INFO] things - 推送网点信息
+[2018-04-03T13:38:50.115] [INFO] things - Address: 朝阳区双龙南里204楼
+[2018-04-03T13:38:50.115] [INFO] things - SName: 茅台云商北京市朝阳区服务网点
+[2018-04-03T13:38:50.115] [INFO] things - DName: 北京朝批商贸股份有限公司
+[2018-04-03T13:38:50.116] [INFO] things - SID: 211110105003
+[2018-04-03T13:38:50.116] [INFO] things - total: 161
+[2018-04-03T13:38:50.117] [INFO] things - limit: 2
+[2018-04-03T13:38:53.192] [INFO] things - 推送网点信息
+[2018-04-03T13:38:53.193] [INFO] things - Address: 朝阳区金汇路10号楼世界城Ａ座506室
+[2018-04-03T13:38:53.193] [INFO] things - SName: 茅台云商北京市朝阳区服务网点
+[2018-04-03T13:38:53.194] [INFO] things - DName: 北京志联华信商贸有限公司
+[2018-04-03T13:38:53.194] [INFO] things - SID: 211110105007
+[2018-04-03T13:38:53.194] [INFO] things - total: 12
+[2018-04-03T13:38:53.194] [INFO] things - limit: 2
+[2018-04-03T13:38:55.240] [INFO] things - start get addressID from mobile: 15373204143
+[2018-04-03T13:38:56.580] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:38:59.797] [INFO] things - 推送网点信息
+[2018-04-03T13:38:59.798] [INFO] things - Address: 朝阳区金汇路10号楼世界城Ａ座506室
+[2018-04-03T13:38:59.798] [INFO] things - SName: 茅台云商北京市朝阳区服务网点
+[2018-04-03T13:38:59.798] [INFO] things - DName: 北京志联华信商贸有限公司
+[2018-04-03T13:38:59.798] [INFO] things - SID: 211110105007
+[2018-04-03T13:38:59.798] [INFO] things - total: 12
+[2018-04-03T13:38:59.798] [INFO] things - limit: 2
+[2018-04-03T13:39:02.166] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:39:05.477] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:39:08.857] [INFO] things - 推送网点信息
+[2018-04-03T13:39:08.858] [INFO] things - Address: 东城区广渠门内白桥大街15号嘉禾国信大厦8楼
+[2018-04-03T13:39:08.859] [INFO] things - SName: 茅台云商北京市市辖区东城区服务网点
+[2018-04-03T13:39:08.860] [INFO] things - DName: 华致酒行连锁管理股份有限公司
+[2018-04-03T13:39:08.861] [INFO] things - SID: 211110101003
+[2018-04-03T13:39:08.861] [INFO] things - total: 7
+[2018-04-03T13:39:08.861] [INFO] things - limit: 4
+[2018-04-03T13:39:11.603] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:39:13.540] [INFO] things - start get addressID from mobile: 17379324087
+[2018-04-03T13:39:14.996] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:39:23.910] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:39:25.793] [INFO] things - start get addressID from mobile: 13895490886
+[2018-04-03T13:39:28.071] [INFO] things - 推送网点信息
+[2018-04-03T13:39:28.072] [INFO] things - Address: 朝阳区金汇路10号楼世界城Ａ座506室
+[2018-04-03T13:39:28.073] [INFO] things - SName: 茅台云商北京市朝阳区服务网点
+[2018-04-03T13:39:28.073] [INFO] things - DName: 北京志联华信商贸有限公司
+[2018-04-03T13:39:28.073] [INFO] things - SID: 211110105007
+[2018-04-03T13:39:28.073] [INFO] things - total: 12
+[2018-04-03T13:39:28.073] [INFO] things - limit: 2
+[2018-04-03T13:39:38.346] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:39:45.412] [INFO] things - 推送网点信息
+[2018-04-03T13:39:45.413] [INFO] things - Address: 朝阳区金汇路10号楼世界城Ａ座506室
+[2018-04-03T13:39:45.413] [INFO] things - SName: 茅台云商北京市朝阳区服务网点
+[2018-04-03T13:39:45.413] [INFO] things - DName: 北京志联华信商贸有限公司
+[2018-04-03T13:39:45.413] [INFO] things - SID: 211110105007
+[2018-04-03T13:39:45.414] [INFO] things - total: 12
+[2018-04-03T13:39:45.414] [INFO] things - limit: 2
+[2018-04-03T13:39:48.587] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:39:51.561] [INFO] things - 推送网点信息
+[2018-04-03T13:39:51.562] [INFO] things - Address: 东城区广渠门内白桥大街15号嘉禾国信大厦8楼
+[2018-04-03T13:39:51.562] [INFO] things - SName: 茅台云商北京市市辖区东城区服务网点
+[2018-04-03T13:39:51.562] [INFO] things - DName: 华致酒行连锁管理股份有限公司
+[2018-04-03T13:39:51.563] [INFO] things - SID: 211110101003
+[2018-04-03T13:39:51.563] [INFO] things - total: 7
+[2018-04-03T13:39:51.563] [INFO] things - limit: 4
+[2018-04-03T13:39:54.203] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:40:02.487] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:40:05.685] [INFO] things - 推送网点信息
+[2018-04-03T13:40:05.686] [INFO] things - Address: 东城区广渠门内白桥大街15号嘉禾国信大厦8楼
+[2018-04-03T13:40:05.686] [INFO] things - SName: 茅台云商北京市市辖区东城区服务网点
+[2018-04-03T13:40:05.686] [INFO] things - DName: 华致酒行连锁管理股份有限公司
+[2018-04-03T13:40:05.687] [INFO] things - SID: 211110101003
+[2018-04-03T13:40:05.687] [INFO] things - total: 7
+[2018-04-03T13:40:05.687] [INFO] things - limit: 4
+[2018-04-03T13:40:36.725] [INFO] things - 推送网点信息
+[2018-04-03T13:40:36.726] [INFO] things - Address: 朝阳区金汇路10号楼世界城Ａ座506室
+[2018-04-03T13:40:36.726] [INFO] things - SName: 茅台云商北京市朝阳区服务网点
+[2018-04-03T13:40:36.726] [INFO] things - DName: 北京志联华信商贸有限公司
+[2018-04-03T13:40:36.726] [INFO] things - SID: 211110105007
+[2018-04-03T13:40:36.726] [INFO] things - total: 12
+[2018-04-03T13:40:36.726] [INFO] things - limit: 2
+[2018-04-03T13:40:38.846] [INFO] things - start get addressID from mobile: 18434763969
+[2018-04-03T13:40:40.283] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:40:43.620] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:41:05.301] [INFO] things - 位置错误,60秒后重试 { Error: socket hang up
+    at createHangUpError (_http_client.js:331:15)
+    at TLSSocket.socketOnEnd (_http_client.js:423:23)
+    at emitNone (events.js:111:20)
+    at TLSSocket.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1055:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+    at process._tickCallback (internal/process/next_tick.js:180:9) code: 'ECONNRESET' }
+[2018-04-03T13:41:07.887] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:41:38.158] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:41:41.797] [INFO] things - 推送网点信息
+[2018-04-03T13:41:41.797] [INFO] things - Address: 东城区广渠门内白桥大街15号嘉禾国信大厦8楼
+[2018-04-03T13:41:41.798] [INFO] things - SName: 茅台云商北京市市辖区东城区服务网点
+[2018-04-03T13:41:41.798] [INFO] things - DName: 华致酒行连锁管理股份有限公司
+[2018-04-03T13:41:41.798] [INFO] things - SID: 211110101003
+[2018-04-03T13:41:41.798] [INFO] things - total: 7
+[2018-04-03T13:41:41.798] [INFO] things - limit: 4
+[2018-04-03T13:41:44.609] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:41:49.147] [INFO] things - [32m您所在区域无法购买[39m
+[2018-04-03T13:41:58.759] [INFO] things - [32m您所在区域无法购买[39m

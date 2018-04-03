@@ -255,7 +255,7 @@ class MaotaiService {
                   logger.info("定位信息获取错误", error);
                   return reject(error);
                 };
-                logger.info('定位查询结果', body);
+                
                 return resolve({
                   addressID: addressID,
                   lbsdata: body

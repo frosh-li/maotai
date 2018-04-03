@@ -2,10 +2,10 @@ const AliVerify = require('../tools/startAliVerify');
 function getSid() {
   AliVerify.connectSidFromHard()
     .then((ok) => {
-        getSid();
+        setTimeout(getSid, 20000);
     })
     .catch(e => {
-        getSid();
+        setTimeout(getSid, 20000);
     })
 }
 

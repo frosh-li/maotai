@@ -1,5 +1,6 @@
 const Utils = require('../services/utils');
 let assert = require("chai").assert;
+const Service = require('../tools/service');
 
 describe("工具类测试", ()=>{
 
@@ -15,5 +16,19 @@ describe("工具类测试", ()=>{
     	console.log(formatDate);
     	assert.equal(formatDate.length, 8);
     	done();
+    })
+
+    it("测试自动获取token", (done) => {
+    	Service.getToken()
+    		.then(data => {
+    			console.log(data);
+    			assert.equal(true, true, '获取成功');
+    			done();
+    		})
+    		.catch(e => {
+    			console.log(e);
+    			assert.equal(false, true, '获取失败');
+    			done();
+    		})
     })
 })
