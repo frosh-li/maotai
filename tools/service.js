@@ -337,13 +337,13 @@ class MaotaiService {
                               jar:j,
                               json:true
                           };
-                          // request(options, function(error, response, body) {
-                          //     if (error) {
-                          //         return reject(error);
-                          //     };
-                              // logger.info('coupon info', body);
-                              // let couponsId = body.data.Cid;
-                              let couponsId = 'b1b99dd3e5664458afa839e3e7c52724'
+                          request(options, function(error, response, body) {
+                              if (error) {
+                                  return reject(error);
+                              };
+                              logger.info('coupon info', body);
+                              let couponsId = body.data.Cid;
+                              // let couponsId = 'b1b99dd3e5664458afa839e3e7c52724'
                               // 如果找到对应shopID
                               that.checkAliToken((aliSessionId) => {
                                 let options = {
@@ -393,7 +393,7 @@ class MaotaiService {
                                     logger.info(colors.green('下单完成'+JSON.stringify(body)));
                                     return resolve(JSON.parse(body));
                                 });
-                            //});
+                            });
                         })
                     }
                 }).catch(e => {
