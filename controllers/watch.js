@@ -8,13 +8,7 @@ const colors = require('colors/safe');
 const request = require('request');
 const proxy = require('./proxy');
 
-let _phones = [
-]
-
 logger.info('params', process.argv);
-
-// 是否开启购买
-let needToBuy = process.argv[3];
 // cookie path
 let cookieAddress = process.argv[2];
 if(cookieAddress){
@@ -27,47 +21,7 @@ let checkInterval = 1*1000;
 let pid = '391';
 let quantity = 1;
 
-var originPhones = require("../accounts.json");
-let shopName = '东柏街|祥瑞丰源|SOHO现代城C|嘉禾国信大厦|西城区|文峰商贸';
-if(cookieAddress == "001"){
-  originPhones = require("../beijing4.2buy.json");
-  // originPhones = [{phone:"15697680921",pass:123456}]
-}
-if(cookieAddress == "002"){
-  // 猪小弟 两单
-  originPhones = require("../accounts/zhuxiaodi.json");
-  shopName = '七里河区|甘南路';
-  // const originPhones = require("../accounts/zhuxiaodi2.json");
-  // let shopName = '甘南路';
-}
-
-if(cookieAddress == "003"){
-  // 猪小弟 两单
-  originPhones = require("../accounts/zhuxiaodi2.json");
-  shopName = '甘南路';
-  // const originPhones = require("../accounts/zhuxiaodi2.json");
-  // let shopName = '甘南路';
-}
-
-if(cookieAddress == "004"){
-  // 张先生10单
-  originPhones = require("../accounts/zhang.json");
-  shopName = '贵州饭店';
-}
-if(cookieAddress == "005"){
-  //猫咪
-  originPhones = [{"phone":"13523472132", 'pass':"abcdef7758521"}];
-  shopName = '尚品美地';
-  quantity=2;
-}
-
-let tels = [];
-originPhones.forEach(data => {
-  tels.push(JSON.stringify(data));
-})
-tels = tels.join("|");
-
-logger.info('to Buy tels', tels);
+var originPhones = require("../beijing4.2buy.json");
 
 function printInfo(data){
   try{
@@ -144,7 +98,8 @@ function watchQuanity(shopName) {
             if(data.code === 0){
               // 购买成功，进行下一个账号的处理逻辑
               logger.info('购买成功'+tel+":"+pass+JSON.stringify(data));
-              return;
+              fs.writeFileSync("output/20180403.json", `${tel} ${pass}`, 'a+');
+              originPhones.splice(randomIndex, 1)
             }
             setTimeout(() => {
                   watchQuanity(shopName);
