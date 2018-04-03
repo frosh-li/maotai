@@ -1,17 +1,17 @@
-[2018-04-03T16:41:26.394] [INFO] things - params [ '/usr/local/bin/node',
+[2018-04-03T16:45:24.239] [INFO] things - params [ '/usr/local/bin/node',
   '/Users/bigdata/project/maotai/controllers/buyFixed.js',
   '001' ]
-[2018-04-03T16:41:28.631] [INFO] things - start get addressID from mobile: 15213163729
-[2018-04-03T16:41:30.854] [INFO] things - create order params { '0': '15213163729',
+[2018-04-03T16:45:26.070] [INFO] things - start get addressID from mobile: 13618484713
+[2018-04-03T16:45:26.681] [INFO] things - create order params { '0': '13618484713',
   '1': '391',
   '2': 6,
-  '3': 'Mozilla/5.0 (Linux; Android 4.4.4; LA2-SN Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36[android/1.0.23/24832c13e0721ad2c021be6f2692a3f3/a7e13361e36abc40ffb16b04ed3f342c]',
-  '4': 1970634,
+  '3': 'Mozilla/5.0 (Linux; Android 4.4.4; LA2-SN Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36[android/1.0.23/e39160db1b19d361b4e7bc77b8d5c5b1/b27a293cc5efd12ddcf88a75f06f77c1]',
+  '4': 1970669,
   '5': 233330186001 }
-[2018-04-03T16:41:33.848] [INFO] things - coupon info { state: true,
+[2018-04-03T16:45:27.563] [INFO] things - coupon info { state: true,
   code: 0,
   data: 
-   { Cid: '94e192cf528e41628ca6a32d3ce763b4',
+   { Cid: '09b28b0909aa4f35bad163dc2bd7ceed',
      Name: '茅台云商浙江省杭州市上城区服务网点',
      DName: '浙商糖酒集团有限公司',
      Address: '杭州市中山中路甘泽坊巷9号',
@@ -36,15 +36,15 @@
      StateCode: 0,
      NetworkType: 0,
      WorkingDay: '[{"EnDay":"Monday","CnDay":"星期一"},{"EnDay":"Tuesday","CnDay":"星期二"},{"EnDay":"Wednesday","CnDay":"星期三"},{"EnDay":"Thursday","CnDay":"星期四"},{"EnDay":"Friday","CnDay":"星期五"},{"EnDay":"Saturday","CnDay":"星期六"},{"EnDay":"Sunday","CnDay":"星期日"}]' } }
-[2018-04-03T16:41:33.850] [INFO] things - { productId: '391',
+[2018-04-03T16:45:27.567] [INFO] things - { productId: '391',
   quantity: 6,
-  couponsId: '94e192cf528e41628ca6a32d3ce763b4',
-  addressId: 1970634,
+  couponsId: '09b28b0909aa4f35bad163dc2bd7ceed',
+  addressId: 1970669,
   invioceId: -1,
   express: 14,
   shopId: 233330186001,
-  sessid: 'nc1-01W8fUo7tiNBKrkhR8ACXXKbpOQZ-H75Q4nEJfnUgamMFB05RyH0tooCacEwkm2kxh-nc2-0561M3bob-R8gv1KNXk15v5Zpzwr5-aA0d72EwzdOiQ4xyfgbNJh38I0NiL8RWRzP0Y0qqsBFV-Fq4wOtRwaoreQCodrAX96R538YreN1xDrKPbkEkrFXdmGv7wGSngLhX6YwLBXaxmIci5uutEeL13C7p5LouwcGl3R5f1_gz2u50G6ohEWaLXCOUMpzb0UY9IgsAoccKsUNT1crMKtdGeY5UWtN-K_AZQw56zhQ3bEHcFCF7MgtpAjzzC1F0F4DN3y7uMjJ0RQES737__4wGiNoU1tmCuQ7gQ1UZzDp9ONxSGYQ8dIgJJjigUtXuBLOTCxz3UkPziHA6gwB7sQoyilsAxQHojeOF39MSL4bxBD6h-soTwxtiHB0OFLOAJToBHNAO-pk9mH9c6QW5stb-qj0s5vNYP0vJP7P4Wv4Z6jM-nc3-01TzB8fzgmvi9w1w4Zzf-AolUTuKhVRvUO2OYdE36E7Lr5Ge_sW2h-Hb6WUew9mYhqORASueZ42mMOw19yySGrgCc2bXMJcdIU2iPY5X2r9kCqdxjkB3iFVFv0N8IigAoPdXEJxKKKUu7F2-cvvWc-lg-nc4-FFFFA0000000016A858A',
+  sessid: null,
   remark: '',
-  timestamp121: 1522744893850 }
-[2018-04-03T16:41:38.764] [INFO] things - [32m下单完成"{\"state\":true,\"code\":202,\"data\":{\"IsNeedReservation\":true,\"IsIntercept\":false,\"ProductID\":391,\"CanUseCredence\":false,\"Certificate\":{\"ID\":\"2725385\",\"UID\":2072242,\"PID\":\"391\",\"Status\":3,\"Address\":{\"ID\":1970634,\"IsDefault\":true,\"IsPushAddreess\":true,\"Name\":\"张瑞敏\",\"TelPhone\":\"15213163729\",\"Zipcode\":\"000000\",\"ProvCode\":\"330000\",\"CityCode\":\"330100\",\"AreaCode\":\"330102\",\"Remark\":\"\",\"IsVerification\":false,\"AddressDetails\":\"浙江省杭州市上城区,杭州市上城区市场和质量监督管理局,对面延安西路园卡佳苑小区2单元一楼服务中心收\",\"Longitude\":120.165228,\"Latitude\":30.241706,\"Address\":\"杭州市上城区市场和质量监督管理局,对面延安西路园卡佳苑小区2单元一楼服务中心收\",\"AddressText\":\"浙江省杭州市上城区\"},\"Product\":{\"Pid\":391,\"PCode\":\"23\",\"PName\":\"贵州茅台酒 (新飞天) 53%vol 500ml\",\"CoverImage\":\"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg\"},\"FailureTime\":\"2018-04-08 00:00:00\"},\"EnterTimeSlot\":{\"Start\":\"2018-04-03 00:00:00\",\"End\":\"2018-04-03 23:59:59\",\"InTime\":true},\"BuyTimeSlot\":{\"Start\":\"2018-04-04 10:00:00\",\"End\":\"2018-04-04 16:00:00\",\"InTime\":false}}}"[39m
-[2018-04-03T16:41:38.765] [INFO] things - 下单时间12237ms
+  timestamp121: 1522745127567 }
+[2018-04-03T16:45:28.523] [INFO] things - [32m下单完成"{\"state\":true,\"code\":13,\"msg\":\"验证码效验失败\"}"[39m
+[2018-04-03T16:45:28.524] [INFO] things - 下单时间4174ms

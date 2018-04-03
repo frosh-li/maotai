@@ -405,7 +405,11 @@ class MaotaiService {
                       // aliSessionId = null;
                       // fs.writeFileSync("../aliSessionId.txt", "");
                       logger.info(options.form);
-                      redisClient.del(aliSessionId.key);
+                      aliSessionId.key && redisClient.del(aliSessionId.key, (err) => {
+                        if(err){
+                          logger.error(err);
+                        }
+                      });
                       request(options, function(error, response, body) {
                           if (error) {
                               return reject(error);
