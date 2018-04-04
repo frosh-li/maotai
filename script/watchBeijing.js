@@ -17,7 +17,7 @@ let quantity = 6;
 
 
 let shopName = '东柏街|祥瑞丰源|SOHO现代城C|嘉禾国信大厦|西城区|文峰商贸';
-var originPhones = require("../70.json");
+var originPhones = require("../beijing4.2buy.json");
 // originPhones = [
 
 //   {"phone":"15039298864","pass":"a123456"},
@@ -76,9 +76,10 @@ function watchQuanity() {
         .then(address => {
             scopeAddress = address;
             originPhones[randomIndex].addressId = address;
-            return MaotaiService.LBSServer(address, tel, userAgent);
+            return MaotaiService.LBSServer(address, tel, userAgent,pid, currentJar);
         })
         .then(data => {
+          logger.info(data);
           if (data && data.lbsdata && data.lbsdata.data && data.lbsdata.data.stock && data.lbsdata.data.stock.Sid) {
             if(
               data.lbsdata.data.stock.StockCount >= quantity

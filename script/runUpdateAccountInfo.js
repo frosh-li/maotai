@@ -35,6 +35,7 @@ function startUpdate() {
       address: data.address || "",
       name: data.name || "",
       province: data.ProvinceId || "",
+      addressId: data.addressId,
       city: data.CityId || "",
       area: data.DistrictsId || "",
       lng: data.lng || "",
@@ -82,18 +83,27 @@ function getAccounts() {
   })
 }
 
+connection.config.queryFormat = function (query, values) {
+  if (!values) return query;
+  return query.replace(/\:(\w+)/g, function (txt, key) {
+    if (values.hasOwnProperty(key)) {
+      return this.escape(values[key]);
+    }
+    return txt;
+  }.bind(this));
+};
+
 function updateAccountSync(data){
-  connection.query(`
+  let sql = `
     update accounts set 
     province=:province,
     city=:city,
     area=:area,
     address=:address,
-    apointStartTime=:apointStartTime,
-    apointEndTime=:apointEndTime,
+    apointStartTime=:buyStartTime,
+    apointEndTime=:buyEndTime,
     buyStartTime=:buyStartTime,
     buyEndTime=:buyEndTime,
-    orderId=:orderId,
     order_status=:order_status,
     PayStatus=:PayStatus,
     addressId=:addressId,
@@ -103,9 +113,12 @@ function updateAccountSync(data){
     apointStatus=:apointStatus,
     apointRemark=:apointRemark,
     name=:name,
-    ShopId=:ShopId,
-    where phone='{$data.phone}'
-  `, data, (err, results) => {
+    ShopId=:ShopId
+    where phone='${data.phone}'
+  `;
+  console.log(sql);
+  console.log(data)
+  connection.query(sql, data, (err, results) => {
     if(err){
       console.log(err);
     }else{

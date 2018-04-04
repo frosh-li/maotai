@@ -48,19 +48,20 @@ class AccountInfo {
                 let apointStatus = {};
                 let scopeJar = null;
                 proxy.switchIp()
-                    .then(() => {
-                        // 登录
-                        return Service.login(user.phone, user.pass, userAgent);
-                    })
+                    // .then(() => {
+                    //     // 登录
+                    //     return Service.login(user.phone, user.pass, userAgent);
+                    // })
                     .then((userinfo) => {
                         // 获取第一条地址信息
-                        logger.info(userinfo);
-                        userid = userinfo.UserId;
-                        return MaotaiService.getCurrentJar(user.phone);
+                        // logger.info(userinfo);
+                        // userid = userinfo.UserId;
+                        return Service.getCurrentJar(user.phone);
                         
                     })
                     .then(jar =>  {
                       scopeJar = jar;
+                      console.log('jar', jar);
                       return Service.getAllAddress(user.phone, scopeJar);
                     })
                     .then(addressList => {

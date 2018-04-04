@@ -28,21 +28,24 @@ class MaotaiService {
     getCurrentJar(tel) {
       return new Promise((resolve, reject) => {
         let path = './cookies/'+tel+'.json';
+        console.log('cookie path', path);
         var v = new Filecookietore(path);
         v.findCookies('www.cmaotai.com','/', function(err, cookie){
           if(err){
             console.log('cookie error');
             return reject(err);
           }
+          console.log(cookie);
           return resolve(cookie.join(";"))
         })
       })
 
     }
-    headers (userAgent) {
+    headers (userAgent, cookies='') {
       return {
         "proxy-authorization" : "Basic " + proxy.proxyAuth,
         'cache-control': 'no-cache',
+        'cookie': cookies,
         'accept-language': 'zh-CN,en-US;q=0.8',
         'accept': 'application/json, text/javascript, */*; q=0.01',
         'content-type': 'application/x-www-form-urlencoded',
@@ -252,7 +255,7 @@ class MaotaiService {
                 url: 'https://www.cmaotai.com/API/LBSServer.ashx',
                 headers: {
                     "proxy-authorization" : "Basic " + proxy.proxyAuth,
-
+                    'cookie':j,
                     'cache-control': 'no-cache',
                     'accept-language': 'zh-CN,en-US;q=0.8',
                     'accept': 'application/json, text/javascript, */*; q=0.01',
@@ -266,7 +269,6 @@ class MaotaiService {
                     quant: 6,
                     timestamp121: now
                 },
-                jar:j,
                 json:true
             };
             request(options, function(error, response, body) {
@@ -606,14 +608,14 @@ class MaotaiService {
 
         var options = {
             method: 'POST',
-            jar:j,
             url: 'https://www.cmaotai.com/YSApp_API/YSAppServer.ashx',
             headers: {
                 "proxy-authorization" : "Basic " + proxy.proxyAuth,
-
+                'cookie': j,
                 'cache-control': 'no-cache',
                 'content-type': 'application/x-www-form-urlencoded'
             },
+            jar:true,
             form: {
                 action: 'AddressManager.list',
                 index: '1',
@@ -627,8 +629,14 @@ class MaotaiService {
               if (error) {
                   return reject(error);
               }
+              console.log(body)
               let bodyJSON = JSON.parse(body);
-              return resolve(bodyJSON.data.list);
+              if(bodyJSON && bodyJSON.data && bodyJSON.data.list){
+                return resolve(bodyJSON.data.list);  
+              }else{
+                return reject('错误')
+              }
+              
           });
         })
     }
@@ -694,11 +702,12 @@ class MaotaiService {
       // state_5: "申诉中",
       // state_6: "已失效"
       let now = +new Date();
+      
       var options = {
           method: 'POST',
           jar:j,
           url: 'https://www.cmaotai.com/API/Servers.ashx',
-          headers: this.headers(userAgent),
+          headers: this.headers(userAgent, j),
           form: {
               action:'ReservationsManager.List',
               index:1,
@@ -831,7 +840,7 @@ class MaotaiService {
                 return this.getAddressId(phone, j)
             })
             .then((addressID) => {
-                return this.LBSServer(addressID, phone, userAgent, j);
+                return this.LBSServer(addressID, phone, userAgent,391, j);
             })
             .then(data => {
                 let addressID = data.addressID;
@@ -889,7 +898,7 @@ class MaotaiService {
             return this.getAddressId(phone, j)
           })
           .then((addressID) => {
-            return this.LBSServer(addressID, phone, userAgent, j);
+            return this.LBSServer(addressID, phone, userAgent,391, j);
           })
           .then(data => {
             let addressID = data.addressID

@@ -149,7 +149,7 @@ class AliVerify {
                             Points[1][0] == 0 ||
                             Points[1][1] == 0
                         ) {
-                            return this.captureAndCalcPos(resolve, reject);
+                            return this.captureAndCalcPos();
                         }
                         this.swipeToCircle(Points[0], Points[1]);
                         return resolve(true);
