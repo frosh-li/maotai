@@ -1,7 +1,7 @@
 const logger = require('../controllers/logger.js');
 const MaotaiService = require('../tools/service');
 
-var originPhones = require("../beijing4.2buy.json");
+var originPhones = require("../70.json");
 
 function start() {
   let user = originPhones.shift();
@@ -41,4 +41,5 @@ function checkDone() {
   process.exit(0);
 }
 
-checkDone();
+// checkDone();
+start();
