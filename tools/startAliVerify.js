@@ -4,8 +4,8 @@ const {
 const getPixels = require('get-pixels');
 const path = require('path');
 
-const adb = "/Users/bigdata/Library/Android/sdk/platform-tools/adb -s emulator-5554";
-// const adb = "adb -s emulator-5554";
+//const adb = "/Users/bigdata/Library/Android/sdk/platform-tools/adb -s emulator-5554";
+ const adb = "adb -s emulator-5554";
 function avg(arr){
   let totals = 0;
   arr.forEach(item => {
@@ -122,17 +122,10 @@ class AliVerify {
      */
     connectSidFromHard() {
 
-        return new Promise((resolve, reject) => {
+        // return new Promise((resolve, reject) => {
             this.openAliUI();
-            //return this.captureAndCalcPos(resolve, reject);
-            this.captureAndCalcPos((status) => {
-              if(status){
-                return resolve(true)
-              }else{
-                return this.captureAndCalcPos(resolve, reject)
-              }
-            });
-        })
+            return this.captureAndCalcPos();
+        // })
 
     }
 
@@ -143,27 +136,27 @@ class AliVerify {
      *
      * @return {type}  description
      */
-    captureAndCalcPos(resolve, reject) {
+    captureAndCalcPos() {
         // 开始截屏
-        setTimeout(() => {
-            this.capture();
+        return new Promise((resolve, reject) => {
             setTimeout(() => {
-                this.calcPos(Points => {
-                    if (
-                        Points[0][0] == 0 ||
-                        Points[0][1] == 0 ||
-                        Points[1][0] == 0 ||
-                        Points[1][1] == 0
-                    ) {
-                        // 重试进行截屏
+                this.capture();
+                setTimeout(() => {
+                    this.calcPos(Points => {
+                        if (
+                            Points[0][0] == 0 ||
+                            Points[0][1] == 0 ||
+                            Points[1][0] == 0 ||
+                            Points[1][1] == 0
+                        ) {
+                            return this.captureAndCalcPos(resolve, reject);
+                        }
+                        this.swipeToCircle(Points[0], Points[1]);
                         return resolve(true);
-                    }
-                    this.swipeToCircle(Points[0], Points[1]);
-                    return resolve(true);
-                    return reject(new Error('未知错误'));
-                });
-            }, 100)
-        }, 500);
+                    });
+                }, 100)
+            }, 500);  
+        })
     }
 }
 
