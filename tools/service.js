@@ -476,7 +476,7 @@ class MaotaiService {
         fs.writeFileSync(path.resolve(__dirname,"../aliSessionId.txt"), "");
         return new Promise((resolve, reject) => {
           let that = this;
-          let options = {
+          let optionscoupon = {
               method: 'POST',
               url: 'https://www.cmaotai.com/YSApp_API/YSAppServer.ashx',
               headers: {
@@ -500,13 +500,12 @@ class MaotaiService {
 
               json:true
           };
-          request(options, function(error, response, body) {
+          request(optionscoupon, function(error, response, body) {
               if (error) {
                   return reject(error);
               };
               logger.info('coupon info', body);
               let couponsId = body.data.Cid;
-              // let couponsId = 'b1b99dd3e5664458afa839e3e7c52724'
               // 如果找到对应shopID
               let options = {
                   method: 'POST',
@@ -536,9 +535,11 @@ class MaotaiService {
                       timestamp121: (+new Date())
                   }
               };
-              AliVerify.connectSidFromHard()
-                .then(data => {
-                  that.checkAliToken(token => {
+              redisClient.randomkey((err, key) => {
+                if(err){
+                  return reject(err);
+                }
+                redisClient.get(key, (err, token) => {
                     options.form.sessid = token;
                     request(options, function(error, response, body) {
                         if (error) {
@@ -552,9 +553,13 @@ class MaotaiService {
                           buyLimit: quantity,
                         });
                     });
-                  })
-
+                    if(key)
+                    {
+                          redisClient.del(key);
+                    }
                 })
+
+            })
           })
         })
     }

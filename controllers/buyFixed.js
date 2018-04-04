@@ -77,25 +77,24 @@ function watchQuanity(number) {
   let pass = originPhones[randomIndex].pass;
   // let pass = "a123456";
   let userAgent = MaotaiService.userAgent(tel);
-  let scopeAddress = "";
+  let scopeAddress = originPhones[randomIndex].addressId;
   if(successOrder >= maxOrder){
     console.log('购买完成')
     return;
   }
-  proxy.switchIp().then(() => {
+  //proxy.switchIp().then(() => {
     let _startTime = +new Date();
+    let createOrderStartTime = +new Date();
     let currentJar = null;
     MaotaiService.getCurrentJar(tel)
         .then(j => {
           currentJar = j;
-          return MaotaiService.getAddressId(tel, currentJar)
-        })
-        .then(address => {
-          scopeAddress = address;
+          _startTime = +new Date();
           return MaotaiService.createOrderByScan(tel, pid, quantity = 6,300, userAgent, scopeAddress, fixedShopId, -1, currentJar)
           //return MaotaiService.createOrderByScan(tel, pid , 6, userAgent, scopeAddress, fixedShopId, currentJar);
         }).then( data => {
             logger.info("下单时间"+(new Date() - _startTime)+"ms");
+            logger.info("订单提交耗时"+(new Date() - createOrderStartTime)+"ms");
             if(data.code === 0){
 
               // 购买成功，进行下一个账号的处理逻辑
@@ -113,10 +112,10 @@ function watchQuanity(number) {
                 watchQuanity(number);
             }, checkInterval);
         })
-  })
-  .catch(e => {
-    logger.error(e);
-  })
+  //})
+  //.catch(e => {
+  //  logger.error(e);
+  //})
 }
 
 var fixedShopId = 100530100004; // 杭州网点
