@@ -1,39 +1,17 @@
 const AccountService = require('../script/updateAccounts');
 let fs = require('fs');
-let logger = require('../controllers/logger');
+var mysql      = require('mysql');
+var connection = mysql.createConnection({
+  host     : 'localhost',
+  user     : 'root',
+  password : '123456',
+  database : 'accounts'
+});
 
-//let accountsFile = require('./3.31.json');
-//let accounts = require('./3.31old.json');
-// accountsFile.forEach(item => {
-//   accounts.push({
-//     'phone': item,
-//     'pass': 'a123456'
-//   })
-// })
-let accounts = [{"phone":"17324325505","pass":"123456"},
-{"phone":"17328606450","pass":"123456"},
-{"phone":"18024127634","pass":"123456"},
-{"phone":"17727114231","pass":"123456"},
-{"phone":"15302997813","pass":"123456"},
-{"phone":"18038694099","pass":"123456"},
-{"phone":"17324344544","pass":"123456"},
-{"phone":"15302997784","pass":"123456"},
-{"phone":"15302996281","pass":"123456"},
-{"phone":"17322248121","pass":"123456"},
-{"phone":"15302997532","pass":"123456"},
-{"phone":"15302984575","pass":"123456"},
-{"phone":"17324345325","pass":"123456"},
-{"phone":"17324343773","pass":"111222"},
-{"phone":"17306654917","pass":"123456"},
-{"phone":"17324004742","pass":"123456"},
-{"phone":"17324328959","pass":"123456"},
-{"phone":"17324297950","pass":"123456"},
-{"phone":"13262949328","pass":"456789"},
-{"phone":"13711456713","pass":"qwe12345678"},
-{"phone":"17324297953","pass":"123456"},
-{"phone":"18127854003","pass":"123456"},
-{"phone":"18127856294","pass":"123456"},
-{"phone":"17324329235","pass":"123456"}];
+connection.connect();
+
+let logger = require('../controllers/logger');
+let accounts = [];
 let totals = accounts.length;
 let success = [];
 let fail = [];
@@ -44,35 +22,35 @@ function startUpdate() {
   if(!account){
     logger.info('update all done');
     logger.info('fail');
-    fs.writeFileSync('./4.3.fail.json', JSON.stringify(fail));
     logger.info(fail);
     logger.info('success')
     logger.info(success);
-    fs.writeFileSync('./4.3.success.json', JSON.stringify(success));
     return;
   }
   AccountService.updateAccount(account)
   .then(data => {
-    success.push({
+    let cdata = {
       phone: data.phone || "",
       pass: data.pass || "",
       address: data.address || "",
       name: data.name || "",
-      ProvinceId: data.ProvinceId || "",
-      CityId: data.CityId || "",
-      DistrictsId: data.DistrictsId || "",
+      province: data.ProvinceId || "",
+      city: data.CityId || "",
+      area: data.DistrictsId || "",
       lng: data.lng || "",
       lat: data.lat || "",
-      OrderDate: data.OrderDate || "",
-      OrderStatus: data.OrderStatus || "",
+      orderTime: data.OrderDate || "",
+      order_status: data.OrderStatus || "",
       PayStatus: data.PayStatus || "",
       ShopId:data.ShopId || "",
       apointStatus: data.apointStatus || "",
       buyStartTime: data.buyStartTime || "",
       buyEndTime: data.buyEndTime || "",
-      reviewInfo:data.reviewInfo || "",
+      apointRemark:data.reviewInfo || "",
       remark: data.remark || ""
-    });
+    };
+    success.push(cdata);
+    updateAccountSync(cdata);
     startUpdate();
   }).catch(e => {
     fail.push({
@@ -83,5 +61,55 @@ function startUpdate() {
     startUpdate();
   })
 }
+getAccounts()
+  .then(accounts => {
+    startUpdate();  
+  }).catch(e => {
+    console.log(e);
+  })
 
-startUpdate();
+function getAccounts() {
+  return new Promise((resolve, reject) => {
+    connection.query('select phone,pass from accounts', (err, results) => {
+      if(err){
+        console.log(err);
+        return reject(false);
+      }
+      accounts = results;
+      totals = results.length;
+      return resolve(true);
+    })
+  })
+}
+
+function updateAccountSync(data){
+  connection.query(`
+    update accounts set 
+    province=:province,
+    city=:city,
+    area=:area,
+    address=:address,
+    apointStartTime=:apointStartTime,
+    apointEndTime=:apointEndTime,
+    buyStartTime=:buyStartTime,
+    buyEndTime=:buyEndTime,
+    orderId=:orderId,
+    order_status=:order_status,
+    PayStatus=:PayStatus,
+    addressId=:addressId,
+    lat=:lat,
+    lng=:lng,
+    orderTime=:orderTime,
+    apointStatus=:apointStatus,
+    apointRemark=:apointRemark,
+    name=:name,
+    ShopId=:ShopId,
+    where phone='{$data.phone}'
+  `, data, (err, results) => {
+    if(err){
+      console.log(err);
+    }else{
+      console.log("update account", data.phone);
+    }
+  })
+}

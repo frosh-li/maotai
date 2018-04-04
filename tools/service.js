@@ -28,15 +28,12 @@ class MaotaiService {
     getCurrentJar(tel) {
       return new Promise((resolve, reject) => {
         let path = './cookies/'+tel+'.json';
-        console.log('cookie path', path)
         var v = new Filecookietore(path);
-        console.log(v,tel);
         v.findCookies('www.cmaotai.com','/', function(err, cookie){
           if(err){
             console.log('cookie error');
             return reject(err);
           }
-          console.log('getcookie', cookie);
           return resolve(cookie.join(";"))
         })
       })
@@ -561,12 +558,7 @@ class MaotaiService {
 
     getAddressId(tel,j) {
         logger.info('start get addressID from mobile:', tel);
-        var jar = request.jar();
-        // var cookie = request.cookie(j);
-        jar.setCookie(j,'www.cmaotai.com');
-        console.log(jar);
         let now = +new Date();
-        logger.info(j);
         let options = {
             method: 'POST',
             jar: true,

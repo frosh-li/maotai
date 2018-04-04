@@ -46,6 +46,7 @@ class AccountInfo {
         return new Promise((resolve, reject) => {
                 let addressInfo = {};
                 let apointStatus = {};
+                let scopeJar = null;
                 proxy.switchIp()
                     .then(() => {
                         // 登录
@@ -55,7 +56,12 @@ class AccountInfo {
                         // 获取第一条地址信息
                         logger.info(userinfo);
                         userid = userinfo.UserId;
-                        return Service.getAllAddress(user.phone);
+                        return MaotaiService.getCurrentJar(user.phone);
+                        
+                    })
+                    .then(jar =>  {
+                      scopeJar = jar;
+                      return Service.getAllAddress(user.phone, scopeJar);
                     })
                     .then(addressList => {
                       // state_1: "审核中",
@@ -69,13 +75,13 @@ class AccountInfo {
                       if (addressList.length > 0) {
                           addressInfo = addressList[0];
                       }
-                      return Service.apointStatus(userAgent);
+                      return Service.apointStatus(userAgent, scopeJar);
                     })
                     .then((_apointStatus) => {
                         if(_apointStatus){
                           apointStatus = _apointStatus
                         }
-                        return Service._getOrders(userid);
+                        return Service._getOrders(userid, scopeJar);
                     })
                     .then((orderInfo) => {
                         if (orderInfo.length > 0) {
@@ -88,6 +94,7 @@ class AccountInfo {
                               phone: user.phone,
                               pass: user.pass,
                               address: addressInfo.Address,
+                              addressId: addressInfo.SId,
                               name: addressInfo.ShipTo,
                               ProvinceId: addressInfo.ProvinceId,
                               CityId: addressInfo.CityId,
@@ -110,6 +117,7 @@ class AccountInfo {
                                 phone: user.phone,
                                 pass: user.pass,
                                 address: addressInfo.Address,
+                                addressId: addressInfo.SId,
                                 name: addressInfo.ShipTo,
                                 ProvinceId: addressInfo.ProvinceId,
                                 CityId: addressInfo.CityId,

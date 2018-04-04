@@ -4,7 +4,8 @@ const {
 const getPixels = require('get-pixels');
 const path = require('path');
 
-const adb = "/Users/bigdata/Library/Android/sdk/platform-tools/adb -s emulator-5554";
+//const adb = "/Users/bigdata/Library/Android/sdk/platform-tools/adb -s emulator-5554";
+const adb = "adb -s emulator-5554";
 function avg(arr){
   let totals = 0;
   arr.forEach(item => {
