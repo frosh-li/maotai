@@ -36,22 +36,7 @@ let quantity = 6;
 
 
 let shopName = '东柏街|祥瑞丰源|SOHO现代城C|嘉禾国信大厦|西城区|文峰商贸';
-var originPhones = require("../beijing4.2buy.json");
-originPhones = [
-  {"phone":"13618484713","pass":"zxcvbnm"},
-  {"phone":"17753583852","pass":"123456"},
-  {"phone":"15213163729","pass":"123456"},
-  {"phone":"17783920137","pass":"xqh19950703"},
-  {"phone":"18236877936","pass":"wxp800614"},
-  {"phone":"15178421370","pass":"2016whczg"},
-  {"phone":"15084425825","pass":"lh25802580"},
-  {"phone":"17772324023","pass":"lh25802580"},
-  {"phone":"13786958413","pass":"58585858"},
-  {"phone":"13711949575","pass":"wy40324700"},
-  {"phone":"13686135579","pass":"wy40324700"},
-  {"phone":"15717350785","pass":"dyj395799."},
-  {"phone":"18273181619","pass":"dyj395799."},
-]
+var originPhones = require("../70.json");
 function printInfo(data){
   try{
     logger.info('推送网点信息');
@@ -107,7 +92,8 @@ function watchQuanity(number) {
         })
         .then(address => {
           scopeAddress = address;
-          return MaotaiService.createOrder(tel, pid , 6, userAgent, scopeAddress, fixedShopId, currentJar);
+          return MaotaiService.createOrderByScan(tel, pid, quantity = 6,300, userAgent, scopeAddress, fixedShopId, -1, currentJar)
+          //return MaotaiService.createOrderByScan(tel, pid , 6, userAgent, scopeAddress, fixedShopId, currentJar);
         }).then( data => {
             logger.info("下单时间"+(new Date() - _startTime)+"ms");
             if(data.code === 0){
@@ -133,7 +119,7 @@ function watchQuanity(number) {
   })
 }
 
-var fixedShopId = 233330186001; // 杭州网点
+var fixedShopId = 100530100004; // 杭州网点
 var maxOrder = 13;
 var successOrder = 0;
 

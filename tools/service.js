@@ -457,7 +457,7 @@ class MaotaiService {
      * @param  {string} fixedShopName 是否锁定购买某一家 -1为不锁定  211110102007雍贵中心 211110105003双龙
      * @return {type}            description
      */
-
+     //(tel, pid , 6, userAgent, scopeAddress, fixedShopId, currentJar)
     createOrderByScan(stel, pid, quantity = 6,StockCount, userAgent, scopeAddress, shopId, fixedShopName = -1, j) {
         logger.info('create order params', arguments);
         if (typeof stel === 'string') {
@@ -536,12 +536,13 @@ class MaotaiService {
               };
               AliVerify.connectSidFromHard()
                 .then(data => {
-                  this.checkAliToken(token => {
+                  that.checkAliToken(token => {
                     options.form.sessid = token;
                     request(options, function(error, response, body) {
                         if (error) {
                             return reject(error);
                         };
+                        console.log(options.form);
                         logger.info(colors.green('下单完成'+JSON.stringify(body)));
                         return resolve({
                           data:JSON.parse(body),

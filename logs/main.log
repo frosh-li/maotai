@@ -1,81 +1,752 @@
-[2018-04-04T09:28:19.865] [INFO] things - { state: true,
+[2018-04-04T10:17:34.090] [INFO] things - params [ '/usr/local/bin/node',
+  '/Users/bigdata/project/maotai/controllers/buyFixed.js' ]
+[2018-04-04T10:17:34.200] [INFO] things - start get addressID from mobile: 19987439054
+[2018-04-04T10:17:35.462] [INFO] things - {"state":true,"code":0,"data":{"size":10,"index":1,"count":1,"datacount":1,"list":[{"rownumber":1,"SId":1966902,"UserId":"2268525","TelPhone":"19987439054","Zipcode":"000000","Address":"版筑翠园,2幢1单元201室","AddressInfo":"云南省昆明市五华区","ShipTo":"李伟","Remark":"","ProvinceId":"530000","CityId":"530100","DistrictsId":"530102","IsDefault":false,"SMNo":null,"RelPhone":null,"Longitude":"102.692032","Latitude":"25.053982","IsVerification":false,"TimeStamp":"2018-03-30 23:48:40"}]}}
+[2018-04-04T10:17:35.463] [INFO] things - create order params { '0': '19987439054',
+  '1': '391',
+  '2': 6,
+  '3': 300,
+  '4': 'Mozilla/5.0 (Linux; Android 4.4.4; LA2-SN Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36[android/1.0.23/682ba6a0e93ff5a17ae6bd03851f2f2d/e98bf9204e10f222aa1fe9e7f5c31f03]',
+  '5': 1966902,
+  '6': 100530100004,
+  '7': -1,
+  '8': 'acw_tc=AQAAAK9VtHg/aAEAoG5DcOK0oHIC95cO; Path=/; HttpOnly;ASP.NET_SessionId=viugyruhqkslcjqebmqigfzd; Path=/; HttpOnly;Vshop-Member=19285c674cca46c0bce11d7fc64a47fc; Expires=Thu, 04 Apr 2019 01:28:19 GMT; Path=/;SERVERID=d7ff3566a46564dfbddba0bd72787651|1522805302|1522805302; Path=/' }
+[2018-04-04T10:17:36.765] [INFO] things - coupon info { state: true,
   code: 0,
   data: 
-   { TelPhone: '18387455327',
-     NickName: '18387455327',
-     HeadPortrait: '',
-     SalemanState: -1,
-     AuthState: -1,
-     IsLock: false,
-     IsConfirmationProtocol: true,
-     Certificate: null,
-     CertIdent: 'none',
-     HasPassword: true,
-     DeviceIdent: '62ac40ba50233ad78170b1eece1d773c',
-     UserId: 2268164,
-     Name: '&18387455327' } }
-[2018-04-04T09:28:21.233] [INFO] things - { state: true,
+   { Cid: 'a9a45a339d9542d4b6ba161cbd49247d',
+     Name: '茅台云商昆明市五华区服务网点',
+     DName: '昆明全兴利商贸有限公司',
+     Address: '昆明市虹山东路326号',
+     InvoiceCompany: '昆明全兴利商贸有限公司',
+     SHBegin: '08:45:00',
+     SHEnd: '17:30:00',
+     Amount: 1499,
+     Level: 1,
+     DisAmount: 1499,
+     DisCost: 0,
+     LocalCost: 0,
+     LocalZero: 1,
+     LocalZeroCost: -1,
+     OtherCost: -1,
+     OtherZero: -1,
+     OtherZeroCost: -1,
+     InvoiceCost: 22,
+     TakeDeliveryLimit: 7,
+     HasPlainInvoice: true,
+     HasVATInvoice: true,
+     Description: '同城配送：当日11:00之前下单付款成功的当日送达，11:00之后下单付款成功的次日送达。（特殊交通特殊情况延后配送,工作日内配送）\r\n自提地点：昆明市五华区虹山东路326号国酒茅台专卖店。\r\n自提时间：9：00-17:30（双休日正常营业，5件以上建议提前预约自提时间，避免耽误您宝贵时间）\r\n快递配送：根据快递公司安排配送。',
+     StateCode: 0,
+     NetworkType: 0,
+     WorkingDay: '[{"EnDay":"Monday","CnDay":"星期一"},{"EnDay":"Tuesday","CnDay":"星期二"},{"EnDay":"Wednesday","CnDay":"星期三"},{"EnDay":"Thursday","CnDay":"星期四"},{"EnDay":"Friday","CnDay":"星期五"},{"EnDay":"Saturday","CnDay":"星期六"},{"EnDay":"Sunday","CnDay":"星期日"}]' } }
+[2018-04-04T10:17:39.471] [INFO] things - token成功获取到 nc1-01W8fUo7tiNBKrkhR8ACXXKS-FQN2Jf_5AWqBasbbHRSlhOtAnc8iQXOEBHsSIxcl1-nc2-0561M3bob-R8gv1KNXk15v5Zpzwr5-aA0d72EwzdOiQ4wq5IXdEQSGHdpTLPGOn_2k_JyGmhp7YpFGd4yUHPBQJA6RVhU0aQrYfGuBcG0oS8O_EByNX1IEoB9qIpnF9iFh6YwLBXaxmIci5uutEeL13OE-b4S53GGzo31dyQXGI4jsy2htKPdYnYh3AFuYh8MGqlxVcMoyxZwVKWvcO35LErVyJFhgLoHiiqe2eDmA0t-Vg4yMFlPihDtk-leeEHq9AsxYEYxYrPBQgyAmhJRrHNoU1tmCuQ7gQ1UZzDp9ONxSGYQ8dIgJJjigUtXuBLOTY14Xs_EQoZDpfYbZTlwaKlsAxQHojeOF39MSL4bxBD4_YdWV9ryoY3d-iMh5_xXum1WgCyuh_Eeg0XHcJlEljJPNThqCjJRtnSiGzmuQNUY-nc3-01TzB8fzgmvi9w1w4Zzf-AogEzyZIcbFVjcjTts4jJLkLK9wN1vsY3EIN3fbxSYqnCd_OFjOxZXRb8kbDTb9QqtjSo0GXBUdUPKtL6KVUqcJ-qdxjkB3iFVFv0N8IigAoPdXEJxKKKUu7F2-cvvWc-lg-nc4-FFFFA0000000016A858A
+[2018-04-04T10:17:47.723] [INFO] things - [32m下单完成"{\"state\":true,\"code\":20,\"msg\":\"库存不足，请重新下单！\"}"[39m
+[2018-04-04T10:17:47.725] [INFO] things - 下单时间13528ms
+[2018-04-04T10:17:48.808] [INFO] things - start get addressID from mobile: 13404986527
+[2018-04-04T10:17:49.875] [INFO] things - {"state":true,"code":0,"data":{"size":10,"index":1,"count":1,"datacount":1,"list":[{"rownumber":1,"SId":1966679,"UserId":"2268457","TelPhone":"13404986527","Zipcode":"000000","Address":"云上城小区3期,4幢24楼2403室","AddressInfo":"云南省昆明市五华区","ShipTo":"张宇","Remark":"","ProvinceId":"530000","CityId":"530100","DistrictsId":"530102","IsDefault":false,"SMNo":null,"RelPhone":null,"Longitude":"102.68923","Latitude":"25.063337","IsVerification":false,"TimeStamp":"2018-03-30 23:01:50"}]}}
+[2018-04-04T10:17:49.876] [INFO] things - create order params { '0': '13404986527',
+  '1': '391',
+  '2': 6,
+  '3': 300,
+  '4': 'Mozilla/5.0 (Linux; Android 4.4.4; LA2-SN Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36[android/1.0.23/ad71a16c0bf1917086683da9bedba74f/446812d9f96266671e87318ef2205d2d]',
+  '5': 1966679,
+  '6': 100530100004,
+  '7': -1,
+  '8': 'acw_tc=AQAAAA5dv1HqbAEAoG5DcAI0oKIiNPMi; Path=/; HttpOnly;ASP.NET_SessionId=kn5qjhlxg2btgjkuuc1dgycz; Path=/; HttpOnly;Vshop-Member=1e8625db2c9d4472bf2451c6ed3a83fa; Expires=Thu, 04 Apr 2019 01:28:18 GMT; Path=/;SERVERID=19df48d02d2df737cbba18bd9d142364|1522805301|1522805301; Path=/' }
+[2018-04-04T10:17:58.389] [INFO] things - coupon info { state: true,
   code: 0,
   data: 
-   { TelPhone: '13404986527',
-     NickName: '13404986527',
-     HeadPortrait: '',
-     SalemanState: -1,
-     AuthState: -1,
-     IsLock: false,
-     IsConfirmationProtocol: true,
-     Certificate: null,
-     CertIdent: 'none',
-     HasPassword: true,
-     DeviceIdent: 'ad71a16c0bf1917086683da9bedba74f',
-     UserId: 2268457,
-     Name: '&13404986527' } }
-[2018-04-04T09:28:22.233] [INFO] things - { state: true,
+   { Cid: '528585fb1fd445f29c8478dc9779fcb9',
+     Name: '茅台云商昆明市五华区服务网点',
+     DName: '昆明全兴利商贸有限公司',
+     Address: '昆明市虹山东路326号',
+     InvoiceCompany: '昆明全兴利商贸有限公司',
+     SHBegin: '08:45:00',
+     SHEnd: '17:30:00',
+     Amount: 1499,
+     Level: 1,
+     DisAmount: 1499,
+     DisCost: 0,
+     LocalCost: 0,
+     LocalZero: 1,
+     LocalZeroCost: -1,
+     OtherCost: -1,
+     OtherZero: -1,
+     OtherZeroCost: -1,
+     InvoiceCost: 22,
+     TakeDeliveryLimit: 7,
+     HasPlainInvoice: true,
+     HasVATInvoice: true,
+     Description: '同城配送：当日11:00之前下单付款成功的当日送达，11:00之后下单付款成功的次日送达。（特殊交通特殊情况延后配送,工作日内配送）\r\n自提地点：昆明市五华区虹山东路326号国酒茅台专卖店。\r\n自提时间：9：00-17:30（双休日正常营业，5件以上建议提前预约自提时间，避免耽误您宝贵时间）\r\n快递配送：根据快递公司安排配送。',
+     StateCode: 0,
+     NetworkType: 0,
+     WorkingDay: '[{"EnDay":"Monday","CnDay":"星期一"},{"EnDay":"Tuesday","CnDay":"星期二"},{"EnDay":"Wednesday","CnDay":"星期三"},{"EnDay":"Thursday","CnDay":"星期四"},{"EnDay":"Friday","CnDay":"星期五"},{"EnDay":"Saturday","CnDay":"星期六"},{"EnDay":"Sunday","CnDay":"星期日"}]' } }
+[2018-04-04T10:18:01.120] [INFO] things - token成功获取到 nc1-01W8fUo7tiNBKrkhR8ACXXKW_mmLGhkLnIG36VUz18x7LJMdKle906gSyQt_Cj7mvS-nc2-0561M3bob-R8gv1KNXk15v5Zpzwr5-aA0d72EwzdOiQ4xKR9f6DSPSSIvp2QaMqKcZ1M4neCWqw5zT-gyGsuRlgJYq1x-cDgIfTcuNH0fSVk1J4AVHI6AIuOO3jhTNMp3Z6YwLBXaxmIci5uutEeL13B1upIG7vtjnFeh4bWvHBMzYjQnWmVFHPgo6wtXehY0iF2d0HGE_9-AoLj71KVGN-jePaHrB4CWY3BTFi2LrlwjWN_pHdwlH86X9Air1g-BZJd4UQYI3tRJDvD6ro7cpJtoU1tmCuQ7gQ1UZzDp9ONxSGYQ8dIgJJjigUtXuBLOTbUTXzs4DPgD_UclwW3lXh1sAxQHojeOF39MSL4bxBD5rdCbbzqzbpMeFVLv6TZPjgzhJDWRXsqF2rCBKWQxym6fHDDGRXoTq2zlPF1x5dSc-nc3-01TzB8fzgmvi9w1w4Zzf-AohP0xHUT6OIZJ3VPR__agodPxU4a7kmWqw_GwV2frDYnohgZoyZLSl_6haakBkxctn9qRewuzJcYPuqZ2Wf3ZeSqdxjkB3iFVFv0N8IigAoPdXEJxKKKUu7F2-cvvWc-lg-nc4-FFFFA0000000016A858A
+[2018-04-04T10:18:22.157] [INFO] things - 位置错误,60秒后重试 { Error: socket hang up
+    at createHangUpError (_http_client.js:254:15)
+    at TLSSocket.socketOnEnd (_http_client.js:346:23)
+    at emitNone (events.js:91:20)
+    at TLSSocket.emit (events.js:185:7)
+    at endReadableNT (_stream_readable.js:974:12)
+    at _combinedTickCallback (internal/process/next_tick.js:74:11)
+    at process._tickCallback (internal/process/next_tick.js:98:9) code: 'ECONNRESET' }
+[2018-04-04T10:18:23.357] [INFO] things - start get addressID from mobile: 19987439054
+[2018-04-04T10:18:25.611] [INFO] things - {"state":true,"code":0,"data":{"size":10,"index":1,"count":1,"datacount":1,"list":[{"rownumber":1,"SId":1966902,"UserId":"2268525","TelPhone":"19987439054","Zipcode":"000000","Address":"版筑翠园,2幢1单元201室","AddressInfo":"云南省昆明市五华区","ShipTo":"李伟","Remark":"","ProvinceId":"530000","CityId":"530100","DistrictsId":"530102","IsDefault":false,"SMNo":null,"RelPhone":null,"Longitude":"102.692032","Latitude":"25.053982","IsVerification":false,"TimeStamp":"2018-03-30 23:48:40"}]}}
+[2018-04-04T10:18:25.612] [INFO] things - create order params { '0': '19987439054',
+  '1': '391',
+  '2': 6,
+  '3': 300,
+  '4': 'Mozilla/5.0 (Linux; Android 4.4.4; LA2-SN Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36[android/1.0.23/682ba6a0e93ff5a17ae6bd03851f2f2d/e98bf9204e10f222aa1fe9e7f5c31f03]',
+  '5': 1966902,
+  '6': 100530100004,
+  '7': -1,
+  '8': 'acw_tc=AQAAAK9VtHg/aAEAoG5DcOK0oHIC95cO; Path=/; HttpOnly;ASP.NET_SessionId=viugyruhqkslcjqebmqigfzd; Path=/; HttpOnly;Vshop-Member=19285c674cca46c0bce11d7fc64a47fc; Expires=Thu, 04 Apr 2019 01:28:19 GMT; Path=/;SERVERID=d7ff3566a46564dfbddba0bd72787651|1522805302|1522805302; Path=/' }
+[2018-04-04T10:18:27.560] [INFO] things - coupon info { state: true,
   code: 0,
   data: 
-   { TelPhone: '19987439054',
-     NickName: '19987439054',
-     HeadPortrait: '',
-     SalemanState: -1,
-     AuthState: -1,
-     IsLock: false,
-     IsConfirmationProtocol: true,
-     Certificate: null,
-     CertIdent: 'none',
-     HasPassword: true,
-     DeviceIdent: '682ba6a0e93ff5a17ae6bd03851f2f2d',
-     UserId: 2268525,
-     Name: '&19987439054' } }
-[2018-04-04T09:28:23.184] [INFO] things - { state: true,
+   { Cid: '5f668d60b41e4011a0f7bd3d0aada36c',
+     Name: '茅台云商昆明市五华区服务网点',
+     DName: '昆明全兴利商贸有限公司',
+     Address: '昆明市虹山东路326号',
+     InvoiceCompany: '昆明全兴利商贸有限公司',
+     SHBegin: '08:45:00',
+     SHEnd: '17:30:00',
+     Amount: 1499,
+     Level: 1,
+     DisAmount: 1499,
+     DisCost: 0,
+     LocalCost: 0,
+     LocalZero: 1,
+     LocalZeroCost: -1,
+     OtherCost: -1,
+     OtherZero: -1,
+     OtherZeroCost: -1,
+     InvoiceCost: 22,
+     TakeDeliveryLimit: 7,
+     HasPlainInvoice: true,
+     HasVATInvoice: true,
+     Description: '同城配送：当日11:00之前下单付款成功的当日送达，11:00之后下单付款成功的次日送达。（特殊交通特殊情况延后配送,工作日内配送）\r\n自提地点：昆明市五华区虹山东路326号国酒茅台专卖店。\r\n自提时间：9：00-17:30（双休日正常营业，5件以上建议提前预约自提时间，避免耽误您宝贵时间）\r\n快递配送：根据快递公司安排配送。',
+     StateCode: 0,
+     NetworkType: 0,
+     WorkingDay: '[{"EnDay":"Monday","CnDay":"星期一"},{"EnDay":"Tuesday","CnDay":"星期二"},{"EnDay":"Wednesday","CnDay":"星期三"},{"EnDay":"Thursday","CnDay":"星期四"},{"EnDay":"Friday","CnDay":"星期五"},{"EnDay":"Saturday","CnDay":"星期六"},{"EnDay":"Sunday","CnDay":"星期日"}]' } }
+[2018-04-04T10:18:30.294] [INFO] things - token成功获取到 nc1-01W8fUo7tiNBKrkhR8ACXXKZVc1Kh2WvXcVF1ckY8VF_hBhT9vZtHsmkaNT4JCQYWV-nc2-0561M3bob-R8gv1KNXk15v5Zpzwr5-aA0d72EwzdOiQ4zaoLbsAh-Jru_9FifR4E4LfRS_vnK3smYDMvN8LwHqwjVHKJOFxB4fKc6t-U-roHJBLBAah1WVb8cFYoD4ed7r6YwLBXaxmIci5uutEeL13G8kKsD8UCcyzcX0_tb8n5ysGhv5YQTU6RVoYEbTXUHmPE1OO-py00eeSCzdo_ixwRsT-cyqIajCIxJoeiICNWx8d6yTQLSSp1B_pBV6d1ddpIUBtIEMGMYzxwgwv8sth9oU1tmCuQ7gQ1UZzDp9ONxSGYQ8dIgJJjigUtXuBLOTpxtSDPxWplsS9l0OaxMn4lsAxQHojeOF39MSL4bxBD6ZZZgTa1lGsw0L_79Ark6zLYGINDCt9Kdl4MdrrZRGlW0ySSmWNNSZfHE4hFObg6A-nc3-01TzB8fzgmvi9w1w4Zzf-AopKsMjkECvr37kbmId-pkYblTnwkGlWjlB9gtEfybaYwN6mzqrDg8w3aSL9pxl6AzGIfdUIJ1UmCJbFsetfIbuKqdxjkB3iFVFv0N8IigAoPdXEJxKKKUu7F2-cvvWc-lg-nc4-FFFFA0000000016A858A
+[2018-04-04T10:18:42.232] [INFO] things - [32m下单完成"{\"state\":true,\"code\":20,\"msg\":\"库存不足，请重新下单！\"}"[39m
+[2018-04-04T10:18:42.234] [INFO] things - 下单时间18878ms
+[2018-04-04T10:18:43.318] [INFO] things - start get addressID from mobile: 15911925463
+[2018-04-04T10:18:45.393] [INFO] things - {"state":true,"code":0,"data":{"size":10,"index":1,"count":1,"datacount":1,"list":[{"rownumber":1,"SId":1604246,"UserId":"2023446","TelPhone":"15911925463","Zipcode":"000000","Address":"昆明宝岛妇产医院,住院楼15楼产2科主任办公室","AddressInfo":"云南省昆明市五华区","ShipTo":"冷文江","Remark":"","ProvinceId":"530000","CityId":"530100","DistrictsId":"530102","IsDefault":false,"SMNo":null,"RelPhone":null,"Longitude":"102.664553","Latitude":"25.063881","IsVerification":true,"TimeStamp":"2018-01-31 18:51:46"}]}}
+[2018-04-04T10:18:45.393] [INFO] things - create order params { '0': '15911925463',
+  '1': '391',
+  '2': 6,
+  '3': 300,
+  '4': 'Mozilla/5.0 (Linux; Android 4.4.4; LA2-SN Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36[android/1.0.23/397256a80377f1f6383839aa273d194d/2d1cd30a80ce85eba03f1375b2054a35]',
+  '5': 1604246,
+  '6': 100530100004,
+  '7': -1,
+  '8': 'acw_tc=AQAAAKGyxUbT8QAAoG5DcBBvwAFGENmb; Path=/; HttpOnly;ASP.NET_SessionId=c1uymjwez3ec2uunwiwovzue; Path=/; HttpOnly;Vshop-Member=4f3817853f9540998aeeb3a6f7bbb980; Expires=Thu, 04 Apr 2019 01:28:20 GMT; Path=/;SERVERID=d6dcdd16ac5ff39d1965783e657b37f4|1522805303|1522805303; Path=/' }
+[2018-04-04T10:18:47.326] [INFO] things - coupon info { state: true,
   code: 0,
   data: 
-   { TelPhone: '15911925463',
-     NickName: '15911925463',
-     HeadPortrait: '',
-     SalemanState: -1,
-     AuthState: -1,
-     IsLock: false,
-     IsConfirmationProtocol: true,
-     Certificate: null,
-     CertIdent: 'none',
-     HasPassword: true,
-     DeviceIdent: '397256a80377f1f6383839aa273d194d',
-     UserId: 2023446,
-     Name: '&15911925463' } }
-[2018-04-04T09:28:24.231] [INFO] things - { state: true,
+   { Cid: 'e355507abd9743309002989235ef3e55',
+     Name: '茅台云商昆明市五华区服务网点',
+     DName: '昆明全兴利商贸有限公司',
+     Address: '昆明市虹山东路326号',
+     InvoiceCompany: '昆明全兴利商贸有限公司',
+     SHBegin: '08:45:00',
+     SHEnd: '17:30:00',
+     Amount: 1499,
+     Level: 1,
+     DisAmount: 1499,
+     DisCost: 0,
+     LocalCost: 0,
+     LocalZero: 1,
+     LocalZeroCost: -1,
+     OtherCost: -1,
+     OtherZero: -1,
+     OtherZeroCost: -1,
+     InvoiceCost: 22,
+     TakeDeliveryLimit: 7,
+     HasPlainInvoice: true,
+     HasVATInvoice: true,
+     Description: '同城配送：当日11:00之前下单付款成功的当日送达，11:00之后下单付款成功的次日送达。（特殊交通特殊情况延后配送,工作日内配送）\r\n自提地点：昆明市五华区虹山东路326号国酒茅台专卖店。\r\n自提时间：9：00-17:30（双休日正常营业，5件以上建议提前预约自提时间，避免耽误您宝贵时间）\r\n快递配送：根据快递公司安排配送。',
+     StateCode: 0,
+     NetworkType: 0,
+     WorkingDay: '[{"EnDay":"Monday","CnDay":"星期一"},{"EnDay":"Tuesday","CnDay":"星期二"},{"EnDay":"Wednesday","CnDay":"星期三"},{"EnDay":"Thursday","CnDay":"星期四"},{"EnDay":"Friday","CnDay":"星期五"},{"EnDay":"Saturday","CnDay":"星期六"},{"EnDay":"Sunday","CnDay":"星期日"}]' } }
+[2018-04-04T10:18:50.038] [INFO] things - token成功获取到 nc1-01W8fUo7tiNBKrkhR8ACXXKd0tv9nB7MJuClKhF41KgnoNzkD7jPrsNMVjO-8JN2yB-nc2-0561M3bob-R8gv1KNXk15v5Zpzwr5-aA0d72EwzdOiQ4xAOXU60w_GnfscLGZfn6B10A0OSzrSoezjlGoXWro_NLQWEB-aOQhCrmhwTGKION9qOB3YvZVGdkXUIZZzTEig6YwLBXaxmIci5uutEeL13PJ1dmxsSm-NmM5IpCkXoPS9_oQ6pKI4a5ZLu7oRrvW4gwmth9ImGKvragz8aUUV1xcxxkbnL7fLs4upTdqUaat_H7PV_tV3I5kC-z3Gjgz4T3fNCMF-KLfG4kesJPK969oU1tmCuQ7gQ1UZzDp9ONxSGYQ8dIgJJjigUtXuBLOTWLdoVuvsN0WRlpULHFXSAFsAxQHojeOF39MSL4bxBD4IRlVjRwJ1c-tjRm7LdtjzrP7fSa7kWg1UWZB3K0TQdafHDDGRXoTq2zlPF1x5dSc-nc3-01TzB8fzgmvi9w1w4Zzf-Aoix7HVxP8gIDFI47IeCa5Jvf7XLC_Dwkrt_Fq9eYrvDzStQi85nuHmVsYaq8A0RhgZZ0VS4mv6NFkHBMo-KeqTWqdxjkB3iFVFv0N8IigAoPdXEJxKKKUu7F2-cvvWc-lg-nc4-FFFFA0000000016A858A
+[2018-04-04T10:19:05.722] [INFO] things - [32m下单完成"{\"state\":true,\"code\":20,\"msg\":\"库存不足，请重新下单！\"}"[39m
+[2018-04-04T10:19:05.722] [INFO] things - 下单时间22405ms
+[2018-04-04T10:19:06.961] [INFO] things - start get addressID from mobile: 18387455327
+[2018-04-04T10:19:08.326] [INFO] things - {"state":true,"code":0,"data":{"size":10,"index":1,"count":1,"datacount":1,"list":[{"rownumber":1,"SId":1965960,"UserId":"2268164","TelPhone":"18387455327","Zipcode":"000000","Address":"高新公安分局,6楼604室","AddressInfo":"云南省昆明市五华区","ShipTo":"杨顺","Remark":"","ProvinceId":"530000","CityId":"530100","DistrictsId":"530102","IsDefault":false,"SMNo":null,"RelPhone":null,"Longitude":"102.660574","Latitude":"25.06956","IsVerification":false,"TimeStamp":"2018-03-30 20:56:16"}]}}
+[2018-04-04T10:19:08.327] [INFO] things - create order params { '0': '18387455327',
+  '1': '391',
+  '2': 6,
+  '3': 300,
+  '4': 'Mozilla/5.0 (Linux; Android 4.4.4; LA2-SN Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36[android/1.0.23/62ac40ba50233ad78170b1eece1d773c/68874bbbf7b0993bb8b586466fce1e47]',
+  '5': 1965960,
+  '6': 100530100004,
+  '7': -1,
+  '8': 'acw_tc=AQAAAIcC9HgFDQ4AoG5DcKrMuKK6KXI5; Path=/; HttpOnly;ASP.NET_SessionId=b5o3jztljzqigvqdiwdow0ks; Path=/; HttpOnly;Vshop-Member=6e2f58f8a6254a70aabddf8aebf43cd9; Expires=Thu, 04 Apr 2019 01:28:16 GMT; Path=/;SERVERID=e0be7116fc95174c0c92660b6cc51b85|1522805291|1522805291; Path=/' }
+[2018-04-04T10:19:24.429] [INFO] things - coupon info { state: true,
   code: 0,
   data: 
-   { TelPhone: '13769773247',
-     NickName: '13769773247',
-     HeadPortrait: '',
-     SalemanState: -1,
-     AuthState: -1,
-     IsLock: false,
-     IsConfirmationProtocol: true,
-     Certificate: null,
-     CertIdent: 'none',
-     HasPassword: true,
-     DeviceIdent: '1e83e0876adb6b4defa2359a2f0626b2',
-     UserId: 2025853,
-     Name: '&13769773247' } }
-[2018-04-04T09:28:24.232] [INFO] things - 全部登录完成
+   { Cid: '8b82564eb5314fffbf7e9663aa2e4ca5',
+     Name: '茅台云商昆明市五华区服务网点',
+     DName: '昆明全兴利商贸有限公司',
+     Address: '昆明市虹山东路326号',
+     InvoiceCompany: '昆明全兴利商贸有限公司',
+     SHBegin: '08:45:00',
+     SHEnd: '17:30:00',
+     Amount: 1499,
+     Level: 1,
+     DisAmount: 1499,
+     DisCost: 0,
+     LocalCost: 0,
+     LocalZero: 1,
+     LocalZeroCost: -1,
+     OtherCost: -1,
+     OtherZero: -1,
+     OtherZeroCost: -1,
+     InvoiceCost: 22,
+     TakeDeliveryLimit: 7,
+     HasPlainInvoice: true,
+     HasVATInvoice: true,
+     Description: '同城配送：当日11:00之前下单付款成功的当日送达，11:00之后下单付款成功的次日送达。（特殊交通特殊情况延后配送,工作日内配送）\r\n自提地点：昆明市五华区虹山东路326号国酒茅台专卖店。\r\n自提时间：9：00-17:30（双休日正常营业，5件以上建议提前预约自提时间，避免耽误您宝贵时间）\r\n快递配送：根据快递公司安排配送。',
+     StateCode: 0,
+     NetworkType: 0,
+     WorkingDay: '[{"EnDay":"Monday","CnDay":"星期一"},{"EnDay":"Tuesday","CnDay":"星期二"},{"EnDay":"Wednesday","CnDay":"星期三"},{"EnDay":"Thursday","CnDay":"星期四"},{"EnDay":"Friday","CnDay":"星期五"},{"EnDay":"Saturday","CnDay":"星期六"},{"EnDay":"Sunday","CnDay":"星期日"}]' } }
+[2018-04-04T10:19:27.117] [INFO] things - token成功获取到 nc1-01W8fUo7tiNBKrkhR8ACXXKeBXu_vFAnyvbDixYJKhFee5vbzcywEwq7nAl1f1ZkwX-nc2-0561M3bob-R8gv1KNXk15v5Zpzwr5-aA0d72EwzdOiQ4z27MtxO74ul7LHuQ5MYIhpQZtrJucnf3iKYT5ru3HnkPEKp3lzFk0N8I8iT3sxCVLGl9uojaigPqzdAeQjqjhs6YwLBXaxmIci5uutEeL13NQnzzVI0TNuZkh2EPiPgK2oAJmzXJT_fpWZeFbd9d4Rz1cGOK2ygb04YcXKvafYKh_-2eM4t1YH4IOe_J62txkhQjsOmlCggk0xRWerwhKktbN01IzDVgCf45-O9qCh39oU1tmCuQ7gQ1UZzDp9ONxSGYQ8dIgJJjigUtXuBLOTmHt00gt3973Pt2EUi_EWv1sAxQHojeOF39MSL4bxBD5RS49XOCXNzIG_J9YBRYP1QzAr3QzotgcUL00vPSHciJPNThqCjJRtnSiGzmuQNUY-nc3-01TzB8fzgmvi9w1w4Zzf-AojtD4EyY8YXzy5sPmBejvtF488ohF4fg6lnu-G5BVVrAjPCMIFMfHVE-r4SoBKiYLvGVPUP4Hgz8TRN2Ru9sRByqdxjkB3iFVFv0N8IigAoPdXEJxKKKUu7F2-cvvWc-lg-nc4-FFFFA0000000016A858A
+[2018-04-04T10:19:52.243] [INFO] things - [32m下单完成"{\"state\":true,\"code\":20,\"msg\":\"库存不足，请重新下单！\"}"[39m
+[2018-04-04T10:19:52.244] [INFO] things - 下单时间45283ms
+[2018-04-04T10:19:53.322] [INFO] things - start get addressID from mobile: 13404986527
+[2018-04-04T10:19:54.703] [INFO] things - {"state":true,"code":0,"data":{"size":10,"index":1,"count":1,"datacount":1,"list":[{"rownumber":1,"SId":1966679,"UserId":"2268457","TelPhone":"13404986527","Zipcode":"000000","Address":"云上城小区3期,4幢24楼2403室","AddressInfo":"云南省昆明市五华区","ShipTo":"张宇","Remark":"","ProvinceId":"530000","CityId":"530100","DistrictsId":"530102","IsDefault":false,"SMNo":null,"RelPhone":null,"Longitude":"102.68923","Latitude":"25.063337","IsVerification":false,"TimeStamp":"2018-03-30 23:01:50"}]}}
+[2018-04-04T10:19:54.704] [INFO] things - create order params { '0': '13404986527',
+  '1': '391',
+  '2': 6,
+  '3': 300,
+  '4': 'Mozilla/5.0 (Linux; Android 4.4.4; LA2-SN Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36[android/1.0.23/ad71a16c0bf1917086683da9bedba74f/446812d9f96266671e87318ef2205d2d]',
+  '5': 1966679,
+  '6': 100530100004,
+  '7': -1,
+  '8': 'acw_tc=AQAAAA5dv1HqbAEAoG5DcAI0oKIiNPMi; Path=/; HttpOnly;ASP.NET_SessionId=kn5qjhlxg2btgjkuuc1dgycz; Path=/; HttpOnly;Vshop-Member=1e8625db2c9d4472bf2451c6ed3a83fa; Expires=Thu, 04 Apr 2019 01:28:18 GMT; Path=/;SERVERID=19df48d02d2df737cbba18bd9d142364|1522805301|1522805301; Path=/' }
+[2018-04-04T10:19:56.238] [INFO] things - coupon info { state: true,
+  code: 0,
+  data: 
+   { Cid: '1d4b88b158b3448481ef6c3813d4dbf5',
+     Name: '茅台云商昆明市五华区服务网点',
+     DName: '昆明全兴利商贸有限公司',
+     Address: '昆明市虹山东路326号',
+     InvoiceCompany: '昆明全兴利商贸有限公司',
+     SHBegin: '08:45:00',
+     SHEnd: '17:30:00',
+     Amount: 1499,
+     Level: 1,
+     DisAmount: 1499,
+     DisCost: 0,
+     LocalCost: 0,
+     LocalZero: 1,
+     LocalZeroCost: -1,
+     OtherCost: -1,
+     OtherZero: -1,
+     OtherZeroCost: -1,
+     InvoiceCost: 22,
+     TakeDeliveryLimit: 7,
+     HasPlainInvoice: true,
+     HasVATInvoice: true,
+     Description: '同城配送：当日11:00之前下单付款成功的当日送达，11:00之后下单付款成功的次日送达。（特殊交通特殊情况延后配送,工作日内配送）\r\n自提地点：昆明市五华区虹山东路326号国酒茅台专卖店。\r\n自提时间：9：00-17:30（双休日正常营业，5件以上建议提前预约自提时间，避免耽误您宝贵时间）\r\n快递配送：根据快递公司安排配送。',
+     StateCode: 0,
+     NetworkType: 0,
+     WorkingDay: '[{"EnDay":"Monday","CnDay":"星期一"},{"EnDay":"Tuesday","CnDay":"星期二"},{"EnDay":"Wednesday","CnDay":"星期三"},{"EnDay":"Thursday","CnDay":"星期四"},{"EnDay":"Friday","CnDay":"星期五"},{"EnDay":"Saturday","CnDay":"星期六"},{"EnDay":"Sunday","CnDay":"星期日"}]' } }
+[2018-04-04T10:19:58.937] [INFO] things - token成功获取到 nc1-01W8fUo7tiNBKrkhR8ACXXKXvu0l3P6671Ny_xXNUgXk5OOzhCwnRAPb3GU8MNSI-Q-nc2-0561M3bob-R8gv1KNXk15v5Zpzwr5-aA0d72EwzdOiQ4z1gV33fgIko08cF8EhcjSgo_f99XrKhy3276A43utND_8bsrVGSr22G7dpt9aj8osQ9cgG8ZxOYSXVLz_1Al9h6YwLBXaxmIci5uutEeL13GsbKNcuDf90qO-AonxEU01MYV2_YlxO7FbXBVYn53ZnYX1bdEfBrW-Z5a0C-GF2pT-dB5ZT1o2IoDdKzygBmc95xGK52IhVJytMf5dXlx90CdanPKysg3JEFlpfXncN8NoU1tmCuQ7gQ1UZzDp9ONxSGYQ8dIgJJjigUtXuBLOTpXC75CybouXrE1kRRsXkeFsAxQHojeOF39MSL4bxBD4IWj9SDjeD2reiGY_HfJq0crgXjKu38_qZrGvhJD4Jpm0ySSmWNNSZfHE4hFObg6A-nc3-01TzB8fzgmvi9w1w4Zzf-AopO843fLQIq9LfyrpbkwWvGeAZbRe7YZLjs1UOOYziGq1c5Y9sIDcMAnasA0MyIEqDN-AfT48BBqrODBymDdByKqdxjkB3iFVFv0N8IigAoPdXEJxKKKUu7F2-cvvWc-lg-nc4-FFFFA0000000016A858A
+[2018-04-04T10:20:08.613] [INFO] things - [32m下单完成"{\"state\":true,\"code\":20,\"msg\":\"库存不足，请重新下单！\"}"[39m
+[2018-04-04T10:20:08.613] [INFO] things - 下单时间15294ms
+[2018-04-04T10:20:09.695] [INFO] things - start get addressID from mobile: 15911925463
+[2018-04-04T10:20:10.376] [INFO] things - {"state":true,"code":0,"data":{"size":10,"index":1,"count":1,"datacount":1,"list":[{"rownumber":1,"SId":1604246,"UserId":"2023446","TelPhone":"15911925463","Zipcode":"000000","Address":"昆明宝岛妇产医院,住院楼15楼产2科主任办公室","AddressInfo":"云南省昆明市五华区","ShipTo":"冷文江","Remark":"","ProvinceId":"530000","CityId":"530100","DistrictsId":"530102","IsDefault":false,"SMNo":null,"RelPhone":null,"Longitude":"102.664553","Latitude":"25.063881","IsVerification":true,"TimeStamp":"2018-01-31 18:51:46"}]}}
+[2018-04-04T10:20:10.378] [INFO] things - create order params { '0': '15911925463',
+  '1': '391',
+  '2': 6,
+  '3': 300,
+  '4': 'Mozilla/5.0 (Linux; Android 4.4.4; LA2-SN Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36[android/1.0.23/397256a80377f1f6383839aa273d194d/2d1cd30a80ce85eba03f1375b2054a35]',
+  '5': 1604246,
+  '6': 100530100004,
+  '7': -1,
+  '8': 'acw_tc=AQAAAKGyxUbT8QAAoG5DcBBvwAFGENmb; Path=/; HttpOnly;ASP.NET_SessionId=c1uymjwez3ec2uunwiwovzue; Path=/; HttpOnly;Vshop-Member=4f3817853f9540998aeeb3a6f7bbb980; Expires=Thu, 04 Apr 2019 01:28:20 GMT; Path=/;SERVERID=d6dcdd16ac5ff39d1965783e657b37f4|1522805303|1522805303; Path=/' }
+[2018-04-04T10:20:11.464] [INFO] things - coupon info { state: true,
+  code: 0,
+  data: 
+   { Cid: '80f22fd69b9740ffbff7fbe1e40b7662',
+     Name: '茅台云商昆明市五华区服务网点',
+     DName: '昆明全兴利商贸有限公司',
+     Address: '昆明市虹山东路326号',
+     InvoiceCompany: '昆明全兴利商贸有限公司',
+     SHBegin: '08:45:00',
+     SHEnd: '17:30:00',
+     Amount: 1499,
+     Level: 1,
+     DisAmount: 1499,
+     DisCost: 0,
+     LocalCost: 0,
+     LocalZero: 1,
+     LocalZeroCost: -1,
+     OtherCost: -1,
+     OtherZero: -1,
+     OtherZeroCost: -1,
+     InvoiceCost: 22,
+     TakeDeliveryLimit: 7,
+     HasPlainInvoice: true,
+     HasVATInvoice: true,
+     Description: '同城配送：当日11:00之前下单付款成功的当日送达，11:00之后下单付款成功的次日送达。（特殊交通特殊情况延后配送,工作日内配送）\r\n自提地点：昆明市五华区虹山东路326号国酒茅台专卖店。\r\n自提时间：9：00-17:30（双休日正常营业，5件以上建议提前预约自提时间，避免耽误您宝贵时间）\r\n快递配送：根据快递公司安排配送。',
+     StateCode: 0,
+     NetworkType: 0,
+     WorkingDay: '[{"EnDay":"Monday","CnDay":"星期一"},{"EnDay":"Tuesday","CnDay":"星期二"},{"EnDay":"Wednesday","CnDay":"星期三"},{"EnDay":"Thursday","CnDay":"星期四"},{"EnDay":"Friday","CnDay":"星期五"},{"EnDay":"Saturday","CnDay":"星期六"},{"EnDay":"Sunday","CnDay":"星期日"}]' } }
+[2018-04-04T10:20:14.241] [INFO] things - token成功获取到 nc1-01W8fUo7tiNBKrkhR8ACXXKd2W21HzdDlCb0SS8_OdQ1iFnHas9C_anJBjpSwYTKcJ-nc2-0561M3bob-R8gv1KNXk15v5Zpzwr5-aA0d72EwzdOiQ4xAOXU60w_GnfscLGZfn6B1U2dVQKIJoxHUwp1kauzBYXiRywmF-D_Mx3PfFZtzxO-bjLLBbLsA3yEqH-hFnQEy6YwLBXaxmIci5uutEeL13H9_3ILVPfYses2euYrnoQps0RarjmU5TDBtDyx-iSfp9BKQSHfi2jsOFNisfAyRYY4m2dYpawPFwkQWAdTJNfmfOS9yDtlaZoySWSoCQCp2IOGvdaTVMeIMg3YYpYZFgtoU1tmCuQ7gQ1UZzDp9ONxSGYQ8dIgJJjigUtXuBLOTcoD3yJ3vdf6n8Cmy9B2e6lsAxQHojeOF39MSL4bxBD5uoutrDRpFUd0DAA0Lo9G9YcqtVc3MaPc6RsbKxsMoBBTcSptCeBZYK4PwmnlBa0w-nc3-01TzB8fzgmvi9w1w4Zzf-AonXFFz1-y_smSbCT2IQ7vOxSw4HEtkL0a2BLKzNA1dhnuWvenBYs0NYZ1uGYAUWNe1PaWjQv-v00dwOK1w9u0r2qdxjkB3iFVFv0N8IigAoPdXEJxKKKUu7F2-cvvWc-lg-nc4-FFFFA0000000016A858A
+[2018-04-04T10:20:32.383] [INFO] things - [32m下单完成"{\"state\":true,\"code\":20,\"msg\":\"库存不足，请重新下单！\"}"[39m
+[2018-04-04T10:20:32.383] [INFO] things - 下单时间22690ms
+[2018-04-04T10:20:33.464] [INFO] things - start get addressID from mobile: 13404986527
+[2018-04-04T10:20:34.431] [INFO] things - {"state":true,"code":0,"data":{"size":10,"index":1,"count":1,"datacount":1,"list":[{"rownumber":1,"SId":1966679,"UserId":"2268457","TelPhone":"13404986527","Zipcode":"000000","Address":"云上城小区3期,4幢24楼2403室","AddressInfo":"云南省昆明市五华区","ShipTo":"张宇","Remark":"","ProvinceId":"530000","CityId":"530100","DistrictsId":"530102","IsDefault":false,"SMNo":null,"RelPhone":null,"Longitude":"102.68923","Latitude":"25.063337","IsVerification":false,"TimeStamp":"2018-03-30 23:01:50"}]}}
+[2018-04-04T10:20:34.432] [INFO] things - create order params { '0': '13404986527',
+  '1': '391',
+  '2': 6,
+  '3': 300,
+  '4': 'Mozilla/5.0 (Linux; Android 4.4.4; LA2-SN Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36[android/1.0.23/ad71a16c0bf1917086683da9bedba74f/446812d9f96266671e87318ef2205d2d]',
+  '5': 1966679,
+  '6': 100530100004,
+  '7': -1,
+  '8': 'acw_tc=AQAAAA5dv1HqbAEAoG5DcAI0oKIiNPMi; Path=/; HttpOnly;ASP.NET_SessionId=kn5qjhlxg2btgjkuuc1dgycz; Path=/; HttpOnly;Vshop-Member=1e8625db2c9d4472bf2451c6ed3a83fa; Expires=Thu, 04 Apr 2019 01:28:18 GMT; Path=/;SERVERID=19df48d02d2df737cbba18bd9d142364|1522805301|1522805301; Path=/' }
+[2018-04-04T10:20:35.250] [INFO] things - coupon info { state: true,
+  code: 0,
+  data: 
+   { Cid: '9627c392743e4558a62d215a139b24b4',
+     Name: '茅台云商昆明市五华区服务网点',
+     DName: '昆明全兴利商贸有限公司',
+     Address: '昆明市虹山东路326号',
+     InvoiceCompany: '昆明全兴利商贸有限公司',
+     SHBegin: '08:45:00',
+     SHEnd: '17:30:00',
+     Amount: 1499,
+     Level: 1,
+     DisAmount: 1499,
+     DisCost: 0,
+     LocalCost: 0,
+     LocalZero: 1,
+     LocalZeroCost: -1,
+     OtherCost: -1,
+     OtherZero: -1,
+     OtherZeroCost: -1,
+     InvoiceCost: 22,
+     TakeDeliveryLimit: 7,
+     HasPlainInvoice: true,
+     HasVATInvoice: true,
+     Description: '同城配送：当日11:00之前下单付款成功的当日送达，11:00之后下单付款成功的次日送达。（特殊交通特殊情况延后配送,工作日内配送）\r\n自提地点：昆明市五华区虹山东路326号国酒茅台专卖店。\r\n自提时间：9：00-17:30（双休日正常营业，5件以上建议提前预约自提时间，避免耽误您宝贵时间）\r\n快递配送：根据快递公司安排配送。',
+     StateCode: 0,
+     NetworkType: 0,
+     WorkingDay: '[{"EnDay":"Monday","CnDay":"星期一"},{"EnDay":"Tuesday","CnDay":"星期二"},{"EnDay":"Wednesday","CnDay":"星期三"},{"EnDay":"Thursday","CnDay":"星期四"},{"EnDay":"Friday","CnDay":"星期五"},{"EnDay":"Saturday","CnDay":"星期六"},{"EnDay":"Sunday","CnDay":"星期日"}]' } }
+[2018-04-04T10:20:37.976] [INFO] things - token成功获取到 nc1-01W8fUo7tiNBKrkhR8ACXXKa1C8APr4l3YbLaOemxfUAs5N8zUNvrLZEw_Hjf2FgTM-nc2-0561M3bob-R8gv1KNXk15v5Zpzwr5-aA0d72EwzdOiQ4yF_oZXhNR3wj9Ui770CX4ey0XHIuErIdi9DXf9ZqUbcVX1gE8q20D_0j_GH07XmS-UyZMTMv-kiRf-5z8ggZGh6YwLBXaxmIci5uutEeL13MnuTpJgcnX36muQ_zs9OCEcL4a6hSeDO0yONm-QXqu_BZRXZU2ByOkF3NKDlu1TFicugV3qgxdB_940XUA4iBFivkq-JjHVqgdiivn93MNn52AnazPttmtWQz8gtWH7qdoU1tmCuQ7gQ1UZzDp9ONxSGYQ8dIgJJjigUtXuBLOT70yq0R_Zpf5RTk4rPgL2TlsAxQHojeOF39MSL4bxBD6sc8PBncbzOQ5vv5uJ93-30VhVOMTYTA8BfEHsEZM8ZqfHDDGRXoTq2zlPF1x5dSc-nc3-01TzB8fzgmvi9w1w4Zzf-AonHmcsCOvkGN4VdDisvJPoN_IN7vYGkuq25DtERXyjr6r3tZ4tnLmKgbzNviQOpz4k5CCskGdlza-uFgjW-hiJ-qdxjkB3iFVFv0N8IigAoPdXEJxKKKUu7F2-cvvWc-lg-nc4-FFFFA0000000016A858A
+[2018-04-04T10:20:52.557] [INFO] things - [32m下单完成"{\"state\":true,\"code\":20,\"msg\":\"库存不足，请重新下单！\"}"[39m
+[2018-04-04T10:20:52.557] [INFO] things - 下单时间19094ms
+[2018-04-04T10:20:53.629] [INFO] things - start get addressID from mobile: 13404986527
+[2018-04-04T10:20:54.502] [INFO] things - {"state":true,"code":0,"data":{"size":10,"index":1,"count":1,"datacount":1,"list":[{"rownumber":1,"SId":1966679,"UserId":"2268457","TelPhone":"13404986527","Zipcode":"000000","Address":"云上城小区3期,4幢24楼2403室","AddressInfo":"云南省昆明市五华区","ShipTo":"张宇","Remark":"","ProvinceId":"530000","CityId":"530100","DistrictsId":"530102","IsDefault":false,"SMNo":null,"RelPhone":null,"Longitude":"102.68923","Latitude":"25.063337","IsVerification":false,"TimeStamp":"2018-03-30 23:01:50"}]}}
+[2018-04-04T10:20:54.502] [INFO] things - create order params { '0': '13404986527',
+  '1': '391',
+  '2': 6,
+  '3': 300,
+  '4': 'Mozilla/5.0 (Linux; Android 4.4.4; LA2-SN Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36[android/1.0.23/ad71a16c0bf1917086683da9bedba74f/446812d9f96266671e87318ef2205d2d]',
+  '5': 1966679,
+  '6': 100530100004,
+  '7': -1,
+  '8': 'acw_tc=AQAAAA5dv1HqbAEAoG5DcAI0oKIiNPMi; Path=/; HttpOnly;ASP.NET_SessionId=kn5qjhlxg2btgjkuuc1dgycz; Path=/; HttpOnly;Vshop-Member=1e8625db2c9d4472bf2451c6ed3a83fa; Expires=Thu, 04 Apr 2019 01:28:18 GMT; Path=/;SERVERID=19df48d02d2df737cbba18bd9d142364|1522805301|1522805301; Path=/' }
+[2018-04-04T10:20:55.423] [INFO] things - coupon info { state: true,
+  code: 0,
+  data: 
+   { Cid: '2ebdde6e0eb64368b791bf43557656cc',
+     Name: '茅台云商昆明市五华区服务网点',
+     DName: '昆明全兴利商贸有限公司',
+     Address: '昆明市虹山东路326号',
+     InvoiceCompany: '昆明全兴利商贸有限公司',
+     SHBegin: '08:45:00',
+     SHEnd: '17:30:00',
+     Amount: 1499,
+     Level: 1,
+     DisAmount: 1499,
+     DisCost: 0,
+     LocalCost: 0,
+     LocalZero: 1,
+     LocalZeroCost: -1,
+     OtherCost: -1,
+     OtherZero: -1,
+     OtherZeroCost: -1,
+     InvoiceCost: 22,
+     TakeDeliveryLimit: 7,
+     HasPlainInvoice: true,
+     HasVATInvoice: true,
+     Description: '同城配送：当日11:00之前下单付款成功的当日送达，11:00之后下单付款成功的次日送达。（特殊交通特殊情况延后配送,工作日内配送）\r\n自提地点：昆明市五华区虹山东路326号国酒茅台专卖店。\r\n自提时间：9：00-17:30（双休日正常营业，5件以上建议提前预约自提时间，避免耽误您宝贵时间）\r\n快递配送：根据快递公司安排配送。',
+     StateCode: 0,
+     NetworkType: 0,
+     WorkingDay: '[{"EnDay":"Monday","CnDay":"星期一"},{"EnDay":"Tuesday","CnDay":"星期二"},{"EnDay":"Wednesday","CnDay":"星期三"},{"EnDay":"Thursday","CnDay":"星期四"},{"EnDay":"Friday","CnDay":"星期五"},{"EnDay":"Saturday","CnDay":"星期六"},{"EnDay":"Sunday","CnDay":"星期日"}]' } }
+[2018-04-04T10:20:58.085] [INFO] things - token成功获取到 nc1-01W8fUo7tiNBKrkhR8ACXXKRyCZmYCbbGKjCwasLyFsj3DOwdKkpazEXsVs3AAPk_X-nc2-0561M3bob-R8gv1KNXk15v5Zpzwr5-aA0d72EwzdOiQ4yGEttHouIyva3qgLM576Jms7kyZVb2KF0RMc5XFyHiw4mG4-QC2nplmAPG7UfgHaRnIQWwnKpL3ouVgT_PB8gO6YwLBXaxmIci5uutEeL13KrOBNDwK8IOvIvB-8rUQX0vAkZ5mV_UlDzUD87J9vrVqkI0KPy43NNb6_oI7YpeJp3u0Ma-yReBzdwxFSPA_6orVDcBr2NI_p7TPUuAiLc63TxRumEK_-5DPT7mFhteHdoU1tmCuQ7gQ1UZzDp9ONxSGYQ8dIgJJjigUtXuBLOTgbc0uK3P6CG0fpaC94wcR1sAxQHojeOF39MSL4bxBD4CSE3T7wmoYQSwduDOmwEx6W9PZH0fMmkATdatp3qYRqfHDDGRXoTq2zlPF1x5dSc-nc3-01TzB8fzgmvi9w1w4Zzf-Aog2JsfGFBPCnfeioqTCJy5vT8h_T-BMIQre4Du20w0X6c4DMwJ1d6fkq5UKOJFA706RMFvKgrTUyXqc5YVpnQWKqdxjkB3iFVFv0N8IigAoPdXEJxKKKUu7F2-cvvWc-lg-nc4-FFFFA0000000016A858A
+[2018-04-04T10:21:09.758] [INFO] things - [32m下单完成"{\"state\":true,\"code\":20,\"msg\":\"库存不足，请重新下单！\"}"[39m
+[2018-04-04T10:21:09.759] [INFO] things - 下单时间16130ms
+[2018-04-04T10:21:10.888] [INFO] things - start get addressID from mobile: 19987439054
+[2018-04-04T10:21:11.705] [INFO] things - {"state":true,"code":0,"data":{"size":10,"index":1,"count":1,"datacount":1,"list":[{"rownumber":1,"SId":1966902,"UserId":"2268525","TelPhone":"19987439054","Zipcode":"000000","Address":"版筑翠园,2幢1单元201室","AddressInfo":"云南省昆明市五华区","ShipTo":"李伟","Remark":"","ProvinceId":"530000","CityId":"530100","DistrictsId":"530102","IsDefault":false,"SMNo":null,"RelPhone":null,"Longitude":"102.692032","Latitude":"25.053982","IsVerification":false,"TimeStamp":"2018-03-30 23:48:40"}]}}
+[2018-04-04T10:21:11.707] [INFO] things - create order params { '0': '19987439054',
+  '1': '391',
+  '2': 6,
+  '3': 300,
+  '4': 'Mozilla/5.0 (Linux; Android 4.4.4; LA2-SN Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36[android/1.0.23/682ba6a0e93ff5a17ae6bd03851f2f2d/e98bf9204e10f222aa1fe9e7f5c31f03]',
+  '5': 1966902,
+  '6': 100530100004,
+  '7': -1,
+  '8': 'acw_tc=AQAAAK9VtHg/aAEAoG5DcOK0oHIC95cO; Path=/; HttpOnly;ASP.NET_SessionId=viugyruhqkslcjqebmqigfzd; Path=/; HttpOnly;Vshop-Member=19285c674cca46c0bce11d7fc64a47fc; Expires=Thu, 04 Apr 2019 01:28:19 GMT; Path=/;SERVERID=d7ff3566a46564dfbddba0bd72787651|1522805302|1522805302; Path=/' }
+[2018-04-04T10:21:12.550] [INFO] things - coupon info { state: true,
+  code: 0,
+  data: 
+   { Cid: '0f1fb59bf050490282240b3bd11e0ad1',
+     Name: '茅台云商昆明市五华区服务网点',
+     DName: '昆明全兴利商贸有限公司',
+     Address: '昆明市虹山东路326号',
+     InvoiceCompany: '昆明全兴利商贸有限公司',
+     SHBegin: '08:45:00',
+     SHEnd: '17:30:00',
+     Amount: 1499,
+     Level: 1,
+     DisAmount: 1499,
+     DisCost: 0,
+     LocalCost: 0,
+     LocalZero: 1,
+     LocalZeroCost: -1,
+     OtherCost: -1,
+     OtherZero: -1,
+     OtherZeroCost: -1,
+     InvoiceCost: 22,
+     TakeDeliveryLimit: 7,
+     HasPlainInvoice: true,
+     HasVATInvoice: true,
+     Description: '同城配送：当日11:00之前下单付款成功的当日送达，11:00之后下单付款成功的次日送达。（特殊交通特殊情况延后配送,工作日内配送）\r\n自提地点：昆明市五华区虹山东路326号国酒茅台专卖店。\r\n自提时间：9：00-17:30（双休日正常营业，5件以上建议提前预约自提时间，避免耽误您宝贵时间）\r\n快递配送：根据快递公司安排配送。',
+     StateCode: 0,
+     NetworkType: 0,
+     WorkingDay: '[{"EnDay":"Monday","CnDay":"星期一"},{"EnDay":"Tuesday","CnDay":"星期二"},{"EnDay":"Wednesday","CnDay":"星期三"},{"EnDay":"Thursday","CnDay":"星期四"},{"EnDay":"Friday","CnDay":"星期五"},{"EnDay":"Saturday","CnDay":"星期六"},{"EnDay":"Sunday","CnDay":"星期日"}]' } }
+[2018-04-04T10:21:15.236] [INFO] things - token成功获取到 nc1-01W8fUo7tiNBKrkhR8ACXXKU7e6TFF5hpnZKJxsHvnR4XoK-I9mLx-PrFc8Cn9nerq-nc2-0561M3bob-R8gv1KNXk15v5Zpzwr5-aA0d72EwzdOiQ4wKYd4zVnecz1jZg8UIKYNDf-oWd_RI1iENfdL89HyKvWpWX5xV28I_txjc3vy1rYz7XTZ2gPhieKAWmbOssztC6YwLBXaxmIci5uutEeL13K-dHApkVoE3RFr5siG4yKvBP7bLAtUHlNzMnzfWEpxE3VYjsDMvhn4-zpHPp5HHzDzOxe3DouYOW82KEX3ATqVh4WogFhHrH3I3iZHNdXb2JMYUau74XxMm1fwUuxD549oU1tmCuQ7gQ1UZzDp9ONxSGYQ8dIgJJjigUtXuBLOT7B9v8QWF7RwPY4S1O-wLc1sAxQHojeOF39MSL4bxBD5dIbG2LtU04fpXmnryPh2OWQMOAKHGI4sG_sr7OJx6c27evGQ82UHw9h6-DXeLy2s-nc3-01TzB8fzgmvi9w1w4Zzf-Aot9lzBjl9hnrv35iHH9WrKzH0qfdujF6Enz4TyvbTfeEp7o9eL5Hqwu9g0bvFipbVod90GI8z21pn-nOlIT8I9yqdxjkB3iFVFv0N8IigAoPdXEJxKKKUu7F2-cvvWc-lg-nc4-FFFFA0000000016A858A
+[2018-04-04T10:21:21.756] [INFO] things - [32m下单完成"{\"state\":true,\"code\":20,\"msg\":\"库存不足，请重新下单！\"}"[39m
+[2018-04-04T10:21:21.758] [INFO] things - 下单时间10873ms
+[2018-04-04T10:21:22.833] [INFO] things - start get addressID from mobile: 15911925463
+[2018-04-04T10:21:24.367] [INFO] things - {"state":true,"code":0,"data":{"size":10,"index":1,"count":1,"datacount":1,"list":[{"rownumber":1,"SId":1604246,"UserId":"2023446","TelPhone":"15911925463","Zipcode":"000000","Address":"昆明宝岛妇产医院,住院楼15楼产2科主任办公室","AddressInfo":"云南省昆明市五华区","ShipTo":"冷文江","Remark":"","ProvinceId":"530000","CityId":"530100","DistrictsId":"530102","IsDefault":false,"SMNo":null,"RelPhone":null,"Longitude":"102.664553","Latitude":"25.063881","IsVerification":true,"TimeStamp":"2018-01-31 18:51:46"}]}}
+[2018-04-04T10:21:24.367] [INFO] things - create order params { '0': '15911925463',
+  '1': '391',
+  '2': 6,
+  '3': 300,
+  '4': 'Mozilla/5.0 (Linux; Android 4.4.4; LA2-SN Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36[android/1.0.23/397256a80377f1f6383839aa273d194d/2d1cd30a80ce85eba03f1375b2054a35]',
+  '5': 1604246,
+  '6': 100530100004,
+  '7': -1,
+  '8': 'acw_tc=AQAAAKGyxUbT8QAAoG5DcBBvwAFGENmb; Path=/; HttpOnly;ASP.NET_SessionId=c1uymjwez3ec2uunwiwovzue; Path=/; HttpOnly;Vshop-Member=4f3817853f9540998aeeb3a6f7bbb980; Expires=Thu, 04 Apr 2019 01:28:20 GMT; Path=/;SERVERID=d6dcdd16ac5ff39d1965783e657b37f4|1522805303|1522805303; Path=/' }
+[2018-04-04T10:21:25.222] [INFO] things - coupon info { state: true,
+  code: 0,
+  data: 
+   { Cid: 'a6342444e65048b18b189ecf9a34730f',
+     Name: '茅台云商昆明市五华区服务网点',
+     DName: '昆明全兴利商贸有限公司',
+     Address: '昆明市虹山东路326号',
+     InvoiceCompany: '昆明全兴利商贸有限公司',
+     SHBegin: '08:45:00',
+     SHEnd: '17:30:00',
+     Amount: 1499,
+     Level: 1,
+     DisAmount: 1499,
+     DisCost: 0,
+     LocalCost: 0,
+     LocalZero: 1,
+     LocalZeroCost: -1,
+     OtherCost: -1,
+     OtherZero: -1,
+     OtherZeroCost: -1,
+     InvoiceCost: 22,
+     TakeDeliveryLimit: 7,
+     HasPlainInvoice: true,
+     HasVATInvoice: true,
+     Description: '同城配送：当日11:00之前下单付款成功的当日送达，11:00之后下单付款成功的次日送达。（特殊交通特殊情况延后配送,工作日内配送）\r\n自提地点：昆明市五华区虹山东路326号国酒茅台专卖店。\r\n自提时间：9：00-17:30（双休日正常营业，5件以上建议提前预约自提时间，避免耽误您宝贵时间）\r\n快递配送：根据快递公司安排配送。',
+     StateCode: 0,
+     NetworkType: 0,
+     WorkingDay: '[{"EnDay":"Monday","CnDay":"星期一"},{"EnDay":"Tuesday","CnDay":"星期二"},{"EnDay":"Wednesday","CnDay":"星期三"},{"EnDay":"Thursday","CnDay":"星期四"},{"EnDay":"Friday","CnDay":"星期五"},{"EnDay":"Saturday","CnDay":"星期六"},{"EnDay":"Sunday","CnDay":"星期日"}]' } }
+[2018-04-04T10:21:27.892] [INFO] things - token成功获取到 nc1-01W8fUo7tiNBKrkhR8ACXXKV3q1x5CD21-3SnExvG8a6beolD74MC0uEOEjGOmt849-nc2-0561M3bob-R8gv1KNXk15v5Zpzwr5-aA0d72EwzdOiQ4zSEVe8dEJBce9ghPJHPJ06tu8e59hBmJy0tu_UEyQHcdTuAwLhbnzk19UK7vq6-5u3z0NpvgNWiIZFs9P-GQ696YwLBXaxmIci5uutEeL13EnmYk3USz_NRdUreJuCxNMbaYisaX3W5D5tO4mCY4_K15FDtXeyi5DIynpefiT53tJ3lC6ka2cIVOnqxez--aPmgjIHmvq2z4vmcKSXYkCNGTYPU9EdGc5QN93Pl98-XNoU1tmCuQ7gQ1UZzDp9ONxSGYQ8dIgJJjigUtXuBLOTuK3p9mKvMlqFJiFHkF_V4FsAxQHojeOF39MSL4bxBD57kZpCRzUiogO2pgSlijCmWDko92FcfmpkNv3LQwLXI3I_Qn9MtCcFZ-OwWJny4fc-nc3-01TzB8fzgmvi9w1w4Zzf-AolId9nYLsm3oe40WNZxfIypxU7Gu6tPVDC3XBhg9qYO4nv_yTvxxb5UoVZdlFOmAGv79b28s0DYXAvOpY8R082yqdxjkB3iFVFv0N8IigAoPdXEJxKKKUu7F2-cvvWc-lg-nc4-FFFFA0000000016A858A
+[2018-04-04T10:21:41.811] [INFO] things - [32m下单完成"{\"state\":true,\"code\":20,\"msg\":\"库存不足，请重新下单！\"}"[39m
+[2018-04-04T10:21:41.812] [INFO] things - 下单时间18980ms
+[2018-04-04T10:21:42.894] [INFO] things - start get addressID from mobile: 19987439054
+[2018-04-04T10:21:47.750] [INFO] things - {"state":true,"code":0,"data":{"size":10,"index":1,"count":1,"datacount":1,"list":[{"rownumber":1,"SId":1966902,"UserId":"2268525","TelPhone":"19987439054","Zipcode":"000000","Address":"版筑翠园,2幢1单元201室","AddressInfo":"云南省昆明市五华区","ShipTo":"李伟","Remark":"","ProvinceId":"530000","CityId":"530100","DistrictsId":"530102","IsDefault":false,"SMNo":null,"RelPhone":null,"Longitude":"102.692032","Latitude":"25.053982","IsVerification":false,"TimeStamp":"2018-03-30 23:48:40"}]}}
+[2018-04-04T10:21:47.750] [INFO] things - create order params { '0': '19987439054',
+  '1': '391',
+  '2': 6,
+  '3': 300,
+  '4': 'Mozilla/5.0 (Linux; Android 4.4.4; LA2-SN Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36[android/1.0.23/682ba6a0e93ff5a17ae6bd03851f2f2d/e98bf9204e10f222aa1fe9e7f5c31f03]',
+  '5': 1966902,
+  '6': 100530100004,
+  '7': -1,
+  '8': 'acw_tc=AQAAAK9VtHg/aAEAoG5DcOK0oHIC95cO; Path=/; HttpOnly;ASP.NET_SessionId=viugyruhqkslcjqebmqigfzd; Path=/; HttpOnly;Vshop-Member=19285c674cca46c0bce11d7fc64a47fc; Expires=Thu, 04 Apr 2019 01:28:19 GMT; Path=/;SERVERID=d7ff3566a46564dfbddba0bd72787651|1522805302|1522805302; Path=/' }
+[2018-04-04T10:21:48.877] [INFO] things - coupon info { state: true,
+  code: 0,
+  data: 
+   { Cid: 'da35c6cb6d1248c2a0c23855e2a2e29d',
+     Name: '茅台云商昆明市五华区服务网点',
+     DName: '昆明全兴利商贸有限公司',
+     Address: '昆明市虹山东路326号',
+     InvoiceCompany: '昆明全兴利商贸有限公司',
+     SHBegin: '08:45:00',
+     SHEnd: '17:30:00',
+     Amount: 1499,
+     Level: 1,
+     DisAmount: 1499,
+     DisCost: 0,
+     LocalCost: 0,
+     LocalZero: 1,
+     LocalZeroCost: -1,
+     OtherCost: -1,
+     OtherZero: -1,
+     OtherZeroCost: -1,
+     InvoiceCost: 22,
+     TakeDeliveryLimit: 7,
+     HasPlainInvoice: true,
+     HasVATInvoice: true,
+     Description: '同城配送：当日11:00之前下单付款成功的当日送达，11:00之后下单付款成功的次日送达。（特殊交通特殊情况延后配送,工作日内配送）\r\n自提地点：昆明市五华区虹山东路326号国酒茅台专卖店。\r\n自提时间：9：00-17:30（双休日正常营业，5件以上建议提前预约自提时间，避免耽误您宝贵时间）\r\n快递配送：根据快递公司安排配送。',
+     StateCode: 0,
+     NetworkType: 0,
+     WorkingDay: '[{"EnDay":"Monday","CnDay":"星期一"},{"EnDay":"Tuesday","CnDay":"星期二"},{"EnDay":"Wednesday","CnDay":"星期三"},{"EnDay":"Thursday","CnDay":"星期四"},{"EnDay":"Friday","CnDay":"星期五"},{"EnDay":"Saturday","CnDay":"星期六"},{"EnDay":"Sunday","CnDay":"星期日"}]' } }
+[2018-04-04T10:21:51.612] [INFO] things - token成功获取到 nc1-01W8fUo7tiNBKrkhR8ACXXKWYemlWdu5_EuS7Q7NxcyZVmT_t2oM8OKgYezn90DHA7-nc2-0561M3bob-R8gv1KNXk15v5Zpzwr5-aA0d72EwzdOiQ4xKR9f6DSPSSIvp2QaMqKcZHb8966HWgL3d92wHvUZ-Tg4naIkJpgfh0seiGE8C1EUD58P4Lrrusk_b6YmvFWA-6YwLBXaxmIci5uutEeL13ANfkea8X2y5K6xSdHSmpSDTJ1JFrGxr5Zs1OTf8Y7JbT-NZu5TVJgi_M6IRz6taxCcHABzXTgazaGTM4QNH-4Kb9TcWXVhTfzaIU2EiFfvtq_L6XWG1gF20yeAKS-QcKNoU1tmCuQ7gQ1UZzDp9ONxSGYQ8dIgJJjigUtXuBLOTtTIIb4jX_n3-K_xnxxcR71sAxQHojeOF39MSL4bxBD4pvU1vxeuzRtjV5Q1zkyK_ifPXW9Pq9ytZ3HAxsdGfJ0SIMOyEwfd8TRnsR2K7-ek-nc3-01TzB8fzgmvi9w1w4Zzf-AovrfdKzn-iAUkEeCpXJC6dv9Kei5SS0Xu38lxuRkk0smglQ9wUrJXKnQRb9mYMxO-IS7noYn7wsV_wKkBQDvdBaqdxjkB3iFVFv0N8IigAoPdXEJxKKKUu7F2-cvvWc-lg-nc4-FFFFA0000000016A858A
+[2018-04-04T10:22:00.550] [INFO] things - [32m下单完成"{\"state\":true,\"code\":20,\"msg\":\"库存不足，请重新下单！\"}"[39m
+[2018-04-04T10:22:00.552] [INFO] things - 下单时间17659ms
+[2018-04-04T10:22:01.616] [INFO] things - start get addressID from mobile: 19987439054
+[2018-04-04T10:22:02.455] [INFO] things - {"state":true,"code":0,"data":{"size":10,"index":1,"count":1,"datacount":1,"list":[{"rownumber":1,"SId":1966902,"UserId":"2268525","TelPhone":"19987439054","Zipcode":"000000","Address":"版筑翠园,2幢1单元201室","AddressInfo":"云南省昆明市五华区","ShipTo":"李伟","Remark":"","ProvinceId":"530000","CityId":"530100","DistrictsId":"530102","IsDefault":false,"SMNo":null,"RelPhone":null,"Longitude":"102.692032","Latitude":"25.053982","IsVerification":false,"TimeStamp":"2018-03-30 23:48:40"}]}}
+[2018-04-04T10:22:02.455] [INFO] things - create order params { '0': '19987439054',
+  '1': '391',
+  '2': 6,
+  '3': 300,
+  '4': 'Mozilla/5.0 (Linux; Android 4.4.4; LA2-SN Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36[android/1.0.23/682ba6a0e93ff5a17ae6bd03851f2f2d/e98bf9204e10f222aa1fe9e7f5c31f03]',
+  '5': 1966902,
+  '6': 100530100004,
+  '7': -1,
+  '8': 'acw_tc=AQAAAK9VtHg/aAEAoG5DcOK0oHIC95cO; Path=/; HttpOnly;ASP.NET_SessionId=viugyruhqkslcjqebmqigfzd; Path=/; HttpOnly;Vshop-Member=19285c674cca46c0bce11d7fc64a47fc; Expires=Thu, 04 Apr 2019 01:28:19 GMT; Path=/;SERVERID=d7ff3566a46564dfbddba0bd72787651|1522805302|1522805302; Path=/' }
+[2018-04-04T10:22:03.838] [INFO] things - coupon info { state: true,
+  code: 0,
+  data: 
+   { Cid: '1c6cff6ce8404beea4d2c46219b0a077',
+     Name: '茅台云商昆明市五华区服务网点',
+     DName: '昆明全兴利商贸有限公司',
+     Address: '昆明市虹山东路326号',
+     InvoiceCompany: '昆明全兴利商贸有限公司',
+     SHBegin: '08:45:00',
+     SHEnd: '17:30:00',
+     Amount: 1499,
+     Level: 1,
+     DisAmount: 1499,
+     DisCost: 0,
+     LocalCost: 0,
+     LocalZero: 1,
+     LocalZeroCost: -1,
+     OtherCost: -1,
+     OtherZero: -1,
+     OtherZeroCost: -1,
+     InvoiceCost: 22,
+     TakeDeliveryLimit: 7,
+     HasPlainInvoice: true,
+     HasVATInvoice: true,
+     Description: '同城配送：当日11:00之前下单付款成功的当日送达，11:00之后下单付款成功的次日送达。（特殊交通特殊情况延后配送,工作日内配送）\r\n自提地点：昆明市五华区虹山东路326号国酒茅台专卖店。\r\n自提时间：9：00-17:30（双休日正常营业，5件以上建议提前预约自提时间，避免耽误您宝贵时间）\r\n快递配送：根据快递公司安排配送。',
+     StateCode: 0,
+     NetworkType: 0,
+     WorkingDay: '[{"EnDay":"Monday","CnDay":"星期一"},{"EnDay":"Tuesday","CnDay":"星期二"},{"EnDay":"Wednesday","CnDay":"星期三"},{"EnDay":"Thursday","CnDay":"星期四"},{"EnDay":"Friday","CnDay":"星期五"},{"EnDay":"Saturday","CnDay":"星期六"},{"EnDay":"Sunday","CnDay":"星期日"}]' } }
+[2018-04-04T10:22:06.565] [INFO] things - token成功获取到 nc1-01W8fUo7tiNBKrkhR8ACXXKWLOyPqM_lzA0uLiljgEeSkbIga8gys5fHUXM-D4Qf_X-nc2-0561M3bob-R8gv1KNXk15v5Zpzwr5-aA0d72EwzdOiQ4xKR9f6DSPSSIvp2QaMqKcZ1MrGN-XjZIGoNEfr1sMJEwKcNWwqVU3oJFVOSdMx9drmsY4c_thXGxr8cq704r-M6YwLBXaxmIci5uutEeL13JNGCxiVZF6FVyFhitf3D46RLC-vHUhyHPkHZi8WxLZoM-DI4m0MICFITMjldhV-O-darX1bakuv8vJ1v0oFkBIbJk_G1o34oTRVjPBT0QqIggt3loNd8tnmSVfQsBql19oU1tmCuQ7gQ1UZzDp9ONxSGYQ8dIgJJjigUtXuBLOT4nnODuRCZbP9fmZTeLzfUVsAxQHojeOF39MSL4bxBD7UIabJAbsQfMlNKNzMQqeNhcs9PgZQHS7hu6UbrVXtwVzn2r-abl-Ipvhy8Cl8bsM-nc3-01TzB8fzgmvi9w1w4Zzf-AorndiU4eUlh4bqmBFwUAcDX3zrvpAN3q2sJTnfHveoyXPX8cKHraDd-8-01gwbxFUj6AtpB91V4-j_J86KEJ39aqdxjkB3iFVFv0N8IigAoPdXEJxKKKUu7F2-cvvWc-lg-nc4-FFFFA0000000016A858A
+[2018-04-04T10:22:18.577] [INFO] things - [32m下单完成"{\"state\":true,\"code\":20,\"msg\":\"库存不足，请重新下单！\"}"[39m
+[2018-04-04T10:22:18.578] [INFO] things - 下单时间16965ms
+[2018-04-04T10:22:19.662] [INFO] things - start get addressID from mobile: 15911925463
+[2018-04-04T10:22:20.830] [INFO] things - {"state":true,"code":0,"data":{"size":10,"index":1,"count":1,"datacount":1,"list":[{"rownumber":1,"SId":1604246,"UserId":"2023446","TelPhone":"15911925463","Zipcode":"000000","Address":"昆明宝岛妇产医院,住院楼15楼产2科主任办公室","AddressInfo":"云南省昆明市五华区","ShipTo":"冷文江","Remark":"","ProvinceId":"530000","CityId":"530100","DistrictsId":"530102","IsDefault":false,"SMNo":null,"RelPhone":null,"Longitude":"102.664553","Latitude":"25.063881","IsVerification":true,"TimeStamp":"2018-01-31 18:51:46"}]}}
+[2018-04-04T10:22:20.831] [INFO] things - create order params { '0': '15911925463',
+  '1': '391',
+  '2': 6,
+  '3': 300,
+  '4': 'Mozilla/5.0 (Linux; Android 4.4.4; LA2-SN Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36[android/1.0.23/397256a80377f1f6383839aa273d194d/2d1cd30a80ce85eba03f1375b2054a35]',
+  '5': 1604246,
+  '6': 100530100004,
+  '7': -1,
+  '8': 'acw_tc=AQAAAKGyxUbT8QAAoG5DcBBvwAFGENmb; Path=/; HttpOnly;ASP.NET_SessionId=c1uymjwez3ec2uunwiwovzue; Path=/; HttpOnly;Vshop-Member=4f3817853f9540998aeeb3a6f7bbb980; Expires=Thu, 04 Apr 2019 01:28:20 GMT; Path=/;SERVERID=d6dcdd16ac5ff39d1965783e657b37f4|1522805303|1522805303; Path=/' }
+[2018-04-04T10:22:29.732] [INFO] things - coupon info { state: true,
+  code: 0,
+  data: 
+   { Cid: 'cca26ce7f4094fc1bfca9ac1425192fb',
+     Name: '茅台云商昆明市五华区服务网点',
+     DName: '昆明全兴利商贸有限公司',
+     Address: '昆明市虹山东路326号',
+     InvoiceCompany: '昆明全兴利商贸有限公司',
+     SHBegin: '08:45:00',
+     SHEnd: '17:30:00',
+     Amount: 1499,
+     Level: 1,
+     DisAmount: 1499,
+     DisCost: 0,
+     LocalCost: 0,
+     LocalZero: 1,
+     LocalZeroCost: -1,
+     OtherCost: -1,
+     OtherZero: -1,
+     OtherZeroCost: -1,
+     InvoiceCost: 22,
+     TakeDeliveryLimit: 7,
+     HasPlainInvoice: true,
+     HasVATInvoice: true,
+     Description: '同城配送：当日11:00之前下单付款成功的当日送达，11:00之后下单付款成功的次日送达。（特殊交通特殊情况延后配送,工作日内配送）\r\n自提地点：昆明市五华区虹山东路326号国酒茅台专卖店。\r\n自提时间：9：00-17:30（双休日正常营业，5件以上建议提前预约自提时间，避免耽误您宝贵时间）\r\n快递配送：根据快递公司安排配送。',
+     StateCode: 0,
+     NetworkType: 0,
+     WorkingDay: '[{"EnDay":"Monday","CnDay":"星期一"},{"EnDay":"Tuesday","CnDay":"星期二"},{"EnDay":"Wednesday","CnDay":"星期三"},{"EnDay":"Thursday","CnDay":"星期四"},{"EnDay":"Friday","CnDay":"星期五"},{"EnDay":"Saturday","CnDay":"星期六"},{"EnDay":"Sunday","CnDay":"星期日"}]' } }
+[2018-04-04T10:22:32.464] [INFO] things - token成功获取到 nc1-01W8fUo7tiNBKrkhR8ACXXKWgZNgGvz7saLUviwN8jNbsMgLqR0MA-B2maTD9VUg7C-nc2-0561M3bob-R8gv1KNXk15v5Zpzwr5-aA0d72EwzdOiQ4xKR9f6DSPSSIvp2QaMqKcZ5M0TNNyWt_qTIMKutSRLIM8zO1kd0ts7qj7NT9mh9j02rvROoRK_PEz40m66wsm96YwLBXaxmIci5uutEeL13NV1VkD4WNyTgtdxy81nksSOT1tU56ZhV-0KNsNqwsULPL8tl8P6vVDmM318pK2U2tMPGdHGn4y16gvOBpb-bf3YQf3zMAczYds3EWUA16pqr5FrMJll1uOWUJkMKUWDttoU1tmCuQ7gQ1UZzDp9ONxSGYQ8dIgJJjigUtXuBLOTQDpI3AKXH1ACsYHfdy-tB1sAxQHojeOF39MSL4bxBD5bpqePb0lyVzW16I0HIpVoT7BnAvIBJJPsW5bJZYvw86fHDDGRXoTq2zlPF1x5dSc-nc3-01TzB8fzgmvi9w1w4Zzf-Aot60PAUCIClemhFaTCGpVp16nuI4Jsms5Ql9AxdDNT9fkjXNYMugiMi1In_Mr0iDNnfDO8qnV1XdCqjLnfAFujSqdxjkB3iFVFv0N8IigAoPdXEJxKKKUu7F2-cvvWc-lg-nc4-FFFFA0000000016A858A
+[2018-04-04T10:22:42.433] [INFO] things - [32m下单完成"{\"state\":true,\"code\":20,\"msg\":\"库存不足，请重新下单！\"}"[39m
+[2018-04-04T10:22:42.434] [INFO] things - 下单时间22776ms
+[2018-04-04T10:22:43.524] [INFO] things - start get addressID from mobile: 15911925463
+[2018-04-04T10:22:47.552] [INFO] things - {"state":true,"code":0,"data":{"size":10,"index":1,"count":1,"datacount":1,"list":[{"rownumber":1,"SId":1604246,"UserId":"2023446","TelPhone":"15911925463","Zipcode":"000000","Address":"昆明宝岛妇产医院,住院楼15楼产2科主任办公室","AddressInfo":"云南省昆明市五华区","ShipTo":"冷文江","Remark":"","ProvinceId":"530000","CityId":"530100","DistrictsId":"530102","IsDefault":false,"SMNo":null,"RelPhone":null,"Longitude":"102.664553","Latitude":"25.063881","IsVerification":true,"TimeStamp":"2018-01-31 18:51:46"}]}}
+[2018-04-04T10:22:47.552] [INFO] things - create order params { '0': '15911925463',
+  '1': '391',
+  '2': 6,
+  '3': 300,
+  '4': 'Mozilla/5.0 (Linux; Android 4.4.4; LA2-SN Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36[android/1.0.23/397256a80377f1f6383839aa273d194d/2d1cd30a80ce85eba03f1375b2054a35]',
+  '5': 1604246,
+  '6': 100530100004,
+  '7': -1,
+  '8': 'acw_tc=AQAAAKGyxUbT8QAAoG5DcBBvwAFGENmb; Path=/; HttpOnly;ASP.NET_SessionId=c1uymjwez3ec2uunwiwovzue; Path=/; HttpOnly;Vshop-Member=4f3817853f9540998aeeb3a6f7bbb980; Expires=Thu, 04 Apr 2019 01:28:20 GMT; Path=/;SERVERID=d6dcdd16ac5ff39d1965783e657b37f4|1522805303|1522805303; Path=/' }
+[2018-04-04T10:22:48.375] [INFO] things - coupon info { state: true,
+  code: 0,
+  data: 
+   { Cid: 'efe8e111cf374d738269753a165194df',
+     Name: '茅台云商昆明市五华区服务网点',
+     DName: '昆明全兴利商贸有限公司',
+     Address: '昆明市虹山东路326号',
+     InvoiceCompany: '昆明全兴利商贸有限公司',
+     SHBegin: '08:45:00',
+     SHEnd: '17:30:00',
+     Amount: 1499,
+     Level: 1,
+     DisAmount: 1499,
+     DisCost: 0,
+     LocalCost: 0,
+     LocalZero: 1,
+     LocalZeroCost: -1,
+     OtherCost: -1,
+     OtherZero: -1,
+     OtherZeroCost: -1,
+     InvoiceCost: 22,
+     TakeDeliveryLimit: 7,
+     HasPlainInvoice: true,
+     HasVATInvoice: true,
+     Description: '同城配送：当日11:00之前下单付款成功的当日送达，11:00之后下单付款成功的次日送达。（特殊交通特殊情况延后配送,工作日内配送）\r\n自提地点：昆明市五华区虹山东路326号国酒茅台专卖店。\r\n自提时间：9：00-17:30（双休日正常营业，5件以上建议提前预约自提时间，避免耽误您宝贵时间）\r\n快递配送：根据快递公司安排配送。',
+     StateCode: 0,
+     NetworkType: 0,
+     WorkingDay: '[{"EnDay":"Monday","CnDay":"星期一"},{"EnDay":"Tuesday","CnDay":"星期二"},{"EnDay":"Wednesday","CnDay":"星期三"},{"EnDay":"Thursday","CnDay":"星期四"},{"EnDay":"Friday","CnDay":"星期五"},{"EnDay":"Saturday","CnDay":"星期六"},{"EnDay":"Sunday","CnDay":"星期日"}]' } }
+[2018-04-04T10:22:51.110] [INFO] things - token成功获取到 nc1-01W8fUo7tiNBKrkhR8ACXXKQdXY2C-WNlRoLun3TJ8W7rTtoSaxwWFU2mqYfjs9xVd-nc2-0561M3bob-R8gv1KNXk15v5Zpzwr5-aA0d72EwzdOiQ4wclsUH_9Zm6CbaM_Qhy1OiLRe2qdaPcDI01p_WQ8lh1B2DFs-XY23hzK45X-6Cr0ildSptvVUNaAUenrmGx3pT6YwLBXaxmIci5uutEeL13BTIb2rnM7U-9z5SZAYPCAT6vwTq271Y20MQvvfu6EUkg88wxPQbLAaeiRiDwqKbqU0-8NNk8cscUe2xHmkHxf8lrzDGRQEAzTEC7KvtTgs1gkdJuREROcFJZ9kagpAyntoU1tmCuQ7gQ1UZzDp9ONxSGYQ8dIgJJjigUtXuBLOTBrl2vNcWP341HLnwENfz2VsAxQHojeOF39MSL4bxBD6eghkN-7UgkA9Y4NIbUEhPWLQSOBeMSm9Qxy1kDoEDo0SIMOyEwfd8TRnsR2K7-ek-nc3-01TzB8fzgmvi9w1w4Zzf-AomvyXvseLQtqgsY4oPHpXD8EyniBVngVhmHyNyJ0pra1jfLXjURA0eUeXcUEchxBncb7RwBNOYH-Np7mhn7WPA6qdxjkB3iFVFv0N8IigAoPdXEJxKKKUu7F2-cvvWc-lg-nc4-FFFFA0000000016A858A
+[2018-04-04T10:22:56.946] [INFO] things - [32m下单完成"{\"state\":true,\"code\":20,\"msg\":\"库存不足，请重新下单！\"}"[39m
+[2018-04-04T10:22:56.946] [INFO] things - 下单时间13424ms
+[2018-04-04T10:22:58.053] [INFO] things - start get addressID from mobile: 18387455327
+[2018-04-04T10:23:00.766] [INFO] things - {"state":true,"code":0,"data":{"size":10,"index":1,"count":1,"datacount":1,"list":[{"rownumber":1,"SId":1965960,"UserId":"2268164","TelPhone":"18387455327","Zipcode":"000000","Address":"高新公安分局,6楼604室","AddressInfo":"云南省昆明市五华区","ShipTo":"杨顺","Remark":"","ProvinceId":"530000","CityId":"530100","DistrictsId":"530102","IsDefault":false,"SMNo":null,"RelPhone":null,"Longitude":"102.660574","Latitude":"25.06956","IsVerification":false,"TimeStamp":"2018-03-30 20:56:16"}]}}
+[2018-04-04T10:23:00.766] [INFO] things - create order params { '0': '18387455327',
+  '1': '391',
+  '2': 6,
+  '3': 300,
+  '4': 'Mozilla/5.0 (Linux; Android 4.4.4; LA2-SN Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36[android/1.0.23/62ac40ba50233ad78170b1eece1d773c/68874bbbf7b0993bb8b586466fce1e47]',
+  '5': 1965960,
+  '6': 100530100004,
+  '7': -1,
+  '8': 'acw_tc=AQAAAIcC9HgFDQ4AoG5DcKrMuKK6KXI5; Path=/; HttpOnly;ASP.NET_SessionId=b5o3jztljzqigvqdiwdow0ks; Path=/; HttpOnly;Vshop-Member=6e2f58f8a6254a70aabddf8aebf43cd9; Expires=Thu, 04 Apr 2019 01:28:16 GMT; Path=/;SERVERID=e0be7116fc95174c0c92660b6cc51b85|1522805291|1522805291; Path=/' }
+[2018-04-04T10:23:32.006] [INFO] things - 位置错误,60秒后重试 { Error: socket hang up
+    at createHangUpError (_http_client.js:254:15)
+    at TLSSocket.socketOnEnd (_http_client.js:346:23)
+    at emitNone (events.js:91:20)
+    at TLSSocket.emit (events.js:185:7)
+    at endReadableNT (_stream_readable.js:974:12)
+    at _combinedTickCallback (internal/process/next_tick.js:74:11)
+    at process._tickCallback (internal/process/next_tick.js:98:9) code: 'ECONNRESET' }
+[2018-04-04T10:23:33.096] [INFO] things - start get addressID from mobile: 19987439054
+[2018-04-04T10:23:34.148] [INFO] things - {"state":true,"code":0,"data":{"size":10,"index":1,"count":1,"datacount":1,"list":[{"rownumber":1,"SId":1966902,"UserId":"2268525","TelPhone":"19987439054","Zipcode":"000000","Address":"版筑翠园,2幢1单元201室","AddressInfo":"云南省昆明市五华区","ShipTo":"李伟","Remark":"","ProvinceId":"530000","CityId":"530100","DistrictsId":"530102","IsDefault":false,"SMNo":null,"RelPhone":null,"Longitude":"102.692032","Latitude":"25.053982","IsVerification":false,"TimeStamp":"2018-03-30 23:48:40"}]}}
+[2018-04-04T10:23:34.149] [INFO] things - create order params { '0': '19987439054',
+  '1': '391',
+  '2': 6,
+  '3': 300,
+  '4': 'Mozilla/5.0 (Linux; Android 4.4.4; LA2-SN Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36[android/1.0.23/682ba6a0e93ff5a17ae6bd03851f2f2d/e98bf9204e10f222aa1fe9e7f5c31f03]',
+  '5': 1966902,
+  '6': 100530100004,
+  '7': -1,
+  '8': 'acw_tc=AQAAAK9VtHg/aAEAoG5DcOK0oHIC95cO; Path=/; HttpOnly;ASP.NET_SessionId=viugyruhqkslcjqebmqigfzd; Path=/; HttpOnly;Vshop-Member=19285c674cca46c0bce11d7fc64a47fc; Expires=Thu, 04 Apr 2019 01:28:19 GMT; Path=/;SERVERID=d7ff3566a46564dfbddba0bd72787651|1522805302|1522805302; Path=/' }
+[2018-04-04T10:23:35.989] [INFO] things - coupon info { state: true,
+  code: 0,
+  data: 
+   { Cid: '495d5550f0ad42d6b24349a76354bf32',
+     Name: '茅台云商昆明市五华区服务网点',
+     DName: '昆明全兴利商贸有限公司',
+     Address: '昆明市虹山东路326号',
+     InvoiceCompany: '昆明全兴利商贸有限公司',
+     SHBegin: '08:45:00',
+     SHEnd: '17:30:00',
+     Amount: 1499,
+     Level: 1,
+     DisAmount: 1499,
+     DisCost: 0,
+     LocalCost: 0,
+     LocalZero: 1,
+     LocalZeroCost: -1,
+     OtherCost: -1,
+     OtherZero: -1,
+     OtherZeroCost: -1,
+     InvoiceCost: 22,
+     TakeDeliveryLimit: 7,
+     HasPlainInvoice: true,
+     HasVATInvoice: true,
+     Description: '同城配送：当日11:00之前下单付款成功的当日送达，11:00之后下单付款成功的次日送达。（特殊交通特殊情况延后配送,工作日内配送）\r\n自提地点：昆明市五华区虹山东路326号国酒茅台专卖店。\r\n自提时间：9：00-17:30（双休日正常营业，5件以上建议提前预约自提时间，避免耽误您宝贵时间）\r\n快递配送：根据快递公司安排配送。',
+     StateCode: 0,
+     NetworkType: 0,
+     WorkingDay: '[{"EnDay":"Monday","CnDay":"星期一"},{"EnDay":"Tuesday","CnDay":"星期二"},{"EnDay":"Wednesday","CnDay":"星期三"},{"EnDay":"Thursday","CnDay":"星期四"},{"EnDay":"Friday","CnDay":"星期五"},{"EnDay":"Saturday","CnDay":"星期六"},{"EnDay":"Sunday","CnDay":"星期日"}]' } }
+[2018-04-04T10:23:38.789] [INFO] things - token成功获取到 nc1-01W8fUo7tiNBKrkhR8ACXXKeIcYzgRGvjHbBFH1oJW0sfXuQWqsz_uV9ul_Yahui_7-nc2-0561M3bob-R8gv1KNXk15v5Zpzwr5-aA0d72EwzdOiQ4z27MtxO74ul7LHuQ5MYIhp_fi9SOgoowvRxo1VqxEe06pzHqI6Wy29rP_jADAncfVlVTB2TeESOFgAGUlk1xK96YwLBXaxmIci5uutEeL13IEo14MqwsLDNeU6v114jB4OPlyQ2Zpy2jnO1S1VRHGHYdmB2l1e5Rs3k0w3yfUWeBF1ei-mmIgnNpdzGtia8jcn7KxC3YOlSX3WtLXLiU3lGNdUEOb2Jmv2EJUMJ4p2JtoU1tmCuQ7gQ1UZzDp9ONxSGYQ8dIgJJjigUtXuBLOTaDIBAWlzdHNZRmdJ9JdlpFsAxQHojeOF39MSL4bxBD4Y0yKh8-FoaQTHnMsrH4x64Kugu7SYo8AQ-DvLMiKntlzn2r-abl-Ipvhy8Cl8bsM-nc3-01TzB8fzgmvi9w1w4Zzf-AokVxMxkrVAtTJl_J2uGn1tdGnGMh7ic5f0UAQygOC__KzhIc8DPOiPTHOFX_Qh0NLMw2bgQFgPgxXxcfC-p3w5mqdxjkB3iFVFv0N8IigAoPdXEJxKKKUu7F2-cvvWc-lg-nc4-FFFFA0000000016A858A
+[2018-04-04T10:23:46.811] [INFO] things - [32m下单完成"{\"state\":true,\"code\":20,\"msg\":\"库存不足，请重新下单！\"}"[39m
+[2018-04-04T10:23:46.811] [INFO] things - 下单时间13717ms
+[2018-04-04T10:23:47.955] [INFO] things - start get addressID from mobile: 15911925463
+[2018-04-04T10:23:49.593] [INFO] things - {"state":true,"code":0,"data":{"size":10,"index":1,"count":1,"datacount":1,"list":[{"rownumber":1,"SId":1604246,"UserId":"2023446","TelPhone":"15911925463","Zipcode":"000000","Address":"昆明宝岛妇产医院,住院楼15楼产2科主任办公室","AddressInfo":"云南省昆明市五华区","ShipTo":"冷文江","Remark":"","ProvinceId":"530000","CityId":"530100","DistrictsId":"530102","IsDefault":false,"SMNo":null,"RelPhone":null,"Longitude":"102.664553","Latitude":"25.063881","IsVerification":true,"TimeStamp":"2018-01-31 18:51:46"}]}}
+[2018-04-04T10:23:49.593] [INFO] things - create order params { '0': '15911925463',
+  '1': '391',
+  '2': 6,
+  '3': 300,
+  '4': 'Mozilla/5.0 (Linux; Android 4.4.4; LA2-SN Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36[android/1.0.23/397256a80377f1f6383839aa273d194d/2d1cd30a80ce85eba03f1375b2054a35]',
+  '5': 1604246,
+  '6': 100530100004,
+  '7': -1,
+  '8': 'acw_tc=AQAAAKGyxUbT8QAAoG5DcBBvwAFGENmb; Path=/; HttpOnly;ASP.NET_SessionId=c1uymjwez3ec2uunwiwovzue; Path=/; HttpOnly;Vshop-Member=4f3817853f9540998aeeb3a6f7bbb980; Expires=Thu, 04 Apr 2019 01:28:20 GMT; Path=/;SERVERID=d6dcdd16ac5ff39d1965783e657b37f4|1522805303|1522805303; Path=/' }
+[2018-04-04T10:23:50.632] [INFO] things - coupon info { state: true,
+  code: 0,
+  data: 
+   { Cid: '61acadd977444e56a28c2186e26efa1d',
+     Name: '茅台云商昆明市五华区服务网点',
+     DName: '昆明全兴利商贸有限公司',
+     Address: '昆明市虹山东路326号',
+     InvoiceCompany: '昆明全兴利商贸有限公司',
+     SHBegin: '08:45:00',
+     SHEnd: '17:30:00',
+     Amount: 1499,
+     Level: 1,
+     DisAmount: 1499,
+     DisCost: 0,
+     LocalCost: 0,
+     LocalZero: 1,
+     LocalZeroCost: -1,
+     OtherCost: -1,
+     OtherZero: -1,
+     OtherZeroCost: -1,
+     InvoiceCost: 22,
+     TakeDeliveryLimit: 7,
+     HasPlainInvoice: true,
+     HasVATInvoice: true,
+     Description: '同城配送：当日11:00之前下单付款成功的当日送达，11:00之后下单付款成功的次日送达。（特殊交通特殊情况延后配送,工作日内配送）\r\n自提地点：昆明市五华区虹山东路326号国酒茅台专卖店。\r\n自提时间：9：00-17:30（双休日正常营业，5件以上建议提前预约自提时间，避免耽误您宝贵时间）\r\n快递配送：根据快递公司安排配送。',
+     StateCode: 0,
+     NetworkType: 0,
+     WorkingDay: '[{"EnDay":"Monday","CnDay":"星期一"},{"EnDay":"Tuesday","CnDay":"星期二"},{"EnDay":"Wednesday","CnDay":"星期三"},{"EnDay":"Thursday","CnDay":"星期四"},{"EnDay":"Friday","CnDay":"星期五"},{"EnDay":"Saturday","CnDay":"星期六"},{"EnDay":"Sunday","CnDay":"星期日"}]' } }
+[2018-04-04T10:23:53.405] [INFO] things - token成功获取到 nc1-01W8fUo7tiNBKrkhR8ACXXKX2GvMVkJ0SA8LY04ELqso6ujqflv7d06qdqmnsH27Nu-nc2-0561M3bob-R8gv1KNXk15v5Zpzwr5-aA0d72EwzdOiQ4z1gV33fgIko08cF8EhcjSgnnnL4N5lVBT2Bp07HLcTkzGNobSsbP2ayB-xHMoKI0UnnU_U-pjGTRurSOTC13-16YwLBXaxmIci5uutEeL13OTgLu1GQyRW8cjZ6hP8FKQ96LnyFfhGtIozrU2C_zqzIB_YpxIE8L92kJS3a_Pz_niEW2XsUtt_ExmnToyQsUz5VKtyYt-tS5uePEupgxfm3vKcKpbhIrF_hB91j58Ki9oU1tmCuQ7gQ1UZzDp9ONxSGYQ8dIgJJjigUtXuBLOTbHlMbxMwhCdrpLmC-qKCXlsAxQHojeOF39MSL4bxBD5odIatduiOEpttTHFkbfOIlTSjX1QfYMrJ7GmpAZ5ldUSIMOyEwfd8TRnsR2K7-ek-nc3-01TzB8fzgmvi9w1w4Zzf-Aos0R7WLjl3YpT2x38oMwM8_W8rR48l-xw7Rh7uAiB0jRCpLBobSEh0cZTrS7MUorR-6EipGGUQN9EtoUpg9I4WaqdxjkB3iFVFv0N8IigAoPdXEJxKKKUu7F2-cvvWc-lg-nc4-FFFFA0000000016A858A
+[2018-04-04T10:24:01.594] [INFO] things - [32m下单完成"{\"state\":true,\"code\":20,\"msg\":\"库存不足，请重新下单！\"}"[39m
+[2018-04-04T10:24:01.594] [INFO] things - 下单时间13642ms
+[2018-04-04T10:24:02.674] [INFO] things - start get addressID from mobile: 18387455327
+[2018-04-04T10:24:05.174] [INFO] things - {"state":true,"code":0,"data":{"size":10,"index":1,"count":1,"datacount":1,"list":[{"rownumber":1,"SId":1965960,"UserId":"2268164","TelPhone":"18387455327","Zipcode":"000000","Address":"高新公安分局,6楼604室","AddressInfo":"云南省昆明市五华区","ShipTo":"杨顺","Remark":"","ProvinceId":"530000","CityId":"530100","DistrictsId":"530102","IsDefault":false,"SMNo":null,"RelPhone":null,"Longitude":"102.660574","Latitude":"25.06956","IsVerification":false,"TimeStamp":"2018-03-30 20:56:16"}]}}
+[2018-04-04T10:24:05.174] [INFO] things - create order params { '0': '18387455327',
+  '1': '391',
+  '2': 6,
+  '3': 300,
+  '4': 'Mozilla/5.0 (Linux; Android 4.4.4; LA2-SN Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36[android/1.0.23/62ac40ba50233ad78170b1eece1d773c/68874bbbf7b0993bb8b586466fce1e47]',
+  '5': 1965960,
+  '6': 100530100004,
+  '7': -1,
+  '8': 'acw_tc=AQAAAIcC9HgFDQ4AoG5DcKrMuKK6KXI5; Path=/; HttpOnly;ASP.NET_SessionId=b5o3jztljzqigvqdiwdow0ks; Path=/; HttpOnly;Vshop-Member=6e2f58f8a6254a70aabddf8aebf43cd9; Expires=Thu, 04 Apr 2019 01:28:16 GMT; Path=/;SERVERID=e0be7116fc95174c0c92660b6cc51b85|1522805291|1522805291; Path=/' }

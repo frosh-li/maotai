@@ -17,7 +17,7 @@ let quantity = 6;
 
 
 let shopName = '东柏街|祥瑞丰源|SOHO现代城C|嘉禾国信大厦|西城区|文峰商贸';
-var originPhones = require("../beijing4.2buy.json");
+var originPhones = require("../70.json");
 // originPhones = [
 
 //   {"phone":"15039298864","pass":"a123456"},
