@@ -540,13 +540,15 @@ class MaotaiService {
                 if(err){
                   return reject(err);
                 }
+                console.log('get key from redis', key);
                 redisClient.get(key, (err, token) => {
                     options.form.sessid = token;
+                    console.log(options.form);
                     request(options, function(error, response, body) {
                         if (error) {
                             return reject(error);
                         };
-                        console.log(options.form);
+                        
                         logger.info(colors.green('下单完成'+JSON.stringify(body)));
                         return resolve({
                           data:JSON.parse(body),
