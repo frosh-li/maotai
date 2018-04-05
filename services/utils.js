@@ -1,4 +1,6 @@
+const addressData = require('./address.json.js');
 /**
+ * 
  * 基础功能库
  */
 class Utils {
@@ -49,9 +51,33 @@ class Utils {
 			}
 			ret.push({
 				lat: (lat/Math.PI*180).toFixed(6),
-				lon: (lon/Math.PI*180).toFixed(6)
+				lng: (lon/Math.PI*180).toFixed(6)
 			})
 		}
+		return ret;
+	}
+
+	static findCityCode(streetCode){
+		let ret = "000000";
+		addressData.district.forEach(item => {
+			// console.log(item, streetCode)
+			if(item.areaCode == streetCode){
+				console.log(item);
+				ret = item.parentCode;
+			}
+		})
+		return ret;
+	}
+
+	static findProvinceCode(streetCode){
+		let ret = "000000";
+		let cityCode = this.findCityCode(streetCode);
+		addressData.city.forEach(item => {
+			if(item.areaCode == cityCode){
+				console.log(item);
+				ret = item.parentCode;
+			}
+		})
 		return ret;
 	}
 }

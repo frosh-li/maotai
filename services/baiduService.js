@@ -100,6 +100,29 @@ class BaiduService {
       })
     })
   }
+
+  geoEnCoder(lat, lng){
+    let url = `http://api.map.baidu.com/geocoder/v2/?location=${lat},${lng}&output=json&ak=${baiduAK}&pois=1`
+    console.log(url);
+    return new Promise((resolve, reject) => {
+      console.log(url);
+      request({
+        url:url,
+        method:'get',
+        json:true,
+      }, function(error, response, body){
+        if(error){
+          console.log(error);
+          return reject(error);
+        }
+        if(body.status === 0 && body.result){
+          return resolve(body.result)
+        }else{
+          return reject(new Error('解析失败'))
+        }
+      })
+    })
+  }
 }
 let service = new BaiduService();
 

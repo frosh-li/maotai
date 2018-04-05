@@ -36,7 +36,7 @@ let quantity = 6;
 
 
 let shopName = '东柏街|祥瑞丰源|SOHO现代城C|嘉禾国信大厦|西城区|文峰商贸';
-var originPhones = require("../70.json");
+var originPhones = require("../accounts/apoint4.5.hangzhou.json");
 function printInfo(data){
   try{
     logger.info('推送网点信息');
@@ -100,7 +100,7 @@ function watchQuanity(number) {
               // 购买成功，进行下一个账号的处理逻辑
               logger.info('购买成功'+tel+":"+pass+JSON.stringify(data));
               successOrder++;
-              fs.writeFileSync("output/20180403.json", `${tel} ${pass}`, 'a+');
+              fs.writeFileSync("output/20180405.json", `${tel} ${pass}`, 'a+');
               originPhones.splice(randomIndex, 1)
             }
             setTimeout(() => {
@@ -118,11 +118,11 @@ function watchQuanity(number) {
   //})
 }
 
-var fixedShopId = 100530100004; // 杭州网点
-var maxOrder = 13;
+var fixedShopId = 233330186001; // 杭州网点
+var maxOrder = 20;
 var successOrder = 0;
 
 
-watchQuanity(13)
+watchQuanity(20)
 
 

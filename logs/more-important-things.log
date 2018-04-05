@@ -1,89 +1,437 @@
-[2018-04-04T22:19:33.642] [INFO] things - params [ '/usr/local/bin/node',
-  '/Users/junliang/server/www/maotaiServer/controllers/buyFixed.js' ]
-[2018-04-04T22:19:33.942] [INFO] things - start get addressID from mobile: 18387455327
-[2018-04-04T22:19:35.507] [INFO] things - {"state":true,"code":0,"data":{"size":10,"index":1,"count":1,"datacount":1,"list":[{"rownumber":1,"SId":1965960,"UserId":"2268164","TelPhone":"18387455327","Zipcode":"000000","Address":"高新公安分局,6楼604室","AddressInfo":"云南省昆明市五华区","ShipTo":"杨顺","Remark":"","ProvinceId":"530000","CityId":"530100","DistrictsId":"530102","IsDefault":false,"SMNo":null,"RelPhone":null,"Longitude":"102.660574","Latitude":"25.06956","IsVerification":false,"TimeStamp":"2018-03-30 20:56:16"}]}}
-[2018-04-04T22:19:35.508] [INFO] things - create order params { '0': '18387455327',
-  '1': '391',
-  '2': 6,
-  '3': 300,
-  '4': 'Mozilla/5.0 (Linux; Android 4.4.4; LA2-SN Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36[android/1.0.23/62ac40ba50233ad78170b1eece1d773c/68874bbbf7b0993bb8b586466fce1e47]',
-  '5': 1965960,
-  '6': 100530100004,
-  '7': -1,
-  '8': 'acw_tc=AQAAAIcC9HgFDQ4AoG5DcKrMuKK6KXI5; Path=/; HttpOnly;ASP.NET_SessionId=b5o3jztljzqigvqdiwdow0ks; Path=/; HttpOnly;Vshop-Member=6e2f58f8a6254a70aabddf8aebf43cd9; Expires=Thu, 04 Apr 2019 01:28:16 GMT; Path=/;SERVERID=e0be7116fc95174c0c92660b6cc51b85|1522805291|1522805291; Path=/' }
-[2018-04-04T22:19:51.804] [INFO] things - coupon info { state: true,
+[2018-04-05T13:15:48.400] [INFO] things - { state: true,
   code: 0,
   data: 
-   { Cid: 'b93aa54954a34ab69f7e07e634795641',
-     Name: '茅台云商昆明市五华区服务网点',
-     DName: '昆明全兴利商贸有限公司',
-     Address: '昆明市虹山东路326号',
-     InvoiceCompany: '昆明全兴利商贸有限公司',
-     SHBegin: '08:45:00',
-     SHEnd: '17:30:00',
-     Amount: 1499,
-     Level: 1,
-     DisAmount: 1499,
-     DisCost: 0,
-     LocalCost: 0,
-     LocalZero: 1,
-     LocalZeroCost: -1,
-     OtherCost: -1,
-     OtherZero: -1,
-     OtherZeroCost: -1,
-     InvoiceCost: 22,
-     TakeDeliveryLimit: 7,
-     HasPlainInvoice: true,
-     HasVATInvoice: true,
-     Description: '同城配送：当日11:00之前下单付款成功的当日送达，11:00之后下单付款成功的次日送达。（特殊交通特殊情况延后配送,工作日内配送）\r\n自提地点：昆明市五华区虹山东路326号国酒茅台专卖店。\r\n自提时间：9：00-17:30（双休日正常营业，5件以上建议提前预约自提时间，避免耽误您宝贵时间）\r\n快递配送：根据快递公司安排配送。',
-     StateCode: 0,
-     NetworkType: 0,
-     WorkingDay: '[{"EnDay":"Monday","CnDay":"星期一"},{"EnDay":"Tuesday","CnDay":"星期二"},{"EnDay":"Wednesday","CnDay":"星期三"},{"EnDay":"Thursday","CnDay":"星期四"},{"EnDay":"Friday","CnDay":"星期五"},{"EnDay":"Saturday","CnDay":"星期六"},{"EnDay":"Sunday","CnDay":"星期日"}]' } }
-[2018-04-04T22:21:31.869] [INFO] things - params [ '/usr/local/bin/node',
-  '/Users/junliang/server/www/maotaiServer/controllers/buyFixed.js' ]
-[2018-04-04T22:21:32.549] [INFO] things - start get addressID from mobile: 18387455327
-[2018-04-04T22:21:44.430] [INFO] things - {"state":true,"code":0,"data":{"size":10,"index":1,"count":1,"datacount":1,"list":[{"rownumber":1,"SId":1965960,"UserId":"2268164","TelPhone":"18387455327","Zipcode":"000000","Address":"高新公安分局,6楼604室","AddressInfo":"云南省昆明市五华区","ShipTo":"杨顺","Remark":"","ProvinceId":"530000","CityId":"530100","DistrictsId":"530102","IsDefault":false,"SMNo":null,"RelPhone":null,"Longitude":"102.660574","Latitude":"25.06956","IsVerification":false,"TimeStamp":"2018-03-30 20:56:16"}]}}
-[2018-04-04T22:21:44.431] [INFO] things - create order params { '0': '18387455327',
-  '1': '391',
-  '2': 6,
-  '3': 300,
-  '4': 'Mozilla/5.0 (Linux; Android 4.4.4; LA2-SN Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36[android/1.0.23/62ac40ba50233ad78170b1eece1d773c/68874bbbf7b0993bb8b586466fce1e47]',
-  '5': 1965960,
-  '6': 100530100004,
-  '7': -1,
-  '8': 'acw_tc=AQAAAIcC9HgFDQ4AoG5DcKrMuKK6KXI5; Path=/; HttpOnly;ASP.NET_SessionId=b5o3jztljzqigvqdiwdow0ks; Path=/; HttpOnly;Vshop-Member=6e2f58f8a6254a70aabddf8aebf43cd9; Expires=Thu, 04 Apr 2019 01:28:16 GMT; Path=/;SERVERID=e0be7116fc95174c0c92660b6cc51b85|1522805291|1522805291; Path=/' }
-[2018-04-04T22:21:48.932] [INFO] things - coupon info { state: true,
+   { ID: 1951801,
+     IsDefault: true,
+     IsPushAddreess: false,
+     Name: '鄂休',
+     TelPhone: '13081312402',
+     Zipcode: '000000',
+     ProvCode: '330000',
+     CityCode: '330100',
+     AreaCode: '330106',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '浙江省杭州市西湖区,老桂树小厨房',
+     Longitude: 120.182098,
+     Latitude: 30.214828,
+     Address: '老桂树小厨房',
+     AddressText: '浙江省杭州市西湖区' } }
+[2018-04-05T13:17:00.453] [INFO] things - { state: true,
   code: 0,
   data: 
-   { Cid: 'd5b410d420e9482ab1777bad6ce933d9',
-     Name: '茅台云商昆明市五华区服务网点',
-     DName: '昆明全兴利商贸有限公司',
-     Address: '昆明市虹山东路326号',
-     InvoiceCompany: '昆明全兴利商贸有限公司',
-     SHBegin: '08:45:00',
-     SHEnd: '17:30:00',
-     Amount: 1499,
-     Level: 1,
-     DisAmount: 1499,
-     DisCost: 0,
-     LocalCost: 0,
-     LocalZero: 1,
-     LocalZeroCost: -1,
-     OtherCost: -1,
-     OtherZero: -1,
-     OtherZeroCost: -1,
-     InvoiceCost: 22,
-     TakeDeliveryLimit: 7,
-     HasPlainInvoice: true,
-     HasVATInvoice: true,
-     Description: '同城配送：当日11:00之前下单付款成功的当日送达，11:00之后下单付款成功的次日送达。（特殊交通特殊情况延后配送,工作日内配送）\r\n自提地点：昆明市五华区虹山东路326号国酒茅台专卖店。\r\n自提时间：9：00-17:30（双休日正常营业，5件以上建议提前预约自提时间，避免耽误您宝贵时间）\r\n快递配送：根据快递公司安排配送。',
-     StateCode: 0,
-     NetworkType: 0,
-     WorkingDay: '[{"EnDay":"Monday","CnDay":"星期一"},{"EnDay":"Tuesday","CnDay":"星期二"},{"EnDay":"Wednesday","CnDay":"星期三"},{"EnDay":"Thursday","CnDay":"星期四"},{"EnDay":"Friday","CnDay":"星期五"},{"EnDay":"Saturday","CnDay":"星期六"},{"EnDay":"Sunday","CnDay":"星期日"}]' } }
-[2018-04-04T22:22:47.594] [INFO] things - params [ '/usr/local/bin/node',
-  '/Users/junliang/server/www/maotaiServer/controllers/buyFixed.js' ]
-[2018-04-04T22:22:47.838] [INFO] things - start get addressID from mobile: 15911925463
-[2018-04-04T22:23:31.902] [INFO] things - 位置错误,60秒后重试 { Error: socket hang up
+   { ID: 1951801,
+     IsDefault: true,
+     IsPushAddreess: false,
+     Name: '湛系',
+     TelPhone: '13081312402',
+     Zipcode: '000000',
+     ProvCode: '330000',
+     CityCode: '330100',
+     AreaCode: '330106',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '浙江省杭州市西湖区,杭州疗养院体检中心',
+     Longitude: 120.12949,
+     Latitude: 30.256966,
+     Address: '杭州疗养院体检中心',
+     AddressText: '浙江省杭州市西湖区' } }
+[2018-04-05T13:17:27.811] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { ID: 1951801,
+     IsDefault: true,
+     IsPushAddreess: false,
+     Name: '倪钒',
+     TelPhone: '13081312402',
+     Zipcode: '000000',
+     ProvCode: '330000',
+     CityCode: '330100',
+     AreaCode: '330102',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '浙江省杭州市上城区,浙江大学医学院附属第二医院(解放路院区)',
+     Longitude: 120.21057,
+     Latitude: 30.215701,
+     Address: '浙江大学医学院附属第二医院(解放路院区)',
+     AddressText: '浙江省杭州市上城区' } }
+[2018-04-05T13:18:45.465] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { ID: 1951801,
+     IsDefault: true,
+     IsPushAddreess: false,
+     Name: '谈蛟尔',
+     TelPhone: '13081312402',
+     Zipcode: '000000',
+     ProvCode: '330000',
+     CityCode: '330100',
+     AreaCode: '330108',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '浙江省杭州市滨江区,滨江公园',
+     Longitude: 120.128388,
+     Latitude: 30.235088,
+     Address: '滨江公园',
+     AddressText: '浙江省杭州市滨江区' } }
+[2018-04-05T13:19:17.418] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { ID: 1951801,
+     IsDefault: true,
+     IsPushAddreess: false,
+     Name: '阮贤缔',
+     TelPhone: '13081312402',
+     Zipcode: '000000',
+     ProvCode: '330000',
+     CityCode: '330100',
+     AreaCode: '330104',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '浙江省杭州市江干区,杭州大剧院',
+     Longitude: 120.176973,
+     Latitude: 30.269765,
+     Address: '杭州大剧院',
+     AddressText: '浙江省杭州市江干区' } }
+[2018-04-05T13:23:12.656] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { ID: 1951801,
+     IsDefault: true,
+     IsPushAddreess: false,
+     Name: '艾幼阿',
+     TelPhone: '13081312402',
+     Zipcode: '000000',
+     ProvCode: '330000',
+     CityCode: '330100',
+     AreaCode: '330103',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '浙江省杭州市下城区,胭脂新村社区',
+     Longitude: 120.195175,
+     Latitude: 30.25627,
+     Address: '胭脂新村社区',
+     AddressText: '浙江省杭州市下城区' } }
+[2018-04-05T13:23:43.119] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { ID: 1951801,
+     IsDefault: true,
+     IsPushAddreess: false,
+     Name: '哀堀裔',
+     TelPhone: '13081312402',
+     Zipcode: '000000',
+     ProvCode: '330000',
+     CityCode: '330100',
+     AreaCode: '330106',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '浙江省杭州市西湖区,樱花碧桃园',
+     Longitude: 120.171353,
+     Latitude: 30.261567,
+     Address: '樱花碧桃园',
+     AddressText: '浙江省杭州市西湖区' } }
+[2018-04-05T13:23:45.949] [INFO] things - 预约结果 {"state":true,"code":9999,"msg":"用户未登陆"}
+[2018-04-05T13:24:11.127] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { ID: 1951801,
+     IsDefault: true,
+     IsPushAddreess: false,
+     Name: '吉顿姓',
+     TelPhone: '13081312402',
+     Zipcode: '000000',
+     ProvCode: '330000',
+     CityCode: '330100',
+     AreaCode: '330102',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '浙江省杭州市上城区,凤凰山庄',
+     Longitude: 120.188892,
+     Latitude: 30.237788,
+     Address: '凤凰山庄',
+     AddressText: '浙江省杭州市上城区' } }
+[2018-04-05T13:24:12.289] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-04-05T13:24:50.194] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { ID: 1961848,
+     IsDefault: true,
+     IsPushAddreess: false,
+     Name: '校涂',
+     TelPhone: '13103589803',
+     Zipcode: '000000',
+     ProvCode: '330000',
+     CityCode: '330100',
+     AreaCode: '330102',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '浙江省杭州市上城区,行知幼儿园新城园区',
+     Longitude: 120.148165,
+     Latitude: 30.285942,
+     Address: '行知幼儿园新城园区',
+     AddressText: '浙江省杭州市上城区' } }
+[2018-04-05T13:24:51.231] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { ID: 1893802,
+     IsDefault: true,
+     IsPushAddreess: false,
+     Name: '刁穹',
+     TelPhone: '131531850002',
+     Zipcode: '000000',
+     ProvCode: '330000',
+     CityCode: '330100',
+     AreaCode: '330106',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '浙江省杭州市西湖区,浙江外国语学院科学技术学院',
+     Longitude: 120.219491,
+     Latitude: 30.268082,
+     Address: '浙江外国语学院科学技术学院',
+     AddressText: '浙江省杭州市西湖区' } }
+[2018-04-05T13:24:53.345] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-04-05T13:24:54.564] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { ID: 1894418,
+     IsDefault: false,
+     IsPushAddreess: false,
+     Name: '颜彻',
+     TelPhone: '13157440803',
+     Zipcode: '000000',
+     ProvCode: '330000',
+     CityCode: '330100',
+     AreaCode: '330102',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '浙江省杭州市上城区,杭州复兴城市家园',
+     Longitude: 120.168529,
+     Latitude: 30.267612,
+     Address: '杭州复兴城市家园',
+     AddressText: '浙江省杭州市上城区' } }
+[2018-04-05T13:24:58.054] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { ID: 1962222,
+     IsDefault: true,
+     IsPushAddreess: false,
+     Name: '屈村瀜清',
+     TelPhone: '13209986205',
+     Zipcode: '000000',
+     ProvCode: '330000',
+     CityCode: '330100',
+     AreaCode: '330102',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '浙江省杭州市上城区,望江新村',
+     Longitude: 120.167874,
+     Latitude: 30.22723,
+     Address: '望江新村',
+     AddressText: '浙江省杭州市上城区' } }
+[2018-04-05T13:24:58.196] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-04-05T13:25:00.058] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { ID: 1962209,
+     IsDefault: true,
+     IsPushAddreess: false,
+     Name: '花牲远',
+     TelPhone: '13220790000',
+     Zipcode: '000000',
+     ProvCode: '330000',
+     CityCode: '330100',
+     AreaCode: '330106',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '浙江省杭州市西湖区,杭州西湖风景名胜区',
+     Longitude: 120.219957,
+     Latitude: 30.23122,
+     Address: '杭州西湖风景名胜区',
+     AddressText: '浙江省杭州市西湖区' } }
+[2018-04-05T13:25:00.949] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-04-05T13:25:01.076] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-04-05T13:25:03.170] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { ID: 1962187,
+     IsDefault: true,
+     IsPushAddreess: false,
+     Name: '颜枪鱼编',
+     TelPhone: '13290979002',
+     Zipcode: '000000',
+     ProvCode: '330000',
+     CityCode: '330100',
+     AreaCode: '330108',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '浙江省杭州市滨江区,西兴大桥',
+     Longitude: 120.172052,
+     Latitude: 30.213485,
+     Address: '西兴大桥',
+     AddressText: '浙江省杭州市滨江区' } }
+[2018-04-05T13:25:04.256] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { ID: 1930707,
+     IsDefault: true,
+     IsPushAddreess: false,
+     Name: '郁位衙',
+     TelPhone: '13313181305',
+     Zipcode: '000000',
+     ProvCode: '330000',
+     CityCode: '330100',
+     AreaCode: '330102',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '浙江省杭州市上城区,M员工俱乐部',
+     Longitude: 120.197278,
+     Latitude: 30.24337,
+     Address: 'M员工俱乐部',
+     AddressText: '浙江省杭州市上城区' } }
+[2018-04-05T13:25:04.525] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-04-05T13:25:06.364] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { ID: 1930785,
+     IsDefault: true,
+     IsPushAddreess: false,
+     Name: '翁俊',
+     TelPhone: '133331768002',
+     Zipcode: '000000',
+     ProvCode: '330000',
+     CityCode: '330100',
+     AreaCode: '330102',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '浙江省杭州市上城区,婺江路(地铁站)',
+     Longitude: 120.192738,
+     Latitude: 30.235332,
+     Address: '婺江路(地铁站)',
+     AddressText: '浙江省杭州市上城区' } }
+[2018-04-05T13:25:06.444] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-04-05T13:25:07.257] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-04-05T13:25:08.561] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { ID: 1885157,
+     IsDefault: true,
+     IsPushAddreess: false,
+     Name: '寿亩甯',
+     TelPhone: '13343192306',
+     Zipcode: '000000',
+     ProvCode: '330000',
+     CityCode: '330100',
+     AreaCode: '330106',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '浙江省杭州市西湖区,太子湾公园',
+     Longitude: 120.174186,
+     Latitude: 30.230824,
+     Address: '太子湾公园',
+     AddressText: '浙江省杭州市西湖区' } }
+[2018-04-05T13:25:09.463] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-04-05T13:25:09.624] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { ID: 1935796,
+     IsDefault: true,
+     IsPushAddreess: false,
+     Name: '葛缨',
+     TelPhone: '13399381702',
+     Zipcode: '000000',
+     ProvCode: '330000',
+     CityCode: '330100',
+     AreaCode: '330106',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '浙江省杭州市西湖区,杭州动物园',
+     Longitude: 120.194762,
+     Latitude: 30.254761,
+     Address: '杭州动物园',
+     AddressText: '浙江省杭州市西湖区' } }
+[2018-04-05T13:25:11.060] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { ID: 1935797,
+     IsDefault: true,
+     IsPushAddreess: false,
+     Name: '班役歙',
+     TelPhone: '13453301601',
+     Zipcode: '000000',
+     ProvCode: '330000',
+     CityCode: '330100',
+     AreaCode: '330102',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '浙江省杭州市上城区,挹江亭',
+     Longitude: 120.161862,
+     Latitude: 30.213499,
+     Address: '挹江亭',
+     AddressText: '浙江省杭州市上城区' } }
+[2018-04-05T13:25:11.971] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { ID: 1951723,
+     IsDefault: true,
+     IsPushAddreess: false,
+     Name: '阚斡',
+     TelPhone: '13463414908',
+     Zipcode: '000000',
+     ProvCode: '330000',
+     CityCode: '330100',
+     AreaCode: '330106',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '浙江省杭州市西湖区,茅家埠幼儿园',
+     Longitude: 120.146677,
+     Latitude: 30.228707,
+     Address: '茅家埠幼儿园',
+     AddressText: '浙江省杭州市西湖区' } }
+[2018-04-05T13:25:12.273] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-04-05T13:25:12.945] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { ID: 1676457,
+     IsDefault: true,
+     IsPushAddreess: false,
+     Name: '轩辕默岁',
+     TelPhone: '13485665202',
+     Zipcode: '000000',
+     ProvCode: '330000',
+     CityCode: '330100',
+     AreaCode: '330102',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '浙江省杭州市上城区,西湖国贸中心',
+     Longitude: 120.189061,
+     Latitude: 30.240066,
+     Address: '西湖国贸中心',
+     AddressText: '浙江省杭州市上城区' } }
+[2018-04-05T13:25:13.442] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-04-05T13:25:13.509] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-04-05T13:25:13.894] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-04-05T13:25:14.039] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { ID: 1935798,
+     IsDefault: true,
+     IsPushAddreess: false,
+     Name: '凤伪俭',
+     TelPhone: '13519083603',
+     Zipcode: '000000',
+     ProvCode: '330000',
+     CityCode: '330100',
+     AreaCode: '330108',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '浙江省杭州市滨江区,左岸·万国花园',
+     Longitude: 120.158659,
+     Latitude: 30.228738,
+     Address: '左岸·万国花园',
+     AddressText: '浙江省杭州市滨江区' } }
+[2018-04-05T13:25:15.145] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-04-05T13:25:29.964] [INFO] things - { Error: socket hang up
     at createHangUpError (_http_client.js:331:15)
     at TLSSocket.socketOnEnd (_http_client.js:423:23)
     at emitNone (events.js:111:20)
@@ -91,45 +439,526 @@
     at endReadableNT (_stream_readable.js:1055:12)
     at _combinedTickCallback (internal/process/next_tick.js:138:11)
     at process._tickCallback (internal/process/next_tick.js:180:9) code: 'ECONNRESET' }
-[2018-04-04T22:23:33.132] [INFO] things - start get addressID from mobile: 18387455327
-[2018-04-04T22:23:45.156] [INFO] things - {"state":true,"code":0,"data":{"size":10,"index":1,"count":1,"datacount":1,"list":[{"rownumber":1,"SId":1965960,"UserId":"2268164","TelPhone":"18387455327","Zipcode":"000000","Address":"高新公安分局,6楼604室","AddressInfo":"云南省昆明市五华区","ShipTo":"杨顺","Remark":"","ProvinceId":"530000","CityId":"530100","DistrictsId":"530102","IsDefault":false,"SMNo":null,"RelPhone":null,"Longitude":"102.660574","Latitude":"25.06956","IsVerification":false,"TimeStamp":"2018-03-30 20:56:16"}]}}
-[2018-04-04T22:23:45.157] [INFO] things - create order params { '0': '18387455327',
-  '1': '391',
-  '2': 6,
-  '3': 300,
-  '4': 'Mozilla/5.0 (Linux; Android 4.4.4; LA2-SN Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36[android/1.0.23/62ac40ba50233ad78170b1eece1d773c/68874bbbf7b0993bb8b586466fce1e47]',
-  '5': 1965960,
-  '6': 100530100004,
-  '7': -1,
-  '8': 'acw_tc=AQAAAIcC9HgFDQ4AoG5DcKrMuKK6KXI5; Path=/; HttpOnly;ASP.NET_SessionId=b5o3jztljzqigvqdiwdow0ks; Path=/; HttpOnly;Vshop-Member=6e2f58f8a6254a70aabddf8aebf43cd9; Expires=Thu, 04 Apr 2019 01:28:16 GMT; Path=/;SERVERID=e0be7116fc95174c0c92660b6cc51b85|1522805291|1522805291; Path=/' }
-[2018-04-04T22:24:14.864] [INFO] things - coupon info { state: true,
+[2018-04-05T13:27:49.745] [INFO] things - object
+[2018-04-05T13:27:49.747] [INFO] things - 开始预约: 13081312422
+[2018-04-05T13:27:58.792] [INFO] things - start get addressID from mobile: 13081312422
+[2018-04-05T13:27:59.814] [INFO] things - {"state":false,"code":9999,"msg":"用户未登陆"}
+[2018-04-05T13:28:02.735] [INFO] things - 预约结果 {"state":false,"msg":"未设置参数addressID"}
+[2018-04-05T13:28:02.736] [INFO] things - 预约结果 13081312422 {"state":false,"msg":"未设置参数addressID"}
+[2018-04-05T13:28:03.739] [INFO] things - object
+[2018-04-05T13:28:03.739] [INFO] things - 开始预约: 13103589823
+[2018-04-05T13:30:14.853] [INFO] things - object
+[2018-04-05T13:30:14.856] [INFO] things - 开始预约: 13081312422
+[2018-04-05T13:30:15.029] [INFO] things - error ReferenceError: user is not defined
+    at proxy.switchIp.then (/Users/junliang/server/www/maotaiServer/tools/service.js:844:43)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+[2018-04-05T13:30:16.038] [INFO] things - object
+[2018-04-05T13:30:16.038] [INFO] things - 开始预约: 13103589823
+[2018-04-05T13:31:12.029] [INFO] things - object
+[2018-04-05T13:31:12.032] [INFO] things - 开始预约: 13081312422
+[2018-04-05T13:31:21.964] [INFO] things - 预约结果 {"state":false,"msg":"未设置参数addressID"}
+[2018-04-05T13:31:21.964] [INFO] things - 预约结果 13081312422 {"state":false,"msg":"未设置参数addressID"}
+[2018-04-05T13:31:22.967] [INFO] things - object
+[2018-04-05T13:31:22.968] [INFO] things - 开始预约: 13103589823
+[2018-04-05T13:31:49.600] [INFO] things - object
+[2018-04-05T13:31:49.603] [INFO] things - 开始预约: 13081312422
+[2018-04-05T13:31:51.462] [INFO] things - 预约结果 {"state":false,"msg":"参数pid[value:acw_tc=AQAAAHtveG01NQoAteLqc0RFH7zhccqS; Path=/; HttpOnly;ASP.NET_SessionId=0zhs3vvziobvkqqy21z2qjm0; Path=/; HttpOnly;Vshop-Member=74dea0d5068549cebc96c97e54ba3df9; Expires=Fri, 05 Apr 2019 05:27:55 GMT; Path=/;SERVERID=d7ff3566a46564dfbddba0bd72787651|1522906078|1522906078; Path=/]不是有效的整型"}
+[2018-04-05T13:31:51.462] [INFO] things - 预约结果 13081312422 {"state":false,"msg":"参数pid[value:acw_tc=AQAAAHtveG01NQoAteLqc0RFH7zhccqS; Path=/; HttpOnly;ASP.NET_SessionId=0zhs3vvziobvkqqy21z2qjm0; Path=/; HttpOnly;Vshop-Member=74dea0d5068549cebc96c97e54ba3df9; Expires=Fri, 05 Apr 2019 05:27:55 GMT; Path=/;SERVERID=d7ff3566a46564dfbddba0bd72787651|1522906078|1522906078; Path=/]不是有效的整型"}
+[2018-04-05T13:31:52.467] [INFO] things - object
+[2018-04-05T13:31:52.467] [INFO] things - 开始预约: 13103589823
+[2018-04-05T13:32:18.380] [INFO] things - object
+[2018-04-05T13:32:18.384] [INFO] things - 开始预约: 13081312422
+[2018-04-05T13:32:21.285] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-04-05T13:32:21.286] [INFO] things - 预约结果 13081312422 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-04-05T13:32:22.289] [INFO] things - object
+[2018-04-05T13:32:22.290] [INFO] things - 开始预约: 13103589823
+[2018-04-05T13:32:26.174] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-04-05T13:32:26.174] [INFO] things - 预约结果 13103589823 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-04-05T13:32:27.176] [INFO] things - object
+[2018-04-05T13:32:27.177] [INFO] things - 开始预约: 13153185002
+[2018-04-05T13:32:29.092] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-04-05T13:32:29.093] [INFO] things - 预约结果 13153185002 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-04-05T13:32:30.095] [INFO] things - object
+[2018-04-05T13:32:30.096] [INFO] things - 开始预约: 13157440883
+[2018-04-05T13:32:32.523] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-04-05T13:32:32.524] [INFO] things - 预约结果 13157440883 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-04-05T13:32:33.528] [INFO] things - object
+[2018-04-05T13:32:33.528] [INFO] things - 开始预约: 13209986285
+[2018-04-05T13:32:36.107] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-04-05T13:32:36.108] [INFO] things - 预约结果 13209986285 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-04-05T13:32:37.112] [INFO] things - object
+[2018-04-05T13:32:37.112] [INFO] things - 开始预约: 13220790090
+[2018-04-05T13:32:51.011] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-04-05T13:32:51.012] [INFO] things - 预约结果 13220790090 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-04-05T13:32:52.013] [INFO] things - object
+[2018-04-05T13:32:52.014] [INFO] things - 开始预约: 13290979032
+[2018-04-05T13:32:59.045] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-04-05T13:32:59.045] [INFO] things - 预约结果 13290979032 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-04-05T13:33:00.049] [INFO] things - object
+[2018-04-05T13:33:00.049] [INFO] things - 开始预约: 13313181385
+[2018-04-05T13:33:03.141] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-04-05T13:33:03.141] [INFO] things - 预约结果 13313181385 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-04-05T13:33:04.143] [INFO] things - object
+[2018-04-05T13:33:04.144] [INFO] things - 开始预约: 13333176802
+[2018-04-05T13:33:10.222] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-04-05T13:33:10.222] [INFO] things - 预约结果 13333176802 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-04-05T13:33:11.226] [INFO] things - object
+[2018-04-05T13:33:11.227] [INFO] things - 开始预约: 13343192376
+[2018-04-05T13:33:13.062] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-04-05T13:33:13.063] [INFO] things - 预约结果 13343192376 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-04-05T13:33:14.068] [INFO] things - object
+[2018-04-05T13:33:14.068] [INFO] things - 开始预约: 13399381732
+[2018-04-05T13:33:25.259] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-04-05T13:33:25.259] [INFO] things - 预约结果 13399381732 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-04-05T13:33:26.265] [INFO] things - object
+[2018-04-05T13:33:26.266] [INFO] things - 开始预约: 13453301621
+[2018-04-05T13:33:28.522] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-04-05T13:33:28.522] [INFO] things - 预约结果 13453301621 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-04-05T13:33:29.525] [INFO] things - object
+[2018-04-05T13:33:29.526] [INFO] things - 开始预约: 13463414918
+[2018-04-05T13:33:31.466] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-04-05T13:33:31.467] [INFO] things - 预约结果 13463414918 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-04-05T13:33:32.470] [INFO] things - object
+[2018-04-05T13:33:32.471] [INFO] things - 开始预约: 13485665212
+[2018-04-05T13:33:35.500] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-04-05T13:33:35.500] [INFO] things - 预约结果 13485665212 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-04-05T13:33:36.505] [INFO] things - object
+[2018-04-05T13:33:36.505] [INFO] things - 开始预约: 13519083633
+[2018-04-05T13:33:38.541] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-04-05T13:33:38.542] [INFO] things - 预约结果 13519083633 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-04-05T13:33:39.543] [INFO] things - 所有手机号预约结束
+[2018-04-05T13:33:39.544] [INFO] things - 预约成功:
+[2018-04-05T13:33:39.544] [INFO] things - [{"phone":"13081312422","pass":"a123456"},{"phone":"13153185002","pass":"123456"},{"phone":"13220790090","pass":"a123456"},{"phone":"13290979032","pass":"a123456"},{"phone":"13313181385","pass":"a123456"},{"phone":"13343192376","pass":"123456"},{"phone":"13399381732","pass":"q123456"},{"phone":"13453301621","pass":"654321"},{"phone":"13485665212","pass":"123456"}]
+[2018-04-05T13:33:39.546] [INFO] things - 预约失败:
+[2018-04-05T13:33:39.546] [INFO] things - [{"phone":"13103589823","pass":"a123456","error":"{\"state\":true,\"code\":101,\"msg\":\"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)\"}"},{"phone":"13157440883","pass":"123456","error":"{\"state\":true,\"code\":101,\"msg\":\"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)\"}"},{"phone":"13209986285","pass":"a123456","error":"{\"state\":true,\"code\":101,\"msg\":\"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)\"}"},{"phone":"13333176802","pass":"a123456","error":"{\"state\":true,\"code\":101,\"msg\":\"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)\"}"},{"phone":"13463414918","pass":"a123456","error":"{\"state\":true,\"code\":101,\"msg\":\"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)\"}"},{"phone":"13519083633","pass":"q123456","error":"{\"state\":true,\"code\":101,\"msg\":\"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)\"}"}]
+[2018-04-05T13:34:53.297] [INFO] things - object
+[2018-04-05T13:34:53.300] [INFO] things - 开始预约: 13081312422
+[2018-04-05T13:34:55.842] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-04-05T13:34:55.843] [INFO] things - 预约结果 13081312422 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-04-05T13:34:56.846] [INFO] things - object
+[2018-04-05T13:34:56.846] [INFO] things - 开始预约: 13103589823
+[2018-04-05T13:35:03.764] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-04-05T13:35:03.765] [INFO] things - 预约结果 13103589823 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-04-05T13:35:04.769] [INFO] things - object
+[2018-04-05T13:35:04.770] [INFO] things - 开始预约: 13153185002
+[2018-04-05T13:35:08.376] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-04-05T13:35:08.376] [INFO] things - 预约结果 13153185002 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-04-05T13:35:09.380] [INFO] things - object
+[2018-04-05T13:35:09.381] [INFO] things - 开始预约: 13157440883
+[2018-04-05T13:35:11.203] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-04-05T13:35:11.204] [INFO] things - 预约结果 13157440883 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-04-05T13:35:12.206] [INFO] things - object
+[2018-04-05T13:35:12.207] [INFO] things - 开始预约: 13209986285
+[2018-04-05T13:35:14.186] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-04-05T13:35:14.186] [INFO] things - 预约结果 13209986285 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-04-05T13:35:15.189] [INFO] things - object
+[2018-04-05T13:35:15.189] [INFO] things - 开始预约: 13220790090
+[2018-04-05T13:35:19.538] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-04-05T13:35:19.538] [INFO] things - 预约结果 13220790090 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-04-05T13:35:20.539] [INFO] things - object
+[2018-04-05T13:35:20.539] [INFO] things - 开始预约: 13290979032
+[2018-04-05T13:35:26.192] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-04-05T13:35:26.193] [INFO] things - 预约结果 13290979032 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-04-05T13:35:27.195] [INFO] things - object
+[2018-04-05T13:35:27.195] [INFO] things - 开始预约: 13313181385
+[2018-04-05T13:35:30.135] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-04-05T13:35:30.135] [INFO] things - 预约结果 13313181385 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-04-05T13:35:31.141] [INFO] things - object
+[2018-04-05T13:35:31.141] [INFO] things - 开始预约: 13333176802
+[2018-04-05T13:35:33.296] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-04-05T13:35:33.296] [INFO] things - 预约结果 13333176802 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-04-05T13:35:34.301] [INFO] things - object
+[2018-04-05T13:35:34.301] [INFO] things - 开始预约: 13343192376
+[2018-04-05T13:35:36.158] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-04-05T13:35:36.159] [INFO] things - 预约结果 13343192376 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-04-05T13:35:37.164] [INFO] things - object
+[2018-04-05T13:35:37.164] [INFO] things - 开始预约: 13399381732
+[2018-04-05T13:35:40.103] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-04-05T13:35:40.104] [INFO] things - 预约结果 13399381732 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-04-05T13:35:41.110] [INFO] things - object
+[2018-04-05T13:35:41.110] [INFO] things - 开始预约: 13453301621
+[2018-04-05T13:35:48.924] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-04-05T13:35:48.925] [INFO] things - 预约结果 13453301621 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-04-05T13:35:49.929] [INFO] things - object
+[2018-04-05T13:35:49.929] [INFO] things - 开始预约: 13463414918
+[2018-04-05T13:35:53.955] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-04-05T13:35:53.955] [INFO] things - 预约结果 13463414918 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-04-05T13:35:54.960] [INFO] things - object
+[2018-04-05T13:35:54.961] [INFO] things - 开始预约: 13485665212
+[2018-04-05T13:36:09.714] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-04-05T13:36:09.715] [INFO] things - 预约结果 13485665212 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-04-05T13:36:10.719] [INFO] things - object
+[2018-04-05T13:36:10.720] [INFO] things - 开始预约: 13519083633
+[2018-04-05T13:36:12.370] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-04-05T13:36:12.370] [INFO] things - 预约结果 13519083633 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-04-05T13:36:13.375] [INFO] things - 所有手机号预约结束
+[2018-04-05T13:36:13.376] [INFO] things - 预约成功:
+[2018-04-05T13:36:13.376] [INFO] things - [{"phone":"13081312422","pass":"a123456","addressId":"1951801"},{"phone":"13153185002","pass":"123456","addressId":"1893802"},{"phone":"13220790090","pass":"a123456","addressId":"1962209"},{"phone":"13290979032","pass":"a123456","addressId":"1962187"},{"phone":"13313181385","pass":"a123456","addressId":"1930707"},{"phone":"13343192376","pass":"123456","addressId":"1885157"},{"phone":"13399381732","pass":"q123456","addressId":"1935796"},{"phone":"13453301621","pass":"654321","addressId":"1935797"},{"phone":"13485665212","pass":"123456","addressId":"1676457"}]
+[2018-04-05T13:36:13.377] [INFO] things - 预约失败:
+[2018-04-05T13:36:13.377] [INFO] things - [{"phone":"13103589823","pass":"a123456","error":"{\"state\":true,\"code\":101,\"msg\":\"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)\"}"},{"phone":"13157440883","pass":"123456","error":"{\"state\":true,\"code\":101,\"msg\":\"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)\"}"},{"phone":"13209986285","pass":"a123456","error":"{\"state\":true,\"code\":101,\"msg\":\"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)\"}"},{"phone":"13333176802","pass":"a123456","error":"{\"state\":true,\"code\":101,\"msg\":\"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)\"}"},{"phone":"13463414918","pass":"a123456","error":"{\"state\":true,\"code\":101,\"msg\":\"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)\"}"},{"phone":"13519083633","pass":"q123456","error":"{\"state\":true,\"code\":101,\"msg\":\"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)\"}"}]
+[2018-04-05T13:37:41.726] [INFO] things - { state: true,
   code: 0,
   data: 
-   { Cid: 'f3603cd0aa3b469ebd2b00bc46379611',
-     Name: '茅台云商昆明市五华区服务网点',
-     DName: '昆明全兴利商贸有限公司',
-     Address: '昆明市虹山东路326号',
-     InvoiceCompany: '昆明全兴利商贸有限公司',
-     SHBegin: '08:45:00',
-     SHEnd: '17:30:00',
-     Amount: 1499,
-     Level: 1,
-     DisAmount: 1499,
-     DisCost: 0,
-     LocalCost: 0,
-     LocalZero: 1,
-     LocalZeroCost: -1,
-     OtherCost: -1,
-     OtherZero: -1,
-     OtherZeroCost: -1,
-     InvoiceCost: 22,
-     TakeDeliveryLimit: 7,
-     HasPlainInvoice: true,
-     HasVATInvoice: true,
-     Description: '同城配送：当日11:00之前下单付款成功的当日送达，11:00之后下单付款成功的次日送达。（特殊交通特殊情况延后配送,工作日内配送）\r\n自提地点：昆明市五华区虹山东路326号国酒茅台专卖店。\r\n自提时间：9：00-17:30（双休日正常营业，5件以上建议提前预约自提时间，避免耽误您宝贵时间）\r\n快递配送：根据快递公司安排配送。',
-     StateCode: 0,
-     NetworkType: 0,
-     WorkingDay: '[{"EnDay":"Monday","CnDay":"星期一"},{"EnDay":"Tuesday","CnDay":"星期二"},{"EnDay":"Wednesday","CnDay":"星期三"},{"EnDay":"Thursday","CnDay":"星期四"},{"EnDay":"Friday","CnDay":"星期五"},{"EnDay":"Saturday","CnDay":"星期六"},{"EnDay":"Sunday","CnDay":"星期日"}]' } }
-[2018-04-04T22:25:06.066] [INFO] things - params [ '/usr/local/bin/node',
-  '/Users/junliang/server/www/maotaiServer/controllers/buyFixed.js' ]
-[2018-04-04T22:25:06.075] [INFO] things - start get addressID from mobile: 13404986527
+   { ID: 1935799,
+     IsDefault: true,
+     IsPushAddreess: false,
+     Name: '程叹',
+     TelPhone: '13521690901',
+     Zipcode: '000000',
+     ProvCode: '330000',
+     CityCode: '330100',
+     AreaCode: '330102',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '浙江省杭州市上城区,万松岭蕃客墓遗址',
+     Longitude: 120.138166,
+     Latitude: 30.274674,
+     Address: '万松岭蕃客墓遗址',
+     AddressText: '浙江省杭州市上城区' } }
+[2018-04-05T13:37:42.891] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { ID: 1930789,
+     IsDefault: true,
+     IsPushAddreess: false,
+     Name: '阎泊',
+     TelPhone: '13593493601',
+     Zipcode: '000000',
+     ProvCode: '330000',
+     CityCode: '330100',
+     AreaCode: '330102',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '浙江省杭州市上城区,大通桥河下21号楼',
+     Longitude: 120.167506,
+     Latitude: 30.282348,
+     Address: '大通桥河下21号楼',
+     AddressText: '浙江省杭州市上城区' } }
+[2018-04-05T13:37:43.096] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-04-05T13:37:44.141] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-04-05T13:37:47.881] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { ID: 1961857,
+     IsDefault: true,
+     IsPushAddreess: false,
+     Name: '纪赎团',
+     TelPhone: '13619167905',
+     Zipcode: '000000',
+     ProvCode: '330000',
+     CityCode: '330100',
+     AreaCode: '330104',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '浙江省杭州市江干区,西兴大桥',
+     Longitude: 120.188197,
+     Latitude: 30.235516,
+     Address: '西兴大桥',
+     AddressText: '浙江省杭州市江干区' } }
+[2018-04-05T13:37:48.946] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-04-05T13:37:53.854] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { ID: 1930787,
+     IsDefault: true,
+     IsPushAddreess: false,
+     Name: '强淋',
+     TelPhone: '13624666007',
+     Zipcode: '000000',
+     ProvCode: '330000',
+     CityCode: '330100',
+     AreaCode: '330106',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '浙江省杭州市西湖区,景行古桥',
+     Longitude: 120.156938,
+     Latitude: 30.283946,
+     Address: '景行古桥',
+     AddressText: '浙江省杭州市西湖区' } }
+[2018-04-05T13:37:55.032] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { ID: 1935803,
+     IsDefault: true,
+     IsPushAddreess: false,
+     Name: '干叠',
+     TelPhone: '13633696701',
+     Zipcode: '000000',
+     ProvCode: '330000',
+     CityCode: '330100',
+     AreaCode: '330106',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '浙江省杭州市西湖区,放生池',
+     Longitude: 120.173292,
+     Latitude: 30.289292,
+     Address: '放生池',
+     AddressText: '浙江省杭州市西湖区' } }
+[2018-04-05T13:37:55.190] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-04-05T13:37:56.518] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-04-05T13:38:00.083] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { ID: 1930705,
+     IsDefault: true,
+     IsPushAddreess: false,
+     Name: '钮祜禄丑裹顿',
+     TelPhone: '13670589603',
+     Zipcode: '000000',
+     ProvCode: '330000',
+     CityCode: '330100',
+     AreaCode: '330102',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '浙江省杭州市上城区,杭州西湖风景名胜区',
+     Longitude: 120.213956,
+     Latitude: 30.226831,
+     Address: '杭州西湖风景名胜区',
+     AddressText: '浙江省杭州市上城区' } }
+[2018-04-05T13:38:01.332] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-04-05T13:38:01.540] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { ID: 1892989,
+     IsDefault: true,
+     IsPushAddreess: false,
+     Name: '任抑',
+     TelPhone: '13700077509',
+     Zipcode: '000000',
+     ProvCode: '330000',
+     CityCode: '330100',
+     AreaCode: '330106',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '浙江省杭州市西湖区,杭州市公安局交通警察支队景区大队',
+     Longitude: 120.165121,
+     Latitude: 30.235154,
+     Address: '杭州市公安局交通警察支队景区大队',
+     AddressText: '浙江省杭州市西湖区' } }
+[2018-04-05T13:38:02.521] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-04-05T13:38:02.525] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { ID: 1847409,
+     IsDefault: true,
+     IsPushAddreess: false,
+     Name: '仲衲蛮',
+     TelPhone: '13764763401',
+     Zipcode: '000000',
+     ProvCode: '330000',
+     CityCode: '330100',
+     AreaCode: '330104',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '浙江省杭州市江干区,中国邮政储蓄银行(江锦路营业所)',
+     Longitude: 120.207159,
+     Latitude: 30.270122,
+     Address: '中国邮政储蓄银行(江锦路营业所)',
+     AddressText: '浙江省杭州市江干区' } }
+[2018-04-05T13:38:03.740] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { ID: 1961955,
+     IsDefault: true,
+     IsPushAddreess: false,
+     Name: '双昀嫩',
+     TelPhone: '13781072701',
+     Zipcode: '000000',
+     ProvCode: '330000',
+     CityCode: '330100',
+     AreaCode: '330102',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '浙江省杭州市上城区,檀香园',
+     Longitude: 120.166269,
+     Latitude: 30.254239,
+     Address: '檀香园',
+     AddressText: '浙江省杭州市上城区' } }
+[2018-04-05T13:38:03.781] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-04-05T13:38:05.181] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { ID: 1930706,
+     IsDefault: true,
+     IsPushAddreess: false,
+     Name: '纪澄',
+     TelPhone: '13792080708',
+     Zipcode: '000000',
+     ProvCode: '330000',
+     CityCode: '330100',
+     AreaCode: '330106',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '浙江省杭州市西湖区,浙江省中山医院',
+     Longitude: 120.172022,
+     Latitude: 30.23633,
+     Address: '浙江省中山医院',
+     AddressText: '浙江省杭州市西湖区' } }
+[2018-04-05T13:38:05.333] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-04-05T13:38:06.338] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { ID: 1962203,
+     IsDefault: true,
+     IsPushAddreess: false,
+     Name: '暨谓',
+     TelPhone: '13831322800',
+     Zipcode: '000000',
+     ProvCode: '330000',
+     CityCode: '330100',
+     AreaCode: '330104',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '浙江省杭州市江干区,锦江之星酒店(凯旋路店)',
+     Longitude: 120.129184,
+     Latitude: 30.262119,
+     Address: '锦江之星酒店(凯旋路店)',
+     AddressText: '浙江省杭州市江干区' } }
+[2018-04-05T13:38:06.556] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-04-05T13:38:07.211] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-04-05T13:38:07.688] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { ID: 1962229,
+     IsDefault: true,
+     IsPushAddreess: false,
+     Name: '武社鉴',
+     TelPhone: '13839228501',
+     Zipcode: '000000',
+     ProvCode: '330000',
+     CityCode: '330100',
+     AreaCode: '330102',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '浙江省杭州市上城区,圣果寺遗址',
+     Longitude: 120.20051,
+     Latitude: 30.226794,
+     Address: '圣果寺遗址',
+     AddressText: '浙江省杭州市上城区' } }
+[2018-04-05T13:38:08.859] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-04-05T13:38:12.492] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { ID: 1930791,
+     IsDefault: true,
+     IsPushAddreess: false,
+     Name: '闵枝筹',
+     TelPhone: '13842111000',
+     Zipcode: '000000',
+     ProvCode: '330000',
+     CityCode: '330100',
+     AreaCode: '330102',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '浙江省杭州市上城区,滨江新苑',
+     Longitude: 120.139748,
+     Latitude: 30.239177,
+     Address: '滨江新苑',
+     AddressText: '浙江省杭州市上城区' } }
+[2018-04-05T13:38:18.635] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { ID: 1930782,
+     IsDefault: true,
+     IsPushAddreess: false,
+     Name: '刁媛',
+     TelPhone: '13935327102',
+     Zipcode: '000000',
+     ProvCode: '330000',
+     CityCode: '330100',
+     AreaCode: '330108',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '浙江省杭州市滨江区,左岸·万国花园',
+     Longitude: 120.203697,
+     Latitude: 30.22557,
+     Address: '左岸·万国花园',
+     AddressText: '浙江省杭州市滨江区' } }
+[2018-04-05T13:38:19.751] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { ID: 1961829,
+     IsDefault: true,
+     IsPushAddreess: false,
+     Name: '别棓',
+     TelPhone: '13969577703',
+     Zipcode: '000000',
+     ProvCode: '330000',
+     CityCode: '330100',
+     AreaCode: '330102',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '浙江省杭州市上城区,望江家园西园',
+     Longitude: 120.197627,
+     Latitude: 30.21234,
+     Address: '望江家园西园',
+     AddressText: '浙江省杭州市上城区' } }
+[2018-04-05T13:38:21.751] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-04-05T13:38:22.358] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-04-05T13:38:23.177] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-04-05T13:39:14.095] [INFO] things - object
+[2018-04-05T13:39:14.097] [INFO] things - 开始预约: 13521690981
+[2018-04-05T13:39:16.358] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-04-05T13:39:16.359] [INFO] things - 预约结果 13521690981 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-04-05T13:39:17.363] [INFO] things - object
+[2018-04-05T13:39:17.364] [INFO] things - 开始预约: 13593493641
+[2018-04-05T13:39:19.578] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-04-05T13:39:19.579] [INFO] things - 预约结果 13593493641 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-04-05T13:39:20.583] [INFO] things - object
+[2018-04-05T13:39:20.583] [INFO] things - 开始预约: 13619167945
+[2018-04-05T13:39:28.429] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-04-05T13:39:28.429] [INFO] things - 预约结果 13619167945 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-04-05T13:39:29.430] [INFO] things - object
+[2018-04-05T13:39:29.431] [INFO] things - 开始预约: 13624666057
+[2018-04-05T13:39:36.962] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-04-05T13:39:36.963] [INFO] things - 预约结果 13624666057 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-04-05T13:39:37.963] [INFO] things - object
+[2018-04-05T13:39:37.963] [INFO] things - 开始预约: 13633696711
+[2018-04-05T13:39:49.052] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-04-05T13:39:49.052] [INFO] things - 预约结果 13633696711 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-04-05T13:39:50.056] [INFO] things - object
+[2018-04-05T13:39:50.057] [INFO] things - 开始预约: 13670589613
+[2018-04-05T13:39:55.766] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-04-05T13:39:55.767] [INFO] things - 预约结果 13670589613 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-04-05T13:39:56.770] [INFO] things - object
+[2018-04-05T13:39:56.771] [INFO] things - 开始预约: 13700077519
+[2018-04-05T13:39:59.384] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-04-05T13:39:59.385] [INFO] things - 预约结果 13700077519 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-04-05T13:40:00.388] [INFO] things - object
+[2018-04-05T13:40:00.389] [INFO] things - 开始预约: 13764763451
+[2018-04-05T13:40:02.547] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-04-05T13:40:02.548] [INFO] things - 预约结果 13764763451 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-04-05T13:40:03.553] [INFO] things - object
+[2018-04-05T13:40:03.554] [INFO] things - 开始预约: 13781072791
+[2018-04-05T13:40:06.667] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-04-05T13:40:06.667] [INFO] things - 预约结果 13781072791 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-04-05T13:40:07.667] [INFO] things - object
+[2018-04-05T13:40:07.668] [INFO] things - 开始预约: 13792080758
+[2018-04-05T13:40:10.066] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-04-05T13:40:10.067] [INFO] things - 预约结果 13792080758 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-04-05T13:40:11.068] [INFO] things - object
+[2018-04-05T13:40:11.069] [INFO] things - 开始预约: 13831322890
+[2018-04-05T13:40:17.168] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-04-05T13:40:17.168] [INFO] things - 预约结果 13831322890 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-04-05T13:40:18.171] [INFO] things - object
+[2018-04-05T13:40:18.171] [INFO] things - 开始预约: 13839228541
+[2018-04-05T13:40:20.900] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-04-05T13:40:20.900] [INFO] things - 预约结果 13839228541 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-04-05T13:40:21.904] [INFO] things - object
+[2018-04-05T13:40:21.904] [INFO] things - 开始预约: 13842111030
+[2018-04-05T13:40:24.068] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-04-05T13:40:24.068] [INFO] things - 预约结果 13842111030 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-04-05T13:40:25.070] [INFO] things - object
+[2018-04-05T13:40:25.071] [INFO] things - 开始预约: 13935327172
+[2018-04-05T13:40:26.972] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-04-05T13:40:26.973] [INFO] things - 预约结果 13935327172 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-04-05T13:40:27.974] [INFO] things - object
+[2018-04-05T13:40:27.974] [INFO] things - 开始预约: 13969577793
+[2018-04-05T13:40:30.219] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-04-05T13:40:30.219] [INFO] things - 预约结果 13969577793 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-04-05T13:40:31.223] [INFO] things - 所有手机号预约结束
+[2018-04-05T13:40:31.223] [INFO] things - 预约成功:
+[2018-04-05T13:40:31.224] [INFO] things - [{"phone":"13521690981","pass":"123456","addressId":"1935799"},{"phone":"13624666057","pass":"a123456","addressId":"1930787"},{"phone":"13633696711","pass":"w070416","addressId":"1935803"},{"phone":"13700077519","pass":"123456","addressId":"1892989"},{"phone":"13764763451","pass":"123456","addressId":"1847409"},{"phone":"13781072791","pass":"a123456","addressId":"1961955"},{"phone":"13792080758","pass":"a123456","addressId":"1930706"},{"phone":"13831322890","pass":"a123456","addressId":"1962203"},{"phone":"13839228541","pass":"a123456","addressId":"1962229"},{"phone":"13842111030","pass":"a123456","addressId":"1930791"},{"phone":"13969577793","pass":"a123456","addressId":"1961829"}]
+[2018-04-05T13:40:31.225] [INFO] things - 预约失败:
+[2018-04-05T13:40:31.225] [INFO] things - [{"phone":"13593493641","pass":"a123456","error":"{\"state\":true,\"code\":101,\"msg\":\"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)\"}"},{"phone":"13619167945","pass":"a123456","error":"{\"state\":true,\"code\":101,\"msg\":\"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)\"}"},{"phone":"13670589613","pass":"a123456","error":"{\"state\":true,\"code\":101,\"msg\":\"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)\"}"},{"phone":"13935327172","pass":"a123456","error":"{\"state\":true,\"code\":101,\"msg\":\"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)\"}"}]

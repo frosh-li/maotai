@@ -114,12 +114,13 @@ class MaotaiService {
         })
     }
 
-    editAddress(addressId, provinceId,cityId, districtsId, addressInfo, address, shipTo, callPhone, zipcode="550000",isDef=1,lng, lat, userAgent){
+    editAddress(addressId, provinceId,cityId, districtsId, addressInfo, address, shipTo, callPhone, zipcode="000000",isDef=1,lng, lat, userAgent, j){
+      console.log('arguments', arguments);
       let now = (+new Date());
       let options = {
           method: 'POST',
           url: 'https://www.cmaotai.com/API/Servers.ashx',
-          headers: this.headers(userAgent),
+          headers: this.headers(userAgent, j),
           form: {
               action: 'AddressManager.edit',
               sid: addressId,
@@ -137,14 +138,14 @@ class MaotaiService {
               timestamp121: now
           },
           json:true,
-          jar:j
+          jar:true
       };
+      console.log('options', options.form);
       return new Promise((resolve, reject) => {
         request(options, function(error, response, body) {
             if (error) {
                 return reject(error);
             }
-            logger.info(body);
             return resolve(body);
         });
       })
@@ -753,9 +754,9 @@ class MaotaiService {
         let now = +new Date();
         var options = {
             method: 'POST',
-            jar:j,
+            jar:true,
             url: 'https://www.cmaotai.com/API/Servers.ashx',
-            headers: this.headers(userAgent),
+            headers: this.headers(userAgent, j),
             form: {
                 action: 'ReservationsManager.Regist',
                 addressID: addressID,
@@ -813,7 +814,7 @@ class MaotaiService {
      * @param  {type} phone description
      * @return {type}       description
      */
-    apointmentBySinglePhone(phones, userAgent, callback, j) {
+    apointmentBySinglePhone(phones, userAgent, callback) {
         let sphone = phones.shift();
 
         if (!sphone) {
@@ -836,20 +837,18 @@ class MaotaiService {
             var pass = sphone.pass.trim();
         }
         userAgent = this.userAgent(phone);
+        let currentJar = null;
         logger.info('开始预约:', phone);
         proxy.switchIp()
             .then(() => {
-              return this.login(phone, pass,userAgent);
+                return this.getCurrentJar(phone)
             })
-            .then(userinfo => {
-                return this.getAddressId(phone, j)
-            })
-            .then((addressID) => {
-                return this.LBSServer(addressID, phone, userAgent,391, j);
+            .then((j) => {
+                currentJar = j;
+                return this.LBSServer(sphone.addressId, phone, userAgent,391, currentJar);
             })
             .then(data => {
-                let addressID = data.addressID;
-                return this.apointment(addressID, userAgent, j)
+                return this.apointment(sphone.addressId, userAgent, 391, currentJar)
             })
             .then(apointmentRet => {
                 logger.info('预约结果', phone, apointmentRet);
@@ -857,7 +856,8 @@ class MaotaiService {
                 if(ret.state === true && ret.code === 0){
                   this.apointSuccess.push({
                     phone: phone,
-                    pass: pass
+                    pass: pass,
+                    addressId: sphone.addressId
                   })
                 }else{
                   this.apointFail.push({
@@ -867,7 +867,7 @@ class MaotaiService {
                   })
                 }
                 setTimeout(() => {
-                    this.apointmentBySinglePhone(phones, userAgent, callback, j);
+                    this.apointmentBySinglePhone(phones, userAgent, callback);
                 }, 1000)
             })
             .catch(e => {
@@ -878,7 +878,7 @@ class MaotaiService {
                 error: e.message
               })
               setTimeout(() => {
-                  this.apointmentBySinglePhone(phones, userAgent, callback, j);
+                  this.apointmentBySinglePhone(phones, userAgent, callback);
               }, 1000)
             })
 

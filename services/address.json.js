@@ -3515,4 +3515,8 @@ var DistrictJson = [
 ];
 
 
-
+module.exports = {
+    district : DistrictJson,
+    city: CityJson,
+    province: ProvinceJson
+}
