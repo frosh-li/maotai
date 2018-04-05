@@ -1,25 +1,201 @@
-[2018-04-05T14:26:52.239] [INFO] things - object
-[2018-04-05T14:26:52.242] [INFO] things - 开始预约: 17856363844
-[2018-04-05T14:26:58.455] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
-[2018-04-05T14:26:58.456] [INFO] things - 预约结果 17856363844 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
-[2018-04-05T14:26:59.460] [INFO] things - object
-[2018-04-05T14:26:59.460] [INFO] things - 开始预约: 18455086760
-[2018-04-05T14:27:02.002] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
-[2018-04-05T14:27:02.002] [INFO] things - 预约结果 18455086760 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
-[2018-04-05T14:27:03.004] [INFO] things - object
-[2018-04-05T14:27:03.005] [INFO] things - 开始预约: 18226823910
-[2018-04-05T14:27:08.732] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
-[2018-04-05T14:27:08.732] [INFO] things - 预约结果 18226823910 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
-[2018-04-05T14:27:09.737] [INFO] things - object
-[2018-04-05T14:27:09.737] [INFO] things - 开始预约: 17856363840
-[2018-04-05T14:27:15.820] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
-[2018-04-05T14:27:15.821] [INFO] things - 预约结果 17856363840 {"state":true,"code":101,"msg":"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
-[2018-04-05T14:27:16.825] [INFO] things - object
-[2018-04-05T14:27:16.826] [INFO] things - 开始预约: 13955046493
-[2018-04-05T14:27:26.052] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
-[2018-04-05T14:27:26.052] [INFO] things - 预约结果 13955046493 {"state":true,"code":0,"msg":"提交预约信息成功"}
-[2018-04-05T14:27:27.058] [INFO] things - 所有手机号预约结束
-[2018-04-05T14:27:27.058] [INFO] things - 预约成功:
-[2018-04-05T14:27:27.059] [INFO] things - [{"phone":"13955046493","pass":"1314520","addressId":1962099}]
-[2018-04-05T14:27:27.062] [INFO] things - 预约失败:
-[2018-04-05T14:27:27.062] [INFO] things - [{"phone":"17856363844","pass":"1314520","error":"{\"state\":true,\"code\":101,\"msg\":\"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)\"}"},{"phone":"18455086760","pass":"1314520","error":"{\"state\":true,\"code\":101,\"msg\":\"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)\"}"},{"phone":"18226823910","pass":"1314520","error":"{\"state\":true,\"code\":101,\"msg\":\"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)\"}"},{"phone":"17856363840","pass":"1314520","error":"{\"state\":true,\"code\":101,\"msg\":\"(经系统检测,您的收货信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)\"}"}]
+[2018-04-05T15:15:06.711] [INFO] things - params [ '/usr/local/bin/node',
+  '/Users/junliang/server/www/maotaiServer/controllers/buyFixed.js' ]
+[2018-04-05T15:15:06.720] [INFO] things - create order params { '0': '13831322890',
+  '1': '391',
+  '2': 6,
+  '3': 300,
+  '4': 'Mozilla/5.0 (Linux; Android 4.4.4; LA2-SN Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36[android/1.0.23/cf07c21ecc03157f02aa0348fb2dc102/81ef54053735359a18bc147dd39997ec]',
+  '5': '1962203',
+  '6': 233330186001,
+  '7': -1,
+  '8': 'acw_tc=AQAAAHe4nSkQWwkAY4O4PHomGh9SvObi; Path=/; HttpOnly;ASP.NET_SessionId=i31kbpvjzzzk02ztep3c0wvv; Path=/; HttpOnly;Vshop-Member=940a073d83894137a24f498406405a08; Expires=Thu, 04 Apr 2019 05:07:14 GMT; Path=/;SERVERID=627e30f5202674772010210cac28f0e6|1522818437|1522818437; Path=/' }
+[2018-04-05T15:15:07.740] [INFO] things - coupon info { state: true,
+  code: 0,
+  data: 
+   { Cid: 'a22cf9a0154b4e419fc8abe169da503d',
+     Name: '茅台云商浙江省杭州市上城区服务网点',
+     DName: '浙商糖酒集团有限公司',
+     Address: '杭州市中山中路甘泽坊巷9号',
+     InvoiceCompany: '浙商糖酒集团有限公司',
+     SHBegin: '10:00:00',
+     SHEnd: '17:00:00',
+     Amount: 1499,
+     Level: 1,
+     DisAmount: 1499,
+     DisCost: 0,
+     LocalCost: -1,
+     LocalZero: -1,
+     LocalZeroCost: -1,
+     OtherCost: -1,
+     OtherZero: -1,
+     OtherZeroCost: -1,
+     InvoiceCost: 22,
+     TakeDeliveryLimit: 7,
+     HasPlainInvoice: true,
+     HasVATInvoice: true,
+     Description: '仅限自提',
+     StateCode: 0,
+     NetworkType: 0,
+     WorkingDay: '[{"EnDay":"Monday","CnDay":"星期一"},{"EnDay":"Tuesday","CnDay":"星期二"},{"EnDay":"Wednesday","CnDay":"星期三"},{"EnDay":"Thursday","CnDay":"星期四"},{"EnDay":"Friday","CnDay":"星期五"},{"EnDay":"Saturday","CnDay":"星期六"},{"EnDay":"Sunday","CnDay":"星期日"}]' } }
+[2018-04-05T15:15:07.742] [INFO] things - 位置错误,60秒后重试 无法获取token
+[2018-04-05T15:15:08.749] [INFO] things - create order params { '0': '13313181385',
+  '1': '391',
+  '2': 6,
+  '3': 300,
+  '4': 'Mozilla/5.0 (Linux; Android 4.4.4; LA2-SN Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36[android/1.0.23/0aeecfd9ead67cbb7169d1069519e6bb/4945f96fd08aaddecadd2ba7850cc079]',
+  '5': '1930707',
+  '6': 233330186001,
+  '7': -1,
+  '8': 'acw_tc=AQAAAEb2rFRruAoAY4O4PAyFpERvGwwT; Path=/; HttpOnly;ASP.NET_SessionId=0e53wk2swbbksa30to05w4uo; Path=/; HttpOnly;Vshop-Member=9302c4f2aa144138a0a1da9efbb85905; Expires=Thu, 04 Apr 2019 05:06:47 GMT; Path=/;SERVERID=e0be7116fc95174c0c92660b6cc51b85|1522818410|1522818410; Path=/' }
+[2018-04-05T15:15:09.678] [INFO] things - coupon info { state: true,
+  code: 0,
+  data: 
+   { Cid: 'd790766dfad643768a0342cc8f85e6ad',
+     Name: '茅台云商浙江省杭州市上城区服务网点',
+     DName: '浙商糖酒集团有限公司',
+     Address: '杭州市中山中路甘泽坊巷9号',
+     InvoiceCompany: '浙商糖酒集团有限公司',
+     SHBegin: '10:00:00',
+     SHEnd: '17:00:00',
+     Amount: 1499,
+     Level: 1,
+     DisAmount: 1499,
+     DisCost: 0,
+     LocalCost: -1,
+     LocalZero: -1,
+     LocalZeroCost: -1,
+     OtherCost: -1,
+     OtherZero: -1,
+     OtherZeroCost: -1,
+     InvoiceCost: 22,
+     TakeDeliveryLimit: 7,
+     HasPlainInvoice: true,
+     HasVATInvoice: true,
+     Description: '仅限自提',
+     StateCode: 0,
+     NetworkType: 0,
+     WorkingDay: '[{"EnDay":"Monday","CnDay":"星期一"},{"EnDay":"Tuesday","CnDay":"星期二"},{"EnDay":"Wednesday","CnDay":"星期三"},{"EnDay":"Thursday","CnDay":"星期四"},{"EnDay":"Friday","CnDay":"星期五"},{"EnDay":"Saturday","CnDay":"星期六"},{"EnDay":"Sunday","CnDay":"星期日"}]' } }
+[2018-04-05T15:15:09.679] [INFO] things - 位置错误,60秒后重试 无法获取token
+[2018-04-05T15:15:10.686] [INFO] things - create order params { '0': '13081312422',
+  '1': '391',
+  '2': 6,
+  '3': 300,
+  '4': 'Mozilla/5.0 (Linux; Android 4.4.4; LA2-SN Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36[android/1.0.23/a2281be5b120e04099fd8c2464cec419/06350c34f0144f10386786bfb7e6cc4d]',
+  '5': '1951801',
+  '6': 233330186001,
+  '7': -1,
+  '8': 'acw_tc=AQAAAHtveG01NQoAteLqc0RFH7zhccqS; Path=/; HttpOnly;ASP.NET_SessionId=0zhs3vvziobvkqqy21z2qjm0; Path=/; HttpOnly;Vshop-Member=74dea0d5068549cebc96c97e54ba3df9; Expires=Fri, 05 Apr 2019 05:27:55 GMT; Path=/;SERVERID=d7ff3566a46564dfbddba0bd72787651|1522906078|1522906078; Path=/' }
+[2018-04-05T15:15:11.529] [INFO] things - coupon info { state: true,
+  code: 0,
+  data: 
+   { Cid: '5533a7888d7d46a68fc893e230b964c6',
+     Name: '茅台云商浙江省杭州市上城区服务网点',
+     DName: '浙商糖酒集团有限公司',
+     Address: '杭州市中山中路甘泽坊巷9号',
+     InvoiceCompany: '浙商糖酒集团有限公司',
+     SHBegin: '10:00:00',
+     SHEnd: '17:00:00',
+     Amount: 1499,
+     Level: 1,
+     DisAmount: 1499,
+     DisCost: 0,
+     LocalCost: -1,
+     LocalZero: -1,
+     LocalZeroCost: -1,
+     OtherCost: -1,
+     OtherZero: -1,
+     OtherZeroCost: -1,
+     InvoiceCost: 22,
+     TakeDeliveryLimit: 7,
+     HasPlainInvoice: true,
+     HasVATInvoice: true,
+     Description: '仅限自提',
+     StateCode: 0,
+     NetworkType: 0,
+     WorkingDay: '[{"EnDay":"Monday","CnDay":"星期一"},{"EnDay":"Tuesday","CnDay":"星期二"},{"EnDay":"Wednesday","CnDay":"星期三"},{"EnDay":"Thursday","CnDay":"星期四"},{"EnDay":"Friday","CnDay":"星期五"},{"EnDay":"Saturday","CnDay":"星期六"},{"EnDay":"Sunday","CnDay":"星期日"}]' } }
+[2018-04-05T15:15:11.530] [INFO] things - 位置错误,60秒后重试 无法获取token
+[2018-04-05T15:15:12.536] [INFO] things - create order params { '0': '13343192376',
+  '1': '391',
+  '2': 6,
+  '3': 300,
+  '4': 'Mozilla/5.0 (Linux; Android 4.4.4; LA2-SN Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36[android/1.0.23/78515515acaf69f4bfac5537ca209d96/91a1ffc9fa588a02a5ee1a1131feaac2]',
+  '5': '1885157',
+  '6': 233330186001,
+  '7': -1,
+  '8': 'acw_tc=AQAAAMTOVhHohQkAY4O4PNyMCFkG2xvx; Path=/; HttpOnly;ASP.NET_SessionId=sdng2rtp4aygcvlp50f4u2xx; Path=/; HttpOnly;Vshop-Member=cddc181b30f64d4b870b509c29c621cf; Expires=Thu, 04 Apr 2019 05:06:52 GMT; Path=/;SERVERID=e0be7116fc95174c0c92660b6cc51b85|1522818415|1522818415; Path=/' }
+[2018-04-05T15:15:13.325] [INFO] things - coupon info { state: true,
+  code: 0,
+  data: 
+   { Cid: '375a0fcb555b4d50b34701ddb3cc715a',
+     Name: '茅台云商浙江省杭州市上城区服务网点',
+     DName: '浙商糖酒集团有限公司',
+     Address: '杭州市中山中路甘泽坊巷9号',
+     InvoiceCompany: '浙商糖酒集团有限公司',
+     SHBegin: '10:00:00',
+     SHEnd: '17:00:00',
+     Amount: 1499,
+     Level: 1,
+     DisAmount: 1499,
+     DisCost: 0,
+     LocalCost: -1,
+     LocalZero: -1,
+     LocalZeroCost: -1,
+     OtherCost: -1,
+     OtherZero: -1,
+     OtherZeroCost: -1,
+     InvoiceCost: 22,
+     TakeDeliveryLimit: 7,
+     HasPlainInvoice: true,
+     HasVATInvoice: true,
+     Description: '仅限自提',
+     StateCode: 0,
+     NetworkType: 0,
+     WorkingDay: '[{"EnDay":"Monday","CnDay":"星期一"},{"EnDay":"Tuesday","CnDay":"星期二"},{"EnDay":"Wednesday","CnDay":"星期三"},{"EnDay":"Thursday","CnDay":"星期四"},{"EnDay":"Friday","CnDay":"星期五"},{"EnDay":"Saturday","CnDay":"星期六"},{"EnDay":"Sunday","CnDay":"星期日"}]' } }
+[2018-04-05T15:15:13.326] [INFO] things - 位置错误,60秒后重试 无法获取token
+[2018-04-05T15:15:14.331] [INFO] things - create order params { '0': '13290979032',
+  '1': '391',
+  '2': 6,
+  '3': 300,
+  '4': 'Mozilla/5.0 (Linux; Android 4.4.4; LA2-SN Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36[android/1.0.23/f167d7761bfb3e921cac4d8be35c7975/30f8cbb3b0848c70101aac2e5883e05c]',
+  '5': '1962187',
+  '6': 233330186001,
+  '7': -1,
+  '8': 'acw_tc=AQAAAPOz7Ex8wgAAY4O4PHhKmYmnu5rY; Path=/; HttpOnly;ASP.NET_SessionId=htghs0rtto5dwerqbuve1cfe; Path=/; HttpOnly;Vshop-Member=0ce2dab56531453cb3ebe5d987266f07; Expires=Thu, 04 Apr 2019 05:06:47 GMT; Path=/;SERVERID=d7ff3566a46564dfbddba0bd72787651|1522818410|1522818410; Path=/' }
+[2018-04-05T15:15:15.269] [INFO] things - coupon info { state: true,
+  code: 0,
+  data: 
+   { Cid: '67558665282c4bc1a5da00e96a3d7ab2',
+     Name: '茅台云商浙江省杭州市上城区服务网点',
+     DName: '浙商糖酒集团有限公司',
+     Address: '杭州市中山中路甘泽坊巷9号',
+     InvoiceCompany: '浙商糖酒集团有限公司',
+     SHBegin: '10:00:00',
+     SHEnd: '17:00:00',
+     Amount: 1499,
+     Level: 1,
+     DisAmount: 1499,
+     DisCost: 0,
+     LocalCost: -1,
+     LocalZero: -1,
+     LocalZeroCost: -1,
+     OtherCost: -1,
+     OtherZero: -1,
+     OtherZeroCost: -1,
+     InvoiceCost: 22,
+     TakeDeliveryLimit: 7,
+     HasPlainInvoice: true,
+     HasVATInvoice: true,
+     Description: '仅限自提',
+     StateCode: 0,
+     NetworkType: 0,
+     WorkingDay: '[{"EnDay":"Monday","CnDay":"星期一"},{"EnDay":"Tuesday","CnDay":"星期二"},{"EnDay":"Wednesday","CnDay":"星期三"},{"EnDay":"Thursday","CnDay":"星期四"},{"EnDay":"Friday","CnDay":"星期五"},{"EnDay":"Saturday","CnDay":"星期六"},{"EnDay":"Sunday","CnDay":"星期日"}]' } }
+[2018-04-05T15:15:15.270] [INFO] things - 位置错误,60秒后重试 无法获取token
+[2018-04-05T15:15:16.276] [INFO] things - create order params { '0': '13764763451',
+  '1': '391',
+  '2': 6,
+  '3': 300,
+  '4': 'Mozilla/5.0 (Linux; Android 4.4.4; LA2-SN Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36[android/1.0.23/388725c2ae9c434b938ac143fd2b6c63/ce92e12738cc744100f8d0c6696ec617]',
+  '5': '1847409',
+  '6': 233330186001,
+  '7': -1,
+  '8': 'acw_tc=AQAAAFofERF5aQgAY4O4PA4zUewhXoZ0; Path=/; HttpOnly;ASP.NET_SessionId=iz4c0jmmi0waggq5wzbbnnar; Path=/; HttpOnly;Vshop-Member=23fc2a93eb1b4dacb172e4d51613c177; Expires=Thu, 04 Apr 2019 05:07:11 GMT; Path=/;SERVERID=627e30f5202674772010210cac28f0e6|1522818434|1522818434; Path=/' }

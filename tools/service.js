@@ -541,6 +541,9 @@ class MaotaiService {
                   return reject(err);
                 }
                 console.log('get key from redis', key);
+                if(!key){
+                  return reject(new Error("无法获取token"));
+                }
                 redisClient.get(key, (err, token) => {
                     options.form.sessid = token;
                     console.log(options.form);
@@ -548,7 +551,14 @@ class MaotaiService {
                         if (error) {
                             return reject(error);
                         };
-                        
+                        let _body = JSON.parse(body);
+                        if(_body && _body.code && _body.code === 0){
+                          redisClient.set('order:success:'+stel+":"+pass, body, function(err){
+                            if(err){
+                              return console.log(err);
+                            }
+                          })
+                        }
                         logger.info(colors.green('下单完成'+JSON.stringify(body)));
                         return resolve({
                           data:JSON.parse(body),
