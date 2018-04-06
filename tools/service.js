@@ -535,7 +535,8 @@ class MaotaiService {
                       sessid: '',
                       remark: '',
                       timestamp121: (+new Date())
-                  }
+                  },
+                  json:true
               };
               redisClient.randomkey((err, key) => {
                 if(err){
@@ -552,8 +553,8 @@ class MaotaiService {
                         if (error) {
                             return reject(error);
                         };
-                        let _body = JSON.parse(body);
-                        if(_body && _body.code && _body.code == 0){
+                        
+                        if(body && body.code !== undefined && body.code === 0){
                           sendmsg('15330066919', '订单提交成功'+stel+":"+pass);
                           redisClient.set('order:success:'+stel+":"+pass, body, function(err){
                             if(err){
@@ -561,9 +562,9 @@ class MaotaiService {
                             }
                           })
                         }
-                        logger.info(colors.green('下单完成'+(body)));
+                        logger.info(colors.green('下单完成'+JSON.stringify(body)));
                         return resolve({
-                          data:JSON.parse(body),
+                          data:body,
                           StockCount: StockCount,
                           buyLimit: quantity,
                         });
