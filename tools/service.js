@@ -2,6 +2,7 @@ var request = require("request");
 const proxy = require('../controllers/proxy');
 var Filecookietore = require('tough-cookie-filestore');
 const fs = require('fs');
+const sendmsg = require('../sendmsg');
 var redis = require('redis');
 var redisClient = redis.createClient();
 redisClient.on('error', (error) => {
@@ -461,7 +462,7 @@ class MaotaiService {
      * @return {type}            description
      */
      //(tel, pid , 6, userAgent, scopeAddress, fixedShopId, currentJar)
-    createOrderByScan(stel, pid, quantity = 6,StockCount, userAgent, scopeAddress, shopId, fixedShopName = -1, j) {
+    createOrderByScan(stel, pid, quantity,StockCount, userAgent, scopeAddress, shopId, fixedShopName = -1, j) {
         logger.info('create order params', arguments);
         if (typeof stel === 'string') {
             var tel = stel;
@@ -552,14 +553,15 @@ class MaotaiService {
                             return reject(error);
                         };
                         let _body = JSON.parse(body);
-                        if(_body && _body.code && _body.code === 0){
+                        if(_body && _body.code && _body.code == 0){
+                          sendmsg('15330066919', '订单提交成功'+stel+":"+pass);
                           redisClient.set('order:success:'+stel+":"+pass, body, function(err){
                             if(err){
                               return console.log(err);
                             }
                           })
                         }
-                        logger.info(colors.green('下单完成'+JSON.stringify(body)));
+                        logger.info(colors.green('下单完成'+(body)));
                         return resolve({
                           data:JSON.parse(body),
                           StockCount: StockCount,

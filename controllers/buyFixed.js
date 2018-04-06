@@ -19,7 +19,7 @@ let checkInterval = 1*1000;
 // 上海购买
 // 地址信息
 let pid = '391';
-let quantity = 6;
+let quantity = 2;
 // 13618484713+zxcvbnm
 // 17753583852+123456
 // 15213163729+123456
@@ -36,7 +36,7 @@ let quantity = 6;
 
 
 let shopName = '东柏街|祥瑞丰源|SOHO现代城C|嘉禾国信大厦|西城区|文峰商贸';
-var originPhones = require("../accounts/apoint4.5.hangzhou.json");
+var originPhones = require("../shuanglong.json");
 function printInfo(data){
   try{
     logger.info('推送网点信息');
@@ -90,7 +90,7 @@ function watchQuanity(number) {
         .then(j => {
           currentJar = j;
           _startTime = +new Date();
-          return MaotaiService.createOrderByScan(tel, pid, quantity = 6,300, userAgent, scopeAddress, fixedShopId, -1, currentJar)
+          return MaotaiService.createOrderByScan(tel, pid, quantity,300, userAgent, scopeAddress, fixedShopId, -1, currentJar)
           //return MaotaiService.createOrderByScan(tel, pid , 6, userAgent, scopeAddress, fixedShopId, currentJar);
         }).then( data => {
             logger.info("下单时间"+(new Date() - _startTime)+"ms");
@@ -118,7 +118,8 @@ function watchQuanity(number) {
   //})
 }
 
-var fixedShopId = 233330186001; // 杭州网点
+//var fixedShopId = 233330186001; // 杭州网点
+var fixedShopId = 211110105003; //双龙网点 
 var maxOrder = 20;
 var successOrder = 0;
 watchQuanity(20)
