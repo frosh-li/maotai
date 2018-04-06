@@ -8,7 +8,7 @@ const MaotaiService = require('../tools/service');
 const fs = require('fs');
 
 
-originPhones = require("../beijing4.2buy.json");
+originPhones = require("../accounts/apoint4.5.hangzhou.json");
 
 let tels = [];
 originPhones.forEach(data => {
@@ -38,9 +38,11 @@ function getStatus(){
   logger.info('start to check status', phone);
   let userAgent = MaotaiService.userAgent(phone.phone);
   proxy.switchIp().then(() => {
-    MaotaiService.login(phone.phone, phone.pass, userAgent)
-      .then(() => {
-          return MaotaiService.apointStatus(userAgent);
+    let scopeJar = "";
+    MaotaiService.getCurrentJar(phone.phone)
+      .then((j) => {
+          scopeJar = j;
+          return MaotaiService.apointStatus(userAgent, j);
       })
       .then(data => {
         if(data.status == 3){

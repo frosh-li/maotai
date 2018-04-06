@@ -244,7 +244,9 @@ router.post('/maotai/multiOrder', (req, res, next) => {
 
 
 })
-let userAgent = 'iPhone; CPU iPhone OS 10_3 like Mac OS X';
+//let userAgent = 'YunShang/1.0.22 CFNetwork/897.15 Darwin/17.5.0';
+let userAgent = 'YunShang/1.0.22 CFNetwork/897.05 Darwin/18.5.0';
+
 router.get('/wireless/pageload.json', function(req, res, next){
    // /wireless/pageload.json?&h=451&w=555&a=FFFFA0000000016A858A
    //let userAgent = 'iPhone; CPU iPhone OS 10_4 like Mac OS X';
@@ -326,6 +328,10 @@ router.get('/router/rest', function(req, res, next){
 //https://cf.aliyun.com/wireless/nocaptcha.json
 //
 
+function RandomUserAgent() {
+  return 'Dalvik/1.6.0 (Linux; U; Android 4.4.4; MuMu Build/V417IR)';
+}
+
 router.post('/wireless/nocaptcha.json', function(req, res, next) {
   request = request.defaults({
       jar: true,
@@ -366,7 +372,39 @@ router.post('/wireless/nocaptcha.json', function(req, res, next) {
         })
       }
       console.log('代理:',body);
-      return res.json(body)
+      
+      if(body.result.sig){
+        request({
+          url:"http://maotai.local/api/maotai",
+          method:"post",
+          data:"sid="+body.result.sig
+        },(err) => {
+          if(err){
+            setTimeout(() => {
+              require('child_process').fork('script/autoGetSid');
+            } ,10000)
+            return res.json({
+              status: 500,
+              sid: body.result.sig,
+              err:"上传sid失败"
+            });
+          }
+          setTimeout(() => {
+            require('child_process').fork('script/autoGetSid');
+          } ,10000)
+          return res.json(body)
+        })  
+      }else{
+        // 如果失败，10分钟后重试
+        setTimeout(() => {
+            require('child_process').fork('script/autoGetSid');
+          } ,15*60*1000)
+        return res.json({
+          status: 500,
+          sid: JSON.stringify(body),
+          err:"上传sid失败"
+        });
+      }
     })
   })
 })

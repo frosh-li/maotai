@@ -3,12 +3,13 @@ function getSid() {
   AliVerify.connectSidFromHard()
     .then((ok) => {
     		console.log(ok);
-        //setTimeout(getSid, 60000);
+//        setTimeout(getSid, 10000);
     })
     .catch(e => {
-    		console.log(e);
-        //setTimeout(getSid, 60000);
+    	console.log(e);
+ //       setTimeout(getSid, 10000);
     })
 }
-setInterval(getSid, 60000);
-//getSid();
+//setInterval(getSid, 10000);
+getSid();
+
