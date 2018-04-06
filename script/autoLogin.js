@@ -1,15 +1,15 @@
 const logger = require('../controllers/logger.js');
 const MaotaiService = require('../tools/service');
-var mysql      = require('mysql');
-var connection = mysql.createConnection({
-  host     : 'localhost',
-  user     : 'root',
-  password : '123456',
-  database : 'accounts'
-});
+// var mysql      = require('mysql');
+// var connection = mysql.createConnection({
+//   host     : 'localhost',
+//   user     : 'root',
+//   password : '123456',
+//   database : 'accounts'
+// });
 
-connection.connect();
-var originPhones = require("../70.json");
+//connection.connect();
+var originPhones = require("../beijing4.2buy.json");
 
 function start() {
   let user = originPhones.shift();
@@ -21,11 +21,11 @@ function start() {
   MaotaiService.login(user.phone, user.pass, userAgent)
     .then(data => {
       logger.info(data);
-      connection.query('update accounts set uid=? where phone=?',[data.data.UserId, user.phone], (err,data)=>{
-        if(err){
-          console.log(err);
-        }
-      })
+      // connection.query('update accounts set uid=? where phone=?',[data.data.UserId, user.phone], (err,data)=>{
+      //   if(err){
+      //     console.log(err);
+      //   }
+      // })
       start();
     })
     .catch(e => {
@@ -56,25 +56,27 @@ function checkDone() {
 
 // checkDone();
 
-getAccounts()
-  .then(accounts => {
-    start();;  
-  }).catch(e => {
-    console.log(e);
-  })
+// getAccounts()
+//   .then(accounts => {
+//     start();;  
+//   }).catch(e => {
+//     console.log(e);
+//   })
 
-function getAccounts() {
-  return new Promise((resolve, reject) => {
-    connection.query('select phone,pass from accounts', (err, results) => {
-      if(err){
-        console.log(err);
-        return reject(false);
-      }
-      originPhones = results;
-      totals = results.length;
-      return resolve(true);
-    })
-  })
-}
+// function getAccounts() {
+//   return new Promise((resolve, reject) => {
+//     connection.query('select phone,pass from accounts', (err, results) => {
+//       if(err){
+//         console.log(err);
+//         return reject(false);
+//       }
+//       originPhones = results;
+//       totals = results.length;
+//       return resolve(true);
+//     })
+//   })
+// }
 
 
+
+start()
