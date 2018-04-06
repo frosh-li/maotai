@@ -18,7 +18,7 @@ let quantity = 6;
 
 let shopName = '东柏街|祥瑞丰源|SOHO现代城C|嘉禾国信大厦|西城区|文峰商贸';
 
-var originPhones = require("../accounts/apoint.4.5.hangzhou.json");
+var originPhones = require("../accounts/apoint4.5.hangzhou.json");
 
 function printInfo(data){
   try{
