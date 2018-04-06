@@ -1,37 +1,26 @@
 const logger = require('../controllers/logger.js');
 const MaotaiService = require('../tools/service');
-var mysql      = require('mysql');
-var connection = mysql.createConnection({
-  host     : 'localhost',
-  user     : 'root',
-  password : '123456',
-  database : 'accounts'
-});
-
-connection.connect();
-var originPhones = require("../70.json");
-
+var originPhones = require("../beijing4.2buy.json");
+const proxy = require('../controllers/proxy');
 function start() {
   let user = originPhones.shift();
   if(!user){
     logger.info("全部登录完成");
+    checkDone();
     return;
   }
   let userAgent = MaotaiService.userAgent(user.phone);
+  proxy.switchIp().then(() => {
   MaotaiService.login(user.phone, user.pass, userAgent)
     .then(data => {
       logger.info(data);
-      connection.query('update accounts set uid=? where phone=?',[data.data.UserId, user.phone], (err,data)=>{
-        if(err){
-          console.log(err);
-        }
-      })
       start();
     })
     .catch(e => {
       logger.error(e);
       start();
     })
+  }).catch(e => {console.log(e)})
 }
 
 // start();
@@ -56,25 +45,6 @@ function checkDone() {
 
 // checkDone();
 
-getAccounts()
-  .then(accounts => {
-    start();;  
-  }).catch(e => {
-    console.log(e);
-  })
-
-function getAccounts() {
-  return new Promise((resolve, reject) => {
-    connection.query('select phone,pass from accounts', (err, results) => {
-      if(err){
-        console.log(err);
-        return reject(false);
-      }
-      originPhones = results;
-      totals = results.length;
-      return resolve(true);
-    })
-  })
-}
+start();
 
 

@@ -3,12 +3,12 @@
  */
 const logger = require('../controllers/logger.js');
 const MaotaiService = require('../tools/service');
+const sendmsg = require('../sendmsg/');
 const fs = require('fs');
 const colors = require('colors/safe');
 const Utils = require('../services/utils');
 const request = require('request');
 const proxy = require('../controllers/proxy');
-
 let checkInterval = 1*1000;
 // 上海购买
 // 地址信息
@@ -18,8 +18,8 @@ let quantity = 6;
 
 let shopName = '东柏街|祥瑞丰源|SOHO现代城C|嘉禾国信大厦|西城区|文峰商贸';
 
-var originPhones = require("../accounts/apoint4.5.hangzhou.json");
-
+//var originPhones = require("../accounts/apoint4.5.hangzhou.json");
+var originPhones = require('../beijing4.2buy.json')
 function printInfo(data){
   try{
     logger.info('推送网点信息');
@@ -65,6 +65,7 @@ function watchQuanity() {
             ){
               currentShopId = data.lbsdata.network.Sid;
               logger.info(colors.green("商家已经上货，开始购买流程"));
+              sendmsg('15330066919', '商家已经上货'+currentShopId+":"+data.lbsdata.data.stock.StockCount);
               printInfo(data);
               return MaotaiService.createOrderByScan(tel, pid , data.lbsdata.data.limit.LimitCount,data.lbsdata.data.stock.StockCount, userAgent, scopeAddress, data.lbsdata.data.network.Sid,-1,currentJar);
             }else {
