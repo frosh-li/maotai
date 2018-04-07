@@ -17,12 +17,46 @@
 html,body{
     width:100%;
     height:100%;
+    font-family:"微软雅黑";
+}
+a{text-decoration:none;}
+.btn{
+    display:block;
+    width:90%;
+    margin: 10px auto;
+    background-color:#f90;
+    color:white;
+    font-weight:normal;
+    font-size:16px;
+    text-align:center;
+    height:30px;
+    line-height:30px;
 }
 </style>
 <body>
-<a href="js-call://StartRiskVerification" style="display:block;width:100%;height:100%">打开阿里验证</a>
+<a href="###" onclick="openOnce()" class="btn">打开阿里验证</a>
+<a href="###" onclick="openMore()" class="btn" id="autoStart">开启自动验证</a>
+<label>
+    自动验证时间间隔(单位秒)
+</label>
+<input type="text" id="inter" value="15" />
+<div id="msg"></div>
 </body>
 <script type="text/javascript">
+var aliRisk = "js-call://StartRiskVerification";
+var autoOpen =false;
+var gTimeout = null;
+function openOnce(){
+    clearTimeout(gTimeout);
+    document.getElementById('msg').innerHTML = aliRisk;
+    document.location = aliRisk;
+}
+function openMore(){
+    clearTimeout(gTimeout);
+    autoOpen = !autoOpen;
+    document.getElementById('autoStart').innerHTML = autoOpen === false ? "开启自动验证":"停止自动验证";
+    document.location = aliRisk;
+}
 var Ajax={
     get: function(url, fn) {
         var xhr = new XMLHttpRequest();  // XMLHttpRequest对象用于在后台与服务器交换数据
@@ -54,7 +88,14 @@ function __StartRiskVerificationResult(sessionID) {
     }
 
     // _riskSessionID = sessionID;
-    Ajax.post("http://47.94.238.179/api/maotai","sid="+sessionID,function(){});
+    Ajax.post("http://47.94.238.179/api/maotai","sid="+sessionID,function(){
+        if(autoOpen){
+            var timeout = document.getElementById('inter').value * 1000;
+            gTimeout = setTimeout(function() {
+                document.location = aliRisk;
+            } , timeout);
+        }        
+    });
 }
 </script>
 </html>
