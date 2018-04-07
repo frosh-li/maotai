@@ -13,6 +13,7 @@
     "colors": "^1.2.1",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
+    "ejs": "^2.5.8",
     "express": "~4.15.5",
     "get-pixels": "^3.3.0",
     "jade": "~1.11.0",
@@ -25,7 +26,6 @@
     "uuid": "^3.2.1"
   },
   "devDependencies": {
-    "chai": "^4.1.2",
-    "electron": "^1.8.4"
+    "chai": "^4.1.2"
   }
 }

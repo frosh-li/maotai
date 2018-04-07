@@ -8,7 +8,9 @@ const proxy = require('../controllers/proxy');
 const fs = require('fs');
 const path = require('path');
 
-
+router.get('/maotai/index.html', function(req, res, next) {
+  res.render('homepage.html');
+})
 /**
  * router - 获取sid
  *
