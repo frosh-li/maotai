@@ -1,11 +1,12 @@
 const {
-    execSync
+    execSync,
+    exec
 } = require('child_process');
 const getPixels = require('get-pixels');
 const path = require('path');
 
 //const adb = "/Users/bigdata/Library/Android/sdk/platform-tools/adb -s emulator-5554";
- const adb = "adb -s emulator-5554";
+
 function avg(arr){
   let totals = 0;
   arr.forEach(item => {
@@ -14,6 +15,13 @@ function avg(arr){
   return totals/arr.length;
 }
 class AliVerify {
+
+    constructor(devicename) {
+      
+      this.screen = devicename;
+      this.adb = "adb -s "+ devicename;
+      
+    }
     clearOldToken() {
       global.aliSessionId = "";
     }
@@ -28,9 +36,13 @@ class AliVerify {
             let pressX1 = ePoint[0];
             let pressY1 = ePoint[1];
             let dur = 500;
-            let adbCommand = `${adb} shell input swipe ${pressX} ${pressY} ${pressX1} ${pressY1} ${dur}`;
+            let adbCommand = `${this.adb} shell input swipe ${pressX} ${pressY} ${pressX1} ${pressY1} ${dur}`;
 
-            execSync(adbCommand);
+            exec(adbCommand, (err) => {
+              if(err){
+                return console.log(err);
+              }
+            });
         }
         /**
          * capture - 截屏
@@ -39,10 +51,27 @@ class AliVerify {
          */
     capture() {
             // console.log('屏幕截图开始',`adb shell /system/bin/screencap -p /sdcard/screenshot.png`);
-            require('child_process').execSync(`${adb} shell /system/bin/screencap -p /sdcard/screenshot.png`);
-            // console.log('屏幕截图完成')
-            // console.log('拉取屏幕截图到电脑','adb pull /sdcard/screenshot.png /Users/junliang/server/www/maotaiServer/temp/');
-            require('child_process').execSync(`${adb} pull /sdcard/screenshot.png ./temp/`);
+            return new Promise((resolve, reject) => {
+              let command = `${this.adb} shell /system/bin/screencap -p /sdcard/${this.screen}.png`;
+              console.log(command);
+              require('child_process').exec(command, (err) => {
+                if(err){
+                  return reject(err);
+                }
+                // console.log('屏幕截图完成')
+                // console.log('拉取屏幕截图到电脑','adb pull /sdcard/screenshot.png /Users/junliang/server/www/maotaiServer/temp/');
+                command = `${this.adb} pull /sdcard/${this.screen}.png ./temp/`
+                console.log(command);
+                require('child_process').exec(command, (err) => {
+                  if(err){
+                    return reject(err);
+                  }
+                  return resolve(true);
+                });
+              });  
+            })
+            
+            
             // console.log('拉取完成');
         }
         /**
@@ -55,9 +84,13 @@ class AliVerify {
         let pressX = 126;
         let pressY = 98;
         let dur = 10;
-        let adbCommand = `${adb} shell input tap ${pressX} ${pressY}`;
-
-        execSync(adbCommand);
+        let adbCommand = `${this.adb} shell input tap ${pressX} ${pressY}`;
+        console.log(adbCommand);
+        exec(adbCommand, (err) => {
+          if(err){
+            return console.log(err);
+          }
+        });
     }
 
     calcPos(callback) {
@@ -68,7 +101,7 @@ class AliVerify {
         let endPointX = [];
         let endPointY = [];
         let getPixTime = (+new Date());
-        getPixels(path.resolve(__dirname, '../temp/screenshot.png'), (err, pixels) => {
+        getPixels(path.resolve(__dirname, `../temp/${this.screen}.png`), (err, pixels) => {
             console.log('获取图像耗时', (+new Date() - getPixTime) + "ms");
             if (err) {
                 console.log(err);
@@ -120,8 +153,8 @@ class AliVerify {
      *
      * @return {type}  description
      */
-    connectSidFromHard() {
-
+    connectSidFromHard(devicename) {
+        
         // return new Promise((resolve, reject) => {
             this.openAliUI();
             return this.captureAndCalcPos();
@@ -140,8 +173,8 @@ class AliVerify {
         // 开始截屏
         return new Promise((resolve, reject) => {
             setTimeout(() => {
-                this.capture();
-                setTimeout(() => {
+                this.capture()
+                  .then((opened) => {
                     this.calcPos(Points => {
                         if (
                             Points[0][0] == 0 ||
@@ -149,15 +182,21 @@ class AliVerify {
                             Points[1][0] == 0 ||
                             Points[1][1] == 0
                         ) {
-                            return this.captureAndCalcPos();
+                            console.log('restart to find image');
+                            this.captureAndCalcPos();
+                        }else{
+                          this.swipeToCircle(Points[0], Points[1]);
+                          return resolve(true);  
                         }
-                        this.swipeToCircle(Points[0], Points[1]);
-                        return resolve(true);
+                        
                     });
-                }, 100)
-            }, 500);  
+                  }).catch(e => {
+                    this.captureAndCalcPos();
+                  });
+                  
+            }, 1000);  
         })
     }
 }
 
-module.exports = new AliVerify();
+module.exports = AliVerify;
