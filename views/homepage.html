@@ -39,7 +39,7 @@ a{text-decoration:none;}
 <label>
     自动验证时间间隔(单位秒)
 </label>
-<input type="text" id="inter" value="15" />
+<input type="text" id="inter" value="60" />
 <div id="msg"></div>
 </body>
 <script type="text/javascript">
@@ -55,6 +55,9 @@ function openMore(){
     clearTimeout(gTimeout);
     autoOpen = !autoOpen;
     document.getElementById('autoStart').innerHTML = autoOpen === false ? "开启自动验证":"停止自动验证";
+    if(!autoOpen){
+        return;
+    }
     document.location = aliRisk;
 }
 var Ajax={
