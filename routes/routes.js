@@ -28,8 +28,8 @@ router.post('/maotai', function(req, res, next) {
   }catch(e){
     console.log(e);
   }
-  redisClient.setex(`token:${uuid()}`, 300, sid);
-  console.log('SID from Android', sid);
+  redisClient.setex(`token:${uuid()}`, 600, sid);
+  console.log('SID from client',new Date(), sid);
   res.json({
     status: 200,
     sid: sid

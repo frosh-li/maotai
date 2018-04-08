@@ -19,7 +19,9 @@ let quantity = 6;
 let shopName = '东柏街|祥瑞丰源|SOHO现代城C|嘉禾国信大厦|西城区|文峰商贸';
 
 //var originPhones = require("../accounts/apoint4.5.hangzhou.json");
-var originPhones = require('../beijing4.2buy.json')
+var originPhones = [{"phone":"19923800479","pass":"123456","addressId":1985973},{"phone":"17688225696","pass":"123456","addressId":1985969},{"phone":"18580067873","pass":"123456","addressId":1985985},{"phone":"15123922379","pass":"123456","addressId":1986003},{"phone":"13212382391","pass":"776800868h","addressId":1929891},{"phone":"17323972656","pass":"123456","addressId":1933999},{"phone":"18323215176","pass":"123456","addressId":1937925},{"phone":"19923736324","pass":"123456","addressId":1937822},{"phone":"15102335828","pass":"123456","addressId":1929918}];
+
+originPhones = originPhones.concat([{"phone":"13414570045","pass":"wy40324700","addressId":1994066},{"phone":"13650493675","pass":"wy40324700","addressId":1993819},{"phone":"15999759990","pass":"wy40324700","addressId":1994049},{"phone":"13267540771","pass":"wy40324700","addressId":1937801},{"phone":"18825752409","pass":"wy40324700 ","addressId":1991338},{"phone":"15818274155","pass":"wy40324700","addressId":1807547},{"phone":"13412214599","pass":"wy40324700","addressId":1994746},{"phone":"13267574337","pass":"wy40324700","addressId":1994766},{"phone":"18681019002","pass":"wy40324700"},{"phone":"13128074637","pass":"wy40324700","addressId":1862125},{"phone":"13192054067","pass":"wy40324700","addressId":1994821},{"phone":"13267549137","pass":"wy40324700","addressId":1994835},{"phone":"13537418590","pass":"wy40324700"},{"phone":"13886972253","pass":"wy40324700","addressId":1994862},{"phone":"18199743397","pass":"wy40324700","addressId":1994875},{"phone":"15015247207","pass":"wy40324700","addressId":1994894},{"phone":"15089493032","pass":"wy40324700","addressId":1866321},{"phone":"13650842112","pass":"wy40324700","addressId":1994904}])
 function printInfo(data){
   try{
     logger.info('推送网点信息');
@@ -37,27 +39,22 @@ function printInfo(data){
 function watchQuanity() {
   let randomIndex = Math.floor(Math.random()*(originPhones.length-1));
   let tel = originPhones[randomIndex].phone;
-  // let tel = "13720689056";
   let pass = originPhones[randomIndex].pass;
-  // let pass = "a123456";
   let userAgent = MaotaiService.userAgent(tel);
-  let scopeAddress = "";
+  let scopeAddress = originPhones.addressId;
   let currentShopId = "";
   let currentJar = "";
   proxy.switchIp().then(() => {
     MaotaiService.getCurrentJar(tel)
         .then(j => {
             currentJar = j;
-            return MaotaiService.getAddressId(tel,j)
-        })
-        .then(address => {
-            scopeAddress = address;
-            originPhones[randomIndex].addressId = address;
-            return MaotaiService.LBSServer(address, tel, userAgent,pid, currentJar);
+            return MaotaiService.LBSServer(scopeAddress, tel, userAgent,pid, currentJar);
         })
         .then(data => {
-          logger.info(data);
-          if (data && data.lbsdata && data.lbsdata.data && data.lbsdata.data.stock && data.lbsdata.data.stock.Sid) {
+          if (data !=undefined && data.lbsdata != undefined && data.lbsdata.data != undefined && data.lbsdata.data.stock !=undefined && data.lbsdata.data.stock.Sid != undefined) {
+            logger.info("库存信息",data.lbsdata.data.stock)
+            logger.info("限购信息", data.lbsdata.data.limit)
+            logger.info("商家信息", data.lbsdata.data.network)
             if(
               data.lbsdata.data.stock.StockCount >= quantity
               &&
@@ -70,11 +67,13 @@ function watchQuanity() {
               return MaotaiService.createOrderByScan(tel, pid , data.lbsdata.data.limit.LimitCount,data.lbsdata.data.stock.StockCount, userAgent, scopeAddress, data.lbsdata.data.network.Sid,-1,currentJar);
             }else {
               printInfo(data);
+              logger.info('不满足购买条件');
               return Promise.resolve({code: 500});
             }
 
           } else {
-            logger.info(colors.green("您所在区域无法购买"))
+            logger.info(colors.green("您所在区域暂未上货"))
+            logger.info(scopeAddress, JSON.stringify(data.lbsdata));
             return Promise.resolve({code: 500});
           }
         }).then( data => {
@@ -102,7 +101,7 @@ function watchQuanity() {
             }
 
         }).catch(e => {
-            logger.info("位置错误,60秒后重试", e);
+            logger.info("位置错误,60秒后重试", e.message);
             setTimeout(() => {
                 watchQuanity();
             }, checkInterval);
@@ -110,15 +109,16 @@ function watchQuanity() {
   })
   .catch(e => {
     logger.error(e);
+            setTimeout(() => {
+                watchQuanity();
+            }, checkInterval);
   })
 }
 
 function autoBuyFixedShop(fixedShopId, maxOrder, successOrder, StockCount, buyLimit) {
   let randomIndex = Math.floor(Math.random()*(originPhones.length-1));
   let tel = originPhones[randomIndex].phone;
-  // let tel = "13720689056";
   let pass = originPhones[randomIndex].pass;
-  // let pass = "a123456";
   let userAgent = MaotaiService.userAgent(tel);
   let scopeAddress = originPhones[randomIndex].addressId;
   if(successOrder >= maxOrder){

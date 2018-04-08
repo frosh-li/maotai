@@ -29,14 +29,12 @@ class MaotaiService {
     getCurrentJar(tel) {
       return new Promise((resolve, reject) => {
         let path = './cookies/'+tel+'.json';
-        console.log('cookie path', path);
         var v = new Filecookietore(path);
         v.findCookies('www.cmaotai.com','/', function(err, cookie){
           if(err){
             console.log('cookie error');
             return reject(err);
           }
-          console.log(cookie);
           return resolve(cookie.join(";"))
         })
       })

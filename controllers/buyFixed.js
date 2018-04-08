@@ -19,24 +19,12 @@ let checkInterval = 1*1000;
 // 上海购买
 // 地址信息
 let pid = '391';
-let quantity = 2;
-// 13618484713+zxcvbnm
-// 17753583852+123456
-// 15213163729+123456
-// 17783920137+xqh19950703
-// 18236877936+wxp800614
-// 15178421370+2016whczg
-// 15084425825  lh25802580
-// 17772324023  lh25802580
-// 13786958413-58585858
-// 13711949575----wy40324700
-// 13686135579----wy40324700
-// 15717350785——dyj395799.
-// 18273181619——dyj395799.
+let quantity = 6;
 
 
 let shopName = '东柏街|祥瑞丰源|SOHO现代城C|嘉禾国信大厦|西城区|文峰商贸';
 var originPhones = require("../shuanglong.json");
+var originPhones = [{"phone":"19923800479","pass":"123456","addressId":1985973},{"phone":"17688225696","pass":"123456","addressId":1985969},{"phone":"18580067873","pass":"123456","addressId":1985985},{"phone":"15123922379","pass":"123456","addressId":1986003},{"phone":"13212382391","pass":"776800868h","addressId":1929891},{"phone":"17323972656","pass":"123456","addressId":1933999},{"phone":"18323215176","pass":"123456","addressId":1937925},{"phone":"19923736324","pass":"123456","addressId":1937822},{"phone":"15102335828","pass":"123456","addressId":1929918}];
 function printInfo(data){
   try{
     logger.info('推送网点信息');
@@ -119,9 +107,9 @@ function watchQuanity(number) {
 }
 
 //var fixedShopId = 233330186001; // 杭州网点
-var fixedShopId = 211110105003; //双龙网点 
-var maxOrder = 20;
+var fixedShopId = 250500700001; //双龙网点 
+var maxOrder = 1;
 var successOrder = 0;
-watchQuanity(20)
+watchQuanity(1)
 
 

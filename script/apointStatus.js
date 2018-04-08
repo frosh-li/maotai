@@ -9,7 +9,7 @@ const fs = require('fs');
 
 
 originPhones = require("../accounts/apoint4.5.hangzhou.json");
-
+originPhones = [{"phone":"13414570045","pass":"wy40324700","addressId":1994066},{"phone":"13650493675","pass":"wy40324700","addressId":1993819},{"phone":"15999759990","pass":"wy40324700","addressId":1994049},{"phone":"13267540771","pass":"wy40324700","addressId":1937801},{"phone":"18825752409","pass":"wy40324700 ","addressId":1991338},{"phone":"15818274155","pass":"wy40324700","addressId":1807547},{"phone":"13412214599","pass":"wy40324700","addressId":1994746},{"phone":"13267574337","pass":"wy40324700","addressId":1994766},{"phone":"18681019002","pass":"wy40324700"},{"phone":"13128074637","pass":"wy40324700","addressId":1862125},{"phone":"15934570100","pass":"3122@yang ","addressId":1839988},{"phone":"13192054067","pass":"wy40324700","addressId":1994821},{"phone":"13267549137","pass":"wy40324700","addressId":1994835},{"phone":"13537418590","pass":"wy40324700"},{"phone":"13886972253","pass":"wy40324700","addressId":1994862},{"phone":"18199743397","pass":"wy40324700","addressId":1994875},{"phone":"15015247207","pass":"wy40324700","addressId":1994894},{"phone":"15089493032","pass":"wy40324700","addressId":1866321},{"phone":"13650842112","pass":"wy40324700","addressId":1994904}];
 let tels = [];
 originPhones.forEach(data => {
   tels.push(JSON.stringify(data));
@@ -29,10 +29,8 @@ function getStatus(){
     logger.info("检查完成");
     console.log("预约成功列表如下");
     console.log(JSON.stringify(successAcount));
-    fs.writeFileSync('./beijing4.2buy.successAcount.json', JSON.stringify(successAcount))
     console.log("预约失败列表如下");
     console.log(JSON.stringify(failAccount));
-    fs.writeFileSync('./beijing4.2buy.failAccount.json', JSON.stringify(failAccount))
     return;
   }
   logger.info('start to check status', phone);
