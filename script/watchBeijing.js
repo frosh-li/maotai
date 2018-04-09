@@ -19,7 +19,7 @@ let quantity = 6;
 let shopName = '东柏街|祥瑞丰源|SOHO现代城C|嘉禾国信大厦|西城区|文峰商贸';
 
 //var originPhones = require("../accounts/apoint4.5.hangzhou.json");
-var originPhones = [{"phone":"19923800479","pass":"123456","addressId":1985973},{"phone":"17688225696","pass":"123456","addressId":1985969},{"phone":"18580067873","pass":"123456","addressId":1985985},{"phone":"15123922379","pass":"123456","addressId":1986003},{"phone":"13212382391","pass":"776800868h","addressId":1929891},{"phone":"17323972656","pass":"123456","addressId":1933999},{"phone":"18323215176","pass":"123456","addressId":1937925},{"phone":"19923736324","pass":"123456","addressId":1937822},{"phone":"15102335828","pass":"123456","addressId":1929918}];
+var originPhones = [{"phone":"17688225696","pass":"123456","addressId":1985969},{"phone":"18580067873","pass":"123456","addressId":1985985},{"phone":"15123922379","pass":"123456","addressId":1986003},{"phone":"13212382391","pass":"776800868h","addressId":1929891},{"phone":"17323972656","pass":"123456","addressId":1933999},{"phone":"18323215176","pass":"123456","addressId":1937925},{"phone":"19923736324","pass":"123456","addressId":1937822},{"phone":"15102335828","pass":"123456","addressId":1929918}];
 
 originPhones = originPhones.concat([{"phone":"13414570045","pass":"wy40324700","addressId":1994066},{"phone":"13650493675","pass":"wy40324700","addressId":1993819},{"phone":"15999759990","pass":"wy40324700","addressId":1994049},{"phone":"13267540771","pass":"wy40324700","addressId":1937801},{"phone":"18825752409","pass":"wy40324700 ","addressId":1991338},{"phone":"15818274155","pass":"wy40324700","addressId":1807547},{"phone":"13412214599","pass":"wy40324700","addressId":1994746},{"phone":"13267574337","pass":"wy40324700","addressId":1994766},{"phone":"18681019002","pass":"wy40324700"},{"phone":"13128074637","pass":"wy40324700","addressId":1862125},{"phone":"13192054067","pass":"wy40324700","addressId":1994821},{"phone":"13267549137","pass":"wy40324700","addressId":1994835},{"phone":"13537418590","pass":"wy40324700"},{"phone":"13886972253","pass":"wy40324700","addressId":1994862},{"phone":"18199743397","pass":"wy40324700","addressId":1994875},{"phone":"15015247207","pass":"wy40324700","addressId":1994894},{"phone":"15089493032","pass":"wy40324700","addressId":1866321},{"phone":"13650842112","pass":"wy40324700","addressId":1994904}])
 function printInfo(data){
@@ -169,10 +169,49 @@ function autoBuyFixedShop(fixedShopId, maxOrder, successOrder, StockCount, buyLi
   })
 }
 
-// var fixedShopId = 233330186001; // 杭州网点
-// var maxOrder = 13;
-// var successOrder = 0;
+function buyCheck(tel, pass, scopeAddress) {
+  proxy.switchIp()
+      .then(() => {
+        let currentJar = null;
+        return MaotaiService.getCurrentJar(tel)
+      }).then(j => {
+        currentJar = j;
+        return MaotaiService.createOrderByScan(
+          tel,
+          pid,
+          6,
+          100,
+          userAgent,
+          scopeAddress,
+          fixedShopId,
+          -1,
+          currentJar
+        )
+      }).then(data => {
+        if(data.data.code === 0 ){
+          logger.info('购买成功'+tel+":"+pass+","+JSON.stringify(data));
+        }else{
+          logger.error('购买失败'+JSON.stringify(data));
+          logger.info('60s后重试');
+          setTimeout(() => {
+            buyCheck(tel, pass, scopeAddress);
+          }, 60000);
+        }
+      }).catch(e => {
+        logger.error('购买失败'+e.message);
+          logger.info('60s后重试');
+          setTimeout(() => {
+            buyCheck(tel, pass, scopeAddress);
+          }, 60000);
+      })
+}
 
+var fixedShopId = 150500112001; // 杭州网点
+var maxOrder = 20;
+var successOrder = 0;
+//{"phone":"19923800479","pass":"123456","addressId":1985973},
+buyCheck("19923800479","123456",1985973 )
+/*
 let interval = setInterval(() => {
   let now = new Date();
   let Hour = now.getHours();
@@ -187,6 +226,6 @@ let interval = setInterval(() => {
     logger.trace('继续等待中，等到十点才开始吧');
   }
 }, 2000);
-
+*/
 // watchQuanity();
 
