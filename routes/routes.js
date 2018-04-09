@@ -35,6 +35,31 @@ router.post('/maotai', function(req, res, next) {
     sid: sid
   })
 });
+router.get('/maotai/orders', function(req, res, next){
+  redisClient.keys("order*", function(err, replys){
+    if(err){
+      return res.json({status: 500, err:err.message})
+    }
+    if(replys){
+      let data = [];
+      redisClient.get(replys, function(err, datas){
+        if(err){
+          return res.json({status: 500, err:err.message});
+        }
+        return res.json({
+          status:200,
+          keys: replys,
+          datas: datas
+        })
+      })
+    }else{
+      return res.json({
+        status: 200,
+        order:[]
+      })
+    }
+  })
+})
 
 router.get('/maotai/sid/', function(req, res, next){
   res.json({

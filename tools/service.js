@@ -553,8 +553,8 @@ class MaotaiService {
                         };
                         
                         if(body && body.code !== undefined && body.code === 0){
-                          sendmsg('15330066919', '订单提交成功'+stel+":"+pass);
-                          redisClient.set('order:success:'+stel+":"+pass, body, function(err){
+                          sendmsg('15330066919', '订单提交成功'+tel+":"+pass);
+                          redisClient.set('order:success:'+tel+":"+pass, JSON.stringify(body), function(err){
                             if(err){
                               return console.log(err);
                             }
