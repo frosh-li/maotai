@@ -83,7 +83,7 @@ function watchQuanity() {
             if(data && data.data && data.data.code === 0){
               // 购买成功，进行下一个账号的处理逻辑
               logger.info('购买成功'+tel+":"+pass+JSON.stringify(data));
-              fs.writeFileSync(`output/${Utils.dateFormat()}.json`, `${tel} ${pass}\n`, {flag:'a+'});
+              fs.writeFileSync(`output/${Utils.dateFormat()}.json`, `\n${tel} ${pass}\n`, {flag:'a+'});
               originPhones.splice(randomIndex, 1)
             }
             
