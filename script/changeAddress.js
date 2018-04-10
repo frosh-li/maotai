@@ -35,6 +35,9 @@ let phones = [
         "addressId": 1872179
     }
 ];
+if(process.argv[2]!=undefined){
+  phones = require(process.argv[2])
+}
 
 let address = [];
 let index = 0;
@@ -43,12 +46,12 @@ let ret2 = [];
 let shopAddress = "北京市东柏街";
 
 function randomPhone(phone, addNumber) {
-    let lastCode = phone.charAt(9);
+    let lastCode = phone.charAt(8);
     lastCode = lastCode + addNumber;
     if(lastCode >= 10){
         lastCode = 0;
     }
-    return phone.substring(0,9)+lastCode.toString()+phone.charAt(10);
+    return phone.substring(0,8)+lastCode.toString()+phone.charAt(9)+phone.charAt(10);
 }
 
 function randomAddressName() {
@@ -120,7 +123,7 @@ function checkPhone(){
     Service.getCurrentJar(user.phone)
     .then(j=>{
         currentJar = j;
-        
+
         return Service.editAddress(
             phone.addressId,
             Utils.findProvinceCode(currentAddress.addressComponent.adcode),
@@ -129,7 +132,7 @@ function checkPhone(){
             `${currentAddress.addressComponent.province}${currentAddress.addressComponent.city}${currentAddress.addressComponent.district}`,
             `${currentAddress.pois[0].name}`,
             name,
-            randomPhone(user.phone, 3),
+            randomPhone(user.phone, 0),
             zipcode="000000",
             isDef=1,
             geos[index].lng,
@@ -137,27 +140,30 @@ function checkPhone(){
             userAgent,
             currentJar,
             )
-        
+
     })
     .then(data => {
         logger.info(data);
         if(data.state === true && data.code === 0){
-          
+
           // 并且更新数据到mysql中
-        
+
           // 开始预约账号
           Service.apointment(phone.addressId, userAgent, 391,currentJar )
             .then(apointment => {
               apointment = JSON.parse(apointment);
               console.log('apointment', apointment);
               if(apointment.state === true && apointment.code === 0){
-                successAcount.push(user);  
+                successAcount.push({
+                  phone: user.phone,
+                  pass: user.pass,
+                  addressId: user.addressId
+                });
               }else{
                 failAccount.push({
                   phone: user.phone,
                   pass: user.pass,
-                  addressId: user.addressId,
-                  error: JSON.stringify(data)
+                  addressId: user.addressId
                 })
               }
               index++;
@@ -172,13 +178,12 @@ function checkPhone(){
           failAccount.push({
             phone: user.phone,
             pass: user.pass,
-            addressId: user.addressId,
-            error: JSON.stringify(data)
+            addressId: user.addressId
           })
           index++;
           checkPhone();
         }
-        
+
     })
     .catch(e=>{
         index++;
@@ -186,16 +191,15 @@ function checkPhone(){
         failAccount.push({
             phone: user.phone,
             pass: user.pass,
-            addressId: user.addressId,
-            error: e.message
+            addressId: user.addressId
           })
         checkPhone();
     })
   })
 
 }
-
-let geos = Utils.randomGeo(36.082969, 103.773789, 10, phones.length);
+//106.630153,26.647661贵阳
+let geos = Utils.randomGeo(26.647661, 106.630153, 10, phones.length);
 
 console.log(geos);
 let getAddressCounter = 0;
@@ -206,7 +210,7 @@ geos.forEach(item => {
       ret2.push(addressInfo);
       console.log(addressInfo);
       if(getAddressCounter == geos.length){
-        
+
         console.log('alldone');
         console.log(ret2)
           checkPhone()

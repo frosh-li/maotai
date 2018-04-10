@@ -838,6 +838,10 @@ originPhones = [
         "addressId": 1961877
     }
 ];
+
+if(process.argv[2] != undefined){
+    originPhones = require(process.argv[2]);
+}
 let tels = [];
 originPhones.forEach(data => {
   tels.push(JSON.stringify(data));
@@ -850,15 +854,18 @@ let quantity = 6;
 let statusResults = [];
 let successAcount = [];
 let failAccount = [];
+let apointing = []
 function getStatus(){
   let phone = originPhones.shift();
   logger.info('还剩下'+originPhones.length+'个检测');
   if(!phone){
     logger.info("检查完成");
     console.log("预约成功列表如下");
-    console.log(JSON.stringify(successAcount));
+    console.log(JSON.stringify(successAcount,null,4));
     console.log("预约失败列表如下");
-    console.log(JSON.stringify(failAccount));
+    console.log(JSON.stringify(failAccount,null,4));
+    console.log("审核中")
+    console.log(JSON.stringify(apointing,null,4));
     return;
   }
   logger.info('start to check status', phone);
@@ -881,7 +888,7 @@ function getStatus(){
           })
         }else if(data.status == 1){
           logger.info("phone:"+phone.phone+"正在审核中");
-          failAccount.push({
+          apointing.push({
             phone: phone.phone,
             pass:phone.pass,
             address: data.address,
