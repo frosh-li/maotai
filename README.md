@@ -123,3 +123,26 @@ curl -H 'Host: www.cmaotai.com' -H 'Accept: application/json, text/javascript, *
 
 13411447532
 13002629407
+
+
+// 获取验证码
+
+http://api.tay8.com/msgcode/api/do.php?action=getMessage&sid=9715&phone=13411447532&&token=F98117E24A354659801400A229B55F4B
+
+// 加入黑名单
+
+http://api.tay8.com/msgcode/api/do.php?action=addBlacklist&sid=9715&phone=17068270488&token=F98117E24A354659801400A229B55F4B
+
+// 获取手机号
+
+http://api.tay8.com/msgcode/api/do.php?action=getPhone&sid=9715&token=F98117E24A354659801400A229B55F4B&vno=0&phoneType=CMCC
+
+phoneType=CMCC，CMCC是指移动，UNICOM是指联通，TELECOM是指电信
+
+
+// 登录
+
+http://api.tay8.com/msgcode/api/do.php?action=loginIn&name=lijunliang&password=qwer1234A!
+
+// 释放当前用户下所有手机号
+http://api.tay8.com/msgcode/api/do.php?action=cancelAllRecv&token=F98117E24A354659801400A229B55F4B
