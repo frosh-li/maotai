@@ -180,21 +180,89 @@ router.post('/maotai/apointment', (req, res, next) => {
 })
 
 router.post('/maotai/getOrder/', (req, res, next) => {
-  let user = req.body.tel;
+  let tel = req.body.tel;
   let pass = req.body.pass;
-  MaotaiService.getOrder(user,pass)
-    .then(data => {
-      return res.json({
-        status: 200,
-        data: data
-      })
-    })
-    .catch(e => {
-      return res.json({
-        status: 500,
-        error:e.message
-      })
-    })
+  let userAgent = MaotaiService.userAgent(tel);
+  let now = +new Date();
+  
+  let options = {
+      method: 'POST',
+      url: 'https://www.cmaotai.com/API/Servers.ashx',
+      headers: MaotaiService.headers(userAgent),
+      form: {
+          action: 'UserManager.login',
+          tel: tel,
+          pwd: pass,
+          timestamp121: now
+      },
+      json:true,
+      jar:true
+  };
+
+  
+  request(options, function(error, response, body) {
+      if (error) {
+        console.log(error);
+        return res.json({
+          status: 500,
+          error: error.message
+        });
+      }
+      if (body.state === true && body.code === 0) {
+          console.log("登录成功");
+          let userid = body.data.userId
+          let now = +new Date();
+          options = {
+              method: 'POST',
+              jar:true,
+              url: 'https://www.cmaotai.com/YSApp_API/YSAppServer.ashx',
+              headers: {
+                  "proxy-authorization" : "Basic " + proxy.proxyAuth,
+                  'cache-control': 'no-cache',
+                  'content-type': 'application/x-www-form-urlencoded'
+              },
+              form: {
+                  action: 'OrdersManager.GetUserOrderInfo',
+                  userId: userid,
+                  index: '1',
+                  size: '10',
+                  timestamp121: now
+              },
+              json:true
+          };
+
+          return new Promise((resolve, reject) => {
+            request(options, function(error, response, body) {
+                if (error) {
+                    console.log(error);
+                    return res.json({
+                      status: 500,
+                      error: error.message
+                    });
+                }
+                if(body.data && body.data.Data != undefined && body.data.Data.length > 0){
+                  return res.json({
+                    status: 200,
+                    data: body.data.Data[0]
+                  })
+                }else{
+                  return res.json({
+                    status: 200,
+                    data: []
+                  })
+                }
+            });
+          })
+      } else {
+          console.log(error);
+          return res.json({
+            status: 500,
+            error: '登录失败:'+tel+':'+pass+':'+body.msg
+          });
+          // return reject(new Error('登录失败:'+tel+':'+pass+':'+body.msg));
+      }
+  });
+  
 })
 
 router.post('/maotai/multiOrder', (req, res, next) => {
