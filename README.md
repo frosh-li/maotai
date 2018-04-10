@@ -88,3 +88,38 @@ status 4 = 关闭订单
   破解相关
 
   https://webapi.amap.com/maps?v=1.4.0&plugin=AMap.Autocomplete&key=462f27e00614a30baa9ed1864455213f&hashtag=a36979f1818e475cb1e78af0d44cd38b
+
+
+
+// 账号绑定
+
+sid 162620124001
+action  UserManager.RecoBind
+timestamp121  1523348416683
+
+{
+  "state": true,
+  "code": 0,
+  "msg": "绑定成功"
+}
+
+
+// 发送验证码
+curl -H 'Host: www.cmaotai.com' -H 'Accept: application/json, text/javascript, */*; q=0.01' -H 'Origin: https://www.cmaotai.com' -H 'X-Requested-With: XMLHttpRequest' -H 'User-Agent: Mozilla/5.0 (Linux; Android 4.4.4; MuMu Build/V417IR) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36[android/1.0.23/266f81996392df0ef56257c0f894a6f2/a834acfceda69ec690b4142e0082456f]' -H 'Content-Type: application/x-www-form-urlencoded; charset=UTF-8' -H 'Referer: https://www.cmaotai.com/ysh5/page/LoginRegistr/userRegistr1.html' -H 'Accept-Language: zh-CN,en-US;q=0.8' -H 'Cookie: acw_tc=AQAAAKGyBR+eAAUA7RIV31XDcx0WA0tb; ASP.NET_SessionId=sjmab3ujxa4ejq2g2epg15w5; Hm_lvt_8b83f87d060d93d589c9a2c17dde6656=1523091705; Hm_lpvt_8b83f87d060d93d589c9a2c17dde6656=1523348223; SERVERID=73717107c680adffd3c04c75b05bf592|1523348250|1523326256' --data-binary "tel=13002629407&sessid=nc1-01W8fUo7tiNBKrkhR8ACXXKRu8MwhWjOJthfte5BNvahy6dVF80TktVhexEcmFEz9Um-sTtpWZiubQ2qcBTOIznQ-nc2-0561M3bob-R8gv1KNXk15v5bkS76NYlEyqbuKhC0ArCxeGEttHouIyva3qgLM576JmpElSacazF6WXh222UB1MOPnjEoMzcAQCQaXyHobfuzwNnquTqdNMDQPgrgjjUBaUse8HH7Rt6xf8uI2S7O9yw3bau4a0Zxm6bGQk-zLc0VYTjBaLkbBYTd_ecUVZntpKaSFP0K-ZcYeVB367lCZ56obc6G0ESpzsjtycEVftZVyHPg2lpXXB1UmcN-ESmIPt7gN36HZHKZgHITf7oZvlfXKkiPFu0AGcDntK6wW4yV6_sf51rgtuoLir78Tpzl1ehC_pg32qUWogeeuKbouvTl7RIhYE9I2tl5vQV_faNIDK5uYQEqmzuOWLJDNObZvlDbG98a3J7KB92l8OebuxIf1DHF1eOEduaMOl4kp46PV1tsMxw7ekzijo062D4MLOWheICCAFERpY6LyS8j3iSg-nc3-01YGjVYP56xB8j7o4jZfyVfxRE4La9d1ioTGPjtgu7qcmAWrQ7Ac5gB2TjX65JloHi0zS7Ckb-VX8MSzthisjhYlKvxHPiLdG8wWhSsejxVKOyZxqe4dqxcjsTMISyn0mTZE1FSCBc4zSVRKWwotb629aQEVn7ikm7TMTYnShy4sQ-nc4-FFFFA0000000016A858A&imgCode=&timestamp121=1523348280039" --compressed 'https://www.cmaotai.com/API/SendRegCode.ashx'
+
+
+// 验证码验证
+curl -H 'Host: www.cmaotai.com' -H 'Accept: application/json, text/javascript, */*; q=0.01' -H 'Origin: https://www.cmaotai.com' -H 'X-Requested-With: XMLHttpRequest' -H 'User-Agent: Mozilla/5.0 (Linux; Android 4.4.4; MuMu Build/V417IR) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36[android/1.0.23/266f81996392df0ef56257c0f894a6f2/a834acfceda69ec690b4142e0082456f]' -H 'Content-Type: application/x-www-form-urlencoded; charset=UTF-8' -H 'Referer: https://www.cmaotai.com/ysh5/page/LoginRegistr/userRegistr1.html' -H 'Accept-Language: zh-CN,en-US;q=0.8' -H 'Cookie: acw_tc=AQAAAKGyBR+eAAUA7RIV31XDcx0WA0tb; ASP.NET_SessionId=sjmab3ujxa4ejq2g2epg15w5; Hm_lvt_8b83f87d060d93d589c9a2c17dde6656=1523091705; Hm_lpvt_8b83f87d060d93d589c9a2c17dde6656=1523348223; SERVERID=73717107c680adffd3c04c75b05bf592|1523348280|1523326256' --data-binary "action=UserManager.CheckRegCode&tel=13002629407&telCode=620211&timestamp121=1523348377398" --compressed 'https://www.cmaotai.com/API/Servers.ashx'
+
+
+
+// 注册
+curl -H 'Host: www.cmaotai.com' -H 'Accept: application/json, text/javascript, */*; q=0.01' -H 'Origin: https://www.cmaotai.com' -H 'X-Requested-With: XMLHttpRequest' -H 'User-Agent: Mozilla/5.0 (Linux; Android 4.4.4; MuMu Build/V417IR) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36[android/1.0.23/266f81996392df0ef56257c0f894a6f2/a834acfceda69ec690b4142e0082456f]' -H 'Content-Type: application/x-www-form-urlencoded; charset=UTF-8' -H 'Referer: https://www.cmaotai.com/ysh5/page/LoginRegistr/userRegistr2.html' -H 'Accept-Language: zh-CN,en-US;q=0.8' -H 'Cookie: acw_tc=AQAAAKGyBR+eAAUA7RIV31XDcx0WA0tb; ASP.NET_SessionId=sjmab3ujxa4ejq2g2epg15w5; Hm_lvt_8b83f87d060d93d589c9a2c17dde6656=1523091705; Hm_lpvt_8b83f87d060d93d589c9a2c17dde6656=1523348223; SERVERID=73717107c680adffd3c04c75b05bf592|1523348378|1523326256' --data-binary "action=UserManager.CheckRegCode&tel=13002629407&telCode=620211&timestamp121=1523348386460&pwd=qwer1234" --compressed 'https://www.cmaotai.com/API/RegMember.ashx'
+
+
+
+
+
+
+13411447532
+13002629407

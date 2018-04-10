@@ -33,12 +33,20 @@ router.post('/maotai', function(req, res, next) {
 router.get('/maotai/orders', function(req, res, next){
   redisClient.keys("order*", function(err, replys){
     if(err){
+      console.log('main error', err);
       return res.json({status: 500, err:err.message})
     }
+    console.log("replys",replys);
     if(replys){
       let data = [];
-      redisClient.get(replys, function(err, datas){
+      console.log("replys",replys);
+      return res.json({
+        status:200,
+        data: replys
+      })
+      redisClient.mget(...replys, function(err, datas){
         if(err){
+          console.log('order errors', err);
           return res.json({status: 500, err:err.message});
         }
         return res.json({
@@ -184,7 +192,7 @@ router.post('/maotai/getOrder/', (req, res, next) => {
   let pass = req.body.pass;
   let userAgent = MaotaiService.userAgent(tel);
   let now = +new Date();
-  
+
   let options = {
       method: 'POST',
       url: 'https://www.cmaotai.com/API/Servers.ashx',
@@ -199,7 +207,7 @@ router.post('/maotai/getOrder/', (req, res, next) => {
       jar:true
   };
 
-  
+
   request(options, function(error, response, body) {
       if (error) {
         console.log(error);
@@ -262,7 +270,7 @@ router.post('/maotai/getOrder/', (req, res, next) => {
           // return reject(new Error('登录失败:'+tel+':'+pass+':'+body.msg));
       }
   });
-  
+
 })
 
 router.post('/maotai/multiOrder', (req, res, next) => {
@@ -462,7 +470,7 @@ router.post('/wireless/nocaptcha.json', function(req, res, next) {
         })
       }
       console.log('代理:',body);
-      
+
       if(body.result.sig){
         request({
           url:"http://maotai.local/api/maotai",
@@ -483,7 +491,7 @@ router.post('/wireless/nocaptcha.json', function(req, res, next) {
             require('child_process').fork('script/autoGetSid');
           } ,10000)
           return res.json(body)
-        })  
+        })
       }else{
         // 如果失败，10分钟后重试
         setTimeout(() => {

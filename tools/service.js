@@ -249,6 +249,7 @@ class MaotaiService {
      */
     LBSServer(addressID, tel, userAgent, pid = 391, j) {
         let now = (+new Date());
+        let that = this;
         return new Promise((resolve, reject) => {
             let options = {
                 method: 'POST',
@@ -276,7 +277,17 @@ class MaotaiService {
                   logger.info("定位信息获取错误", error);
                   return reject(error);
                 };
+                if(body.code === 9999){
+                    that.login(tel, pass, userAgent)
+                        .then(() => {
 
+                            console.log('从新登陆');
+                        })
+                        .catch(e => {
+
+                            console.log('登陆失败', e.message);
+                        })
+                }
                 return resolve({
                   addressID: addressID,
                   lbsdata: body
