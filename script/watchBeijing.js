@@ -79,20 +79,17 @@ function watchQuanity() {
             return Promise.resolve({code: 500});
           }
         }).then( data => {
-          // var fixedShopId = 233330186001; // 杭州网点
-          // var maxOrder = 13;
-          // var successOrder = 0;
-            // autoBuyFixedShop(233330186001, 13, 0, 100, 6);
-            // return
+          // 只要抢购成功就进行异步查验是否购买到了
             if(data && data.data && data.data.code === 0){
               // 购买成功，进行下一个账号的处理逻辑
               logger.info('购买成功'+tel+":"+pass+JSON.stringify(data));
-              fs.writeFileSync(`output/${Utils.dateFormat()}.json`, `${tel} ${pass}`, {flag:'a+'});
+              fs.writeFileSync(`output/${Utils.dateFormat()}.json`, `${tel} ${pass}\n`, {flag:'a+'});
               originPhones.splice(randomIndex, 1)
             }
-              setTimeout(() => {
-                  watchQuanity();
-              }, checkInterval);
+            
+            setTimeout(() => {
+                watchQuanity();
+            }, checkInterval);
             
 
         }).catch(e => {
