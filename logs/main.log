@@ -1,0 +1,90 @@
+[2018-04-10T17:27:17.659] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { ID: 1829922,
+     IsDefault: true,
+     IsPushAddreess: false,
+     Name: '卢堡',
+     TelPhone: '18207517906',
+     Zipcode: '000000',
+     ProvCode: '620000',
+     CityCode: '620100',
+     AreaCode: '620103',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '甘肃省兰州市七里河区,锐驰钣金喷漆',
+     Longitude: 103.722663,
+     Latitude: 36.149671,
+     Address: '锐驰钣金喷漆',
+     AddressText: '甘肃省兰州市七里河区' } }
+[2018-04-10T17:27:18.892] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-04-10T17:27:21.135] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { ID: 1879800,
+     IsDefault: true,
+     IsPushAddreess: false,
+     Name: '闻幽',
+     TelPhone: '18333966207',
+     Zipcode: '000000',
+     ProvCode: '620000',
+     CityCode: '620100',
+     AreaCode: '620104',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '甘肃省兰州市西固区,鸭儿山',
+     Longitude: 103.817205,
+     Latitude: 36.152281,
+     Address: '鸭儿山',
+     AddressText: '甘肃省兰州市西固区' } }
+[2018-04-10T17:27:36.922] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-04-10T17:27:41.088] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { ID: 1840503,
+     IsDefault: true,
+     IsPushAddreess: false,
+     Name: '和菁',
+     TelPhone: '18382394504',
+     Zipcode: '000000',
+     ProvCode: '620000',
+     CityCode: '620100',
+     AreaCode: '620122',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '甘肃省兰州市皋兰县,兰州市大砂沟实验林场',
+     Longitude: 103.710247,
+     Latitude: 36.137829,
+     Address: '兰州市大砂沟实验林场',
+     AddressText: '甘肃省兰州市皋兰县' } }
+[2018-04-10T17:27:44.175] [INFO] things - { Error: tunneling socket could not be established, cause=socket hang up
+    at ClientRequest.onError (/Users/junliang/server/www/maotaiServer/node_modules/tunnel-agent/index.js:177:17)
+    at Object.onceWrapper (events.js:315:30)
+    at emitOne (events.js:116:13)
+    at ClientRequest.emit (events.js:211:7)
+    at Socket.socketOnEnd (_http_client.js:423:9)
+    at emitNone (events.js:111:20)
+    at Socket.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1055:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+    at process._tickCallback (internal/process/next_tick.js:180:9) code: 'ECONNRESET' }
+[2018-04-10T17:27:45.461] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { ID: 1872179,
+     IsDefault: true,
+     IsPushAddreess: false,
+     Name: '方籴玺',
+     TelPhone: '18629896600',
+     Zipcode: '000000',
+     ProvCode: '620000',
+     CityCode: '620100',
+     AreaCode: '620122',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '甘肃省兰州市皋兰县,曹家湾支渠',
+     Longitude: 103.667335,
+     Latitude: 36.060321,
+     Address: '曹家湾支渠',
+     AddressText: '甘肃省兰州市皋兰县' } }
+[2018-04-10T17:27:46.660] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}

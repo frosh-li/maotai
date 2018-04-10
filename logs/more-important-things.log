@@ -1,71 +1,1069 @@
-[2018-04-10T16:00:00.177] [INFO] things - 库存信息 { Sid: '141410100008',
-  Pid: 391,
-  Pcode: '23',
-  CanSale: true,
-  CanLocation: true,
-  Longitude: 116.558943173006,
-  Latitude: 39.96092863374,
-  LocationCode: '110000',
-  StockCount: 18,
-  QuotasStockCount: 18,
-  LocationDistance: 4170.13987607558,
-  HasSelfDelivery: true,
-  HasOtherDelivery: false,
-  HasCityDelivery: false,
-  IsVirtual: false,
-  IsPlatform: false }
-[2018-04-10T16:00:00.179] [INFO] things - 限购信息 { Sid: '141410100008',
-  Pid: 391,
-  UserOrderCount: 0,
-  LimitCount: 4,
-  LimitTimeCycle: 1440,
-  LimitOrderCount: 1,
-  IsPlatform: false }
-[2018-04-10T16:00:00.179] [INFO] things - 商家信息 { Sid: '141410100008',
-  SName: '茅台云商北京市朝阳区服务网点',
-  Did: '410186002',
-  DName: '尚郡（北京）商贸有限公司',
-  SHBegin: '09:00:00',
-  SHEnd: '17:30:00',
-  Address: '朝阳区和敬路2号院3号楼3-2',
-  LinkMan: '李安良',
-  LinkTel: '010-65726529',
-  InvoiceCost: 0,
-  State: 1,
-  HasPlainInvoice: 1,
-  HasVATInvoice: 1,
-  Description: '1、16:00前下单，当日配送；16:00后下单，次日配送；\r\n2、若因特殊原因或不可抗力造成配送不及时敬请您的谅解！查询电话：010-65726529；\r\n3、国酒茅台专卖店地址：北京市朝阳区和敬路2号院3号楼1层3-2',
-  InvoiceCompany: '尚郡（北京）商贸有限公司',
-  Coordinate: 
-   { ProvCode: '110000',
-     CityCode: '110100',
-     AreaCode: '110105',
-     Longitude: 116.565498352051,
-     Latitude: 39.9667701721191 },
-  NetworkType: 0,
-  WorkingDay: '[{"EnDay":"Monday","CnDay":"星期一"},{"EnDay":"Tuesday","CnDay":"星期二"},{"EnDay":"Wednesday","CnDay":"星期三"},{"EnDay":"Thursday","CnDay":"星期四"},{"EnDay":"Friday","CnDay":"星期五"},{"EnDay":"Saturday","CnDay":"星期六"},{"EnDay":"Sunday","CnDay":"星期日"}]',
-  ProvCode: '110000',
-  CityCode: '110100',
-  AreaCode: '110105',
-  IsPlatform: false }
-[2018-04-10T16:00:00.179] [INFO] things - 推送网点信息
-[2018-04-10T16:00:00.180] [INFO] things - Address: 朝阳区和敬路2号院3号楼3-2
-[2018-04-10T16:00:00.180] [INFO] things - SName: 茅台云商北京市朝阳区服务网点
-[2018-04-10T16:00:00.180] [INFO] things - DName: 尚郡（北京）商贸有限公司
-[2018-04-10T16:00:00.180] [INFO] things - SID: 141410100008
-[2018-04-10T16:00:00.180] [INFO] things - total: 18
-[2018-04-10T16:00:00.180] [INFO] things - limit: 4
-[2018-04-10T16:00:00.180] [INFO] things - 不满足购买条件
-[2018-04-10T16:00:00.180] [INFO] things - {"phone":"18632369087","pass":"a123456","addressId":1962186}
-[2018-04-10T16:00:01.932] [INFO] things - [32m您所在区域暂未上货[39m
-[2018-04-10T16:00:01.932] [INFO] things - {"phone":"15235364989","pass":"a123456","addressId":1962212}
-[2018-04-10T16:00:01.933] [INFO] things - 1962212 '{"state":true,"code":10,"data":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":false,"Certificate":{"ID":"2823157","UID":2265061,"PID":"391","Status":3,"Address":{"ID":1962212,"IsDefault":true,"IsPushAddreess":true,"Name":"颜文杂","TelPhone":"15235364989","Zipcode":"000000","ProvCode":"110000","CityCode":"110100","AreaCode":"110105","Remark":"","IsVerification":false,"AddressDetails":"北京市北京市朝阳区,北京北湖国际高尔夫俱乐部","Longitude":116.333845,"Latitude":39.850855,"Address":"北京北湖国际高尔夫俱乐部","AddressText":"北京市北京市朝阳区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-17 00:00:00"},"EnterTimeSlot":{"Start":"2018-04-10 00:00:00","End":"2018-04-10 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-04-11 10:00:00","End":"2018-04-11 16:00:00","InTime":false}}}'
-[2018-04-10T16:00:04.040] [INFO] things - [32m您所在区域暂未上货[39m
-[2018-04-10T16:00:04.041] [INFO] things - {"phone":"13209986285","pass":"a123456","addressId":1962222}
-[2018-04-10T16:00:04.041] [INFO] things - 1962222 '{"state":true,"code":10,"data":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":false,"Certificate":{"ID":"2823173","UID":2265078,"PID":"391","Status":3,"Address":{"ID":1962222,"IsDefault":true,"IsPushAddreess":true,"Name":"骆游芒","TelPhone":"13209986285","Zipcode":"000000","ProvCode":"110000","CityCode":"110100","AreaCode":"110105","Remark":"","IsVerification":false,"AddressDetails":"北京市北京市朝阳区,北豆各庄93号院","Longitude":116.593879,"Latitude":40.006517,"Address":"北豆各庄93号院","AddressText":"北京市北京市朝阳区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-17 00:00:00"},"EnterTimeSlot":{"Start":"2018-04-10 00:00:00","End":"2018-04-10 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-04-11 10:00:00","End":"2018-04-11 16:00:00","InTime":false}}}'
-[2018-04-10T16:00:08.217] [INFO] things - [32m您所在区域暂未上货[39m
-[2018-04-10T16:00:08.217] [INFO] things - {"phone":"18232902912","pass":"108108li","addressId":1679931}
-[2018-04-10T16:00:08.217] [INFO] things - 1679931 '{"state":true,"code":10,"data":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":false,"Certificate":{"ID":"2822005","UID":2075087,"PID":"391","Status":3,"Address":{"ID":1679931,"IsDefault":true,"IsPushAddreess":true,"Name":"李永立","TelPhone":"18232902912","Zipcode":"000000","ProvCode":"110000","CityCode":"110100","AreaCode":"110101","Remark":"","IsVerification":true,"AddressDetails":"北京市东城区,广渠门内大街,通用小区二单元二号楼208室","Longitude":116.431342,"Latitude":39.893479,"Address":"广渠门内大街,通用小区二单元二号楼208室","AddressText":"北京市东城区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-17 00:00:00"},"EnterTimeSlot":{"Start":"2018-04-10 00:00:00","End":"2018-04-10 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-04-11 10:00:00","End":"2018-04-11 16:00:00","InTime":false}}}'
-[2018-04-10T16:00:10.244] [INFO] things - [32m您所在区域暂未上货[39m
-[2018-04-10T16:00:10.245] [INFO] things - {"phone":"18253251389","pass":"123456","addressId":1843317}
-[2018-04-10T16:00:10.245] [INFO] things - 1843317 '{"state":true,"code":10,"data":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":false,"Certificate":{"ID":"2822007","UID":2190299,"PID":"391","Status":3,"Address":{"ID":1843317,"IsDefault":false,"IsPushAddreess":true,"Name":"耿雅楠","TelPhone":"18253251389","Zipcode":"000000","ProvCode":"110000","CityCode":"110100","AreaCode":"110101","Remark":"","IsVerification":true,"AddressDetails":"北京市东城区,富贵园,29号楼902","Longitude":116.433508,"Latitude":39.897365,"Address":"富贵园,29号楼902","AddressText":"北京市东城区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-17 00:00:00"},"EnterTimeSlot":{"Start":"2018-04-10 00:00:00","End":"2018-04-10 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-04-11 10:00:00","End":"2018-04-11 16:00:00","InTime":false}}}'
+[2018-04-10T17:08:14.266] [INFO] things - { state: false, msg: '未设置参数sId' }
+[2018-04-10T17:08:15.027] [INFO] things - { state: false, msg: '未设置参数sId' }
+[2018-04-10T17:09:09.459] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '15949806339',
+     NickName: '15949806339',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: '9738b195f5a51973a5e915a09fdb2b9e',
+     UserId: 2097675,
+     Name: '&15949806339' } }
+[2018-04-10T17:09:10.264] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '17097224268',
+     NickName: '17097224268',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: '933d30aa8efd2e36787af5536b0f91bc',
+     UserId: 2225784,
+     Name: '&17097224268' } }
+[2018-04-10T17:09:12.975] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '18032952504',
+     NickName: '18032952504',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: 'f16119ddfca0cf96e19de9d861a6eeec',
+     UserId: 2214341,
+     Name: '&18032952504' } }
+[2018-04-10T17:09:13.946] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '18201603185',
+     NickName: '18201603185',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: '66d1f19661759b08c09803f057a92d35',
+     UserId: 2182786,
+     Name: '&18201603185' } }
+[2018-04-10T17:09:14.737] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '18207517996',
+     NickName: '18207517996',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: '6aa51b005f51cd86a8467ddd2af2c42c',
+     UserId: 2180781,
+     Name: '&18207517996' } }
+[2018-04-10T17:09:15.675] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '18333966217',
+     NickName: '18333966217',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: '43e4af7276857bf40cbaf5a68129f2cf',
+     UserId: 2214353,
+     Name: '&18333966217' } }
+[2018-04-10T17:09:16.367] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '18382394514',
+     NickName: '18382394514',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: '406f0a2d52150d7e19e2c518ad8326c4',
+     UserId: 2188364,
+     Name: '&18382394514' } }
+[2018-04-10T17:09:19.390] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '18629896680',
+     NickName: '18629896680',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: 'b379a32eeb23d9c16dc11749a17bb6d4',
+     UserId: 2181258,
+     Name: '&18629896680' } }
+[2018-04-10T17:09:26.086] [INFO] things - { state: false, msg: '未设置参数sId' }
+[2018-04-10T17:09:27.123] [INFO] things - { state: false, msg: '未设置参数sId' }
+[2018-04-10T17:10:34.849] [INFO] things - start get addressID from mobile: 15949806339
+[2018-04-10T17:10:38.258] [INFO] things - {"state":true,"code":0,"data":{"size":10,"index":1,"count":1,"datacount":3,"list":[{"rownumber":1,"SId":1935818,"UserId":"2097675","TelPhone":"15949806339","Zipcode":"000000","Address":"北京市东城区西花市南里东区12号西花市南里东区12号楼","AddressInfo":"北京市东城区","ShipTo":"李兴艳","Remark":"","ProvinceId":"110000","CityId":"110100","DistrictsId":"110101","IsDefault":true,"SMNo":null,"RelPhone":null,"Longitude":"116.433804","Latitude":"39.901026","IsVerification":false,"TimeStamp":"2018-03-23 14:31:34"},{"rownumber":2,"SId":1822251,"UserId":"2097675","TelPhone":"15949806339","Zipcode":"000000","Address":"北京路165号","AddressInfo":"贵州省贵阳市","ShipTo":"乔兴旺","Remark":"","ProvinceId":"550000","CityId":"550100","DistrictsId":"550101","IsDefault":false,"SMNo":null,"RelPhone":null,"Longitude":"106.705566","Latitude":"26.594748","IsVerification":false,"TimeStamp":"2018-03-19 14:07:07"},{"rownumber":3,"SId":1746063,"UserId":"2097675","TelPhone":"15949806339","Zipcode":"000000","Address":"大兴区,北京大兴区京良路10号楼二单元502","AddressInfo":"北京市大兴区","ShipTo":"刘红娟","Remark":"","ProvinceId":"110000","CityId":"110100","DistrictsId":"110115","IsDefault":false,"SMNo":null,"RelPhone":null,"Longitude":"116.341395","Latitude":"39.726929","IsVerification":true,"TimeStamp":"2018-02-07 18:33:55"}]}}
+[2018-04-10T17:10:38.335] [INFO] things - start get addressID from mobile: 17097224268
+[2018-04-10T17:10:39.170] [INFO] things - {"state":true,"code":0,"data":{"size":10,"index":1,"count":1,"datacount":1,"list":[{"rownumber":1,"SId":1894299,"UserId":"2225784","TelPhone":"17097224268","Zipcode":"000000","Address":"融合汇通典当行,","AddressInfo":"北京市东城区","ShipTo":"李文博","Remark":"","ProvinceId":"110000","CityId":"110100","DistrictsId":"110101","IsDefault":false,"SMNo":null,"RelPhone":null,"Longitude":"116.426477","Latitude":"39.893837","IsVerification":false,"TimeStamp":"2018-03-13 16:14:11"}]}}
+[2018-04-10T17:10:39.238] [INFO] things - start get addressID from mobile: 18032952504
+[2018-04-10T17:10:40.492] [INFO] things - {"state":true,"code":0,"data":{"size":10,"index":1,"count":1,"datacount":1,"list":[{"rownumber":1,"SId":1879695,"UserId":"2214341","TelPhone":"180329525004","Zipcode":"000000","Address":"燕枫办公楼","AddressInfo":"北京市北京市朝阳区","ShipTo":"昂纱","Remark":"","ProvinceId":"110000","CityId":"110100","DistrictsId":"110105","IsDefault":true,"SMNo":null,"RelPhone":null,"Longitude":"116.408005","Latitude":"39.898194","IsVerification":false,"TimeStamp":"2018-04-09 14:28:47"}]}}
+[2018-04-10T17:10:40.556] [INFO] things - start get addressID from mobile: 18201603185
+[2018-04-10T17:10:41.280] [INFO] things - {"state":true,"code":0,"data":{"size":10,"index":1,"count":1,"datacount":2,"list":[{"rownumber":1,"SId":1884119,"UserId":"2182786","TelPhone":"18201603105","Zipcode":"000000","Address":"天鼎美容美发用品商城","AddressInfo":"北京市北京市东城区","ShipTo":"宫堀","Remark":"","ProvinceId":"110000","CityId":"110100","DistrictsId":"110101","IsDefault":true,"SMNo":null,"RelPhone":null,"Longitude":"116.427358","Latitude":"39.927158","IsVerification":false,"TimeStamp":"2018-04-09 14:28:49"},{"rownumber":2,"SId":1832932,"UserId":"2182786","TelPhone":"18201603185","Zipcode":"000000","Address":"首都图书馆,北京市朝阳区东三环南路88号","AddressInfo":"北京市朝阳区","ShipTo":"李斌","Remark":"","ProvinceId":"110000","CityId":"110100","DistrictsId":"110105","IsDefault":false,"SMNo":null,"RelPhone":null,"Longitude":"116.462538","Latitude":"39.870217","IsVerification":true,"TimeStamp":"2018-02-25 16:56:01"}]}}
+[2018-04-10T17:10:41.398] [INFO] things - start get addressID from mobile: 18207517996
+[2018-04-10T17:10:42.191] [INFO] things - {"state":true,"code":0,"data":{"size":10,"index":1,"count":1,"datacount":1,"list":[{"rownumber":1,"SId":1829922,"UserId":"2180781","TelPhone":"18207517906","Zipcode":"000000","Address":"中日友好医院","AddressInfo":"北京市北京市朝阳区","ShipTo":"杜蝴遐","Remark":"","ProvinceId":"110000","CityId":"110100","DistrictsId":"110105","IsDefault":true,"SMNo":null,"RelPhone":null,"Longitude":"116.398073","Latitude":"39.851489","IsVerification":false,"TimeStamp":"2018-04-09 14:28:51"}]}}
+[2018-04-10T17:10:42.285] [INFO] things - start get addressID from mobile: 18333966217
+[2018-04-10T17:10:43.938] [INFO] things - {"state":true,"code":0,"data":{"size":10,"index":1,"count":1,"datacount":1,"list":[{"rownumber":1,"SId":1879800,"UserId":"2214353","TelPhone":"18333966207","Zipcode":"000000","Address":"演乐商务楼","AddressInfo":"北京市北京市东城区","ShipTo":"连钮坍","Remark":"","ProvinceId":"110000","CityId":"110100","DistrictsId":"110101","IsDefault":true,"SMNo":null,"RelPhone":null,"Longitude":"116.446869","Latitude":"39.918323","IsVerification":false,"TimeStamp":"2018-04-09 14:28:54"}]}}
+[2018-04-10T17:10:44.002] [INFO] things - start get addressID from mobile: 18382394514
+[2018-04-10T17:10:44.972] [INFO] things - {"state":true,"code":0,"data":{"size":10,"index":1,"count":1,"datacount":1,"list":[{"rownumber":1,"SId":1840503,"UserId":"2188364","TelPhone":"18382394514","Zipcode":"000000","Address":"富贵园,","AddressInfo":"北京市东城区","ShipTo":"刘伟","Remark":"","ProvinceId":"110000","CityId":"110100","DistrictsId":"110101","IsDefault":false,"SMNo":null,"RelPhone":null,"Longitude":"116.433508","Latitude":"39.897365","IsVerification":true,"TimeStamp":"2018-03-02 22:30:01"}]}}
+[2018-04-10T17:10:45.024] [INFO] things - start get addressID from mobile: 18629896680
+[2018-04-10T17:10:45.844] [INFO] things - {"state":false,"code":9999,"msg":"用户未登陆"}
+[2018-04-10T17:10:45.845] [INFO] things - 全部登录完成
+[2018-04-10T17:13:10.248] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '18629896680',
+     NickName: '18629896680',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: 'b379a32eeb23d9c16dc11749a17bb6d4',
+     UserId: 2181258,
+     Name: '&18629896680' } }
+[2018-04-10T17:13:10.251] [INFO] things - 全部登录完成
+[2018-04-10T17:13:14.796] [INFO] things - start get addressID from mobile: 15949806339
+[2018-04-10T17:13:15.913] [INFO] things - {"state":true,"code":0,"data":{"size":10,"index":1,"count":1,"datacount":3,"list":[{"rownumber":1,"SId":1935818,"UserId":"2097675","TelPhone":"15949806339","Zipcode":"000000","Address":"北京市东城区西花市南里东区12号西花市南里东区12号楼","AddressInfo":"北京市东城区","ShipTo":"李兴艳","Remark":"","ProvinceId":"110000","CityId":"110100","DistrictsId":"110101","IsDefault":true,"SMNo":null,"RelPhone":null,"Longitude":"116.433804","Latitude":"39.901026","IsVerification":false,"TimeStamp":"2018-03-23 14:31:34"},{"rownumber":2,"SId":1822251,"UserId":"2097675","TelPhone":"15949806339","Zipcode":"000000","Address":"北京路165号","AddressInfo":"贵州省贵阳市","ShipTo":"乔兴旺","Remark":"","ProvinceId":"550000","CityId":"550100","DistrictsId":"550101","IsDefault":false,"SMNo":null,"RelPhone":null,"Longitude":"106.705566","Latitude":"26.594748","IsVerification":false,"TimeStamp":"2018-03-19 14:07:07"},{"rownumber":3,"SId":1746063,"UserId":"2097675","TelPhone":"15949806339","Zipcode":"000000","Address":"大兴区,北京大兴区京良路10号楼二单元502","AddressInfo":"北京市大兴区","ShipTo":"刘红娟","Remark":"","ProvinceId":"110000","CityId":"110100","DistrictsId":"110115","IsDefault":false,"SMNo":null,"RelPhone":null,"Longitude":"116.341395","Latitude":"39.726929","IsVerification":true,"TimeStamp":"2018-02-07 18:33:55"}]}}
+[2018-04-10T17:13:15.967] [INFO] things - start get addressID from mobile: 17097224268
+[2018-04-10T17:13:17.241] [INFO] things - {"state":true,"code":0,"data":{"size":10,"index":1,"count":1,"datacount":1,"list":[{"rownumber":1,"SId":1894299,"UserId":"2225784","TelPhone":"17097224268","Zipcode":"000000","Address":"融合汇通典当行,","AddressInfo":"北京市东城区","ShipTo":"李文博","Remark":"","ProvinceId":"110000","CityId":"110100","DistrictsId":"110101","IsDefault":false,"SMNo":null,"RelPhone":null,"Longitude":"116.426477","Latitude":"39.893837","IsVerification":false,"TimeStamp":"2018-03-13 16:14:11"}]}}
+[2018-04-10T17:13:17.313] [INFO] things - start get addressID from mobile: 18032952504
+[2018-04-10T17:13:18.666] [INFO] things - {"state":true,"code":0,"data":{"size":10,"index":1,"count":1,"datacount":1,"list":[{"rownumber":1,"SId":1879695,"UserId":"2214341","TelPhone":"180329525004","Zipcode":"000000","Address":"燕枫办公楼","AddressInfo":"北京市北京市朝阳区","ShipTo":"昂纱","Remark":"","ProvinceId":"110000","CityId":"110100","DistrictsId":"110105","IsDefault":true,"SMNo":null,"RelPhone":null,"Longitude":"116.408005","Latitude":"39.898194","IsVerification":false,"TimeStamp":"2018-04-09 14:28:47"}]}}
+[2018-04-10T17:13:18.888] [INFO] things - start get addressID from mobile: 18201603185
+[2018-04-10T17:13:19.875] [INFO] things - {"state":true,"code":0,"data":{"size":10,"index":1,"count":1,"datacount":2,"list":[{"rownumber":1,"SId":1884119,"UserId":"2182786","TelPhone":"18201603105","Zipcode":"000000","Address":"天鼎美容美发用品商城","AddressInfo":"北京市北京市东城区","ShipTo":"宫堀","Remark":"","ProvinceId":"110000","CityId":"110100","DistrictsId":"110101","IsDefault":true,"SMNo":null,"RelPhone":null,"Longitude":"116.427358","Latitude":"39.927158","IsVerification":false,"TimeStamp":"2018-04-09 14:28:49"},{"rownumber":2,"SId":1832932,"UserId":"2182786","TelPhone":"18201603185","Zipcode":"000000","Address":"首都图书馆,北京市朝阳区东三环南路88号","AddressInfo":"北京市朝阳区","ShipTo":"李斌","Remark":"","ProvinceId":"110000","CityId":"110100","DistrictsId":"110105","IsDefault":false,"SMNo":null,"RelPhone":null,"Longitude":"116.462538","Latitude":"39.870217","IsVerification":true,"TimeStamp":"2018-02-25 16:56:01"}]}}
+[2018-04-10T17:13:19.948] [INFO] things - start get addressID from mobile: 18207517996
+[2018-04-10T17:13:20.823] [INFO] things - {"state":true,"code":0,"data":{"size":10,"index":1,"count":1,"datacount":1,"list":[{"rownumber":1,"SId":1829922,"UserId":"2180781","TelPhone":"18207517906","Zipcode":"000000","Address":"中日友好医院","AddressInfo":"北京市北京市朝阳区","ShipTo":"杜蝴遐","Remark":"","ProvinceId":"110000","CityId":"110100","DistrictsId":"110105","IsDefault":true,"SMNo":null,"RelPhone":null,"Longitude":"116.398073","Latitude":"39.851489","IsVerification":false,"TimeStamp":"2018-04-09 14:28:51"}]}}
+[2018-04-10T17:13:20.877] [INFO] things - start get addressID from mobile: 18333966217
+[2018-04-10T17:13:23.516] [INFO] things - {"state":true,"code":0,"data":{"size":10,"index":1,"count":1,"datacount":1,"list":[{"rownumber":1,"SId":1879800,"UserId":"2214353","TelPhone":"18333966207","Zipcode":"000000","Address":"演乐商务楼","AddressInfo":"北京市北京市东城区","ShipTo":"连钮坍","Remark":"","ProvinceId":"110000","CityId":"110100","DistrictsId":"110101","IsDefault":true,"SMNo":null,"RelPhone":null,"Longitude":"116.446869","Latitude":"39.918323","IsVerification":false,"TimeStamp":"2018-04-09 14:28:54"}]}}
+[2018-04-10T17:13:23.560] [INFO] things - start get addressID from mobile: 18382394514
+[2018-04-10T17:13:27.510] [INFO] things - start get addressID from mobile: 15949806339
+[2018-04-10T17:13:28.540] [INFO] things - {"state":true,"code":0,"data":{"size":10,"index":1,"count":1,"datacount":3,"list":[{"rownumber":1,"SId":1935818,"UserId":"2097675","TelPhone":"15949806339","Zipcode":"000000","Address":"北京市东城区西花市南里东区12号西花市南里东区12号楼","AddressInfo":"北京市东城区","ShipTo":"李兴艳","Remark":"","ProvinceId":"110000","CityId":"110100","DistrictsId":"110101","IsDefault":true,"SMNo":null,"RelPhone":null,"Longitude":"116.433804","Latitude":"39.901026","IsVerification":false,"TimeStamp":"2018-03-23 14:31:34"},{"rownumber":2,"SId":1822251,"UserId":"2097675","TelPhone":"15949806339","Zipcode":"000000","Address":"北京路165号","AddressInfo":"贵州省贵阳市","ShipTo":"乔兴旺","Remark":"","ProvinceId":"550000","CityId":"550100","DistrictsId":"550101","IsDefault":false,"SMNo":null,"RelPhone":null,"Longitude":"106.705566","Latitude":"26.594748","IsVerification":false,"TimeStamp":"2018-03-19 14:07:07"},{"rownumber":3,"SId":1746063,"UserId":"2097675","TelPhone":"15949806339","Zipcode":"000000","Address":"大兴区,北京大兴区京良路10号楼二单元502","AddressInfo":"北京市大兴区","ShipTo":"刘红娟","Remark":"","ProvinceId":"110000","CityId":"110100","DistrictsId":"110115","IsDefault":false,"SMNo":null,"RelPhone":null,"Longitude":"116.341395","Latitude":"39.726929","IsVerification":true,"TimeStamp":"2018-02-07 18:33:55"}]}}
+[2018-04-10T17:13:28.608] [INFO] things - start get addressID from mobile: 17097224268
+[2018-04-10T17:13:31.850] [INFO] things - {"state":true,"code":0,"data":{"size":10,"index":1,"count":1,"datacount":1,"list":[{"rownumber":1,"SId":1894299,"UserId":"2225784","TelPhone":"17097224268","Zipcode":"000000","Address":"融合汇通典当行,","AddressInfo":"北京市东城区","ShipTo":"李文博","Remark":"","ProvinceId":"110000","CityId":"110100","DistrictsId":"110101","IsDefault":false,"SMNo":null,"RelPhone":null,"Longitude":"116.426477","Latitude":"39.893837","IsVerification":false,"TimeStamp":"2018-03-13 16:14:11"}]}}
+[2018-04-10T17:13:31.904] [INFO] things - start get addressID from mobile: 18032952504
+[2018-04-10T17:13:32.621] [INFO] things - {"state":true,"code":0,"data":{"size":10,"index":1,"count":1,"datacount":1,"list":[{"rownumber":1,"SId":1879695,"UserId":"2214341","TelPhone":"180329525004","Zipcode":"000000","Address":"燕枫办公楼","AddressInfo":"北京市北京市朝阳区","ShipTo":"昂纱","Remark":"","ProvinceId":"110000","CityId":"110100","DistrictsId":"110105","IsDefault":true,"SMNo":null,"RelPhone":null,"Longitude":"116.408005","Latitude":"39.898194","IsVerification":false,"TimeStamp":"2018-04-09 14:28:47"}]}}
+[2018-04-10T17:13:32.691] [INFO] things - start get addressID from mobile: 18201603185
+[2018-04-10T17:13:33.424] [INFO] things - {"state":true,"code":0,"data":{"size":10,"index":1,"count":1,"datacount":2,"list":[{"rownumber":1,"SId":1884119,"UserId":"2182786","TelPhone":"18201603105","Zipcode":"000000","Address":"天鼎美容美发用品商城","AddressInfo":"北京市北京市东城区","ShipTo":"宫堀","Remark":"","ProvinceId":"110000","CityId":"110100","DistrictsId":"110101","IsDefault":true,"SMNo":null,"RelPhone":null,"Longitude":"116.427358","Latitude":"39.927158","IsVerification":false,"TimeStamp":"2018-04-09 14:28:49"},{"rownumber":2,"SId":1832932,"UserId":"2182786","TelPhone":"18201603185","Zipcode":"000000","Address":"首都图书馆,北京市朝阳区东三环南路88号","AddressInfo":"北京市朝阳区","ShipTo":"李斌","Remark":"","ProvinceId":"110000","CityId":"110100","DistrictsId":"110105","IsDefault":false,"SMNo":null,"RelPhone":null,"Longitude":"116.462538","Latitude":"39.870217","IsVerification":true,"TimeStamp":"2018-02-25 16:56:01"}]}}
+[2018-04-10T17:13:33.489] [INFO] things - start get addressID from mobile: 18207517996
+[2018-04-10T17:13:34.287] [INFO] things - {"state":true,"code":0,"data":{"size":10,"index":1,"count":1,"datacount":1,"list":[{"rownumber":1,"SId":1829922,"UserId":"2180781","TelPhone":"18207517906","Zipcode":"000000","Address":"中日友好医院","AddressInfo":"北京市北京市朝阳区","ShipTo":"杜蝴遐","Remark":"","ProvinceId":"110000","CityId":"110100","DistrictsId":"110105","IsDefault":true,"SMNo":null,"RelPhone":null,"Longitude":"116.398073","Latitude":"39.851489","IsVerification":false,"TimeStamp":"2018-04-09 14:28:51"}]}}
+[2018-04-10T17:13:34.351] [INFO] things - start get addressID from mobile: 18333966217
+[2018-04-10T17:13:35.400] [INFO] things - {"state":true,"code":0,"data":{"size":10,"index":1,"count":1,"datacount":1,"list":[{"rownumber":1,"SId":1879800,"UserId":"2214353","TelPhone":"18333966207","Zipcode":"000000","Address":"演乐商务楼","AddressInfo":"北京市北京市东城区","ShipTo":"连钮坍","Remark":"","ProvinceId":"110000","CityId":"110100","DistrictsId":"110101","IsDefault":true,"SMNo":null,"RelPhone":null,"Longitude":"116.446869","Latitude":"39.918323","IsVerification":false,"TimeStamp":"2018-04-09 14:28:54"}]}}
+[2018-04-10T17:13:35.467] [INFO] things - start get addressID from mobile: 18382394514
+[2018-04-10T17:13:41.358] [INFO] things - {"state":true,"code":0,"data":{"size":10,"index":1,"count":1,"datacount":1,"list":[{"rownumber":1,"SId":1840503,"UserId":"2188364","TelPhone":"18382394514","Zipcode":"000000","Address":"富贵园,","AddressInfo":"北京市东城区","ShipTo":"刘伟","Remark":"","ProvinceId":"110000","CityId":"110100","DistrictsId":"110101","IsDefault":false,"SMNo":null,"RelPhone":null,"Longitude":"116.433508","Latitude":"39.897365","IsVerification":true,"TimeStamp":"2018-03-02 22:30:01"}]}}
+[2018-04-10T17:13:41.420] [INFO] things - start get addressID from mobile: 18629896680
+[2018-04-10T17:13:42.434] [INFO] things - {"state":true,"code":0,"data":{"size":10,"index":1,"count":1,"datacount":2,"list":[{"rownumber":1,"SId":1872179,"UserId":"2181258","TelPhone":"18629896600","Zipcode":"000000","Address":"四方景园五区-9号楼","AddressInfo":"北京市北京市丰台区","ShipTo":"籍砧屋","Remark":"","ProvinceId":"110000","CityId":"110100","DistrictsId":"110106","IsDefault":true,"SMNo":null,"RelPhone":null,"Longitude":"116.44993","Latitude":"39.860978","IsVerification":false,"TimeStamp":"2018-04-09 14:28:56"},{"rownumber":2,"SId":1830591,"UserId":"2181258","TelPhone":"18629896680","Zipcode":"000000","Address":"北京汽车大厦,北京东三环路25号汽车大厦 1楼","AddressInfo":"北京市朝阳区","ShipTo":"李永东","Remark":"","ProvinceId":"110000","CityId":"110100","DistrictsId":"110105","IsDefault":false,"SMNo":null,"RelPhone":null,"Longitude":"116.460289","Latitude":"39.871017","IsVerification":true,"TimeStamp":"2018-02-24 20:19:32"}]}}
+[2018-04-10T17:13:42.435] [INFO] things - 全部登录完成
+[2018-04-10T17:14:09.032] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { ID: 1935818,
+     IsDefault: true,
+     IsPushAddreess: false,
+     Name: '窦柳',
+     TelPhone: '15949806309',
+     Zipcode: '000000',
+     ProvCode: '620000',
+     CityCode: '620100',
+     AreaCode: '620102',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '甘肃省兰州市城关区,兰州大学(盘旋路校区)',
+     Longitude: 103.855446,
+     Latitude: 36.054193,
+     Address: '兰州大学(盘旋路校区)',
+     AddressText: '甘肃省兰州市城关区' } }
+[2018-04-10T17:14:10.027] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-04-10T17:14:10.869] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { ID: 1894299,
+     IsDefault: false,
+     IsPushAddreess: false,
+     Name: '詹翕',
+     TelPhone: '17097224208',
+     Zipcode: '000000',
+     ProvCode: '620000',
+     CityCode: '620100',
+     AreaCode: '620102',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '甘肃省兰州市城关区,格林豪泰(兰州汽车东站商务酒店)',
+     Longitude: 103.863814,
+     Latitude: 36.053948,
+     Address: '格林豪泰(兰州汽车东站商务酒店)',
+     AddressText: '甘肃省兰州市城关区' } }
+[2018-04-10T17:14:12.090] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
+[2018-04-10T17:15:29.732] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { ID: 1879695,
+     IsDefault: true,
+     IsPushAddreess: false,
+     Name: '董旷菊',
+     TelPhone: '180329525004',
+     Zipcode: '000000',
+     ProvCode: '620000',
+     CityCode: '620100',
+     AreaCode: '620102',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '甘肃省兰州市城关区,东教场派出所',
+     Longitude: 103.854178,
+     Latitude: 36.049988,
+     Address: '东教场派出所',
+     AddressText: '甘肃省兰州市城关区' } }
+[2018-04-10T17:15:34.540] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-04-10T17:18:28.547] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { ID: 1884119,
+     IsDefault: true,
+     IsPushAddreess: false,
+     Name: '国重',
+     TelPhone: '18201603105',
+     Zipcode: '000000',
+     ProvCode: '620000',
+     CityCode: '620100',
+     AreaCode: '620105',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '甘肃省兰州市安宁区,兰州市第三汽车运输公司第七车队综合商业楼',
+     Longitude: 103.762513,
+     Latitude: 36.073522,
+     Address: '兰州市第三汽车运输公司第七车队综合商业楼',
+     AddressText: '甘肃省兰州市安宁区' } }
+[2018-04-10T17:18:29.567] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-04-10T17:18:30.505] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { ID: 1829922,
+     IsDefault: true,
+     IsPushAddreess: false,
+     Name: '莫泺蹒勃',
+     TelPhone: '18207517906',
+     Zipcode: '000000',
+     ProvCode: '620000',
+     CityCode: '620100',
+     AreaCode: '620105',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '甘肃省兰州市安宁区,正瑞二手车交易公司',
+     Longitude: 103.780982,
+     Latitude: 36.095771,
+     Address: '正瑞二手车交易公司',
+     AddressText: '甘肃省兰州市安宁区' } }
+[2018-04-10T17:18:31.352] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-04-10T17:18:34.197] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { ID: 1879800,
+     IsDefault: true,
+     IsPushAddreess: false,
+     Name: '巩昂',
+     TelPhone: '18333966207',
+     Zipcode: '000000',
+     ProvCode: '620000',
+     CityCode: '620100',
+     AreaCode: '620105',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '甘肃省兰州市安宁区,兰州文庙',
+     Longitude: 103.761774,
+     Latitude: 36.076992,
+     Address: '兰州文庙',
+     AddressText: '甘肃省兰州市安宁区' } }
+[2018-04-10T17:18:35.124] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-04-10T17:18:41.169] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { ID: 1872179,
+     IsDefault: true,
+     IsPushAddreess: false,
+     Name: '房步席',
+     TelPhone: '18629896600',
+     Zipcode: '000000',
+     ProvCode: '620000',
+     CityCode: '620100',
+     AreaCode: '620103',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '甘肃省兰州市七里河区,智选花园酒店',
+     Longitude: 103.773766,
+     Latitude: 36.095495,
+     Address: '智选花园酒店',
+     AddressText: '甘肃省兰州市七里河区' } }
+[2018-04-10T17:18:41.880] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-04-10T17:20:03.441] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { ID: 1884119,
+     IsDefault: true,
+     IsPushAddreess: false,
+     Name: '匡巽郊匡',
+     TelPhone: '18201603105',
+     Zipcode: '000000',
+     ProvCode: '620000',
+     CityCode: '620100',
+     AreaCode: '620103',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '甘肃省兰州市七里河区,万达汽车快修',
+     Longitude: 103.791091,
+     Latitude: 36.088625,
+     Address: '万达汽车快修',
+     AddressText: '甘肃省兰州市七里河区' } }
+[2018-04-10T17:20:04.170] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-04-10T17:20:04.996] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { ID: 1829922,
+     IsDefault: true,
+     IsPushAddreess: false,
+     Name: '屈暖翩涂',
+     TelPhone: '18207517906',
+     Zipcode: '000000',
+     ProvCode: '620000',
+     CityCode: '620100',
+     AreaCode: '620103',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '甘肃省兰州市七里河区,风华快修',
+     Longitude: 103.752208,
+     Latitude: 36.080228,
+     Address: '风华快修',
+     AddressText: '甘肃省兰州市七里河区' } }
+[2018-04-10T17:20:05.778] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-04-10T17:20:06.547] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { ID: 1879800,
+     IsDefault: true,
+     IsPushAddreess: false,
+     Name: '鲍园玮',
+     TelPhone: '18333966207',
+     Zipcode: '000000',
+     ProvCode: '620000',
+     CityCode: '620100',
+     AreaCode: '620105',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '甘肃省兰州市安宁区,甘肃盛辉名车',
+     Longitude: 103.756369,
+     Latitude: 36.084579,
+     Address: '甘肃盛辉名车',
+     AddressText: '甘肃省兰州市安宁区' } }
+[2018-04-10T17:20:08.244] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-04-10T17:20:09.743] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { ID: 1840503,
+     IsDefault: false,
+     IsPushAddreess: false,
+     Name: '戴韵愤',
+     TelPhone: '18382394504',
+     Zipcode: '000000',
+     ProvCode: '620000',
+     CityCode: '620100',
+     AreaCode: '620105',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '甘肃省兰州市安宁区,兰州文庙',
+     Longitude: 103.766503,
+     Latitude: 36.073483,
+     Address: '兰州文庙',
+     AddressText: '甘肃省兰州市安宁区' } }
+[2018-04-10T17:20:11.193] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-04-10T17:20:11.879] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { ID: 1872179,
+     IsDefault: true,
+     IsPushAddreess: false,
+     Name: '戴令妈',
+     TelPhone: '18629896600',
+     Zipcode: '000000',
+     ProvCode: '620000',
+     CityCode: '620100',
+     AreaCode: '620103',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '甘肃省兰州市七里河区,兰州铁路局兰州西工务段车队-西南1门',
+     Longitude: 103.790464,
+     Latitude: 36.082463,
+     Address: '兰州铁路局兰州西工务段车队-西南1门',
+     AddressText: '甘肃省兰州市七里河区' } }
+[2018-04-10T17:20:12.783] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-04-10T17:21:43.602] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { ID: 1884119,
+     IsDefault: true,
+     IsPushAddreess: false,
+     Name: '谈荣',
+     TelPhone: '18201603105',
+     Zipcode: '000000',
+     ProvCode: '620000',
+     CityCode: '620100',
+     AreaCode: '620105',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '甘肃省兰州市安宁区,阿尔泰汽车维修',
+     Longitude: 103.749915,
+     Latitude: 36.042855,
+     Address: '阿尔泰汽车维修',
+     AddressText: '甘肃省兰州市安宁区' } }
+[2018-04-10T17:21:46.515] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-04-10T17:21:47.934] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { ID: 1829922,
+     IsDefault: true,
+     IsPushAddreess: false,
+     Name: '杨殊',
+     TelPhone: '18207517906',
+     Zipcode: '000000',
+     ProvCode: '620000',
+     CityCode: '620100',
+     AreaCode: '620103',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '甘肃省兰州市七里河区,兰州理工大学西校区',
+     Longitude: 103.737117,
+     Latitude: 36.099046,
+     Address: '兰州理工大学西校区',
+     AddressText: '甘肃省兰州市七里河区' } }
+[2018-04-10T17:21:52.536] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-04-10T17:21:53.603] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { ID: 1879800,
+     IsDefault: true,
+     IsPushAddreess: false,
+     Name: '和往手',
+     TelPhone: '18333966207',
+     Zipcode: '000000',
+     ProvCode: '620000',
+     CityCode: '620100',
+     AreaCode: '620105',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '甘肃省兰州市安宁区,抱龙山',
+     Longitude: 103.737775,
+     Latitude: 36.062033,
+     Address: '抱龙山',
+     AddressText: '甘肃省兰州市安宁区' } }
+[2018-04-10T17:21:54.643] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-04-10T17:21:56.703] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { ID: 1840503,
+     IsDefault: true,
+     IsPushAddreess: false,
+     Name: '鄂颠宸',
+     TelPhone: '18382394504',
+     Zipcode: '000000',
+     ProvCode: '620000',
+     CityCode: '620100',
+     AreaCode: '620103',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '甘肃省兰州市七里河区,兰州市第一人民医院',
+     Longitude: 103.777766,
+     Latitude: 36.083024,
+     Address: '兰州市第一人民医院',
+     AddressText: '甘肃省兰州市七里河区' } }
+[2018-04-10T17:21:57.922] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-04-10T17:21:59.037] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { ID: 1872179,
+     IsDefault: true,
+     IsPushAddreess: false,
+     Name: '艾罡',
+     TelPhone: '18629896600',
+     Zipcode: '000000',
+     ProvCode: '620000',
+     CityCode: '620100',
+     AreaCode: '620103',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '甘肃省兰州市七里河区,农业部黄土高原生态环境重点野外科学观测试验站',
+     Longitude: 103.776624,
+     Latitude: 36.10497,
+     Address: '农业部黄土高原生态环境重点野外科学观测试验站',
+     AddressText: '甘肃省兰州市七里河区' } }
+[2018-04-10T17:22:00.099] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-04-10T17:22:33.242] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { ID: 1884119,
+     IsDefault: true,
+     IsPushAddreess: false,
+     Name: '毓黛窕',
+     TelPhone: '18201603105',
+     Zipcode: '000000',
+     ProvCode: '620000',
+     CityCode: '620100',
+     AreaCode: '620102',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '甘肃省兰州市城关区,兰州爱里食品有限责任公司',
+     Longitude: 103.740062,
+     Latitude: 36.106975,
+     Address: '兰州爱里食品有限责任公司',
+     AddressText: '甘肃省兰州市城关区' } }
+[2018-04-10T17:22:34.130] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-04-10T17:22:38.938] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { ID: 1829922,
+     IsDefault: true,
+     IsPushAddreess: false,
+     Name: '麴尚',
+     TelPhone: '18207517906',
+     Zipcode: '000000',
+     ProvCode: '620000',
+     CityCode: '620100',
+     AreaCode: '620103',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '甘肃省兰州市七里河区,穴崖子',
+     Longitude: 103.802248,
+     Latitude: 36.100916,
+     Address: '穴崖子',
+     AddressText: '甘肃省兰州市七里河区' } }
+[2018-04-10T17:22:39.780] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-04-10T17:22:40.554] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { ID: 1879800,
+     IsDefault: true,
+     IsPushAddreess: false,
+     Name: '时讨萌',
+     TelPhone: '18333966207',
+     Zipcode: '000000',
+     ProvCode: '620000',
+     CityCode: '620100',
+     AreaCode: '620105',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '甘肃省兰州市安宁区,白塔山公园',
+     Longitude: 103.819537,
+     Latitude: 36.073136,
+     Address: '白塔山公园',
+     AddressText: '甘肃省兰州市安宁区' } }
+[2018-04-10T17:22:41.431] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-04-10T17:22:42.182] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { ID: 1840503,
+     IsDefault: true,
+     IsPushAddreess: false,
+     Name: '湛株浒',
+     TelPhone: '18382394504',
+     Zipcode: '000000',
+     ProvCode: '620000',
+     CityCode: '620100',
+     AreaCode: '620103',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '甘肃省兰州市七里河区,石家地小区',
+     Longitude: 103.720444,
+     Latitude: 36.078682,
+     Address: '石家地小区',
+     AddressText: '甘肃省兰州市七里河区' } }
+[2018-04-10T17:22:42.891] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-04-10T17:22:43.644] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { ID: 1872179,
+     IsDefault: true,
+     IsPushAddreess: false,
+     Name: '廖龟鹃莲',
+     TelPhone: '18629896600',
+     Zipcode: '000000',
+     ProvCode: '620000',
+     CityCode: '620100',
+     AreaCode: '620105',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '甘肃省兰州市安宁区,兰州军区总医院安宁分院-南门',
+     Longitude: 103.742646,
+     Latitude: 36.058256,
+     Address: '兰州军区总医院安宁分院-南门',
+     AddressText: '甘肃省兰州市安宁区' } }
+[2018-04-10T17:22:44.436] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-04-10T17:22:55.222] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { ID: 1884119,
+     IsDefault: true,
+     IsPushAddreess: false,
+     Name: '居直',
+     TelPhone: '18201603105',
+     Zipcode: '000000',
+     ProvCode: '620000',
+     CityCode: '620100',
+     AreaCode: '620105',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '甘肃省兰州市安宁区,华辰山庄',
+     Longitude: 103.719881,
+     Latitude: 36.085665,
+     Address: '华辰山庄',
+     AddressText: '甘肃省兰州市安宁区' } }
+[2018-04-10T17:22:56.278] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-04-10T17:22:57.026] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { ID: 1829922,
+     IsDefault: true,
+     IsPushAddreess: false,
+     Name: '盛恶',
+     TelPhone: '18207517906',
+     Zipcode: '000000',
+     ProvCode: '620000',
+     CityCode: '620100',
+     AreaCode: '620103',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '甘肃省兰州市七里河区,兰州三驰莲花汽车4S店',
+     Longitude: 103.783973,
+     Latitude: 36.073999,
+     Address: '兰州三驰莲花汽车4S店',
+     AddressText: '甘肃省兰州市七里河区' } }
+[2018-04-10T17:22:57.836] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-04-10T17:22:58.813] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { ID: 1879800,
+     IsDefault: true,
+     IsPushAddreess: false,
+     Name: '寿栈',
+     TelPhone: '18333966207',
+     Zipcode: '000000',
+     ProvCode: '620000',
+     CityCode: '620100',
+     AreaCode: '620103',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '甘肃省兰州市七里河区,七里河区疾病预防控制中心',
+     Longitude: 103.79567,
+     Latitude: 36.072897,
+     Address: '七里河区疾病预防控制中心',
+     AddressText: '甘肃省兰州市七里河区' } }
+[2018-04-10T17:22:59.860] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-04-10T17:23:00.716] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { ID: 1840503,
+     IsDefault: true,
+     IsPushAddreess: false,
+     Name: '仲仕淑',
+     TelPhone: '18382394504',
+     Zipcode: '000000',
+     ProvCode: '620000',
+     CityCode: '620100',
+     AreaCode: '620103',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '甘肃省兰州市七里河区,兰州市七里河区民宗局',
+     Longitude: 103.799052,
+     Latitude: 36.089655,
+     Address: '兰州市七里河区民宗局',
+     AddressText: '甘肃省兰州市七里河区' } }
+[2018-04-10T17:23:05.450] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-04-10T17:23:06.247] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { ID: 1872179,
+     IsDefault: true,
+     IsPushAddreess: false,
+     Name: '汪恢贤拘',
+     TelPhone: '18629896600',
+     Zipcode: '000000',
+     ProvCode: '620000',
+     CityCode: '620100',
+     AreaCode: '620103',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '甘肃省兰州市七里河区,兰雅·园丁雅居小区',
+     Longitude: 103.789712,
+     Latitude: 36.064149,
+     Address: '兰雅·园丁雅居小区',
+     AddressText: '甘肃省兰州市七里河区' } }
+[2018-04-10T17:23:07.034] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-04-10T17:23:45.469] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { ID: 1884119,
+     IsDefault: true,
+     IsPushAddreess: false,
+     Name: '充敷摸',
+     TelPhone: '18201603105',
+     Zipcode: '000000',
+     ProvCode: '620000',
+     CityCode: '620100',
+     AreaCode: '620105',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '甘肃省兰州市安宁区,兰新驾驶培训公司安宁分校',
+     Longitude: 103.842898,
+     Latitude: 36.040669,
+     Address: '兰新驾驶培训公司安宁分校',
+     AddressText: '甘肃省兰州市安宁区' } }
+[2018-04-10T17:23:56.750] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-04-10T17:23:57.525] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { ID: 1829922,
+     IsDefault: true,
+     IsPushAddreess: false,
+     Name: '萧箕',
+     TelPhone: '18207517906',
+     Zipcode: '000000',
+     ProvCode: '620000',
+     CityCode: '620100',
+     AreaCode: '620103',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '甘肃省兰州市七里河区,狸子沟',
+     Longitude: 103.720996,
+     Latitude: 36.033229,
+     Address: '狸子沟',
+     AddressText: '甘肃省兰州市七里河区' } }
+[2018-04-10T17:24:00.238] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-04-10T17:24:00.983] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { ID: 1879800,
+     IsDefault: true,
+     IsPushAddreess: false,
+     Name: '许慢',
+     TelPhone: '18333966207',
+     Zipcode: '000000',
+     ProvCode: '620000',
+     CityCode: '620100',
+     AreaCode: '620105',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '甘肃省兰州市安宁区,中信银行',
+     Longitude: 103.728583,
+     Latitude: 36.125864,
+     Address: '中信银行',
+     AddressText: '甘肃省兰州市安宁区' } }
+[2018-04-10T17:24:05.748] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-04-10T17:24:07.647] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { ID: 1840503,
+     IsDefault: true,
+     IsPushAddreess: false,
+     Name: '虞眠冯',
+     TelPhone: '18382394504',
+     Zipcode: '000000',
+     ProvCode: '620000',
+     CityCode: '620100',
+     AreaCode: '620102',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '甘肃省兰州市城关区,牟家庄小学-东门',
+     Longitude: 103.733855,
+     Latitude: 36.05285,
+     Address: '牟家庄小学-东门',
+     AddressText: '甘肃省兰州市城关区' } }
+[2018-04-10T17:24:09.503] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-04-10T17:24:10.706] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { ID: 1872179,
+     IsDefault: true,
+     IsPushAddreess: false,
+     Name: '顾施曜',
+     TelPhone: '18629896600',
+     Zipcode: '000000',
+     ProvCode: '620000',
+     CityCode: '620100',
+     AreaCode: '620103',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '甘肃省兰州市七里河区,王家堡村',
+     Longitude: 103.716265,
+     Latitude: 36.10251,
+     Address: '王家堡村',
+     AddressText: '甘肃省兰州市七里河区' } }
+[2018-04-10T17:24:11.793] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-04-10T17:24:35.031] [INFO] things - { state: true, code: 9999, msg: '用户未登陆' }
+[2018-04-10T17:24:35.671] [INFO] things - { state: true, code: 9999, msg: '用户未登陆' }
+[2018-04-10T17:24:36.374] [INFO] things - { state: true, code: 9999, msg: '用户未登陆' }
+[2018-04-10T17:24:37.094] [INFO] things - { state: true, code: 9999, msg: '用户未登陆' }
+[2018-04-10T17:24:37.833] [INFO] things - { state: true, code: 9999, msg: '用户未登陆' }
+[2018-04-10T17:24:48.008] [INFO] things - { state: true, code: 9999, msg: '用户未登陆' }
+[2018-04-10T17:24:48.887] [INFO] things - { state: true, code: 9999, msg: '用户未登陆' }
+[2018-04-10T17:24:49.804] [INFO] things - { state: true, code: 9999, msg: '用户未登陆' }
+[2018-04-10T17:24:50.604] [INFO] things - { state: true, code: 9999, msg: '用户未登陆' }
+[2018-04-10T17:25:41.374] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '15949806339',
+     NickName: '15949806339',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: '9738b195f5a51973a5e915a09fdb2b9e',
+     UserId: 2097675,
+     Name: '&15949806339' } }
+[2018-04-10T17:25:44.161] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '17097224268',
+     NickName: '17097224268',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: '933d30aa8efd2e36787af5536b0f91bc',
+     UserId: 2225784,
+     Name: '&17097224268' } }
+[2018-04-10T17:25:45.228] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '18032952504',
+     NickName: '18032952504',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: 'f16119ddfca0cf96e19de9d861a6eeec',
+     UserId: 2214341,
+     Name: '&18032952504' } }
+[2018-04-10T17:25:53.873] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '18201603185',
+     NickName: '18201603185',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: '66d1f19661759b08c09803f057a92d35',
+     UserId: 2182786,
+     Name: '&18201603185' } }
+[2018-04-10T17:25:58.647] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '18207517996',
+     NickName: '18207517996',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: '6aa51b005f51cd86a8467ddd2af2c42c',
+     UserId: 2180781,
+     Name: '&18207517996' } }
+[2018-04-10T17:26:01.405] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '18333966217',
+     NickName: '18333966217',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: '43e4af7276857bf40cbaf5a68129f2cf',
+     UserId: 2214353,
+     Name: '&18333966217' } }
+[2018-04-10T17:26:02.400] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '18382394514',
+     NickName: '18382394514',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: '406f0a2d52150d7e19e2c518ad8326c4',
+     UserId: 2188364,
+     Name: '&18382394514' } }
+[2018-04-10T17:26:07.400] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '18629896680',
+     NickName: '18629896680',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: -1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: 'b379a32eeb23d9c16dc11749a17bb6d4',
+     UserId: 2181258,
+     Name: '&18629896680' } }
+[2018-04-10T17:26:07.401] [INFO] things - 全部登录完成
+[2018-04-10T17:26:16.450] [INFO] things - { state: true, code: 9999, msg: '用户未登陆' }
+[2018-04-10T17:26:17.411] [INFO] things - { state: true, code: 9999, msg: '用户未登陆' }
+[2018-04-10T17:26:18.640] [INFO] things - { state: true, code: 9999, msg: '用户未登陆' }
+[2018-04-10T17:26:52.985] [INFO] things - { state: true, code: 9999, msg: '用户未登陆' }
+[2018-04-10T17:27:03.299] [INFO] things - { state: true, code: 9999, msg: '用户未登陆' }
+[2018-04-10T17:27:17.659] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { ID: 1829922,
+     IsDefault: true,
+     IsPushAddreess: false,
+     Name: '卢堡',
+     TelPhone: '18207517906',
+     Zipcode: '000000',
+     ProvCode: '620000',
+     CityCode: '620100',
+     AreaCode: '620103',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '甘肃省兰州市七里河区,锐驰钣金喷漆',
+     Longitude: 103.722663,
+     Latitude: 36.149671,
+     Address: '锐驰钣金喷漆',
+     AddressText: '甘肃省兰州市七里河区' } }
+[2018-04-10T17:27:18.892] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-04-10T17:27:21.135] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { ID: 1879800,
+     IsDefault: true,
+     IsPushAddreess: false,
+     Name: '闻幽',
+     TelPhone: '18333966207',
+     Zipcode: '000000',
+     ProvCode: '620000',
+     CityCode: '620100',
+     AreaCode: '620104',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '甘肃省兰州市西固区,鸭儿山',
+     Longitude: 103.817205,
+     Latitude: 36.152281,
+     Address: '鸭儿山',
+     AddressText: '甘肃省兰州市西固区' } }
+[2018-04-10T17:27:36.922] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
+[2018-04-10T17:27:41.088] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { ID: 1840503,
+     IsDefault: true,
+     IsPushAddreess: false,
+     Name: '和菁',
+     TelPhone: '18382394504',
+     Zipcode: '000000',
+     ProvCode: '620000',
+     CityCode: '620100',
+     AreaCode: '620122',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '甘肃省兰州市皋兰县,兰州市大砂沟实验林场',
+     Longitude: 103.710247,
+     Latitude: 36.137829,
+     Address: '兰州市大砂沟实验林场',
+     AddressText: '甘肃省兰州市皋兰县' } }
+[2018-04-10T17:27:44.175] [INFO] things - { Error: tunneling socket could not be established, cause=socket hang up
+    at ClientRequest.onError (/Users/junliang/server/www/maotaiServer/node_modules/tunnel-agent/index.js:177:17)
+    at Object.onceWrapper (events.js:315:30)
+    at emitOne (events.js:116:13)
+    at ClientRequest.emit (events.js:211:7)
+    at Socket.socketOnEnd (_http_client.js:423:9)
+    at emitNone (events.js:111:20)
+    at Socket.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1055:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+    at process._tickCallback (internal/process/next_tick.js:180:9) code: 'ECONNRESET' }
+[2018-04-10T17:27:45.461] [INFO] things - { state: true,
+  code: 0,
+  data: 
+   { ID: 1872179,
+     IsDefault: true,
+     IsPushAddreess: false,
+     Name: '方籴玺',
+     TelPhone: '18629896600',
+     Zipcode: '000000',
+     ProvCode: '620000',
+     CityCode: '620100',
+     AreaCode: '620122',
+     Remark: '',
+     IsVerification: false,
+     AddressDetails: '甘肃省兰州市皋兰县,曹家湾支渠',
+     Longitude: 103.667335,
+     Latitude: 36.060321,
+     Address: '曹家湾支渠',
+     AddressText: '甘肃省兰州市皋兰县' } }
+[2018-04-10T17:27:46.660] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}

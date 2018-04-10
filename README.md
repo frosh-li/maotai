@@ -146,3 +146,26 @@ http://api.tay8.com/msgcode/api/do.php?action=loginIn&name=lijunliang&password=q
 
 // 释放当前用户下所有手机号
 http://api.tay8.com/msgcode/api/do.php?action=cancelAllRecv&token=F98117E24A354659801400A229B55F4B
+
+
+
+103.861723,36.053154 甘南路     262620124001
+
+103.863118,36.055655 天水南路   162620100001
+
+103.859394,36.080088 兰州市盐场路上川嘉园 162620124001
+
+103.773789,36.082969 火星街  162620125001
+
+
+
+[
+  {"phone":"15949806339","pass":"lhj0325","addressId":1935818},
+  {"phone":"17097224268","pass":"123456","addressId":1894299},
+  {"phone":"18032952504","pass":"123456","addressId":1879695},
+  {"phone":"18201603185","pass":"123456","addressId":1884119},
+  {"phone":"18207517996","pass":"123456","addressId":1829922},
+  {"phone":"18333966217","pass":"123456","addressId":1879800},
+  {"phone":"18382394514","pass":"123456","addressId":1840503},
+  {"phone":"18629896680","pass":"123456","addressId":""}
+]

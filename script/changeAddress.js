@@ -6,16 +6,35 @@ const Utils = require('../services/utils.js');
 const logger = require('../controllers/logger');
 const randomName = require("chinese-random-name");
 
-var mysql      = require('mysql');
-var connection = mysql.createConnection({
-  host     : 'localhost',
-  user     : 'root',
-  password : '123456',
-  database : 'accounts'
-});
 
 let results = [];
-let phones = require('../notyonggui.json');
+let phones = [
+  {
+        "phone": "18201603185",
+        "pass": "123456",
+        "addressId": 1884119
+    },
+    {
+        "phone": "18207517996",
+        "pass": "123456",
+        "addressId": 1829922
+    },
+    {
+        "phone": "18333966217",
+        "pass": "123456",
+        "addressId": 1879800
+    },
+    {
+        "phone": "18382394514",
+        "pass": "123456",
+        "addressId": 1840503
+    },
+    {
+        "phone": "18629896680",
+        "pass": "123456",
+        "addressId": 1872179
+    }
+];
 
 let address = [];
 let index = 0;
@@ -110,7 +129,7 @@ function checkPhone(){
             `${currentAddress.addressComponent.province}${currentAddress.addressComponent.city}${currentAddress.addressComponent.district}`,
             `${currentAddress.pois[0].name}`,
             name,
-            randomPhone(user.phone, 0),
+            randomPhone(user.phone, 3),
             zipcode="000000",
             isDef=1,
             geos[index].lng,
@@ -123,54 +142,43 @@ function checkPhone(){
     .then(data => {
         logger.info(data);
         if(data.state === true && data.code === 0){
-          successAcount.push(user);
+          
           // 并且更新数据到mysql中
-          let sql = `
-          update accounts set 
-          province=?,
-          city=?,
-          area=?,
-          address=?,
-          lat=?,
-          lng=?,
-          name=?
-          where phone='${user.phone}'
-        `;
-        console.log(sql);
-        let updateObj = [
-          Utils.findProvinceCode(currentAddress.addressComponent.adcode),
-          Utils.findCityCode(currentAddress.addressComponent.adcode),
-          currentAddress.addressComponent.adcode,
-          `${currentAddress.pois[0].name}`,
-          geos[index].lat,
-          geos[index].lng,
-          name
-        ];
-        console.log('updateObj', updateObj);
-        // 开始预约账号
-        Service.apointment(phone.addressId, userAgent, 391,currentJar )
-          .then(apointment => {
-            console.log('apointment', apointment);
-          })
-          .catch(e => {
-            console.log(e);
-          })
-        connection.query(sql, updateObj, (err, results) => {
-          if(err){
-            console.log(err);
-          }else{
-            console.log("update account", results);
-          }
-        })
+        
+          // 开始预约账号
+          Service.apointment(phone.addressId, userAgent, 391,currentJar )
+            .then(apointment => {
+              apointment = JSON.parse(apointment);
+              console.log('apointment', apointment);
+              if(apointment.state === true && apointment.code === 0){
+                successAcount.push(user);  
+              }else{
+                failAccount.push({
+                  phone: user.phone,
+                  pass: user.pass,
+                  addressId: user.addressId,
+                  error: JSON.stringify(data)
+                })
+              }
+              index++;
+              checkPhone();
+            })
+            .catch(e => {
+              console.log(e);
+              index++;
+              checkPhone();
+            })
         }else{
           failAccount.push({
             phone: user.phone,
             pass: user.pass,
+            addressId: user.addressId,
             error: JSON.stringify(data)
           })
+          index++;
+          checkPhone();
         }
-        index++;
-        checkPhone();
+        
     })
     .catch(e=>{
         index++;
@@ -178,6 +186,7 @@ function checkPhone(){
         failAccount.push({
             phone: user.phone,
             pass: user.pass,
+            addressId: user.addressId,
             error: e.message
           })
         checkPhone();
@@ -186,22 +195,7 @@ function checkPhone(){
 
 }
 
-let geos = Utils.randomGeo(30.249923, 120.176996, 5, 100);
-
-// { country: '中国',
-//     country_code: 0,
-//     country_code_iso: 'CHN',
-//     country_code_iso2: 'CN',
-//     province: '浙江省',
-//     city: '杭州市',
-//     city_level: 2,
-//     district: '上城区',
-//     town: '',
-//     adcode: '330102',
-//     street: '',
-//     street_number: '',
-//     direction: '',
-//     distance: '' }
+let geos = Utils.randomGeo(36.082969, 103.773789, 10, phones.length);
 
 console.log(geos);
 let getAddressCounter = 0;
@@ -215,14 +209,8 @@ geos.forEach(item => {
         
         console.log('alldone');
         console.log(ret2)
-        connection.query('select * from accounts where apointStatus=6  and phone!="" limit 15,15', (err, results) => {
-          if(err){
-            return console.log(err);
-          }
-          phones = results;
           checkPhone()
           console.log(phones);
-        })
       }
     })
     .catch(e => {

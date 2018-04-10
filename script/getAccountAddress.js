@@ -7,24 +7,20 @@ const logger = require('../controllers/logger.js');
 const MaotaiService = require('../tools/service');
 const proxy = require('../controllers/proxy');
 
-var originPhones = 
-  [{"phone":"18096000082","pass":"cc008266"},
-    {"phone":"15710837069","pass":"wy40324700"},
-    {"phone":"15217384278","pass":"wy40324700"},
-    {"phone":"13713276696","pass":"wy40324700"},
-    {"phone":"15766365054","pass":"wy40324700"},
-    {"phone":"13650318022","pass":"wy40324700"},
-    {"phone":"18890706557","pass":"wy40324700"},
-    {"phone":"18219910361","pass":"052020"},
-    {"phone":"13325332463","pass":"lw521521521"},
-    {"phone":"18082201076","pass":"3122@yang"},
-    {"phone":"18234760660","pass":"3122@yang"}];
+var originPhones = [{ phone: '15949806339', pass: 'lhj0325' },
+  { phone: '17097224268', pass: '123456' },
+  { phone: '18032952504', pass: '123456' },
+  { phone: '18201603185', pass: '123456' },
+  { phone: '18207517996', pass: '123456' },
+  { phone: '18333966217', pass: '123456' },
+  { phone: '18382394514', pass: '123456' },
+  { phone: '18629896680', pass: '123456' } ]
 let index = 0;
 function start() {
   let user = originPhones[index];
   if(!user){
     logger.info("全部登录完成");
-    console.log(JSON.stringify(originPhones));
+    console.log(JSON.stringify(originPhones,null, 4));
     return;
   }
   let userAgent = MaotaiService.userAgent(user.phone);
