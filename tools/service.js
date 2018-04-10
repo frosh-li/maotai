@@ -551,7 +551,7 @@ class MaotaiService {
                         if (error) {
                             return reject(error);
                         };
-                        
+
                         if(body && body.code !== undefined && body.code === 0){
                           sendmsg('15330066919', '订单提交成功'+tel+":"+pass);
                           redisClient.set('order:success:'+tel+":"+pass, JSON.stringify(body), function(err){
@@ -651,11 +651,11 @@ class MaotaiService {
               console.log(body)
               let bodyJSON = JSON.parse(body);
               if(bodyJSON && bodyJSON.data && bodyJSON.data.list){
-                return resolve(bodyJSON.data.list);  
+                return resolve(bodyJSON.data.list);
               }else{
                 return reject('错误')
               }
-              
+
           });
         })
     }
@@ -721,7 +721,7 @@ class MaotaiService {
       // state_5: "申诉中",
       // state_6: "已失效"
       let now = +new Date();
-      
+
       var options = {
           method: 'POST',
           jar:j,
@@ -742,13 +742,11 @@ class MaotaiService {
                   logger.info(error);
                   return reject(error);
               } else {
-                logger.info("预约结果查询");
-
                 if(body && body.data && body.data.datas && body.data.datas.length > 0){
                   let ret = body.data.datas[0];
-                  logger.info(ret);
                   return resolve(ret);
                 }else{
+                  console.log(body);
                   return reject('没有预约列表');
                 }
               }
