@@ -15,6 +15,11 @@ var originPhones = [{ phone: '15949806339', pass: 'lhj0325' },
   { phone: '18333966217', pass: '123456' },
   { phone: '18382394514', pass: '123456' },
   { phone: '18629896680', pass: '123456' } ]
+
+let accountPath = process.argv[2];
+if(accountPath != undefined){
+  originPhones = require(accountPath);
+}
 let index = 0;
 function start() {
   let user = originPhones[index];

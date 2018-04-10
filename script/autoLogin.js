@@ -20,7 +20,10 @@ var originPhones = [
   { phone: '18382394514', pass: '123456' },
   { phone: '18629896680', pass: '123456' } ];
 const proxy = require('../controllers/proxy');
-
+if(process.argv[2] != undefined){
+  originPhones = require(process.argv[2]);
+}
+console.log(originPhones);
 function start() {
   let user = originPhones.shift();
   if(!user){

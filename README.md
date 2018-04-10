@@ -169,3 +169,8 @@ http://api.tay8.com/msgcode/api/do.php?action=cancelAllRecv&token=F98117E24A3546
   {"phone":"18382394514","pass":"123456","addressId":1840503},
   {"phone":"18629896680","pass":"123456","addressId":""}
 ]
+
+
+
+// 金色条装   402
+// 白色条装   401
