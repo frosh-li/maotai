@@ -39,21 +39,16 @@ router.get('/maotai/orders', function(req, res, next){
     console.log("replys",replys);
     if(replys){
       let data = [];
-      console.log("replys",replys);
-      return res.json({
-        status:200,
-        data: replys
-      })
       redisClient.mget(...replys, function(err, datas){
         if(err){
           console.log('order errors', err);
           return res.json({status: 500, err:err.message});
         }
-        return res.json({
+        return res.render('orders.html',{data: {
           status:200,
           keys: replys,
           datas: datas
-        })
+        }})
       })
     }else{
       return res.json({

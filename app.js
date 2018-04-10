@@ -32,7 +32,6 @@ app.use(bodyParser.urlencoded({
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', index);
 app.use('/api', routers);
 
 // catch 404 and forward to error handler
@@ -50,7 +49,10 @@ app.use(function(err, req, res, next) {
 
     // render the error page
     res.status(err.status || 500);
-    res.render('error');
+    res.json({
+        status: err.status || 500,
+        msg: err.message
+    })
 });
 
 module.exports = app;

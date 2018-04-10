@@ -842,6 +842,9 @@ var originPhones = [
         "addressId": 1961877
     }
 ];
+originPhones = [
+  {"phone":"13843910857","pass":"a123456","addressId":1961870}
+]
 const proxy = require('../controllers/proxy');
 
 function start() {

@@ -563,11 +563,6 @@ class MaotaiService {
 
                         if(body && body.code !== undefined && body.code === 0){
                           sendmsg('15330066919', '订单提交成功'+tel+":"+pass);
-                          redisClient.set('order:success:'+tel+":"+pass, JSON.stringify(body), function(err){
-                            if(err){
-                              return console.log(err);
-                            }
-                          })
                         }
 
                         logger.info(colors.green('下单完成'+JSON.stringify(body)));
@@ -720,7 +715,7 @@ class MaotaiService {
     }
 
     getOrder(user, j){
-      let userAgent = this.userAgent(user);
+      let userAgent = this.userAgent(user.phone);
       return new Promise((resolve, reject) => {
         this.userinfo(user, userAgent)
           .then(userid => {
@@ -736,6 +731,7 @@ class MaotaiService {
     }
 
     userinfo(user, j){
+      let userAgent = this.userAgent(user.phone);
       let now = +new Date();
 
       var options = {
