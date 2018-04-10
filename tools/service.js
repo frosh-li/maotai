@@ -346,7 +346,6 @@ class MaotaiService {
         userAgent = userAgent || this.userAgent(tel);
         let shopName = fixedShopName;
         let now = +new Date();
-        fs.writeFileSync(path.resolve(__dirname,"../aliSessionId.txt"), "");
         return new Promise((resolve, reject) => {
             this.getToken()
               .then(aliSessionId => {
@@ -473,7 +472,6 @@ class MaotaiService {
         userAgent = userAgent || this.userAgent(tel);
         let shopName = fixedShopName;
         let now = +new Date();
-        fs.writeFileSync(path.resolve(__dirname,"../aliSessionId.txt"), "");
         return new Promise((resolve, reject) => {
           let that = this;
           let optionscoupon = {

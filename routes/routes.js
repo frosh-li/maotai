@@ -23,11 +23,6 @@ router.get('/maotai/index.html', function(req, res, next) {
 router.post('/maotai', function(req, res, next) {
   let sid = req.body.sid;
   aliSessionId = sid;
-  try{
-    fs.writeFileSync(path.resolve(__dirname,'../aliSessionId.txt'), sid);
-  }catch(e){
-    console.log(e);
-  }
   redisClient.setex(`token:${uuid()}`, 600, sid);
   console.log('SID from client',new Date(), sid);
   res.json({
