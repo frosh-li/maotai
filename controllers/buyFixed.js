@@ -7,14 +7,10 @@ const fs = require('fs');
 const colors = require('colors/safe');
 const request = require('request');
 const proxy = require('./proxy');
+const Utils = require('../services/utils');
 
 logger.info('params', process.argv);
-// cookie path
-let cookieAddress = process.argv[2];
-if(cookieAddress){
-  fs.writeFileSync("cookies/"+cookieAddress+".json", '');
-  MaotaiService.initCookiePath(cookieAddress);
-}
+
 let checkInterval = 1*1000;
 // 上海购买
 // 地址信息
@@ -23,7 +19,7 @@ let quantity = 6;
 
 
 let shopName = '东柏街|祥瑞丰源|SOHO现代城C|嘉禾国信大厦|西城区|文峰商贸';
-var originPhones = require("../accounts/4.10.json");
+global.originPhones = require("../accounts/4.10.json");
   //[{"phone":"19923800479","pass":"123456","addressId":1985973},{"phone":"17688225696","pass":"123456","addressId":1985969},{"phone":"18580067873","pass":"123456","addressId":1985985},{"phone":"15123922379","pass":"123456","addressId":1986003},{"phone":"13212382391","pass":"776800868h","addressId":1929891},{"phone":"17323972656","pass":"123456","addressId":1933999},{"phone":"18323215176","pass":"123456","addressId":1937925},{"phone":"19923736324","pass":"123456","addressId":1937822},{"phone":"15102335828","pass":"123456","addressId":1929918}];
 function printInfo(data){
   try{
@@ -88,7 +84,7 @@ function watchQuanity(number) {
               // 购买成功，进行下一个账号的处理逻辑
               logger.info('购买成功'+tel+":"+pass+JSON.stringify(data));
               successOrder++;
-              fs.writeFileSync("output/20180405.json", `${tel} ${pass}`, 'a+');
+              fs.writeFileSync(`output/${Utils.dateFormat()}.json`, `${tel} ${pass}`, 'a+');
               originPhones.splice(randomIndex, 1)
             }
             setTimeout(() => {
@@ -107,9 +103,7 @@ function watchQuanity(number) {
 }
 
 //var fixedShopId = 233330186001; // 杭州网点
-var fixedShopId = 211110105005; //双龙网点 
+var fixedShopId = 211110105005; //双龙网点
 var maxOrder = 2;
 var successOrder = 0;
 watchQuanity(2)
-
-

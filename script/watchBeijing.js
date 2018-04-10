@@ -18,7 +18,7 @@ let quantity = 6;
 
 let shopName = '东柏街|祥瑞丰源|SOHO现代城C|嘉禾国信大厦|西城区|文峰商贸';
 
-var originPhones = require("../accounts/4.10.json");
+global.originPhones = require("../accounts/4.10.json");
 
 
 
@@ -74,7 +74,7 @@ function watchQuanity() {
 
           } else {
             logger.info(colors.green("您所在区域暂未上货"))
-              logger.info(JSON.stringify(originPhones[randomIndex]))
+            logger.info(JSON.stringify(originPhones[randomIndex]))
             logger.info(scopeAddress, JSON.stringify(data.lbsdata));
             return Promise.resolve({code: 500});
           }
@@ -86,11 +86,11 @@ function watchQuanity() {
               fs.writeFileSync(`output/${Utils.dateFormat()}.json`, `\n${tel} ${pass}\n`, {flag:'a+'});
               originPhones.splice(randomIndex, 1)
             }
-            
+
             setTimeout(() => {
                 watchQuanity();
             }, checkInterval);
-            
+
 
         }).catch(e => {
             logger.info("位置错误,60秒后重试", e.message);
@@ -219,4 +219,3 @@ let interval = setInterval(() => {
   }
 }, 2000);
 // watchQuanity();
-

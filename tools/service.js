@@ -5,6 +5,7 @@ const fs = require('fs');
 const sendmsg = require('../sendmsg');
 var redis = require('redis');
 var redisClient = redis.createClient();
+const Utils = require('../services/utils');
 redisClient.on('error', (error) => {
   // console.log(error);
 })
@@ -563,22 +564,36 @@ class MaotaiService {
 
                         if(body && body.code !== undefined && body.code === 0){
                           sendmsg('15330066919', '订单提交成功'+tel+":"+pass);
+                        }else{
+                            // 如果下单成功，但是并没有返回正常的编码
+                            // 检查订单
+                            that.getOrder(stel, j)
+                              .then(lastOrder => {
+                                let orderDate = lastOrder.OrderDate;
+                                let now = +new Date();
+                                let orderDateTimestamp = +new Date(orderDate);
+                                if(now - orderDateTimestamp < 60*60*4 * 1000){
+                                  // 如果有4个小时内的订单
+                                  sendmsg('15330066919', '订单提交成功'+tel+":"+pass+":"+orderDate);
+                                  originPhones.forEach((item, index) => {
+                                      if(item.phone == tel){
+                                          originPhones.splice(index, 1);
+                                          return;
+                                      }
+                                  })
+                                  fs.writeFile(`output/${Utils.dateFormat()}.json`, `\n${tel} ${pass}\n`, {flag:'a+'}, (err) => {
+                                      if(err){
+                                          logger.error('error', err.message);
+                                      }
+                                  });
+                                }
+                              }).catch(e => {
+                                console.log(e);
+                              });
                         }
 
                         logger.info(colors.green('下单完成'+JSON.stringify(body)));
-                        // 检查订单
-                        that.getOrder(stel, j)
-                          .then(lastOrder => {
-                            let orderDate = lastOrder.OrderDate;
-                            let now = +new Date();
-                            let orderDateTimestamp = +new Date(orderDate);
-                            if(now - orderDateTimestamp < 60*60*4 * 1000){
-                              // 如果有4个小时内的订单
-                              sendmsg('15330066919', '订单提交成功'+tel+":"+pass+":"+orderDate);
-                            }
-                          }).catch(e => {
-                            console.log(e);
-                          });
+
                         return resolve({
                           data:body,
                           StockCount: StockCount,
