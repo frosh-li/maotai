@@ -1,115 +1,1713 @@
-[2018-04-10T09:14:24.827] [INFO] things - to Buy tels [ { phone: '18353874500',
-    pass: 'anjiaqi112828',
-    addressId: 1787812 },
-  { phone: '17853697903', pass: 'a123456', addressId: 1951715 },
-  { phone: '13333176802', pass: 'a123456', addressId: 1930785 },
-  { phone: '15549208672', pass: '123456', addressId: 1905922 },
-  { phone: '15238555689', pass: 'a123456', addressId: 1951714 },
-  { phone: '13513642792', pass: 'a123456', addressId: 1951737 },
-  { phone: '18533703270', pass: 'a123456', addressId: 1951805 },
-  { phone: '15082907866', pass: 'a123456', addressId: 1951812 },
-  { phone: '15935492346', pass: 'a123456', addressId: 1930788 },
-  { phone: '15046846298', pass: 'a123456', addressId: 1930700 },
-  { phone: '13102661153', pass: '123456', addressId: 1698680 },
-  { phone: '18709222182', pass: '123456', addressId: 1856770 },
-  { phone: '13392151517', pass: '123456', addressId: 1894345 },
-  { phone: '13413723166', pass: '123456', addressId: 1894654 },
-  { phone: '13512856201', pass: 'wyp100721', addressId: 1842614 },
-  { phone: '15264711001', pass: '123456', addressId: 1935811 },
-  { phone: '15393630594', pass: '123456', addressId: 1935813 },
-  { phone: '15633523066', pass: 'abc123', addressId: 1935815 },
-  { phone: '15645919316', pass: '123456', addressId: 1861429 },
-  { phone: '15697680921', pass: '123456', addressId: 1894280 },
-  { phone: '15698229041', pass: '123456', addressId: 1894170 },
-  { phone: '15699770933', pass: '123456', addressId: 1935816 },
-  { phone: '15949806339', pass: 'lhj0325', addressId: 1935818 },
-  { phone: '17097224268', pass: '123456', addressId: 1894299 },
-  { phone: '17505106529', pass: '132623', addressId: 1935819 },
-  { phone: '17753747930', pass: '8642569', addressId: 1935821 },
-  { phone: '17757449525', pass: '123456', addressId: 1894480 },
-  { phone: '18131970041', pass: '123456', addressId: 1847451 },
-  { phone: '18232902912', pass: '108108li', addressId: 1679931 },
-  { phone: '18246626742', pass: 'jss19860529', addressId: 1935822 },
-  { phone: '18253251389', pass: '123456', addressId: 1843317 },
-  { phone: '18382394514', pass: '123456', addressId: 1840503 },
-  { phone: '18810320392', pass: '12345678', addressId: 1686181 },
-  { phone: '18863572962', pass: '123456', addressId: 1894344 },
-  { phone: '18946959184', pass: '123456', addressId: 1893645 },
-  { phone: '18967839427', pass: '123456', addressId: 1894367 },
-  { phone: '15582882641', pass: 'a123456', addressId: 1961845 },
-  { phone: '15535890431', pass: 'a123456', addressId: 1961873 },
-  { phone: '15535486077', pass: 'a123456', addressId: 1961944 },
-  { phone: '13895490886', pass: 'a123456', addressId: 1961951 },
-  { phone: '15081664435', pass: 'a123456', addressId: 1961952 },
-  { phone: '13283936032', pass: 'a123456', addressId: 1962184 },
-  { phone: '15081820867', pass: 'a123456', addressId: 1962191 },
-  { phone: '15035399985', pass: 'a123456', addressId: 1962205 },
-  { phone: '18291130651', pass: 'a123456', addressId: 1962206 },
-  { phone: '13676343367', pass: 'a123456', addressId: 1962219 },
-  { phone: '15257918657', pass: 'a123456', addressId: 1962220 },
-  { phone: '15039298864', pass: 'a123456', addressId: 1962228 },
-  { phone: '18818426811', pass: 'a123456', addressId: 1962236 },
-  { phone: '15257918657', pass: 'a123456', addressId: 1962220 },
-  { phone: '13720689056', pass: 'a123456', addressId: 1951717 },
-  { phone: '13546886639', pass: 'qin141208', addressId: 1935801 },
-  { phone: '18331375226', pass: 'a123456', addressId: 1961830 },
-  { phone: '15981953127', pass: '123456', addressId: 1841839 },
-  { phone: '13153185002', pass: '123456', addressId: 1893802 },
-  { phone: '13343192376', pass: '123456', addressId: 1885157 },
-  { phone: '13485665212', pass: '123456', addressId: 1676457 },
-  { phone: '13700077519', pass: '123456', addressId: 1892989 },
-  { phone: '15063527328', pass: '123456', addressId: 1893768 },
-  { phone: '15075870950', pass: '123456', addressId: 1712578 },
-  { phone: '15206334886', pass: '123456', addressId: 1903115 },
-  { phone: '15303199414', pass: '123456', addressId: 1885243 },
-  { phone: '15354193781', pass: '123456', addressId: 1879769 },
-  { phone: '15373204143', pass: '123456', addressId: 1885212 },
-  { phone: '15399130078', pass: '125018adg', addressId: 1697988 },
-  { phone: '15515970953', pass: '123456', addressId: 1843374 },
-  { phone: '15937230461', pass: '123456', addressId: 1845446 },
-  { phone: '15951853170', pass: '123456', addressId: 1885124 },
-  { phone: '17379324087', pass: '123456', addressId: 1858864 },
-  { phone: '18537303412', pass: 'z410781', addressId: 1726502 },
-  { phone: '15777186432', pass: '15177909309', addressId: 1935817 },
-  { phone: '15835086989', pass: 'a123456', addressId: 1951725 },
-  { phone: '18743635726', pass: 'a123456', addressId: 1951735 },
-  { phone: '13081312422', pass: 'a123456', addressId: 1951801 },
-  { phone: '13624666057', pass: 'a123456', addressId: 1930787 },
-  { phone: '13842111030', pass: 'a123456', addressId: 1930791 },
-  { phone: '18903188059', pass: 'a123456', addressId: 1930701 },
-  { phone: '13792080758', pass: 'a123456', addressId: 1930706 },
-  { phone: '13313181385', pass: 'a123456', addressId: 1930707 },
-  { phone: '17535275750', pass: '123456', addressId: 1892886 },
-  { phone: '13336323159', pass: '4063443', addressId: 1935794 },
-  { phone: '13351208936', pass: 'jss19860529', addressId: 1935795 },
-  { phone: '13399381732', pass: 'q123456', addressId: 1935796 },
-  { phone: '13453301621', pass: '654321', addressId: 1935797 },
-  { phone: '13521690981', pass: '123456', addressId: 1935799 },
-  { phone: '13633696711', pass: 'w070416', addressId: 1935803 },
-  { phone: '13764763451', pass: '123456', addressId: 1847409 },
-  { phone: '13938038163', pass: '123456', addressId: 1935805 },
-  { phone: '13993852417', pass: 'q123456', addressId: 1935806 },
-  { phone: '15039586436', pass: '123456', addressId: 1935807 },
-  { phone: '15102549597', pass: 'ml080727', addressId: 1935808 },
-  { phone: '15131828567', pass: '123456', addressId: 1935809 },
-  { phone: '15264711296', pass: '123456', addressId: 1935812 },
-  { phone: '18032952504', pass: '123456', addressId: 1879695 },
-  { phone: '17612746321',
-    pass: '123456321654',
-    addressId: 1935820 },
-  { phone: '18201603185', pass: '123456', addressId: 1884119 },
-  { phone: '18207517996', pass: '123456', addressId: 1829922 },
-  { phone: '18333966217', pass: '123456', addressId: 1879800 },
-  { phone: '15627944858', pass: '123456', addressId: 1894176 },
-  { phone: '18834168128', pass: 'A3396815', addressId: 1898547 },
-  ... 66 more items ]
-[2018-04-10T09:14:24.833] [INFO] things - 还剩下165个检测
-[2018-04-10T09:14:24.833] [INFO] things - start to check status { phone: '18353874500',
-  pass: 'anjiaqi112828',
-  addressId: 1787812 }
-[2018-04-10T09:14:27.796] [ERROR] things - 没有预约列表
-[2018-04-10T09:14:27.797] [INFO] things - 还剩下164个检测
-[2018-04-10T09:14:27.797] [INFO] things - start to check status { phone: '17853697903', pass: 'a123456', addressId: 1951715 }
-[2018-04-10T09:14:28.985] [ERROR] things - 没有预约列表
-[2018-04-10T09:14:28.986] [INFO] things - 还剩下163个检测
-[2018-04-10T09:14:28.986] [INFO] things - start to check status { phone: '13333176802', pass: 'a123456', addressId: 1930785 }
+[2018-04-10T11:07:09.133] [TRACE] things - 当前时间: 11
+[2018-04-10T11:07:09.135] [INFO] things - 抢购时间开始
+[2018-04-10T11:07:10.118] [INFO] things - 库存信息 { Sid: '211110105007',
+  Pid: 391,
+  Pcode: '23',
+  CanSale: true,
+  CanLocation: true,
+  Longitude: 116.452533547945,
+  Latitude: 39.9180806901557,
+  LocationCode: '110000',
+  StockCount: 6,
+  QuotasStockCount: 6,
+  LocationDistance: 2875.16589185195,
+  HasSelfDelivery: true,
+  HasOtherDelivery: false,
+  HasCityDelivery: false,
+  IsVirtual: false,
+  IsPlatform: false }
+[2018-04-10T11:07:10.121] [INFO] things - 限购信息 { Sid: '211110105007',
+  Pid: 391,
+  UserOrderCount: 0,
+  LimitCount: 2,
+  LimitTimeCycle: 1440,
+  LimitOrderCount: 1,
+  IsPlatform: false }
+[2018-04-10T11:07:10.121] [INFO] things - 商家信息 { Sid: '211110105007',
+  SName: '茅台云商北京市朝阳区服务网点',
+  Did: '110105030',
+  DName: '北京志联华信商贸有限公司',
+  SHBegin: '09:30:00',
+  SHEnd: '17:00:00',
+  Address: '朝阳区金汇路10号楼世界城Ａ座506室',
+  LinkMan: '万蓓',
+  LinkTel: '010-85907515　18610312228',
+  InvoiceCost: 0,
+  State: 1,
+  HasPlainInvoice: 1,
+  HasVATInvoice: 0,
+  Description: '周一至周五自提取货时间10:00-16:00，周末休息。\r\n本公司发票已用完，暂无法提供。急需发票者，请慎拍！',
+  InvoiceCompany: '北京志联华信商贸有限公司',
+  Coordinate: 
+   { ProvCode: '110000',
+     CityCode: '110100',
+     AreaCode: '110105',
+     Longitude: 116.459129333496,
+     Latitude: 39.9237518310547 },
+  NetworkType: 0,
+  WorkingDay: '[{"EnDay":"Monday","CnDay":"星期一"},{"EnDay":"Tuesday","CnDay":"星期二"},{"EnDay":"Wednesday","CnDay":"星期三"},{"EnDay":"Thursday","CnDay":"星期四"},{"EnDay":"Friday","CnDay":"星期五"}]',
+  ProvCode: '110000',
+  CityCode: '110100',
+  AreaCode: '110105',
+  IsPlatform: false }
+[2018-04-10T11:07:10.122] [INFO] things - 推送网点信息
+[2018-04-10T11:07:10.122] [INFO] things - Address: 朝阳区金汇路10号楼世界城Ａ座506室
+[2018-04-10T11:07:10.122] [INFO] things - SName: 茅台云商北京市朝阳区服务网点
+[2018-04-10T11:07:10.122] [INFO] things - DName: 北京志联华信商贸有限公司
+[2018-04-10T11:07:10.122] [INFO] things - SID: 211110105007
+[2018-04-10T11:07:10.122] [INFO] things - total: 6
+[2018-04-10T11:07:10.122] [INFO] things - limit: 2
+[2018-04-10T11:07:10.123] [INFO] things - 不满足购买条件
+[2018-04-10T11:07:10.123] [INFO] things - {"phone":"15082907866","pass":"a123456","addressId":1951812}
+[2018-04-10T11:07:11.887] [INFO] things - 库存信息 { Sid: '211110101003',
+  Pid: 391,
+  Pcode: '23',
+  CanSale: true,
+  CanLocation: true,
+  Longitude: 116.438913696078,
+  Latitude: 39.8952184959834,
+  LocationCode: '110000',
+  StockCount: 8,
+  QuotasStockCount: 8,
+  LocationDistance: 899.536384036228,
+  HasSelfDelivery: true,
+  HasOtherDelivery: false,
+  HasCityDelivery: false,
+  IsVirtual: false,
+  IsPlatform: false }
+[2018-04-10T11:07:11.887] [INFO] things - 限购信息 { Sid: '211110101003',
+  Pid: 391,
+  UserOrderCount: 0,
+  LimitCount: 4,
+  LimitTimeCycle: 1440,
+  LimitOrderCount: 1,
+  IsPlatform: false }
+[2018-04-10T11:07:11.887] [INFO] things - 商家信息 { Sid: '211110101003',
+  SName: '茅台云商北京市市辖区东城区服务网点',
+  Did: '110105022',
+  DName: '华致酒行连锁管理股份有限公司',
+  SHBegin: '10:30:00',
+  SHEnd: '17:00:00',
+  Address: '东城区广渠门内白桥大街15号嘉禾国信大厦8楼',
+  LinkMan: '杜若宁',
+  LinkTel: '56969568',
+  InvoiceCost: 0,
+  State: 1,
+  HasPlainInvoice: 1,
+  HasVATInvoice: 0,
+  Description: '特别提示：4月5日--7日根据国家法定假日安排，我司三日全天放假。请悉知，感谢。根据相关规定，所有出售货品，必须开箱，不便之处敬请谅解。自提时间为每周一至周三10：30-17：00，中午12：00-1：30午休，备注：我们这里是经销商公司不是店铺，国家法定节假日均休息，周末不取货。请至少提前2小时致电咨询取货时间,提供订单号、取货码。付款之后7天内自提，7天后系统会默认关闭订单。特别提醒：取货时请您携带与订单上姓名一致的身份证复印件要求正反面在一张纸上。',
+  InvoiceCompany: '华致酒行连锁管理股份有限公司',
+  Coordinate: 
+   { ProvCode: '110000',
+     CityCode: '110100',
+     AreaCode: '110101',
+     Longitude: 116.445472717285,
+     Latitude: 39.9010620117188 },
+  NetworkType: 0,
+  WorkingDay: '[{"EnDay":"Monday","CnDay":"星期一"},{"EnDay":"Tuesday","CnDay":"星期二"},{"EnDay":"Wednesday","CnDay":"星期三"}]',
+  ProvCode: '110000',
+  CityCode: '110100',
+  AreaCode: '110101',
+  IsPlatform: false }
+[2018-04-10T11:07:11.888] [INFO] things - 推送网点信息
+[2018-04-10T11:07:11.888] [INFO] things - Address: 东城区广渠门内白桥大街15号嘉禾国信大厦8楼
+[2018-04-10T11:07:11.888] [INFO] things - SName: 茅台云商北京市市辖区东城区服务网点
+[2018-04-10T11:07:11.888] [INFO] things - DName: 华致酒行连锁管理股份有限公司
+[2018-04-10T11:07:11.888] [INFO] things - SID: 211110101003
+[2018-04-10T11:07:11.888] [INFO] things - total: 8
+[2018-04-10T11:07:11.888] [INFO] things - limit: 4
+[2018-04-10T11:07:11.888] [INFO] things - 不满足购买条件
+[2018-04-10T11:07:11.888] [INFO] things - {"phone":"18946959184","pass":"123456","addressId":1893645}
+[2018-04-10T11:07:13.913] [INFO] things - 库存信息 { Sid: '111110102013',
+  Pid: 391,
+  Pcode: '23',
+  CanSale: true,
+  CanLocation: true,
+  Longitude: 116.336533078689,
+  Latitude: 39.8877112931694,
+  LocationCode: '110000',
+  StockCount: 10,
+  QuotasStockCount: 10,
+  LocationDistance: 3696.37316457317,
+  HasSelfDelivery: true,
+  HasOtherDelivery: false,
+  HasCityDelivery: false,
+  IsVirtual: false,
+  IsPlatform: false }
+[2018-04-10T11:07:13.914] [INFO] things - 限购信息 { Sid: '111110102013',
+  Pid: 391,
+  UserOrderCount: 0,
+  LimitCount: 4,
+  LimitTimeCycle: 1440,
+  LimitOrderCount: 1,
+  IsPlatform: false }
+[2018-04-10T11:07:13.914] [INFO] things - 商家信息 { Sid: '111110102013',
+  SName: '茅台云商北京市市辖区西城区服务网点',
+  Did: '110102033',
+  DName: '北京双国九茗投资有限公司',
+  SHBegin: '09:00:00',
+  SHEnd: '18:00:00',
+  Address: '西城区广安门外红居东街恒昌花园5号楼底商',
+  LinkMan: '汪奕西',
+  LinkTel: '18585061991',
+  InvoiceCost: 0,
+  State: 1,
+  HasPlainInvoice: 1,
+  HasVATInvoice: 0,
+  Description: '16：00前下单，当日可以发货；16：00以后下单次日发货。\r\n  节假日，特殊情况除外。',
+  InvoiceCompany: '北京双国九茗投资有限公司',
+  Coordinate: 
+   { ProvCode: '110000',
+     CityCode: '110100',
+     AreaCode: '110102',
+     Longitude: 116.343162536621,
+     Latitude: 39.8933715820313 },
+  NetworkType: 0,
+  WorkingDay: '[{"EnDay":"Monday","CnDay":"星期一"},{"EnDay":"Tuesday","CnDay":"星期二"},{"EnDay":"Wednesday","CnDay":"星期三"},{"EnDay":"Thursday","CnDay":"星期四"},{"EnDay":"Friday","CnDay":"星期五"},{"EnDay":"Saturday","CnDay":"星期六"},{"EnDay":"Sunday","CnDay":"星期日"}]',
+  ProvCode: '110000',
+  CityCode: '110100',
+  AreaCode: '110102',
+  IsPlatform: false }
+[2018-04-10T11:07:13.915] [INFO] things - 推送网点信息
+[2018-04-10T11:07:13.915] [INFO] things - Address: 西城区广安门外红居东街恒昌花园5号楼底商
+[2018-04-10T11:07:13.915] [INFO] things - SName: 茅台云商北京市市辖区西城区服务网点
+[2018-04-10T11:07:13.915] [INFO] things - DName: 北京双国九茗投资有限公司
+[2018-04-10T11:07:13.915] [INFO] things - SID: 111110102013
+[2018-04-10T11:07:13.915] [INFO] things - total: 10
+[2018-04-10T11:07:13.915] [INFO] things - limit: 4
+[2018-04-10T11:07:13.915] [INFO] things - 不满足购买条件
+[2018-04-10T11:07:13.915] [INFO] things - {"phone":"18903188059","pass":"a123456","addressId":1930701}
+[2018-04-10T11:07:15.755] [INFO] things - 库存信息 { Sid: '111110105012',
+  Pid: 391,
+  Pcode: '23',
+  CanSale: true,
+  CanLocation: true,
+  Longitude: 116.431369283581,
+  Latitude: 39.9870000637087,
+  LocationCode: '110000',
+  StockCount: 46,
+  QuotasStockCount: 46,
+  LocationDistance: 2675.74252089612,
+  HasSelfDelivery: true,
+  HasOtherDelivery: false,
+  HasCityDelivery: true,
+  IsVirtual: false,
+  IsPlatform: false }
+[2018-04-10T11:07:15.756] [INFO] things - 限购信息 { Sid: '111110105012',
+  Pid: 391,
+  UserOrderCount: 0,
+  LimitCount: 4,
+  LimitTimeCycle: 1440,
+  LimitOrderCount: 1,
+  IsPlatform: false }
+[2018-04-10T11:07:15.756] [INFO] things - 商家信息 { Sid: '111110105012',
+  SName: '茅台云商北京市市辖区朝阳区服务网点',
+  Did: '110105027',
+  DName: '北京宏诚嘉豪贸易有限公司',
+  SHBegin: '09:00:00',
+  SHEnd: '17:30:00',
+  Address: '朝阳区芍药居北里320号楼1层6单元320-16',
+  LinkMan: '赵秀盛',
+  LinkTel: '01084648311  13269806970',
+  InvoiceCost: 0,
+  State: 1,
+  HasPlainInvoice: 1,
+  HasVATInvoice: 0,
+  Description: '',
+  InvoiceCompany: '北京宏诚嘉豪贸易有限公司',
+  Coordinate: 
+   { ProvCode: '110000',
+     CityCode: '110100',
+     AreaCode: '110105',
+     Longitude: 116.437896728516,
+     Latitude: 39.9929809570313 },
+  NetworkType: 0,
+  WorkingDay: '[{"EnDay":"Monday","CnDay":"星期一"},{"EnDay":"Tuesday","CnDay":"星期二"},{"EnDay":"Wednesday","CnDay":"星期三"},{"EnDay":"Thursday","CnDay":"星期四"},{"EnDay":"Friday","CnDay":"星期五"},{"EnDay":"Saturday","CnDay":"星期六"},{"EnDay":"Sunday","CnDay":"星期日"}]',
+  ProvCode: '110000',
+  CityCode: '110100',
+  AreaCode: '110105',
+  IsPlatform: false }
+[2018-04-10T11:07:15.756] [INFO] things - 推送网点信息
+[2018-04-10T11:07:15.756] [INFO] things - Address: 朝阳区芍药居北里320号楼1层6单元320-16
+[2018-04-10T11:07:15.757] [INFO] things - SName: 茅台云商北京市市辖区朝阳区服务网点
+[2018-04-10T11:07:15.757] [INFO] things - DName: 北京宏诚嘉豪贸易有限公司
+[2018-04-10T11:07:15.757] [INFO] things - SID: 111110105012
+[2018-04-10T11:07:15.757] [INFO] things - total: 46
+[2018-04-10T11:07:15.757] [INFO] things - limit: 4
+[2018-04-10T11:07:15.757] [INFO] things - 不满足购买条件
+[2018-04-10T11:07:15.757] [INFO] things - {"phone":"15121952364","pass":"a123456","addressId":1961957}
+[2018-04-10T11:07:18.021] [INFO] things - 库存信息 { Sid: '211110101003',
+  Pid: 391,
+  Pcode: '23',
+  CanSale: true,
+  CanLocation: true,
+  Longitude: 116.438913696078,
+  Latitude: 39.8952184959834,
+  LocationCode: '110000',
+  StockCount: 8,
+  QuotasStockCount: 8,
+  LocationDistance: 675.048655413668,
+  HasSelfDelivery: true,
+  HasOtherDelivery: false,
+  HasCityDelivery: false,
+  IsVirtual: false,
+  IsPlatform: false }
+[2018-04-10T11:07:18.021] [INFO] things - 限购信息 { Sid: '211110101003',
+  Pid: 391,
+  UserOrderCount: 0,
+  LimitCount: 4,
+  LimitTimeCycle: 1440,
+  LimitOrderCount: 1,
+  IsPlatform: false }
+[2018-04-10T11:07:18.022] [INFO] things - 商家信息 { Sid: '211110101003',
+  SName: '茅台云商北京市市辖区东城区服务网点',
+  Did: '110105022',
+  DName: '华致酒行连锁管理股份有限公司',
+  SHBegin: '10:30:00',
+  SHEnd: '17:00:00',
+  Address: '东城区广渠门内白桥大街15号嘉禾国信大厦8楼',
+  LinkMan: '杜若宁',
+  LinkTel: '56969568',
+  InvoiceCost: 0,
+  State: 1,
+  HasPlainInvoice: 1,
+  HasVATInvoice: 0,
+  Description: '特别提示：4月5日--7日根据国家法定假日安排，我司三日全天放假。请悉知，感谢。根据相关规定，所有出售货品，必须开箱，不便之处敬请谅解。自提时间为每周一至周三10：30-17：00，中午12：00-1：30午休，备注：我们这里是经销商公司不是店铺，国家法定节假日均休息，周末不取货。请至少提前2小时致电咨询取货时间,提供订单号、取货码。付款之后7天内自提，7天后系统会默认关闭订单。特别提醒：取货时请您携带与订单上姓名一致的身份证复印件要求正反面在一张纸上。',
+  InvoiceCompany: '华致酒行连锁管理股份有限公司',
+  Coordinate: 
+   { ProvCode: '110000',
+     CityCode: '110100',
+     AreaCode: '110101',
+     Longitude: 116.445472717285,
+     Latitude: 39.9010620117188 },
+  NetworkType: 0,
+  WorkingDay: '[{"EnDay":"Monday","CnDay":"星期一"},{"EnDay":"Tuesday","CnDay":"星期二"},{"EnDay":"Wednesday","CnDay":"星期三"}]',
+  ProvCode: '110000',
+  CityCode: '110100',
+  AreaCode: '110101',
+  IsPlatform: false }
+[2018-04-10T11:07:18.022] [INFO] things - 推送网点信息
+[2018-04-10T11:07:18.022] [INFO] things - Address: 东城区广渠门内白桥大街15号嘉禾国信大厦8楼
+[2018-04-10T11:07:18.022] [INFO] things - SName: 茅台云商北京市市辖区东城区服务网点
+[2018-04-10T11:07:18.022] [INFO] things - DName: 华致酒行连锁管理股份有限公司
+[2018-04-10T11:07:18.022] [INFO] things - SID: 211110101003
+[2018-04-10T11:07:18.023] [INFO] things - total: 8
+[2018-04-10T11:07:18.023] [INFO] things - limit: 4
+[2018-04-10T11:07:18.023] [INFO] things - 不满足购买条件
+[2018-04-10T11:07:18.023] [INFO] things - {"phone":"18232902912","pass":"108108li","addressId":1679931}
+[2018-04-10T11:07:19.877] [INFO] things - 库存信息 { Sid: '141410100008',
+  Pid: 391,
+  Pcode: '23',
+  CanSale: true,
+  CanLocation: true,
+  Longitude: 116.558943173006,
+  Latitude: 39.96092863374,
+  LocationCode: '110000',
+  StockCount: 18,
+  QuotasStockCount: 18,
+  LocationDistance: 4642.83063522773,
+  HasSelfDelivery: true,
+  HasOtherDelivery: false,
+  HasCityDelivery: false,
+  IsVirtual: false,
+  IsPlatform: false }
+[2018-04-10T11:07:19.878] [INFO] things - 限购信息 { Sid: '141410100008',
+  Pid: 391,
+  UserOrderCount: 0,
+  LimitCount: 4,
+  LimitTimeCycle: 1440,
+  LimitOrderCount: 1,
+  IsPlatform: false }
+[2018-04-10T11:07:19.878] [INFO] things - 商家信息 { Sid: '141410100008',
+  SName: '茅台云商北京市朝阳区服务网点',
+  Did: '410186002',
+  DName: '尚郡（北京）商贸有限公司',
+  SHBegin: '09:00:00',
+  SHEnd: '17:30:00',
+  Address: '朝阳区和敬路2号院3号楼3-2',
+  LinkMan: '李安良',
+  LinkTel: '010-65726529',
+  InvoiceCost: 0,
+  State: 1,
+  HasPlainInvoice: 1,
+  HasVATInvoice: 1,
+  Description: '1、16:00前下单，当日配送；16:00后下单，次日配送；\r\n2、若因特殊原因或不可抗力造成配送不及时敬请您的谅解！查询电话：010-65726529；\r\n3、国酒茅台专卖店地址：北京市朝阳区和敬路2号院3号楼1层3-2',
+  InvoiceCompany: '尚郡（北京）商贸有限公司',
+  Coordinate: 
+   { ProvCode: '110000',
+     CityCode: '110100',
+     AreaCode: '110105',
+     Longitude: 116.565498352051,
+     Latitude: 39.9667701721191 },
+  NetworkType: 0,
+  WorkingDay: '[{"EnDay":"Monday","CnDay":"星期一"},{"EnDay":"Tuesday","CnDay":"星期二"},{"EnDay":"Wednesday","CnDay":"星期三"},{"EnDay":"Thursday","CnDay":"星期四"},{"EnDay":"Friday","CnDay":"星期五"},{"EnDay":"Saturday","CnDay":"星期六"},{"EnDay":"Sunday","CnDay":"星期日"}]',
+  ProvCode: '110000',
+  CityCode: '110100',
+  AreaCode: '110105',
+  IsPlatform: false }
+[2018-04-10T11:07:19.879] [INFO] things - 推送网点信息
+[2018-04-10T11:07:19.879] [INFO] things - Address: 朝阳区和敬路2号院3号楼3-2
+[2018-04-10T11:07:19.879] [INFO] things - SName: 茅台云商北京市朝阳区服务网点
+[2018-04-10T11:07:19.879] [INFO] things - DName: 尚郡（北京）商贸有限公司
+[2018-04-10T11:07:19.879] [INFO] things - SID: 141410100008
+[2018-04-10T11:07:19.880] [INFO] things - total: 18
+[2018-04-10T11:07:19.880] [INFO] things - limit: 4
+[2018-04-10T11:07:19.880] [INFO] things - 不满足购买条件
+[2018-04-10T11:07:19.880] [INFO] things - {"phone":"15133355337","pass":"a123456","addressId":1962238}
+[2018-04-10T11:07:21.729] [INFO] things - 库存信息 { Sid: '141410100008',
+  Pid: 391,
+  Pcode: '23',
+  CanSale: true,
+  CanLocation: true,
+  Longitude: 116.558943173006,
+  Latitude: 39.96092863374,
+  LocationCode: '110000',
+  StockCount: 18,
+  QuotasStockCount: 18,
+  LocationDistance: 8610.8990873538,
+  HasSelfDelivery: true,
+  HasOtherDelivery: false,
+  HasCityDelivery: false,
+  IsVirtual: false,
+  IsPlatform: false }
+[2018-04-10T11:07:21.730] [INFO] things - 限购信息 { Sid: '141410100008',
+  Pid: 391,
+  UserOrderCount: 0,
+  LimitCount: 4,
+  LimitTimeCycle: 1440,
+  LimitOrderCount: 1,
+  IsPlatform: false }
+[2018-04-10T11:07:21.730] [INFO] things - 商家信息 { Sid: '141410100008',
+  SName: '茅台云商北京市朝阳区服务网点',
+  Did: '410186002',
+  DName: '尚郡（北京）商贸有限公司',
+  SHBegin: '09:00:00',
+  SHEnd: '17:30:00',
+  Address: '朝阳区和敬路2号院3号楼3-2',
+  LinkMan: '李安良',
+  LinkTel: '010-65726529',
+  InvoiceCost: 0,
+  State: 1,
+  HasPlainInvoice: 1,
+  HasVATInvoice: 1,
+  Description: '1、16:00前下单，当日配送；16:00后下单，次日配送；\r\n2、若因特殊原因或不可抗力造成配送不及时敬请您的谅解！查询电话：010-65726529；\r\n3、国酒茅台专卖店地址：北京市朝阳区和敬路2号院3号楼1层3-2',
+  InvoiceCompany: '尚郡（北京）商贸有限公司',
+  Coordinate: 
+   { ProvCode: '110000',
+     CityCode: '110100',
+     AreaCode: '110105',
+     Longitude: 116.565498352051,
+     Latitude: 39.9667701721191 },
+  NetworkType: 0,
+  WorkingDay: '[{"EnDay":"Monday","CnDay":"星期一"},{"EnDay":"Tuesday","CnDay":"星期二"},{"EnDay":"Wednesday","CnDay":"星期三"},{"EnDay":"Thursday","CnDay":"星期四"},{"EnDay":"Friday","CnDay":"星期五"},{"EnDay":"Saturday","CnDay":"星期六"},{"EnDay":"Sunday","CnDay":"星期日"}]',
+  ProvCode: '110000',
+  CityCode: '110100',
+  AreaCode: '110105',
+  IsPlatform: false }
+[2018-04-10T11:07:21.730] [INFO] things - 推送网点信息
+[2018-04-10T11:07:21.730] [INFO] things - Address: 朝阳区和敬路2号院3号楼3-2
+[2018-04-10T11:07:21.730] [INFO] things - SName: 茅台云商北京市朝阳区服务网点
+[2018-04-10T11:07:21.730] [INFO] things - DName: 尚郡（北京）商贸有限公司
+[2018-04-10T11:07:21.730] [INFO] things - SID: 141410100008
+[2018-04-10T11:07:21.731] [INFO] things - total: 18
+[2018-04-10T11:07:21.731] [INFO] things - limit: 4
+[2018-04-10T11:07:21.731] [INFO] things - 不满足购买条件
+[2018-04-10T11:07:21.731] [INFO] things - {"phone":"15613794675","pass":"a123456","addressId":1930792}
+[2018-04-10T11:07:23.652] [INFO] things - 库存信息 { Sid: '211110105007',
+  Pid: 391,
+  Pcode: '23',
+  CanSale: true,
+  CanLocation: true,
+  Longitude: 116.452533547945,
+  Latitude: 39.9180806901557,
+  LocationCode: '110000',
+  StockCount: 6,
+  QuotasStockCount: 6,
+  LocationDistance: 1933.01779879343,
+  HasSelfDelivery: true,
+  HasOtherDelivery: false,
+  HasCityDelivery: false,
+  IsVirtual: false,
+  IsPlatform: false }
+[2018-04-10T11:07:23.652] [INFO] things - 限购信息 { Sid: '211110105007',
+  Pid: 391,
+  UserOrderCount: 0,
+  LimitCount: 2,
+  LimitTimeCycle: 1440,
+  LimitOrderCount: 1,
+  IsPlatform: false }
+[2018-04-10T11:07:23.652] [INFO] things - 商家信息 { Sid: '211110105007',
+  SName: '茅台云商北京市朝阳区服务网点',
+  Did: '110105030',
+  DName: '北京志联华信商贸有限公司',
+  SHBegin: '09:30:00',
+  SHEnd: '17:00:00',
+  Address: '朝阳区金汇路10号楼世界城Ａ座506室',
+  LinkMan: '万蓓',
+  LinkTel: '010-85907515　18610312228',
+  InvoiceCost: 0,
+  State: 1,
+  HasPlainInvoice: 1,
+  HasVATInvoice: 0,
+  Description: '周一至周五自提取货时间10:00-16:00，周末休息。\r\n本公司发票已用完，暂无法提供。急需发票者，请慎拍！',
+  InvoiceCompany: '北京志联华信商贸有限公司',
+  Coordinate: 
+   { ProvCode: '110000',
+     CityCode: '110100',
+     AreaCode: '110105',
+     Longitude: 116.459129333496,
+     Latitude: 39.9237518310547 },
+  NetworkType: 0,
+  WorkingDay: '[{"EnDay":"Monday","CnDay":"星期一"},{"EnDay":"Tuesday","CnDay":"星期二"},{"EnDay":"Wednesday","CnDay":"星期三"},{"EnDay":"Thursday","CnDay":"星期四"},{"EnDay":"Friday","CnDay":"星期五"}]',
+  ProvCode: '110000',
+  CityCode: '110100',
+  AreaCode: '110105',
+  IsPlatform: false }
+[2018-04-10T11:07:23.653] [INFO] things - 推送网点信息
+[2018-04-10T11:07:23.653] [INFO] things - Address: 朝阳区金汇路10号楼世界城Ａ座506室
+[2018-04-10T11:07:23.653] [INFO] things - SName: 茅台云商北京市朝阳区服务网点
+[2018-04-10T11:07:23.653] [INFO] things - DName: 北京志联华信商贸有限公司
+[2018-04-10T11:07:23.653] [INFO] things - SID: 211110105007
+[2018-04-10T11:07:23.653] [INFO] things - total: 6
+[2018-04-10T11:07:23.653] [INFO] things - limit: 2
+[2018-04-10T11:07:23.653] [INFO] things - 不满足购买条件
+[2018-04-10T11:07:23.653] [INFO] things - {"phone":"13720689056","pass":"a123456","addressId":1951717}
+[2018-04-10T11:07:25.533] [INFO] things - 库存信息 { Sid: '211110108015',
+  Pid: 391,
+  Pcode: '23',
+  CanSale: true,
+  CanLocation: true,
+  Longitude: 116.369403010411,
+  Latitude: 39.8333228760481,
+  LocationCode: '110000',
+  StockCount: 6,
+  QuotasStockCount: 6,
+  LocationDistance: 3677.05763233705,
+  HasSelfDelivery: true,
+  HasOtherDelivery: false,
+  HasCityDelivery: false,
+  IsVirtual: false,
+  IsPlatform: false }
+[2018-04-10T11:07:25.534] [INFO] things - 限购信息 { Sid: '211110108015',
+  Pid: 391,
+  UserOrderCount: 0,
+  LimitCount: 2,
+  LimitTimeCycle: 1440,
+  LimitOrderCount: 1,
+  IsPlatform: false }
+[2018-04-10T11:07:25.534] [INFO] things - 商家信息 { Sid: '211110108015',
+  SName: '茅台云商北京市市辖区海淀区服务网点',
+  Did: '110108053',
+  DName: '北京伊尹鑫泰商贸有限公司',
+  SHBegin: '09:30:00',
+  SHEnd: '17:30:00',
+  Address: '北京市丰台区城南嘉园益城园16号楼2一0606',
+  LinkMan: '金雪梅',
+  LinkTel: '13693198375',
+  InvoiceCost: 0,
+  State: 1,
+  HasPlainInvoice: 1,
+  HasVATInvoice: 0,
+  Description: '',
+  InvoiceCompany: '北京伊尹鑫泰商贸有限公司',
+  Coordinate: 
+   { ProvCode: '110000',
+     CityCode: '110100',
+     AreaCode: '110108',
+     Longitude: 116.375900268555,
+     Latitude: 39.8393096923828 },
+  NetworkType: 0,
+  WorkingDay: '[{"EnDay":"Monday","CnDay":"星期一"},{"EnDay":"Tuesday","CnDay":"星期二"},{"EnDay":"Wednesday","CnDay":"星期三"},{"EnDay":"Thursday","CnDay":"星期四"},{"EnDay":"Friday","CnDay":"星期五"}]',
+  ProvCode: '110000',
+  CityCode: '110100',
+  AreaCode: '110108',
+  IsPlatform: false }
+[2018-04-10T11:07:25.534] [INFO] things - 推送网点信息
+[2018-04-10T11:07:25.534] [INFO] things - Address: 北京市丰台区城南嘉园益城园16号楼2一0606
+[2018-04-10T11:07:25.535] [INFO] things - SName: 茅台云商北京市市辖区海淀区服务网点
+[2018-04-10T11:07:25.535] [INFO] things - DName: 北京伊尹鑫泰商贸有限公司
+[2018-04-10T11:07:25.535] [INFO] things - SID: 211110108015
+[2018-04-10T11:07:25.535] [INFO] things - total: 6
+[2018-04-10T11:07:25.535] [INFO] things - limit: 2
+[2018-04-10T11:07:25.535] [INFO] things - 不满足购买条件
+[2018-04-10T11:07:25.535] [INFO] things - {"phone":"18291130651","pass":"a123456","addressId":1962206}
+[2018-04-10T11:07:27.734] [INFO] things - 库存信息 { Sid: '211110105003',
+  Pid: 391,
+  Pcode: '23',
+  CanSale: true,
+  CanLocation: true,
+  Longitude: 116.47831425038,
+  Latitude: 39.8701313444617,
+  LocationCode: '110000',
+  StockCount: 155,
+  QuotasStockCount: 155,
+  LocationDistance: 1731.79428409102,
+  HasSelfDelivery: true,
+  HasOtherDelivery: false,
+  HasCityDelivery: false,
+  IsVirtual: false,
+  IsPlatform: false }
+[2018-04-10T11:07:27.734] [INFO] things - 限购信息 { Sid: '211110105003',
+  Pid: 391,
+  UserOrderCount: 0,
+  LimitCount: 2,
+  LimitTimeCycle: 1440,
+  LimitOrderCount: 1,
+  IsPlatform: false }
+[2018-04-10T11:07:27.735] [INFO] things - 商家信息 { Sid: '211110105003',
+  SName: '茅台云商北京市朝阳区服务网点',
+  Did: '110105005',
+  DName: '北京朝批商贸股份有限公司',
+  SHBegin: '08:30:00',
+  SHEnd: '17:00:00',
+  Address: '朝阳区双龙南里204楼',
+  LinkMan: '李媛',
+  LinkTel: '15811069131 18601981996 周一到周五工作日提货 请提前电话联系',
+  InvoiceCost: 0,
+  State: 1,
+  HasPlainInvoice: 1,
+  HasVATInvoice: 0,
+  Description: '每周一至周五工作日8：30-17:00可上门自提，其中12：00到13:30休息！周一到周五工作日支持提货 请提前电话联系',
+  InvoiceCompany: '北京朝批商贸股份有限公司',
+  Coordinate: 
+   { ProvCode: '110000',
+     CityCode: '110100',
+     AreaCode: '110105',
+     Longitude: 116.484901428223,
+     Latitude: 39.8759384155273 },
+  NetworkType: 0,
+  WorkingDay: '[{"EnDay":"Monday","CnDay":"星期一"},{"EnDay":"Tuesday","CnDay":"星期二"},{"EnDay":"Wednesday","CnDay":"星期三"},{"EnDay":"Thursday","CnDay":"星期四"},{"EnDay":"Friday","CnDay":"星期五"}]',
+  ProvCode: '110000',
+  CityCode: '110100',
+  AreaCode: '110105',
+  IsPlatform: false }
+[2018-04-10T11:07:27.735] [INFO] things - 推送网点信息
+[2018-04-10T11:07:27.735] [INFO] things - Address: 朝阳区双龙南里204楼
+[2018-04-10T11:07:27.735] [INFO] things - SName: 茅台云商北京市朝阳区服务网点
+[2018-04-10T11:07:27.735] [INFO] things - DName: 北京朝批商贸股份有限公司
+[2018-04-10T11:07:27.736] [INFO] things - SID: 211110105003
+[2018-04-10T11:07:27.736] [INFO] things - total: 155
+[2018-04-10T11:07:27.737] [INFO] things - limit: 2
+[2018-04-10T11:07:27.737] [INFO] things - 不满足购买条件
+[2018-04-10T11:07:27.738] [INFO] things - {"phone":"18534866149","pass":"a123456","addressId":1962233}
+[2018-04-10T11:07:30.018] [INFO] things - 库存信息 { Sid: '111110105012',
+  Pid: 391,
+  Pcode: '23',
+  CanSale: true,
+  CanLocation: true,
+  Longitude: 116.431369283581,
+  Latitude: 39.9870000637087,
+  LocationCode: '110000',
+  StockCount: 46,
+  QuotasStockCount: 46,
+  LocationDistance: 5606.73044523169,
+  HasSelfDelivery: true,
+  HasOtherDelivery: false,
+  HasCityDelivery: true,
+  IsVirtual: false,
+  IsPlatform: false }
+[2018-04-10T11:07:30.018] [INFO] things - 限购信息 { Sid: '111110105012',
+  Pid: 391,
+  UserOrderCount: 0,
+  LimitCount: 4,
+  LimitTimeCycle: 1440,
+  LimitOrderCount: 1,
+  IsPlatform: false }
+[2018-04-10T11:07:30.019] [INFO] things - 商家信息 { Sid: '111110105012',
+  SName: '茅台云商北京市市辖区朝阳区服务网点',
+  Did: '110105027',
+  DName: '北京宏诚嘉豪贸易有限公司',
+  SHBegin: '09:00:00',
+  SHEnd: '17:30:00',
+  Address: '朝阳区芍药居北里320号楼1层6单元320-16',
+  LinkMan: '赵秀盛',
+  LinkTel: '01084648311  13269806970',
+  InvoiceCost: 0,
+  State: 1,
+  HasPlainInvoice: 1,
+  HasVATInvoice: 0,
+  Description: '',
+  InvoiceCompany: '北京宏诚嘉豪贸易有限公司',
+  Coordinate: 
+   { ProvCode: '110000',
+     CityCode: '110100',
+     AreaCode: '110105',
+     Longitude: 116.437896728516,
+     Latitude: 39.9929809570313 },
+  NetworkType: 0,
+  WorkingDay: '[{"EnDay":"Monday","CnDay":"星期一"},{"EnDay":"Tuesday","CnDay":"星期二"},{"EnDay":"Wednesday","CnDay":"星期三"},{"EnDay":"Thursday","CnDay":"星期四"},{"EnDay":"Friday","CnDay":"星期五"},{"EnDay":"Saturday","CnDay":"星期六"},{"EnDay":"Sunday","CnDay":"星期日"}]',
+  ProvCode: '110000',
+  CityCode: '110100',
+  AreaCode: '110105',
+  IsPlatform: false }
+[2018-04-10T11:07:30.019] [INFO] things - 推送网点信息
+[2018-04-10T11:07:30.019] [INFO] things - Address: 朝阳区芍药居北里320号楼1层6单元320-16
+[2018-04-10T11:07:30.019] [INFO] things - SName: 茅台云商北京市市辖区朝阳区服务网点
+[2018-04-10T11:07:30.020] [INFO] things - DName: 北京宏诚嘉豪贸易有限公司
+[2018-04-10T11:07:30.020] [INFO] things - SID: 111110105012
+[2018-04-10T11:07:30.020] [INFO] things - total: 46
+[2018-04-10T11:07:30.020] [INFO] things - limit: 4
+[2018-04-10T11:07:30.020] [INFO] things - 不满足购买条件
+[2018-04-10T11:07:30.020] [INFO] things - {"phone":"15081664435","pass":"a123456","addressId":1961952}
+[2018-04-10T11:07:31.751] [INFO] things - 库存信息 { Sid: '211110101003',
+  Pid: 391,
+  Pcode: '23',
+  CanSale: true,
+  CanLocation: true,
+  Longitude: 116.438913696078,
+  Latitude: 39.8952184959834,
+  LocationCode: '110000',
+  StockCount: 8,
+  QuotasStockCount: 8,
+  LocationDistance: 675.048655413668,
+  HasSelfDelivery: true,
+  HasOtherDelivery: false,
+  HasCityDelivery: false,
+  IsVirtual: false,
+  IsPlatform: false }
+[2018-04-10T11:07:31.751] [INFO] things - 限购信息 { Sid: '211110101003',
+  Pid: 391,
+  UserOrderCount: 0,
+  LimitCount: 4,
+  LimitTimeCycle: 1440,
+  LimitOrderCount: 1,
+  IsPlatform: false }
+[2018-04-10T11:07:31.751] [INFO] things - 商家信息 { Sid: '211110101003',
+  SName: '茅台云商北京市市辖区东城区服务网点',
+  Did: '110105022',
+  DName: '华致酒行连锁管理股份有限公司',
+  SHBegin: '10:30:00',
+  SHEnd: '17:00:00',
+  Address: '东城区广渠门内白桥大街15号嘉禾国信大厦8楼',
+  LinkMan: '杜若宁',
+  LinkTel: '56969568',
+  InvoiceCost: 0,
+  State: 1,
+  HasPlainInvoice: 1,
+  HasVATInvoice: 0,
+  Description: '特别提示：4月5日--7日根据国家法定假日安排，我司三日全天放假。请悉知，感谢。根据相关规定，所有出售货品，必须开箱，不便之处敬请谅解。自提时间为每周一至周三10：30-17：00，中午12：00-1：30午休，备注：我们这里是经销商公司不是店铺，国家法定节假日均休息，周末不取货。请至少提前2小时致电咨询取货时间,提供订单号、取货码。付款之后7天内自提，7天后系统会默认关闭订单。特别提醒：取货时请您携带与订单上姓名一致的身份证复印件要求正反面在一张纸上。',
+  InvoiceCompany: '华致酒行连锁管理股份有限公司',
+  Coordinate: 
+   { ProvCode: '110000',
+     CityCode: '110100',
+     AreaCode: '110101',
+     Longitude: 116.445472717285,
+     Latitude: 39.9010620117188 },
+  NetworkType: 0,
+  WorkingDay: '[{"EnDay":"Monday","CnDay":"星期一"},{"EnDay":"Tuesday","CnDay":"星期二"},{"EnDay":"Wednesday","CnDay":"星期三"}]',
+  ProvCode: '110000',
+  CityCode: '110100',
+  AreaCode: '110101',
+  IsPlatform: false }
+[2018-04-10T11:07:31.752] [INFO] things - 推送网点信息
+[2018-04-10T11:07:31.752] [INFO] things - Address: 东城区广渠门内白桥大街15号嘉禾国信大厦8楼
+[2018-04-10T11:07:31.752] [INFO] things - SName: 茅台云商北京市市辖区东城区服务网点
+[2018-04-10T11:07:31.752] [INFO] things - DName: 华致酒行连锁管理股份有限公司
+[2018-04-10T11:07:31.752] [INFO] things - SID: 211110101003
+[2018-04-10T11:07:31.752] [INFO] things - total: 8
+[2018-04-10T11:07:31.752] [INFO] things - limit: 4
+[2018-04-10T11:07:31.752] [INFO] things - 不满足购买条件
+[2018-04-10T11:07:31.752] [INFO] things - {"phone":"18232902912","pass":"108108li","addressId":1679931}
+[2018-04-10T11:07:33.816] [INFO] things - 库存信息 { Sid: '111110105012',
+  Pid: 391,
+  Pcode: '23',
+  CanSale: true,
+  CanLocation: true,
+  Longitude: 116.431369283581,
+  Latitude: 39.9870000637087,
+  LocationCode: '110000',
+  StockCount: 46,
+  QuotasStockCount: 46,
+  LocationDistance: 2675.74252089612,
+  HasSelfDelivery: true,
+  HasOtherDelivery: false,
+  HasCityDelivery: true,
+  IsVirtual: false,
+  IsPlatform: false }
+[2018-04-10T11:07:33.816] [INFO] things - 限购信息 { Sid: '111110105012',
+  Pid: 391,
+  UserOrderCount: 0,
+  LimitCount: 4,
+  LimitTimeCycle: 1440,
+  LimitOrderCount: 1,
+  IsPlatform: false }
+[2018-04-10T11:07:33.816] [INFO] things - 商家信息 { Sid: '111110105012',
+  SName: '茅台云商北京市市辖区朝阳区服务网点',
+  Did: '110105027',
+  DName: '北京宏诚嘉豪贸易有限公司',
+  SHBegin: '09:00:00',
+  SHEnd: '17:30:00',
+  Address: '朝阳区芍药居北里320号楼1层6单元320-16',
+  LinkMan: '赵秀盛',
+  LinkTel: '01084648311  13269806970',
+  InvoiceCost: 0,
+  State: 1,
+  HasPlainInvoice: 1,
+  HasVATInvoice: 0,
+  Description: '',
+  InvoiceCompany: '北京宏诚嘉豪贸易有限公司',
+  Coordinate: 
+   { ProvCode: '110000',
+     CityCode: '110100',
+     AreaCode: '110105',
+     Longitude: 116.437896728516,
+     Latitude: 39.9929809570313 },
+  NetworkType: 0,
+  WorkingDay: '[{"EnDay":"Monday","CnDay":"星期一"},{"EnDay":"Tuesday","CnDay":"星期二"},{"EnDay":"Wednesday","CnDay":"星期三"},{"EnDay":"Thursday","CnDay":"星期四"},{"EnDay":"Friday","CnDay":"星期五"},{"EnDay":"Saturday","CnDay":"星期六"},{"EnDay":"Sunday","CnDay":"星期日"}]',
+  ProvCode: '110000',
+  CityCode: '110100',
+  AreaCode: '110105',
+  IsPlatform: false }
+[2018-04-10T11:07:33.822] [INFO] things - 推送网点信息
+[2018-04-10T11:07:33.822] [INFO] things - Address: 朝阳区芍药居北里320号楼1层6单元320-16
+[2018-04-10T11:07:33.822] [INFO] things - SName: 茅台云商北京市市辖区朝阳区服务网点
+[2018-04-10T11:07:33.822] [INFO] things - DName: 北京宏诚嘉豪贸易有限公司
+[2018-04-10T11:07:33.822] [INFO] things - SID: 111110105012
+[2018-04-10T11:07:33.822] [INFO] things - total: 46
+[2018-04-10T11:07:33.822] [INFO] things - limit: 4
+[2018-04-10T11:07:33.822] [INFO] things - 不满足购买条件
+[2018-04-10T11:07:33.822] [INFO] things - {"phone":"15121952364","pass":"a123456","addressId":1961957}
+[2018-04-10T11:07:35.546] [INFO] things - 库存信息 { Sid: '111110101003',
+  Pid: 391,
+  Pcode: '23',
+  CanSale: true,
+  CanLocation: true,
+  Longitude: 116.406365112649,
+  Latitude: 39.9203145069891,
+  LocationCode: '110000',
+  StockCount: 36,
+  QuotasStockCount: 36,
+  LocationDistance: 2517.2809645223,
+  HasSelfDelivery: true,
+  HasOtherDelivery: false,
+  HasCityDelivery: false,
+  IsVirtual: false,
+  IsPlatform: false }
+[2018-04-10T11:07:35.547] [INFO] things - 限购信息 { Sid: '111110101003',
+  Pid: 391,
+  UserOrderCount: 0,
+  LimitCount: 4,
+  LimitTimeCycle: 1440,
+  LimitOrderCount: 1,
+  IsPlatform: false }
+[2018-04-10T11:07:35.547] [INFO] things - 商家信息 { Sid: '111110101003',
+  SName: '茅台云商北京市东城区服务网点',
+  Did: '110101021',
+  DName: '北京鸿泰达源科贸有限公司',
+  SHBegin: '09:00:00',
+  SHEnd: '17:00:00',
+  Address: '东城区骑河楼街5号楼5-7国酒茅台',
+  LinkMan: '李建军',
+  LinkTel: '010-85118518 15010271925',
+  InvoiceCost: 0,
+  State: 1,
+  HasPlainInvoice: 1,
+  HasVATInvoice: 0,
+  Description: '',
+  InvoiceCompany: '北京鸿泰达源科贸有限公司',
+  Coordinate: 
+   { ProvCode: '110000',
+     CityCode: '110100',
+     AreaCode: '110101',
+     Longitude: 116.412734985352,
+     Latitude: 39.9266395568848 },
+  NetworkType: 0,
+  WorkingDay: '[{"EnDay":"Monday","CnDay":"星期一"},{"EnDay":"Tuesday","CnDay":"星期二"},{"EnDay":"Wednesday","CnDay":"星期三"},{"EnDay":"Thursday","CnDay":"星期四"},{"EnDay":"Friday","CnDay":"星期五"},{"EnDay":"Saturday","CnDay":"星期六"},{"EnDay":"Sunday","CnDay":"星期日"}]',
+  ProvCode: '110000',
+  CityCode: '110100',
+  AreaCode: '110101',
+  IsPlatform: false }
+[2018-04-10T11:07:35.547] [INFO] things - 推送网点信息
+[2018-04-10T11:07:35.547] [INFO] things - Address: 东城区骑河楼街5号楼5-7国酒茅台
+[2018-04-10T11:07:35.547] [INFO] things - SName: 茅台云商北京市东城区服务网点
+[2018-04-10T11:07:35.547] [INFO] things - DName: 北京鸿泰达源科贸有限公司
+[2018-04-10T11:07:35.547] [INFO] things - SID: 111110101003
+[2018-04-10T11:07:35.548] [INFO] things - total: 36
+[2018-04-10T11:07:35.548] [INFO] things - limit: 4
+[2018-04-10T11:07:35.548] [INFO] things - 不满足购买条件
+[2018-04-10T11:07:35.548] [INFO] things - {"phone":"15830750275","pass":"a123456","addressId":1951732}
+[2018-04-10T11:07:37.660] [INFO] things - 库存信息 { Sid: '211110105003',
+  Pid: 391,
+  Pcode: '23',
+  CanSale: true,
+  CanLocation: true,
+  Longitude: 116.47831425038,
+  Latitude: 39.8701313444617,
+  LocationCode: '110000',
+  StockCount: 155,
+  QuotasStockCount: 155,
+  LocationDistance: 7222.71291431373,
+  HasSelfDelivery: true,
+  HasOtherDelivery: false,
+  HasCityDelivery: false,
+  IsVirtual: false,
+  IsPlatform: false }
+[2018-04-10T11:07:37.661] [INFO] things - 限购信息 { Sid: '211110105003',
+  Pid: 391,
+  UserOrderCount: 0,
+  LimitCount: 2,
+  LimitTimeCycle: 1440,
+  LimitOrderCount: 1,
+  IsPlatform: false }
+[2018-04-10T11:07:37.661] [INFO] things - 商家信息 { Sid: '211110105003',
+  SName: '茅台云商北京市朝阳区服务网点',
+  Did: '110105005',
+  DName: '北京朝批商贸股份有限公司',
+  SHBegin: '08:30:00',
+  SHEnd: '17:00:00',
+  Address: '朝阳区双龙南里204楼',
+  LinkMan: '李媛',
+  LinkTel: '15811069131 18601981996 周一到周五工作日提货 请提前电话联系',
+  InvoiceCost: 0,
+  State: 1,
+  HasPlainInvoice: 1,
+  HasVATInvoice: 0,
+  Description: '每周一至周五工作日8：30-17:00可上门自提，其中12：00到13:30休息！周一到周五工作日支持提货 请提前电话联系',
+  InvoiceCompany: '北京朝批商贸股份有限公司',
+  Coordinate: 
+   { ProvCode: '110000',
+     CityCode: '110100',
+     AreaCode: '110105',
+     Longitude: 116.484901428223,
+     Latitude: 39.8759384155273 },
+  NetworkType: 0,
+  WorkingDay: '[{"EnDay":"Monday","CnDay":"星期一"},{"EnDay":"Tuesday","CnDay":"星期二"},{"EnDay":"Wednesday","CnDay":"星期三"},{"EnDay":"Thursday","CnDay":"星期四"},{"EnDay":"Friday","CnDay":"星期五"}]',
+  ProvCode: '110000',
+  CityCode: '110100',
+  AreaCode: '110105',
+  IsPlatform: false }
+[2018-04-10T11:07:37.662] [INFO] things - 推送网点信息
+[2018-04-10T11:07:37.662] [INFO] things - Address: 朝阳区双龙南里204楼
+[2018-04-10T11:07:37.662] [INFO] things - SName: 茅台云商北京市朝阳区服务网点
+[2018-04-10T11:07:37.662] [INFO] things - DName: 北京朝批商贸股份有限公司
+[2018-04-10T11:07:37.662] [INFO] things - SID: 211110105003
+[2018-04-10T11:07:37.662] [INFO] things - total: 155
+[2018-04-10T11:07:37.662] [INFO] things - limit: 2
+[2018-04-10T11:07:37.662] [INFO] things - 不满足购买条件
+[2018-04-10T11:07:37.663] [INFO] things - {"phone":"15264711296","pass":"123456","addressId":1935812}
+[2018-04-10T11:07:46.538] [INFO] things - 库存信息 { Sid: '211110105003',
+  Pid: 391,
+  Pcode: '23',
+  CanSale: true,
+  CanLocation: true,
+  Longitude: 116.47831425038,
+  Latitude: 39.8701313444617,
+  LocationCode: '110000',
+  StockCount: 155,
+  QuotasStockCount: 155,
+  LocationDistance: 6114.2002751451,
+  HasSelfDelivery: true,
+  HasOtherDelivery: false,
+  HasCityDelivery: false,
+  IsVirtual: false,
+  IsPlatform: false }
+[2018-04-10T11:07:46.538] [INFO] things - 限购信息 { Sid: '211110105003',
+  Pid: 391,
+  UserOrderCount: 0,
+  LimitCount: 2,
+  LimitTimeCycle: 1440,
+  LimitOrderCount: 1,
+  IsPlatform: false }
+[2018-04-10T11:07:46.539] [INFO] things - 商家信息 { Sid: '211110105003',
+  SName: '茅台云商北京市朝阳区服务网点',
+  Did: '110105005',
+  DName: '北京朝批商贸股份有限公司',
+  SHBegin: '08:30:00',
+  SHEnd: '17:00:00',
+  Address: '朝阳区双龙南里204楼',
+  LinkMan: '李媛',
+  LinkTel: '15811069131 18601981996 周一到周五工作日提货 请提前电话联系',
+  InvoiceCost: 0,
+  State: 1,
+  HasPlainInvoice: 1,
+  HasVATInvoice: 0,
+  Description: '每周一至周五工作日8：30-17:00可上门自提，其中12：00到13:30休息！周一到周五工作日支持提货 请提前电话联系',
+  InvoiceCompany: '北京朝批商贸股份有限公司',
+  Coordinate: 
+   { ProvCode: '110000',
+     CityCode: '110100',
+     AreaCode: '110105',
+     Longitude: 116.484901428223,
+     Latitude: 39.8759384155273 },
+  NetworkType: 0,
+  WorkingDay: '[{"EnDay":"Monday","CnDay":"星期一"},{"EnDay":"Tuesday","CnDay":"星期二"},{"EnDay":"Wednesday","CnDay":"星期三"},{"EnDay":"Thursday","CnDay":"星期四"},{"EnDay":"Friday","CnDay":"星期五"}]',
+  ProvCode: '110000',
+  CityCode: '110100',
+  AreaCode: '110105',
+  IsPlatform: false }
+[2018-04-10T11:07:46.539] [INFO] things - 推送网点信息
+[2018-04-10T11:07:46.539] [INFO] things - Address: 朝阳区双龙南里204楼
+[2018-04-10T11:07:46.539] [INFO] things - SName: 茅台云商北京市朝阳区服务网点
+[2018-04-10T11:07:46.539] [INFO] things - DName: 北京朝批商贸股份有限公司
+[2018-04-10T11:07:46.539] [INFO] things - SID: 211110105003
+[2018-04-10T11:07:46.539] [INFO] things - total: 155
+[2018-04-10T11:07:46.540] [INFO] things - limit: 2
+[2018-04-10T11:07:46.540] [INFO] things - 不满足购买条件
+[2018-04-10T11:07:46.540] [INFO] things - {"phone":"15257918657","pass":"a123456","addressId":1962220}
+[2018-04-10T11:07:48.665] [INFO] things - 库存信息 { Sid: '211110105003',
+  Pid: 391,
+  Pcode: '23',
+  CanSale: true,
+  CanLocation: true,
+  Longitude: 116.47831425038,
+  Latitude: 39.8701313444617,
+  LocationCode: '110000',
+  StockCount: 155,
+  QuotasStockCount: 155,
+  LocationDistance: 4048.70944754653,
+  HasSelfDelivery: true,
+  HasOtherDelivery: false,
+  HasCityDelivery: false,
+  IsVirtual: false,
+  IsPlatform: false }
+[2018-04-10T11:07:48.665] [INFO] things - 限购信息 { Sid: '211110105003',
+  Pid: 391,
+  UserOrderCount: 0,
+  LimitCount: 2,
+  LimitTimeCycle: 1440,
+  LimitOrderCount: 1,
+  IsPlatform: false }
+[2018-04-10T11:07:48.665] [INFO] things - 商家信息 { Sid: '211110105003',
+  SName: '茅台云商北京市朝阳区服务网点',
+  Did: '110105005',
+  DName: '北京朝批商贸股份有限公司',
+  SHBegin: '08:30:00',
+  SHEnd: '17:00:00',
+  Address: '朝阳区双龙南里204楼',
+  LinkMan: '李媛',
+  LinkTel: '15811069131 18601981996 周一到周五工作日提货 请提前电话联系',
+  InvoiceCost: 0,
+  State: 1,
+  HasPlainInvoice: 1,
+  HasVATInvoice: 0,
+  Description: '每周一至周五工作日8：30-17:00可上门自提，其中12：00到13:30休息！周一到周五工作日支持提货 请提前电话联系',
+  InvoiceCompany: '北京朝批商贸股份有限公司',
+  Coordinate: 
+   { ProvCode: '110000',
+     CityCode: '110100',
+     AreaCode: '110105',
+     Longitude: 116.484901428223,
+     Latitude: 39.8759384155273 },
+  NetworkType: 0,
+  WorkingDay: '[{"EnDay":"Monday","CnDay":"星期一"},{"EnDay":"Tuesday","CnDay":"星期二"},{"EnDay":"Wednesday","CnDay":"星期三"},{"EnDay":"Thursday","CnDay":"星期四"},{"EnDay":"Friday","CnDay":"星期五"}]',
+  ProvCode: '110000',
+  CityCode: '110100',
+  AreaCode: '110105',
+  IsPlatform: false }
+[2018-04-10T11:07:48.666] [INFO] things - 推送网点信息
+[2018-04-10T11:07:48.666] [INFO] things - Address: 朝阳区双龙南里204楼
+[2018-04-10T11:07:48.666] [INFO] things - SName: 茅台云商北京市朝阳区服务网点
+[2018-04-10T11:07:48.666] [INFO] things - DName: 北京朝批商贸股份有限公司
+[2018-04-10T11:07:48.666] [INFO] things - SID: 211110105003
+[2018-04-10T11:07:48.666] [INFO] things - total: 155
+[2018-04-10T11:07:48.666] [INFO] things - limit: 2
+[2018-04-10T11:07:48.666] [INFO] things - 不满足购买条件
+[2018-04-10T11:07:48.666] [INFO] things - {"phone":"15035399985","pass":"a123456","addressId":1962205}
+[2018-04-10T11:07:50.626] [INFO] things - 库存信息 { Sid: '141410100008',
+  Pid: 391,
+  Pcode: '23',
+  CanSale: true,
+  CanLocation: true,
+  Longitude: 116.558943173006,
+  Latitude: 39.96092863374,
+  LocationCode: '110000',
+  StockCount: 18,
+  QuotasStockCount: 18,
+  LocationDistance: 3454.97030228788,
+  HasSelfDelivery: true,
+  HasOtherDelivery: false,
+  HasCityDelivery: false,
+  IsVirtual: false,
+  IsPlatform: false }
+[2018-04-10T11:07:50.627] [INFO] things - 限购信息 { Sid: '141410100008',
+  Pid: 391,
+  UserOrderCount: 0,
+  LimitCount: 4,
+  LimitTimeCycle: 1440,
+  LimitOrderCount: 1,
+  IsPlatform: false }
+[2018-04-10T11:07:50.627] [INFO] things - 商家信息 { Sid: '141410100008',
+  SName: '茅台云商北京市朝阳区服务网点',
+  Did: '410186002',
+  DName: '尚郡（北京）商贸有限公司',
+  SHBegin: '09:00:00',
+  SHEnd: '17:30:00',
+  Address: '朝阳区和敬路2号院3号楼3-2',
+  LinkMan: '李安良',
+  LinkTel: '010-65726529',
+  InvoiceCost: 0,
+  State: 1,
+  HasPlainInvoice: 1,
+  HasVATInvoice: 1,
+  Description: '1、16:00前下单，当日配送；16:00后下单，次日配送；\r\n2、若因特殊原因或不可抗力造成配送不及时敬请您的谅解！查询电话：010-65726529；\r\n3、国酒茅台专卖店地址：北京市朝阳区和敬路2号院3号楼1层3-2',
+  InvoiceCompany: '尚郡（北京）商贸有限公司',
+  Coordinate: 
+   { ProvCode: '110000',
+     CityCode: '110100',
+     AreaCode: '110105',
+     Longitude: 116.565498352051,
+     Latitude: 39.9667701721191 },
+  NetworkType: 0,
+  WorkingDay: '[{"EnDay":"Monday","CnDay":"星期一"},{"EnDay":"Tuesday","CnDay":"星期二"},{"EnDay":"Wednesday","CnDay":"星期三"},{"EnDay":"Thursday","CnDay":"星期四"},{"EnDay":"Friday","CnDay":"星期五"},{"EnDay":"Saturday","CnDay":"星期六"},{"EnDay":"Sunday","CnDay":"星期日"}]',
+  ProvCode: '110000',
+  CityCode: '110100',
+  AreaCode: '110105',
+  IsPlatform: false }
+[2018-04-10T11:07:50.627] [INFO] things - 推送网点信息
+[2018-04-10T11:07:50.627] [INFO] things - Address: 朝阳区和敬路2号院3号楼3-2
+[2018-04-10T11:07:50.628] [INFO] things - SName: 茅台云商北京市朝阳区服务网点
+[2018-04-10T11:07:50.628] [INFO] things - DName: 尚郡（北京）商贸有限公司
+[2018-04-10T11:07:50.628] [INFO] things - SID: 141410100008
+[2018-04-10T11:07:50.630] [INFO] things - total: 18
+[2018-04-10T11:07:50.630] [INFO] things - limit: 4
+[2018-04-10T11:07:50.630] [INFO] things - 不满足购买条件
+[2018-04-10T11:07:50.630] [INFO] things - {"phone":"15627944858","pass":"123456","addressId":1894176}
+[2018-04-10T11:07:52.480] [INFO] things - 库存信息 { Sid: '211110105007',
+  Pid: 391,
+  Pcode: '23',
+  CanSale: true,
+  CanLocation: true,
+  Longitude: 116.452533547945,
+  Latitude: 39.9180806901557,
+  LocationCode: '110000',
+  StockCount: 6,
+  QuotasStockCount: 6,
+  LocationDistance: 1843.10709710323,
+  HasSelfDelivery: true,
+  HasOtherDelivery: false,
+  HasCityDelivery: false,
+  IsVirtual: false,
+  IsPlatform: false }
+[2018-04-10T11:07:52.480] [INFO] things - 限购信息 { Sid: '211110105007',
+  Pid: 391,
+  UserOrderCount: 0,
+  LimitCount: 2,
+  LimitTimeCycle: 1440,
+  LimitOrderCount: 1,
+  IsPlatform: false }
+[2018-04-10T11:07:52.480] [INFO] things - 商家信息 { Sid: '211110105007',
+  SName: '茅台云商北京市朝阳区服务网点',
+  Did: '110105030',
+  DName: '北京志联华信商贸有限公司',
+  SHBegin: '09:30:00',
+  SHEnd: '17:00:00',
+  Address: '朝阳区金汇路10号楼世界城Ａ座506室',
+  LinkMan: '万蓓',
+  LinkTel: '010-85907515　18610312228',
+  InvoiceCost: 0,
+  State: 1,
+  HasPlainInvoice: 1,
+  HasVATInvoice: 0,
+  Description: '周一至周五自提取货时间10:00-16:00，周末休息。\r\n本公司发票已用完，暂无法提供。急需发票者，请慎拍！',
+  InvoiceCompany: '北京志联华信商贸有限公司',
+  Coordinate: 
+   { ProvCode: '110000',
+     CityCode: '110100',
+     AreaCode: '110105',
+     Longitude: 116.459129333496,
+     Latitude: 39.9237518310547 },
+  NetworkType: 0,
+  WorkingDay: '[{"EnDay":"Monday","CnDay":"星期一"},{"EnDay":"Tuesday","CnDay":"星期二"},{"EnDay":"Wednesday","CnDay":"星期三"},{"EnDay":"Thursday","CnDay":"星期四"},{"EnDay":"Friday","CnDay":"星期五"}]',
+  ProvCode: '110000',
+  CityCode: '110100',
+  AreaCode: '110105',
+  IsPlatform: false }
+[2018-04-10T11:07:52.481] [INFO] things - 推送网点信息
+[2018-04-10T11:07:52.481] [INFO] things - Address: 朝阳区金汇路10号楼世界城Ａ座506室
+[2018-04-10T11:07:52.481] [INFO] things - SName: 茅台云商北京市朝阳区服务网点
+[2018-04-10T11:07:52.481] [INFO] things - DName: 北京志联华信商贸有限公司
+[2018-04-10T11:07:52.481] [INFO] things - SID: 211110105007
+[2018-04-10T11:07:52.481] [INFO] things - total: 6
+[2018-04-10T11:07:52.481] [INFO] things - limit: 2
+[2018-04-10T11:07:52.481] [INFO] things - 不满足购买条件
+[2018-04-10T11:07:52.481] [INFO] things - {"phone":"17612746321","pass":"123456321654","addressId":1935820}
+[2018-04-10T11:07:54.511] [INFO] things - 库存信息 { Sid: '111110101003',
+  Pid: 391,
+  Pcode: '23',
+  CanSale: true,
+  CanLocation: true,
+  Longitude: 116.406365112649,
+  Latitude: 39.9203145069891,
+  LocationCode: '110000',
+  StockCount: 36,
+  QuotasStockCount: 36,
+  LocationDistance: 1236.27007235536,
+  HasSelfDelivery: true,
+  HasOtherDelivery: false,
+  HasCityDelivery: false,
+  IsVirtual: false,
+  IsPlatform: false }
+[2018-04-10T11:07:54.512] [INFO] things - 限购信息 { Sid: '111110101003',
+  Pid: 391,
+  UserOrderCount: 0,
+  LimitCount: 4,
+  LimitTimeCycle: 1440,
+  LimitOrderCount: 1,
+  IsPlatform: false }
+[2018-04-10T11:07:54.512] [INFO] things - 商家信息 { Sid: '111110101003',
+  SName: '茅台云商北京市东城区服务网点',
+  Did: '110101021',
+  DName: '北京鸿泰达源科贸有限公司',
+  SHBegin: '09:00:00',
+  SHEnd: '17:00:00',
+  Address: '东城区骑河楼街5号楼5-7国酒茅台',
+  LinkMan: '李建军',
+  LinkTel: '010-85118518 15010271925',
+  InvoiceCost: 0,
+  State: 1,
+  HasPlainInvoice: 1,
+  HasVATInvoice: 0,
+  Description: '',
+  InvoiceCompany: '北京鸿泰达源科贸有限公司',
+  Coordinate: 
+   { ProvCode: '110000',
+     CityCode: '110100',
+     AreaCode: '110101',
+     Longitude: 116.412734985352,
+     Latitude: 39.9266395568848 },
+  NetworkType: 0,
+  WorkingDay: '[{"EnDay":"Monday","CnDay":"星期一"},{"EnDay":"Tuesday","CnDay":"星期二"},{"EnDay":"Wednesday","CnDay":"星期三"},{"EnDay":"Thursday","CnDay":"星期四"},{"EnDay":"Friday","CnDay":"星期五"},{"EnDay":"Saturday","CnDay":"星期六"},{"EnDay":"Sunday","CnDay":"星期日"}]',
+  ProvCode: '110000',
+  CityCode: '110100',
+  AreaCode: '110101',
+  IsPlatform: false }
+[2018-04-10T11:07:54.512] [INFO] things - 推送网点信息
+[2018-04-10T11:07:54.512] [INFO] things - Address: 东城区骑河楼街5号楼5-7国酒茅台
+[2018-04-10T11:07:54.512] [INFO] things - SName: 茅台云商北京市东城区服务网点
+[2018-04-10T11:07:54.512] [INFO] things - DName: 北京鸿泰达源科贸有限公司
+[2018-04-10T11:07:54.512] [INFO] things - SID: 111110101003
+[2018-04-10T11:07:54.513] [INFO] things - total: 36
+[2018-04-10T11:07:54.513] [INFO] things - limit: 4
+[2018-04-10T11:07:54.513] [INFO] things - 不满足购买条件
+[2018-04-10T11:07:54.513] [INFO] things - {"phone":"18967839427","pass":"123456","addressId":1894367}
+[2018-04-10T11:07:56.639] [INFO] things - 库存信息 { Sid: '211110105003',
+  Pid: 391,
+  Pcode: '23',
+  CanSale: true,
+  CanLocation: true,
+  Longitude: 116.47831425038,
+  Latitude: 39.8701313444617,
+  LocationCode: '110000',
+  StockCount: 155,
+  QuotasStockCount: 155,
+  LocationDistance: 2061.71421481664,
+  HasSelfDelivery: true,
+  HasOtherDelivery: false,
+  HasCityDelivery: false,
+  IsVirtual: false,
+  IsPlatform: false }
+[2018-04-10T11:07:56.640] [INFO] things - 限购信息 { Sid: '211110105003',
+  Pid: 391,
+  UserOrderCount: 0,
+  LimitCount: 2,
+  LimitTimeCycle: 1440,
+  LimitOrderCount: 1,
+  IsPlatform: false }
+[2018-04-10T11:07:56.640] [INFO] things - 商家信息 { Sid: '211110105003',
+  SName: '茅台云商北京市朝阳区服务网点',
+  Did: '110105005',
+  DName: '北京朝批商贸股份有限公司',
+  SHBegin: '08:30:00',
+  SHEnd: '17:00:00',
+  Address: '朝阳区双龙南里204楼',
+  LinkMan: '李媛',
+  LinkTel: '15811069131 18601981996 周一到周五工作日提货 请提前电话联系',
+  InvoiceCost: 0,
+  State: 1,
+  HasPlainInvoice: 1,
+  HasVATInvoice: 0,
+  Description: '每周一至周五工作日8：30-17:00可上门自提，其中12：00到13:30休息！周一到周五工作日支持提货 请提前电话联系',
+  InvoiceCompany: '北京朝批商贸股份有限公司',
+  Coordinate: 
+   { ProvCode: '110000',
+     CityCode: '110100',
+     AreaCode: '110105',
+     Longitude: 116.484901428223,
+     Latitude: 39.8759384155273 },
+  NetworkType: 0,
+  WorkingDay: '[{"EnDay":"Monday","CnDay":"星期一"},{"EnDay":"Tuesday","CnDay":"星期二"},{"EnDay":"Wednesday","CnDay":"星期三"},{"EnDay":"Thursday","CnDay":"星期四"},{"EnDay":"Friday","CnDay":"星期五"}]',
+  ProvCode: '110000',
+  CityCode: '110100',
+  AreaCode: '110105',
+  IsPlatform: false }
+[2018-04-10T11:07:56.640] [INFO] things - 推送网点信息
+[2018-04-10T11:07:56.640] [INFO] things - Address: 朝阳区双龙南里204楼
+[2018-04-10T11:07:56.640] [INFO] things - SName: 茅台云商北京市朝阳区服务网点
+[2018-04-10T11:07:56.640] [INFO] things - DName: 北京朝批商贸股份有限公司
+[2018-04-10T11:07:56.640] [INFO] things - SID: 211110105003
+[2018-04-10T11:07:56.640] [INFO] things - total: 155
+[2018-04-10T11:07:56.641] [INFO] things - limit: 2
+[2018-04-10T11:07:56.641] [INFO] things - 不满足购买条件
+[2018-04-10T11:07:56.641] [INFO] things - {"phone":"15505201939","pass":"a123456","addressId":1962224}
+[2018-04-10T11:07:58.404] [INFO] things - 库存信息 { Sid: '111110101003',
+  Pid: 391,
+  Pcode: '23',
+  CanSale: true,
+  CanLocation: true,
+  Longitude: 116.406365112649,
+  Latitude: 39.9203145069891,
+  LocationCode: '110000',
+  StockCount: 36,
+  QuotasStockCount: 36,
+  LocationDistance: 1236.27007235536,
+  HasSelfDelivery: true,
+  HasOtherDelivery: false,
+  HasCityDelivery: false,
+  IsVirtual: false,
+  IsPlatform: false }
+[2018-04-10T11:07:58.404] [INFO] things - 限购信息 { Sid: '111110101003',
+  Pid: 391,
+  UserOrderCount: 0,
+  LimitCount: 4,
+  LimitTimeCycle: 1440,
+  LimitOrderCount: 1,
+  IsPlatform: false }
+[2018-04-10T11:07:58.404] [INFO] things - 商家信息 { Sid: '111110101003',
+  SName: '茅台云商北京市东城区服务网点',
+  Did: '110101021',
+  DName: '北京鸿泰达源科贸有限公司',
+  SHBegin: '09:00:00',
+  SHEnd: '17:00:00',
+  Address: '东城区骑河楼街5号楼5-7国酒茅台',
+  LinkMan: '李建军',
+  LinkTel: '010-85118518 15010271925',
+  InvoiceCost: 0,
+  State: 1,
+  HasPlainInvoice: 1,
+  HasVATInvoice: 0,
+  Description: '',
+  InvoiceCompany: '北京鸿泰达源科贸有限公司',
+  Coordinate: 
+   { ProvCode: '110000',
+     CityCode: '110100',
+     AreaCode: '110101',
+     Longitude: 116.412734985352,
+     Latitude: 39.9266395568848 },
+  NetworkType: 0,
+  WorkingDay: '[{"EnDay":"Monday","CnDay":"星期一"},{"EnDay":"Tuesday","CnDay":"星期二"},{"EnDay":"Wednesday","CnDay":"星期三"},{"EnDay":"Thursday","CnDay":"星期四"},{"EnDay":"Friday","CnDay":"星期五"},{"EnDay":"Saturday","CnDay":"星期六"},{"EnDay":"Sunday","CnDay":"星期日"}]',
+  ProvCode: '110000',
+  CityCode: '110100',
+  AreaCode: '110101',
+  IsPlatform: false }
+[2018-04-10T11:07:58.404] [INFO] things - 推送网点信息
+[2018-04-10T11:07:58.405] [INFO] things - Address: 东城区骑河楼街5号楼5-7国酒茅台
+[2018-04-10T11:07:58.405] [INFO] things - SName: 茅台云商北京市东城区服务网点
+[2018-04-10T11:07:58.405] [INFO] things - DName: 北京鸿泰达源科贸有限公司
+[2018-04-10T11:07:58.405] [INFO] things - SID: 111110101003
+[2018-04-10T11:07:58.405] [INFO] things - total: 36
+[2018-04-10T11:07:58.405] [INFO] things - limit: 4
+[2018-04-10T11:07:58.405] [INFO] things - 不满足购买条件
+[2018-04-10T11:07:58.405] [INFO] things - {"phone":"17757449525","pass":"123456","addressId":1894480}
+[2018-04-10T11:08:00.333] [INFO] things - 库存信息 { Sid: '211110105015',
+  Pid: 391,
+  Pcode: '23',
+  CanSale: true,
+  CanLocation: true,
+  Longitude: 116.253538731229,
+  Latitude: 39.8590198171251,
+  LocationCode: '110000',
+  StockCount: 18,
+  QuotasStockCount: 18,
+  LocationDistance: 30281.5272875289,
+  HasSelfDelivery: true,
+  HasOtherDelivery: true,
+  HasCityDelivery: true,
+  IsVirtual: false,
+  IsPlatform: false }
+[2018-04-10T11:08:00.333] [INFO] things - 限购信息 { Sid: '211110105015',
+  Pid: 391,
+  UserOrderCount: 0,
+  LimitCount: 5,
+  LimitTimeCycle: 1440,
+  LimitOrderCount: 1,
+  IsPlatform: false }
+[2018-04-10T11:08:00.334] [INFO] things - 商家信息 { Sid: '211110105015',
+  SName: '茅台云商北京市丰台区服务网点',
+  Did: '110106018',
+  DName: '北京诚实文祥商贸有限公司',
+  SHBegin: '09:00:00',
+  SHEnd: '16:30:00',
+  Address: '丰台区五里店259号11号平房',
+  LinkMan: '张文',
+  LinkTel: '010-63269967 13501121907',
+  InvoiceCost: 0,
+  State: 1,
+  HasPlainInvoice: 1,
+  HasVATInvoice: 0,
+  Description: '',
+  InvoiceCompany: '北京诚实文祥商贸有限公司',
+  Coordinate: 
+   { ProvCode: '110000',
+     CityCode: '110100',
+     AreaCode: '110106',
+     Longitude: 116.260032653809,
+     Latitude: 39.8650894165039 },
+  NetworkType: 0,
+  WorkingDay: '[{"EnDay":"Monday","CnDay":"星期一"},{"EnDay":"Tuesday","CnDay":"星期二"},{"EnDay":"Wednesday","CnDay":"星期三"},{"EnDay":"Thursday","CnDay":"星期四"},{"EnDay":"Friday","CnDay":"星期五"}]',
+  ProvCode: '110000',
+  CityCode: '110100',
+  AreaCode: '110106',
+  IsPlatform: false }
+[2018-04-10T11:08:00.334] [INFO] things - 推送网点信息
+[2018-04-10T11:08:00.334] [INFO] things - Address: 丰台区五里店259号11号平房
+[2018-04-10T11:08:00.334] [INFO] things - SName: 茅台云商北京市丰台区服务网点
+[2018-04-10T11:08:00.334] [INFO] things - DName: 北京诚实文祥商贸有限公司
+[2018-04-10T11:08:00.335] [INFO] things - SID: 211110105015
+[2018-04-10T11:08:00.336] [INFO] things - total: 18
+[2018-04-10T11:08:00.336] [INFO] things - limit: 5
+[2018-04-10T11:08:00.336] [INFO] things - 不满足购买条件
+[2018-04-10T11:08:00.336] [INFO] things - {"phone":"13895490886","pass":"a123456","addressId":1961951}
+[2018-04-10T11:08:02.201] [INFO] things - 库存信息 { Sid: '111110101003',
+  Pid: 391,
+  Pcode: '23',
+  CanSale: true,
+  CanLocation: true,
+  Longitude: 116.406365112649,
+  Latitude: 39.9203145069891,
+  LocationCode: '110000',
+  StockCount: 36,
+  QuotasStockCount: 36,
+  LocationDistance: 2517.2809645223,
+  HasSelfDelivery: true,
+  HasOtherDelivery: false,
+  HasCityDelivery: false,
+  IsVirtual: false,
+  IsPlatform: false }
+[2018-04-10T11:08:02.201] [INFO] things - 限购信息 { Sid: '111110101003',
+  Pid: 391,
+  UserOrderCount: 0,
+  LimitCount: 4,
+  LimitTimeCycle: 1440,
+  LimitOrderCount: 1,
+  IsPlatform: false }
+[2018-04-10T11:08:02.202] [INFO] things - 商家信息 { Sid: '111110101003',
+  SName: '茅台云商北京市东城区服务网点',
+  Did: '110101021',
+  DName: '北京鸿泰达源科贸有限公司',
+  SHBegin: '09:00:00',
+  SHEnd: '17:00:00',
+  Address: '东城区骑河楼街5号楼5-7国酒茅台',
+  LinkMan: '李建军',
+  LinkTel: '010-85118518 15010271925',
+  InvoiceCost: 0,
+  State: 1,
+  HasPlainInvoice: 1,
+  HasVATInvoice: 0,
+  Description: '',
+  InvoiceCompany: '北京鸿泰达源科贸有限公司',
+  Coordinate: 
+   { ProvCode: '110000',
+     CityCode: '110100',
+     AreaCode: '110101',
+     Longitude: 116.412734985352,
+     Latitude: 39.9266395568848 },
+  NetworkType: 0,
+  WorkingDay: '[{"EnDay":"Monday","CnDay":"星期一"},{"EnDay":"Tuesday","CnDay":"星期二"},{"EnDay":"Wednesday","CnDay":"星期三"},{"EnDay":"Thursday","CnDay":"星期四"},{"EnDay":"Friday","CnDay":"星期五"},{"EnDay":"Saturday","CnDay":"星期六"},{"EnDay":"Sunday","CnDay":"星期日"}]',
+  ProvCode: '110000',
+  CityCode: '110100',
+  AreaCode: '110101',
+  IsPlatform: false }
+[2018-04-10T11:08:02.202] [INFO] things - 推送网点信息
+[2018-04-10T11:08:02.202] [INFO] things - Address: 东城区骑河楼街5号楼5-7国酒茅台
+[2018-04-10T11:08:02.202] [INFO] things - SName: 茅台云商北京市东城区服务网点
+[2018-04-10T11:08:02.202] [INFO] things - DName: 北京鸿泰达源科贸有限公司
+[2018-04-10T11:08:02.202] [INFO] things - SID: 111110101003
+[2018-04-10T11:08:02.203] [INFO] things - total: 36
+[2018-04-10T11:08:02.203] [INFO] things - limit: 4
+[2018-04-10T11:08:02.203] [INFO] things - 不满足购买条件
+[2018-04-10T11:08:02.203] [INFO] things - {"phone":"15830750275","pass":"a123456","addressId":1951732}
+[2018-04-10T11:08:04.379] [INFO] things - 库存信息 { Sid: '111110105012',
+  Pid: 391,
+  Pcode: '23',
+  CanSale: true,
+  CanLocation: true,
+  Longitude: 116.431369283581,
+  Latitude: 39.9870000637087,
+  LocationCode: '110000',
+  StockCount: 46,
+  QuotasStockCount: 46,
+  LocationDistance: 5606.73044523169,
+  HasSelfDelivery: true,
+  HasOtherDelivery: false,
+  HasCityDelivery: true,
+  IsVirtual: false,
+  IsPlatform: false }
+[2018-04-10T11:08:04.380] [INFO] things - 限购信息 { Sid: '111110105012',
+  Pid: 391,
+  UserOrderCount: 0,
+  LimitCount: 4,
+  LimitTimeCycle: 1440,
+  LimitOrderCount: 1,
+  IsPlatform: false }
+[2018-04-10T11:08:04.380] [INFO] things - 商家信息 { Sid: '111110105012',
+  SName: '茅台云商北京市市辖区朝阳区服务网点',
+  Did: '110105027',
+  DName: '北京宏诚嘉豪贸易有限公司',
+  SHBegin: '09:00:00',
+  SHEnd: '17:30:00',
+  Address: '朝阳区芍药居北里320号楼1层6单元320-16',
+  LinkMan: '赵秀盛',
+  LinkTel: '01084648311  13269806970',
+  InvoiceCost: 0,
+  State: 1,
+  HasPlainInvoice: 1,
+  HasVATInvoice: 0,
+  Description: '',
+  InvoiceCompany: '北京宏诚嘉豪贸易有限公司',
+  Coordinate: 
+   { ProvCode: '110000',
+     CityCode: '110100',
+     AreaCode: '110105',
+     Longitude: 116.437896728516,
+     Latitude: 39.9929809570313 },
+  NetworkType: 0,
+  WorkingDay: '[{"EnDay":"Monday","CnDay":"星期一"},{"EnDay":"Tuesday","CnDay":"星期二"},{"EnDay":"Wednesday","CnDay":"星期三"},{"EnDay":"Thursday","CnDay":"星期四"},{"EnDay":"Friday","CnDay":"星期五"},{"EnDay":"Saturday","CnDay":"星期六"},{"EnDay":"Sunday","CnDay":"星期日"}]',
+  ProvCode: '110000',
+  CityCode: '110100',
+  AreaCode: '110105',
+  IsPlatform: false }
+[2018-04-10T11:08:04.380] [INFO] things - 推送网点信息
+[2018-04-10T11:08:04.381] [INFO] things - Address: 朝阳区芍药居北里320号楼1层6单元320-16
+[2018-04-10T11:08:04.381] [INFO] things - SName: 茅台云商北京市市辖区朝阳区服务网点
+[2018-04-10T11:08:04.381] [INFO] things - DName: 北京宏诚嘉豪贸易有限公司
+[2018-04-10T11:08:04.381] [INFO] things - SID: 111110105012
+[2018-04-10T11:08:04.381] [INFO] things - total: 46
+[2018-04-10T11:08:04.381] [INFO] things - limit: 4
+[2018-04-10T11:08:04.382] [INFO] things - 不满足购买条件
+[2018-04-10T11:08:04.382] [INFO] things - {"phone":"15081664435","pass":"a123456","addressId":1961952}
+[2018-04-10T11:08:06.538] [INFO] things - 库存信息 { Sid: '211110105003',
+  Pid: 391,
+  Pcode: '23',
+  CanSale: true,
+  CanLocation: true,
+  Longitude: 116.47831425038,
+  Latitude: 39.8701313444617,
+  LocationCode: '110000',
+  StockCount: 155,
+  QuotasStockCount: 155,
+  LocationDistance: 4048.70944754653,
+  HasSelfDelivery: true,
+  HasOtherDelivery: false,
+  HasCityDelivery: false,
+  IsVirtual: false,
+  IsPlatform: false }
+[2018-04-10T11:08:06.539] [INFO] things - 限购信息 { Sid: '211110105003',
+  Pid: 391,
+  UserOrderCount: 0,
+  LimitCount: 2,
+  LimitTimeCycle: 1440,
+  LimitOrderCount: 1,
+  IsPlatform: false }
+[2018-04-10T11:08:06.539] [INFO] things - 商家信息 { Sid: '211110105003',
+  SName: '茅台云商北京市朝阳区服务网点',
+  Did: '110105005',
+  DName: '北京朝批商贸股份有限公司',
+  SHBegin: '08:30:00',
+  SHEnd: '17:00:00',
+  Address: '朝阳区双龙南里204楼',
+  LinkMan: '李媛',
+  LinkTel: '15811069131 18601981996 周一到周五工作日提货 请提前电话联系',
+  InvoiceCost: 0,
+  State: 1,
+  HasPlainInvoice: 1,
+  HasVATInvoice: 0,
+  Description: '每周一至周五工作日8：30-17:00可上门自提，其中12：00到13:30休息！周一到周五工作日支持提货 请提前电话联系',
+  InvoiceCompany: '北京朝批商贸股份有限公司',
+  Coordinate: 
+   { ProvCode: '110000',
+     CityCode: '110100',
+     AreaCode: '110105',
+     Longitude: 116.484901428223,
+     Latitude: 39.8759384155273 },
+  NetworkType: 0,
+  WorkingDay: '[{"EnDay":"Monday","CnDay":"星期一"},{"EnDay":"Tuesday","CnDay":"星期二"},{"EnDay":"Wednesday","CnDay":"星期三"},{"EnDay":"Thursday","CnDay":"星期四"},{"EnDay":"Friday","CnDay":"星期五"}]',
+  ProvCode: '110000',
+  CityCode: '110100',
+  AreaCode: '110105',
+  IsPlatform: false }
+[2018-04-10T11:08:06.539] [INFO] things - 推送网点信息
+[2018-04-10T11:08:06.539] [INFO] things - Address: 朝阳区双龙南里204楼
+[2018-04-10T11:08:06.539] [INFO] things - SName: 茅台云商北京市朝阳区服务网点
+[2018-04-10T11:08:06.539] [INFO] things - DName: 北京朝批商贸股份有限公司
+[2018-04-10T11:08:06.539] [INFO] things - SID: 211110105003
+[2018-04-10T11:08:06.539] [INFO] things - total: 155
+[2018-04-10T11:08:06.540] [INFO] things - limit: 2
+[2018-04-10T11:08:06.540] [INFO] things - 不满足购买条件
+[2018-04-10T11:08:06.540] [INFO] things - {"phone":"15035399985","pass":"a123456","addressId":1962205}
+[2018-04-10T11:08:12.572] [INFO] things - 库存信息 { Sid: '211110108015',
+  Pid: 391,
+  Pcode: '23',
+  CanSale: true,
+  CanLocation: true,
+  Longitude: 116.369403010411,
+  Latitude: 39.8333228760481,
+  LocationCode: '110000',
+  StockCount: 6,
+  QuotasStockCount: 6,
+  LocationDistance: 3677.05763233705,
+  HasSelfDelivery: true,
+  HasOtherDelivery: false,
+  HasCityDelivery: false,
+  IsVirtual: false,
+  IsPlatform: false }
+[2018-04-10T11:08:12.573] [INFO] things - 限购信息 { Sid: '211110108015',
+  Pid: 391,
+  UserOrderCount: 0,
+  LimitCount: 2,
+  LimitTimeCycle: 1440,
+  LimitOrderCount: 1,
+  IsPlatform: false }
+[2018-04-10T11:08:12.573] [INFO] things - 商家信息 { Sid: '211110108015',
+  SName: '茅台云商北京市市辖区海淀区服务网点',
+  Did: '110108053',
+  DName: '北京伊尹鑫泰商贸有限公司',
+  SHBegin: '09:30:00',
+  SHEnd: '17:30:00',
+  Address: '北京市丰台区城南嘉园益城园16号楼2一0606',
+  LinkMan: '金雪梅',
+  LinkTel: '13693198375',
+  InvoiceCost: 0,
+  State: 1,
+  HasPlainInvoice: 1,
+  HasVATInvoice: 0,
+  Description: '',
+  InvoiceCompany: '北京伊尹鑫泰商贸有限公司',
+  Coordinate: 
+   { ProvCode: '110000',
+     CityCode: '110100',
+     AreaCode: '110108',
+     Longitude: 116.375900268555,
+     Latitude: 39.8393096923828 },
+  NetworkType: 0,
+  WorkingDay: '[{"EnDay":"Monday","CnDay":"星期一"},{"EnDay":"Tuesday","CnDay":"星期二"},{"EnDay":"Wednesday","CnDay":"星期三"},{"EnDay":"Thursday","CnDay":"星期四"},{"EnDay":"Friday","CnDay":"星期五"}]',
+  ProvCode: '110000',
+  CityCode: '110100',
+  AreaCode: '110108',
+  IsPlatform: false }
+[2018-04-10T11:08:12.574] [INFO] things - 推送网点信息
+[2018-04-10T11:08:12.574] [INFO] things - Address: 北京市丰台区城南嘉园益城园16号楼2一0606
+[2018-04-10T11:08:12.574] [INFO] things - SName: 茅台云商北京市市辖区海淀区服务网点
+[2018-04-10T11:08:12.575] [INFO] things - DName: 北京伊尹鑫泰商贸有限公司
+[2018-04-10T11:08:12.575] [INFO] things - SID: 211110108015
+[2018-04-10T11:08:12.575] [INFO] things - total: 6
+[2018-04-10T11:08:12.575] [INFO] things - limit: 2
+[2018-04-10T11:08:12.575] [INFO] things - 不满足购买条件
+[2018-04-10T11:08:12.575] [INFO] things - {"phone":"18291130651","pass":"a123456","addressId":1962206}
+[2018-04-10T11:08:14.363] [INFO] things - 库存信息 { Sid: '211110101003',
+  Pid: 391,
+  Pcode: '23',
+  CanSale: true,
+  CanLocation: true,
+  Longitude: 116.438913696078,
+  Latitude: 39.8952184959834,
+  LocationCode: '110000',
+  StockCount: 8,
+  QuotasStockCount: 8,
+  LocationDistance: 1320.20964953566,
+  HasSelfDelivery: true,
+  HasOtherDelivery: false,
+  HasCityDelivery: false,
+  IsVirtual: false,
+  IsPlatform: false }
+[2018-04-10T11:08:14.364] [INFO] things - 限购信息 { Sid: '211110101003',
+  Pid: 391,
+  UserOrderCount: 0,
+  LimitCount: 4,
+  LimitTimeCycle: 1440,
+  LimitOrderCount: 1,
+  IsPlatform: false }
+[2018-04-10T11:08:14.364] [INFO] things - 商家信息 { Sid: '211110101003',
+  SName: '茅台云商北京市市辖区东城区服务网点',
+  Did: '110105022',
+  DName: '华致酒行连锁管理股份有限公司',
+  SHBegin: '10:30:00',
+  SHEnd: '17:00:00',
+  Address: '东城区广渠门内白桥大街15号嘉禾国信大厦8楼',
+  LinkMan: '杜若宁',
+  LinkTel: '56969568',
+  InvoiceCost: 0,
+  State: 1,
+  HasPlainInvoice: 1,
+  HasVATInvoice: 0,
+  Description: '特别提示：4月5日--7日根据国家法定假日安排，我司三日全天放假。请悉知，感谢。根据相关规定，所有出售货品，必须开箱，不便之处敬请谅解。自提时间为每周一至周三10：30-17：00，中午12：00-1：30午休，备注：我们这里是经销商公司不是店铺，国家法定节假日均休息，周末不取货。请至少提前2小时致电咨询取货时间,提供订单号、取货码。付款之后7天内自提，7天后系统会默认关闭订单。特别提醒：取货时请您携带与订单上姓名一致的身份证复印件要求正反面在一张纸上。',
+  InvoiceCompany: '华致酒行连锁管理股份有限公司',
+  Coordinate: 
+   { ProvCode: '110000',
+     CityCode: '110100',
+     AreaCode: '110101',
+     Longitude: 116.445472717285,
+     Latitude: 39.9010620117188 },
+  NetworkType: 0,
+  WorkingDay: '[{"EnDay":"Monday","CnDay":"星期一"},{"EnDay":"Tuesday","CnDay":"星期二"},{"EnDay":"Wednesday","CnDay":"星期三"}]',
+  ProvCode: '110000',
+  CityCode: '110100',
+  AreaCode: '110101',
+  IsPlatform: false }
+[2018-04-10T11:08:14.364] [INFO] things - 推送网点信息
+[2018-04-10T11:08:14.364] [INFO] things - Address: 东城区广渠门内白桥大街15号嘉禾国信大厦8楼
+[2018-04-10T11:08:14.364] [INFO] things - SName: 茅台云商北京市市辖区东城区服务网点
+[2018-04-10T11:08:14.365] [INFO] things - DName: 华致酒行连锁管理股份有限公司
+[2018-04-10T11:08:14.365] [INFO] things - SID: 211110101003
+[2018-04-10T11:08:14.365] [INFO] things - total: 8
+[2018-04-10T11:08:14.365] [INFO] things - limit: 4
+[2018-04-10T11:08:14.365] [INFO] things - 不满足购买条件
+[2018-04-10T11:08:14.365] [INFO] things - {"phone":"13313181385","pass":"a123456","addressId":1930707}
+[2018-04-10T11:08:16.212] [INFO] things - 库存信息 { Sid: '211110101003',
+  Pid: 391,
+  Pcode: '23',
+  CanSale: true,
+  CanLocation: true,
+  Longitude: 116.438913696078,
+  Latitude: 39.8952184959834,
+  LocationCode: '110000',
+  StockCount: 8,
+  QuotasStockCount: 8,
+  LocationDistance: 654.192586347014,
+  HasSelfDelivery: true,
+  HasOtherDelivery: false,
+  HasCityDelivery: false,
+  IsVirtual: false,
+  IsPlatform: false }
+[2018-04-10T11:08:16.214] [INFO] things - 限购信息 { Sid: '211110101003',
+  Pid: 391,
+  UserOrderCount: 0,
+  LimitCount: 4,
+  LimitTimeCycle: 1440,
+  LimitOrderCount: 1,
+  IsPlatform: false }
+[2018-04-10T11:08:16.214] [INFO] things - 商家信息 { Sid: '211110101003',
+  SName: '茅台云商北京市市辖区东城区服务网点',
+  Did: '110105022',
+  DName: '华致酒行连锁管理股份有限公司',
+  SHBegin: '10:30:00',
+  SHEnd: '17:00:00',
+  Address: '东城区广渠门内白桥大街15号嘉禾国信大厦8楼',
+  LinkMan: '杜若宁',
+  LinkTel: '56969568',
+  InvoiceCost: 0,
+  State: 1,
+  HasPlainInvoice: 1,
+  HasVATInvoice: 0,
+  Description: '特别提示：4月5日--7日根据国家法定假日安排，我司三日全天放假。请悉知，感谢。根据相关规定，所有出售货品，必须开箱，不便之处敬请谅解。自提时间为每周一至周三10：30-17：00，中午12：00-1：30午休，备注：我们这里是经销商公司不是店铺，国家法定节假日均休息，周末不取货。请至少提前2小时致电咨询取货时间,提供订单号、取货码。付款之后7天内自提，7天后系统会默认关闭订单。特别提醒：取货时请您携带与订单上姓名一致的身份证复印件要求正反面在一张纸上。',
+  InvoiceCompany: '华致酒行连锁管理股份有限公司',
+  Coordinate: 
+   { ProvCode: '110000',
+     CityCode: '110100',
+     AreaCode: '110101',
+     Longitude: 116.445472717285,
+     Latitude: 39.9010620117188 },
+  NetworkType: 0,
+  WorkingDay: '[{"EnDay":"Monday","CnDay":"星期一"},{"EnDay":"Tuesday","CnDay":"星期二"},{"EnDay":"Wednesday","CnDay":"星期三"}]',
+  ProvCode: '110000',
+  CityCode: '110100',
+  AreaCode: '110101',
+  IsPlatform: false }
+[2018-04-10T11:08:16.214] [INFO] things - 推送网点信息
+[2018-04-10T11:08:16.214] [INFO] things - Address: 东城区广渠门内白桥大街15号嘉禾国信大厦8楼
+[2018-04-10T11:08:16.214] [INFO] things - SName: 茅台云商北京市市辖区东城区服务网点
+[2018-04-10T11:08:16.214] [INFO] things - DName: 华致酒行连锁管理股份有限公司
+[2018-04-10T11:08:16.214] [INFO] things - SID: 211110101003
+[2018-04-10T11:08:16.215] [INFO] things - total: 8
+[2018-04-10T11:08:16.215] [INFO] things - limit: 4
+[2018-04-10T11:08:16.215] [INFO] things - 不满足购买条件
+[2018-04-10T11:08:16.215] [INFO] things - {"phone":"13392151517","pass":"123456","addressId":1894345}

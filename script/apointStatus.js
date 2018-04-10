@@ -879,15 +879,25 @@ function getStatus(){
             pass:phone.pass,
             addressId: phone.addressId,
           })
-        }else{
-          logger.info("phone:"+phone.phone+"审核失败,"+data.reviewInfo.split('。')[0]);
+        }else if(data.status == 1){
+          logger.info("phone:"+phone.phone+"正在审核中");
           failAccount.push({
             phone: phone.phone,
             pass:phone.pass,
             address: data.address,
             registPhone: data.registPhone,
             receivePhone: data.receivePhone,
-            reviewInfo:data.reviewInfo.split('。')[0],
+          })
+
+        }else {
+          logger.info("phone:"+phone.phone+"审核失败,"+ (data.reviewInfo && data.reviewInfo.split('。')[0]));
+          failAccount.push({
+            phone: phone.phone,
+            pass:phone.pass,
+            address: data.address,
+            registPhone: data.registPhone,
+            receivePhone: data.receivePhone,
+            reviewInfo:data.reviewInfo && data.reviewInfo.split('。')[0],
           })
         }
         statusResults.push({

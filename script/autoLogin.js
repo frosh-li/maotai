@@ -10,8 +10,7 @@ const MaotaiService = require('../tools/service');
 
 //connection.connect();
 
-var originPhones = require("../beijing4.2buy.json");
-originPhones = [
+var originPhones = [
     {
         "phone": "18353874500",
         "pass": "anjiaqi112828",
