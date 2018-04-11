@@ -1,1442 +1,284 @@
-[2018-04-10T23:00:00.171] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
-[2018-04-10T23:00:01.400] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { ID: 1854320,
-     IsDefault: true,
-     IsPushAddreess: false,
-     Name: '朱央',
-     TelPhone: '13537416079',
-     Zipcode: '000000',
-     ProvCode: '520000',
-     CityCode: '520100',
-     AreaCode: '520113',
-     Remark: '',
-     IsVerification: false,
-     AddressDetails: '贵州省贵阳市白云区,贵州商学院体育馆',
-     Longitude: 106.711832,
-     Latitude: 26.696076,
-     Address: '贵州商学院体育馆',
-     AddressText: '贵州省贵阳市白云区' } }
-[2018-04-10T23:00:02.424] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
-[2018-04-10T23:00:03.723] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { ID: 1854275,
-     IsDefault: true,
-     IsPushAddreess: false,
-     Name: '屠对焕',
-     TelPhone: '18336540000',
-     Zipcode: '000000',
-     ProvCode: '520000',
-     CityCode: '520100',
-     AreaCode: '520103',
-     Remark: '',
-     IsVerification: false,
-     AddressDetails: '贵州省贵阳市云岩区,云山山体公园',
-     Longitude: 106.631524,
-     Latitude: 26.726563,
-     Address: '云山山体公园',
-     AddressText: '贵州省贵阳市云岩区' } }
-[2018-04-10T23:00:08.811] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
-[2018-04-10T23:00:10.104] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { ID: 1854235,
-     IsDefault: true,
-     IsPushAddreess: false,
-     Name: '荀短虑',
-     TelPhone: '15384260064',
-     Zipcode: '000000',
-     ProvCode: '520000',
-     CityCode: '520100',
-     AreaCode: '520112',
-     Remark: '',
-     IsVerification: false,
-     AddressDetails: '贵州省贵阳市乌当区,新阳关',
-     Longitude: 106.625012,
-     Latitude: 26.57547,
-     Address: '新阳关',
-     AddressText: '贵州省贵阳市乌当区' } }
-[2018-04-10T23:00:11.742] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
-[2018-04-10T23:00:13.381] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { ID: 1854187,
-     IsDefault: true,
-     IsPushAddreess: false,
-     Name: '臧异',
-     TelPhone: '17796505093',
-     Zipcode: '000000',
-     ProvCode: '520000',
-     CityCode: '520100',
-     AreaCode: '520113',
-     Remark: '',
-     IsVerification: false,
-     AddressDetails: '贵州省贵阳市白云区,贵州乾途物流有限公司(猫山仓库)',
-     Longitude: 106.61544,
-     Latitude: 26.590594,
-     Address: '贵州乾途物流有限公司(猫山仓库)',
-     AddressText: '贵州省贵阳市白云区' } }
-[2018-04-10T23:00:14.917] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
-[2018-04-10T23:00:16.862] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { ID: 1854122,
-     IsDefault: true,
-     IsPushAddreess: false,
-     Name: '冀驰',
-     TelPhone: '17538234053',
-     Zipcode: '000000',
-     ProvCode: '520000',
-     CityCode: '520100',
-     AreaCode: '520112',
-     Remark: '',
-     IsVerification: false,
-     AddressDetails: '贵州省贵阳市乌当区,贵阳德超物流公司',
-     Longitude: 106.661713,
-     Latitude: 26.69641,
-     Address: '贵阳德超物流公司',
-     AddressText: '贵州省贵阳市乌当区' } }
-[2018-04-10T23:00:18.194] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
-[2018-04-10T23:00:19.320] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { ID: 1855016,
-     IsDefault: true,
-     IsPushAddreess: false,
-     Name: '廖商载',
-     TelPhone: '13914830043',
-     Zipcode: '000000',
-     ProvCode: '520000',
-     CityCode: '520100',
-     AreaCode: '520113',
-     Remark: '',
-     IsVerification: false,
-     AddressDetails: '贵州省贵阳市白云区,万家乐超市',
-     Longitude: 106.688243,
-     Latitude: 26.690377,
-     Address: '万家乐超市',
-     AddressText: '贵州省贵阳市白云区' } }
-[2018-04-10T23:00:20.549] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
-[2018-04-10T23:00:21.778] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { ID: 1855025,
-     IsDefault: true,
-     IsPushAddreess: false,
-     Name: '严绊拙祀',
-     TelPhone: '13265679094',
-     Zipcode: '000000',
-     ProvCode: '520000',
-     CityCode: '520100',
-     AreaCode: '520112',
-     Remark: '',
-     IsVerification: false,
-     AddressDetails: '贵州省贵阳市乌当区,金燕物流园',
-     Longitude: 106.694591,
-     Latitude: 26.629465,
-     Address: '金燕物流园',
-     AddressText: '贵州省贵阳市乌当区' } }
-[2018-04-10T23:00:23.212] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
-[2018-04-10T23:00:24.337] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { ID: 1855110,
-     IsDefault: true,
-     IsPushAddreess: false,
-     Name: '弘寓',
-     TelPhone: '156379770274',
-     Zipcode: '000000',
-     ProvCode: '520000',
-     CityCode: '520100',
-     AreaCode: '520113',
-     Remark: '',
-     IsVerification: false,
-     AddressDetails: '贵州省贵阳市白云区,甘奚坪望',
-     Longitude: 106.625059,
-     Latitude: 26.573932,
-     Address: '甘奚坪望',
-     AddressText: '贵州省贵阳市白云区' } }
-[2018-04-10T23:00:25.293] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
-[2018-04-10T23:00:32.837] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { ID: 1854012,
-     IsDefault: true,
-     IsPushAddreess: false,
-     Name: '唐蠡',
-     TelPhone: '15949221006',
-     Zipcode: '000000',
-     ProvCode: '520000',
-     CityCode: '520100',
-     AreaCode: '520113',
-     Remark: '',
-     IsVerification: false,
-     AddressDetails: '贵州省贵阳市白云区,塔山公园',
-     Longitude: 106.660975,
-     Latitude: 26.63752,
-     Address: '塔山公园',
-     AddressText: '贵州省贵阳市白云区' } }
-[2018-04-10T23:01:06.323] [INFO] things - { Error: socket hang up
-    at TLSSocket.onHangUp (_tls_wrap.js:1135:19)
-    at Object.onceWrapper (events.js:313:30)
-    at emitNone (events.js:111:20)
-    at TLSSocket.emit (events.js:208:7)
-    at endReadableNT (_stream_readable.js:1056:12)
-    at _combinedTickCallback (internal/process/next_tick.js:138:11)
-    at process._tickCallback (internal/process/next_tick.js:180:9)
-  code: 'ECONNRESET',
-  path: undefined,
-  host: undefined,
-  port: 0,
-  localAddress: undefined }
-[2018-04-10T23:01:08.575] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { ID: 1854402,
-     IsDefault: true,
-     IsPushAddreess: false,
-     Name: '桑矮',
-     TelPhone: '13927819049',
-     Zipcode: '000000',
-     ProvCode: '520000',
-     CityCode: '520100',
-     AreaCode: '520113',
-     Remark: '',
-     IsVerification: false,
-     AddressDetails: '贵州省贵阳市白云区,泰华钢结构公司B区',
-     Longitude: 106.643755,
-     Latitude: 26.718235,
-     Address: '泰华钢结构公司B区',
-     AddressText: '贵州省贵阳市白云区' } }
-[2018-04-10T23:01:10.213] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
-[2018-04-10T23:04:23.642] [INFO] things - { state: true, code: 9999, msg: '用户未登陆' }
-[2018-04-10T23:04:25.288] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { ID: 1853558,
-     IsDefault: true,
-     IsPushAddreess: false,
-     Name: '危停渊',
-     TelPhone: '17835203049',
-     Zipcode: '000000',
-     ProvCode: '520000',
-     CityCode: '520100',
-     AreaCode: '520112',
-     Remark: '',
-     IsVerification: false,
-     AddressDetails: '贵州省贵阳市乌当区,园通岩',
-     Longitude: 106.647294,
-     Latitude: 26.706402,
-     Address: '园通岩',
-     AddressText: '贵州省贵阳市乌当区' } }
-[2018-04-10T23:04:26.097] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
-[2018-04-10T23:04:32.299] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { ID: 1854731,
-     IsDefault: true,
-     IsPushAddreess: false,
-     Name: '乌雅而养',
-     TelPhone: '15534376076',
-     Zipcode: '000000',
-     ProvCode: '520000',
-     CityCode: '520100',
-     AreaCode: '520103',
-     Remark: '',
-     IsVerification: false,
-     AddressDetails: '贵州省贵阳市云岩区,小石城·北湖-东门',
-     Longitude: 106.72206,
-     Latitude: 26.6257,
-     Address: '小石城·北湖-东门',
-     AddressText: '贵州省贵阳市云岩区' } }
-[2018-04-10T23:04:33.308] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
-[2018-04-10T23:04:34.402] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { ID: 1851781,
-     IsDefault: true,
-     IsPushAddreess: false,
-     Name: '丰虎',
-     TelPhone: '17772673061',
-     Zipcode: '000000',
-     ProvCode: '520000',
-     CityCode: '520100',
-     AreaCode: '520112',
-     Remark: '',
-     IsVerification: false,
-     AddressDetails: '贵州省贵阳市乌当区,打铁房',
-     Longitude: 106.599708,
-     Latitude: 26.669138,
-     Address: '打铁房',
-     AddressText: '贵州省贵阳市乌当区' } }
-[2018-04-10T23:04:39.317] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
-[2018-04-10T23:04:58.671] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { ID: 1851828,
-     IsDefault: true,
-     IsPushAddreess: false,
-     Name: '甫业',
-     TelPhone: '15522151095',
-     Zipcode: '000000',
-     ProvCode: '520000',
-     CityCode: '520100',
-     AreaCode: '520112',
-     Remark: '',
-     IsVerification: false,
-     AddressDetails: '贵州省贵阳市乌当区,牛角坡',
-     Longitude: 106.670152,
-     Latitude: 26.648996,
-     Address: '牛角坡',
-     AddressText: '贵州省贵阳市乌当区' } }
-[2018-04-10T23:05:00.514] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
-[2018-04-10T23:05:02.767] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { ID: 1851818,
-     IsDefault: true,
-     IsPushAddreess: false,
-     Name: '屠豌唐',
-     TelPhone: '13019917051',
-     Zipcode: '000000',
-     ProvCode: '520000',
-     CityCode: '520100',
-     AreaCode: '520113',
-     Remark: '',
-     IsVerification: false,
-     AddressDetails: '贵州省贵阳市白云区,白云区艳山红镇高山小学',
-     Longitude: 106.619158,
-     Latitude: 26.603825,
-     Address: '白云区艳山红镇高山小学',
-     AddressText: '贵州省贵阳市白云区' } }
-[2018-04-10T23:05:04.508] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
-[2018-04-10T23:05:05.839] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { ID: 1851782,
-     IsDefault: true,
-     IsPushAddreess: false,
-     Name: '史阁',
-     TelPhone: '18734346007',
-     Zipcode: '000000',
-     ProvCode: '520000',
-     CityCode: '520100',
-     AreaCode: '520112',
-     Remark: '',
-     IsVerification: false,
-     AddressDetails: '贵州省贵阳市乌当区,大关村',
-     Longitude: 106.600021,
-     Latitude: 26.579127,
-     Address: '大关村',
-     AddressText: '贵州省贵阳市乌当区' } }
-[2018-04-10T23:05:08.800] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
-[2018-04-10T23:05:10.031] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { ID: 1853385,
-     IsDefault: true,
-     IsPushAddreess: false,
-     Name: '弓诲兴',
-     TelPhone: '15889341005',
-     Zipcode: '000000',
-     ProvCode: '520000',
-     CityCode: '520100',
-     AreaCode: '520113',
-     Remark: '',
-     IsVerification: false,
-     AddressDetails: '贵州省贵阳市白云区,8号酒球吧',
-     Longitude: 106.6299,
-     Latitude: 26.585147,
-     Address: '8号酒球吧',
-     AddressText: '贵州省贵阳市白云区' } }
-[2018-04-10T23:05:11.013] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
-[2018-04-10T23:05:12.291] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { ID: 1853167,
-     IsDefault: true,
-     IsPushAddreess: false,
-     Name: '裴确',
-     TelPhone: '18300259075',
-     Zipcode: '000000',
-     ProvCode: '520000',
-     CityCode: '520100',
-     AreaCode: '520112',
-     Remark: '',
-     IsVerification: false,
-     AddressDetails: '贵州省贵阳市乌当区,教师公寓二号楼',
-     Longitude: 106.600716,
-     Latitude: 26.581066,
-     Address: '教师公寓二号楼',
-     AddressText: '贵州省贵阳市乌当区' } }
-[2018-04-10T23:05:13.316] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
-[2018-04-10T23:05:14.442] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { ID: 1854320,
-     IsDefault: true,
-     IsPushAddreess: false,
-     Name: '费院',
-     TelPhone: '13537416079',
-     Zipcode: '000000',
-     ProvCode: '520000',
-     CityCode: '520100',
-     AreaCode: '520103',
-     Remark: '',
-     IsVerification: false,
-     AddressDetails: '贵州省贵阳市云岩区,环北吉新社区',
-     Longitude: 106.621771,
-     Latitude: 26.577666,
-     Address: '环北吉新社区',
-     AddressText: '贵州省贵阳市云岩区' } }
-[2018-04-10T23:05:15.313] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
-[2018-04-10T23:05:16.796] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { ID: 1854275,
-     IsDefault: true,
-     IsPushAddreess: false,
-     Name: '易己禺树',
-     TelPhone: '18336540000',
-     Zipcode: '000000',
-     ProvCode: '520000',
-     CityCode: '520100',
-     AreaCode: '520112',
-     Remark: '',
-     IsVerification: false,
-     AddressDetails: '贵州省贵阳市乌当区,牛角坡',
-     Longitude: 106.680818,
-     Latitude: 26.653513,
-     Address: '牛角坡',
-     AddressText: '贵州省贵阳市乌当区' } }
-[2018-04-10T23:05:18.025] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
-[2018-04-10T23:05:19.254] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { ID: 1854187,
-     IsDefault: true,
-     IsPushAddreess: false,
-     Name: '熊况',
-     TelPhone: '17796505093',
-     Zipcode: '000000',
-     ProvCode: '520000',
-     CityCode: '520100',
-     AreaCode: '520113',
-     Remark: '',
-     IsVerification: false,
-     AddressDetails: '贵州省贵阳市白云区,白云寺村',
-     Longitude: 106.626501,
-     Latitude: 26.717571,
-     Address: '白云寺村',
-     AddressText: '贵州省贵阳市白云区' } }
-[2018-04-10T23:05:20.081] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
-[2018-04-10T23:05:21.302] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { ID: 1854122,
-     IsDefault: true,
-     IsPushAddreess: false,
-     Name: '柯劝言',
-     TelPhone: '17538234053',
-     Zipcode: '000000',
-     ProvCode: '520000',
-     CityCode: '520100',
-     AreaCode: '520112',
-     Remark: '',
-     IsVerification: false,
-     AddressDetails: '贵州省贵阳市乌当区,圆通仓库',
-     Longitude: 106.623307,
-     Latitude: 26.70678,
-     Address: '圆通仓库',
-     AddressText: '贵州省贵阳市乌当区' } }
-[2018-04-10T23:05:22.254] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
-[2018-04-10T23:05:23.760] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { ID: 1855016,
-     IsDefault: true,
-     IsPushAddreess: false,
-     Name: '骆勃',
-     TelPhone: '13914830043',
-     Zipcode: '000000',
-     ProvCode: '520000',
-     CityCode: '520100',
-     AreaCode: '520112',
-     Remark: '',
-     IsVerification: false,
-     AddressDetails: '贵州省贵阳市乌当区,陶家山',
-     Longitude: 106.656183,
-     Latitude: 26.687189,
-     Address: '陶家山',
-     AddressText: '贵州省贵阳市乌当区' } }
-[2018-04-10T23:05:24.811] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
-[2018-04-10T23:05:26.319] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { ID: 1855110,
-     IsDefault: true,
-     IsPushAddreess: false,
-     Name: '安蹇',
-     TelPhone: '156379770574',
-     Zipcode: '000000',
-     ProvCode: '520000',
-     CityCode: '520100',
-     AreaCode: '520113',
-     Remark: '',
-     IsVerification: false,
-     AddressDetails: '贵州省贵阳市白云区,燕京啤酒贵州有限公司(北1门)',
-     Longitude: 106.708701,
-     Latitude: 26.594775,
-     Address: '燕京啤酒贵州有限公司(北1门)',
-     AddressText: '贵州省贵阳市白云区' } }
-[2018-04-10T23:05:29.449] [INFO] things - { Error: tunneling socket could not be established, cause=socket hang up
-    at ClientRequest.onError (/Users/frosh/server/www/maotai/node_modules/tunnel-agent/index.js:177:17)
-    at Object.onceWrapper (events.js:315:30)
-    at emitOne (events.js:116:13)
-    at ClientRequest.emit (events.js:211:7)
-    at Socket.socketOnEnd (_http_client.js:423:9)
-    at emitNone (events.js:111:20)
-    at Socket.emit (events.js:208:7)
-    at endReadableNT (_stream_readable.js:1056:12)
-    at _combinedTickCallback (internal/process/next_tick.js:138:11)
-    at process._tickCallback (internal/process/next_tick.js:180:9) code: 'ECONNRESET' }
-[2018-04-10T23:05:30.574] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { ID: 1854402,
-     IsDefault: true,
-     IsPushAddreess: false,
-     Name: '甘茸窗',
-     TelPhone: '13927819049',
-     Zipcode: '000000',
-     ProvCode: '520000',
-     CityCode: '520100',
-     AreaCode: '520113',
-     Remark: '',
-     IsVerification: false,
-     AddressDetails: '贵州省贵阳市白云区,外婆家乡菜',
-     Longitude: 106.6068,
-     Latitude: 26.616064,
-     Address: '外婆家乡菜',
-     AddressText: '贵州省贵阳市白云区' } }
-[2018-04-10T23:05:31.451] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
-[2018-04-10T23:11:07.392] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { TelPhone: '17852648420',
-     NickName: '17852648420',
-     HeadPortrait: '',
-     SalemanState: -1,
-     AuthState: -1,
-     IsLock: false,
-     IsConfirmationProtocol: true,
-     Certificate: null,
-     CertIdent: 'none',
-     HasPassword: true,
-     DeviceIdent: 'ec26a06a8f308246c3161d0438c8b2ca',
-     UserId: 2197286,
-     Name: '&17852648420' } }
-[2018-04-10T23:11:08.468] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { TelPhone: '15138600855',
-     NickName: '15138600855',
-     HeadPortrait: '',
-     SalemanState: -1,
-     AuthState: -1,
-     IsLock: false,
-     IsConfirmationProtocol: true,
-     Certificate: null,
-     CertIdent: 'none',
-     HasPassword: true,
-     DeviceIdent: '09c663579d32f08dda97285013a7afb2',
-     UserId: 2197327,
-     Name: '&15138600855' } }
-[2018-04-10T23:11:09.621] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { TelPhone: '13537416679',
-     NickName: '13537416679',
-     HeadPortrait: '',
-     SalemanState: -1,
-     AuthState: -1,
-     IsLock: false,
-     IsConfirmationProtocol: true,
-     Certificate: null,
-     CertIdent: 'none',
-     HasPassword: true,
-     DeviceIdent: '8c7eff1e57b8dad350e537dd061c7122',
-     UserId: 2197289,
-     Name: '&13537416679' } }
-[2018-04-10T23:11:10.592] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { TelPhone: '18336540100',
-     NickName: '18336540100',
-     HeadPortrait: '',
-     SalemanState: -1,
-     AuthState: -1,
-     IsLock: false,
-     IsConfirmationProtocol: true,
-     Certificate: null,
-     CertIdent: 'none',
-     HasPassword: true,
-     DeviceIdent: 'e0f2ee22c45fa049e022a6224d1a87be',
-     UserId: 2197279,
-     Name: '&18336540100' } }
-[2018-04-10T23:11:11.655] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { TelPhone: '15384260864',
-     NickName: '15384260864',
-     HeadPortrait: '',
-     SalemanState: -1,
-     AuthState: -1,
-     IsLock: false,
-     IsConfirmationProtocol: true,
-     Certificate: null,
-     CertIdent: 'none',
-     HasPassword: true,
-     DeviceIdent: '22570298c7b184b568c1202a3fc1a0ec',
-     UserId: 2197236,
-     Name: '&15384260864' } }
-[2018-04-10T23:11:12.644] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { TelPhone: '17796505593',
-     NickName: '17796505593',
-     HeadPortrait: '',
-     SalemanState: -1,
-     AuthState: -1,
-     IsLock: false,
-     IsConfirmationProtocol: true,
-     Certificate: null,
-     CertIdent: 'none',
-     HasPassword: true,
-     DeviceIdent: '84c7a6eef0c5323744771b1b5d9bd47b',
-     UserId: 2197204,
-     Name: '&17796505593' } }
-[2018-04-10T23:11:17.508] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { TelPhone: '17538234453',
-     NickName: '17538234453',
-     HeadPortrait: '',
-     SalemanState: -1,
-     AuthState: -1,
-     IsLock: false,
-     IsConfirmationProtocol: true,
-     Certificate: null,
-     CertIdent: 'none',
-     HasPassword: true,
-     DeviceIdent: 'd81934958a1490f4840b6ce282a3bfd1',
-     UserId: 2197139,
-     Name: '&17538234453' } }
-[2018-04-10T23:11:18.735] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { TelPhone: '13914830243',
-     NickName: 'PARADISEKISSKISS',
-     HeadPortrait: '',
-     SalemanState: -1,
-     AuthState: -1,
-     IsLock: false,
-     IsConfirmationProtocol: false,
-     Certificate: null,
-     CertIdent: 'none',
-     HasPassword: true,
-     DeviceIdent: 'f132e5b10c1c3f21d7f5a3fe50992aaf',
-     UserId: 2197814,
-     Name: '&13914830243' } }
-[2018-04-10T23:11:19.849] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { TelPhone: '13265679894',
-     NickName: '13265679894',
-     HeadPortrait: '',
-     SalemanState: -1,
-     AuthState: -1,
-     IsLock: false,
-     IsConfirmationProtocol: true,
-     Certificate: null,
-     CertIdent: 'none',
-     HasPassword: true,
-     DeviceIdent: '2e4f53f48b49f73a62b85a1189cbaace',
-     UserId: 2197815,
-     Name: '&13265679894' } }
-[2018-04-10T23:11:21.815] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { TelPhone: '15637977074',
-     NickName: '15637977074',
-     HeadPortrait: '',
-     SalemanState: -1,
-     AuthState: -1,
-     IsLock: false,
-     IsConfirmationProtocol: true,
-     Certificate: null,
-     CertIdent: 'none',
-     HasPassword: true,
-     DeviceIdent: '78fdea7e3ceac4345614f6d326d79e27',
-     UserId: 2197863,
-     Name: '&15637977074' } }
-[2018-04-10T23:11:22.776] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { TelPhone: '15949221706',
-     NickName: '15949221706',
-     HeadPortrait: '',
-     SalemanState: -1,
-     AuthState: -1,
-     IsLock: false,
-     IsConfirmationProtocol: true,
-     Certificate: null,
-     CertIdent: 'none',
-     HasPassword: true,
-     DeviceIdent: 'cf3c3d7f2b1805e2509602bdf254cccd',
-     UserId: 2197052,
-     Name: '&15949221706' } }
-[2018-04-10T23:11:24.768] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { TelPhone: '13632576547',
-     NickName: '13632576547',
-     HeadPortrait: '',
-     SalemanState: -1,
-     AuthState: -1,
-     IsLock: false,
-     IsConfirmationProtocol: true,
-     Certificate: null,
-     CertIdent: 'none',
-     HasPassword: true,
-     DeviceIdent: 'e5d1a5a74d971e2cdceafbaf51afab1d',
-     UserId: 2197050,
-     Name: '&13632576547' } }
-[2018-04-10T23:11:26.309] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { TelPhone: '18522267880',
-     NickName: '18522267880',
-     HeadPortrait: '',
-     SalemanState: -1,
-     AuthState: -1,
-     IsLock: false,
-     IsConfirmationProtocol: true,
-     Certificate: null,
-     CertIdent: 'none',
-     HasPassword: true,
-     DeviceIdent: '3d5095a1f12596f5257baeefbb22a226',
-     UserId: 1971476,
-     Name: '&18522267880' } }
-[2018-04-10T23:11:27.873] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { TelPhone: '13294181541',
-     NickName: '13294181541',
-     HeadPortrait: '',
-     SalemanState: -1,
-     AuthState: -1,
-     IsLock: false,
-     IsConfirmationProtocol: true,
-     Certificate: null,
-     CertIdent: 'none',
-     HasPassword: true,
-     DeviceIdent: '6260bb058f19e0260eb1f1d48333cb43',
-     UserId: 2197131,
-     Name: '&13294181541' } }
-[2018-04-10T23:11:29.031] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { TelPhone: '13927819949',
-     NickName: '13927819949',
-     HeadPortrait: '',
-     SalemanState: -1,
-     AuthState: -1,
-     IsLock: false,
-     IsConfirmationProtocol: true,
-     Certificate: null,
-     CertIdent: 'none',
-     HasPassword: true,
-     DeviceIdent: 'b38b4065d2e47c80ce61bc9724dba9dc',
-     UserId: 2197365,
-     Name: '&13927819949' } }
-[2018-04-10T23:11:30.210] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { TelPhone: '15831296942',
-     NickName: '15831296942',
-     HeadPortrait: '',
-     SalemanState: -1,
-     AuthState: -1,
-     IsLock: false,
-     IsConfirmationProtocol: true,
-     Certificate: null,
-     CertIdent: 'none',
-     HasPassword: true,
-     DeviceIdent: '106be260494b99d4c5a6d6471c4095e5',
-     UserId: 2197516,
-     Name: '&15831296942' } }
-[2018-04-10T23:11:32.301] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { TelPhone: '18058867256',
-     NickName: '18058867256',
-     HeadPortrait: '',
-     SalemanState: -1,
-     AuthState: -1,
-     IsLock: false,
-     IsConfirmationProtocol: true,
-     Certificate: null,
-     CertIdent: 'none',
-     HasPassword: true,
-     DeviceIdent: '2147610e89aeeb6bbc599e521226adc6',
-     UserId: 2197705,
-     Name: '&18058867256' } }
-[2018-04-10T23:11:33.464] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { TelPhone: '15033774890',
-     NickName: '15033774890',
-     HeadPortrait: '',
-     SalemanState: -1,
-     AuthState: -1,
-     IsLock: false,
-     IsConfirmationProtocol: true,
-     Certificate: null,
-     CertIdent: 'none',
-     HasPassword: true,
-     DeviceIdent: 'bc4f26d7c02ff65cfc6360cbe74e55c1',
-     UserId: 2197789,
-     Name: '&15033774890' } }
-[2018-04-10T23:11:34.450] [ERROR] things - Error: 登录失败:18975111974:17680163285:密码错误
-    at Request._callback (/Users/frosh/server/www/maotai/tools/service.js:111:35)
-    at Request.self.callback (/Users/frosh/server/www/maotai/node_modules/request/request.js:186:22)
-    at emitTwo (events.js:126:13)
-    at Request.emit (events.js:214:7)
-    at Request.<anonymous> (/Users/frosh/server/www/maotai/node_modules/request/request.js:1163:10)
-    at emitOne (events.js:116:13)
-    at Request.emit (events.js:211:7)
-    at IncomingMessage.<anonymous> (/Users/frosh/server/www/maotai/node_modules/request/request.js:1085:12)
-    at Object.onceWrapper (events.js:313:30)
-    at emitNone (events.js:111:20)
-[2018-04-10T23:11:35.770] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { TelPhone: '18246205895',
-     NickName: '18246205895',
-     HeadPortrait: '',
-     SalemanState: -1,
-     AuthState: -1,
-     IsLock: false,
-     IsConfirmationProtocol: true,
-     Certificate: null,
-     CertIdent: 'none',
-     HasPassword: true,
-     DeviceIdent: '7821e9490c7d8cc327b9981cd9ec198f',
-     UserId: 2081940,
-     Name: '&18246205895' } }
-[2018-04-10T23:11:35.770] [INFO] things - 全部登录完成
-[2018-04-10T23:12:23.588] [INFO] things - to Buy tels [ { phone: '17852648420', pass: '123456qaz' },
-  { phone: '15138600855', pass: '1234567890y' },
-  { phone: '13537416679', pass: '12345678999' },
-  { phone: '18336540100', pass: '1234567890y' },
-  { phone: '15384260864', pass: 'qwe258147' },
-  { phone: '17796505593', pass: '1234567890y' },
-  { phone: '17538234453', pass: 'z661314' },
-  { phone: '13914830243', pass: 'DuoDuo1314' },
-  { phone: '13265679894', pass: 'cgs123' },
-  { phone: '15637977074', pass: '123456ojbk' },
-  { phone: '15949221706', pass: 'ai366758' },
-  { phone: '13632576547', pass: 'ai366758' },
-  { phone: '18522267880', pass: 'asd123' },
-  { phone: '13294181541', pass: '102823zlm' },
-  { phone: '13927819949', pass: 'zxc123' },
-  { phone: '15831296942', pass: '943869' },
-  { phone: '18058867256', pass: '18058867256' },
-  { phone: '15033774890', pass: 'gaonan020626' },
-  { phone: '18246205895', pass: '123456a' } ]
-[2018-04-10T23:12:23.594] [INFO] things - 还剩下18个检测
-[2018-04-10T23:12:23.594] [INFO] things - start to check status { phone: '17852648420', pass: '123456qaz' }
-[2018-04-10T23:12:29.836] [INFO] things - phone:17852648420正在审核中
-[2018-04-10T23:12:29.836] [INFO] things - 还剩下17个检测
-[2018-04-10T23:12:29.837] [INFO] things - start to check status { phone: '15138600855', pass: '1234567890y' }
-[2018-04-10T23:12:30.903] [INFO] things - phone:15138600855正在审核中
-[2018-04-10T23:12:30.904] [INFO] things - 还剩下16个检测
-[2018-04-10T23:12:30.904] [INFO] things - start to check status { phone: '13537416679', pass: '12345678999' }
-[2018-04-10T23:12:34.361] [INFO] things - phone:13537416679审核失败,预约审核收货地址高度相似异常
-[2018-04-10T23:12:34.361] [INFO] things - 还剩下15个检测
-[2018-04-10T23:12:34.362] [INFO] things - start to check status { phone: '18336540100', pass: '1234567890y' }
-[2018-04-10T23:12:35.151] [INFO] things - phone:18336540100审核失败,
-[2018-04-10T23:12:35.152] [INFO] things - 还剩下14个检测
-[2018-04-10T23:12:35.152] [INFO] things - start to check status { phone: '15384260864', pass: 'qwe258147' }
-[2018-04-10T23:12:36.119] [INFO] things - phone:15384260864正在审核中
-[2018-04-10T23:12:36.119] [INFO] things - 还剩下13个检测
-[2018-04-10T23:12:36.119] [INFO] things - start to check status { phone: '17796505593', pass: '1234567890y' }
-[2018-04-10T23:12:37.251] [INFO] things - phone:17796505593审核失败,
-[2018-04-10T23:12:37.251] [INFO] things - 还剩下12个检测
-[2018-04-10T23:12:37.251] [INFO] things - start to check status { phone: '17538234453', pass: 'z661314' }
-[2018-04-10T23:12:38.322] [INFO] things - phone:17538234453审核失败,
-[2018-04-10T23:12:38.323] [INFO] things - 还剩下11个检测
-[2018-04-10T23:12:38.323] [INFO] things - start to check status { phone: '13914830243', pass: 'DuoDuo1314' }
-[2018-04-10T23:12:39.388] [INFO] things - phone:13914830243审核失败,
-[2018-04-10T23:12:39.389] [INFO] things - 还剩下10个检测
-[2018-04-10T23:12:39.389] [INFO] things - start to check status { phone: '13265679894', pass: 'cgs123' }
-[2018-04-10T23:12:40.429] [INFO] things - phone:13265679894正在审核中
-[2018-04-10T23:12:40.430] [INFO] things - 还剩下9个检测
-[2018-04-10T23:12:40.430] [INFO] things - start to check status { phone: '15637977074', pass: '123456ojbk' }
-[2018-04-10T23:12:42.038] [INFO] things - phone:15637977074审核失败,
-[2018-04-10T23:12:42.039] [INFO] things - 还剩下8个检测
-[2018-04-10T23:12:42.039] [INFO] things - start to check status { phone: '15949221706', pass: 'ai366758' }
-[2018-04-10T23:12:45.420] [INFO] things - phone:15949221706审核失败,
-[2018-04-10T23:12:45.420] [INFO] things - 还剩下7个检测
-[2018-04-10T23:12:45.421] [INFO] things - start to check status { phone: '13632576547', pass: 'ai366758' }
-[2018-04-10T23:12:46.411] [INFO] things - phone:13632576547正在审核中
-[2018-04-10T23:12:46.411] [INFO] things - 还剩下6个检测
-[2018-04-10T23:12:46.411] [INFO] things - start to check status { phone: '18522267880', pass: 'asd123' }
-[2018-04-10T23:12:48.522] [INFO] things - phone:18522267880正在审核中
-[2018-04-10T23:12:48.523] [INFO] things - 还剩下5个检测
-[2018-04-10T23:12:48.524] [INFO] things - start to check status { phone: '13294181541', pass: '102823zlm' }
-[2018-04-10T23:12:49.631] [INFO] things - phone:13294181541正在审核中
-[2018-04-10T23:12:49.631] [INFO] things - 还剩下4个检测
-[2018-04-10T23:12:49.631] [INFO] things - start to check status { phone: '13927819949', pass: 'zxc123' }
-[2018-04-10T23:12:50.974] [INFO] things - phone:13927819949审核失败,
-[2018-04-10T23:12:50.975] [INFO] things - 还剩下3个检测
-[2018-04-10T23:12:50.975] [INFO] things - start to check status { phone: '15831296942', pass: '943869' }
-[2018-04-10T23:12:52.316] [INFO] things - phone:15831296942正在审核中
-[2018-04-10T23:12:52.316] [INFO] things - 还剩下2个检测
-[2018-04-10T23:12:52.317] [INFO] things - start to check status { phone: '18058867256', pass: '18058867256' }
-[2018-04-10T23:12:53.227] [INFO] things - phone:18058867256审核失败,
-[2018-04-10T23:12:53.228] [INFO] things - 还剩下1个检测
-[2018-04-10T23:12:53.228] [INFO] things - start to check status { phone: '15033774890', pass: 'gaonan020626' }
-[2018-04-10T23:12:54.374] [INFO] things - phone:15033774890审核失败,
-[2018-04-10T23:12:54.375] [INFO] things - 还剩下0个检测
-[2018-04-10T23:12:54.375] [INFO] things - start to check status { phone: '18246205895', pass: '123456a' }
-[2018-04-10T23:12:56.361] [INFO] things - phone:18246205895审核失败,终端设备存在安全隐患
-[2018-04-10T23:12:56.361] [INFO] things - 还剩下0个检测
-[2018-04-10T23:12:56.361] [INFO] things - 检查完成
-[2018-04-10T23:14:58.080] [INFO] things - to Buy tels [ { phone: '17852648420', pass: '123456qaz' },
-  { phone: '15138600855', pass: '1234567890y' },
-  { phone: '13537416679', pass: '12345678999' },
-  { phone: '18336540100', pass: '1234567890y' },
-  { phone: '15384260864', pass: 'qwe258147' },
-  { phone: '17796505593', pass: '1234567890y' },
-  { phone: '17538234453', pass: 'z661314' },
-  { phone: '13914830243', pass: 'DuoDuo1314' },
-  { phone: '13265679894', pass: 'cgs123' },
-  { phone: '15637977074', pass: '123456ojbk' },
-  { phone: '15949221706', pass: 'ai366758' },
-  { phone: '13632576547', pass: 'ai366758' },
-  { phone: '18522267880', pass: 'asd123' },
-  { phone: '13294181541', pass: '102823zlm' },
-  { phone: '13927819949', pass: 'zxc123' },
-  { phone: '15831296942', pass: '943869' },
-  { phone: '18058867256', pass: '18058867256' },
-  { phone: '15033774890', pass: 'gaonan020626' },
-  { phone: '18246205895', pass: '123456a' } ]
-[2018-04-10T23:14:58.085] [INFO] things - 还剩下18个检测
-[2018-04-10T23:14:58.086] [INFO] things - start to check status { phone: '17852648420', pass: '123456qaz' }
-[2018-04-10T23:14:59.462] [INFO] things - phone:17852648420正在审核中
-[2018-04-10T23:14:59.463] [INFO] things - 还剩下17个检测
-[2018-04-10T23:14:59.463] [INFO] things - start to check status { phone: '15138600855', pass: '1234567890y' }
-[2018-04-10T23:15:00.749] [INFO] things - phone:15138600855正在审核中
-[2018-04-10T23:15:00.749] [INFO] things - 还剩下16个检测
-[2018-04-10T23:15:00.750] [INFO] things - start to check status { phone: '13537416679', pass: '12345678999' }
-[2018-04-10T23:15:04.789] [INFO] things - phone:13537416679审核失败,预约审核收货地址高度相似异常
-[2018-04-10T23:15:04.789] [INFO] things - 还剩下15个检测
-[2018-04-10T23:15:04.790] [INFO] things - start to check status { phone: '18336540100', pass: '1234567890y' }
-[2018-04-10T23:15:05.979] [INFO] things - phone:18336540100审核失败,
-[2018-04-10T23:15:05.979] [INFO] things - 还剩下14个检测
-[2018-04-10T23:15:05.979] [INFO] things - start to check status { phone: '15384260864', pass: 'qwe258147' }
-[2018-04-10T23:15:07.041] [INFO] things - phone:15384260864正在审核中
-[2018-04-10T23:15:07.041] [INFO] things - 还剩下13个检测
-[2018-04-10T23:15:07.041] [INFO] things - start to check status { phone: '17796505593', pass: '1234567890y' }
-[2018-04-10T23:15:08.373] [INFO] things - phone:17796505593审核失败,
-[2018-04-10T23:15:08.373] [INFO] things - 还剩下12个检测
-[2018-04-10T23:15:08.374] [INFO] things - start to check status { phone: '17538234453', pass: 'z661314' }
-[2018-04-10T23:15:09.328] [INFO] things - phone:17538234453审核失败,
-[2018-04-10T23:15:09.328] [INFO] things - 还剩下11个检测
-[2018-04-10T23:15:09.329] [INFO] things - start to check status { phone: '13914830243', pass: 'DuoDuo1314' }
-[2018-04-10T23:15:14.338] [INFO] things - phone:13914830243审核失败,
-[2018-04-10T23:15:14.338] [INFO] things - 还剩下10个检测
-[2018-04-10T23:15:14.338] [INFO] things - start to check status { phone: '13265679894', pass: 'cgs123' }
-[2018-04-10T23:15:15.746] [INFO] things - phone:13265679894正在审核中
-[2018-04-10T23:15:15.747] [INFO] things - 还剩下9个检测
-[2018-04-10T23:15:15.747] [INFO] things - start to check status { phone: '15637977074', pass: '123456ojbk' }
-[2018-04-10T23:15:17.232] [INFO] things - phone:15637977074审核失败,
-[2018-04-10T23:15:17.232] [INFO] things - 还剩下8个检测
-[2018-04-10T23:15:17.233] [INFO] things - start to check status { phone: '15949221706', pass: 'ai366758' }
-[2018-04-10T23:15:18.257] [INFO] things - phone:15949221706审核失败,
-[2018-04-10T23:15:18.258] [INFO] things - 还剩下7个检测
-[2018-04-10T23:15:18.258] [INFO] things - start to check status { phone: '13632576547', pass: 'ai366758' }
-[2018-04-10T23:15:19.212] [INFO] things - phone:13632576547正在审核中
-[2018-04-10T23:15:19.213] [INFO] things - 还剩下6个检测
-[2018-04-10T23:15:19.213] [INFO] things - start to check status { phone: '18522267880', pass: 'asd123' }
-[2018-04-10T23:15:20.559] [INFO] things - phone:18522267880正在审核中
-[2018-04-10T23:15:20.559] [INFO] things - 还剩下5个检测
-[2018-04-10T23:15:20.560] [INFO] things - start to check status { phone: '13294181541', pass: '102823zlm' }
-[2018-04-10T23:15:21.745] [INFO] things - phone:13294181541正在审核中
-[2018-04-10T23:15:21.745] [INFO] things - 还剩下4个检测
-[2018-04-10T23:15:21.745] [INFO] things - start to check status { phone: '13927819949', pass: 'zxc123' }
-[2018-04-10T23:15:23.118] [INFO] things - phone:13927819949审核失败,
-[2018-04-10T23:15:23.119] [INFO] things - 还剩下3个检测
-[2018-04-10T23:15:23.119] [INFO] things - start to check status { phone: '15831296942', pass: '943869' }
-[2018-04-10T23:15:25.016] [INFO] things - phone:15831296942正在审核中
-[2018-04-10T23:15:25.017] [INFO] things - 还剩下2个检测
-[2018-04-10T23:15:25.017] [INFO] things - start to check status { phone: '18058867256', pass: '18058867256' }
-[2018-04-10T23:15:26.338] [INFO] things - phone:18058867256审核失败,
-[2018-04-10T23:15:26.338] [INFO] things - 还剩下1个检测
-[2018-04-10T23:15:26.338] [INFO] things - start to check status { phone: '15033774890', pass: 'gaonan020626' }
-[2018-04-10T23:15:28.137] [INFO] things - phone:15033774890审核失败,
-[2018-04-10T23:15:28.137] [INFO] things - 还剩下0个检测
-[2018-04-10T23:15:28.137] [INFO] things - start to check status { phone: '18246205895', pass: '123456a' }
-[2018-04-10T23:15:29.570] [INFO] things - phone:18246205895审核失败,终端设备存在安全隐患
-[2018-04-10T23:15:29.571] [INFO] things - 还剩下0个检测
-[2018-04-10T23:15:29.571] [INFO] things - 检查完成
-[2018-04-10T23:16:47.709] [INFO] things - start get addressID from mobile: 13537416679
-[2018-04-10T23:16:48.908] [INFO] things - {"state":true,"code":0,"data":{"size":10,"index":1,"count":1,"datacount":1,"list":[{"rownumber":1,"SId":1854320,"UserId":"2197289","TelPhone":"13537416079","Zipcode":"000000","Address":"环北吉新社区","AddressInfo":"贵州省贵阳市云岩区","ShipTo":"费院","Remark":"","ProvinceId":"520000","CityId":"520100","DistrictsId":"520103","IsDefault":true,"SMNo":null,"RelPhone":null,"Longitude":"106.621771","Latitude":"26.577666","IsVerification":false,"TimeStamp":"2018-04-10 23:05:14"}]}}
-[2018-04-10T23:16:49.040] [INFO] things - start get addressID from mobile: 18336540100
-[2018-04-10T23:16:49.933] [INFO] things - {"state":true,"code":0,"data":{"size":10,"index":1,"count":1,"datacount":1,"list":[{"rownumber":1,"SId":1854275,"UserId":"2197279","TelPhone":"18336540000","Zipcode":"000000","Address":"牛角坡","AddressInfo":"贵州省贵阳市乌当区","ShipTo":"易己禺树","Remark":"","ProvinceId":"520000","CityId":"520100","DistrictsId":"520112","IsDefault":true,"SMNo":null,"RelPhone":null,"Longitude":"106.680818","Latitude":"26.653513","IsVerification":false,"TimeStamp":"2018-04-10 23:05:16"}]}}
-[2018-04-10T23:16:50.066] [INFO] things - start get addressID from mobile: 17796505593
-[2018-04-10T23:16:51.334] [INFO] things - {"state":true,"code":0,"data":{"size":10,"index":1,"count":1,"datacount":1,"list":[{"rownumber":1,"SId":1854187,"UserId":"2197204","TelPhone":"17796505093","Zipcode":"000000","Address":"白云寺村","AddressInfo":"贵州省贵阳市白云区","ShipTo":"熊况","Remark":"","ProvinceId":"520000","CityId":"520100","DistrictsId":"520113","IsDefault":true,"SMNo":null,"RelPhone":null,"Longitude":"106.626501","Latitude":"26.717571","IsVerification":false,"TimeStamp":"2018-04-10 23:05:19"}]}}
-[2018-04-10T23:16:51.455] [INFO] things - start get addressID from mobile: 17538234453
-[2018-04-10T23:16:55.299] [INFO] things - {"state":true,"code":0,"data":{"size":10,"index":1,"count":1,"datacount":1,"list":[{"rownumber":1,"SId":1854122,"UserId":"2197139","TelPhone":"17538234053","Zipcode":"000000","Address":"圆通仓库","AddressInfo":"贵州省贵阳市乌当区","ShipTo":"柯劝言","Remark":"","ProvinceId":"520000","CityId":"520100","DistrictsId":"520112","IsDefault":true,"SMNo":null,"RelPhone":null,"Longitude":"106.623307","Latitude":"26.70678","IsVerification":false,"TimeStamp":"2018-04-10 23:05:21"}]}}
-[2018-04-10T23:16:55.498] [INFO] things - start get addressID from mobile: 13914830243
-[2018-04-10T23:16:56.535] [INFO] things - {"state":true,"code":0,"data":{"size":10,"index":1,"count":1,"datacount":1,"list":[{"rownumber":1,"SId":1855016,"UserId":"2197814","TelPhone":"13914830043","Zipcode":"000000","Address":"陶家山","AddressInfo":"贵州省贵阳市乌当区","ShipTo":"骆勃","Remark":"","ProvinceId":"520000","CityId":"520100","DistrictsId":"520112","IsDefault":true,"SMNo":null,"RelPhone":null,"Longitude":"106.656183","Latitude":"26.687189","IsVerification":false,"TimeStamp":"2018-04-10 23:05:23"}]}}
-[2018-04-10T23:16:56.655] [INFO] things - start get addressID from mobile: 15637977074
-[2018-04-10T23:16:57.577] [INFO] things - {"state":true,"code":0,"data":{"size":10,"index":1,"count":1,"datacount":1,"list":[{"rownumber":1,"SId":1855110,"UserId":"2197863","TelPhone":"156379770574","Zipcode":"000000","Address":"燕京啤酒贵州有限公司(北1门)","AddressInfo":"贵州省贵阳市白云区","ShipTo":"安蹇","Remark":"","ProvinceId":"520000","CityId":"520100","DistrictsId":"520113","IsDefault":true,"SMNo":null,"RelPhone":null,"Longitude":"106.708701","Latitude":"26.594775","IsVerification":false,"TimeStamp":"2018-04-10 23:05:26"}]}}
-[2018-04-10T23:16:57.703] [INFO] things - start get addressID from mobile: 15949221706
-[2018-04-10T23:16:58.762] [INFO] things - {"state":true,"code":0,"data":{"size":10,"index":1,"count":1,"datacount":1,"list":[{"rownumber":1,"SId":1854012,"UserId":"2197052","TelPhone":"15949221006","Zipcode":"000000","Address":"塔山公园","AddressInfo":"贵州省贵阳市白云区","ShipTo":"唐蠡","Remark":"","ProvinceId":"520000","CityId":"520100","DistrictsId":"520113","IsDefault":true,"SMNo":null,"RelPhone":null,"Longitude":"106.660975","Latitude":"26.63752","IsVerification":false,"TimeStamp":"2018-04-10 23:00:32"}]}}
-[2018-04-10T23:16:58.886] [INFO] things - start get addressID from mobile: 13927819949
-[2018-04-10T23:16:59.913] [INFO] things - {"state":true,"code":0,"data":{"size":10,"index":1,"count":1,"datacount":1,"list":[{"rownumber":1,"SId":1854402,"UserId":"2197365","TelPhone":"13927819049","Zipcode":"000000","Address":"外婆家乡菜","AddressInfo":"贵州省贵阳市白云区","ShipTo":"甘茸窗","Remark":"","ProvinceId":"520000","CityId":"520100","DistrictsId":"520113","IsDefault":true,"SMNo":null,"RelPhone":null,"Longitude":"106.6068","Latitude":"26.616064","IsVerification":false,"TimeStamp":"2018-04-10 23:05:30"}]}}
-[2018-04-10T23:17:00.027] [INFO] things - start get addressID from mobile: 18058867256
-[2018-04-10T23:17:00.792] [INFO] things - {"state":true,"code":0,"data":{"size":10,"index":1,"count":1,"datacount":1,"list":[{"rownumber":1,"SId":1854901,"UserId":"2197705","TelPhone":"18058867256","Zipcode":"000000","Address":"徐汇区,漕河泾街道好运路525号黄屋基安居街303号金色维也纳小区5栋5单元3001","AddressInfo":"上海市徐汇区","ShipTo":"玖玖","Remark":"","ProvinceId":"310000","CityId":"310100","DistrictsId":"310104","IsDefault":false,"SMNo":null,"RelPhone":null,"Longitude":"121.436525","Latitude":"31.188523","IsVerification":true,"TimeStamp":"2018-03-02 21:58:17"}]}}
-[2018-04-10T23:17:00.919] [INFO] things - start get addressID from mobile: 15033774890
-[2018-04-10T23:17:02.243] [INFO] things - {"state":true,"code":0,"data":{"size":10,"index":1,"count":1,"datacount":1,"list":[{"rownumber":1,"SId":1854985,"UserId":"2197789","TelPhone":"15033774890","Zipcode":"000000","Address":"徐汇区,漕河泾街道仙家路583号晨辉一街578号南田雅园13号2-3206房","AddressInfo":"上海市徐汇区","ShipTo":"高楠","Remark":"","ProvinceId":"310000","CityId":"310100","DistrictsId":"310104","IsDefault":false,"SMNo":null,"RelPhone":null,"Longitude":"121.436525","Latitude":"31.188523","IsVerification":true,"TimeStamp":"2018-03-02 22:20:54"}]}}
-[2018-04-10T23:17:02.351] [INFO] things - start get addressID from mobile: 18246205895
-[2018-04-10T23:17:03.604] [INFO] things - {"state":true,"code":0,"data":{"size":10,"index":1,"count":1,"datacount":1,"list":[{"rownumber":1,"SId":1690889,"UserId":"2081940","TelPhone":"18246205895","Zipcode":"000000","Address":"静安区,宝山路街道鸾岗卢屋石桥头新村村西篮球场西北角","AddressInfo":"上海市静安区","ShipTo":"lys","Remark":"","ProvinceId":"310000","CityId":"310100","DistrictsId":"310106","IsDefault":true,"SMNo":null,"RelPhone":null,"Longitude":"121.455965","Latitude":"31.223428","IsVerification":true,"TimeStamp":"2018-02-04 14:33:15"}]}}
-[2018-04-10T23:17:03.604] [INFO] things - 全部登录完成
-[2018-04-10T23:17:26.925] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { ID: 1854320,
-     IsDefault: true,
-     IsPushAddreess: false,
-     Name: '蓟霆',
-     TelPhone: '13537416079',
-     Zipcode: '000000',
-     ProvCode: '520000',
-     CityCode: '520100',
-     AreaCode: '520113',
-     Remark: '',
-     IsVerification: false,
-     AddressDetails: '贵州省贵阳市白云区,麦伍',
-     Longitude: 106.623452,
-     Latitude: 26.613659,
-     Address: '麦伍',
-     AddressText: '贵州省贵阳市白云区' } }
-[2018-04-10T23:17:31.798] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
-[2018-04-10T23:17:35.114] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { ID: 1854275,
-     IsDefault: true,
-     IsPushAddreess: false,
-     Name: '陈罹',
-     TelPhone: '18336540000',
-     Zipcode: '000000',
-     ProvCode: '520000',
-     CityCode: '520100',
-     AreaCode: '520103',
-     Remark: '',
-     IsVerification: false,
-     AddressDetails: '贵州省贵阳市云岩区,黔灵山公园',
-     Longitude: 106.680532,
-     Latitude: 26.634038,
-     Address: '黔灵山公园',
-     AddressText: '贵州省贵阳市云岩区' } }
-[2018-04-10T23:17:36.141] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
-[2018-04-10T23:17:37.469] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { ID: 1854187,
-     IsDefault: true,
-     IsPushAddreess: false,
-     Name: '姚粽',
-     TelPhone: '17796505093',
-     Zipcode: '000000',
-     ProvCode: '520000',
-     CityCode: '520100',
-     AreaCode: '520113',
-     Remark: '',
-     IsVerification: false,
-     AddressDetails: '贵州省贵阳市白云区,贵阳动车检查库',
-     Longitude: 106.707669,
-     Latitude: 26.665826,
-     Address: '贵阳动车检查库',
-     AddressText: '贵州省贵阳市白云区' } }
-[2018-04-10T23:17:38.581] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
-[2018-04-10T23:17:40.029] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { ID: 1854122,
-     IsDefault: true,
-     IsPushAddreess: false,
-     Name: '汲璎',
-     TelPhone: '17538234053',
-     Zipcode: '000000',
-     ProvCode: '520000',
-     CityCode: '520100',
-     AreaCode: '520103',
-     Remark: '',
-     IsVerification: false,
-     AddressDetails: '贵州省贵阳市云岩区,榜上',
-     Longitude: 106.725738,
-     Latitude: 26.669792,
-     Address: '榜上',
-     AddressText: '贵州省贵阳市云岩区' } }
-[2018-04-10T23:17:41.258] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
-[2018-04-10T23:17:44.944] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { ID: 1855016,
-     IsDefault: true,
-     IsPushAddreess: false,
-     Name: '瓮梓偃',
-     TelPhone: '13914830043',
-     Zipcode: '000000',
-     ProvCode: '520000',
-     CityCode: '520100',
-     AreaCode: '520113',
-     Remark: '',
-     IsVerification: false,
-     AddressDetails: '贵州省贵阳市白云区,贵州省机械电子产品质量监督检验院',
-     Longitude: 106.670689,
-     Latitude: 26.721604,
-     Address: '贵州省机械电子产品质量监督检验院',
-     AddressText: '贵州省贵阳市白云区' } }
-[2018-04-10T23:17:48.426] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
-[2018-04-10T23:17:49.655] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { ID: 1855110,
-     IsDefault: true,
-     IsPushAddreess: false,
-     Name: '仰云',
-     TelPhone: '156379770574',
-     Zipcode: '000000',
-     ProvCode: '520000',
-     CityCode: '520100',
-     AreaCode: '520112',
-     Remark: '',
-     IsVerification: false,
-     AddressDetails: '贵州省贵阳市乌当区,云岩活跃汽车修理厂',
-     Longitude: 106.583402,
-     Latitude: 26.658595,
-     Address: '云岩活跃汽车修理厂',
-     AddressText: '贵州省贵阳市乌当区' } }
-[2018-04-10T23:17:50.618] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
-[2018-04-10T23:17:51.907] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { ID: 1854012,
-     IsDefault: true,
-     IsPushAddreess: false,
-     Name: '张肇杰',
-     TelPhone: '15949221006',
-     Zipcode: '000000',
-     ProvCode: '520000',
-     CityCode: '520100',
-     AreaCode: '520112',
-     Remark: '',
-     IsVerification: false,
-     AddressDetails: '贵州省贵阳市乌当区,仁和场',
-     Longitude: 106.635492,
-     Latitude: 26.587708,
-     Address: '仁和场',
-     AddressText: '贵州省贵阳市乌当区' } }
-[2018-04-10T23:17:53.033] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
-[2018-04-10T23:17:58.154] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { ID: 1854402,
-     IsDefault: true,
-     IsPushAddreess: false,
-     Name: '仇籍',
-     TelPhone: '13927819049',
-     Zipcode: '000000',
-     ProvCode: '520000',
-     CityCode: '520100',
-     AreaCode: '520112',
-     Remark: '',
-     IsVerification: false,
-     AddressDetails: '贵州省贵阳市乌当区,贵州职业技术学院新校区-东北门',
-     Longitude: 106.660203,
-     Latitude: 26.692598,
-     Address: '贵州职业技术学院新校区-东北门',
-     AddressText: '贵州省贵阳市乌当区' } }
-[2018-04-10T23:17:58.997] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
-[2018-04-10T23:18:00.305] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { ID: 1854901,
-     IsDefault: false,
-     IsPushAddreess: false,
-     Name: '赵林厚',
-     TelPhone: '18058867056',
-     Zipcode: '000000',
-     ProvCode: '520000',
-     CityCode: '520100',
-     AreaCode: '520112',
-     Remark: '',
-     IsVerification: false,
-     AddressDetails: '贵州省贵阳市乌当区,中天帝景传说',
-     Longitude: 106.698557,
-     Latitude: 26.606131,
-     Address: '中天帝景传说',
-     AddressText: '贵州省贵阳市乌当区' } }
-[2018-04-10T23:18:01.738] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
-[2018-04-10T23:18:03.069] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { ID: 1854985,
-     IsDefault: false,
-     IsPushAddreess: false,
-     Name: '谢物',
-     TelPhone: '15033774090',
-     Zipcode: '000000',
-     ProvCode: '520000',
-     CityCode: '520100',
-     AreaCode: '520112',
-     Remark: '',
-     IsVerification: false,
-     AddressDetails: '贵州省贵阳市乌当区,贵阳北站',
-     Longitude: 106.658021,
-     Latitude: 26.727847,
-     Address: '贵阳北站',
-     AddressText: '贵州省贵阳市乌当区' } }
-[2018-04-10T23:18:12.286] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
-[2018-04-10T23:18:16.996] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { ID: 1690889,
-     IsDefault: true,
-     IsPushAddreess: false,
-     Name: '周策',
-     TelPhone: '18246205095',
-     Zipcode: '000000',
-     ProvCode: '520000',
-     CityCode: '520100',
-     AreaCode: '520113',
-     Remark: '',
-     IsVerification: false,
-     AddressDetails: '贵州省贵阳市白云区,白云区第二高级中学',
-     Longitude: 106.613546,
-     Latitude: 26.611023,
-     Address: '白云区第二高级中学',
-     AddressText: '贵州省贵阳市白云区' } }
-[2018-04-10T23:18:18.532] [INFO] things - 预约结果 {"state":true,"code":0,"msg":"提交预约信息成功"}
-[2018-04-10T23:19:13.423] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { ID: 1854320,
-     IsDefault: true,
-     IsPushAddreess: false,
-     Name: '鄂并依',
-     TelPhone: '13537416079',
-     Zipcode: '000000',
-     ProvCode: '520000',
-     CityCode: '520100',
-     AreaCode: '520113',
-     Remark: '',
-     IsVerification: false,
-     AddressDetails: '贵州省贵阳市白云区,神石钙业有限公司',
-     Longitude: 106.65146,
-     Latitude: 26.690267,
-     Address: '神石钙业有限公司',
-     AddressText: '贵州省贵阳市白云区' } }
-[2018-04-10T23:19:14.939] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
-[2018-04-10T23:19:16.286] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { ID: 1854275,
-     IsDefault: true,
-     IsPushAddreess: false,
-     Name: '折坪促',
-     TelPhone: '18336540000',
-     Zipcode: '000000',
-     ProvCode: '520000',
-     CityCode: '520100',
-     AreaCode: '520103',
-     Remark: '',
-     IsVerification: false,
-     AddressDetails: '贵州省贵阳市云岩区,黔灵湖大桥左线桥',
-     Longitude: 106.657514,
-     Latitude: 26.592915,
-     Address: '黔灵湖大桥左线桥',
-     AddressText: '贵州省贵阳市云岩区' } }
-[2018-04-10T23:19:17.405] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
-[2018-04-10T23:19:18.642] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { ID: 1854187,
-     IsDefault: true,
-     IsPushAddreess: false,
-     Name: '锺泊壶',
-     TelPhone: '17796505093',
-     Zipcode: '000000',
-     ProvCode: '520000',
-     CityCode: '520100',
-     AreaCode: '520113',
-     Remark: '',
-     IsVerification: false,
-     AddressDetails: '贵州省贵阳市白云区,都溪苗族跳场',
-     Longitude: 106.689232,
-     Latitude: 26.671321,
-     Address: '都溪苗族跳场',
-     AddressText: '贵州省贵阳市白云区' } }
-[2018-04-10T23:19:19.669] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
-[2018-04-10T23:19:20.703] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { ID: 1854122,
-     IsDefault: true,
-     IsPushAddreess: false,
-     Name: '喻姓作',
-     TelPhone: '17538234053',
-     Zipcode: '000000',
-     ProvCode: '520000',
-     CityCode: '520100',
-     AreaCode: '520103',
-     Remark: '',
-     IsVerification: false,
-     AddressDetails: '贵州省贵阳市云岩区,贵阳市第十七中学',
-     Longitude: 106.66896,
-     Latitude: 26.670204,
-     Address: '贵阳市第十七中学',
-     AddressText: '贵州省贵阳市云岩区' } }
-[2018-04-10T23:19:21.732] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
-[2018-04-10T23:20:01.240] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { ID: 1855110,
-     IsDefault: true,
-     IsPushAddreess: false,
-     Name: '盛姬栋',
-     TelPhone: '156379770074',
-     Zipcode: '000000',
-     ProvCode: '520000',
-     CityCode: '520100',
-     AreaCode: '520113',
-     Remark: '',
-     IsVerification: false,
-     AddressDetails: '贵州省贵阳市白云区,粑粑坳',
-     Longitude: 106.70923,
-     Latitude: 26.600486,
-     Address: '粑粑坳',
-     AddressText: '贵州省贵阳市白云区' } }
-[2018-04-10T23:20:02.120] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
-[2018-04-10T23:20:02.997] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { ID: 1854012,
-     IsDefault: true,
-     IsPushAddreess: false,
-     Name: '尚橘',
-     TelPhone: '15949221006',
-     Zipcode: '000000',
-     ProvCode: '520000',
-     CityCode: '520100',
-     AreaCode: '520103',
-     Remark: '',
-     IsVerification: false,
-     AddressDetails: '贵州省贵阳市云岩区,贵州酒都酒业有限公司',
-     Longitude: 106.689901,
-     Latitude: 26.615509,
-     Address: '贵州酒都酒业有限公司',
-     AddressText: '贵州省贵阳市云岩区' } }
-[2018-04-10T23:20:03.764] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
-[2018-04-10T23:20:09.023] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { ID: 1854402,
-     IsDefault: true,
-     IsPushAddreess: false,
-     Name: '杭趾叙',
-     TelPhone: '13927819049',
-     Zipcode: '000000',
-     ProvCode: '520000',
-     CityCode: '520100',
-     AreaCode: '520112',
-     Remark: '',
-     IsVerification: false,
-     AddressDetails: '贵州省贵阳市乌当区,性病专科',
-     Longitude: 106.596256,
-     Latitude: 26.721953,
-     Address: '性病专科',
-     AddressText: '贵州省贵阳市乌当区' } }
-[2018-04-10T23:20:09.836] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
-[2018-04-10T23:20:11.071] [INFO] things - { state: true,
-  code: 0,
-  data: 
-   { ID: 1854985,
-     IsDefault: true,
-     IsPushAddreess: false,
-     Name: '秦康优暗',
-     TelPhone: '15033774090',
-     Zipcode: '000000',
-     ProvCode: '520000',
-     CityCode: '520100',
-     AreaCode: '520113',
-     Remark: '',
-     IsVerification: false,
-     AddressDetails: '贵州省贵阳市白云区,金豆豆智慧乐园',
-     Longitude: 106.71952,
-     Latitude: 26.678988,
-     Address: '金豆豆智慧乐园',
-     AddressText: '贵州省贵阳市白云区' } }
-[2018-04-10T23:20:11.899] [INFO] things - 预约结果 {"state":true,"code":101,"msg":"(经系统检测,您的账号信息存在安全隐患,不能购买此商品,如有异议可提交申诉,审核通过后会恢复购买权限)"}
-[2018-04-10T23:21:23.235] [INFO] things - start get addressID from mobile: 18235613251
-[2018-04-10T23:21:24.212] [INFO] things - {"state":true,"code":0,"data":{"size":10,"index":1,"count":1,"datacount":1,"list":[{"rownumber":1,"SId":1853608,"UserId":"2196838","TelPhone":"18235613201","Zipcode":"000000","Address":"打摆","AddressInfo":"贵州省贵阳市乌当区","ShipTo":"经渔","Remark":"","ProvinceId":"520000","CityId":"520100","DistrictsId":"520112","IsDefault":true,"SMNo":null,"RelPhone":null,"Longitude":"106.693619","Latitude":"26.670894","IsVerification":false,"TimeStamp":"2018-04-10 22:50:03"}]}}
-[2018-04-10T23:21:24.322] [INFO] things - start get addressID from mobile: 15204586928
-[2018-04-10T23:21:25.512] [INFO] things - {"state":true,"code":0,"data":{"size":10,"index":1,"count":1,"datacount":1,"list":[{"rownumber":1,"SId":1851863,"UserId":"2195804","TelPhone":"15204586908","Zipcode":"000000","Address":"都溪苗族跳场","AddressInfo":"贵州省贵阳市白云区","ShipTo":"吉因","Remark":"","ProvinceId":"520000","CityId":"520100","DistrictsId":"520113","IsDefault":true,"SMNo":null,"RelPhone":null,"Longitude":"106.567914","Latitude":"26.687691","IsVerification":false,"TimeStamp":"2018-04-10 22:50:11"}]}}
-[2018-04-10T23:21:25.631] [INFO] things - start get addressID from mobile: 18635807968
-[2018-04-10T23:21:26.609] [INFO] things - {"state":true,"code":0,"data":{"size":10,"index":1,"count":1,"datacount":1,"list":[{"rownumber":1,"SId":1853363,"UserId":"2196671","TelPhone":"18635807908","Zipcode":"000000","Address":"黔航小区","AddressInfo":"贵州省贵阳市乌当区","ShipTo":"国液锻偿","Remark":"","ProvinceId":"520000","CityId":"520100","DistrictsId":"520112","IsDefault":true,"SMNo":null,"RelPhone":null,"Longitude":"106.618877","Latitude":"26.726886","IsVerification":false,"TimeStamp":"2018-04-10 22:50:39"}]}}
-[2018-04-10T23:21:26.734] [INFO] things - start get addressID from mobile: 17852648420
-[2018-04-10T23:21:27.624] [INFO] things - {"state":true,"code":0,"data":{"size":10,"index":1,"count":1,"datacount":1,"list":[{"rownumber":1,"SId":1854399,"UserId":"2197286","TelPhone":"17852648400","Zipcode":"000000","Address":"平安小区","AddressInfo":"贵州省贵阳市云岩区","ShipTo":"艾逻俊","Remark":"","ProvinceId":"520000","CityId":"520100","DistrictsId":"520103","IsDefault":true,"SMNo":null,"RelPhone":null,"Longitude":"106.650551","Latitude":"26.614755","IsVerification":false,"TimeStamp":"2018-04-10 22:50:55"}]}}
-[2018-04-10T23:21:27.761] [INFO] things - start get addressID from mobile: 13632576547
-[2018-04-10T23:21:28.683] [INFO] things - {"state":true,"code":0,"data":{"size":10,"index":1,"count":1,"datacount":1,"list":[{"rownumber":1,"SId":1853990,"UserId":"2197050","TelPhone":"13632576507","Zipcode":"000000","Address":"十三公里","AddressInfo":"贵州省贵阳市乌当区","ShipTo":"班排","Remark":"","ProvinceId":"520000","CityId":"520100","DistrictsId":"520112","IsDefault":true,"SMNo":null,"RelPhone":null,"Longitude":"106.660979","Latitude":"26.612126","IsVerification":false,"TimeStamp":"2018-04-10 22:51:42"}]}}
-[2018-04-10T23:21:28.801] [INFO] things - start get addressID from mobile: 18522267880
-[2018-04-10T23:21:30.082] [INFO] things - {"state":true,"code":0,"data":{"size":10,"index":1,"count":1,"datacount":1,"list":[{"rownumber":1,"SId":1534068,"UserId":"1971476","TelPhone":"18522267800","Zipcode":"000000","Address":"北京第二实验小学集团校","AddressInfo":"贵州省贵阳市乌当区","ShipTo":"韩偕波","Remark":"","ProvinceId":"520000","CityId":"520100","DistrictsId":"520112","IsDefault":true,"SMNo":null,"RelPhone":null,"Longitude":"106.651686","Latitude":"26.702162","IsVerification":false,"TimeStamp":"2018-04-10 22:51:45"}]}}
-[2018-04-10T23:21:30.204] [INFO] things - start get addressID from mobile: 13294181541
-[2018-04-10T23:21:32.908] [INFO] things - {"state":true,"code":0,"data":{"size":10,"index":1,"count":1,"datacount":1,"list":[{"rownumber":1,"SId":1854076,"UserId":"2197131","TelPhone":"13294181501","Zipcode":"000000","Address":"银子山","AddressInfo":"贵州省贵阳市乌当区","ShipTo":"卫幕炫裹","Remark":"","ProvinceId":"520000","CityId":"520100","DistrictsId":"520112","IsDefault":true,"SMNo":null,"RelPhone":null,"Longitude":"106.604349","Latitude":"26.725139","IsVerification":false,"TimeStamp":"2018-04-10 22:51:49"}]}}
-[2018-04-10T23:21:33.035] [INFO] things - start get addressID from mobile: 15831296942
-[2018-04-10T23:21:34.060] [INFO] things - {"state":true,"code":0,"data":{"size":10,"index":1,"count":1,"datacount":3,"list":[{"rownumber":1,"SId":1854771,"UserId":"2197516","TelPhone":"15831296902","Zipcode":"000000","Address":"宏鑫汽车快修店","AddressInfo":"贵州省贵阳市白云区","ShipTo":"凤崎回","Remark":"","ProvinceId":"520000","CityId":"520100","DistrictsId":"520113","IsDefault":true,"SMNo":null,"RelPhone":null,"Longitude":"106.664909","Latitude":"26.709135","IsVerification":false,"TimeStamp":"2018-04-10 22:52:00"},{"rownumber":2,"SId":1854664,"UserId":"2197516","TelPhone":"15831296942","Zipcode":"000000","Address":"徐汇区,上海市徐汇区漕河泾街道仙家路583号晨辉一街578号南田雅园13号2-3206房","AddressInfo":"上海市徐汇区","ShipTo":"王攀","Remark":"","ProvinceId":"310000","CityId":"310100","DistrictsId":"310104","IsDefault":false,"SMNo":null,"RelPhone":null,"Longitude":"121.436525","Latitude":"31.188523","IsVerification":true,"TimeStamp":"2018-03-02 20:32:19"},{"rownumber":3,"SId":1854661,"UserId":"2197516","TelPhone":"15831296942","Zipcode":"000000","Address":"徐汇区,上海市徐汇区漕河泾街道仙家路583号晨辉一街578号南田雅园13号2-3206房","AddressInfo":"上海市徐汇区","ShipTo":"王攀","Remark":"","ProvinceId":"310000","CityId":"310100","DistrictsId":"310104","IsDefault":false,"SMNo":null,"RelPhone":null,"Longitude":"121.436525","Latitude":"31.188523","IsVerification":true,"TimeStamp":"2018-03-02 20:30:53"}]}}
-[2018-04-10T23:21:34.194] [INFO] things - start get addressID from mobile: 15138600855
-[2018-04-10T23:21:35.319] [INFO] things - {"state":true,"code":0,"data":{"size":10,"index":1,"count":1,"datacount":1,"list":[{"rownumber":1,"SId":1854369,"UserId":"2197327","TelPhone":"15138600055","Zipcode":"000000","Address":"西南国际家居装饰博览城木制品馆-7号门","AddressInfo":"贵州省贵阳市白云区","ShipTo":"盍霁","Remark":"","ProvinceId":"520000","CityId":"520100","DistrictsId":"520113","IsDefault":true,"SMNo":null,"RelPhone":null,"Longitude":"106.633515","Latitude":"26.677472","IsVerification":false,"TimeStamp":"2018-04-10 22:59:58"}]}}
-[2018-04-10T23:21:35.441] [INFO] things - start get addressID from mobile: 15384260864
-[2018-04-10T23:21:36.617] [INFO] things - {"state":true,"code":0,"data":{"size":10,"index":1,"count":1,"datacount":1,"list":[{"rownumber":1,"SId":1854235,"UserId":"2197236","TelPhone":"15384260064","Zipcode":"000000","Address":"新阳关","AddressInfo":"贵州省贵阳市乌当区","ShipTo":"荀短虑","Remark":"","ProvinceId":"520000","CityId":"520100","DistrictsId":"520112","IsDefault":true,"SMNo":null,"RelPhone":null,"Longitude":"106.625012","Latitude":"26.57547","IsVerification":false,"TimeStamp":"2018-04-10 23:00:10"}]}}
-[2018-04-10T23:21:36.749] [INFO] things - start get addressID from mobile: 13265679894
-[2018-04-10T23:21:37.573] [INFO] things - {"state":true,"code":0,"data":{"size":10,"index":1,"count":1,"datacount":1,"list":[{"rownumber":1,"SId":1855025,"UserId":"2197815","TelPhone":"13265679094","Zipcode":"000000","Address":"金燕物流园","AddressInfo":"贵州省贵阳市乌当区","ShipTo":"严绊拙祀","Remark":"","ProvinceId":"520000","CityId":"520100","DistrictsId":"520112","IsDefault":true,"SMNo":null,"RelPhone":null,"Longitude":"106.694591","Latitude":"26.629465","IsVerification":false,"TimeStamp":"2018-04-10 23:00:21"}]}}
-[2018-04-10T23:21:37.709] [INFO] things - start get addressID from mobile: 17852648420
-[2018-04-10T23:21:38.507] [INFO] things - {"state":true,"code":0,"data":{"size":10,"index":1,"count":1,"datacount":1,"list":[{"rownumber":1,"SId":1854399,"UserId":"2197286","TelPhone":"17852648400","Zipcode":"000000","Address":"平安小区","AddressInfo":"贵州省贵阳市云岩区","ShipTo":"艾逻俊","Remark":"","ProvinceId":"520000","CityId":"520100","DistrictsId":"520103","IsDefault":true,"SMNo":null,"RelPhone":null,"Longitude":"106.650551","Latitude":"26.614755","IsVerification":false,"TimeStamp":"2018-04-10 22:50:55"}]}}
-[2018-04-10T23:21:38.615] [INFO] things - start get addressID from mobile: 15138600855
-[2018-04-10T23:21:39.770] [INFO] things - {"state":true,"code":0,"data":{"size":10,"index":1,"count":1,"datacount":1,"list":[{"rownumber":1,"SId":1854369,"UserId":"2197327","TelPhone":"15138600055","Zipcode":"000000","Address":"西南国际家居装饰博览城木制品馆-7号门","AddressInfo":"贵州省贵阳市白云区","ShipTo":"盍霁","Remark":"","ProvinceId":"520000","CityId":"520100","DistrictsId":"520113","IsDefault":true,"SMNo":null,"RelPhone":null,"Longitude":"106.633515","Latitude":"26.677472","IsVerification":false,"TimeStamp":"2018-04-10 22:59:58"}]}}
-[2018-04-10T23:21:39.906] [INFO] things - start get addressID from mobile: 15384260864
-[2018-04-10T23:21:41.093] [INFO] things - {"state":true,"code":0,"data":{"size":10,"index":1,"count":1,"datacount":1,"list":[{"rownumber":1,"SId":1854235,"UserId":"2197236","TelPhone":"15384260064","Zipcode":"000000","Address":"新阳关","AddressInfo":"贵州省贵阳市乌当区","ShipTo":"荀短虑","Remark":"","ProvinceId":"520000","CityId":"520100","DistrictsId":"520112","IsDefault":true,"SMNo":null,"RelPhone":null,"Longitude":"106.625012","Latitude":"26.57547","IsVerification":false,"TimeStamp":"2018-04-10 23:00:10"}]}}
-[2018-04-10T23:21:41.204] [INFO] things - start get addressID from mobile: 13265679894
-[2018-04-10T23:21:42.177] [INFO] things - {"state":true,"code":0,"data":{"size":10,"index":1,"count":1,"datacount":1,"list":[{"rownumber":1,"SId":1855025,"UserId":"2197815","TelPhone":"13265679094","Zipcode":"000000","Address":"金燕物流园","AddressInfo":"贵州省贵阳市乌当区","ShipTo":"严绊拙祀","Remark":"","ProvinceId":"520000","CityId":"520100","DistrictsId":"520112","IsDefault":true,"SMNo":null,"RelPhone":null,"Longitude":"106.694591","Latitude":"26.629465","IsVerification":false,"TimeStamp":"2018-04-10 23:00:21"}]}}
-[2018-04-10T23:21:42.307] [INFO] things - start get addressID from mobile: 13632576547
-[2018-04-10T23:21:44.256] [INFO] things - {"state":true,"code":0,"data":{"size":10,"index":1,"count":1,"datacount":1,"list":[{"rownumber":1,"SId":1853990,"UserId":"2197050","TelPhone":"13632576507","Zipcode":"000000","Address":"十三公里","AddressInfo":"贵州省贵阳市乌当区","ShipTo":"班排","Remark":"","ProvinceId":"520000","CityId":"520100","DistrictsId":"520112","IsDefault":true,"SMNo":null,"RelPhone":null,"Longitude":"106.660979","Latitude":"26.612126","IsVerification":false,"TimeStamp":"2018-04-10 22:51:42"}]}}
-[2018-04-10T23:21:44.389] [INFO] things - start get addressID from mobile: 18522267880
-[2018-04-10T23:21:45.226] [INFO] things - {"state":true,"code":0,"data":{"size":10,"index":1,"count":1,"datacount":1,"list":[{"rownumber":1,"SId":1534068,"UserId":"1971476","TelPhone":"18522267800","Zipcode":"000000","Address":"北京第二实验小学集团校","AddressInfo":"贵州省贵阳市乌当区","ShipTo":"韩偕波","Remark":"","ProvinceId":"520000","CityId":"520100","DistrictsId":"520112","IsDefault":true,"SMNo":null,"RelPhone":null,"Longitude":"106.651686","Latitude":"26.702162","IsVerification":false,"TimeStamp":"2018-04-10 22:51:45"}]}}
-[2018-04-10T23:21:45.368] [INFO] things - start get addressID from mobile: 13294181541
-[2018-04-10T23:21:46.570] [INFO] things - {"state":true,"code":0,"data":{"size":10,"index":1,"count":1,"datacount":1,"list":[{"rownumber":1,"SId":1854076,"UserId":"2197131","TelPhone":"13294181501","Zipcode":"000000","Address":"银子山","AddressInfo":"贵州省贵阳市乌当区","ShipTo":"卫幕炫裹","Remark":"","ProvinceId":"520000","CityId":"520100","DistrictsId":"520112","IsDefault":true,"SMNo":null,"RelPhone":null,"Longitude":"106.604349","Latitude":"26.725139","IsVerification":false,"TimeStamp":"2018-04-10 22:51:49"}]}}
-[2018-04-10T23:21:46.694] [INFO] things - start get addressID from mobile: 15831296942
-[2018-04-10T23:21:49.581] [INFO] things - {"state":true,"code":0,"data":{"size":10,"index":1,"count":1,"datacount":3,"list":[{"rownumber":1,"SId":1854771,"UserId":"2197516","TelPhone":"15831296902","Zipcode":"000000","Address":"宏鑫汽车快修店","AddressInfo":"贵州省贵阳市白云区","ShipTo":"凤崎回","Remark":"","ProvinceId":"520000","CityId":"520100","DistrictsId":"520113","IsDefault":true,"SMNo":null,"RelPhone":null,"Longitude":"106.664909","Latitude":"26.709135","IsVerification":false,"TimeStamp":"2018-04-10 22:52:00"},{"rownumber":2,"SId":1854664,"UserId":"2197516","TelPhone":"15831296942","Zipcode":"000000","Address":"徐汇区,上海市徐汇区漕河泾街道仙家路583号晨辉一街578号南田雅园13号2-3206房","AddressInfo":"上海市徐汇区","ShipTo":"王攀","Remark":"","ProvinceId":"310000","CityId":"310100","DistrictsId":"310104","IsDefault":false,"SMNo":null,"RelPhone":null,"Longitude":"121.436525","Latitude":"31.188523","IsVerification":true,"TimeStamp":"2018-03-02 20:32:19"},{"rownumber":3,"SId":1854661,"UserId":"2197516","TelPhone":"15831296942","Zipcode":"000000","Address":"徐汇区,上海市徐汇区漕河泾街道仙家路583号晨辉一街578号南田雅园13号2-3206房","AddressInfo":"上海市徐汇区","ShipTo":"王攀","Remark":"","ProvinceId":"310000","CityId":"310100","DistrictsId":"310104","IsDefault":false,"SMNo":null,"RelPhone":null,"Longitude":"121.436525","Latitude":"31.188523","IsVerification":true,"TimeStamp":"2018-03-02 20:30:53"}]}}
-[2018-04-10T23:21:49.713] [INFO] things - start get addressID from mobile: 18058867256
-[2018-04-10T23:21:53.985] [INFO] things - {"state":true,"code":0,"data":{"size":10,"index":1,"count":1,"datacount":1,"list":[{"rownumber":1,"SId":1854901,"UserId":"2197705","TelPhone":"18058867056","Zipcode":"000000","Address":"中天帝景传说","AddressInfo":"贵州省贵阳市乌当区","ShipTo":"赵林厚","Remark":"","ProvinceId":"520000","CityId":"520100","DistrictsId":"520112","IsDefault":true,"SMNo":null,"RelPhone":null,"Longitude":"106.698557","Latitude":"26.606131","IsVerification":false,"TimeStamp":"2018-04-10 23:18:00"}]}}
-[2018-04-10T23:21:54.118] [INFO] things - start get addressID from mobile: 18246205895
-[2018-04-10T23:21:54.950] [INFO] things - {"state":true,"code":0,"data":{"size":10,"index":1,"count":1,"datacount":1,"list":[{"rownumber":1,"SId":1690889,"UserId":"2081940","TelPhone":"18246205095","Zipcode":"000000","Address":"白云区第二高级中学","AddressInfo":"贵州省贵阳市白云区","ShipTo":"周策","Remark":"","ProvinceId":"520000","CityId":"520100","DistrictsId":"520113","IsDefault":true,"SMNo":null,"RelPhone":null,"Longitude":"106.613546","Latitude":"26.611023","IsVerification":false,"TimeStamp":"2018-04-10 23:18:16"}]}}
-[2018-04-10T23:21:54.951] [INFO] things - 全部登录完成
+[2018-04-11T16:00:01.273] [INFO] things - 账号状态有问题
+[2018-04-11T16:00:01.274] [INFO] things - [32m您所在区域暂未上货[39m
+[2018-04-11T16:00:01.274] [INFO] things - {"phone":"18131970041","pass":"123456","addressId":1847451}
+[2018-04-11T16:00:01.274] [INFO] things - 1894480 '{"state":true,"code":10,"data":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":false,"Certificate":{"ID":"2822002","UID":2225881,"PID":"391","Status":3,"Address":{"ID":1894480,"IsDefault":false,"IsPushAddreess":true,"Name":"乐佳欣","TelPhone":"17757449525","Zipcode":"000000","ProvCode":"110000","CityCode":"110100","AreaCode":"110101","Remark":"","IsVerification":false,"AddressDetails":"北京市东城区,东城区,金宝街1号","Longitude":116.416357,"Latitude":39.928353,"Address":"东城区,金宝街1号","AddressText":"北京市东城区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-17 00:00:00"},"EnterTimeSlot":{"Start":"2018-04-11 00:00:00","End":"2018-04-11 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-04-12 10:00:00","End":"2018-04-12 16:00:00","InTime":false}}}'
+[2018-04-11T16:00:04.984] [INFO] things - 账号状态有问题
+[2018-04-11T16:00:04.984] [INFO] things - [32m您所在区域暂未上货[39m
+[2018-04-11T16:00:04.984] [INFO] things - {"phone":"15935492346","pass":"a123456","addressId":1930788}
+[2018-04-11T16:00:04.984] [INFO] things - 1951812 '{"state":true,"code":10,"data":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":false,"Certificate":{"ID":"2821973","UID":2245927,"PID":"391","Status":3,"Address":{"ID":1951812,"IsDefault":true,"IsPushAddreess":true,"Name":"诸蒂","TelPhone":"15082907806","Zipcode":"000000","ProvCode":"110000","CityCode":"110100","AreaCode":"110105","Remark":"","IsVerification":false,"AddressDetails":"北京市朝阳区,北京百汇求职公寓","Longitude":116.477169,"Latitude":39.900474,"Address":"北京百汇求职公寓","AddressText":"北京市朝阳区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-17 00:00:00"},"EnterTimeSlot":{"Start":"2018-04-11 00:00:00","End":"2018-04-11 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-04-12 10:00:00","End":"2018-04-12 16:00:00","InTime":false}}}'
+[2018-04-11T16:00:06.645] [INFO] things - 账号状态有问题
+[2018-04-11T16:00:06.645] [INFO] things - [32m您所在区域暂未上货[39m
+[2018-04-11T16:00:06.645] [INFO] things - {"phone":"18946959184","pass":"123456","addressId":1893645}
+[2018-04-11T16:00:06.645] [INFO] things - 1894344 '{"state":true,"code":10,"data":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":false,"Certificate":{"ID":"2822014","UID":2225775,"PID":"391","Status":3,"Address":{"ID":1894344,"IsDefault":true,"IsPushAddreess":true,"Name":"陈溪","TelPhone":"18863572962","Zipcode":"000000","ProvCode":"110000","CityCode":"110100","AreaCode":"110101","Remark":"","IsVerification":false,"AddressDetails":"北京市东城区,幸福家园7号楼,2栋1单元","Longitude":116.428971,"Latitude":39.892361,"Address":"幸福家园7号楼,2栋1单元","AddressText":"北京市东城区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-17 00:00:00"},"EnterTimeSlot":{"Start":"2018-04-11 00:00:00","End":"2018-04-11 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-04-12 10:00:00","End":"2018-04-12 16:00:00","InTime":false}}}'
+[2018-04-11T16:00:12.892] [INFO] things - 账号状态有问题
+[2018-04-11T16:00:12.892] [INFO] things - [32m您所在区域暂未上货[39m
+[2018-04-11T16:00:12.893] [INFO] things - {"phone":"15635316166","pass":"a123456","addressId":1961824}
+[2018-04-11T16:00:12.894] [INFO] things - 1930699 '{"state":true,"code":10,"data":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":false,"Certificate":{"ID":"2822619","UID":2245764,"PID":"391","Status":3,"Address":{"ID":1930699,"IsDefault":true,"IsPushAddreess":true,"Name":"巴靖辞","TelPhone":"15249625137","Zipcode":"000000","ProvCode":"110000","CityCode":"110100","AreaCode":"110106","Remark":"","IsVerification":false,"AddressDetails":"北京市北京市丰台区,紫芳园六区","Longitude":116.450844,"Latitude":39.819856,"Address":"紫芳园六区","AddressText":"北京市北京市丰台区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-17 00:00:00"},"EnterTimeSlot":{"Start":"2018-04-11 00:00:00","End":"2018-04-11 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-04-12 10:00:00","End":"2018-04-12 16:00:00","InTime":false}}}'
+[2018-04-11T16:00:14.901] [INFO] things - 账号状态有问题
+[2018-04-11T16:00:14.901] [INFO] things - [32m您所在区域暂未上货[39m
+[2018-04-11T16:00:14.901] [INFO] things - {"phone":"13792080758","pass":"a123456","addressId":1930706}
+[2018-04-11T16:00:14.901] [INFO] things - 1930701 '{"state":true,"code":10,"data":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":false,"Certificate":{"ID":"2822418","UID":2245801,"PID":"391","Status":3,"Address":{"ID":1930701,"IsDefault":true,"IsPushAddreess":true,"Name":"褚书羲","TelPhone":"18903188009","Zipcode":"000000","ProvCode":"110000","CityCode":"110100","AreaCode":"110105","Remark":"","IsVerification":false,"AddressDetails":"北京市北京市朝阳区,北京楚记陶瓷城","Longitude":116.379764,"Latitude":39.889219,"Address":"北京楚记陶瓷城","AddressText":"北京市北京市朝阳区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-17 00:00:00"},"EnterTimeSlot":{"Start":"2018-04-11 00:00:00","End":"2018-04-11 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-04-12 10:00:00","End":"2018-04-12 16:00:00","InTime":false}}}'
+[2018-04-11T16:00:18.973] [INFO] things - 账号状态有问题
+[2018-04-11T16:00:18.973] [INFO] things - [32m您所在区域暂未上货[39m
+[2018-04-11T16:00:18.973] [INFO] things - {"phone":"13720689056","pass":"a123456","addressId":1951717}
+[2018-04-11T16:00:18.973] [INFO] things - 1962206 '{"state":true,"code":10,"data":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":false,"Certificate":{"ID":"2823153","UID":2265075,"PID":"391","Status":3,"Address":{"ID":1962206,"IsDefault":true,"IsPushAddreess":true,"Name":"扈钏拙","TelPhone":"18291130651","Zipcode":"000000","ProvCode":"110000","CityCode":"110100","AreaCode":"110112","Remark":"","IsVerification":false,"AddressDetails":"北京市北京市通州区,马庄","Longitude":116.400854,"Latitude":39.810793,"Address":"马庄","AddressText":"北京市北京市通州区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-17 00:00:00"},"EnterTimeSlot":{"Start":"2018-04-11 00:00:00","End":"2018-04-11 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-04-12 10:00:00","End":"2018-04-12 16:00:00","InTime":false}}}'
+[2018-04-11T16:00:22.252] [INFO] things - 账号状态有问题
+[2018-04-11T16:00:22.252] [INFO] things - [32m您所在区域暂未上货[39m
+[2018-04-11T16:00:22.252] [INFO] things - {"phone":"17505106529","pass":"132623","addressId":1935819}
+[2018-04-11T16:00:22.252] [INFO] things - 1894170 '{"state":true,"code":10,"data":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":false,"Certificate":{"ID":"2821990","UID":2225664,"PID":"391","Status":3,"Address":{"ID":1894170,"IsDefault":true,"IsPushAddreess":true,"Name":"王悦","TelPhone":"15698229041","Zipcode":"000000","ProvCode":"110000","CityCode":"110100","AreaCode":"110101","Remark":"","IsVerification":false,"AddressDetails":"北京市东城区,幸福家园3区6号楼,","Longitude":116.430444,"Latitude":39.89326,"Address":"幸福家园3区6号楼,","AddressText":"北京市东城区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-17 00:00:00"},"EnterTimeSlot":{"Start":"2018-04-11 00:00:00","End":"2018-04-11 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-04-12 10:00:00","End":"2018-04-12 16:00:00","InTime":false}}}'
+[2018-04-11T16:00:24.499] [INFO] things - 账号状态有问题
+[2018-04-11T16:00:24.499] [INFO] things - [32m您所在区域暂未上货[39m
+[2018-04-11T16:00:24.499] [INFO] things - {"phone":"18831099037","pass":"a123456","addressId":1969317}
+[2018-04-11T16:00:24.499] [INFO] things - 1962224 '{"state":true,"code":10,"data":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":false,"Certificate":{"ID":"2823174","UID":2265072,"PID":"391","Status":3,"Address":{"ID":1962224,"IsDefault":true,"IsPushAddreess":true,"Name":"胥论","TelPhone":"15505201939","Zipcode":"000000","ProvCode":"110000","CityCode":"110100","AreaCode":"110108","Remark":"","IsVerification":false,"AddressDetails":"北京市北京市海淀区,石油大院","Longitude":116.475156,"Latitude":39.85177,"Address":"石油大院","AddressText":"北京市北京市海淀区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-17 00:00:00"},"EnterTimeSlot":{"Start":"2018-04-11 00:00:00","End":"2018-04-11 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-04-12 10:00:00","End":"2018-04-12 16:00:00","InTime":false}}}'
+[2018-04-11T16:00:26.202] [INFO] things - 账号状态有问题
+[2018-04-11T16:00:26.202] [INFO] things - [32m您所在区域暂未上货[39m
+[2018-04-11T16:00:26.202] [INFO] things - {"phone":"13895490886","pass":"a123456","addressId":1961951}
+[2018-04-11T16:00:26.203] [INFO] things - 1961826 '{"state":true,"code":10,"data":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":false,"Certificate":{"ID":"2823071","UID":2265209,"PID":"391","Status":3,"Address":{"ID":1961826,"IsDefault":true,"IsPushAddreess":true,"Name":"璩琴梯","TelPhone":"15535874373","Zipcode":"000000","ProvCode":"110000","CityCode":"110100","AreaCode":"110101","Remark":"","IsVerification":false,"AddressDetails":"北京市北京市东城区,天坛公园","Longitude":116.414202,"Latitude":39.893775,"Address":"天坛公园","AddressText":"北京市北京市东城区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-17 00:00:00"},"EnterTimeSlot":{"Start":"2018-04-11 00:00:00","End":"2018-04-11 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-04-12 10:00:00","End":"2018-04-12 16:00:00","InTime":false}}}'
+[2018-04-11T16:00:27.911] [INFO] things - 账号状态有问题
+[2018-04-11T16:00:27.911] [INFO] things - [32m您所在区域暂未上货[39m
+[2018-04-11T16:00:27.911] [INFO] things - {"phone":"18982761259","pass":"721025","addressId":1789878}
+[2018-04-11T16:00:27.911] [INFO] things - 1898547 '{"state":true,"code":10,"data":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":false,"Certificate":{"ID":"2822579","UID":2146408,"PID":"391","Status":3,"Address":{"ID":1898547,"IsDefault":true,"IsPushAddreess":true,"Name":"受枪","TelPhone":"18834168128","Zipcode":"000000","ProvCode":"110000","CityCode":"110100","AreaCode":"110105","Remark":"","IsVerification":false,"AddressDetails":"北京市北京市朝阳区,东八间社区","Longitude":116.46542,"Latitude":39.823131,"Address":"东八间社区","AddressText":"北京市北京市朝阳区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-17 00:00:00"},"EnterTimeSlot":{"Start":"2018-04-11 00:00:00","End":"2018-04-11 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-04-12 10:00:00","End":"2018-04-12 16:00:00","InTime":false}}}'
+[2018-04-11T16:00:35.524] [INFO] things - 账号状态有问题
+[2018-04-11T16:00:35.524] [INFO] things - [32m您所在区域暂未上货[39m
+[2018-04-11T16:00:35.524] [INFO] things - {"phone":"13453301621","pass":"654321","addressId":1935797}
+[2018-04-11T16:00:35.524] [INFO] things - 1930707 '{"state":true,"code":10,"data":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":false,"Certificate":{"ID":"2822420","UID":2245815,"PID":"391","Status":3,"Address":{"ID":1930707,"IsDefault":true,"IsPushAddreess":true,"Name":"窦液魂","TelPhone":"13313181305","Zipcode":"000000","ProvCode":"110000","CityCode":"110100","AreaCode":"110102","Remark":"","IsVerification":false,"AddressDetails":"北京市北京市西城区,平原里小区","Longitude":116.451757,"Latitude":39.901819,"Address":"平原里小区","AddressText":"北京市北京市西城区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-17 00:00:00"},"EnterTimeSlot":{"Start":"2018-04-11 00:00:00","End":"2018-04-11 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-04-12 10:00:00","End":"2018-04-12 16:00:00","InTime":false}}}'
+[2018-04-11T16:00:39.304] [INFO] things - 账号状态有问题
+[2018-04-11T16:00:39.304] [INFO] things - [32m您所在区域暂未上货[39m
+[2018-04-11T16:00:39.305] [INFO] things - {"phone":"18246626742","pass":"jss19860529","addressId":1935822}
+[2018-04-11T16:00:39.305] [INFO] things - 1679931 '{"state":true,"code":10,"data":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":false,"Certificate":{"ID":"2822005","UID":2075087,"PID":"391","Status":3,"Address":{"ID":1679931,"IsDefault":true,"IsPushAddreess":true,"Name":"李永立","TelPhone":"18232902912","Zipcode":"000000","ProvCode":"110000","CityCode":"110100","AreaCode":"110101","Remark":"","IsVerification":true,"AddressDetails":"北京市东城区,广渠门内大街,通用小区二单元二号楼208室","Longitude":116.431342,"Latitude":39.893479,"Address":"广渠门内大街,通用小区二单元二号楼208室","AddressText":"北京市东城区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-17 00:00:00"},"EnterTimeSlot":{"Start":"2018-04-11 00:00:00","End":"2018-04-11 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-04-12 10:00:00","End":"2018-04-12 16:00:00","InTime":false}}}'
+[2018-04-11T16:00:40.986] [INFO] things - 账号状态有问题
+[2018-04-11T16:00:40.986] [INFO] things - [32m您所在区域暂未上货[39m
+[2018-04-11T16:00:40.986] [INFO] things - {"phone":"13209986285","pass":"a123456","addressId":1962222}
+[2018-04-11T16:00:40.986] [INFO] things - 1962212 '{"state":true,"code":10,"data":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":false,"Certificate":{"ID":"2823157","UID":2265061,"PID":"391","Status":3,"Address":{"ID":1962212,"IsDefault":true,"IsPushAddreess":true,"Name":"颜文杂","TelPhone":"15235364989","Zipcode":"000000","ProvCode":"110000","CityCode":"110100","AreaCode":"110105","Remark":"","IsVerification":false,"AddressDetails":"北京市北京市朝阳区,北京北湖国际高尔夫俱乐部","Longitude":116.333845,"Latitude":39.850855,"Address":"北京北湖国际高尔夫俱乐部","AddressText":"北京市北京市朝阳区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-17 00:00:00"},"EnterTimeSlot":{"Start":"2018-04-11 00:00:00","End":"2018-04-11 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-04-12 10:00:00","End":"2018-04-12 16:00:00","InTime":false}}}'
+[2018-04-11T16:00:42.820] [INFO] things - 账号状态有问题
+[2018-04-11T16:00:42.820] [INFO] things - [32m您所在区域暂未上货[39m
+[2018-04-11T16:00:42.820] [INFO] things - {"phone":"18818426811","pass":"a123456","addressId":1962236}
+[2018-04-11T16:00:42.820] [INFO] things - 1962233 '{"state":true,"code":10,"data":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":false,"Certificate":{"ID":"2823184","UID":2265098,"PID":"391","Status":3,"Address":{"ID":1962233,"IsDefault":true,"IsPushAddreess":true,"Name":"方伶团","TelPhone":"18534866149","Zipcode":"000000","ProvCode":"110000","CityCode":"110100","AreaCode":"110105","Remark":"","IsVerification":false,"AddressDetails":"北京市北京市朝阳区,中国古旧书展示交易中心","Longitude":116.462783,"Latitude":39.860136,"Address":"中国古旧书展示交易中心","AddressText":"北京市北京市朝阳区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-17 00:00:00"},"EnterTimeSlot":{"Start":"2018-04-11 00:00:00","End":"2018-04-11 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-04-12 10:00:00","End":"2018-04-12 16:00:00","InTime":false}}}'
+[2018-04-11T16:00:44.648] [INFO] things - 账号状态有问题
+[2018-04-11T16:00:44.648] [INFO] things - [32m您所在区域暂未上货[39m
+[2018-04-11T16:00:44.648] [INFO] things - {"phone":"15081820867","pass":"a123456","addressId":1962191}
+[2018-04-11T16:00:44.649] [INFO] things - 1962184 '{"state":true,"code":10,"data":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":false,"Certificate":{"ID":"2823132","UID":2265159,"PID":"391","Status":3,"Address":{"ID":1962184,"IsDefault":true,"IsPushAddreess":true,"Name":"邰盆","TelPhone":"13283936032","Zipcode":"000000","ProvCode":"110000","CityCode":"110100","AreaCode":"110105","Remark":"","IsVerification":false,"AddressDetails":"北京市北京市朝阳区,华洋紫竹幼儿园","Longitude":116.365929,"Latitude":39.840074,"Address":"华洋紫竹幼儿园","AddressText":"北京市北京市朝阳区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-17 00:00:00"},"EnterTimeSlot":{"Start":"2018-04-11 00:00:00","End":"2018-04-11 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-04-12 10:00:00","End":"2018-04-12 16:00:00","InTime":false}}}'
+[2018-04-11T16:00:46.324] [INFO] things - 账号状态有问题
+[2018-04-11T16:00:46.324] [INFO] things - [32m您所在区域暂未上货[39m
+[2018-04-11T16:00:46.324] [INFO] things - {"phone":"13843910857","pass":"a123456","addressId":1961870}
+[2018-04-11T16:00:46.324] [INFO] things - 1961951 '{"state":true,"code":10,"data":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":false,"Certificate":{"ID":"2823120","UID":2265218,"PID":"391","Status":3,"Address":{"ID":1961951,"IsDefault":true,"IsPushAddreess":true,"Name":"叶室堪","TelPhone":"13895490886","Zipcode":"000000","ProvCode":"110000","CityCode":"110100","AreaCode":"110106","Remark":"","IsVerification":false,"AddressDetails":"北京市北京市丰台区,纪家庙市场","Longitude":116.602385,"Latitude":39.811692,"Address":"纪家庙市场","AddressText":"北京市北京市丰台区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-17 00:00:00"},"EnterTimeSlot":{"Start":"2018-04-11 00:00:00","End":"2018-04-11 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-04-12 10:00:00","End":"2018-04-12 16:00:00","InTime":false}}}'
+[2018-04-11T16:00:47.888] [INFO] things - 账号状态有问题
+[2018-04-11T16:00:47.888] [INFO] things - [32m您所在区域暂未上货[39m
+[2018-04-11T16:00:47.888] [INFO] things - {"phone":"15635316166","pass":"a123456","addressId":1961824}
+[2018-04-11T16:00:47.888] [INFO] things - 1930782 '{"state":true,"code":10,"data":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":false,"Certificate":{"ID":"2822615","UID":2245901,"PID":"391","Status":3,"Address":{"ID":1930782,"IsDefault":true,"IsPushAddreess":true,"Name":"耿献娘","TelPhone":"13935327172","Zipcode":"000000","ProvCode":"110000","CityCode":"110100","AreaCode":"110115","Remark":"","IsVerification":false,"AddressDetails":"北京市北京市大兴区,美利新世界","Longitude":116.444823,"Latitude":39.931079,"Address":"美利新世界","AddressText":"北京市北京市大兴区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-17 00:00:00"},"EnterTimeSlot":{"Start":"2018-04-11 00:00:00","End":"2018-04-11 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-04-12 10:00:00","End":"2018-04-12 16:00:00","InTime":false}}}'
+[2018-04-11T16:00:49.584] [INFO] things - 账号状态有问题
+[2018-04-11T16:00:49.584] [INFO] things - [32m您所在区域暂未上货[39m
+[2018-04-11T16:00:49.584] [INFO] things - {"phone":"15081820867","pass":"a123456","addressId":1962191}
+[2018-04-11T16:00:49.584] [INFO] things - 1962189 '{"state":true,"code":10,"data":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":false,"Certificate":{"ID":"2823135","UID":2265150,"PID":"391","Status":3,"Address":{"ID":1962189,"IsDefault":true,"IsPushAddreess":true,"Name":"文光缄","TelPhone":"13936763461","Zipcode":"000000","ProvCode":"110000","CityCode":"110100","AreaCode":"110105","Remark":"","IsVerification":false,"AddressDetails":"北京市北京市朝阳区,世纪宝贝双语幼儿园","Longitude":116.386238,"Latitude":39.794948,"Address":"世纪宝贝双语幼儿园","AddressText":"北京市北京市朝阳区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-17 00:00:00"},"EnterTimeSlot":{"Start":"2018-04-11 00:00:00","End":"2018-04-11 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-04-12 10:00:00","End":"2018-04-12 16:00:00","InTime":false}}}'
+[2018-04-11T16:00:51.460] [INFO] things - 账号状态有问题
+[2018-04-11T16:00:51.460] [INFO] things - [32m您所在区域暂未上货[39m
+[2018-04-11T16:00:51.460] [INFO] things - {"phone":"15046846298","pass":"a123456","addressId":1930700}
+[2018-04-11T16:00:51.460] [INFO] things - 1930788 '{"state":true,"code":10,"data":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":false,"Certificate":{"ID":"2821974","UID":2245758,"PID":"391","Status":3,"Address":{"ID":1930788,"IsDefault":true,"IsPushAddreess":true,"Name":"焦移即","TelPhone":"15935492306","Zipcode":"000000","ProvCode":"110000","CityCode":"110100","AreaCode":"110105","Remark":"","IsVerification":false,"AddressDetails":"北京市朝阳区,瑞兆酒店国贸店","Longitude":116.469982,"Latitude":39.906575,"Address":"瑞兆酒店国贸店","AddressText":"北京市朝阳区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-17 00:00:00"},"EnterTimeSlot":{"Start":"2018-04-11 00:00:00","End":"2018-04-11 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-04-12 10:00:00","End":"2018-04-12 16:00:00","InTime":false}}}'
+[2018-04-11T16:00:56.783] [INFO] things - 账号状态有问题
+[2018-04-11T16:00:56.783] [INFO] things - [32m您所在区域暂未上货[39m
+[2018-04-11T16:00:56.783] [INFO] things - {"phone":"18764735850","pass":"a123456","addressId":1951724}
+[2018-04-11T16:00:56.784] [INFO] things - 1789878 '{"state":true,"code":10,"data":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":false,"Certificate":{"ID":"2822580","UID":2152837,"PID":"391","Status":3,"Address":{"ID":1789878,"IsDefault":true,"IsPushAddreess":true,"Name":"车堪","TelPhone":"18982761259","Zipcode":"000000","ProvCode":"110000","CityCode":"110100","AreaCode":"110106","Remark":"","IsVerification":false,"AddressDetails":"北京市北京市丰台区,马草河金盛菜市场","Longitude":116.387296,"Latitude":39.859503,"Address":"马草河金盛菜市场","AddressText":"北京市北京市丰台区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-17 00:00:00"},"EnterTimeSlot":{"Start":"2018-04-11 00:00:00","End":"2018-04-11 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-04-12 10:00:00","End":"2018-04-12 16:00:00","InTime":false}}}'
+[2018-04-11T16:01:00.069] [INFO] things - 账号状态有问题
+[2018-04-11T16:01:00.069] [INFO] things - [32m您所在区域暂未上货[39m
+[2018-04-11T16:01:00.069] [INFO] things - {"phone":"13290979032","pass":"a123456","addressId":1962187}
+[2018-04-11T16:01:00.069] [INFO] things - 1962186 '{"state":true,"code":10,"data":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":false,"Certificate":{"ID":"2823133","UID":2265156,"PID":"391","Status":3,"Address":{"ID":1962186,"IsDefault":true,"IsPushAddreess":true,"Name":"祝导","TelPhone":"18632369087","Zipcode":"000000","ProvCode":"110000","CityCode":"110100","AreaCode":"110105","Remark":"","IsVerification":false,"AddressDetails":"北京市北京市朝阳区,富力.又一城A区","Longitude":116.603569,"Latitude":39.976213,"Address":"富力.又一城A区","AddressText":"北京市北京市朝阳区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-17 00:00:00"},"EnterTimeSlot":{"Start":"2018-04-11 00:00:00","End":"2018-04-11 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-04-12 10:00:00","End":"2018-04-12 16:00:00","InTime":false}}}'
+[2018-04-11T16:01:01.905] [INFO] things - 账号状态有问题
+[2018-04-11T16:01:01.905] [INFO] things - [32m您所在区域暂未上货[39m
+[2018-04-11T16:01:01.905] [INFO] things - {"phone":"15238555689","pass":"a123456","addressId":1951714}
+[2018-04-11T16:01:01.905] [INFO] things - 1905922 '{"state":true,"code":10,"data":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":false,"Certificate":{"ID":"2821962","UID":2192910,"PID":"391","Status":3,"Address":{"ID":1905922,"IsDefault":true,"IsPushAddreess":true,"Name":"祝衣","TelPhone":"15549208602","Zipcode":"000000","ProvCode":"110000","CityCode":"110100","AreaCode":"110105","Remark":"","IsVerification":false,"AddressDetails":"北京市朝阳区,金刚山烤肉","Longitude":116.483477,"Latitude":39.899658,"Address":"金刚山烤肉","AddressText":"北京市朝阳区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-17 00:00:00"},"EnterTimeSlot":{"Start":"2018-04-11 00:00:00","End":"2018-04-11 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-04-12 10:00:00","End":"2018-04-12 16:00:00","InTime":false}}}'
+[2018-04-11T16:01:03.669] [INFO] things - 账号状态有问题
+[2018-04-11T16:01:03.669] [INFO] things - [32m您所在区域暂未上货[39m
+[2018-04-11T16:01:03.669] [INFO] things - {"phone":"15716559528","pass":"a123456","addressId":1961956}
+[2018-04-11T16:01:03.670] [INFO] things - 1961952 '{"state":true,"code":10,"data":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":false,"Certificate":{"ID":"2823122","UID":2265249,"PID":"391","Status":3,"Address":{"ID":1961952,"IsDefault":true,"IsPushAddreess":true,"Name":"祝殉栾","TelPhone":"15081664435","Zipcode":"000000","ProvCode":"110000","CityCode":"110100","AreaCode":"110105","Remark":"","IsVerification":false,"AddressDetails":"北京市北京市朝阳区,首开·常青藤34号楼","Longitude":116.369076,"Latitude":40.003102,"Address":"首开·常青藤34号楼","AddressText":"北京市北京市朝阳区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-17 00:00:00"},"EnterTimeSlot":{"Start":"2018-04-11 00:00:00","End":"2018-04-11 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-04-12 10:00:00","End":"2018-04-12 16:00:00","InTime":false}}}'
+[2018-04-11T16:01:05.801] [INFO] things - 账号状态有问题
+[2018-04-11T16:01:05.802] [INFO] things - [32m您所在区域暂未上货[39m
+[2018-04-11T16:01:05.802] [INFO] things - {"phone":"15081664435","pass":"a123456","addressId":1961952}
+[2018-04-11T16:01:05.802] [INFO] things - 1961951 '{"state":true,"code":10,"data":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":false,"Certificate":{"ID":"2823120","UID":2265218,"PID":"391","Status":3,"Address":{"ID":1961951,"IsDefault":true,"IsPushAddreess":true,"Name":"叶室堪","TelPhone":"13895490886","Zipcode":"000000","ProvCode":"110000","CityCode":"110100","AreaCode":"110106","Remark":"","IsVerification":false,"AddressDetails":"北京市北京市丰台区,纪家庙市场","Longitude":116.602385,"Latitude":39.811692,"Address":"纪家庙市场","AddressText":"北京市北京市丰台区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-17 00:00:00"},"EnterTimeSlot":{"Start":"2018-04-11 00:00:00","End":"2018-04-11 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-04-12 10:00:00","End":"2018-04-12 16:00:00","InTime":false}}}'
+[2018-04-11T16:01:07.411] [INFO] things - 账号状态有问题
+[2018-04-11T16:01:07.411] [INFO] things - [32m您所在区域暂未上货[39m
+[2018-04-11T16:01:07.411] [INFO] things - {"phone":"15035399985","pass":"a123456","addressId":1962205}
+[2018-04-11T16:01:07.412] [INFO] things - 1962204 '{"state":true,"code":10,"data":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":false,"Certificate":{"ID":"2823149","UID":2265048,"PID":"391","Status":3,"Address":{"ID":1962204,"IsDefault":true,"IsPushAddreess":true,"Name":"都胃情","TelPhone":"18434763969","Zipcode":"000000","ProvCode":"110000","CityCode":"110100","AreaCode":"110106","Remark":"","IsVerification":false,"AddressDetails":"北京市北京市丰台区,汇凯宾馆","Longitude":116.589958,"Latitude":39.99779,"Address":"汇凯宾馆","AddressText":"北京市北京市丰台区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-17 00:00:00"},"EnterTimeSlot":{"Start":"2018-04-11 00:00:00","End":"2018-04-11 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-04-12 10:00:00","End":"2018-04-12 16:00:00","InTime":false}}}'
+[2018-04-11T16:01:09.229] [INFO] things - 账号状态有问题
+[2018-04-11T16:01:09.229] [INFO] things - [32m您所在区域暂未上货[39m
+[2018-04-11T16:01:09.229] [INFO] things - {"phone":"17753747930","pass":"8642569","addressId":1935821}
+[2018-04-11T16:01:09.229] [INFO] things - 1935819 '{"state":true,"code":10,"data":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":false,"Certificate":{"ID":"2822000","UID":2184256,"PID":"391","Status":3,"Address":{"ID":1935819,"IsDefault":true,"IsPushAddreess":true,"Name":"龙小五","TelPhone":"17505106529","Zipcode":"000000","ProvCode":"110000","CityCode":"110100","AreaCode":"110101","Remark":"","IsVerification":false,"AddressDetails":"北京市东城区,北京市东城区西花市南里东区16号楼西花市南里东区16号楼-六单元","Longitude":116.433723,"Latitude":39.900285,"Address":"北京市东城区西花市南里东区16号楼西花市南里东区16号楼-六单元","AddressText":"北京市东城区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-17 00:00:00"},"EnterTimeSlot":{"Start":"2018-04-11 00:00:00","End":"2018-04-11 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-04-12 10:00:00","End":"2018-04-12 16:00:00","InTime":false}}}'
+[2018-04-11T16:01:11.064] [INFO] things - 账号状态有问题
+[2018-04-11T16:01:11.064] [INFO] things - [32m您所在区域暂未上货[39m
+[2018-04-11T16:01:11.064] [INFO] things - {"phone":"18183062125","pass":"a123456","addressId":1951807}
+[2018-04-11T16:01:11.064] [INFO] things - 1951804 '{"state":true,"code":10,"data":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":false,"Certificate":{"ID":"2822607","UID":2246143,"PID":"391","Status":3,"Address":{"ID":1951804,"IsDefault":true,"IsPushAddreess":true,"Name":"邓玉","TelPhone":"13230672756","Zipcode":"000000","ProvCode":"110000","CityCode":"110100","AreaCode":"110106","Remark":"","IsVerification":false,"AddressDetails":"北京市北京市丰台区,世华水岸(F区)","Longitude":116.43411,"Latitude":39.842481,"Address":"世华水岸(F区)","AddressText":"北京市北京市丰台区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-17 00:00:00"},"EnterTimeSlot":{"Start":"2018-04-11 00:00:00","End":"2018-04-11 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-04-12 10:00:00","End":"2018-04-12 16:00:00","InTime":false}}}'
+[2018-04-11T16:01:12.832] [INFO] things - 账号状态有问题
+[2018-04-11T16:01:12.832] [INFO] things - [32m您所在区域暂未上货[39m
+[2018-04-11T16:01:12.832] [INFO] things - {"phone":"18438063310","pass":"a123456","addressId":1951811}
+[2018-04-11T16:01:12.832] [INFO] things - 1951807 '{"state":true,"code":10,"data":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":false,"Certificate":{"ID":"2822608","UID":2246154,"PID":"391","Status":3,"Address":{"ID":1951807,"IsDefault":true,"IsPushAddreess":true,"Name":"董随键","TelPhone":"18183062125","Zipcode":"000000","ProvCode":"110000","CityCode":"110100","AreaCode":"110101","Remark":"","IsVerification":false,"AddressDetails":"北京市北京市东城区,丹耀公寓","Longitude":116.4751,"Latitude":39.877417,"Address":"丹耀公寓","AddressText":"北京市北京市东城区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-17 00:00:00"},"EnterTimeSlot":{"Start":"2018-04-11 00:00:00","End":"2018-04-11 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-04-12 10:00:00","End":"2018-04-12 16:00:00","InTime":false}}}'
+[2018-04-11T16:01:14.673] [INFO] things - 账号状态有问题
+[2018-04-11T16:01:14.673] [INFO] things - [32m您所在区域暂未上货[39m
+[2018-04-11T16:01:14.673] [INFO] things - {"phone":"13283936032","pass":"a123456","addressId":1962184}
+[2018-04-11T16:01:14.674] [INFO] things - 1961959 '{"state":true,"code":10,"data":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":false,"Certificate":{"ID":"2823129","UID":2265170,"PID":"391","Status":3,"Address":{"ID":1961959,"IsDefault":true,"IsPushAddreess":true,"Name":"卢好","TelPhone":"15330512791","Zipcode":"000000","ProvCode":"110000","CityCode":"110100","AreaCode":"110106","Remark":"","IsVerification":false,"AddressDetails":"北京市北京市丰台区,北京吴云生中医门诊部","Longitude":116.554821,"Latitude":39.942193,"Address":"北京吴云生中医门诊部","AddressText":"北京市北京市丰台区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-17 00:00:00"},"EnterTimeSlot":{"Start":"2018-04-11 00:00:00","End":"2018-04-11 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-04-12 10:00:00","End":"2018-04-12 16:00:00","InTime":false}}}'
+[2018-04-11T16:01:16.487] [INFO] things - 账号状态有问题
+[2018-04-11T16:01:16.487] [INFO] things - [32m您所在区域暂未上货[39m
+[2018-04-11T16:01:16.487] [INFO] things - {"phone":"18946959184","pass":"123456","addressId":1893645}
+[2018-04-11T16:01:16.487] [INFO] things - 1686181 '{"state":true,"code":10,"data":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":false,"Certificate":{"ID":"2822010","UID":2078952,"PID":"391","Status":3,"Address":{"ID":1686181,"IsDefault":true,"IsPushAddreess":true,"Name":"王金璐","TelPhone":"18810320392","Zipcode":"000000","ProvCode":"110000","CityCode":"110100","AreaCode":"110101","Remark":"","IsVerification":true,"AddressDetails":"北京市东城区,北京工商联大厦,2509","Longitude":116.439648,"Latitude":39.896489,"Address":"北京工商联大厦,2509","AddressText":"北京市东城区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-17 00:00:00"},"EnterTimeSlot":{"Start":"2018-04-11 00:00:00","End":"2018-04-11 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-04-12 10:00:00","End":"2018-04-12 16:00:00","InTime":false}}}'
+[2018-04-11T16:01:18.291] [INFO] things - 账号状态有问题
+[2018-04-11T16:01:18.291] [INFO] things - [32m您所在区域暂未上货[39m
+[2018-04-11T16:01:18.291] [INFO] things - {"phone":"15247493282","pass":"a123456","addressId":1951726}
+[2018-04-11T16:01:18.291] [INFO] things - 1951724 '{"state":true,"code":10,"data":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":false,"Certificate":{"ID":"2822589","UID":2245821,"PID":"391","Status":3,"Address":{"ID":1951724,"IsDefault":true,"IsPushAddreess":true,"Name":"孔微","TelPhone":"18764735850","Zipcode":"000000","ProvCode":"110000","CityCode":"110100","AreaCode":"110105","Remark":"","IsVerification":false,"AddressDetails":"北京市北京市朝阳区,麦子店小区","Longitude":116.477272,"Latitude":39.874201,"Address":"麦子店小区","AddressText":"北京市北京市朝阳区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-17 00:00:00"},"EnterTimeSlot":{"Start":"2018-04-11 00:00:00","End":"2018-04-11 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-04-12 10:00:00","End":"2018-04-12 16:00:00","InTime":false}}}'
+[2018-04-11T16:01:20.423] [INFO] things - 账号状态有问题
+[2018-04-11T16:01:20.423] [INFO] things - [32m您所在区域暂未上货[39m
+[2018-04-11T16:01:20.423] [INFO] things - {"phone":"15247493282","pass":"a123456","addressId":1951726}
+[2018-04-11T16:01:20.423] [INFO] things - 1935812 '{"state":true,"code":10,"data":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":false,"Certificate":{"ID":"2822442","UID":2093564,"PID":"391","Status":3,"Address":{"ID":1935812,"IsDefault":true,"IsPushAddreess":true,"Name":"管尚","TelPhone":"15264711206","Zipcode":"000000","ProvCode":"110000","CityCode":"110100","AreaCode":"110105","Remark":"","IsVerification":false,"AddressDetails":"北京市北京市朝阳区,北京住六混凝土有限公司","Longitude":116.554298,"Latitude":39.841716,"Address":"北京住六混凝土有限公司","AddressText":"北京市北京市朝阳区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-17 00:00:00"},"EnterTimeSlot":{"Start":"2018-04-11 00:00:00","End":"2018-04-11 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-04-12 10:00:00","End":"2018-04-12 16:00:00","InTime":false}}}'
+[2018-04-11T16:01:22.095] [INFO] things - 账号状态有问题
+[2018-04-11T16:01:22.095] [INFO] things - [32m您所在区域暂未上货[39m
+[2018-04-11T16:01:22.095] [INFO] things - {"phone":"15635316166","pass":"a123456","addressId":1961824}
+[2018-04-11T16:01:22.095] [INFO] things - 1951811 '{"state":true,"code":10,"data":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":false,"Certificate":{"ID":"2822611","UID":2245827,"PID":"391","Status":3,"Address":{"ID":1951811,"IsDefault":true,"IsPushAddreess":true,"Name":"曾兹匙","TelPhone":"18438063310","Zipcode":"000000","ProvCode":"110000","CityCode":"110100","AreaCode":"110101","Remark":"","IsVerification":false,"AddressDetails":"北京市北京市东城区,张自忠路(地铁站)","Longitude":116.531875,"Latitude":39.95422,"Address":"张自忠路(地铁站)","AddressText":"北京市北京市东城区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-17 00:00:00"},"EnterTimeSlot":{"Start":"2018-04-11 00:00:00","End":"2018-04-11 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-04-12 10:00:00","End":"2018-04-12 16:00:00","InTime":false}}}'
+[2018-04-11T16:01:40.318] [INFO] things - 账号状态有问题
+[2018-04-11T16:01:40.318] [INFO] things - [32m您所在区域暂未上货[39m
+[2018-04-11T16:01:40.318] [INFO] things - {"phone":"13624666057","pass":"a123456","addressId":1930787}
+[2018-04-11T16:01:40.318] [INFO] things - 1935817 '{"state":true,"code":10,"data":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":false,"Certificate":{"ID":"2822394","UID":2087814,"PID":"391","Status":3,"Address":{"ID":1935817,"IsDefault":true,"IsPushAddreess":true,"Name":"裘夕","TelPhone":"15777186402","Zipcode":"000000","ProvCode":"110000","CityCode":"110100","AreaCode":"110115","Remark":"","IsVerification":false,"AddressDetails":"北京市北京市大兴区,北京天龙大田机动车检测场","Longitude":116.507691,"Latitude":39.872995,"Address":"北京天龙大田机动车检测场","AddressText":"北京市北京市大兴区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-17 00:00:00"},"EnterTimeSlot":{"Start":"2018-04-11 00:00:00","End":"2018-04-11 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-04-12 10:00:00","End":"2018-04-12 16:00:00","InTime":false}}}'
+[2018-04-11T16:01:41.905] [INFO] things - [32m您所在区域暂未上货[39m
+[2018-04-11T16:01:41.905] [INFO] things - {"phone":"18946959184","pass":"123456","addressId":1893645}
+[2018-04-11T16:01:41.906] [INFO] things - 1893645 '{"state":true,"code":9999,"msg":"用户未登陆"}'
+[2018-04-11T16:01:44.839] [INFO] things - 账号状态有问题
+[2018-04-11T16:01:44.839] [INFO] things - [32m您所在区域暂未上货[39m
+[2018-04-11T16:01:44.839] [INFO] things - {"phone":"13453301621","pass":"654321","addressId":1935797}
+[2018-04-11T16:01:44.839] [INFO] things - 1930706 '{"state":true,"code":10,"data":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":false,"Certificate":{"ID":"2822419","UID":2245800,"PID":"391","Status":3,"Address":{"ID":1930706,"IsDefault":true,"IsPushAddreess":true,"Name":"孟爱续","TelPhone":"13792080708","Zipcode":"000000","ProvCode":"110000","CityCode":"110100","AreaCode":"110101","Remark":"","IsVerification":false,"AddressDetails":"北京市北京市东城区,乐盟酒店(辛安里店)","Longitude":116.383278,"Latitude":39.874258,"Address":"乐盟酒店(辛安里店)","AddressText":"北京市北京市东城区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-17 00:00:00"},"EnterTimeSlot":{"Start":"2018-04-11 00:00:00","End":"2018-04-11 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-04-12 10:00:00","End":"2018-04-12 16:00:00","InTime":false}}}'
+[2018-04-11T16:01:46.479] [INFO] things - 账号状态有问题
+[2018-04-11T16:01:46.479] [INFO] things - [32m您所在区域暂未上货[39m
+[2018-04-11T16:01:46.479] [INFO] things - {"phone":"15645919316","pass":"123456","addressId":1861429}
+[2018-04-11T16:01:46.479] [INFO] things - 1842614 '{"state":true,"code":10,"data":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":false,"Certificate":{"ID":"2821981","UID":2189780,"PID":"391","Status":3,"Address":{"ID":1842614,"IsDefault":true,"IsPushAddreess":true,"Name":"魏彤","TelPhone":"13512856201","Zipcode":"000000","ProvCode":"110000","CityCode":"110100","AreaCode":"110101","Remark":"","IsVerification":true,"AddressDetails":"北京市东城区,雍贵中心B座,8栋3201","Longitude":116.429108,"Latitude":39.89409,"Address":"雍贵中心B座,8栋3201","AddressText":"北京市东城区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-17 00:00:00"},"EnterTimeSlot":{"Start":"2018-04-11 00:00:00","End":"2018-04-11 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-04-12 10:00:00","End":"2018-04-12 16:00:00","InTime":false}}}'
+[2018-04-11T16:01:50.482] [INFO] things - 账号状态有问题
+[2018-04-11T16:01:50.482] [INFO] things - [32m您所在区域暂未上货[39m
+[2018-04-11T16:01:50.482] [INFO] things - {"phone":"17879529656","pass":"a123456","addressId":1951733}
+[2018-04-11T16:01:50.482] [INFO] things - 1951726 '{"state":true,"code":10,"data":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":false,"Certificate":{"ID":"2822590","UID":2245961,"PID":"391","Status":3,"Address":{"ID":1951726,"IsDefault":true,"IsPushAddreess":true,"Name":"马慕","TelPhone":"15247493282","Zipcode":"000000","ProvCode":"110000","CityCode":"110100","AreaCode":"110105","Remark":"","IsVerification":false,"AddressDetails":"北京市北京市朝阳区,顺安汽修厂","Longitude":116.497907,"Latitude":39.84699,"Address":"顺安汽修厂","AddressText":"北京市北京市朝阳区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-17 00:00:00"},"EnterTimeSlot":{"Start":"2018-04-11 00:00:00","End":"2018-04-11 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-04-12 10:00:00","End":"2018-04-12 16:00:00","InTime":false}}}'
+[2018-04-11T16:01:52.314] [INFO] things - 账号状态有问题
+[2018-04-11T16:01:52.314] [INFO] things - [32m您所在区域暂未上货[39m
+[2018-04-11T16:01:52.314] [INFO] things - {"phone":"13842111030","pass":"a123456","addressId":1930791}
+[2018-04-11T16:01:52.314] [INFO] things - 1930787 '{"state":true,"code":10,"data":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":false,"Certificate":{"ID":"2822410","UID":2245770,"PID":"391","Status":3,"Address":{"ID":1930787,"IsDefault":true,"IsPushAddreess":true,"Name":"乙耸","TelPhone":"13624666007","Zipcode":"000000","ProvCode":"110000","CityCode":"110100","AreaCode":"110106","Remark":"","IsVerification":false,"AddressDetails":"北京市北京市丰台区,悦秀城购物中心","Longitude":116.529525,"Latitude":39.853878,"Address":"悦秀城购物中心","AddressText":"北京市北京市丰台区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-17 00:00:00"},"EnterTimeSlot":{"Start":"2018-04-11 00:00:00","End":"2018-04-11 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-04-12 10:00:00","End":"2018-04-12 16:00:00","InTime":false}}}'
+[2018-04-11T16:01:54.011] [INFO] things - 账号状态有问题
+[2018-04-11T16:01:54.011] [INFO] things - [32m您所在区域暂未上货[39m
+[2018-04-11T16:01:54.011] [INFO] things - {"phone":"15645919316","pass":"123456","addressId":1861429}
+[2018-04-11T16:01:54.011] [INFO] things - 1894654 '{"state":true,"code":10,"data":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":false,"Certificate":{"ID":"2821980","UID":2225981,"PID":"391","Status":3,"Address":{"ID":1894654,"IsDefault":false,"IsPushAddreess":true,"Name":"刘丽君","TelPhone":"13413723166","Zipcode":"000000","ProvCode":"110000","CityCode":"110100","AreaCode":"110101","Remark":"","IsVerification":false,"AddressDetails":"北京市东城区,爱眼眼镜(东四店),","Longitude":116.417794,"Latitude":39.921754,"Address":"爱眼眼镜(东四店),","AddressText":"北京市东城区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-17 00:00:00"},"EnterTimeSlot":{"Start":"2018-04-11 00:00:00","End":"2018-04-11 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-04-12 10:00:00","End":"2018-04-12 16:00:00","InTime":false}}}'
+[2018-04-11T16:01:55.768] [INFO] things - 账号状态有问题
+[2018-04-11T16:01:55.769] [INFO] things - [32m您所在区域暂未上货[39m
+[2018-04-11T16:01:55.769] [INFO] things - {"phone":"15716559528","pass":"a123456","addressId":1961956}
+[2018-04-11T16:01:55.769] [INFO] things - 1961870 '{"state":true,"code":10,"data":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":false,"Certificate":{"ID":"2823107","UID":2265230,"PID":"391","Status":3,"Address":{"ID":1961870,"IsDefault":true,"IsPushAddreess":true,"Name":"成侵","TelPhone":"13843910857","Zipcode":"000000","ProvCode":"110000","CityCode":"110100","AreaCode":"110105","Remark":"","IsVerification":false,"AddressDetails":"北京市北京市朝阳区,小关北里43号","Longitude":116.3316,"Latitude":39.956873,"Address":"小关北里43号","AddressText":"北京市北京市朝阳区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-17 00:00:00"},"EnterTimeSlot":{"Start":"2018-04-11 00:00:00","End":"2018-04-11 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-04-12 10:00:00","End":"2018-04-12 16:00:00","InTime":false}}}'
+[2018-04-11T16:01:57.418] [INFO] things - 账号状态有问题
+[2018-04-11T16:01:57.418] [INFO] things - [32m您所在区域暂未上货[39m
+[2018-04-11T16:01:57.418] [INFO] things - {"phone":"15035399985","pass":"a123456","addressId":1962205}
+[2018-04-11T16:01:57.418] [INFO] things - 1962191 '{"state":true,"code":10,"data":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":false,"Certificate":{"ID":"2823139","UID":2265205,"PID":"391","Status":3,"Address":{"ID":1962191,"IsDefault":true,"IsPushAddreess":true,"Name":"闻后件","TelPhone":"15081820867","Zipcode":"000000","ProvCode":"110000","CityCode":"110100","AreaCode":"110105","Remark":"","IsVerification":false,"AddressDetails":"北京市北京市朝阳区,北京市社区卫生服务(百合公寓西)","Longitude":116.443719,"Latitude":39.817603,"Address":"北京市社区卫生服务(百合公寓西)","AddressText":"北京市北京市朝阳区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-17 00:00:00"},"EnterTimeSlot":{"Start":"2018-04-11 00:00:00","End":"2018-04-11 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-04-12 10:00:00","End":"2018-04-12 16:00:00","InTime":false}}}'
+[2018-04-11T16:01:59.149] [INFO] things - 账号状态有问题
+[2018-04-11T16:01:59.149] [INFO] things - [32m您所在区域暂未上货[39m
+[2018-04-11T16:01:59.149] [INFO] things - {"phone":"13283936032","pass":"a123456","addressId":1962184}
+[2018-04-11T16:01:59.149] [INFO] things - 1961957 '{"state":true,"code":10,"data":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":false,"Certificate":{"ID":"2823127","UID":2265082,"PID":"391","Status":3,"Address":{"ID":1961957,"IsDefault":true,"IsPushAddreess":true,"Name":"司际","TelPhone":"15121952364","Zipcode":"000000","ProvCode":"110000","CityCode":"110100","AreaCode":"110105","Remark":"","IsVerification":false,"AddressDetails":"北京市北京市朝阳区,京通苑阳光华苑","Longitude":116.45396,"Latitude":39.970324,"Address":"京通苑阳光华苑","AddressText":"北京市北京市朝阳区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-17 00:00:00"},"EnterTimeSlot":{"Start":"2018-04-11 00:00:00","End":"2018-04-11 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-04-12 10:00:00","End":"2018-04-12 16:00:00","InTime":false}}}'
+[2018-04-11T16:02:01.362] [INFO] things - 账号状态有问题
+[2018-04-11T16:02:01.362] [INFO] things - [32m您所在区域暂未上货[39m
+[2018-04-11T16:02:01.362] [INFO] things - {"phone":"17879529656","pass":"a123456","addressId":1951733}
+[2018-04-11T16:02:01.362] [INFO] things - 1935797 '{"state":true,"code":10,"data":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":false,"Certificate":{"ID":"2822426","UID":2181725,"PID":"391","Status":3,"Address":{"ID":1935797,"IsDefault":true,"IsPushAddreess":true,"Name":"暴磐","TelPhone":"13453301601","Zipcode":"000000","ProvCode":"110000","CityCode":"110100","AreaCode":"110101","Remark":"","IsVerification":false,"AddressDetails":"北京市北京市东城区,北京市政府","Longitude":116.434915,"Latitude":39.833291,"Address":"北京市政府","AddressText":"北京市北京市东城区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-17 00:00:00"},"EnterTimeSlot":{"Start":"2018-04-11 00:00:00","End":"2018-04-11 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-04-12 10:00:00","End":"2018-04-12 16:00:00","InTime":false}}}'
+[2018-04-11T16:02:03.215] [INFO] things - 账号状态有问题
+[2018-04-11T16:02:03.215] [INFO] things - [32m您所在区域暂未上货[39m
+[2018-04-11T16:02:03.215] [INFO] things - {"phone":"18131970041","pass":"123456","addressId":1847451}
+[2018-04-11T16:02:03.215] [INFO] things - 1935821 '{"state":true,"code":10,"data":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":false,"Certificate":{"ID":"2822001","UID":2090906,"PID":"391","Status":3,"Address":{"ID":1935821,"IsDefault":true,"IsPushAddreess":true,"Name":"乔兴旺","TelPhone":"17753747930","Zipcode":"000000","ProvCode":"110000","CityCode":"110100","AreaCode":"110101","Remark":"","IsVerification":false,"AddressDetails":"北京市东城区,北京市东城区东花市大街新景家园-东区","Longitude":116.432085,"Latitude":39.9015,"Address":"北京市东城区东花市大街新景家园-东区","AddressText":"北京市东城区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-17 00:00:00"},"EnterTimeSlot":{"Start":"2018-04-11 00:00:00","End":"2018-04-11 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-04-12 10:00:00","End":"2018-04-12 16:00:00","InTime":false}}}'
+[2018-04-11T16:02:04.981] [INFO] things - 账号状态有问题
+[2018-04-11T16:02:04.981] [INFO] things - [32m您所在区域暂未上货[39m
+[2018-04-11T16:02:04.981] [INFO] things - {"phone":"15035399985","pass":"a123456","addressId":1962205}
+[2018-04-11T16:02:04.981] [INFO] things - 1962192 '{"state":true,"code":10,"data":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":false,"Certificate":{"ID":"2823142","UID":2265216,"PID":"391","Status":3,"Address":{"ID":1962192,"IsDefault":true,"IsPushAddreess":true,"Name":"宋缝砧","TelPhone":"15896028013","Zipcode":"000000","ProvCode":"110000","CityCode":"110100","AreaCode":"110105","Remark":"","IsVerification":false,"AddressDetails":"北京市北京市朝阳区,北京经典汽车维修装饰一站式服务","Longitude":116.595395,"Latitude":39.809877,"Address":"北京经典汽车维修装饰一站式服务","AddressText":"北京市北京市朝阳区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-17 00:00:00"},"EnterTimeSlot":{"Start":"2018-04-11 00:00:00","End":"2018-04-11 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-04-12 10:00:00","End":"2018-04-12 16:00:00","InTime":false}}}'
+[2018-04-11T16:02:06.721] [INFO] things - [32m您所在区域暂未上货[39m
+[2018-04-11T16:02:06.721] [INFO] things - {"phone":"18946959184","pass":"123456","addressId":1893645}
+[2018-04-11T16:02:06.722] [INFO] things - 1893645 '{"state":true,"code":9999,"msg":"用户未登陆"}'
+[2018-04-11T16:02:08.700] [INFO] things - 账号状态有问题
+[2018-04-11T16:02:08.700] [INFO] things - [32m您所在区域暂未上货[39m
+[2018-04-11T16:02:08.700] [INFO] things - {"phone":"15081664435","pass":"a123456","addressId":1961952}
+[2018-04-11T16:02:08.700] [INFO] things - 1894367 '{"state":true,"code":10,"data":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":false,"Certificate":{"ID":"2822017","UID":2225808,"PID":"391","Status":3,"Address":{"ID":1894367,"IsDefault":false,"IsPushAddreess":true,"Name":"鲁元","TelPhone":"18967839427","Zipcode":"000000","ProvCode":"110000","CityCode":"110100","AreaCode":"110101","Remark":"","IsVerification":false,"AddressDetails":"北京市东城区,东城区,海关大街南一巷13号","Longitude":116.416357,"Latitude":39.928353,"Address":"东城区,海关大街南一巷13号","AddressText":"北京市东城区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-17 00:00:00"},"EnterTimeSlot":{"Start":"2018-04-11 00:00:00","End":"2018-04-11 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-04-12 10:00:00","End":"2018-04-12 16:00:00","InTime":false}}}'
+[2018-04-11T16:02:10.451] [INFO] things - 账号状态有问题
+[2018-04-11T16:02:10.451] [INFO] things - [32m您所在区域暂未上货[39m
+[2018-04-11T16:02:10.452] [INFO] things - {"phone":"13290979032","pass":"a123456","addressId":1962187}
+[2018-04-11T16:02:10.452] [INFO] things - 1962184 '{"state":true,"code":10,"data":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":false,"Certificate":{"ID":"2823132","UID":2265159,"PID":"391","Status":3,"Address":{"ID":1962184,"IsDefault":true,"IsPushAddreess":true,"Name":"邰盆","TelPhone":"13283936032","Zipcode":"000000","ProvCode":"110000","CityCode":"110100","AreaCode":"110105","Remark":"","IsVerification":false,"AddressDetails":"北京市北京市朝阳区,华洋紫竹幼儿园","Longitude":116.365929,"Latitude":39.840074,"Address":"华洋紫竹幼儿园","AddressText":"北京市北京市朝阳区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-17 00:00:00"},"EnterTimeSlot":{"Start":"2018-04-11 00:00:00","End":"2018-04-11 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-04-12 10:00:00","End":"2018-04-12 16:00:00","InTime":false}}}'
+[2018-04-11T16:02:12.287] [INFO] things - 账号状态有问题
+[2018-04-11T16:02:12.287] [INFO] things - [32m您所在区域暂未上货[39m
+[2018-04-11T16:02:12.287] [INFO] things - {"phone":"15716559528","pass":"a123456","addressId":1961956}
+[2018-04-11T16:02:12.288] [INFO] things - 1961824 '{"state":true,"code":10,"data":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":false,"Certificate":{"ID":"2823069","UID":2265222,"PID":"391","Status":3,"Address":{"ID":1961824,"IsDefault":true,"IsPushAddreess":true,"Name":"邰苏","TelPhone":"15635316166","Zipcode":"000000","ProvCode":"110000","CityCode":"110100","AreaCode":"110105","Remark":"","IsVerification":false,"AddressDetails":"北京市北京市朝阳区,北京京都长城电线电缆有限公司","Longitude":116.497135,"Latitude":39.830056,"Address":"北京京都长城电线电缆有限公司","AddressText":"北京市北京市朝阳区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-17 00:00:00"},"EnterTimeSlot":{"Start":"2018-04-11 00:00:00","End":"2018-04-11 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-04-12 10:00:00","End":"2018-04-12 16:00:00","InTime":false}}}'
+[2018-04-11T16:02:14.054] [INFO] things - 账号状态有问题
+[2018-04-11T16:02:14.055] [INFO] things - [32m您所在区域暂未上货[39m
+[2018-04-11T16:02:14.055] [INFO] things - {"phone":"18818426811","pass":"a123456","addressId":1962236}
+[2018-04-11T16:02:14.055] [INFO] things - 1969317 '{"state":true,"code":10,"data":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":false,"Certificate":{"ID":"2823176","UID":2265117,"PID":"391","Status":3,"Address":{"ID":1969317,"IsDefault":true,"IsPushAddreess":true,"Name":"季况","TelPhone":"18831099037","Zipcode":"000000","ProvCode":"110000","CityCode":"110100","AreaCode":"110105","Remark":"","IsVerification":false,"AddressDetails":"北京市北京市朝阳区,华威西里17号楼","Longitude":116.380988,"Latitude":39.899869,"Address":"华威西里17号楼","AddressText":"北京市北京市朝阳区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-17 00:00:00"},"EnterTimeSlot":{"Start":"2018-04-11 00:00:00","End":"2018-04-11 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-04-12 10:00:00","End":"2018-04-12 16:00:00","InTime":false}}}'
+[2018-04-11T16:02:25.639] [INFO] things - 账号状态有问题
+[2018-04-11T16:02:25.639] [INFO] things - [32m您所在区域暂未上货[39m
+[2018-04-11T16:02:25.640] [INFO] things - {"phone":"18253251389","pass":"123456","addressId":1843317}
+[2018-04-11T16:02:25.640] [INFO] things - 1935822 '{"state":true,"code":10,"data":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":false,"Certificate":{"ID":"2822006","UID":2106649,"PID":"391","Status":3,"Address":{"ID":1935822,"IsDefault":true,"IsPushAddreess":true,"Name":"覃芳","TelPhone":"18246626742","Zipcode":"000000","ProvCode":"110000","CityCode":"110100","AreaCode":"110101","Remark":"","IsVerification":false,"AddressDetails":"北京市东城区,北京市东城区安化北里18号北京上舍园","Longitude":116.442721,"Latitude":39.897544,"Address":"北京市东城区安化北里18号北京上舍园","AddressText":"北京市东城区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-17 00:00:00"},"EnterTimeSlot":{"Start":"2018-04-11 00:00:00","End":"2018-04-11 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-04-12 10:00:00","End":"2018-04-12 16:00:00","InTime":false}}}'
+[2018-04-11T16:02:27.506] [INFO] things - 账号状态有问题
+[2018-04-11T16:02:27.506] [INFO] things - [32m您所在区域暂未上货[39m
+[2018-04-11T16:02:27.506] [INFO] things - {"phone":"15046846298","pass":"a123456","addressId":1930700}
+[2018-04-11T16:02:27.506] [INFO] things - 1951805 '{"state":true,"code":10,"data":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":false,"Certificate":{"ID":"2821972","UID":2246150,"PID":"391","Status":3,"Address":{"ID":1951805,"IsDefault":true,"IsPushAddreess":true,"Name":"於芯","TelPhone":"18533703200","Zipcode":"000000","ProvCode":"110000","CityCode":"110100","AreaCode":"110105","Remark":"","IsVerification":false,"AddressDetails":"北京市朝阳区,巢NEST","Longitude":116.482705,"Latitude":39.906573,"Address":"巢NEST","AddressText":"北京市朝阳区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-17 00:00:00"},"EnterTimeSlot":{"Start":"2018-04-11 00:00:00","End":"2018-04-11 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-04-12 10:00:00","End":"2018-04-12 16:00:00","InTime":false}}}'
+[2018-04-11T16:02:29.075] [INFO] things - 账号状态有问题
+[2018-04-11T16:02:29.075] [INFO] things - [32m您所在区域暂未上货[39m
+[2018-04-11T16:02:29.075] [INFO] things - {"phone":"15046846298","pass":"a123456","addressId":1930700}
+[2018-04-11T16:02:29.076] [INFO] things - 1951737 '{"state":true,"code":10,"data":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":false,"Certificate":{"ID":"2821968","UID":2246017,"PID":"391","Status":3,"Address":{"ID":1951737,"IsDefault":true,"IsPushAddreess":true,"Name":"崔展砚","TelPhone":"13513642702","Zipcode":"000000","ProvCode":"110000","CityCode":"110100","AreaCode":"110105","Remark":"","IsVerification":false,"AddressDetails":"北京市朝阳区,牛匠牛上牛韩国烤肉俱乐部","Longitude":116.475661,"Latitude":39.897177,"Address":"牛匠牛上牛韩国烤肉俱乐部","AddressText":"北京市朝阳区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-17 00:00:00"},"EnterTimeSlot":{"Start":"2018-04-11 00:00:00","End":"2018-04-11 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-04-12 10:00:00","End":"2018-04-12 16:00:00","InTime":false}}}'
+[2018-04-11T16:02:39.572] [INFO] things - 账号状态有问题
+[2018-04-11T16:02:39.572] [INFO] things - [32m您所在区域暂未上货[39m
+[2018-04-11T16:02:39.572] [INFO] things - {"phone":"18818426811","pass":"a123456","addressId":1962236}
+[2018-04-11T16:02:39.572] [INFO] things - 1962222 '{"state":true,"code":10,"data":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":false,"Certificate":{"ID":"2823173","UID":2265078,"PID":"391","Status":3,"Address":{"ID":1962222,"IsDefault":true,"IsPushAddreess":true,"Name":"骆游芒","TelPhone":"13209986285","Zipcode":"000000","ProvCode":"110000","CityCode":"110100","AreaCode":"110105","Remark":"","IsVerification":false,"AddressDetails":"北京市北京市朝阳区,北豆各庄93号院","Longitude":116.593879,"Latitude":40.006517,"Address":"北豆各庄93号院","AddressText":"北京市北京市朝阳区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-17 00:00:00"},"EnterTimeSlot":{"Start":"2018-04-11 00:00:00","End":"2018-04-11 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-04-12 10:00:00","End":"2018-04-12 16:00:00","InTime":false}}}'
+[2018-04-11T16:02:42.254] [INFO] things - 账号状态有问题
+[2018-04-11T16:02:42.254] [INFO] things - [32m您所在区域暂未上货[39m
+[2018-04-11T16:02:42.255] [INFO] things - {"phone":"15981953127","pass":"123456","addressId":1841839}
+[2018-04-11T16:02:42.255] [INFO] things - 1951717 '{"state":true,"code":10,"data":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":false,"Certificate":{"ID":"2822046","UID":2245979,"PID":"391","Status":3,"Address":{"ID":1951717,"IsDefault":true,"IsPushAddreess":true,"Name":"但竣","TelPhone":"13720689006","Zipcode":"000000","ProvCode":"110000","CityCode":"110100","AreaCode":"110105","Remark":"","IsVerification":false,"AddressDetails":"北京市朝阳区,常赢三兄弟餐厅","Longitude":116.46942,"Latitude":39.906515,"Address":"常赢三兄弟餐厅","AddressText":"北京市朝阳区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-17 00:00:00"},"EnterTimeSlot":{"Start":"2018-04-11 00:00:00","End":"2018-04-11 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-04-12 10:00:00","End":"2018-04-12 16:00:00","InTime":false}}}'
+[2018-04-11T16:02:44.171] [INFO] things - 账号状态有问题
+[2018-04-11T16:02:44.172] [INFO] things - [32m您所在区域暂未上货[39m
+[2018-04-11T16:02:44.172] [INFO] things - {"phone":"18818426811","pass":"a123456","addressId":1962236}
+[2018-04-11T16:02:44.172] [INFO] things - 1962205 '{"state":true,"code":10,"data":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":false,"Certificate":{"ID":"2823150","UID":2265080,"PID":"391","Status":3,"Address":{"ID":1962205,"IsDefault":true,"IsPushAddreess":true,"Name":"生追","TelPhone":"15035399985","Zipcode":"000000","ProvCode":"110000","CityCode":"110100","AreaCode":"110105","Remark":"","IsVerification":false,"AddressDetails":"北京市北京市朝阳区,英才双语幼儿园","Longitude":116.446763,"Latitude":39.842999,"Address":"英才双语幼儿园","AddressText":"北京市北京市朝阳区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-17 00:00:00"},"EnterTimeSlot":{"Start":"2018-04-11 00:00:00","End":"2018-04-11 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-04-12 10:00:00","End":"2018-04-12 16:00:00","InTime":false}}}'
+[2018-04-11T16:02:46.351] [INFO] things - 账号状态有问题
+[2018-04-11T16:02:46.352] [INFO] things - [32m您所在区域暂未上货[39m
+[2018-04-11T16:02:46.352] [INFO] things - {"phone":"15081820867","pass":"a123456","addressId":1962191}
+[2018-04-11T16:02:46.352] [INFO] things - 1962187 '{"state":true,"code":10,"data":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":false,"Certificate":{"ID":"2823134","UID":2265145,"PID":"391","Status":3,"Address":{"ID":1962187,"IsDefault":true,"IsPushAddreess":true,"Name":"卢恢","TelPhone":"13290979032","Zipcode":"000000","ProvCode":"110000","CityCode":"110100","AreaCode":"110106","Remark":"","IsVerification":false,"AddressDetails":"北京市北京市丰台区,奥迪大众","Longitude":116.51839,"Latitude":40.023207,"Address":"奥迪大众","AddressText":"北京市北京市丰台区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-17 00:00:00"},"EnterTimeSlot":{"Start":"2018-04-11 00:00:00","End":"2018-04-11 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-04-12 10:00:00","End":"2018-04-12 16:00:00","InTime":false}}}'
+[2018-04-11T16:02:50.072] [INFO] things - 账号状态有问题
+[2018-04-11T16:02:50.072] [INFO] things - [32m您所在区域暂未上货[39m
+[2018-04-11T16:02:50.072] [INFO] things - {"phone":"15697680921","pass":"123456","addressId":1894280}
+[2018-04-11T16:02:50.072] [INFO] things - 1861429 '{"state":true,"code":10,"data":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":false,"Certificate":{"ID":"2821988","UID":2202376,"PID":"391","Status":3,"Address":{"ID":1861429,"IsDefault":false,"IsPushAddreess":true,"Name":"张芳","TelPhone":"15645919316","Zipcode":"000000","ProvCode":"110000","CityCode":"110100","AreaCode":"110101","Remark":"","IsVerification":true,"AddressDetails":"北京市东城区,百果园(东花市南路店),1层114号","Longitude":116.431435,"Latitude":39.895391,"Address":"百果园(东花市南路店),1层114号","AddressText":"北京市东城区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-17 00:00:00"},"EnterTimeSlot":{"Start":"2018-04-11 00:00:00","End":"2018-04-11 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-04-12 10:00:00","End":"2018-04-12 16:00:00","InTime":false}}}'
+[2018-04-11T16:02:54.431] [INFO] things - 账号状态有问题
+[2018-04-11T16:02:54.431] [INFO] things - [32m您所在区域暂未上货[39m
+[2018-04-11T16:02:54.431] [INFO] things - {"phone":"15716559528","pass":"a123456","addressId":1961956}
+[2018-04-11T16:02:54.431] [INFO] things - 1951733 '{"state":true,"code":10,"data":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":false,"Certificate":{"ID":"2822603","UID":2245995,"PID":"391","Status":3,"Address":{"ID":1951733,"IsDefault":true,"IsPushAddreess":true,"Name":"李球甲","TelPhone":"17879529656","Zipcode":"000000","ProvCode":"110000","CityCode":"110100","AreaCode":"110105","Remark":"","IsVerification":false,"AddressDetails":"北京市北京市朝阳区,白家庄小学","Longitude":116.523035,"Latitude":39.870563,"Address":"白家庄小学","AddressText":"北京市北京市朝阳区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-17 00:00:00"},"EnterTimeSlot":{"Start":"2018-04-11 00:00:00","End":"2018-04-11 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-04-12 10:00:00","End":"2018-04-12 16:00:00","InTime":false}}}'
+[2018-04-11T16:02:56.158] [INFO] things - 账号状态有问题
+[2018-04-11T16:02:56.158] [INFO] things - [32m您所在区域暂未上货[39m
+[2018-04-11T16:02:56.158] [INFO] things - {"phone":"15716559528","pass":"a123456","addressId":1961956}
+[2018-04-11T16:02:56.158] [INFO] things - 1930791 '{"state":true,"code":10,"data":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":false,"Certificate":{"ID":"2822412","UID":2245946,"PID":"391","Status":3,"Address":{"ID":1930791,"IsDefault":true,"IsPushAddreess":true,"Name":"爱新觉罗徐","TelPhone":"13842111000","Zipcode":"000000","ProvCode":"110000","CityCode":"110100","AreaCode":"110115","Remark":"","IsVerification":false,"AddressDetails":"北京市北京市大兴区,庑殿一村","Longitude":116.459302,"Latitude":39.904383,"Address":"庑殿一村","AddressText":"北京市北京市大兴区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-17 00:00:00"},"EnterTimeSlot":{"Start":"2018-04-11 00:00:00","End":"2018-04-11 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-04-12 10:00:00","End":"2018-04-12 16:00:00","InTime":false}}}'
+[2018-04-11T16:03:01.354] [INFO] things - 账号状态有问题
+[2018-04-11T16:03:01.355] [INFO] things - [32m您所在区域暂未上货[39m
+[2018-04-11T16:03:01.355] [INFO] things - {"phone":"18946959184","pass":"123456","addressId":1893645}
+[2018-04-11T16:03:01.355] [INFO] things - 1843317 '{"state":true,"code":10,"data":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":false,"Certificate":{"ID":"2822007","UID":2190299,"PID":"391","Status":3,"Address":{"ID":1843317,"IsDefault":false,"IsPushAddreess":true,"Name":"耿雅楠","TelPhone":"18253251389","Zipcode":"000000","ProvCode":"110000","CityCode":"110100","AreaCode":"110101","Remark":"","IsVerification":true,"AddressDetails":"北京市东城区,富贵园,29号楼902","Longitude":116.433508,"Latitude":39.897365,"Address":"富贵园,29号楼902","AddressText":"北京市东城区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-17 00:00:00"},"EnterTimeSlot":{"Start":"2018-04-11 00:00:00","End":"2018-04-11 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-04-12 10:00:00","End":"2018-04-12 16:00:00","InTime":false}}}'
+[2018-04-11T16:03:03.731] [INFO] things - 账号状态有问题
+[2018-04-11T16:03:03.732] [INFO] things - [32m您所在区域暂未上货[39m
+[2018-04-11T16:03:03.732] [INFO] things - {"phone":"15081820867","pass":"a123456","addressId":1962191}
+[2018-04-11T16:03:03.732] [INFO] things - 1961956 '{"state":true,"code":10,"data":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":false,"Certificate":{"ID":"2823126","UID":2265246,"PID":"391","Status":3,"Address":{"ID":1961956,"IsDefault":true,"IsPushAddreess":true,"Name":"终旺","TelPhone":"15716559528","Zipcode":"000000","ProvCode":"110000","CityCode":"110100","AreaCode":"110105","Remark":"","IsVerification":false,"AddressDetails":"北京市北京市朝阳区,枫花园汽车电影院","Longitude":116.562301,"Latitude":39.943304,"Address":"枫花园汽车电影院","AddressText":"北京市北京市朝阳区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-17 00:00:00"},"EnterTimeSlot":{"Start":"2018-04-11 00:00:00","End":"2018-04-11 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-04-12 10:00:00","End":"2018-04-12 16:00:00","InTime":false}}}'
+[2018-04-11T16:03:05.493] [INFO] things - 账号状态有问题
+[2018-04-11T16:03:05.493] [INFO] things - [32m您所在区域暂未上货[39m
+[2018-04-11T16:03:05.494] [INFO] things - {"phone":"15035399985","pass":"a123456","addressId":1962205}
+[2018-04-11T16:03:05.494] [INFO] things - 1961952 '{"state":true,"code":10,"data":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":false,"Certificate":{"ID":"2823122","UID":2265249,"PID":"391","Status":3,"Address":{"ID":1961952,"IsDefault":true,"IsPushAddreess":true,"Name":"祝殉栾","TelPhone":"15081664435","Zipcode":"000000","ProvCode":"110000","CityCode":"110100","AreaCode":"110105","Remark":"","IsVerification":false,"AddressDetails":"北京市北京市朝阳区,首开·常青藤34号楼","Longitude":116.369076,"Latitude":40.003102,"Address":"首开·常青藤34号楼","AddressText":"北京市北京市朝阳区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-17 00:00:00"},"EnterTimeSlot":{"Start":"2018-04-11 00:00:00","End":"2018-04-11 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-04-12 10:00:00","End":"2018-04-12 16:00:00","InTime":false}}}'
+[2018-04-11T16:03:12.779] [INFO] things - 账号状态有问题
+[2018-04-11T16:03:12.779] [INFO] things - [32m您所在区域暂未上货[39m
+[2018-04-11T16:03:12.779] [INFO] things - {"phone":"15081820867","pass":"a123456","addressId":1962191}
+[2018-04-11T16:03:12.780] [INFO] things - 1841839 '{"state":true,"code":10,"data":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":false,"Certificate":{"ID":"2822091","UID":2189207,"PID":"391","Status":3,"Address":{"ID":1841839,"IsDefault":true,"IsPushAddreess":true,"Name":"小梅","TelPhone":"15981953127","Zipcode":"000000","ProvCode":"110000","CityCode":"110100","AreaCode":"110101","Remark":"","IsVerification":true,"AddressDetails":"北京市东城区,家乐福(广渠门店),3栋309","Longitude":116.433215,"Latitude":39.894134,"Address":"家乐福(广渠门店),3栋309","AddressText":"北京市东城区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-17 00:00:00"},"EnterTimeSlot":{"Start":"2018-04-11 00:00:00","End":"2018-04-11 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-04-12 10:00:00","End":"2018-04-12 16:00:00","InTime":false}}}'
+[2018-04-11T16:03:14.678] [INFO] things - 账号状态有问题
+[2018-04-11T16:03:14.678] [INFO] things - [32m您所在区域暂未上货[39m
+[2018-04-11T16:03:14.678] [INFO] things - {"phone":"18818426811","pass":"a123456","addressId":1962236}
+[2018-04-11T16:03:14.678] [INFO] things - 1962191 '{"state":true,"code":10,"data":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":false,"Certificate":{"ID":"2823139","UID":2265205,"PID":"391","Status":3,"Address":{"ID":1962191,"IsDefault":true,"IsPushAddreess":true,"Name":"闻后件","TelPhone":"15081820867","Zipcode":"000000","ProvCode":"110000","CityCode":"110100","AreaCode":"110105","Remark":"","IsVerification":false,"AddressDetails":"北京市北京市朝阳区,北京市社区卫生服务(百合公寓西)","Longitude":116.443719,"Latitude":39.817603,"Address":"北京市社区卫生服务(百合公寓西)","AddressText":"北京市北京市朝阳区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-17 00:00:00"},"EnterTimeSlot":{"Start":"2018-04-11 00:00:00","End":"2018-04-11 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-04-12 10:00:00","End":"2018-04-12 16:00:00","InTime":false}}}'
+[2018-04-11T16:03:16.594] [INFO] things - 账号状态有问题
+[2018-04-11T16:03:16.594] [INFO] things - [32m您所在区域暂未上货[39m
+[2018-04-11T16:03:16.594] [INFO] things - {"phone":"18131970041","pass":"123456","addressId":1847451}
+[2018-04-11T16:03:16.594] [INFO] things - 1894280 '{"state":true,"code":10,"data":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":false,"Certificate":{"ID":"2821989","UID":2225772,"PID":"391","Status":3,"Address":{"ID":1894280,"IsDefault":false,"IsPushAddreess":true,"Name":"姚锦豪","TelPhone":"15697680921","Zipcode":"000000","ProvCode":"110000","CityCode":"110100","AreaCode":"110101","Remark":"","IsVerification":false,"AddressDetails":"北京市东城区,天空摄影(时尚婚纱摄影店),","Longitude":116.426629,"Latitude":39.893822,"Address":"天空摄影(时尚婚纱摄影店),","AddressText":"北京市东城区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-17 00:00:00"},"EnterTimeSlot":{"Start":"2018-04-11 00:00:00","End":"2018-04-11 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-04-12 10:00:00","End":"2018-04-12 16:00:00","InTime":false}}}'
+[2018-04-11T16:03:28.078] [TRACE] things - 当前时间: 16
+[2018-04-11T16:03:28.080] [INFO] things - 抢购时间开始
+[2018-04-11T16:03:28.696] [INFO] things - 账号状态有问题
+[2018-04-11T16:03:28.697] [INFO] things - [32m您所在区域暂未上货[39m
+[2018-04-11T16:03:28.697] [INFO] things - {"phone":"15089493032","pass":"wy40324700","addressId":1866321}
+[2018-04-11T16:03:28.697] [INFO] things - 1994894 '{"state":true,"code":10,"data":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":false,"Certificate":{"ID":"2802385","UID":2041970,"PID":"391","Status":3,"Address":{"ID":1994894,"IsDefault":true,"IsPushAddreess":true,"Name":"李派","TelPhone":"15015247207","Zipcode":"000000","ProvCode":"500000","CityCode":"500100","AreaCode":"500112","Remark":"","IsVerification":false,"AddressDetails":"重庆市渝北区,金石小区(西北门),金石小区","Longitude":106.601173,"Latitude":29.649136,"Address":"金石小区(西北门),金石小区","AddressText":"重庆市渝北区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-15 00:00:00"},"EnterTimeSlot":{"Start":"2018-04-11 00:00:00","End":"2018-04-11 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-04-12 10:00:00","End":"2018-04-12 16:00:00","InTime":false}}}'
+[2018-04-11T16:03:30.494] [INFO] things - 账号状态有问题
+[2018-04-11T16:03:30.494] [INFO] things - [32m您所在区域暂未上货[39m
+[2018-04-11T16:03:30.495] [INFO] things - {"phone":"13886972253","pass":"wy40324700","addressId":1994862}
+[2018-04-11T16:03:30.495] [INFO] things - 1862182 '{"state":true,"code":10,"data":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":false,"Certificate":{"ID":"2802251","UID":2072164,"PID":"391","Status":3,"Address":{"ID":1862182,"IsDefault":true,"IsPushAddreess":true,"Name":"余志豪","TelPhone":"13537418590","Zipcode":"000000","ProvCode":"500000","CityCode":"500100","AreaCode":"500103","Remark":"","IsVerification":false,"AddressDetails":"重庆市渝中区,重庆市渝中区人民政府,金海路900号金陵金桥工业园","Longitude":106.568896,"Latitude":29.552736,"Address":"重庆市渝中区人民政府,金海路900号金陵金桥工业园","AddressText":"重庆市渝中区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-15 00:00:00"},"EnterTimeSlot":{"Start":"2018-04-11 00:00:00","End":"2018-04-11 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-04-12 10:00:00","End":"2018-04-12 16:00:00","InTime":false}}}'
+[2018-04-11T16:03:32.399] [INFO] things - 账号状态有问题
+[2018-04-11T16:03:32.400] [INFO] things - [32m您所在区域暂未上货[39m
+[2018-04-11T16:03:32.400] [INFO] things - {"phone":"15999759990","pass":"wy40324700","addressId":1994049}
+[2018-04-11T16:03:32.400] [INFO] things - 1993819 '{"state":true,"code":10,"data":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":false,"Certificate":{"ID":"2799404","UID":2284641,"PID":"391","Status":4,"Address":{"ID":1993819,"IsDefault":true,"IsPushAddreess":true,"Name":"王勇","TelPhone":"13332609788","Zipcode":"000000","ProvCode":"500000","CityCode":"500100","AreaCode":"500112","Remark":"","IsVerification":false,"AddressDetails":"重庆市渝北区,加州城市花园,龙溪镇龙华大道125号","Longitude":106.518833,"Latitude":29.593408,"Address":"加州城市花园,龙溪镇龙华大道125号","AddressText":"重庆市渝北区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-17 00:00:00"},"EnterTimeSlot":{"Start":"2018-04-11 00:00:00","End":"2018-04-11 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-04-12 10:00:00","End":"2018-04-12 16:00:00","InTime":false}}}'
+[2018-04-11T16:03:33.976] [INFO] things - 账号状态有问题
+[2018-04-11T16:03:33.977] [INFO] things - [32m您所在区域暂未上货[39m
+[2018-04-11T16:03:33.977] [INFO] things - {"phone":"18312696005","pass":"wy40324700","addressId":1994917}
+[2018-04-11T16:03:33.977] [INFO] things - 1994904 '{"state":true,"code":10,"data":{"IsNeedReservation":true,"IsIntercept":false,"ProductID":391,"CanUseCredence":false,"Certificate":{"ID":"2802410","UID":2022169,"PID":"391","Status":3,"Address":{"ID":1994904,"IsDefault":true,"IsPushAddreess":true,"Name":"王强","TelPhone":"13650842112","Zipcode":"000000","ProvCode":"500000","CityCode":"500100","AreaCode":"500112","Remark":"","IsVerification":false,"AddressDetails":"重庆市渝北区,维也纳酒店(重庆渝北区机场店),东东香餐厅","Longitude":106.594255,"Latitude":29.660426,"Address":"维也纳酒店(重庆渝北区机场店),东东香餐厅","AddressText":"重庆市渝北区"},"Product":{"Pid":391,"PCode":"23","PName":"贵州茅台酒 (新飞天) 53%vol 500ml","CoverImage":"/Storage/master/product/thumbs410/410_4c7cd945371d4d95b7432d87b1b51a10.jpg"},"FailureTime":"2018-04-15 00:00:00"},"EnterTimeSlot":{"Start":"2018-04-11 00:00:00","End":"2018-04-11 23:59:59","InTime":true},"BuyTimeSlot":{"Start":"2018-04-12 10:00:00","End":"2018-04-12 16:00:00","InTime":false}}}'

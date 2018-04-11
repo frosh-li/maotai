@@ -66,7 +66,7 @@ function watchQuanity(number) {
     console.log('购买完成')
     return;
   }
-  //proxy.switchIp().then(() => {
+  proxy.switchIp().then(() => {
     let _startTime = +new Date();
     let createOrderStartTime = +new Date();
     let currentJar = null;
@@ -74,7 +74,7 @@ function watchQuanity(number) {
         .then(j => {
           currentJar = j;
           _startTime = +new Date();
-          return MaotaiService.createOrderByScan(tel, pid, quantity,300, userAgent, scopeAddress, fixedShopId, -1, currentJar)
+          return MaotaiService.createOrderByScan(originPhones[randomIndex], pid, quantity,300, userAgent, scopeAddress, fixedShopId, -1, currentJar)
           //return MaotaiService.createOrderByScan(tel, pid , 6, userAgent, scopeAddress, fixedShopId, currentJar);
         }).then( data => {
             logger.info("下单时间"+(new Date() - _startTime)+"ms");
@@ -96,14 +96,14 @@ function watchQuanity(number) {
                 watchQuanity(number);
             }, checkInterval);
         })
-  //})
-  //.catch(e => {
-  //  logger.error(e);
-  //})
+  })
+  .catch(e => {
+    logger.error(e);
+  })
 }
 
 //var fixedShopId = 233330186001; // 杭州网点
-var fixedShopId = 211110105005; //双龙网点
-var maxOrder = 2;
+var fixedShopId =211110105016; //双龙网点
+var maxOrder = 50;
 var successOrder = 0;
-watchQuanity(2)
+watchQuanity(50)

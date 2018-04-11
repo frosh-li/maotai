@@ -279,15 +279,6 @@ class MaotaiService {
                   return reject(error);
                 };
                 if(body.code === 9999){
-                    that.login(tel, pass, userAgent)
-                        .then(() => {
-
-                            console.log('从新登陆');
-                        })
-                        .catch(e => {
-
-                            console.log('登陆失败', e.message);
-                        })
                 }
                 return resolve({
                   addressID: addressID,

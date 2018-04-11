@@ -12,16 +12,25 @@ const proxy = require('../controllers/proxy');
 let checkInterval = 1*1000;
 // 上海购买
 // 地址信息
-let pid = '401';
-let quantity = 12;
-
+let pid = '391';
+let quantity = 6;
+let fixedNetworks = [
+  250500700001,
+  250500112006,
+  250500105002,
+  250500108003,
+  250500108001,
+  250500105007,
+  250500105001,
+  150500103004
+];
 
 let shopName = '东柏街|祥瑞丰源|SOHO现代城C|嘉禾国信大厦|西城区|文峰商贸';
 
 global.originPhones = require("../accounts/4.10.json");
-
-var scanIndex = 0;
-
+if(process.argv[2] != undefined){
+  global.originPhones = require(process.argv[2]);
+}
 function printInfo(data){
   try{
     logger.info('推送网点信息');
@@ -37,13 +46,7 @@ function printInfo(data){
 }
 
 function watchQuanity() {
-  if(scanIndex > originPhones.length - 1){
-    scanIndex = 0;
-    console.log('扫描结束');
-    process.exit();
-    return
-  }
-  let randomIndex = scanIndex;//Math.floor(Math.random()*(originPhones.length-1));
+  let randomIndex = Math.floor(Math.random()*(originPhones.length-1));
   let tel = originPhones[randomIndex].phone;
   let pass = originPhones[randomIndex].pass;
   let userAgent = MaotaiService.userAgent(tel);
@@ -69,8 +72,13 @@ function watchQuanity() {
               currentShopId = data.lbsdata.data.network.Sid;
               logger.info(colors.green("商家已经上货，开始购买流程"));
               printInfo(data);
+              if(fixedNetworks.indexOf(currentShopId) === -1){
+                logger.info('可惜不在锁定列表中');
+                return Promise.resolve({code: 500})
+              }
               logger.info('scopeAddress', scopeAddress);
-              return MaotaiService.createOrderByScan(originPhones[randomIndex], pid , data.lbsdata.data.limit.LimitCount,data.lbsdata.data.stock.StockCount, userAgent, scopeAddress, data.lbsdata.data.network.Sid,-1,currentJar);
+              let buyAccount = data.lbsdata.data.limit.LimitCount >= data.lbsdata.data.stock ? data.lbsdata.data.limit.LimitCount : quantity;
+              return MaotaiService.createOrderByScan(originPhones[randomIndex], pid , buyAccount,data.lbsdata.data.stock.StockCount, userAgent, scopeAddress, data.lbsdata.data.network.Sid,-1,currentJar);
             }else {
               printInfo(data);
               logger.info('不满足购买条件');
@@ -79,6 +87,12 @@ function watchQuanity() {
             }
 
           } else {
+            if(data.lbsdata.code === 10){
+              // 账号应该是没有预约，剔除出去
+              logger.info('账号状态有问题');
+              originPhones.splice(randomIndex, 1);
+
+            }
             logger.info(colors.green("您所在区域暂未上货"))
             logger.info(JSON.stringify(originPhones[randomIndex]))
             logger.info(scopeAddress, JSON.stringify(data.lbsdata));
@@ -94,7 +108,6 @@ function watchQuanity() {
             }
 
             setTimeout(() => {
-                scanIndex++;
                 watchQuanity();
             }, checkInterval);
 
@@ -102,7 +115,6 @@ function watchQuanity() {
         }).catch(e => {
             logger.info("位置错误,60秒后重试", e.message);
             setTimeout(() => {
-                scanIndex++;
                 watchQuanity();
             }, checkInterval);
         })
@@ -216,7 +228,7 @@ let interval = setInterval(() => {
   let now = new Date();
   let Hour = now.getHours();
   logger.trace('当前时间:', Hour);
-  if(Hour >= 10 && Hour <= 24) {
+  if(Hour >= 10 && Hour <= 16) {
     clearInterval(interval);
     logger.info('抢购时间开始');
     // todo
@@ -226,4 +238,4 @@ let interval = setInterval(() => {
     logger.trace('继续等待中，等到十点才开始吧');
   }
 }, 2000);
-// watchQuanity();
+//watchQuanity();

@@ -11,14 +11,8 @@ const MaotaiService = require('../tools/service');
 //connection.connect();
 
 var originPhones = [
-  { phone: '15949806339', pass: 'lhj0325' },
-  { phone: '17097224268', pass: '123456' },
-  { phone: '18032952504', pass: '123456' },
-  { phone: '18201603185', pass: '123456' },
-  { phone: '18207517996', pass: '123456' },
-  { phone: '18333966217', pass: '123456' },
-  { phone: '18382394514', pass: '123456' },
-  { phone: '18629896680', pass: '123456' } ];
+  {"phone":"15133355337","pass":"a123456","addressId":1962238}
+]
 const proxy = require('../controllers/proxy');
 if(process.argv[2] != undefined){
   originPhones = require(process.argv[2]);

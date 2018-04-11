@@ -19,9 +19,9 @@ let quantity = 6;
 let shopName = '东柏街|祥瑞丰源|SOHO现代城C|嘉禾国信大厦|西城区|文峰商贸';
 
 global.originPhones = require("../accounts/4.10.json");
-
-
-
+if(process.argv[2] != undefined){
+  global.originPhones = require(process.argv[2]);
+}
 function printInfo(data){
   try{
     logger.info('推送网点信息');
@@ -64,7 +64,8 @@ function watchQuanity() {
               logger.info(colors.green("商家已经上货，开始购买流程"));
               printInfo(data);
               logger.info('scopeAddress', scopeAddress);
-              return MaotaiService.createOrderByScan(originPhones[randomIndex], pid , data.lbsdata.data.limit.LimitCount,data.lbsdata.data.stock.StockCount, userAgent, scopeAddress, data.lbsdata.data.network.Sid,-1,currentJar);
+              let buyAccount = data.lbsdata.data.limit.LimitCount >= data.lbsdata.data.stock ? data.lbsdata.data.limit.LimitCount : quantity;
+              return MaotaiService.createOrderByScan(originPhones[randomIndex], pid , buyAccount,data.lbsdata.data.stock.StockCount, userAgent, scopeAddress, data.lbsdata.data.network.Sid,-1,currentJar);
             }else {
               printInfo(data);
               logger.info('不满足购买条件');
@@ -73,6 +74,12 @@ function watchQuanity() {
             }
 
           } else {
+            if(data.lbsdata.code === 10){
+              // 账号应该是没有预约，剔除出去
+              logger.info('账号状态有问题');
+              originPhones.splice(randomIndex, 1);
+
+            }
             logger.info(colors.green("您所在区域暂未上货"))
             logger.info(JSON.stringify(originPhones[randomIndex]))
             logger.info(scopeAddress, JSON.stringify(data.lbsdata));
@@ -218,4 +225,4 @@ let interval = setInterval(() => {
     logger.trace('继续等待中，等到十点才开始吧');
   }
 }, 2000);
-// watchQuanity();
+//watchQuanity();
