@@ -833,7 +833,6 @@ class MaotaiService {
         };
 
         return new Promise((resolve, reject) => {
-
             request(options, function(error, response, body) {
                 if (error) {
                     logger.info(error);
@@ -867,7 +866,6 @@ class MaotaiService {
         this.apointSuccess = [];
         this.apointFail = []
         this.apointmentBySinglePhone(phones, null, callback);
-
     }
 
 
@@ -883,7 +881,6 @@ class MaotaiService {
      */
     apointmentBySinglePhone(phones, userAgent, callback) {
         let sphone = phones.shift();
-
         if (!sphone) {
             logger.info("所有手机号预约结束");
             logger.info("预约成功:")
@@ -894,15 +891,9 @@ class MaotaiService {
             fs.writeFileSync('./apointFail.json', JSON.stringify(this.apointFail));
             return callback(this.apintmentResults);
         }
-        // phone = phone.trim();
-        logger.info(typeof sphone);
-        if (typeof sphone === 'string') {
-            var phone = sphone.trim();
-            var pass = "123456"
-        } else {
-            var phone = sphone.phone.trim();
-            var pass = sphone.pass.trim();
-        }
+        var phone = sphone.phone.trim();
+        var pass = sphone.pass.trim();
+
         userAgent = this.userAgent(phone);
         let currentJar = null;
         logger.info('开始预约:', phone);
@@ -910,11 +901,7 @@ class MaotaiService {
             .then(() => {
                 return this.getCurrentJar(phone)
             })
-            .then((j) => {
-                currentJar = j;
-                return this.LBSServer(sphone.addressId, phone, userAgent,391, currentJar);
-            })
-            .then(data => {
+            .then(currentJar => {
                 return this.apointment(sphone.addressId, userAgent, 391, currentJar)
             })
             .then(apointmentRet => {
@@ -965,13 +952,9 @@ class MaotaiService {
         phone = phone.trim();
         let userAgent = this.userAgent(phone);
         logger.info('开始预约:', phone);
-        this.login(phone, '123456', userAgent)
-          .then(userinfo => {
-            return this.getAddressId(phone, j)
-          })
-          .then((addressID) => {
-            return this.LBSServer(addressID, phone, userAgent,391, j);
-          })
+
+
+        return this.LBSServer(addressID, phone, userAgent,391, j)
           .then(data => {
             let addressID = data.addressID
             return this.apointment(addressID, userAgent, j)

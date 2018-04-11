@@ -97,6 +97,14 @@ function randomAddressName() {
 
 let successAcount = [];
 let failAccount = [];
+function getRandomFour(){
+  var num="";
+  for(var i=0;i<4;i++){
+      num+=Math.floor(Math.random()*10)
+  }
+  return num;
+}
+
 function checkPhone(){
   let phone = phones.shift();
   if(!phone){
@@ -130,9 +138,9 @@ function checkPhone(){
             Utils.findCityCode(currentAddress.addressComponent.adcode),
             currentAddress.addressComponent.adcode,
             `${currentAddress.addressComponent.province}${currentAddress.addressComponent.city}${currentAddress.addressComponent.district}`,
-            `${currentAddress.pois[0].name}`,
+            `${currentAddress.pois[0].name},${getRandomFour()}`,
             name,
-            randomPhone(user.phone, 0),
+            randomPhone(user.phone, 1),
             zipcode="000000",
             isDef=1,
             geos[index].lng,
@@ -199,7 +207,8 @@ function checkPhone(){
 
 }
 //106.630153,26.647661贵阳
-let geos = Utils.randomGeo(26.647661, 106.630153, 10, phones.length);
+//106.933425,27.725553遵义
+let geos = Utils.randomGeo(27.725553, 106.933425, 15, phones.length);
 
 console.log(geos);
 let getAddressCounter = 0;

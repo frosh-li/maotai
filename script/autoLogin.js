@@ -13,6 +13,7 @@ const MaotaiService = require('../tools/service');
 var originPhones = [
   {"phone":"15133355337","pass":"a123456","addressId":1962238}
 ]
+var loginSuccess = [];
 const proxy = require('../controllers/proxy');
 if(process.argv[2] != undefined){
   originPhones = require(process.argv[2]);
@@ -22,6 +23,7 @@ function start() {
   let user = originPhones.shift();
   if(!user){
     logger.info("全部登录完成");
+    console.log(JSON.stringify(loginSuccess, null, 4));
     return;
   }
   let userAgent = MaotaiService.userAgent(user.phone);
@@ -29,6 +31,9 @@ function start() {
   MaotaiService.login(user.phone, user.pass, userAgent)
     .then(data => {
       logger.info(data);
+      if(data.code === 0){
+        loginSuccess.push(user);
+      }
       start();
     })
     .catch(e => {
