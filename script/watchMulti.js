@@ -20,7 +20,7 @@ let quantity = 6;
 let shopName = '东柏街|祥瑞丰源|SOHO现代城C|嘉禾国信大厦|西城区|文峰商贸';
 
 global.originPhones = require("../accounts/gansu.json");
-global.originPhones = originPhones.concat(require("../accounts/hefei_guiyang.json"));
+// global.originPhones = originPhones.concat(require("../accounts/hefei_guiyang.json"));
 global.originPhones = originPhones.concat(require("../accounts/qiaoge.json"));
 if(process.argv[2] != undefined){
   global.originPhones = require(process.argv[2]);
@@ -111,7 +111,7 @@ function watchQuanity() {
             }
 
             setTimeout(() => {
-    scanindex++;
+                scanindex++;
                 watchQuanity();
             }, checkInterval);
 
@@ -119,7 +119,7 @@ function watchQuanity() {
         }).catch(e => {
             logger.info("位置错误,60秒后重试", e.message);
             setTimeout(() => {
-    scanindex++;
+                scanindex++;
                 watchQuanity();
             }, checkInterval);
         })
@@ -127,7 +127,6 @@ function watchQuanity() {
   .catch(e => {
     logger.error(e);
             setTimeout(() => {
-    scanindex++;
                 watchQuanity();
             }, checkInterval);
   })

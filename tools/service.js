@@ -43,6 +43,7 @@ class MaotaiService {
     getCurrentJar(tel) {
       return new Promise((resolve, reject) => {
         let path = './cookies/'+tel+'.json';
+        console.log(path);
         var v = new Filecookietore(path);
         v.findCookies('www.cmaotai.com','/', function(err, cookie){
           if(err){
@@ -170,7 +171,7 @@ class MaotaiService {
       let options = {
           method: 'POST',
           url: 'https://www.cmaotai.com/API/Servers.ashx',
-          headers: this.headers(userAgent),
+          headers: this.headers(userAgent,j),
           form: {
               action: 'AddressManager.add',
               provinceId: provinceId,

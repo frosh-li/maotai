@@ -118,10 +118,9 @@ function checkPhone(){
   let user = phone;
   // return;
   let userAgent = Service.userAgent(user.phone);
-  console.log('index:', index);
+  console.log(colors.green('当前已经解析:'+index+"个,成功"+successAcount.length+"个，失败"+failAccount.length+"个"));
   let currentAddress = ret2[index];
   if(!currentAddress){
-    // 超出范围重置为第一个自动地址
     index = 0;
     currentAddress = ret2[index];
   }
@@ -131,6 +130,7 @@ function checkPhone(){
     Service.getCurrentJar(user.phone)
     .then(j=>{
         currentJar = j;
+<<<<<<< HEAD
 
         return Service.editAddress(
             phone.addressId,
@@ -149,15 +149,64 @@ function checkPhone(){
             currentJar,
             )
 
+=======
+        if(phone.addressId){
+            return Service.editAddress(
+                phone.addressId,
+                Utils.findProvinceCode(currentAddress.addressComponent.adcode),
+                Utils.findCityCode(currentAddress.addressComponent.adcode),
+                currentAddress.addressComponent.adcode,
+                `${currentAddress.addressComponent.province}${currentAddress.addressComponent.city}${currentAddress.addressComponent.district}`,
+                `${currentAddress.pois[0].name},${getRandomFour()}`,
+                name,
+                randomPhone(user.phone, 1),
+                zipcode="000000",
+                isDef=1,
+                geos[index].lng,
+                geos[index].lat,
+                userAgent,
+                currentJar,
+                )
+        }else{
+            // provinceId,
+            // cityId,
+            // districtsId,
+            // addressInfo,
+            // address,
+            // shipTo,
+            // callPhone,
+            // zipcode="100000",
+            // isDef=1,
+            // lng,
+            // lat,
+            // userAgent,
+            // j
+            return Service.addAddress(
+                Utils.findProvinceCode(currentAddress.addressComponent.adcode),
+                Utils.findCityCode(currentAddress.addressComponent.adcode),
+                currentAddress.addressComponent.adcode,
+                `${currentAddress.addressComponent.province}${currentAddress.addressComponent.city}${currentAddress.addressComponent.district}`,
+                `${currentAddress.pois[0].name},${getRandomFour()}室`,
+                name,
+                randomPhone(user.phone, 0),
+                zipcode="000000",
+                isDef=1,
+                geos[index].lng,
+                geos[index].lat,
+                userAgent,
+                currentJar,
+                )
+        }
+>>>>>>> 4402ea0c5c3846afebb2c736925db430545434ea
     })
     .then(data => {
-        logger.info(data);
         if(data.state === true && data.code === 0){
 
           // 并且更新数据到mysql中
 
           // 开始预约账号
-          Service.apointment(phone.addressId, userAgent, 391,currentJar )
+          let addressId = phone.addressId || data.data.ID;
+          Service.apointment(addressId, userAgent, 391,currentJar )
             .then(apointment => {
               apointment = JSON.parse(apointment);
               console.log('apointment', apointment);
@@ -165,13 +214,13 @@ function checkPhone(){
                 successAcount.push({
                   phone: user.phone,
                   pass: user.pass,
-                  addressId: user.addressId
+                  addressId: addressId
                 });
               }else{
                 failAccount.push({
                   phone: user.phone,
                   pass: user.pass,
-                  addressId: user.addressId
+                  addressId: addressId
                 })
               }
               index++;
@@ -194,24 +243,22 @@ function checkPhone(){
 
     })
     .catch(e=>{
-        index++;
         console.log(e);
-        failAccount.push({
-            phone: user.phone,
-            pass: user.pass,
-            addressId: user.addressId
-          })
         checkPhone();
     })
   })
-
 }
 //106.630153,26.647661贵阳
 //106.933425,27.725553遵义
+<<<<<<< HEAD
 //116.484079,39.901609
 let geos = Utils.randomGeo(39.901609, 116.484079, 5, phones.length);
 
 console.log(geos);
+=======
+// 市中心116.402257,39.960742
+let geos = Utils.randomGeo(39.960742, 116.402257, 8, phones.length);
+>>>>>>> 4402ea0c5c3846afebb2c736925db430545434ea
 let getAddressCounter = 0;
 geos.forEach(item => {
   BaiduService.geoEnCoder(item.lat, item.lng)
@@ -220,7 +267,6 @@ geos.forEach(item => {
       ret2.push(addressInfo);
       console.log(addressInfo);
       if(getAddressCounter == geos.length){
-
         console.log('alldone');
         console.log(ret2)
           checkPhone()
@@ -237,4 +283,3 @@ geos.forEach(item => {
       }
     })
 })
-

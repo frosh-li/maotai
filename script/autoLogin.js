@@ -52,6 +52,8 @@ function start() {
     })
     .catch(e => {
       logger.error(e);
+      // 退回继续登录
+      originPhones.unshift(user);
       start();
     })
   }).catch(e => {console.log(e)})

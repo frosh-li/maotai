@@ -1,6 +1,6 @@
 /**
  * 获取账号的地址信息
- * 
+ *
  * @type {[type]}
  */
 const logger = require('../controllers/logger.js');
@@ -30,16 +30,23 @@ function start() {
     return;
   }
   if(user.addressId){
+<<<<<<< HEAD
     logger.info('存在地址不需要再去获取了');
     index++;
     return start();
+=======
+      index++;
+      return start();
+>>>>>>> 4402ea0c5c3846afebb2c736925db430545434ea
   }
   let userAgent = MaotaiService.userAgent(user.phone);
   let scopeJar = "";
   proxy.switchIp().then(() => {
+      console.log("start")
     return MaotaiService.getCurrentJar(user.phone);
   }).then(jar => {
     scopeJar = jar;
+    console.log(jar);
     return MaotaiService.getAddressId(user.phone, scopeJar);
   }).then(addressId => {
     originPhones[index].addressId = addressId;
@@ -47,9 +54,10 @@ function start() {
     start();
   })
   .catch(e => {
-    index++;
-    start();
+    // 网络出错继续尝试
     console.log(e.message);
+    start();
+
   })
 }
 
