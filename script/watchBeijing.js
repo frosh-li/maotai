@@ -14,11 +14,26 @@ let checkInterval = 1*1000;
 // 地址信息
 let pid = '391';
 let quantity = 6;
-
+const {exec} = require('child_process');
 
 let shopName = '东柏街|祥瑞丰源|SOHO现代城C|嘉禾国信大厦|西城区|文峰商贸';
 
-global.originPhones = require("../accounts/4.10.json");
+global.watchPhones = [
+  {
+    "phone": "13512856201",
+      "pass": "wyp100721",
+      "addressId": 1842614},
+  {
+    "phone": "15935492346",
+        "pass": "a123456",
+        "addressId": 1930788
+  },
+  {
+  "phone": "13895490886",
+        "pass": "a123456",
+        "addressId": 1961951
+  }
+] 
 if(process.argv[2] != undefined){
   global.originPhones = require(process.argv[2]);
 }
@@ -35,13 +50,16 @@ function printInfo(data){
     logger.error(e);
   }
 }
-
+var scanindex=0;
 function watchQuanity() {
-  let randomIndex = Math.floor(Math.random()*(originPhones.length-1));
-  let tel = originPhones[randomIndex].phone;
-  let pass = originPhones[randomIndex].pass;
+  if(scanindex > watchPhones.length -1){
+    scanindex = 0;
+  }
+  let randomIndex = scanindex;//Math.floor(Math.random()*(originPhones.length-1));
+  let tel = watchPhones[randomIndex].phone;
+  let pass = watchPhones[randomIndex].pass;
   let userAgent = MaotaiService.userAgent(tel);
-  let scopeAddress = originPhones[randomIndex].addressId || 1937801;
+  let scopeAddress = watchPhones[randomIndex].addressId;
   let currentShopId = "";
   let currentJar = "";
   proxy.switchIp().then(() => {
@@ -65,43 +83,28 @@ function watchQuanity() {
               printInfo(data);
               logger.info('scopeAddress', scopeAddress);
               let buyAccount = data.lbsdata.data.limit.LimitCount >= data.lbsdata.data.stock ? data.lbsdata.data.limit.LimitCount : quantity;
-              return MaotaiService.createOrderByScan(originPhones[randomIndex], pid , buyAccount,data.lbsdata.data.stock.StockCount, userAgent, scopeAddress, data.lbsdata.data.network.Sid,-1,currentJar);
+              child = exec(`node ../controllers/buyFixed ${currentShopId} ${process.argv[2]}`)
+              return; 
             }else {
               printInfo(data);
               logger.info('不满足购买条件');
-              logger.info(JSON.stringify(originPhones[randomIndex]))
-              return Promise.resolve({code: 500});
+              logger.info(JSON.stringify(watchPhones[randomIndex]))
+              setTimeout(() => {
+                scanindex++;
+                  watchQuanity();
+              }, checkInterval);
             }
 
           } else {
-            if(data.lbsdata.code === 10){
-              // 账号应该是没有预约，剔除出去
-              logger.info('账号状态有问题');
-              originPhones.splice(randomIndex, 1);
-
-            }
-            logger.info(colors.green("您所在区域暂未上货"))
-            logger.info(JSON.stringify(originPhones[randomIndex]))
-            logger.info(scopeAddress, JSON.stringify(data.lbsdata));
-            return Promise.resolve({code: 500});
-          }
-        }).then( data => {
-          // 只要抢购成功就进行异步查验是否购买到了
-            if(data && data.data && data.data.code === 0){
-              // 购买成功，进行下一个账号的处理逻辑
-              logger.info('购买成功'+tel+":"+pass+JSON.stringify(data));
-              fs.writeFileSync(`output/${Utils.dateFormat()}.json`, `\n${tel} ${pass}\n`, {flag:'a+'});
-              originPhones.splice(randomIndex, 1)
-            }
-
             setTimeout(() => {
+              scanindex++;
                 watchQuanity();
             }, checkInterval);
-
-
+          }
         }).catch(e => {
             logger.info("位置错误,60秒后重试", e.message);
             setTimeout(() => {
+              scanindex++;
                 watchQuanity();
             }, checkInterval);
         })
@@ -109,108 +112,12 @@ function watchQuanity() {
   .catch(e => {
     logger.error(e);
             setTimeout(() => {
+              scanindex++;
                 watchQuanity();
             }, checkInterval);
   })
 }
 
-function autoBuyFixedShop(fixedShopId, maxOrder, successOrder, StockCount, buyLimit) {
-  let randomIndex = Math.floor(Math.random()*(originPhones.length-1));
-  let tel = originPhones[randomIndex].phone;
-  let pass = originPhones[randomIndex].pass;
-  let userAgent = MaotaiService.userAgent(tel);
-  let scopeAddress = originPhones[randomIndex].addressId;
-  if(successOrder >= maxOrder){
-    console.log('购买完成,继续全量扫描');
-    setTimeout(() => {
-      watchQuanity();
-    }, checkInterval);
-    return;
-  }
-  proxy.switchIp().then(() => {
-    let _startTime = +new Date();
-    let currentJar = null;
-    MaotaiService.getCurrentJar(tel)
-        .then(j => {
-          currentJar = j;
-          return MaotaiService.createOrderByScan(
-            tel,
-            pid ,
-            buyLimit,
-            StockCount,
-            userAgent,
-            scopeAddress,
-            fixedShopId,
-            -1,
-            currentJar);
-        }).then( data => {
-            logger.info("下单时间"+(new Date() - _startTime)+"ms");
-            if(data.data.code === 0){
-
-              // 购买成功，进行下一个账号的处理逻辑
-              logger.info('购买成功'+tel+":"+pass+JSON.stringify(data));
-              successOrder++;
-              fs.writeFileSync(`output/${Utils.dateFormat()}.json`, `${tel} ${pass}`, 'a+');
-              originPhones.splice(randomIndex, 1)
-            }
-            setTimeout(() => {
-                  autoBuyFixedShop(fixedShopId, maxOrder, successOrder, StockCount, buyLimit);
-            }, checkInterval);
-        }).catch(e => {
-            logger.info("位置错误,60秒后重试", e);
-            setTimeout(() => {
-                autoBuyFixedShop(fixedShopId, maxOrder, successOrder, StockCount, buyLimit);
-            }, checkInterval);
-        })
-  })
-  .catch(e => {
-    logger.error(e);
-  })
-}
-
-function buyCheck(tel, pass, scopeAddress) {
-  let userAgent = MaotaiService.userAgent(tel);
-  proxy.switchIp()
-      .then(() => {
-        let currentJar = null;
-        return MaotaiService.getCurrentJar(tel)
-      }).then(j => {
-        currentJar = j;
-        return MaotaiService.createOrderByScan(
-          tel,
-          pid,
-          6,
-          100,
-          userAgent,
-          scopeAddress,
-          fixedShopId,
-          -1,
-          currentJar
-        )
-      }).then(data => {
-        if(data.data.code === 0 ){
-          logger.info('购买成功'+tel+":"+pass+","+JSON.stringify(data));
-        }else{
-          logger.error('购买失败'+JSON.stringify(data));
-          logger.info('60s后重试');
-          setTimeout(() => {
-            buyCheck(tel, pass, scopeAddress);
-          }, 60000);
-        }
-      }).catch(e => {
-        logger.error('购买失败'+e.message);
-          logger.info('60s后重试');
-          setTimeout(() => {
-            buyCheck(tel, pass, scopeAddress);
-          }, 60000);
-      })
-}
-
-var fixedShopId = 250500105007; // 杭州网点
-var maxOrder = 20;
-var successOrder = 0;
-//{"phone":"19923800479","pass":"123456","addressId":1985973},
-//buyCheck('19923800479', '123456',  1985973);
 let interval = setInterval(() => {
   let now = new Date();
   let Hour = now.getHours();

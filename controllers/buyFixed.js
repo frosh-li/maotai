@@ -19,7 +19,7 @@ let quantity = 6;
 
 
 let shopName = '东柏街|祥瑞丰源|SOHO现代城C|嘉禾国信大厦|西城区|文峰商贸';
-global.originPhones = require("../accounts/4.10.json");
+global.originPhones = require(process.argv[3]);
 
 function printInfo(data){
   try{
@@ -66,7 +66,7 @@ function watchQuanity(number) {
     console.log('购买完成')
     return;
   }
-  proxy.switchIp().then(() => {
+//  proxy.switchIp().then(() => {
     let _startTime = +new Date();
     let createOrderStartTime = +new Date();
     let currentJar = null;
@@ -96,14 +96,14 @@ function watchQuanity(number) {
                 watchQuanity(number);
             }, checkInterval);
         })
-  })
-  .catch(e => {
-    logger.error(e);
-  })
+ // })
+ // .catch(e => {
+ //   logger.error(e);
+ // })
 }
 
 //var fixedShopId = 233330186001; // 杭州网点
-var fixedShopId =211110105016; //双龙网点
-var maxOrder = 50;
+var fixedShopId = process.argv[2]; //双龙网点
+var maxOrder = 10;
 var successOrder = 0;
-watchQuanity(50)
+watchQuanity(10)

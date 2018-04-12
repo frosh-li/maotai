@@ -7,7 +7,7 @@ var request = require('request');
 const proxy = require('../controllers/proxy');
 const fs = require('fs');
 const path = require('path');
-
+var Filecookietore = require('tough-cookie-filestore');
 router.get('/maotai/index.html', function(req, res, next) {
   res.render('homepage.html');
 })
@@ -187,7 +187,6 @@ router.post('/maotai/getOrder/', (req, res, next) => {
   let pass = req.body.pass;
   let userAgent = MaotaiService.userAgent(tel);
   let now = +new Date();
-
   let options = {
       method: 'POST',
       url: 'https://www.cmaotai.com/API/Servers.ashx',

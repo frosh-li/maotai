@@ -51,7 +51,8 @@ class MaotaiService {
         'content-type': 'application/x-www-form-urlencoded',
         'referer': 'https://www.cmaotai.com/ysh5/page/LoginRegistr/userLogin.html',
         'user-agent': userAgent,
-        'x-requested-with': 'XMLHttpRequest'
+        'x-requested-with': 'XMLHttpRequest',
+        'Cache-Control': 'no-cache'
       }
     }
     get signSecrit() {
@@ -558,29 +559,6 @@ class MaotaiService {
                         }else{
                             // 如果下单成功，但是并没有返回正常的编码
                             // 检查订单
-                            that.getOrder(stel, j)
-                              .then(lastOrder => {
-                                let orderDate = lastOrder.OrderDate;
-                                let now = +new Date();
-                                let orderDateTimestamp = +new Date(orderDate);
-                                if(now - orderDateTimestamp < 60*60*4 * 1000){
-                                  // 如果有4个小时内的订单
-                                  sendmsg('15330066919', '订单提交成功'+tel+":"+pass+":"+orderDate);
-                                  originPhones.forEach((item, index) => {
-                                      if(item.phone == tel){
-                                          originPhones.splice(index, 1);
-                                          return;
-                                      }
-                                  })
-                                  fs.writeFile(`output/${Utils.dateFormat()}.json`, `\n${tel} ${pass}\n`, {flag:'a+'}, (err) => {
-                                      if(err){
-                                          logger.error('error', err.message);
-                                      }
-                                  });
-                                }
-                              }).catch(e => {
-                                console.log(e);
-                              });
                         }
 
                         logger.info(colors.green('下单完成'+JSON.stringify(body)));
@@ -723,7 +701,7 @@ class MaotaiService {
     getOrder(user, j){
       let userAgent = this.userAgent(user.phone);
       return new Promise((resolve, reject) => {
-        this.userinfo(user, userAgent)
+        this.userinfo(user, j)
           .then(userid => {
             return this._getOrders(userid, j);
           })
@@ -742,7 +720,7 @@ class MaotaiService {
 
       var options = {
           method: 'POST',
-          jar:j,
+          jar:true,
           url: 'https://www.cmaotai.com/API/Servers.ashx',
           headers: this.headers(userAgent, j),
           form: {
@@ -759,6 +737,7 @@ class MaotaiService {
                   logger.info(error);
                   return reject(error);
               } else {
+                console.log(body)
                 if(body.code == 0){
                   return resolve(body.data.userId);
                 }else{
