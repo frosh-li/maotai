@@ -17,21 +17,8 @@ function filter(container, filter){
   return ret;
 }
 
-function get100(data){
-  let ret = [];
-  data.forEach(item => {
-    if(item.addressId > 0){
-      ret.push(item);
-    }
-  })
-
-  //if(ret.length === 80){
-    fs.writeFileSync("./accounts/hefei.json", JSON.stringify(ret, null, 4));
-  //}
-}
 
 
-var allAccounts = require("./accounts/bejing4.11.json");
+var allAccounts = require("./all200.json");
 
-
-get100(allAccounts);
+let out = filter(allAccounts, require("./accounts/beijing.json"));

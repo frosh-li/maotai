@@ -6,7 +6,7 @@
 const logger = require('../controllers/logger.js');
 const MaotaiService = require('../tools/service');
 const proxy = require('../controllers/proxy');
-
+const fs = require('fs');
 var originPhones = [{ phone: '15949806339', pass: 'lhj0325' },
   { phone: '17097224268', pass: '123456' },
   { phone: '18032952504', pass: '123456' },
@@ -25,8 +25,14 @@ function start() {
   let user = originPhones[index];
   if(!user){
     logger.info("全部登录完成");
+    fs.writeFileSync(process.argv[2], JSON.stringify(originPhones, null, 4));
     console.log(JSON.stringify(originPhones,null, 4));
     return;
+  }
+  if(user.addressId){
+    logger.info('存在地址不需要再去获取了');
+    index++;
+    return start();
   }
   let userAgent = MaotaiService.userAgent(user.phone);
   let scopeJar = "";

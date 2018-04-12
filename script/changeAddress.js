@@ -140,7 +140,7 @@ function checkPhone(){
             `${currentAddress.addressComponent.province}${currentAddress.addressComponent.city}${currentAddress.addressComponent.district}`,
             `${currentAddress.pois[0].name},${getRandomFour()}`,
             name,
-            randomPhone(user.phone, 1),
+            randomPhone(user.phone, 0),
             zipcode="000000",
             isDef=1,
             geos[index].lng,
@@ -208,7 +208,8 @@ function checkPhone(){
 }
 //106.630153,26.647661贵阳
 //106.933425,27.725553遵义
-let geos = Utils.randomGeo(27.725553, 106.933425, 15, phones.length);
+//116.484079,39.901609
+let geos = Utils.randomGeo(39.901609, 116.484079, 5, phones.length);
 
 console.log(geos);
 let getAddressCounter = 0;

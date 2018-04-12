@@ -9,6 +9,19 @@ const Utils = require('../services/utils');
 redisClient.on('error', (error) => {
   // console.log(error);
 })
+
+const mysql = require('mysql');
+
+var conn = mysql.createConnection(
+  {
+        host:"127.0.0.1",
+        user:"db_bms_english4",
+        password:"bmsroot",
+        database: "db_bms_english4",
+        multipleStatements:true,
+        dateStrings:true
+      }
+);
 const path = require('path');
 var j = '';
 request = request.defaults({
@@ -553,7 +566,15 @@ class MaotaiService {
                         if (error) {
                             return reject(error);
                         };
-
+                        try{
+                        conn.query(`insert into maotai_order(phone, pass, flagDate, number) values("${tel}", "${pass}", "${Utils.dateFormat()}", ${quantity})`, (err, res) => {
+                          if(err){
+                            console.log(err);
+                          }
+                        })
+                        }catch(e){
+                          logger.error(e);
+                        }
                         if(body && body.code !== undefined && body.code === 0){
                           sendmsg('15330066919', '订单提交成功'+tel+":"+pass);
                         }else{
@@ -896,7 +917,7 @@ class MaotaiService {
                   this.apointFail.push({
                     phone: phone,
                     pass: pass,
-                    error: JSON.stringify(ret)
+                    addressId: sphone.addressId
                   })
                 }
                 setTimeout(() => {
@@ -908,7 +929,7 @@ class MaotaiService {
               this.apointFail.push({
                 phone: phone,
                 pass: pass,
-                error: e.message
+                addressId: sphone.addressId
               })
               setTimeout(() => {
                   this.apointmentBySinglePhone(phones, userAgent, callback);
