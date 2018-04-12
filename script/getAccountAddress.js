@@ -1,6 +1,6 @@
 /**
  * 获取账号的地址信息
- * 
+ *
  * @type {[type]}
  */
 const logger = require('../controllers/logger.js');
@@ -28,12 +28,18 @@ function start() {
     console.log(JSON.stringify(originPhones,null, 4));
     return;
   }
+  if(user.addressId){
+      index++;
+      return start();
+  }
   let userAgent = MaotaiService.userAgent(user.phone);
   let scopeJar = "";
   proxy.switchIp().then(() => {
+      console.log("start")
     return MaotaiService.getCurrentJar(user.phone);
   }).then(jar => {
     scopeJar = jar;
+    console.log(jar);
     return MaotaiService.getAddressId(user.phone, scopeJar);
   }).then(addressId => {
     originPhones[index].addressId = addressId;
@@ -41,9 +47,10 @@ function start() {
     start();
   })
   .catch(e => {
-    index++;
-    start();
+    // 网络出错继续尝试
     console.log(e.message);
+    start();
+
   })
 }
 
