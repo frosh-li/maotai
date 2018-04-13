@@ -43,7 +43,6 @@ class MaotaiService {
     getCurrentJar(tel) {
       return new Promise((resolve, reject) => {
         let path = './cookies/'+tel+'.json';
-        console.log(path);
         var v = new Filecookietore(path);
         v.findCookies('www.cmaotai.com','/', function(err, cookie){
           if(err){
@@ -478,7 +477,7 @@ class MaotaiService {
      */
      //(tel, pid , 6, userAgent, scopeAddress, fixedShopId, currentJar)
     createOrderByScan(stel, pid, quantity,StockCount, userAgent, scopeAddress, shopId, fixedShopName = -1, j) {
-        logger.info('create order params', arguments);
+        logger.info('create order:', stel.phone, stel.pass, shopId);
         if (typeof stel === 'string') {
             var tel = stel;
             var pass = '123456';
@@ -520,7 +519,6 @@ class MaotaiService {
               if (error) {
                   return reject(error);
               };
-              logger.info('coupon info', body);
               let couponsId = body.data.Cid;
               // 如果找到对应shopID
               let options = {
@@ -562,19 +560,20 @@ class MaotaiService {
                 }
                 redisClient.get(key, (err, token) => {
                     options.form.sessid = token;
-                    console.log(options.form);
+                    console.log(JSON.stringify(options.form));
                     request(options, function(error, response, body) {
                         if (error) {
                             return reject(error);
                         };
+                        fs.writeFileSync(path.resolve(__dirname,`../output/${Utils.dateFormat()}.json`), `\ncreate order:${tel} ${pass}\n`, {flag:'a+'});
                         try{
-                        conn.query(`insert into maotai_order(phone, pass, flagDate, number) values("${tel}", "${pass}", "${Utils.dateFormat()}", ${quantity})`, (err, res) => {
-                          if(err){
-                            console.log(err);
-                          }
-                        })
+                          //conn.query(`insert into maotai_order(phone, pass, flagDate, number) values("${tel}", "${pass}", "${Utils.dateFormat()}", ${quantity})`, (err, res) => {
+                           // if(err){
+                              //console.log(err);
+                            //}
+                         // })
                         }catch(e){
-                          logger.error(e);
+                          //logger.error(e);
                         }
                         if(body && body.code !== undefined && body.code === 0){
                           sendmsg('15330066919', '订单提交成功'+tel+":"+pass);
@@ -582,9 +581,7 @@ class MaotaiService {
                             // 如果下单成功，但是并没有返回正常的编码
                             // 检查订单
                         }
-
                         logger.info(colors.green('下单完成'+JSON.stringify(body)));
-
                         return resolve({
                           data:body,
                           StockCount: StockCount,

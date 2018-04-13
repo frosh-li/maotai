@@ -105,6 +105,14 @@ function getRandomFour(){
   return num;
 }
 
+function getRandomLou(){
+  return Math.floor(Math.random()*10);
+}
+
+function getRandomUnit() {
+  return Math.floor(Math.random()*10);
+}
+
 function checkPhone(){
   let phone = phones.shift();
   if(!phone){
@@ -130,26 +138,6 @@ function checkPhone(){
     Service.getCurrentJar(user.phone)
     .then(j=>{
         currentJar = j;
-<<<<<<< HEAD
-
-        return Service.editAddress(
-            phone.addressId,
-            Utils.findProvinceCode(currentAddress.addressComponent.adcode),
-            Utils.findCityCode(currentAddress.addressComponent.adcode),
-            currentAddress.addressComponent.adcode,
-            `${currentAddress.addressComponent.province}${currentAddress.addressComponent.city}${currentAddress.addressComponent.district}`,
-            `${currentAddress.pois[0].name},${getRandomFour()}`,
-            name,
-            randomPhone(user.phone, 0),
-            zipcode="000000",
-            isDef=1,
-            geos[index].lng,
-            geos[index].lat,
-            userAgent,
-            currentJar,
-            )
-
-=======
         if(phone.addressId){
             return Service.editAddress(
                 phone.addressId,
@@ -186,7 +174,7 @@ function checkPhone(){
                 Utils.findCityCode(currentAddress.addressComponent.adcode),
                 currentAddress.addressComponent.adcode,
                 `${currentAddress.addressComponent.province}${currentAddress.addressComponent.city}${currentAddress.addressComponent.district}`,
-                `${currentAddress.pois[0].name},${getRandomFour()}室`,
+                `${currentAddress.pois[0].name},${getRandomLou()}号楼${getRandomUnit()}单元${getRandomFour()}室`,
                 name,
                 randomPhone(user.phone, 0),
                 zipcode="000000",
@@ -197,7 +185,6 @@ function checkPhone(){
                 currentJar,
                 )
         }
->>>>>>> 4402ea0c5c3846afebb2c736925db430545434ea
     })
     .then(data => {
         if(data.state === true && data.code === 0){

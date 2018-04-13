@@ -25,19 +25,14 @@ function start() {
   let user = originPhones[index];
   if(!user){
     logger.info("全部登录完成");
-    fs.writeFileSync(process.argv[2], JSON.stringify(originPhones, null, 4));
     console.log(JSON.stringify(originPhones,null, 4));
+    fs.writeFileSync(process.argv[2], JSON.stringify(originPhones, null, 4));
     return;
   }
   if(user.addressId){
-<<<<<<< HEAD
     logger.info('存在地址不需要再去获取了');
     index++;
     return start();
-=======
-      index++;
-      return start();
->>>>>>> 4402ea0c5c3846afebb2c736925db430545434ea
   }
   let userAgent = MaotaiService.userAgent(user.phone);
   let scopeJar = "";

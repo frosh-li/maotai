@@ -20,10 +20,13 @@ let quantity = 6;
 let shopName = '东柏街|祥瑞丰源|SOHO现代城C|嘉禾国信大厦|西城区|文峰商贸';
 
 global.originPhones = require("../accounts/gansu.json");
-// global.originPhones = originPhones.concat(require("../accounts/hefei_guiyang.json"));
+//global.originPhones = originPhones.concat(require("../accounts/hefei_guiyang.json"));
 global.originPhones = originPhones.concat(require("../accounts/qiaoge.json"));
+global.originPhones = originPhones.concat(require("../accounts/guiyang4.13.json"));
+let canBuyFixed = false;
 if(process.argv[2] != undefined){
   global.originPhones = require(process.argv[2]);
+  canBuyFixed = true;
 }
 
 logger.info(colors.green('账号数量为'+originPhones.length));
@@ -61,9 +64,9 @@ function watchQuanity() {
         })
         .then(data => {
           if (data !=undefined && data.lbsdata != undefined && data.lbsdata.data != undefined && data.lbsdata.data.stock !=undefined && data.lbsdata.data.stock.Sid != undefined) {
-            logger.info("库存信息",data.lbsdata.data.stock)
-            logger.info("限购信息", data.lbsdata.data.limit)
-            logger.info("商家信息", data.lbsdata.data.network)
+            //logger.info("库存信息",data.lbsdata.data.stock)
+            //logger.info("限购信息", data.lbsdata.data.limit)
+            //logger.info("商家信息", data.lbsdata.data.network)
             if(
               data.lbsdata.data.stock.StockCount >= quantity
               &&
@@ -82,6 +85,13 @@ function watchQuanity() {
               let _stock =  data.lbsdata.data.stock.StockCount;
               buyAccount = _limitCount <= _stock ? _limitCount : Math.floor(_stock/quantity)*quantity;
               logger.info('实际购买数量', buyAccount, "stock",_stock,"limit", _limitCount);
+              if(canBuyFixed){
+                successOrder = 0;
+                maxOrder = 5;//
+                let totals = Math.floor((_stock-buyAccount)/buyAccount);
+                if(totals > 0)
+                autoBuyFixedShop(currentShopId, buyAccount, ++randomIndex);
+              }
               return MaotaiService.createOrderByScan(originPhones[randomIndex], pid , buyAccount,data.lbsdata.data.stock.StockCount, userAgent, scopeAddress, data.lbsdata.data.network.Sid,-1,currentJar);
             }else {
               printInfo(data);
@@ -131,9 +141,9 @@ function watchQuanity() {
             }, checkInterval);
   })
 }
-
-function autoBuyFixedShop(fixedShopId, maxOrder, successOrder, StockCount, buyLimit) {
-  let randomIndex = Math.floor(Math.random()*(originPhones.length-1));
+var maxOrder = 5;
+var successOrder = 0;
+function autoBuyFixedShop(fixedShopId, buyLimit, randomIndex) {
   let tel = originPhones[randomIndex].phone;
   let pass = originPhones[randomIndex].pass;
   let userAgent = MaotaiService.userAgent(tel);
@@ -155,7 +165,7 @@ function autoBuyFixedShop(fixedShopId, maxOrder, successOrder, StockCount, buyLi
             tel,
             pid ,
             buyLimit,
-            StockCount,
+            600,
             userAgent,
             scopeAddress,
             fixedShopId,
@@ -172,17 +182,20 @@ function autoBuyFixedShop(fixedShopId, maxOrder, successOrder, StockCount, buyLi
               originPhones.splice(randomIndex, 1)
             }
             setTimeout(() => {
-                  autoBuyFixedShop(fixedShopId, maxOrder, successOrder, StockCount, buyLimit);
+                  autoBuyFixedShop(fixedShopId, buyLimit, ++randomIndex);
             }, checkInterval);
         }).catch(e => {
             logger.info("位置错误,60秒后重试", e);
             setTimeout(() => {
-                autoBuyFixedShop(fixedShopId, maxOrder, successOrder, StockCount, buyLimit);
+                autoBuyFixedShop(fixedShopId, buyLimit, randomIndex);
             }, checkInterval);
         })
   })
   .catch(e => {
     logger.error(e);
+            setTimeout(() => {
+                autoBuyFixedShop(fixedShopId, buyLimit, randomIndex);
+            }, checkInterval);
   })
 }
 
@@ -225,8 +238,6 @@ function buyCheck(tel, pass, scopeAddress) {
 }
 
 var fixedShopId = 250500105007; // 杭州网点
-var maxOrder = 20;
-var successOrder = 0;
 //{"phone":"19923800479","pass":"123456","addressId":1985973},
 //buyCheck('19923800479', '123456',  1985973);
 let interval = setInterval(() => {
