@@ -7,6 +7,7 @@ const logger = require('../controllers/logger.js');
 const MaotaiService = require('../tools/service');
 const proxy = require('../controllers/proxy');
 const fs = require('fs');
+const path = require('path');
 var originPhones = [{ phone: '15949806339', pass: 'lhj0325' },
   { phone: '17097224268', pass: '123456' },
   { phone: '18032952504', pass: '123456' },
@@ -26,7 +27,7 @@ function start() {
   if(!user){
     logger.info("全部登录完成");
     console.log(JSON.stringify(originPhones,null, 4));
-    fs.writeFileSync(process.argv[2], JSON.stringify(originPhones, null, 4));
+    fs.writeFileSync(path.resolve(__dirname,process.argv[2]), JSON.stringify(originPhones, null, 4));
     return;
   }
   if(user.addressId){
