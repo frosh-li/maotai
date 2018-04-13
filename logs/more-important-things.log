@@ -252,3 +252,15 @@
 [2018-04-13T23:52:36.117] [INFO] things - start get addressID from mobile: 15802328910
 [2018-04-13T23:52:39.282] [INFO] things - {"state":true,"code":0,"data":{"size":10,"index":1,"count":1,"datacount":3,"list":[{"rownumber":1,"SId":1998585,"UserId":"2187559","TelPhone":"15802328910","Zipcode":"000000","Address":"火星街(公交站),火星小区3栋2单元202","AddressInfo":"甘肃省兰州市七里河区","ShipTo":"何伟","Remark":"","ProvinceId":"620000","CityId":"620100","DistrictsId":"620103","IsDefault":false,"SMNo":null,"RelPhone":null,"Longitude":"103.761253","Latitude":"36.076477","IsVerification":false,"TimeStamp":"2018-04-12 23:57:23"},{"rownumber":2,"SId":1924946,"UserId":"2187559","TelPhone":"15802328910","Zipcode":"000000","Address":"甘肃阳光大酒店,2601","AddressInfo":"甘肃省兰州市城关区","ShipTo":"王磊","Remark":"","ProvinceId":"620000","CityId":"620100","DistrictsId":"620102","IsDefault":false,"SMNo":null,"RelPhone":null,"Longitude":"103.822123","Latitude":"36.055003","IsVerification":false,"TimeStamp":"2018-03-20 19:16:57"},{"rownumber":3,"SId":1839127,"UserId":"2187559","TelPhone":"15802328910","Zipcode":"000000","Address":"甘肃省兰州市城关区会宁阁,4栋3单元301","AddressInfo":"甘肃省兰州市城关区","ShipTo":"王磊","Remark":"","ProvinceId":"620000","CityId":"620100","DistrictsId":"620102","IsDefault":false,"SMNo":null,"RelPhone":null,"Longitude":"103.881738","Latitude":"36.056099","IsVerification":true,"TimeStamp":"2018-02-27 15:20:14"}]}}
 [2018-04-13T23:52:39.283] [INFO] things - 全部登录完成
+[2018-04-14T00:07:58.473] [INFO] things - params [ '/usr/local/bin/node',
+  '/data/servers/maotai/controllers/buyFixed.js',
+  '162620125001',
+  '../accounts/gansu_huoxingjie.json' ]
+[2018-04-14T00:07:58.484] [INFO] things - create order: 13539397627 yy6629756 162620125001
+[2018-04-14T00:08:03.678] [INFO] things - 位置错误,60秒后重试 无法获取token
+[2018-04-14T00:08:04.680] [INFO] things - create order: 13539397627 yy6629756 162620125001
+[2018-04-14T00:08:53.959] [INFO] things - params [ '/usr/local/bin/node',
+  '/data/servers/maotai/controllers/buyFixed.js',
+  '162620125001',
+  '../accounts/gansu_huoxingjie.json' ]
+[2018-04-14T00:08:53.966] [INFO] things - create order: 13539397627 yy6629756 162620125001
