@@ -15,7 +15,7 @@ log4js.configure(
       },
       dateFile: {
         type: 'dateFile',
-        filename: 'logs/more-important-things.log',
+        filename: 'logs/important.log',
         pattern: 'yyyy-MM-dd-hh',
         compress: true
       },
@@ -28,7 +28,8 @@ log4js.configure(
     }
   }
 );
+let logger_name="监控";
+logger_name = process.argv[2] ? process.argv[2].replace('../accounts/', ''):logger_name;
 
-const logger = log4js.getLogger('things');
-
+const logger = log4js.getLogger(logger_name);
 module.exports = logger;

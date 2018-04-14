@@ -477,15 +477,9 @@ class MaotaiService {
      */
      //(tel, pid , 6, userAgent, scopeAddress, fixedShopId, currentJar)
     createOrderByScan(stel, pid, quantity,StockCount, userAgent, scopeAddress, shopId, fixedShopName = -1, j) {
-        logger.info('create order:', stel.phone, stel.pass, shopId);
-        if (typeof stel === 'string') {
-            var tel = stel;
-            var pass = '123456';
-        } else {
-            var tel = stel.phone;
-            var pass = stel.pass;
-        }
-
+        var tel = stel.phone;
+        var pass = stel.pass;
+        logger.info('create order:', tel, pass, shopId);
         userAgent = userAgent || this.userAgent(tel);
         let shopName = fixedShopName;
         let now = +new Date();
@@ -550,6 +544,12 @@ class MaotaiService {
                   },
                   json:true
               };
+              // let _body = {status: true, code: 0};
+              // // return resolve({
+              // //   data:_body,
+              // //   StockCount: StockCount,
+              // //   buyLimit: quantity,
+              // // });
               redisClient.randomkey((err, key) => {
                 if(err){
                   return reject(err);

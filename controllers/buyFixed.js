@@ -15,11 +15,12 @@ let checkInterval = 1*1000;
 // 上海购买
 // 地址信息
 let pid = '391';
-let quantity = 6;
-
+let quantity = process.argv[4] || 6;
 
 let shopName = '东柏街|祥瑞丰源|SOHO现代城C|嘉禾国信大厦|西城区|文峰商贸';
-global.originPhones = require(process.argv[3]);
+var originPhones = JSON.parse(process.argv[3]);
+var fixedShopId = process.argv[2]; //双龙网点
+var rewriteFilePath = process.argv[5];
 
 function printInfo(data){
   try{
@@ -36,74 +37,43 @@ function printInfo(data){
 }
 
 
-function fixShop(network, shopName) {
-  let result = false;
-  let allShopNames = shopName.split("|");
-  logger.info(allShopNames);
-  allShopNames.forEach(item=>{
-    if(
-        network.SName.indexOf(item) > -1
-        ||
-        network.DName.indexOf(item) > -1
-        ||
-        network.Address.indexOf(item) > -1
-        ){
-      result = true;
-    }
-  })
-  return result;
-}
-
-function watchQuanity(number) {
-  let randomIndex = Math.floor(Math.random()*(originPhones.length-1));
-  let tel = originPhones[randomIndex].phone;
-  // let tel = "13720689056";
-  let pass = originPhones[randomIndex].pass;
-  // let pass = "a123456";
+function buyChild(number) {
+  let tel = originPhones.phone;
+  let pass = originPhones.pass;
   let userAgent = MaotaiService.userAgent(tel);
-  let scopeAddress = originPhones[randomIndex].addressId;
-  if(successOrder >= maxOrder){
-    console.log('购买完成')
-    return;
-  }
-//  proxy.switchIp().then(() => {
-    let _startTime = +new Date();
-    let createOrderStartTime = +new Date();
-    let currentJar = null;
-    MaotaiService.getCurrentJar(tel)
-        .then(j => {
-          currentJar = j;
-          _startTime = +new Date();
-          return MaotaiService.createOrderByScan(originPhones[randomIndex], pid, quantity,300, userAgent, scopeAddress, fixedShopId, -1, currentJar)
-          //return MaotaiService.createOrderByScan(tel, pid , 6, userAgent, scopeAddress, fixedShopId, currentJar);
-        }).then( data => {
-            logger.info("下单时间"+(new Date() - _startTime)+"ms");
-            logger.info("订单提交耗时"+(new Date() - createOrderStartTime)+"ms");
-            if(data.code === 0){
-
-              // 购买成功，进行下一个账号的处理逻辑
-              logger.info('购买成功'+tel+":"+pass+JSON.stringify(data));
-              successOrder++;
-              fs.writeFileSync(`output/${Utils.dateFormat()}.json`, `${tel} ${pass}`, 'a+');
-              originPhones.splice(randomIndex, 1)
-            }
-            setTimeout(() => {
-                  watchQuanity(number);
-            }, checkInterval);
-        }).catch(e => {
-            logger.info("位置错误,60秒后重试", e.message);
-            setTimeout(() => {
-                watchQuanity(number);
-            }, checkInterval);
-        })
- // })
- // .catch(e => {
- //   logger.error(e);
- // })
+  let scopeAddress = originPhones.addressId;
+  let _startTime = +new Date();
+  let createOrderStartTime = +new Date();
+  let currentJar = null;
+  MaotaiService.getCurrentJar(tel)
+      .then(j => {
+        currentJar = j;
+        _startTime = +new Date();
+        return MaotaiService.createOrderByScan(originPhones, pid, quantity,300, userAgent, scopeAddress, fixedShopId, -1, currentJar)
+        //return MaotaiService.createOrderByScan(tel, pid , 6, userAgent, scopeAddress, fixedShopId, currentJar);
+      }).then( data => {
+          logger.info("下单时间"+(new Date() - _startTime)+"ms");
+          logger.info("订单提交耗时"+(new Date() - createOrderStartTime)+"ms");
+          console.log(data, typeof data);
+          if(data.data !=undefined && data.data.code != undefined && data.data.code === 0){
+            // 购买成功，进行下一个账号的处理逻辑
+            logger.info('购买成功'+tel+":"+pass+JSON.stringify(data));
+            let sendProcess = process.send({
+              code: 'buy_done',
+              tel: tel,
+              filepath: rewriteFilePath
+            });
+            console.log('通知主进程购买完成', sendProcess);
+            fs.writeFileSync(`output/${Utils.dateFormat()}.json`, `${tel} ${pass}`, {flag:'a+'});
+            process.exit(0);
+          }
+      }).catch(e => {
+          logger.info("位置错误,60秒后重试", e.message);
+          process.send({
+            status: false
+          });
+          process.exit(0);
+      })
 }
 
-//var fixedShopId = 233330186001; // 杭州网点
-var fixedShopId = process.argv[2]; //双龙网点
-var maxOrder = 10;
-var successOrder = 0;
-watchQuanity(10)
+buyChild();

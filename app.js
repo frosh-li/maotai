@@ -1,3 +1,4 @@
+global.processManager = require('./controllers/processManager');
 var express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');
@@ -7,7 +8,6 @@ var bodyParser = require('body-parser');
 
 var index = require('./routes/index');
 var routers = require('./routes/routes');
-
 var redis = require('redis');
 global.redisClient = redis.createClient();
 

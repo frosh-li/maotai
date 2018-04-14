@@ -7,6 +7,7 @@ var request = require('request');
 const proxy = require('../controllers/proxy');
 const fs = require('fs');
 const path = require('path');
+const watchController = require('../controllers/watchController');
 var Filecookietore = require('tough-cookie-filestore');
 router.get('/maotai/index.html', function(req, res, next) {
   res.render('homepage.html');
@@ -499,6 +500,18 @@ router.post('/wireless/nocaptcha.json', function(req, res, next) {
       }
     })
   })
+
+
 })
+
+/**
+ *
+ * 监控路由
+ */
+router.get('/maotai/watch', (req, res, next) => {
+  let watch = new watchController();
+  watch.startWatch(req, res, next);
+});
+
 
 module.exports = router;
