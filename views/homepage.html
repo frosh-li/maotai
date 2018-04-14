@@ -41,11 +41,13 @@ a{text-decoration:none;}
 </label>
 <input type="text" id="inter" value="60" />
 <div id="msg"></div>
+<div id="timer"></div>
 </body>
 <script type="text/javascript">
 var aliRisk = "js-call://StartRiskVerification";
 var autoOpen =false;
 var gTimeout = null;
+openMore();
 function openOnce(){
     clearTimeout(gTimeout);
     document.getElementById('msg').innerHTML = aliRisk;
@@ -97,8 +99,17 @@ function __StartRiskVerificationResult(sessionID) {
             gTimeout = setTimeout(function() {
                 document.location = aliRisk;
             } , timeout);
+            viewInterval(60);
         }        
     });
+}
+var cinter = null
+function viewInterval(timeout){
+    cinter && clearInterval(cinter);
+    cinter = setInterval(function(){
+        timeout -=1;
+        document.getElementById('timer').innerHTML = timeout+"秒后打开验证";
+    }, 1000);
 }
 </script>
 </html>

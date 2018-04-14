@@ -19,10 +19,11 @@ let quantity = 6;
 
 let shopName = '东柏街|祥瑞丰源|SOHO现代城C|嘉禾国信大厦|西城区|文峰商贸';
 
-global.originPhones = require("../accounts/gansu.json");
-//global.originPhones = originPhones.concat(require("../accounts/hefei_guiyang.json"));
+global.originPhones = (require("../accounts/gansu_ganlanlu.json"));
+global.originPhones = originPhones.concat(require("../accounts/gansu_huoxingjie.json"));
+global.originPhones = originPhones.concat(require("../accounts/gansu_jinninglu.json"));
 global.originPhones = originPhones.concat(require("../accounts/qiaoge.json"));
-global.originPhones = originPhones.concat(require("../accounts/guiyang4.13.json"));
+global.originPhones = originPhones.concat(require("../accounts/guiyang.json"));
 let canBuyFixed = false;
 if(process.argv[2] != undefined){
   global.originPhones = require(process.argv[2]);
@@ -89,8 +90,10 @@ function watchQuanity() {
                 successOrder = 0;
                 maxOrder = 5;//
                 let totals = Math.floor((_stock-buyAccount)/buyAccount);
-                if(totals > 0)
-                autoBuyFixedShop(currentShopId, buyAccount, ++randomIndex);
+                if(totals > 0){
+                  let nextIndex = randomIndex+1
+                  autoBuyFixedShop(currentShopId, buyAccount, nextIndex);
+                }
               }
               return MaotaiService.createOrderByScan(originPhones[randomIndex], pid , buyAccount,data.lbsdata.data.stock.StockCount, userAgent, scopeAddress, data.lbsdata.data.network.Sid,-1,currentJar);
             }else {
@@ -116,7 +119,7 @@ function watchQuanity() {
             if(data && data.data && data.data.code === 0){
               // 购买成功，进行下一个账号的处理逻辑
               logger.info('购买成功'+tel+":"+pass+JSON.stringify(data));
-              fs.writeFileSync(`output/${Utils.dateFormat()}.json`, `\n${tel} ${pass}\n`, {flag:'a+'});
+              fs.writeFileSync(`output/${Utils.dateFormat()}.json`, `\n${tel} ${pass} ${new Date()} ${currentShopId}`, {flag:'a+'});
               originPhones.splice(randomIndex, 1)
             }
 
@@ -144,6 +147,9 @@ function watchQuanity() {
 var maxOrder = 5;
 var successOrder = 0;
 function autoBuyFixedShop(fixedShopId, buyLimit, randomIndex) {
+  if(!originPhones[randomIndex]){
+    randomIndex = 0;
+  }
   let tel = originPhones[randomIndex].phone;
   let pass = originPhones[randomIndex].pass;
   let userAgent = MaotaiService.userAgent(tel);
@@ -178,16 +184,18 @@ function autoBuyFixedShop(fixedShopId, buyLimit, randomIndex) {
               // 购买成功，进行下一个账号的处理逻辑
               logger.info('购买成功'+tel+":"+pass+JSON.stringify(data));
               successOrder++;
-              fs.writeFileSync(`output/${Utils.dateFormat()}.json`, `${tel} ${pass}`, 'a+');
+              fs.writeFileSync(`output/${Utils.dateFormat()}.json`, `${tel} ${pass} ${new Date()} ${buyLimit} ${fixedShopId}`, 'a+');
               originPhones.splice(randomIndex, 1)
             }
             setTimeout(() => {
-                  autoBuyFixedShop(fixedShopId, buyLimit, ++randomIndex);
+                  let nextIndex = randomIndex+1
+                  autoBuyFixedShop(fixedShopId, buyLimit, nextIndex);
             }, checkInterval);
         }).catch(e => {
             logger.info("位置错误,60秒后重试", e);
             setTimeout(() => {
-                autoBuyFixedShop(fixedShopId, buyLimit, randomIndex);
+                  let nextIndex = randomIndex+1
+                  autoBuyFixedShop(fixedShopId, buyLimit, nextIndex);
             }, checkInterval);
         })
   })
@@ -201,11 +209,11 @@ function autoBuyFixedShop(fixedShopId, buyLimit, randomIndex) {
 
 function buyCheck(tel, pass, scopeAddress) {
   let userAgent = MaotaiService.userAgent(tel);
-  proxy.switchIp()
-      .then(() => {
-        let currentJar = null;
-        return MaotaiService.getCurrentJar(tel)
-      }).then(j => {
+  //proxy.switchIp()
+   //   .then(() => {
+   //     let currentJar = null;
+    MaotaiService.getCurrentJar(tel)
+      .then(j => {
         currentJar = j;
         return MaotaiService.createOrderByScan(
           tel,

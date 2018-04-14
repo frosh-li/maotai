@@ -560,12 +560,10 @@ class MaotaiService {
                 }
                 redisClient.get(key, (err, token) => {
                     options.form.sessid = token;
-                    console.log(JSON.stringify(options.form));
                     request(options, function(error, response, body) {
                         if (error) {
                             return reject(error);
                         };
-                        fs.writeFileSync(path.resolve(__dirname,`../output/${Utils.dateFormat()}.json`), `\ncreate order:${tel} ${pass}\n`, {flag:'a+'});
                         try{
                           //conn.query(`insert into maotai_order(phone, pass, flagDate, number) values("${tel}", "${pass}", "${Utils.dateFormat()}", ${quantity})`, (err, res) => {
                            // if(err){
@@ -576,7 +574,7 @@ class MaotaiService {
                           //logger.error(e);
                         }
                         if(body && body.code !== undefined && body.code === 0){
-                          sendmsg('15330066919', '订单提交成功'+tel+":"+pass);
+                          sendmsg('15330066919', '订单提交成功'+tel+":"+pass+":"+shopId+":库存"+StockCount+":限购"+quantity);
                         }else{
                             // 如果下单成功，但是并没有返回正常的编码
                             // 检查订单
