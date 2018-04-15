@@ -15,6 +15,7 @@ let accounts = [];
 let totals = accounts.length;
 let success = [];
 let fail = [];
+let start = process.argv[2] || 0;
 
 function startUpdate() {
   logger.info('总共:'+totals+'完成:'+success.length+ '失败:'+ fail.length);
@@ -25,6 +26,7 @@ function startUpdate() {
     logger.info(fail);
     logger.info('success')
     logger.info(success);
+    process.exit();
     return;
   }
   AccountService.updateAccount(account)
@@ -64,14 +66,14 @@ function startUpdate() {
 }
 getAccounts()
   .then(accounts => {
-    startUpdate();  
+    startUpdate();
   }).catch(e => {
     console.log(e);
   })
 
 function getAccounts() {
   return new Promise((resolve, reject) => {
-    connection.query('select phone,pass from accounts', (err, results) => {
+    connection.query(`select phone,pass from accounts limit ${start}, 20`, (err, results) => {
       if(err){
         console.log(err);
         return reject(false);
@@ -95,7 +97,7 @@ connection.config.queryFormat = function (query, values) {
 
 function updateAccountSync(data){
   let sql = `
-    update accounts set 
+    update accounts set
     province=:province,
     city=:city,
     area=:area,

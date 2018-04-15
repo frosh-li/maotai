@@ -612,6 +612,128 @@ class MaotaiService {
         })
     }
 
+
+    /**
+     * createOrderForCenter - 定点购买云商总部商品
+     *
+     * @param  {type} stel               description
+     * @param  {type} pid                description
+     * @param  {type} quantity           description
+     * @param  {type} StockCount         description
+     * @param  {type} userAgent          description
+     * @param  {type} scopeAddress       description
+     * @param  {type} shopId             description
+     * @param  {type} fixedShopName = -1 description
+     * @param  {type} j                  description
+     * @return {type}                    description
+     */
+    createOrderForCenter(stel, pid, quantity=5,StockCount, userAgent, scopeAddress, shopId, fixedShopName = -1, j) {
+        quantity=5;
+        var tel = stel.phone;
+        var pass = stel.pass;
+        logger.info('create order:', tel, pass, shopId);
+        userAgent = userAgent || this.userAgent(tel);
+        let shopName = fixedShopName;
+        let now = +new Date();
+        return new Promise((resolve, reject) => {
+          let that = this;
+          let optionscoupon = {
+              method: 'POST',
+              url: 'https://www.cmaotai.com/YSApp_API/YSAppServer.ashx',
+              headers: {
+                  'cookie':j,
+                  "proxy-authorization" : "Basic " + proxy.proxyAuth,
+                  'cache-control': 'no-cache',
+                  'accept-language': 'zh-CN,en-US;q=0.8',
+                  accept: 'application/json, text/javascript, */*; q=0.01',
+                  'content-type': 'application/x-www-form-urlencoded',
+                  referer: `https://www.cmaotai.com/ysh5/page/BuyInquiry/buyInquiryIndex.html?type=invoiceInfo&productId=${pid}&num=${quantity}`,
+                  'user-agent': userAgent,
+                  'x-requested-with': 'XMLHttpRequest'
+              },
+              form: {
+                action: "MemberManager.coupon",
+                sid: 152520100037,
+                pid: pid,
+                count: quantity,
+                timestamp121: (+new Date())
+              },
+              json:true
+          };
+          request(optionscoupon, function(error, response, body) {
+              if (error) {
+                  return reject(error);
+              };
+              let couponsId = body.data.Cid;
+              // 如果找到对应shopID
+              let options = {
+                  method: 'POST',
+                  url: 'https://www.cmaotai.com/API/CreateOrder.ashx',
+                  headers: {
+                      "proxy-authorization" : "Basic " + proxy.proxyAuth,
+                      'cache-control': 'no-cache',
+                      'accept-language': 'zh-CN,en-US;q=0.8',
+                      accept: 'application/json, text/javascript, */*; q=0.01',
+                      'content-type': 'application/x-www-form-urlencoded',
+                      referer: `https://www.cmaotai.com/ysh5/page/BuyInquiry/buyInquiryIndex.html?type=invoiceInfo&productId=${pid}&num=${quantity}`,
+                      'user-agent': userAgent,
+                      'x-requested-with': 'XMLHttpRequest',
+                      'cookie':j,
+                  },
+
+                  form: {
+                      productId: pid,
+                      quantity: quantity,
+                      couponsId: couponsId,
+                      addressId: scopeAddress,
+                      invioceId: -1,
+                      express: 14,
+                      shopId: shopId,
+                      sessid: '',
+                      remark: '',
+                      timestamp121: (+new Date())
+                  },
+                  json:true
+              };
+
+              redisClient.randomkey((err, key) => {
+                if(err){
+                  return reject(err);
+                }
+                console.log('get key from redis', key);
+                if(!key){
+                  return reject(new Error("无法获取token"));
+                }
+                redisClient.get(key, (err, token) => {
+                    options.form.sessid = token;
+                    request(options, function(error, response, body) {
+                        if (error) {
+                            return reject(error);
+                        };
+                        if(body && body.code !== undefined && body.code === 0){
+                          sendmsg('15330066919', '订单提交成功'+tel+":"+pass+":"+shopId+":库存"+StockCount+":限购"+quantity);
+                        }else{
+                            // 如果下单成功，但是并没有返回正常的编码
+                            // 检查订单
+                        }
+                        logger.info(colors.green('下单完成'+JSON.stringify(body)));
+                        return resolve({
+                          data:body,
+                          StockCount: StockCount,
+                          buyLimit: quantity,
+                        });
+                    });
+                    if(key)
+                    {
+                          redisClient.del(key);
+                    }
+                })
+
+            })
+          })
+        })
+    }
+
     getAddressId(tel,j) {
         logger.info('start get addressID from mobile:', tel);
         let now = +new Date();
@@ -694,19 +816,15 @@ class MaotaiService {
         })
     }
 
-    _getOrders(userId, j) {
+    _getOrders(userId,userAgent, j) {
 
         let now = +new Date();
-
+        console.log(j);
         var options = {
             method: 'POST',
-            jar:j,
+            jar:true,
             url: 'https://www.cmaotai.com/YSApp_API/YSAppServer.ashx',
-            headers: {
-                "proxy-authorization" : "Basic " + proxy.proxyAuth,
-                'cache-control': 'no-cache',
-                'content-type': 'application/x-www-form-urlencoded'
-            },
+            headers: this.headers(userAgent,j),
             form: {
                 action: 'OrdersManager.GetUserOrderInfo',
                 userId: userId,
@@ -722,8 +840,9 @@ class MaotaiService {
               if (error) {
                   return reject(error);
               }
+              console.log('order', body);
               if(body.data && body.data.Data)
-                return resolve(body.data.Data[0]);
+                return resolve(body.data.Data);
               else
                 return resolve([]);
           });
@@ -735,7 +854,7 @@ class MaotaiService {
       return new Promise((resolve, reject) => {
         this.userinfo(user, j)
           .then(userid => {
-            return this._getOrders(userid, j);
+            return this._getOrders(userid,userAgent, j);
           })
           .then(data => {
             return resolve(data);
@@ -791,7 +910,7 @@ class MaotaiService {
 
       var options = {
           method: 'POST',
-          jar:j,
+          jar:true,
           url: 'https://www.cmaotai.com/API/Servers.ashx',
           headers: this.headers(userAgent, j),
           form: {
@@ -814,7 +933,7 @@ class MaotaiService {
                   return resolve(ret);
                 }else{
                   console.log(body);
-                  return reject('没有预约列表');
+                  return resolve({});
                 }
               }
           });
@@ -908,10 +1027,7 @@ class MaotaiService {
         userAgent = this.userAgent(phone);
         let currentJar = null;
         logger.info('开始预约:', phone);
-        proxy.switchIp()
-            .then(() => {
-                return this.getCurrentJar(phone)
-            })
+        this.getCurrentJar(phone)
             .then(currentJar => {
                 return this.apointment(sphone.addressId, userAgent, 391, currentJar)
             })
@@ -979,6 +1095,50 @@ class MaotaiService {
             callback(e)
           })
     }
+
+
+    /**
+     * bindNetwork - 绑定账号和网点关系
+     *
+     * @param  {type} sid    description
+     * @param  {type} shopId description
+     * @param  {type} j      description
+     * @return {type}        description
+     */
+    bindNetwork(phone, sid, j){
+      let now = +new Date();
+      let userAgent = this.userAgent()
+      var options = {
+          method: 'POST',
+          jar:true,
+          url: 'https://www.cmaotai.com/API/Servers.ashx',
+          headers: this.headers(userAgent, j),
+          form: {
+              action: 'SalesManager.bandingShop',
+              sid: sid,
+              timestamp121: now
+          }
+      };
+
+      return new Promise((resolve, reject) => {
+          request(options, function(error, response, body) {
+              if (error) {
+                  logger.info(error);
+                  return reject(error);
+              } else {
+                  logger.info("绑定网点结果", body);
+                  let ret = JSON.stringify(body);
+                  if (body.state === false) {
+                      return reject("绑定网点失败:" + body.msg);
+                  }
+                  return resolve(body);
+              }
+          });
+
+
+      })
+    }
+
 }
 
 module.exports = new MaotaiService();

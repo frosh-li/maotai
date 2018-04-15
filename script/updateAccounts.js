@@ -47,21 +47,9 @@ class AccountInfo {
                 let addressInfo = {};
                 let apointStatus = {};
                 let scopeJar = null;
-                proxy.switchIp()
-                    // .then(() => {
-                    //     // 登录
-                    //     return Service.login(user.phone, user.pass, userAgent);
-                    // })
-                    .then((userinfo) => {
-                        // 获取第一条地址信息
-                        // logger.info(userinfo);
-                        // userid = userinfo.UserId;
-                        return Service.getCurrentJar(user.phone);
-                        
-                    })
+                Service.getCurrentJar(user.phone)
                     .then(jar =>  {
                       scopeJar = jar;
-                      console.log('jar', jar);
                       return Service.getAllAddress(user.phone, scopeJar);
                     })
                     .then(addressList => {
@@ -76,14 +64,9 @@ class AccountInfo {
                       if (addressList.length > 0) {
                           addressInfo = addressList[0];
                       }
-                      return Service.apointStatus(userAgent, scopeJar);
+                      return Service._getOrders(userid,userAgent,scopeJar);
                     })
-                    .then((_apointStatus) => {
-                        if(_apointStatus){
-                          apointStatus = _apointStatus
-                        }
-                        return Service._getOrders(userid, scopeJar);
-                    })
+
                     .then((orderInfo) => {
                         if (orderInfo.length > 0) {
                             logger.info('order info', orderInfo[0]);
