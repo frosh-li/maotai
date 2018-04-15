@@ -13,6 +13,7 @@ const Utils = require('../services/utils');
 const request = require('request');
 const proxy = require('../controllers/proxy');
 const networks = require('../accounts/watchNetwork.json');
+const filterNetworks = require('../filterNetwork.json');
 let checkInterval = 1*1000;
 // 上海购买
 // 地址信息
@@ -32,8 +33,6 @@ if(process.argv[2] != undefined){
   originPhones = require(process.argv[2]);
   canBuyFixed = true;
 }
-
-logger.info(colors.green('账号数量为'+originPhones.length));
 var scanindex = 0
 function printInfo(data){
   try{
@@ -58,8 +57,6 @@ function watchQuanity() {
     scanindex=0;
   }
   let randomIndex = scanindex;//Math.floor(Math.random()*(originPhones.length-1));
-  logger.info(process.pid, process.argv[2]);
-  console.log(originPhones, randomIndex);
   let tel = originPhones[randomIndex].phone;
   let pass = originPhones[randomIndex].pass;
   let userAgent = MaotaiService.userAgent(tel);
@@ -102,6 +99,13 @@ function watchQuanity() {
               currentShopId = data.lbsdata.data.network.Sid;
               logger.info(colors.green("商家已经上货，开始购买流程"));
               printInfo(data);
+              if(filterNetworks.indexOf(currentShopId.toString()) > -1){
+                setTimeout(() => {
+                    scanindex++;
+                    watchQuanity();
+                }, checkInterval);
+                return; 
+              } 
               let buyAccount = quantity;
               let _limitCount =  data.lbsdata.data.limit.LimitCount;
               let _stock =  data.lbsdata.data.stock.StockCount;
@@ -114,7 +118,7 @@ function watchQuanity() {
                   currentShopId: currentShopId,
                   stock: _stock,
                   totals: totals,
-                  limitCount: _limitCount,
+                  limitCount: buyAccount,
                   accounts: originPhones,
                   filepath: process.argv[2]
                 };
@@ -135,6 +139,10 @@ function watchQuanity() {
               printInfo(data);
               logger.info('不满足购买条件');
               logger.info(JSON.stringify(originPhones[randomIndex]))
+              setTimeout(() => {
+                  scanindex++;
+                  watchQuanity();
+              }, checkInterval);
             }
           } else {
             logger.info(JSON.stringify(originPhones[randomIndex]))

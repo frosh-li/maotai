@@ -21,6 +21,7 @@ let shopName = '东柏街|祥瑞丰源|SOHO现代城C|嘉禾国信大厦|西城�
 var originPhones = JSON.parse(process.argv[3]);
 var fixedShopId = process.argv[2]; //双龙网点
 var rewriteFilePath = process.argv[5];
+var STOCK = process.argv[6]
 
 function printInfo(data){
   try{
@@ -49,7 +50,7 @@ function buyChild(number) {
       .then(j => {
         currentJar = j;
         _startTime = +new Date();
-        return MaotaiService.createOrderByScan(originPhones, pid, quantity,300, userAgent, scopeAddress, fixedShopId, -1, currentJar)
+        return MaotaiService.createOrderByScan(originPhones, pid, quantity,STOCK, userAgent, scopeAddress, fixedShopId, -1, currentJar)
         //return MaotaiService.createOrderByScan(tel, pid , 6, userAgent, scopeAddress, fixedShopId, currentJar);
       }).then( data => {
           logger.info("下单时间"+(new Date() - _startTime)+"ms");
@@ -66,12 +67,24 @@ function buyChild(number) {
             console.log('通知主进程购买完成', sendProcess);
             fs.writeFileSync(`output/${Utils.dateFormat()}.json`, `${tel} ${pass}`, {flag:'a+'});
             process.exit(0);
+          }else{
+          
+            let sendProcess = process.send({
+              status: 'buy_done',
+              tel: {phone:""},
+              filepath: rewriteFilePath
+            });
+            console.log('通知主进程购买完成', sendProcess);
+            process.exit(0);
           }
       }).catch(e => {
           logger.info("位置错误,60秒后重试", e.message);
-          process.send({
-            status: false
+          let sendProcess = process.send({
+            status: 'buy_done',
+            tel: {phone:""},
+            filepath: rewriteFilePath
           });
+          console.log('通知主进程购买完成', sendProcess);
           process.exit(0);
       })
 }
