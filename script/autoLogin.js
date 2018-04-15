@@ -30,7 +30,7 @@ function start() {
     return;
   }
   let userAgent = MaotaiService.userAgent(user.phone);
-  proxy.switchIp().then(() => {
+
   MaotaiService.login(user.phone, user.pass, userAgent)
     .then(data => {
       logger.info(data);
@@ -45,6 +45,6 @@ function start() {
       originPhones.unshift(user);
       start();
     })
-  }).catch(e => {console.log(e)})
+  
 }
 start()

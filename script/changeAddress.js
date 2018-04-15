@@ -4,6 +4,7 @@ let assert = require("chai").assert;
 let proxy = require('../controllers/proxy.js');
 const Utils = require('../services/utils.js');
 const logger = require('../controllers/logger');
+const colors = require('colors');
 const randomName = require("chinese-random-name");
 
 
@@ -132,22 +133,21 @@ function checkPhone(){
     index = 0;
     currentAddress = ret2[index];
   }
-  proxy.switchIp().then(() => {
-    let currentJar = null;
-    let name = randomName.generate();
-    Service.getCurrentJar(user.phone)
+  let currentJar = null;
+  let name = randomName.generate();
+  Service.getCurrentJar(user.phone)
     .then(j=>{
         currentJar = j;
         if(phone.addressId){
             return Service.editAddress(
                 phone.addressId,
-                Utils.findProvinceCode(currentAddress.addressComponent.adcode),
-                Utils.findCityCode(currentAddress.addressComponent.adcode),
-                currentAddress.addressComponent.adcode,
+                Utils.findProvinceCode(320506),
+                Utils.findCityCode(320506),
+                320506,
                 `${currentAddress.addressComponent.province}${currentAddress.addressComponent.city}${currentAddress.addressComponent.district}`,
-                `${currentAddress.pois[0].name},${getRandomFour()}`,
+                `${currentAddress.pois[0].name},${getRandomLou()}号楼${getRandomUnit()}单元${getRandomFour()}室`,
                 name,
-                randomPhone(user.phone, 1),
+                randomPhone(user.phone, 0),
                 zipcode="000000",
                 isDef=1,
                 geos[index].lng,
@@ -170,9 +170,9 @@ function checkPhone(){
             // userAgent,
             // j
             return Service.addAddress(
-                Utils.findProvinceCode(currentAddress.addressComponent.adcode),
-                Utils.findCityCode(currentAddress.addressComponent.adcode),
-                currentAddress.addressComponent.adcode,
+              Utils.findProvinceCode(320506),
+              Utils.findCityCode(320506),
+                320506,
                 `${currentAddress.addressComponent.province}${currentAddress.addressComponent.city}${currentAddress.addressComponent.district}`,
                 `${currentAddress.pois[0].name},${getRandomLou()}号楼${getRandomUnit()}单元${getRandomFour()}室`,
                 name,
@@ -188,36 +188,14 @@ function checkPhone(){
     })
     .then(data => {
         if(data.state === true && data.code === 0){
-
+          successAcount.push({
+            phone: user.phone,
+            pass: user.pass,
+            addressId: user.addressId
+          });
+          index++;
+          checkPhone();
           // 并且更新数据到mysql中
-
-          // 开始预约账号
-          let addressId = phone.addressId || data.data.ID;
-          Service.apointment(addressId, userAgent, 391,currentJar )
-            .then(apointment => {
-              apointment = JSON.parse(apointment);
-              console.log('apointment', apointment);
-              if(apointment.state === true && apointment.code === 0){
-                successAcount.push({
-                  phone: user.phone,
-                  pass: user.pass,
-                  addressId: addressId
-                });
-              }else{
-                failAccount.push({
-                  phone: user.phone,
-                  pass: user.pass,
-                  addressId: addressId
-                })
-              }
-              index++;
-              checkPhone();
-            })
-            .catch(e => {
-              console.log(e);
-              index++;
-              checkPhone();
-            })
         }else{
           failAccount.push({
             phone: user.phone,
@@ -237,15 +215,12 @@ function checkPhone(){
 }
 //106.630153,26.647661贵阳
 //106.933425,27.725553遵义
-<<<<<<< HEAD
-//116.484079,39.901609
-let geos = Utils.randomGeo(39.901609, 116.484079, 5, phones.length);
 
-console.log(geos);
-=======
+//116.484079,39.901609
 // 市中心116.402257,39.960742
-let geos = Utils.randomGeo(39.960742, 116.402257, 8, phones.length);
->>>>>>> 4402ea0c5c3846afebb2c736925db430545434ea
+// 120.611097,31.302083
+let geos = Utils.randomGeo(31.302083, 120.611097, 15, phones.length);
+
 let getAddressCounter = 0;
 geos.forEach(item => {
   BaiduService.geoEnCoder(item.lat, item.lng)
