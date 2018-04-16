@@ -574,17 +574,32 @@ class MaotaiService {
                           //logger.error(e);
                         }
                         if(body && body.code !== undefined && body.code === 0){
-                          sendmsg('15330066919', '订单提交成功'+tel+":"+pass+":"+shopId+":库存"+StockCount+":限购"+quantity);
+                          sendmsg('15330066919', '订单提交成功'+tel+":"+pass+":"+shopId+":库存"+StockCount+":限购"+quantity)
+                            .then(() => {
+                              return resolve({
+                                data:body,
+                                StockCount: StockCount,
+                                buyLimit: quantity,
+                              });
+                            })
+                            .catch(e => {
+                              return resolve({
+                                data:body,
+                                StockCount: StockCount,
+                                buyLimit: quantity,
+                              });
+                            
+                            })
                         }else{
                             // 如果下单成功，但是并没有返回正常的编码
                             // 检查订单
+                          return resolve({
+                            data:body,
+                            StockCount: StockCount,
+                            buyLimit: quantity,
+                          });
                         }
                         logger.info(colors.green('下单完成'+JSON.stringify(body)));
-                        return resolve({
-                          data:body,
-                          StockCount: StockCount,
-                          buyLimit: quantity,
-                        });
                     });
                     if(key)
                     {

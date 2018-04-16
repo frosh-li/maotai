@@ -70,11 +70,15 @@ class processManager {
       console.log('开始购买', msg);
       // 开启进程进行购买
       let len = msg.totals > msg.accounts.length ? msg.accounts.length:msg.totals;
+      if(len > 3)
+      {
+        len = 3;
+      }
       processManager.closeAllChild();
       for(let i = 0 ; i < len ; i++){
         let child = fork(
           path.resolve(__dirname, '../controllers/buyFixed.js'),
-          [msg.currentShopId,JSON.stringify(msg.accounts[i]), msg.limitCount, msg.filepath]
+          [msg.currentShopId,JSON.stringify(msg.accounts[i]), msg.limitCount, msg.filepath, msg.stock]
         )
         child.on('message', processManager.listenMsg);
         child.on('exit', function(code){
