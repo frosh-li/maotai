@@ -141,13 +141,13 @@ function checkPhone(){
         if(phone.addressId){
             return Service.editAddress(
                 phone.addressId,
-                Utils.findProvinceCode(320506),
-                Utils.findCityCode(320506),
-                320506,
+                Utils.findProvinceCode(currentAddress.addressComponent.adcode),
+                Utils.findCityCode(currentAddress.addressComponent.adcode),
+                currentAddress.addressComponent.adcode,
                 `${currentAddress.addressComponent.province}${currentAddress.addressComponent.city}${currentAddress.addressComponent.district}`,
                 `${currentAddress.pois[0].name},${getRandomLou()}号楼${getRandomUnit()}单元${getRandomFour()}室`,
                 name,
-                randomPhone(user.phone, 0),
+                user.phone,
                 zipcode="000000",
                 isDef=1,
                 geos[index].lng,
@@ -170,13 +170,13 @@ function checkPhone(){
             // userAgent,
             // j
             return Service.addAddress(
-              Utils.findProvinceCode(320506),
-              Utils.findCityCode(320506),
-                320506,
+              Utils.findProvinceCode(currentAddress.addressComponent.adcode),
+              Utils.findCityCode(currentAddress.addressComponent.adcode),
+                currentAddress.addressComponent.adcode,
                 `${currentAddress.addressComponent.province}${currentAddress.addressComponent.city}${currentAddress.addressComponent.district}`,
                 `${currentAddress.pois[0].name},${getRandomLou()}号楼${getRandomUnit()}单元${getRandomFour()}室`,
                 name,
-                randomPhone(user.phone, 0),
+                user.phone,
                 zipcode="000000",
                 isDef=1,
                 geos[index].lng,
@@ -211,15 +211,16 @@ function checkPhone(){
         console.log(e);
         checkPhone();
     })
-  })
+
 }
 //106.630153,26.647661贵阳
 //106.933425,27.725553遵义
 
 //116.484079,39.901609
 // 市中心116.402257,39.960742
+// 116.432727,39.942379
 // 120.611097,31.302083
-let geos = Utils.randomGeo(31.302083, 120.611097, 15, phones.length);
+let geos = Utils.randomGeo(39.960742, 116.402257, 15, phones.length);
 
 let getAddressCounter = 0;
 geos.forEach(item => {
@@ -231,6 +232,7 @@ geos.forEach(item => {
       if(getAddressCounter == geos.length){
         console.log('alldone');
         console.log(ret2)
+
           checkPhone()
           console.log(phones);
       }

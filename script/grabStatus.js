@@ -1,4 +1,3 @@
-//const accounts = require('../accounts/bj_000.json');
 const accounts = [
   { phone: '13283936032', pass: 'a123456', addressId: 1962184 },
   { phone: '18632369087', pass: 'a123456', addressId: 1962186 },
@@ -21,34 +20,37 @@ const accounts = [
   { phone: '18438063310', pass: 'a123456', addressId: 1951811 },
   { phone: '13935327172', pass: 'a123456', addressId: 1930782 }
 ]
-var bindNetworkController = require('../controllers/BindNetwork');
 
-console.log(accounts);
-const shopIds = {
-  "111110105015": [],
-  "211110105016": []
-}
+var MaotaiService = require('../tools/service');
 
-let bindAccountsTotal =20;
 var currentIndex = 0;
-function bindNetwork(){
+var successAcount = []
+function run(){
   let account = accounts.shift();
-  if(!account || currentIndex >= 40 ){
-    console.log('绑定结束');
+  if(!account){
+    console.log('全部结束');
+    console.log(successAcount);
     process.exit(0);
     return;
   }
-
-
-  let a =new bindNetworkController(account, '211110105016', function(err){
-      if(err){
-        console.log(err.message);
-      }
-      currentIndex++;
-      bindNetwork();
-  });
-
-
+  let scopeJar = null;
+  MaotaiService.getCurrentJar(account.phone)
+    .then(data => {
+      scopeJar = data;
+      return MaotaiService.grabStatus(account, scopeJar)
+    }).then(data => {
+      console.log(data);
+      data.forEach(item => {
+        if(item.sid === '211110105016'){
+          successAcount.push(account);
+          return;
+        }
+      })
+      run();
+    }).catch(e=>{
+      console.log(e);
+      run();
+    })
 }
 
-bindNetwork();
+run();

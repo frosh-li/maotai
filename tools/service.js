@@ -1081,7 +1081,261 @@ class MaotaiService {
           })
     }
 
+    /**
+     * 登记请求发送
+     *  action	GrabSingleManager.grabSingleLogin
+     *  pid	389
+     *  timestamp121	1523844584918
+     *
+     *
 
+        获取登记列表
+        action	GrabSingleManager.getList
+        index	1
+        size	10
+        timestamp121	1523845500386
+
+        {
+          	"state": true,
+          	"code": 0,
+          	"data": "{\"retcode\":500,\"retmsg\":\"fail\",\"count\":0,\"data\":{\"totel\":0,\"data\":null,\"oii\":null}}"
+          }
+     */
+     GrabLogin(account, addressId, j) {
+       let now = +new Date();
+       let userAgent = this.userAgent(account.phone)
+       var options = {
+           method: 'POST',
+           jar:true,
+           url: 'https://www.cmaotai.com/API/Servers.ashx',
+           headers: {
+             'cookie':j,
+             "proxy-authorization" : "Basic " + proxy.proxyAuth,
+             'cache-control': 'no-cache',
+             'accept-language': 'zh-CN,en-US;q=0.8',
+             'accept': 'application/json, text/javascript, */*; q=0.01',
+             'content-type': 'application/x-www-form-urlencoded; charset=UTF-8',
+             'Connection': 'keep-alive',
+             'referer': `https://www.cmaotai.com/ysh5/page/GrabSingle/grabSingleProductDetails.html?pid=391`,
+             'user-agent': userAgent,
+             'x-requested-with': 'XMLHttpRequest'
+           },
+           form: {
+             pid:391,
+             action:	'GrabSingleManager.grabSingleLogin',
+             timestamp121:	now
+           },
+           json:true
+       };
+       logger.info('登记登陆',account.phone,addressId);
+       return new Promise((resolve, reject) => {
+           request(options, function(error, response, body) {
+               if (error) {
+                   logger.info(error);
+                   return reject(error);
+               } else {
+                   logger.info("登记登陆DONE",account.phone, body);
+                   let ret = JSON.stringify(body);
+                   if (body.state === false) {
+                       return reject("登记登陆Fail:" + body.msg);
+                   }
+                   return resolve(body);
+               }
+           });
+       })
+     }
+
+     GrabDefaultAdd(account, addressId, j) {
+       let now = +new Date();
+       let userAgent = this.userAgent(account.phone)
+       var options = {
+           method: 'POST',
+           jar:true,
+           url: 'https://www.cmaotai.com/API/Servers.ashx',
+           headers: {
+             'cookie':j,
+             "proxy-authorization" : "Basic " + proxy.proxyAuth,
+             'cache-control': 'no-cache',
+             'accept-language': 'zh-CN,en-US;q=0.8',
+             'accept': 'application/json, text/javascript, */*; q=0.01',
+             'content-type': 'application/x-www-form-urlencoded; charset=UTF-8',
+             'Connection': 'keep-alive',
+             'referer': `https://www.cmaotai.com/ysh5/page/GrabSingle/grabSingleOrderSubmit.html?qty=1`,
+             'user-agent': userAgent,
+             'x-requested-with': 'XMLHttpRequest'
+           },
+           form: {
+             action:	'GrabSingleManager.getDefualtAdd',
+             timestamp121:	now
+           },
+           json:true
+       };
+       logger.info('获取默认地址',account.phone,addressId);
+       return new Promise((resolve, reject) => {
+           request(options, function(error, response, body) {
+               if (error) {
+                   logger.info(error);
+                   return reject(error);
+               } else {
+                   logger.info("获取默认地址",account.phone, body);
+                   let ret = JSON.stringify(body);
+                   if (body.state === false) {
+                       return reject("登记登陆Fail:" + body.msg);
+                   }
+                   return resolve(body);
+               }
+           });
+       })
+    }
+
+
+    getProductInfo(account, addressId, j) {
+      let now = +new Date();
+      let userAgent = this.userAgent(account.phone)
+      var options = {
+          method: 'POST',
+          jar:true,
+          url: 'https://www.cmaotai.com/API/Servers.ashx',
+          headers: {
+            'cookie':j,
+            "proxy-authorization" : "Basic " + proxy.proxyAuth,
+            'cache-control': 'no-cache',
+            'accept-language': 'zh-CN,en-US;q=0.8',
+            'accept': 'application/json, text/javascript, */*; q=0.01',
+            'content-type': 'application/x-www-form-urlencoded; charset=UTF-8',
+            'Connection': 'keep-alive',
+            'referer': `https://www.cmaotai.com/ysh5/page/GrabSingle/grabSingleOrderSubmit.html?qty=1`,
+            'user-agent': userAgent,
+            'x-requested-with': 'XMLHttpRequest'
+          },
+          form: {
+            action:	'ProductManager.Product',
+            timestamp121:	now,
+            pid: 391
+          },
+          json:true
+      };
+      logger.info('获取一次商品信息',account.phone,addressId);
+      return new Promise((resolve, reject) => {
+          request(options, function(error, response, body) {
+              if (error) {
+                  logger.info(error);
+                  return reject(error);
+              } else {
+                  logger.info("获取一次商品信息",account.phone, body);
+                  let ret = JSON.stringify(body);
+                  if (body.state === false) {
+                      return reject("获取一次商品信息:" + body.msg);
+                  }
+                  return resolve(body);
+              }
+          });
+      })
+    }
+
+    grabStatus(account , j){
+      let now = +new Date();
+      let userAgent = this.userAgent(account.phone)
+
+      var options = {
+          method: 'POST',
+          jar:true,
+          url: 'https://www.cmaotai.com/API/Servers.ashx',
+          headers: {
+            'cookie':j,
+            "proxy-authorization" : "Basic " + proxy.proxyAuth,
+            'cache-control': 'no-cache',
+            'accept-language': 'zh-CN,en-US;q=0.8',
+            'accept': 'application/json, text/javascript, */*; q=0.01',
+            'content-type': 'application/x-www-form-urlencoded; charset=UTF-8',
+            'Connection': 'keep-alive',
+            'referer': `https://www.cmaotai.com/ysh5/page/GrabSingle/grabSingleOrderSubmit.html`,
+            'user-agent': userAgent,
+            'x-requested-with': 'XMLHttpRequest'
+          },
+          form: {
+            timestamp121:	now,
+            action: 'GrabSingleManager.getList',
+            index: 1,
+            size: 10
+
+          },
+          json:true
+      };
+      console.log(options.form);
+      logger.info('获取订单状态',account.phone);
+      return new Promise((resolve, reject) => {
+
+          request(options, function(error, response, body) {
+              if (error) {
+                  logger.info(error);
+                  return reject(error);
+              } else {
+                  logger.info("提交订单完成",account.phone, body);
+                  let ret = JSON.stringify(body);
+                  if (body.state === false) {
+                      return reject("没有订单:" + body.msg);
+                  }
+                  return resolve(JSON.parse(body.data).data.data || []);
+              }
+          });
+
+
+      })
+    }
+    GrabSubmit(account, addressId, j) {
+      let now = +new Date();
+      let userAgent = this.userAgent(account.phone)
+
+      var options = {
+          method: 'POST',
+          jar:true,
+          url: 'https://www.cmaotai.com/API/Servers.ashx',
+          headers: {
+            'cookie':j,
+            "proxy-authorization" : "Basic " + proxy.proxyAuth,
+            'cache-control': 'no-cache',
+            'accept-language': 'zh-CN,en-US;q=0.8',
+            'accept': 'application/json, text/javascript, */*; q=0.01',
+            'content-type': 'application/x-www-form-urlencoded; charset=UTF-8',
+            'Connection': 'keep-alive',
+            'referer': `https://www.cmaotai.com/ysh5/page/GrabSingle/grabSingleOrderSubmit.html`,
+            'user-agent': userAgent,
+            'x-requested-with': 'XMLHttpRequest'
+          },
+          form: {
+            sid:	parseInt(addressId),
+            iid:	-1,
+            qty:	5,
+            express:	14,
+            product:	'{"Pid":391,"PName":"贵州茅台酒 (新飞天) 53%vol 500ml","PCode":"23","Unit":"瓶","CoverImage":"/upload/fileStore/20180415/6365942315164224808933821.jpg","SalePrice":1499}',
+            remark: ''	,
+            action:	'GrabSingleManager.submit',
+            timestamp121:	now
+          },
+          json:true
+      };
+      console.log(options.form);
+      logger.info('开始下单',account.phone,addressId);
+      return new Promise((resolve, reject) => {
+
+          request(options, function(error, response, body) {
+              if (error) {
+                  logger.info(error);
+                  return reject(error);
+              } else {
+                  logger.info("提交订单完成",account.phone, body);
+                  let ret = JSON.stringify(body);
+                  if (body.state === false) {
+                      return reject("提交订单失败:" + body.msg);
+                  }
+                  return resolve(body);
+              }
+          });
+        
+
+      })
+    }
     /**
      * bindNetwork - 绑定账号和网点关系
      *
@@ -1119,8 +1373,6 @@ class MaotaiService {
                   return resolve(body);
               }
           });
-
-
       })
     }
 

@@ -1,10 +1,10 @@
-//const accounts = require('../accounts/bj_000.json');
+//const accounts = require("../accounts/bj_000.json");
+// const accounts = [
+//   {phone:"18903188059", pass:"a123456", addressId:1930701}
+// ]
 const accounts = [
   { phone: '13283936032', pass: 'a123456', addressId: 1962184 },
   { phone: '18632369087', pass: 'a123456', addressId: 1962186 },
-  { phone: '13290979032', pass: 'a123456', addressId: 1962187 },
-  { phone: '13936763461', pass: 'a123456', addressId: 1962189 },
-  { phone: '15081820867', pass: 'a123456', addressId: 1962191 },
   { phone: '15053052761', pass: 'a123456', addressId: 1962199 },
   { phone: '18434763969', pass: 'a123456', addressId: 1962204 },
   { phone: '15035399985', pass: 'a123456', addressId: 1962205 },
@@ -21,34 +21,31 @@ const accounts = [
   { phone: '18438063310', pass: 'a123456', addressId: 1951811 },
   { phone: '13935327172', pass: 'a123456', addressId: 1930782 }
 ]
-var bindNetworkController = require('../controllers/BindNetwork');
+var grabController = require('../controllers/GrabController');
 
 console.log(accounts);
-const shopIds = {
-  "111110105015": [],
-  "211110105016": []
-}
+
 
 let bindAccountsTotal =20;
 var currentIndex = 0;
 function bindNetwork(){
   let account = accounts.shift();
-  if(!account || currentIndex >= 40 ){
+  if(!account || currentIndex >= 5 ){
     console.log('绑定结束');
     process.exit(0);
     return;
   }
 
-
-  let a =new bindNetworkController(account, '211110105016', function(err){
+  let a =new grabController(account, function(err, data){
       if(err){
         console.log(err.message);
+      }
+      if(data){
+        console.log(`定向下单完成${account.phone}:${account.pass}:${data}`);
       }
       currentIndex++;
       bindNetwork();
   });
-
-
 }
 
 bindNetwork();

@@ -30,11 +30,6 @@ function start() {
     fs.writeFileSync(path.resolve(__dirname,process.argv[2]), JSON.stringify(originPhones, null, 4));
     return;
   }
-  if(user.addressId){
-    logger.info('存在地址不需要再去获取了');
-    index++;
-    return start();
-  }
   let userAgent = MaotaiService.userAgent(user.phone);
   let scopeJar = "";
   proxy.switchIp().then(() => {
