@@ -9,33 +9,7 @@ const randomName = require("chinese-random-name");
 
 
 let results = [];
-let phones = [
-  {
-        "phone": "18201603185",
-        "pass": "123456",
-        "addressId": 1884119
-    },
-    {
-        "phone": "18207517996",
-        "pass": "123456",
-        "addressId": 1829922
-    },
-    {
-        "phone": "18333966217",
-        "pass": "123456",
-        "addressId": 1879800
-    },
-    {
-        "phone": "18382394514",
-        "pass": "123456",
-        "addressId": 1840503
-    },
-    {
-        "phone": "18629896680",
-        "pass": "123456",
-        "addressId": 1872179
-    }
-];
+let phones = [{"phone":"13842111030","pass":"a123456","addressId":1930791}];
 if(process.argv[2]!=undefined){
   phones = require(process.argv[2])
 }
@@ -187,6 +161,7 @@ function checkPhone(){
         }
     })
     .then(data => {
+        logger.info(data);
         if(data.state === true && data.code === 0){
           successAcount.push({
             phone: user.phone,
@@ -220,7 +195,8 @@ function checkPhone(){
 // 市中心116.402257,39.960742
 // 116.432727,39.942379
 // 120.611097,31.302083
-let geos = Utils.randomGeo(39.960742, 116.402257, 15, phones.length);
+// 121.626624,31.183456 上海市浦东新区长城中环墅|232号
+let geos = Utils.randomGeo(31.183456, 121.626624, 15, phones.length);
 
 let getAddressCounter = 0;
 geos.forEach(item => {

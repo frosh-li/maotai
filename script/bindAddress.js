@@ -1,46 +1,97 @@
 //const accounts = require('../accounts/bj_000.json');
+//const accounts = require('../accounts/shanghai231310115001.json')
 const accounts = [
-  { phone: '13283936032', pass: 'a123456', addressId: 1962184 },
-  { phone: '18632369087', pass: 'a123456', addressId: 1962186 },
-  { phone: '13290979032', pass: 'a123456', addressId: 1962187 },
-  { phone: '13936763461', pass: 'a123456', addressId: 1962189 },
-  { phone: '15081820867', pass: 'a123456', addressId: 1962191 },
-  { phone: '15053052761', pass: 'a123456', addressId: 1962199 },
-  { phone: '18434763969', pass: 'a123456', addressId: 1962204 },
-  { phone: '15035399985', pass: 'a123456', addressId: 1962205 },
-  { phone: '17131970724', pass: 'a123456', addressId: 1962215 },
-  { phone: '17667374197', pass: 'a123456', addressId: 1962216 },
-  { phone: '15505201939', pass: 'a123456', addressId: 1962224 },
-  { phone: '18831099037', pass: 'a123456', addressId: 1969317 },
-  { phone: '18534866149', pass: 'a123456', addressId: 1962233 },
-  { phone: '15034681449', pass: 'a123456', addressId: 1962237 },
-  { phone: '15257918657', pass: 'a123456', addressId: 1962220 },
-  { phone: '13413723166', pass: '123456', addressId: 1894654 },
-  { phone: '13230672756', pass: 'a123456', addressId: 1951804 },
-  { phone: '18183062125', pass: 'a123456', addressId: 1951807 },
-  { phone: '18438063310', pass: 'a123456', addressId: 1951811 },
-  { phone: '13935327172', pass: 'a123456', addressId: 1930782 }
-]
+    {
+        "phone": "13624666057",
+        "pass": "a123456",
+        "addressId": 1930787
+    },
+    {
+        "phone": "15935492346",
+        "pass": "a123456",
+        "addressId": 1930788
+    },
+    {
+        "phone": "15082907866",
+        "pass": "a123456",
+        "addressId": 1951812
+    },
+    {
+        "phone": "18533703270",
+        "pass": "a123456",
+        "addressId": 1951805
+    },
+    {
+        "phone": "13513642792",
+        "pass": "a123456",
+        "addressId": 1951737
+    },
+    {
+        "phone": "15665166293",
+        "pass": "a123456",
+        "addressId": 1951731
+    },
+    {
+        "phone": "15830750275",
+        "pass": "a123456",
+        "addressId": 1951732
+    },
+    {
+        "phone": "13720689056",
+        "pass": "a123456",
+        "addressId": 1951717
+    },
+    {
+        "phone": "15238555689",
+        "pass": "a123456",
+        "addressId": 1951714
+    },
+    {
+        "phone": "15549208672",
+        "pass": "123456",
+        "addressId": 1905922
+    },
+    {
+        "phone": "18834168128",
+        "pass": "A3396815",
+        "addressId": 1898547
+    },
+    {
+        "phone": "18537303412",
+        "pass": "z410781",
+        "addressId": 1726502
+    },
+    {
+        "phone": "15075870950",
+        "pass": "123456",
+        "addressId": 1712578
+    },
+    {
+        "phone": "13593493641",
+        "pass": "a123456",
+        "addressId": 1930789
+    }
+];
 var bindNetworkController = require('../controllers/BindNetwork');
 
 console.log(accounts);
 const shopIds = {
-  "111110105015": [],
+  "231310115001": [],
   "211110105016": []
 }
 
-let bindAccountsTotal =20;
+let bindAccountsTotal =50;
 var currentIndex = 0;
 function bindNetwork(){
   let account = accounts.shift();
-  if(!account || currentIndex >= 40 ){
+  if(!account || currentIndex >= 50 ){
     console.log('绑定结束');
     process.exit(0);
     return;
   }
 
 
-  let a =new bindNetworkController(account, '211110105016', function(err){
+  let a =new bindNetworkController(account, '231310115001', function(err){
       if(err){
         console.log(err.message);
       }

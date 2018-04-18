@@ -1,4 +1,4 @@
-const accounts = [
+var accounts = [
   { phone: '13283936032', pass: 'a123456', addressId: 1962184 },
   { phone: '18632369087', pass: 'a123456', addressId: 1962186 },
   { phone: '13290979032', pass: 'a123456', addressId: 1962187 },
@@ -20,16 +20,20 @@ const accounts = [
   { phone: '18438063310', pass: 'a123456', addressId: 1951811 },
   { phone: '13935327172', pass: 'a123456', addressId: 1930782 }
 ]
-
+if(process.argv[2]){
+    accounts = require(process.argv[2]);
+}
 var MaotaiService = require('../tools/service');
 
 var currentIndex = 0;
-var successAcount = []
+var successAcount = [];
+var failAccount = [];
 function run(){
   let account = accounts.shift();
   if(!account){
     console.log('全部结束');
-    console.log(successAcount);
+    console.log(JSON.stringify(successAcount,null,4));
+    console.log(JSON.stringify(failAccount,null,4));
     process.exit(0);
     return;
   }
@@ -40,12 +44,32 @@ function run(){
       return MaotaiService.grabStatus(account, scopeJar)
     }).then(data => {
       console.log(data);
-      data.forEach(item => {
-        if(item.sid === '211110105016'){
-          successAcount.push(account);
-          return;
-        }
-      })
+      if(data.length > 0){
+          successAcount.push(
+              {
+                  phone: account.phone,
+                  pass: account.pass,
+                  addressId: account.addressId,
+                  order: {
+                      receiptPhone: data[0].receiptPhone,
+                      sid: data[0].sid,
+                      orderId: data[0].orderId
+                  }
+              }
+          )
+      }else{
+          failAccount.push({
+              phone: account.phone,
+              pass: account.pass,
+              addressId: account.addressId,
+          })
+      }
+      // data.forEach(item => {
+      //   if(item.sid){
+      //     successAcount.push(account);
+      //     return;
+      //   }
+      // })
       run();
     }).catch(e=>{
       console.log(e);

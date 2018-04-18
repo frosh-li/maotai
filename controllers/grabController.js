@@ -1,21 +1,21 @@
 const MaotaiService = require('../tools/service');
 let fs = require('fs');
-var mysql      = require('mysql');
+//var mysql      = require('mysql');
 let logger = require('../controllers/logger');
 
 class GrabController {
   constructor(account, callback){
     console.log(account);
     this.account = account;
-
-    this.connection = mysql.createConnection({
-      host     : 'localhost',
-      user     : 'root',
-      password : '123456',
-      database : 'accounts'
-    });
+    //
+    // this.connection = mysql.createConnection({
+    //   host     : 'localhost',
+    //   user     : 'root',
+    //   password : '123456',
+    //   database : 'accounts'
+    // });
     this.callback = callback;
-    this.connection.connect();
+    // this.connection.connect();
     this.startBind();
   }
 
@@ -62,15 +62,6 @@ class GrabController {
       })
   }
 
-  updateAccountBindInfo() {
-    let conn = this.connection;
-    conn.query(
-      ` update
-        accounts
-        set bandShopId = "${this.shopID}"
-        where phone = "${this.account.phone}"
-      `, this.callback)
-  }
 }
 
 module.exports = GrabController;

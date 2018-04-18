@@ -1,6 +1,6 @@
 const MaotaiService = require('../tools/service');
 let fs = require('fs');
-var mysql      = require('mysql');
+//var mysql      = require('mysql');
 let logger = require('../controllers/logger');
 
 class BindNetwork {
@@ -8,14 +8,14 @@ class BindNetwork {
     console.log(account, shopID);
     this.account = account;
     this.shopID = shopID
-    this.connection = mysql.createConnection({
-      host     : 'localhost',
-      user     : 'root',
-      password : '123456',
-      database : 'accounts'
-    });
+    // this.connection = mysql.createConnection({
+    //   host     : 'localhost',
+    //   user     : 'root',
+    //   password : '123456',
+    //   database : 'accounts'
+    // });
     this.callback = callback;
-    this.connection.connect();
+    //this.connection.connect();
     this.startBind();
   }
 
@@ -25,7 +25,8 @@ class BindNetwork {
         return MaotaiService.bindNetwork(this.account.phone, this.shopID, j);
       })
       .then(data => {
-        this.updateAccountBindInfo();
+          this.callback(data);
+        //this.updateAccountBindInfo();
       })
       .catch(e => {
         return this.callback(e);

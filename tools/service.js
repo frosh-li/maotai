@@ -588,7 +588,7 @@ class MaotaiService {
                                 StockCount: StockCount,
                                 buyLimit: quantity,
                               });
-                            
+
                             })
                         }else{
                             // 如果下单成功，但是并没有返回正常的编码
@@ -1237,7 +1237,6 @@ class MaotaiService {
                   logger.info(error);
                   return reject(error);
               } else {
-                  logger.info("获取一次商品信息",account.phone, body);
                   let ret = JSON.stringify(body);
                   if (body.state === false) {
                       return reject("获取一次商品信息:" + body.msg);
@@ -1347,7 +1346,7 @@ class MaotaiService {
                   return resolve(body);
               }
           });
-        
+
 
       })
     }
