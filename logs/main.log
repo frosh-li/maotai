@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 [2018-04-19T00:03:40.187] [INFO] shanghai231310115001.json - 获取订单状态 13153185002
 [2018-04-19T00:03:41.648] [INFO] shanghai231310115001.json - 提交订单完成 13153185002 { state: true,
   code: 0,
@@ -194,3 +195,5 @@
 [2018-04-19T00:04:45.279] [INFO] shanghai231310115001.json - 提交订单完成 15935492346 { state: true,
   code: 0,
   data: '{"retcode":200,"retmsg":"success","count":0,"data":{"totel":1,"data":[{"id":780535,"platformId":null,"goodsId":391,"goodsCode":0,"receiptPhone":null,"receiptUsername":null,"receiptAddress":null,"regPhone":null,"regUserid":0,"equipId":null,"createTime":"2018-04-19 00:03:24.0","updateTime":null,"deliveryTime":null,"longitude":"121.563911","latitude":"31.26798","orderType":1,"sid":"231310115001","provinceCode":null,"cityCode":null,"areaCode":null,"ipAddr":null,"goodsNum":5,"orderStatus":3,"extJson":null,"goodsName":"贵州茅台酒 (新飞天) 53%vol 500ml","goodsImage":"/upload/fileStore/20180415/6365942315164224808933821.jpg","orderId":null,"goodsPrice":null,"goodsSum":null,"freight":null,"deliveryType":0,"remark":""}],"oii":{"qdStartTime":"09:00:00","qdEndTime":"18:00:00","invalidMinutes":60,"nonWorkingInvalidTime":"10:00:00"}}}' }
+=======
+>>>>>>> Stashed changes
