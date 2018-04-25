@@ -2,6 +2,7 @@ const MaotaiService = require('../tools/service');
 let fs = require('fs');
 //var mysql      = require('mysql');
 let logger = require('../controllers/logger');
+const proxy = require('./proxy');
 
 class GrabController {
   constructor(account, callback){
@@ -21,21 +22,21 @@ class GrabController {
 
   startBind() {
     let scopeJar = null;
-    MaotaiService.getCurrentJar(this.account.phone)
+    proxy.switchIp()
+      .then(() => {
+          return MaotaiService.getCurrentJar(this.account.phone)
+      })
       .then(j => {
         scopeJar = j;
         // return MaotaiService.getProductInfo(this.account, this.account.addressId, scopeJar);
         return MaotaiService.GrabLogin(this.account, this.account.addressId, scopeJar);
       })
-
       .then(data => {
-        if(data.code !== 0){
-          return this.callback(data);
+        if(data.code == 0){
+            return MaotaiService.GrabSubmit(this.account, this.account.addressId, scopeJar);
+        }else{
+          return Promise.reject("已经登记过了");
         }
-        return MaotaiService.GrabDefaultAdd(this.account, this.account.addressId, scopeJar);
-      })
-      .then(data => {
-        return MaotaiService.GrabSubmit(this.account, this.account.addressId, scopeJar);
       })
       .then(data => {
         console.log(data);

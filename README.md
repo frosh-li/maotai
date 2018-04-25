@@ -192,3 +192,21 @@ http://api.tay8.com/msgcode/api/do.php?action=cancelAllRecv&token=F98117E24A3546
 
 
 // 117.263017,31.836663  15公里范围内可以全覆盖
+
+
+
+
+#### 活动页面
+
+https://www.cmaotai.com/YsH5/page/Activity/Dealer.html?sid=152520383001
+
+#### 订单详情页面
+https://www.cmaotai.com/YsH5/page/Activity/Order.html?c=85996861d6d5460aac6f18ccd53dd08f
+
+
+### HTML页面的获取阿里验证码
+
+https://diablo.alibaba.com/captcha/click/get.jsonp?sessionid=0152JIZgtMjy7iQLwB8JakWYmbCT-DhqmSbIM_uEaNpCsy4q5IvbDmkkTTuBye7elp5UiC6AxH1jxgsfVMPmsSTCPgmTM7LReHLecaxLu9dd4VzCnE8AM8wEwCH2x536UL5AuSV_hmv2nXACvU3uX_Dw&identity=FFFF00000000016A8646&style=ncc&lang=cn&v=918&callback=jsonp_08377122472037852
+
+#### 网点查询
+https://www.cmaotai.com//API/Servers.ashx?action=StatisticsManager.SearchNetwork&prov=350000&timestamp121=1524637948785
