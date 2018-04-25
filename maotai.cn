@@ -18,7 +18,30 @@ curl 'https://www.emaotai.cn/login.aspx' -H 'Pragma: no-cache' -H 'Origin: https
 
 https://www.emaotai.cn/wapshop/SubmmitOrder.aspx?productSku=9_0&sigUpProductBuy=3&buyAmount=5
 
+https://www.emaotai.cn//SubmmitOrder.aspx?productId=9&sigUpProductBuy=3&qty=5
+/SubmmitOrder.aspx?productId=9&sigUpProductBuy=3&qty=5
+
 
 curl 'https://www.emaotai.cn/API/VshopProcess.ashx' -H 'Pragma: no-cache' -H 'Origin: https://www.emaotai.cn' -H 'Accept-Encoding: gzip, deflate, br' -H 'Accept-Language: zh-CN,zh;q=0.8,en;q=0.6' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36' -H 'Content-Type: application/x-www-form-urlencoded; charset=UTF-8' -H 'Accept: application/json, text/javascript, */*; q=0.01' -H 'Cache-Control: no-cache' -H 'X-Requested-With: XMLHttpRequest' -H 'Cookie: _uab_collina=152415437273622234441865; Hm_lvt_3b97352bf7acd895b6c95cdc51ade387=1524154444,1524234264; acw_tc=AQAAAEvASzVHlgMAt+0ic7eBLj1NJuhh; .Hidistro=F1F9D0727AF1F6AB6F58BBFC224B8829D3D4536E6FE8B3A2C00B32CB45EDD29423EC0F3D9AFD9F719DD6427D28B5E748AA462574E146C8506D804DB6A8D4986A3E91364FCB2E40F56CBADCF5F74E4F4D7C2E676C3A25A9B8A7619E9A82133E820C12385C1A0F5C71A4FB9C84; Hm_lvt_c3450451979c90e739797559911899fd=1522158356,1524154358,1524224512,1524277961; Hm_lpvt_c3450451979c90e739797559911899fd=1524278023; .HishopRoles=fq8DvuVjaD9xN6y5ULDlmodEJy2dIogunuIYGvIAMDUgU6oygqVBBMLH_ua0_UF2XdYbu3WVGWlWZL7TKoPgGdlO2jtGWwOdqxAoCb31t_hDD3o0v-pfujQKNRpFv3JI6BEr1W4vqpQnNy65Imn9AW23eFAj-MzIYZYm9mkOKtHLRypefGzdkUji7_Tl2GeHC5cO_yeGExuqCPjyqEMZJObnXW64mYnJKXCll0nWdCtR4zOW8maliBf51ABwjU9Rfu1maNVJdGm_DvFLBfb7XQnx76XIGVfhJTxNmLCzsbq-6gvJ1RU_S8SoStEZCxdJCYHPA4rSayx2PL7xo5o_HwNOm51XEjJ8jR9J-jwrdlXq49hOSjchUwiybpvFG8aEjQuhXpUx4oZDxHvfrB05L__Bfm3hpmM2rFCJsdd84sQsRRvSsdEyJTdsFUg9S845JfTvRvLjwfNk7-FOtRsMjDrVcLb1_U93o0KgwkIgNJa_Y_YL14__OWhG7RwynuW3fGRCcQ2; _umdata=687470CAAF005E4D2F4889D6AD201BAB9F079EB75CA357D2651EF1801256265450DE77014B77BC7BCD43AD3E795C914C32295DAEE2F897D2149AB86B96543285; SERVERID=e92fc5ae50c6c9e1254f422ed2e42940|1524278715|1524277960' -H 'Connection: keep-alive' -H 'Referer: https://www.emaotai.cn/wapshop/SubmmitOrder.aspx?productSku=9_0&sigUpProductBuy=3&buyAmount=5' --data 'action=Submmitorder&shippingType=13&paymentType=-5&couponCode=&productSku=9_0&Bundlingid=&buyAmount=5&from=&shiptoDate=%E6%97%B6%E9%97%B4%E4%B8%8D%E9%99%90&groupbuyId=&remark=&selectInvoice=777129&session=0152JIZgtMjy7iQLwB8JakWRXXRhohzrOoPJ03H48AmHD4_fTfmC5p0UrWfmbMhprLdS6G3dm29zgvvyB_G91HhYnUOWxeq8JuuR6JLT9pOhEVzCnE8AM8wEwCH2x536UL5AuSV_hmv2nXACvU3uX_Dw&sig=05a1C7nT4bR5hcbZlAujcdyXquG0EzLazJTxThdXHob4AoJCU-kzEHo75C57Zd6BpKg9P1JGvCNHXSFprZtw8s_j683C9Ocjb-MK_dskJx3ihiGp4-RSlo2wwzH2kqN58cjcwdAzSKx4aZt-qJLrFwF0draKtHYIkg3dolhNsGt_e07ZCjiKF3rcNXdyCT9UQ_BKl6S65FU_NA0nrBmFPi3e5tSjxXRYrHdDeTottTqqK33pNhPMcw5ZGupGAM0IywRLU8meK4z9ghkNSWQFnJTPbXV7pBrcGZM5ILdJYZxtNPqnEXdARz_FpTx-6olgwvPRkVLWbPjPgc_kP0-Qd1BF7r8fVh5810wixP14Tdco5J1A8JHQvGq76GWCll38IitsE45DvN7ZUMoD2VYltFXg&token=FFFF00000000016A8646%3A1524278689998%3A0.6883848734323377&scene=other&orderSource=4&chkAgree=true&sigUpProductBuy=3' --compressed
 
 
+
+
+
+
+https://cf.aliyun.com/nocaptcha/analyze.jsonp?a=FFFF00000000016A8646&t=FFFF00000000016A8646%3A1524451175787%3A0.6001129724361831&n=107%23ssOp1zS9sjRHuHCCgPkDXzT1XnIgg%2FpyPKXETN0vgLIglJCLzgaqlXFqJrK8yM0ZXJ2Pis2FPzlDsYx0P894xvKLjjHwgOp3O7%2B4rbv6VFEWTZtgvcBt67UL91QXr91798lrTaYhIOv6Mbb4xcvd2Ma7Kezbpr90GvWO2S8R3ePlk0LL8Z1r40mkpK%2B%2F6QiuKIRUKwJtbzBfj7YzEJ6rhbm7uFQlH%2B%2Bg%2BWK6Sa2csz54bTefzsanP1YTO2HaMlrHPEakQxFTKRn2so5Z11jcPbnXzIrlj8t4xOvb%2FHEXpGsR9SkEUzBWakYY81BZ%2FAHupZm1jG4NkH8%2BNnE9gl8AeBvsDFam4s6PLZAQVp8RAKc9vS%2FHeNzwd%2FdYy2%2FvTyeujXOTQnWMGMmCCOgoadPzejBbVG6mO%2BNwT8%2BVm3VB%2F%2FVeQpirtNb4hArSlxHApaQcH6Y7t%2F8PsSSgkQFUPNwELt0IQ3xRa1pi9p%2Blgu1f0O3ZT1QwLSwMmnV8%2BIZvStYDQw3pgGNg4jsKVOea%2Fii31sfSMp%2B8ImRveVACBASVsOwBPLSAgi8zcP0agh86SGWwCaNTL8au%2BxByWE4hi%2BU1iOv6HodUVRHvVpMZXk%2FsGugf3JmYauSQo1YfxhjZB6HxoAwtc9f0uTkelfRKls%3D%3D&p=%7B%22ncSessionID%22%3A%2234702be964a62%22%7D&scene=login&asyn=0&lang=cn&v=918&callback=jsonp_030002265611815404
+
+
+
+url: ajaxURL.analyze,
+callback: "callback",
+data: {
+  a: opt.appkey,
+  t: opt.token,
+  n: n.__uab.getUA && n.__uab.getUA(n.__uaoption) || win._n || (UA_Opt.LogVal ? win[UA_Opt.LogVal] : "") || "",
+  _a: "audio",
+  p: _.obj2str(opt.trans),
+  lang: opt.language,
+  scene: opt.scene,
+  v: inn_vars.v
+},

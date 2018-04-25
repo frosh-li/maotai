@@ -36,6 +36,10 @@ var logger = require('../controllers/logger');
 
 const DELAY = 1000;
 
+function onJSONPCallback(data) {
+  return data;
+}
+
 class MaotaiService {
     initCookiePath(path){
       j = request.jar(new Filecookietore('./cookies/'+path+'.json'));
@@ -84,6 +88,24 @@ class MaotaiService {
         let signString = "7c60b232d79d34d727c12c6f33ad8fea29ebb333ae0c1b3822e5a18934c8f189";
         let appIndentSign = this.md5([os, version, appIndent, signString].join("-"));
         return `Mozilla/5.0 (Linux; Android 4.4.4; LA2-SN Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36[${os}/${version}/${appIndent}/${appIndentSign}]`;
+    }
+
+    netCode() {
+      let url = 'https://diablo.alibaba.com/captcha/click/get.jsonp?sessionid=0152JIZgtMjy7iQLwB8JakWYmbCT-DhqmSbIM_uEaNpCsy4q5IvbDmkkTTuBye7elp5UiC6AxH1jxgsfVMPmsSTCPgmTM7LReHLecaxLu9dd4VzCnE8AM8wEwCH2x536UL5AuSV_hmv2nXACvU3uX_Dw&identity=FFFF00000000016A8646&style=ncc&lang=cn&v=918&';
+      let options = {
+            method: 'get',
+            url: url,
+            json:true
+        };
+      return new Promise((resolve, reject) => {
+            request(options, function(error, response, body) {
+                if (error) {
+                    return reject(error);
+                }
+                let output = eval(body)
+                return resolve(output)
+            });
+        })
     }
         /**
          * login - 登录
@@ -1285,8 +1307,6 @@ class MaotaiService {
                   logger.info(error);
                   return reject(error);
               } else {
-                  logger.info("提交订单完成",account.phone, body);
-                  let ret = JSON.stringify(body);
                   if (body.state === false) {
                       return reject("没有订单:" + body.msg);
                   }

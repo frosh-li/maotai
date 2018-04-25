@@ -55,7 +55,12 @@ function start() {
     .catch(e => {
       logger.error(e);
       // 退回继续登录
-      originPhones.unshift(user);
+      if(e.message.indexOf('密码错误') > -1){
+        
+      }else{
+        originPhones.unshift(user);
+      }
+      
       start();
     })
 

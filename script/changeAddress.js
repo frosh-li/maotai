@@ -196,7 +196,7 @@ function checkPhone(){
 // 116.432727,39.942379
 // 120.611097,31.302083
 // 121.626624,31.183456 上海市浦东新区长城中环墅|232号
-let geos = Utils.randomGeo(31.183456, 121.626624, 15, phones.length);
+let geos = Utils.randomGeo(31.183456, 121.626624, 5, phones.length);
 
 let getAddressCounter = 0;
 geos.forEach(item => {
