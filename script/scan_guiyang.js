@@ -6,9 +6,18 @@ const request = require('request');
 const fs = require('fs');
 const path = require('path');
 const Utils = require('../services/utils');
-var networks = require('../network_zhengzhou.json');
+var networks = require('../networks/520000.json');
+// var networks = [
+// 	{
+//         "id": "152520100028",
+//         "name": "贵州鸿福喜运贸易有限公司贵阳市专卖店",
+//         "address": "贵阳市云岩区北京路219号银海元隆广场10栋1层3号",
+//         "tel": "0851-86820969 13608509166",
+//         "dname": "贵州鸿福喜运贸易有限公司"
+//     }
+//]
 
-var accounts = require('../accounts/410000.json')
+var accounts = require('../accounts/zhang_saoma.json')
 
 const Filecookietore = require('tough-cookie-filestore');
 // const accounts = require('../accounts/accounts');
@@ -122,10 +131,10 @@ class ScanActivity {
 								console.log('可以购买', JSON.stringify(act));
 								if(act.Pid === 391){
 									if(act.LimitCount >= 5){
-										this.buy(act.ID, act.LimitCount,act.Pid, network)
+										//this.buy(act.ID, act.LimitCount,act.Pid, network)
 									}
 								}else{
-									this.buy(act.ID, act.LimitCount,act.Pid, network)
+									//this.buy(act.ID, act.LimitCount,act.Pid, network)
 								}
 							}
 						}
@@ -193,7 +202,7 @@ class ScanActivity {
 	}
 }
 
-let scanActivity = new ScanActivity(5);
+let scanActivity = new ScanActivity(1);
 
 scanActivity.start();
 
