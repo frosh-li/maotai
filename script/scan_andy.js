@@ -6,12 +6,9 @@ const request = require('request');
 const fs = require('fs');
 const path = require('path');
 const Utils = require('../services/utils');
-var networks = require('../networks/');
+var networks = require('../network_zhengzhou.json');
 
-var accounts = require('../allAccounts.json')
-if(process.argv[2]){
-	accounts = require(process.argv[2]);
-}
+var accounts = require('../accounts/410000.json')
 
 const Filecookietore = require('tough-cookie-filestore');
 // const accounts = require('../accounts/accounts');
