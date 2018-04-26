@@ -131,10 +131,8 @@ class ScanActivity {
 								console.log('可以购买', JSON.stringify(act));
 								if(act.Pid === 391){
 									if(act.LimitCount >= 5){
-										//this.buy(act.ID, act.LimitCount,act.Pid, network)
+										this.buy(act.ID, act.LimitCount,act.Pid, network)
 									}
-								}else{
-									//this.buy(act.ID, act.LimitCount,act.Pid, network)
 								}
 							}
 						}
@@ -202,7 +200,7 @@ class ScanActivity {
 	}
 }
 
-let scanActivity = new ScanActivity(1);
+let scanActivity = new ScanActivity(5);
 
 scanActivity.start();
 

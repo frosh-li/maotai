@@ -268,6 +268,91 @@ router.post('/maotai/getOrder/', (req, res, next) => {
 
 })
 
+router.get('/maotai/orderDetail/', (req, res, next) => {
+  let tel = req.query.tel;
+  let pass = req.query.pass;
+  let oid = req.query.oid;
+  console.log(tel, pass, oid);
+  let userAgent = MaotaiService.userAgent(tel);
+  let now = +new Date();
+  let options = {
+      method: 'POST',
+      url: 'https://www.cmaotai.com/API/Servers.ashx',
+      headers: MaotaiService.headers(userAgent),
+      form: {
+          action: 'UserManager.login',
+          tel: tel,
+          pwd: pass,
+          timestamp121: now
+      },
+      json:true,
+      jar:true
+  };
+
+
+  request(options, function(error, response, body) {
+      if (error) {
+        console.log(error);
+        return res.json({
+          status: 500,
+          error: error.message
+        });
+      }
+      if (body.state === true && body.code === 0) {
+          console.log("登录成功");
+          let userid = body.data.userId
+          let now = +new Date();
+          options = {
+              method: 'POST',
+              jar:true,
+              url: 'https://www.cmaotai.com/API/Servers.ashx',
+              headers: {
+                  'cache-control': 'no-cache',
+                  'content-type': 'application/x-www-form-urlencoded'
+              },
+              form: {
+                  action: 'OrderManager.OrderDetails',
+                  oid: oid,
+                  timestamp121: now,
+              },
+              json:true
+          };
+
+          return new Promise((resolve, reject) => {
+            request(options, function(error, response, body) {
+                if (error) {
+                    console.log(error);
+                    return res.json({
+                      status: 500,
+                      error: error.message
+                    });
+                }
+                console.log(body);
+                if(body.data){
+                  return res.json({
+                    status: 200,
+                    data: `${tel} ${pass} ${oid} 提货密码:${body.data.OrderPassword} 订单金额:${body.data.Order.OrderTotal}`
+                  })
+                }else{
+                  return res.json({
+                    status: 200,
+                    data: []
+                  })
+                }
+            });
+          })
+      } else {
+          console.log(error);
+          return res.json({
+            status: 500,
+            error: '登录失败:'+tel+':'+pass+':'+body.msg
+          });
+          // return reject(new Error('登录失败:'+tel+':'+pass+':'+body.msg));
+      }
+  });
+
+})
+
 router.post('/maotai/multiOrder', (req, res, next) => {
   console.log(req.body.tels);
   let tels = req.body.tels.split("|");      // 电话

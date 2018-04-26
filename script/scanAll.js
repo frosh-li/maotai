@@ -6,9 +6,18 @@ const request = require('request');
 const fs = require('fs');
 const path = require('path');
 const Utils = require('../services/utils');
-var networks = require('../networks/');
+var networks = require('../networks/120000.json');	// 天津
+networks = networks.concat(require('../networks/130000.json')); // 河北
+networks = networks.concat(require('../networks/410000.json')); // 河南
+networks = networks.concat(require('../networks/370000.json'));
+networks = networks.concat(require('../networks/620100.json')); // 兰州
+networks = networks.concat(require('../networks/610100.json'));
+networks = networks.concat(require('../networks/510000.json'));
+networks = networks.concat(require('../networks/350000.json'));
+networks = networks.concat(require('../networks/340000.json'));
+networks = require('../networks/');
+var accounts = require('../accounts/huiwei.json')
 
-var accounts = require('../allAccounts.json')
 if(process.argv[2]){
 	accounts = require(process.argv[2]);
 }
@@ -147,6 +156,10 @@ class ScanActivity {
 
 	buy(cid, quant, pid, network){
 		return new Promise((resolve, reject) => {
+			if(quant < 5){
+				console.log('数量过少不下单');
+				return resolve([]);
+			}
 			this.getCurrentJar(this.account.phone)
 				.then(cookieJar => {
 					let options = {
@@ -177,6 +190,7 @@ class ScanActivity {
 
 					request(options, (error, response, body) => {
 						if(error){
+							console.log('下单异常', error.message);
 							return resolve([]);
 						}
 						console.log('开始下单', cid,this.account.phone,this.account.pass, quant, JSON.stringify(body), JSON.stringify(network));
@@ -196,7 +210,7 @@ class ScanActivity {
 	}
 }
 
-let scanActivity = new ScanActivity(5);
+let scanActivity = new ScanActivity(10);
 
 scanActivity.start();
 
