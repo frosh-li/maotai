@@ -8,6 +8,7 @@ const proxy = require('../controllers/proxy');
 const fs = require('fs');
 const path = require('path');
 const watchController = require('../controllers/watchController');
+const autoOrderController = require('../script/autoOrderByCode.js');
 var Filecookietore = require('tough-cookie-filestore');
 router.get('/maotai/index.html', function(req, res, next) {
   res.render('homepage.html');
@@ -597,6 +598,15 @@ router.get('/maotai/watch', (req, res, next) => {
   let watch = new watchController();
   watch.startWatch(req, res, next);
 });
+
+router.get('/maotai/setOrder/:code', (req, res, next) => {
+  let code = req.params.code;
+  if(!code){
+    return res.send('请传入正确的二维码编码');
+  }
+  new autoOrderController(code);
+  res.send("下单完成，请点击查看<a href='/public/output/20180429.json' />下单信息</a>")
+})
 
 
 module.exports = router;

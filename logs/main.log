@@ -1,4 +1,52 @@
-[2018-04-28T14:29:24.217] [INFO] 监控 - start get addressID from mobile: 15515970953
-[2018-04-28T14:29:24.380] [INFO] 监控 - {"state":false,"code":9999,"msg":"用户未登陆"}
-[2018-04-28T14:29:24.380] [INFO] 监控 - 全部登录完成
-[2018-04-28T14:29:24.381] [INFO] 监控 - 全部登录完成
+[2018-04-29T04:50:29.128] [INFO] 391 - params [ '/usr/local/bin/node',
+  '/Users/junliang/server/www/maotaiServer/script/buyFixedActFor1399.js',
+  '391',
+  'cf54dc6ae256472bbe09731105e05293',
+  '0',
+  '{"address":"项城市迎宾大道鑫苑名城","sid":"141412702001","MarketPrice":1499,"Price":1499}',
+  '[{"phone":"13573579257","pass":"zjw1314"},{"phone":"18357477024","pass":"zjw1314"},{"phone":"13962310128","pass":"zjw1314"},{"phone":"18550125596","pass":"zjw1314"},{"phone":"13914949281","pass":"zjw1314"},{"phone":"15101904404","pass":"zjw1314"},{"phone":"13958862487","pass":"zjw1314"},{"phone":"15674891274","pass":"zjw1314"},{"phone":"17826613020","pass":"zjw1314"},{"phone":"13573579257","pass":"zjw1314"},{"phone":"13706644202","pass":"zjw1314"},{"phone":"17742561232","pass":"zjw1314"},{"phone":"18367129040","pass":"zjw1314"},{"phone":"15684099299","pass":"zjw1314"},{"phone":"18021636890","pass":"zjw1314"},{"phone":"15370150446","pass":"zjw1314"},{"phone":"15962272631","pass":"zjw1314"},{"phone":"18336492326","pass":"zjw1314"},{"phone":"15651776037","pass":"zjw1314"},{"phone":"15895625015","pass":"zjw1314"},{"phone":"13773024105 ","pass":"zjw1314"},{"phone":"18501521650","pass":"zjw1314"},{"phone":"13328029369","pass":"zjw1314"},{"phone":"15862853769","pass":"zjw1314"},{"phone":"15138185612  ","pass":"zjw1314"},{"phone":"17601461170","pass":"zjw1314"},{"phone":"13862320374","pass":"zjw1314"},{"phone":"18261738520 ","pass":"zjw1314"},{"phone":"13140969226","pass":"zjw1314"},{"phone":"15088597519","pass":"zjw1314"},{"phone":"13179621132","pass":"zjw1314"},{"phone":"17601461170","pass":"zjw1314"},{"phone":"18606193868","pass":"zjw1314"},{"phone":"17798575587","pass":"zjw1314"},{"phone":"18556737482","pass":"zjw1314"},{"phone":"18651672992","pass":"zjw1314"},{"phone":"13291083620","pass":"zjw1314"},{"phone":"15050357604","pass":"zjw1314"},{"phone":"18552449004","pass":"d963378484"},{"phone":"18550840530","pass":"d963378484"},{"phone":"15963577987","pass":"d963378484"},{"phone":"17712633629","pass":"d963378484"},{"phone":"13182295162","pass":"d963378484"},{"phone":"15850804366","pass":"d963378484"},{"phone":"18074442111","pass":"d963378484"}]' ]
+[2018-04-29T04:50:29.248] [INFO] 391 - start buy 13573579257 zjw1314 cf54dc6ae256472bbe09731105e05293 0 { state: false, code: 1, msg: '购买数量必须大于0' }
+[2018-04-29T04:50:29.336] [INFO] 391 - start buy 18357477024 zjw1314 cf54dc6ae256472bbe09731105e05293 0 { state: false, code: 1, msg: '购买数量必须大于0' }
+[2018-04-29T04:50:29.428] [INFO] 391 - start buy 13962310128 zjw1314 cf54dc6ae256472bbe09731105e05293 0 { state: false, code: 1, msg: '购买数量必须大于0' }
+[2018-04-29T04:50:29.493] [INFO] 391 - start buy 18550125596 zjw1314 cf54dc6ae256472bbe09731105e05293 0 { state: false, code: 1, msg: '购买数量必须大于0' }
+[2018-04-29T04:50:29.577] [INFO] 391 - start buy 13914949281 zjw1314 cf54dc6ae256472bbe09731105e05293 0 { state: false, code: 1, msg: '购买数量必须大于0' }
+[2018-04-29T04:50:29.662] [INFO] 391 - start buy 15101904404 zjw1314 cf54dc6ae256472bbe09731105e05293 0 { state: false, code: 1, msg: '购买数量必须大于0' }
+[2018-04-29T04:50:29.729] [INFO] 391 - start buy 13958862487 zjw1314 cf54dc6ae256472bbe09731105e05293 0 { state: false, code: 1, msg: '购买数量必须大于0' }
+[2018-04-29T04:50:29.820] [INFO] 391 - start buy 15674891274 zjw1314 cf54dc6ae256472bbe09731105e05293 0 { state: false, code: 1, msg: '购买数量必须大于0' }
+[2018-04-29T04:50:29.909] [INFO] 391 - start buy 17826613020 zjw1314 cf54dc6ae256472bbe09731105e05293 0 { state: false, code: 1, msg: '购买数量必须大于0' }
+[2018-04-29T04:50:29.995] [INFO] 391 - start buy 13573579257 zjw1314 cf54dc6ae256472bbe09731105e05293 0 { state: false, code: 1, msg: '购买数量必须大于0' }
+[2018-04-29T04:50:30.084] [INFO] 391 - start buy 13706644202 zjw1314 cf54dc6ae256472bbe09731105e05293 0 { state: false, code: 1, msg: '购买数量必须大于0' }
+[2018-04-29T04:50:30.167] [INFO] 391 - start buy 17742561232 zjw1314 cf54dc6ae256472bbe09731105e05293 0 { state: false, code: 1, msg: '购买数量必须大于0' }
+[2018-04-29T04:50:30.224] [INFO] 391 - start buy 18367129040 zjw1314 cf54dc6ae256472bbe09731105e05293 0 { state: false, code: 1, msg: '购买数量必须大于0' }
+[2018-04-29T04:50:30.304] [INFO] 391 - start buy 15684099299 zjw1314 cf54dc6ae256472bbe09731105e05293 0 { state: false, code: 1, msg: '购买数量必须大于0' }
+[2018-04-29T04:50:30.377] [INFO] 391 - start buy 18021636890 zjw1314 cf54dc6ae256472bbe09731105e05293 0 { state: false, code: 1, msg: '购买数量必须大于0' }
+[2018-04-29T04:50:30.464] [INFO] 391 - start buy 15370150446 zjw1314 cf54dc6ae256472bbe09731105e05293 0 { state: false, code: 1, msg: '购买数量必须大于0' }
+[2018-04-29T04:50:30.549] [INFO] 391 - start buy 15962272631 zjw1314 cf54dc6ae256472bbe09731105e05293 0 { state: false, code: 1, msg: '购买数量必须大于0' }
+[2018-04-29T04:50:30.605] [INFO] 391 - start buy 18336492326 zjw1314 cf54dc6ae256472bbe09731105e05293 0 { state: false, code: 1, msg: '购买数量必须大于0' }
+[2018-04-29T04:50:30.695] [INFO] 391 - start buy 15651776037 zjw1314 cf54dc6ae256472bbe09731105e05293 0 { state: false, code: 1, msg: '购买数量必须大于0' }
+[2018-04-29T04:50:30.781] [INFO] 391 - start buy 15895625015 zjw1314 cf54dc6ae256472bbe09731105e05293 0 { state: false, code: 1, msg: '购买数量必须大于0' }
+[2018-04-29T04:50:30.873] [INFO] 391 - start buy 13773024105  zjw1314 cf54dc6ae256472bbe09731105e05293 0 { state: false, code: 1, msg: '购买数量必须大于0' }
+[2018-04-29T04:50:30.945] [INFO] 391 - start buy 18501521650 zjw1314 cf54dc6ae256472bbe09731105e05293 0 { state: false, code: 1, msg: '购买数量必须大于0' }
+[2018-04-29T04:50:31.030] [INFO] 391 - start buy 13328029369 zjw1314 cf54dc6ae256472bbe09731105e05293 0 { state: false, code: 1, msg: '购买数量必须大于0' }
+[2018-04-29T04:50:31.117] [INFO] 391 - start buy 15862853769 zjw1314 cf54dc6ae256472bbe09731105e05293 0 { state: false, code: 1, msg: '购买数量必须大于0' }
+[2018-04-29T04:50:31.192] [INFO] 391 - start buy 15138185612   zjw1314 cf54dc6ae256472bbe09731105e05293 0 { state: false, code: 1, msg: '购买数量必须大于0' }
+[2018-04-29T04:50:31.258] [INFO] 391 - start buy 17601461170 zjw1314 cf54dc6ae256472bbe09731105e05293 0 { state: false, code: 1, msg: '购买数量必须大于0' }
+[2018-04-29T04:50:31.346] [INFO] 391 - start buy 13862320374 zjw1314 cf54dc6ae256472bbe09731105e05293 0 { state: false, code: 1, msg: '购买数量必须大于0' }
+[2018-04-29T04:50:31.493] [INFO] 391 - start buy 18261738520  zjw1314 cf54dc6ae256472bbe09731105e05293 0 { state: false, code: 1, msg: '购买数量必须大于0' }
+[2018-04-29T04:50:31.568] [INFO] 391 - start buy 13140969226 zjw1314 cf54dc6ae256472bbe09731105e05293 0 { state: false, code: 1, msg: '购买数量必须大于0' }
+[2018-04-29T04:50:31.653] [INFO] 391 - start buy 15088597519 zjw1314 cf54dc6ae256472bbe09731105e05293 0 { state: false, code: 1, msg: '购买数量必须大于0' }
+[2018-04-29T04:50:31.737] [INFO] 391 - start buy 13179621132 zjw1314 cf54dc6ae256472bbe09731105e05293 0 { state: false, code: 1, msg: '购买数量必须大于0' }
+[2018-04-29T04:50:31.826] [INFO] 391 - start buy 17601461170 zjw1314 cf54dc6ae256472bbe09731105e05293 0 { state: false, code: 1, msg: '购买数量必须大于0' }
+[2018-04-29T04:50:31.895] [INFO] 391 - start buy 18606193868 zjw1314 cf54dc6ae256472bbe09731105e05293 0 { state: false, code: 1, msg: '购买数量必须大于0' }
+[2018-04-29T04:50:31.954] [INFO] 391 - start buy 17798575587 zjw1314 cf54dc6ae256472bbe09731105e05293 0 { state: false, code: 1, msg: '购买数量必须大于0' }
+[2018-04-29T04:50:32.016] [INFO] 391 - start buy 18556737482 zjw1314 cf54dc6ae256472bbe09731105e05293 0 { state: false, code: 1, msg: '购买数量必须大于0' }
+[2018-04-29T04:50:32.105] [INFO] 391 - start buy 18651672992 zjw1314 cf54dc6ae256472bbe09731105e05293 0 { state: false, code: 1, msg: '购买数量必须大于0' }
+[2018-04-29T04:50:32.190] [INFO] 391 - start buy 13291083620 zjw1314 cf54dc6ae256472bbe09731105e05293 0 { state: false, code: 1, msg: '购买数量必须大于0' }
+[2018-04-29T04:50:32.283] [INFO] 391 - start buy 15050357604 zjw1314 cf54dc6ae256472bbe09731105e05293 0 { state: false, code: 1, msg: '购买数量必须大于0' }
+[2018-04-29T04:50:32.345] [INFO] 391 - start buy 18552449004 d963378484 cf54dc6ae256472bbe09731105e05293 0 { state: false, code: 1, msg: '购买数量必须大于0' }
+[2018-04-29T04:50:32.430] [INFO] 391 - start buy 18550840530 d963378484 cf54dc6ae256472bbe09731105e05293 0 { state: false, code: 1, msg: '购买数量必须大于0' }
+[2018-04-29T04:50:32.512] [INFO] 391 - start buy 15963577987 d963378484 cf54dc6ae256472bbe09731105e05293 0 { state: false, code: 1, msg: '购买数量必须大于0' }
+[2018-04-29T04:50:32.606] [INFO] 391 - start buy 17712633629 d963378484 cf54dc6ae256472bbe09731105e05293 0 { state: false, code: 1, msg: '购买数量必须大于0' }
+[2018-04-29T04:50:32.668] [INFO] 391 - start buy 13182295162 d963378484 cf54dc6ae256472bbe09731105e05293 0 { state: false, code: 1, msg: '购买数量必须大于0' }
+[2018-04-29T04:50:32.757] [INFO] 391 - start buy 15850804366 d963378484 cf54dc6ae256472bbe09731105e05293 0 { state: false, code: 1, msg: '购买数量必须大于0' }
+[2018-04-29T04:50:32.850] [INFO] 391 - start buy 18074442111 d963378484 cf54dc6ae256472bbe09731105e05293 0 { state: false, code: 1, msg: '购买数量必须大于0' }
