@@ -1,9 +1,118 @@
-[2018-04-26T17:01:59.860] [INFO] zhang_saoma.json - { state: true,
+[2018-04-28T10:18:21.413] [INFO] 391 - params [ '/usr/local/bin/node',
+  '/Users/junliang/server/www/maotaiServer/script/buyFixedAct.js',
+  '391',
+  'b59df00e4a9e49af80040eada2692567',
+  '5',
+  '{"id":"162623200001","name":"酒泉恒生实业有限责任公司酒泉市专卖店","address":"酒泉市肃州区洪洋商业广场西南角","tel":"0937-2889988 13909376638","dname":"酒泉恒生实业有限责任公司"}',
+  '[{"phone":"15588185801","pass":"a123456","addressId":2024314},{"phone":"15613930386","pass":"a123456","addressId":2024323},{"phone":"18346488109","pass":"a123456","addressId":2024332},{"phone":"13230672756","pass":"a123456","addressId":1951804},{"phone":"18183062125","pass":"a123456","addressId":1951807},{"phone":"18438063310","pass":"a123456","addressId":1951811},{"phone":"13935327172","pass":"a123456","addressId":1930782},{"phone":"18903188059","pass":"a123456","addressId":1930701},{"phone":"13313181385","pass":"a123456","addressId":1930707},{"phone":"13453301621","pass":"654321","addressId":1935797},{"phone":"15131828567","pass":"123456","addressId":1935809},{"phone":"15264711296","pass":"123456","addressId":1935812},{"phone":"15697680921","pass":"123456","addressId":1894280},{"phone":"15698229041","pass":"123456","addressId":1894170},{"phone":"15949806339","pass":"lhj0325","addressId":1935818},{"phone":"17757449525","pass":"123456","addressId":1894480},{"phone":"18131970041","pass":"123456","addressId":1847451},{"phone":"18232902912","pass":"108108li","addressId":1679931},{"phone":"18246626742","pass":"jss19860529","addressId":1935822},{"phone":"18253251389","pass":"123456","addressId":1843317},{"phone":"18810320392","pass":"12345678","addressId":1686181},{"phone":"18863572962","pass":"123456","addressId":1894344},{"phone":"15635316166","pass":"a123456","addressId":1961824},{"phone":"15535874373","pass":"a123456","addressId":1961826},{"phone":"18734572393","pass":"a123456","addressId":1961844},{"phone":"13843910857","pass":"a123456","addressId":1961870},{"phone":"13895490886","pass":"a123456","addressId":1961951},{"phone":"15081664435","pass":"a123456","addressId":1961952},{"phone":"15716559528","pass":"a123456","addressId":1961956},{"phone":"15121952364","pass":"a123456","addressId":1961957},{"phone":"15330512791","pass":"a123456","addressId":1961959},{"phone":"13283936032","pass":"a123456","addressId":1962184},{"phone":"18632369087","pass":"a123456","addressId":1962186},{"phone":"13290979032","pass":"a123456","addressId":1962187},{"phone":"13936763461","pass":"a123456","addressId":1962189},{"phone":"15081820867","pass":"a123456","addressId":1962191},{"phone":"15053052761","pass":"a123456","addressId":1962199},{"phone":"18434763969","pass":"a123456","addressId":1962204},{"phone":"15035399985","pass":"a123456","addressId":1962205},{"phone":"17131970724","pass":"a123456","addressId":1962215},{"phone":"17667374197","pass":"a123456","addressId":1962216},{"phone":"15505201939","pass":"a123456","addressId":1962224},{"phone":"18831099037","pass":"a123456","addressId":1969317},{"phone":"18534866149","pass":"a123456","addressId":1962233},{"phone":"15034681449","pass":"a123456","addressId":1962237},{"phone":"15257918657","pass":"a123456","addressId":1962220},{"phone":"13413723166","pass":"123456","addressId":1894654}]' ]
+[2018-04-28T10:18:24.881] [INFO] 391 - start buy 18903188059 a123456 b59df00e4a9e49af80040eada2692567 5 { state: true,
   code: 0,
   data: 
-   { TelPhone: '18188018830',
-     NickName: 'zhangning',
-     HeadPortrait: '/upload/fileStore/20170820/6363883105459200421259014.jpg',
+   { OrderId: 'MTYS201804280001569',
+     OrderPayMoney: 7495,
+     outoCloseTimeText: '04月28日13时18分' } }
+[2018-04-28T10:18:58.054] [INFO] 391 - start buy 15053052761 a123456 b59df00e4a9e49af80040eada2692567 5 { state: true,
+  code: 0,
+  data: 
+   { OrderId: 'MTYS201804280001578',
+     OrderPayMoney: 7495,
+     outoCloseTimeText: '04月28日13时18分' } }
+[2018-04-28T10:19:08.710] [INFO] 391 - start buy 15588185801 a123456 b59df00e4a9e49af80040eada2692567 5 { state: true,
+  code: 0,
+  data: 
+   { OrderId: 'MTYS201804280001580',
+     OrderPayMoney: 7495,
+     outoCloseTimeText: '04月28日13时19分' } }
+[2018-04-28T10:20:16.406] [INFO] 391 - start buy 15035399985 a123456 b59df00e4a9e49af80040eada2692567 5 { state: true, code: 2, data: { UserCount: 5, LimitCount: 5 } }
+[2018-04-28T10:21:17.215] [INFO] 391 - start buy 15035399985 a123456 b59df00e4a9e49af80040eada2692567 5 { state: true, code: 2, data: { UserCount: 5, LimitCount: 5 } }
+[2018-04-28T10:21:18.753] [INFO] 391 - start buy 15613930386 a123456 b59df00e4a9e49af80040eada2692567 5 { state: true,
+  code: 0,
+  data: 
+   { OrderId: 'MTYS201804280001610',
+     OrderPayMoney: 7495,
+     outoCloseTimeText: '04月28日13时21分' } }
+[2018-04-28T10:21:18.874] [INFO] 391 - start buy 18903188059 a123456 b59df00e4a9e49af80040eada2692567 5 { state: true, code: 2, data: { UserCount: 5, LimitCount: 5 } }
+[2018-04-28T10:21:22.090] [INFO] 391 - start buy 18246626742 jss19860529 b59df00e4a9e49af80040eada2692567 5 { state: true,
+  code: 0,
+  data: 
+   { OrderId: 'MTYS201804280001612',
+     OrderPayMoney: 7495,
+     outoCloseTimeText: '04月28日13时21分' } }
+[2018-04-28T10:21:22.207] [INFO] 391 - start buy 18246626742 jss19860529 b59df00e4a9e49af80040eada2692567 5 { state: true, code: 2, data: { UserCount: 5, LimitCount: 5 } }
+[2018-04-28T10:22:25.871] [INFO] 391 - start buy 15035399985 a123456 b59df00e4a9e49af80040eada2692567 5 { state: true, code: 2, data: { UserCount: 5, LimitCount: 5 } }
+[2018-04-28T10:22:25.966] [INFO] 391 - start buy 15121952364 a123456 b59df00e4a9e49af80040eada2692567 5 { state: true, code: 2, data: { UserCount: 5, LimitCount: 5 } }
+[2018-04-28T10:22:28.793] [INFO] 391 - start buy 17667374197 a123456 b59df00e4a9e49af80040eada2692567 5 { state: true,
+  code: 0,
+  data: 
+   { OrderId: 'MTYS201804280001635',
+     OrderPayMoney: 7495,
+     outoCloseTimeText: '04月28日13时22分' } }
+[2018-04-28T10:22:28.900] [INFO] 391 - start buy 18346488109 a123456 b59df00e4a9e49af80040eada2692567 5 { state: true, code: 2, data: { UserCount: 5, LimitCount: 5 } }
+[2018-04-28T10:22:31.372] [INFO] 391 - start buy 17131970724 a123456 b59df00e4a9e49af80040eada2692567 5 { state: true,
+  code: 0,
+  data: 
+   { OrderId: 'MTYS201804280001639',
+     OrderPayMoney: 7495,
+     outoCloseTimeText: '04月28日13时22分' } }
+[2018-04-28T10:23:19.660] [INFO] 391 - start buy 15034681449 a123456 b59df00e4a9e49af80040eada2692567 5 { state: true,
+  code: 0,
+  data: 
+   { OrderId: 'MTYS201804280001662',
+     OrderPayMoney: 7495,
+     outoCloseTimeText: '04月28日13时23分' } }
+[2018-04-28T10:23:24.984] [INFO] 391 - start buy 18253251389 123456 b59df00e4a9e49af80040eada2692567 5 { state: true,
+  code: 0,
+  data: 
+   { OrderId: 'MTYS201804280001664',
+     OrderPayMoney: 7495,
+     outoCloseTimeText: '04月28日13时23分' } }
+[2018-04-28T10:23:46.526] [INFO] 391 - start buy 18810320392 12345678 b59df00e4a9e49af80040eada2692567 5 { state: true,
+  code: 0,
+  data: 
+   { OrderId: 'MTYS201804280001673',
+     OrderPayMoney: 7495,
+     outoCloseTimeText: '04月28日13时23分' } }
+[2018-04-28T10:24:57.938] [INFO] 391 - start buy 15588185801 a123456 b59df00e4a9e49af80040eada2692567 5 { state: true, code: 2, data: { UserCount: 5, LimitCount: 5 } }
+[2018-04-28T10:24:58.092] [INFO] 391 - start buy 18253251389 123456 b59df00e4a9e49af80040eada2692567 5 { state: true, code: 2, data: { UserCount: 5, LimitCount: 5 } }
+[2018-04-28T10:24:58.223] [INFO] 391 - start buy 15535874373 a123456 b59df00e4a9e49af80040eada2692567 5 { state: false, code: 9999, msg: '用户未登陆' }
+[2018-04-28T10:51:00.724] [INFO] 监控 - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '17693185401',
+     NickName: '17693185401',
+     HeadPortrait: '',
+     SalemanState: -1,
+     AuthState: 1,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: '4aa2c778bbdd80fd19cb16d341cf9e72',
+     UserId: 2175268,
+     Name: '&17693185401' } }
+[2018-04-28T10:51:00.871] [INFO] 监控 - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '18189689730',
+     NickName: '我是神经病。',
+     HeadPortrait: '/upload/fileStore/20180119/6365191844055741145035513.jpg',
+     SalemanState: -1,
+     AuthState: 2,
+     IsLock: false,
+     IsConfirmationProtocol: true,
+     Certificate: null,
+     CertIdent: 'none',
+     HasPassword: true,
+     DeviceIdent: '62e557c5f50ea86c7d5e2d1f4e315605',
+     UserId: 1786029,
+     Name: '&18189689730' } }
+[2018-04-28T10:51:09.310] [INFO] 监控 - { state: true,
+  code: 0,
+  data: 
+   { TelPhone: '18189683207',
+     NickName: '18189683207',
+     HeadPortrait: '',
      SalemanState: -1,
      AuthState: -1,
      IsLock: false,
@@ -11,115 +120,94 @@
      Certificate: null,
      CertIdent: 'none',
      HasPassword: true,
-     DeviceIdent: '4c80f7914e73f45989bbfcdc5d60c31e',
-     UserId: 769366,
-     Name: '&18188018830' } }
-[2018-04-26T17:02:00.757] [ERROR] zhang_saoma.json - Error: 登录失败:17084467777:znhyy1314:密码错误
-    at Request._callback (/Users/junliang/server/www/maotaiServer/tools/service.js:147:35)
-    at Request.self.callback (/Users/junliang/server/www/maotaiServer/node_modules/request/request.js:186:22)
-    at emitTwo (events.js:126:13)
-    at Request.emit (events.js:214:7)
-    at Request.<anonymous> (/Users/junliang/server/www/maotaiServer/node_modules/request/request.js:1163:10)
-    at emitOne (events.js:116:13)
-    at Request.emit (events.js:211:7)
-    at IncomingMessage.<anonymous> (/Users/junliang/server/www/maotaiServer/node_modules/request/request.js:1085:12)
-    at Object.onceWrapper (events.js:313:30)
-    at emitNone (events.js:111:20)
-[2018-04-26T17:02:01.823] [INFO] zhang_saoma.json - { state: true,
+     DeviceIdent: '1d4a2506100e3e0dee81fdf2dcce95af',
+     UserId: 1853345,
+     Name: '&18189683207' } }
+[2018-04-28T10:51:09.433] [INFO] 监控 - { state: true,
   code: 0,
   data: 
-   { TelPhone: '18188018255',
-     NickName: '18188018255',
+   { TelPhone: '18219910361',
+     NickName: '18219910361',
      HeadPortrait: '',
      SalemanState: -1,
-     AuthState: -1,
-     IsLock: false,
-     IsConfirmationProtocol: false,
-     Certificate: null,
-     CertIdent: 'none',
-     HasPassword: true,
-     DeviceIdent: '8170206686d79336c425c6378990d73b',
-     UserId: 775269,
-     Name: '&18188018255' } }
-[2018-04-26T17:02:10.035] [INFO] zhang_saoma.json - { state: true,
-  code: 0,
-  data: 
-   { TelPhone: '18985125230',
-     NickName: '18985125230',
-     HeadPortrait: '',
-     SalemanState: -1,
-     AuthState: -1,
+     AuthState: 1,
      IsLock: false,
      IsConfirmationProtocol: true,
      Certificate: null,
      CertIdent: 'none',
      HasPassword: true,
-     DeviceIdent: '328d01b129a305c6589eedd3ba04bf38',
-     UserId: 1625868,
-     Name: '&18985125230' } }
-[2018-04-26T17:02:10.036] [INFO] zhang_saoma.json - 全部登录完成
-[2018-04-26T17:04:48.883] [INFO] zhang_saoma.json - { state: true,
+     DeviceIdent: '88ab5b0b12409611783e32c22e9f2ca5',
+     UserId: 1853988,
+     Name: '&18219910361' } }
+[2018-04-28T10:51:09.857] [INFO] 监控 - { state: true,
   code: 0,
   data: 
-   { TelPhone: '18188018830',
-     NickName: 'zhangning',
-     HeadPortrait: '/upload/fileStore/20170820/6363883105459200421259014.jpg',
+   { TelPhone: '15002554654',
+     NickName: '15002554654',
+     HeadPortrait: '',
      SalemanState: -1,
-     AuthState: -1,
+     AuthState: 1,
      IsLock: false,
      IsConfirmationProtocol: true,
      Certificate: null,
      CertIdent: 'none',
      HasPassword: true,
-     DeviceIdent: '4c80f7914e73f45989bbfcdc5d60c31e',
-     UserId: 769366,
-     Name: '&18188018830' } }
-[2018-04-26T17:04:49.770] [INFO] zhang_saoma.json - { state: true,
+     DeviceIdent: '846fa93e95ad0fafc45e77ca5f693dce',
+     UserId: 1806283,
+     Name: '&15002554654' } }
+[2018-04-28T10:51:09.857] [INFO] 监控 - 全部登录完成
+[2018-04-28T10:51:26.206] [INFO] 391 - params [ '/usr/local/bin/node',
+  '/Users/junliang/server/www/maotaiServer/script/buyFixedAct.js',
+  '391',
+  'b59df00e4a9e49af80040eada2692567',
+  '5',
+  '{"id":"162623200001","name":"酒泉恒生实业有限责任公司酒泉市专卖店","address":"酒泉市肃州区洪洋商业广场西南角","tel":"0937-2889988 13909376638","dname":"酒泉恒生实业有限责任公司"}',
+  '[{"phone":"17693185401","pass":"052020"},{"phone":"18189689730","pass":"052020"},{"phone":"18189683207","pass":"052020"},{"phone":"18219910361","pass":"052020"},{"phone":"15002554654","pass":"052020"}]' ]
+[2018-04-28T10:51:38.869] [INFO] 391 - start buy 18189683207 052020 b59df00e4a9e49af80040eada2692567 5 { state: true,
   code: 0,
   data: 
-   { TelPhone: '17084467777',
-     NickName: '17084467777',
-     HeadPortrait: '',
-     SalemanState: -1,
-     AuthState: -1,
-     IsLock: false,
-     IsConfirmationProtocol: true,
-     Certificate: null,
-     CertIdent: 'none',
-     HasPassword: true,
-     DeviceIdent: '867f8c3cfbe37a5d0826b82a3898ce61',
-     UserId: 1629659,
-     Name: '&17084467777' } }
-[2018-04-26T17:04:52.215] [INFO] zhang_saoma.json - { state: true,
+   { OrderId: 'MTYS201804280002130',
+     OrderPayMoney: 7495,
+     outoCloseTimeText: '04月28日13时51分' } }
+[2018-04-28T10:51:41.870] [INFO] 391 - start buy 18189689730 052020 b59df00e4a9e49af80040eada2692567 5 { state: true,
   code: 0,
   data: 
-   { TelPhone: '18188018255',
-     NickName: '18188018255',
-     HeadPortrait: '',
-     SalemanState: -1,
-     AuthState: -1,
-     IsLock: false,
-     IsConfirmationProtocol: false,
-     Certificate: null,
-     CertIdent: 'none',
-     HasPassword: true,
-     DeviceIdent: '8170206686d79336c425c6378990d73b',
-     UserId: 775269,
-     Name: '&18188018255' } }
-[2018-04-26T17:04:53.167] [INFO] zhang_saoma.json - { state: true,
+   { OrderId: 'MTYS201804280002131',
+     OrderPayMoney: 7495,
+     outoCloseTimeText: '04月28日13时51分' } }
+[2018-04-28T10:51:41.936] [INFO] 391 - start buy 17693185401 052020 b59df00e4a9e49af80040eada2692567 5 { state: true, code: 2, data: { UserCount: 5, LimitCount: 5 } }
+[2018-04-28T10:52:06.921] [INFO] 391 - start buy 18189683207 052020 b59df00e4a9e49af80040eada2692567 5 { state: true, code: 2, data: { UserCount: 5, LimitCount: 5 } }
+[2018-04-28T10:52:08.003] [INFO] 391 - start buy 18219910361 052020 b59df00e4a9e49af80040eada2692567 5 { state: true,
   code: 0,
   data: 
-   { TelPhone: '18985125230',
-     NickName: '18985125230',
-     HeadPortrait: '',
-     SalemanState: -1,
-     AuthState: -1,
-     IsLock: false,
-     IsConfirmationProtocol: true,
-     Certificate: null,
-     CertIdent: 'none',
-     HasPassword: true,
-     DeviceIdent: '328d01b129a305c6589eedd3ba04bf38',
-     UserId: 1625868,
-     Name: '&18985125230' } }
-[2018-04-26T17:04:53.168] [INFO] zhang_saoma.json - 全部登录完成
+   { OrderId: 'MTYS201804280002140',
+     OrderPayMoney: 7495,
+     outoCloseTimeText: '04月28日13时52分' } }
+[2018-04-28T10:52:08.127] [INFO] 391 - start buy 18189689730 052020 b59df00e4a9e49af80040eada2692567 5 { state: true, code: 2, data: { UserCount: 5, LimitCount: 5 } }
+[2018-04-28T10:52:08.253] [INFO] 391 - start buy 17693185401 052020 b59df00e4a9e49af80040eada2692567 5 { state: true, code: 2, data: { UserCount: 5, LimitCount: 5 } }
+[2018-04-28T10:52:08.374] [INFO] 391 - start buy 17693185401 052020 b59df00e4a9e49af80040eada2692567 5 { state: true, code: 2, data: { UserCount: 5, LimitCount: 5 } }
+[2018-04-28T10:52:08.503] [INFO] 391 - start buy 18189689730 052020 b59df00e4a9e49af80040eada2692567 5 { state: true, code: 2, data: { UserCount: 5, LimitCount: 5 } }
+[2018-04-28T10:52:08.659] [INFO] 391 - start buy 18219910361 052020 b59df00e4a9e49af80040eada2692567 5 { state: true, code: 2, data: { UserCount: 5, LimitCount: 5 } }
+[2018-04-28T10:52:08.767] [INFO] 391 - start buy 17693185401 052020 b59df00e4a9e49af80040eada2692567 5 { state: true, code: 2, data: { UserCount: 5, LimitCount: 5 } }
+[2018-04-28T10:52:10.476] [INFO] 391 - start buy 15002554654 052020 b59df00e4a9e49af80040eada2692567 5 { state: true,
+  code: 0,
+  data: 
+   { OrderId: 'MTYS201804280002141',
+     OrderPayMoney: 7495,
+     outoCloseTimeText: '04月28日13时52分' } }
+[2018-04-28T10:52:10.584] [INFO] 391 - start buy 15002554654 052020 b59df00e4a9e49af80040eada2692567 5 { state: true, code: 2, data: { UserCount: 5, LimitCount: 5 } }
+[2018-04-28T10:52:10.713] [INFO] 391 - start buy 15002554654 052020 b59df00e4a9e49af80040eada2692567 5 { state: true, code: 2, data: { UserCount: 5, LimitCount: 5 } }
+[2018-04-28T10:52:10.833] [INFO] 391 - start buy 18219910361 052020 b59df00e4a9e49af80040eada2692567 5 { state: true, code: 2, data: { UserCount: 5, LimitCount: 5 } }
+[2018-04-28T10:52:10.949] [INFO] 391 - start buy 18189689730 052020 b59df00e4a9e49af80040eada2692567 5 { state: true, code: 2, data: { UserCount: 5, LimitCount: 5 } }
+[2018-04-28T10:52:11.076] [INFO] 391 - start buy 17693185401 052020 b59df00e4a9e49af80040eada2692567 5 { state: true, code: 2, data: { UserCount: 5, LimitCount: 5 } }
+[2018-04-28T10:52:11.205] [INFO] 391 - start buy 18189689730 052020 b59df00e4a9e49af80040eada2692567 5 { state: true, code: 2, data: { UserCount: 5, LimitCount: 5 } }
+[2018-04-28T10:56:26.017] [INFO] 391 - params [ '/usr/local/bin/node',
+  '/Users/junliang/server/www/maotaiServer/script/buyFixedAct.js',
+  '391',
+  'b59df00e4a9e49af80040eada2692567',
+  '5',
+  '{"id":"162623200001","name":"酒泉恒生实业有限责任公司酒泉市专卖店","address":"酒泉市肃州区洪洋商业广场西南角","tel":"0937-2889988 13909376638","dname":"酒泉恒生实业有限责任公司"}',
+  '[{"phone":"15588185801","pass":"a123456","addressId":2024314},{"phone":"15613930386","pass":"a123456","addressId":2024323},{"phone":"18346488109","pass":"a123456","addressId":2024332},{"phone":"13230672756","pass":"a123456","addressId":1951804},{"phone":"18183062125","pass":"a123456","addressId":1951807},{"phone":"18438063310","pass":"a123456","addressId":1951811},{"phone":"13935327172","pass":"a123456","addressId":1930782},{"phone":"18903188059","pass":"a123456","addressId":1930701},{"phone":"13313181385","pass":"a123456","addressId":1930707},{"phone":"13453301621","pass":"654321","addressId":1935797},{"phone":"15131828567","pass":"123456","addressId":1935809},{"phone":"15264711296","pass":"123456","addressId":1935812},{"phone":"15697680921","pass":"123456","addressId":1894280},{"phone":"15698229041","pass":"123456","addressId":1894170},{"phone":"15949806339","pass":"lhj0325","addressId":1935818},{"phone":"17757449525","pass":"123456","addressId":1894480},{"phone":"18131970041","pass":"123456","addressId":1847451},{"phone":"18232902912","pass":"108108li","addressId":1679931},{"phone":"18246626742","pass":"jss19860529","addressId":1935822},{"phone":"18253251389","pass":"123456","addressId":1843317},{"phone":"18810320392","pass":"12345678","addressId":1686181},{"phone":"18863572962","pass":"123456","addressId":1894344},{"phone":"15635316166","pass":"a123456","addressId":1961824},{"phone":"15535874373","pass":"a123456","addressId":1961826},{"phone":"18734572393","pass":"a123456","addressId":1961844},{"phone":"13843910857","pass":"a123456","addressId":1961870},{"phone":"13895490886","pass":"a123456","addressId":1961951},{"phone":"15081664435","pass":"a123456","addressId":1961952},{"phone":"15716559528","pass":"a123456","addressId":1961956},{"phone":"15121952364","pass":"a123456","addressId":1961957},{"phone":"15330512791","pass":"a123456","addressId":1961959},{"phone":"13283936032","pass":"a123456","addressId":1962184},{"phone":"18632369087","pass":"a123456","addressId":1962186},{"phone":"13290979032","pass":"a123456","addressId":1962187},{"phone":"13936763461","pass":"a123456","addressId":1962189},{"phone":"15081820867","pass":"a123456","addressId":1962191},{"phone":"15053052761","pass":"a123456","addressId":1962199},{"phone":"18434763969","pass":"a123456","addressId":1962204},{"phone":"15035399985","pass":"a123456","addressId":1962205},{"phone":"17131970724","pass":"a123456","addressId":1962215},{"phone":"17667374197","pass":"a123456","addressId":1962216},{"phone":"15505201939","pass":"a123456","addressId":1962224},{"phone":"18831099037","pass":"a123456","addressId":1969317},{"phone":"18534866149","pass":"a123456","addressId":1962233},{"phone":"15034681449","pass":"a123456","addressId":1962237},{"phone":"15257918657","pass":"a123456","addressId":1962220},{"phone":"13413723166","pass":"123456","addressId":1894654}]' ]
+[2018-04-28T10:56:30.821] [INFO] 391 - start buy 17131970724 a123456 b59df00e4a9e49af80040eada2692567 5 { state: true, code: 2, data: { UserCount: 5, LimitCount: 5 } }
+[2018-04-28T10:56:42.171] [INFO] 391 - start buy 18346488109 a123456 b59df00e4a9e49af80040eada2692567 5 { state: true, code: 2, data: { UserCount: 5, LimitCount: 5 } }
+[2018-04-28T10:56:42.290] [INFO] 391 - start buy 13413723166 123456 b59df00e4a9e49af80040eada2692567 5 { state: false, code: 9999, msg: '用户未登陆' }

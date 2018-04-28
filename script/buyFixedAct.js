@@ -15,6 +15,8 @@ let checkInterval = 1*1000;
 // 地址信息
 
 // [cid, quant, network, this.accounts]
+// 
+
 let pid = process.argv[2];
 let cid = process.argv[3];
 let quantity = process.argv[4];

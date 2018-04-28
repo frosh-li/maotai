@@ -26,7 +26,7 @@ const path = require('path');
 var j = '';
 request = request.defaults({
     jar: true,
-    proxy: 'http://'+proxy.proxyUser+':'+proxy.proxyPass+'@'+proxy.proxyHost+':'+proxy.proxyPort,
+    // proxy: 'http://'+proxy.proxyUser+':'+proxy.proxyPass+'@'+proxy.proxyHost+':'+proxy.proxyPort,
 })
 var AliVerify = require('./startAliVerify');
 const crypto = require('crypto');
@@ -60,7 +60,7 @@ class MaotaiService {
     }
     headers (userAgent, cookies='') {
       return {
-        "proxy-authorization" : "Basic " + proxy.proxyAuth,
+        // // "proxy-authorization" : "Basic " + proxy.proxyAuth,
         'cache-control': 'no-cache',
         'cookie': cookies,
         'accept-language': 'zh-CN,en-US;q=0.8',
@@ -292,7 +292,7 @@ class MaotaiService {
                 method: 'POST',
                 url: 'https://www.cmaotai.com/API/LBSServer.ashx',
                 headers: {
-                    "proxy-authorization" : "Basic " + proxy.proxyAuth,
+                    // "proxy-authorization" : "Basic " + proxy.proxyAuth,
                     'cookie':j,
                     'cache-control': 'no-cache',
                     'accept-language': 'zh-CN,en-US;q=0.8',
@@ -394,7 +394,7 @@ class MaotaiService {
                       url: 'https://www.cmaotai.com/YSApp_API/YSAppServer.ashx',
                       headers: {
                           'cookie':j,
-                          "proxy-authorization" : "Basic " + proxy.proxyAuth,
+                          // "proxy-authorization" : "Basic " + proxy.proxyAuth,
                           'cache-control': 'no-cache',
                           'accept-language': 'zh-CN,en-US;q=0.8',
                           accept: 'application/json, text/javascript, */*; q=0.01',
@@ -426,7 +426,7 @@ class MaotaiService {
                           method: 'POST',
                           url: 'https://www.cmaotai.com/API/CreateOrder.ashx',
                           headers: {
-                              "proxy-authorization" : "Basic " + proxy.proxyAuth,
+                              // "proxy-authorization" : "Basic " + proxy.proxyAuth,
                               'cache-control': 'no-cache',
                               'accept-language': 'zh-CN,en-US;q=0.8',
                               accept: 'application/json, text/javascript, */*; q=0.01',
@@ -512,7 +512,7 @@ class MaotaiService {
               url: 'https://www.cmaotai.com/YSApp_API/YSAppServer.ashx',
               headers: {
                   'cookie':j,
-                  "proxy-authorization" : "Basic " + proxy.proxyAuth,
+                  // "proxy-authorization" : "Basic " + proxy.proxyAuth,
                   'cache-control': 'no-cache',
                   'accept-language': 'zh-CN,en-US;q=0.8',
                   accept: 'application/json, text/javascript, */*; q=0.01',
@@ -541,7 +541,7 @@ class MaotaiService {
                   method: 'POST',
                   url: 'https://www.cmaotai.com/API/CreateOrder.ashx',
                   headers: {
-                      "proxy-authorization" : "Basic " + proxy.proxyAuth,
+                      // "proxy-authorization" : "Basic " + proxy.proxyAuth,
                       'cache-control': 'no-cache',
                       'accept-language': 'zh-CN,en-US;q=0.8',
                       accept: 'application/json, text/javascript, */*; q=0.01',
@@ -664,7 +664,7 @@ class MaotaiService {
               url: 'https://www.cmaotai.com/YSApp_API/YSAppServer.ashx',
               headers: {
                   'cookie':j,
-                  "proxy-authorization" : "Basic " + proxy.proxyAuth,
+                  // "proxy-authorization" : "Basic " + proxy.proxyAuth,
                   'cache-control': 'no-cache',
                   'accept-language': 'zh-CN,en-US;q=0.8',
                   accept: 'application/json, text/javascript, */*; q=0.01',
@@ -692,7 +692,7 @@ class MaotaiService {
                   method: 'POST',
                   url: 'https://www.cmaotai.com/API/CreateOrder.ashx',
                   headers: {
-                      "proxy-authorization" : "Basic " + proxy.proxyAuth,
+                      // "proxy-authorization" : "Basic " + proxy.proxyAuth,
                       'cache-control': 'no-cache',
                       'accept-language': 'zh-CN,en-US;q=0.8',
                       accept: 'application/json, text/javascript, */*; q=0.01',
@@ -764,7 +764,7 @@ class MaotaiService {
             jar: true,
             url: 'https://www.cmaotai.com/YSApp_API/YSAppServer.ashx',
             headers: {
-                "proxy-authorization" : "Basic " + proxy.proxyAuth,
+                // "proxy-authorization" : "Basic " + proxy.proxyAuth,
                 'cache-control': 'no-cache',
                 'cookie':j,
                 'content-type': 'application/x-www-form-urlencoded'
@@ -788,8 +788,13 @@ class MaotaiService {
               if(bodyJSON.data && bodyJSON.data.list && bodyJSON.data.list.length > 0){
                 //logger.info('获取的地址id', bodyJSON.data.list[0].SId);
                 // logger.info('获取的地址id', bodyJSON.data.list[0]);
-
-                return resolve(bodyJSON.data.list[0].SId);
+                let sid = bodyJSON.data.list[0].SId;
+                bodyJSON.data.list.forEach(item => {
+                  if(item.AddressInfo.indexOf('甘肃') > -1){
+                    sid = item.SId;
+                  }
+                })
+                return resolve(sid);
               }else{
                 return resolve("");
               }
@@ -807,7 +812,7 @@ class MaotaiService {
             method: 'POST',
             url: 'https://www.cmaotai.com/YSApp_API/YSAppServer.ashx',
             headers: {
-                "proxy-authorization" : "Basic " + proxy.proxyAuth,
+                // "proxy-authorization" : "Basic " + proxy.proxyAuth,
                 'cookie': j,
                 'cache-control': 'no-cache',
                 'content-type': 'application/x-www-form-urlencoded'
@@ -1147,7 +1152,7 @@ class MaotaiService {
            url: 'https://www.cmaotai.com/API/Servers.ashx',
            headers: {
              'cookie':j,
-             "proxy-authorization" : "Basic " + proxy.proxyAuth,
+             // "proxy-authorization" : "Basic " + proxy.proxyAuth,
              'cache-control': 'no-cache',
              'accept-language': 'zh-CN,en-US;q=0.8',
              'accept': 'application/json, text/javascript, */*; q=0.01',
@@ -1191,7 +1196,7 @@ class MaotaiService {
            url: 'https://www.cmaotai.com/API/Servers.ashx',
            headers: {
              'cookie':j,
-             "proxy-authorization" : "Basic " + proxy.proxyAuth,
+             // "proxy-authorization" : "Basic " + proxy.proxyAuth,
              'cache-control': 'no-cache',
              'accept-language': 'zh-CN,en-US;q=0.8',
              'accept': 'application/json, text/javascript, */*; q=0.01',
@@ -1235,7 +1240,7 @@ class MaotaiService {
           url: 'https://www.cmaotai.com/API/Servers.ashx',
           headers: {
             'cookie':j,
-            "proxy-authorization" : "Basic " + proxy.proxyAuth,
+            // "proxy-authorization" : "Basic " + proxy.proxyAuth,
             'cache-control': 'no-cache',
             'accept-language': 'zh-CN,en-US;q=0.8',
             'accept': 'application/json, text/javascript, */*; q=0.01',
@@ -1279,7 +1284,7 @@ class MaotaiService {
           url: 'https://www.cmaotai.com/API/Servers.ashx',
           headers: {
             'cookie':j,
-            "proxy-authorization" : "Basic " + proxy.proxyAuth,
+            // "proxy-authorization" : "Basic " + proxy.proxyAuth,
             'cache-control': 'no-cache',
             'accept-language': 'zh-CN,en-US;q=0.8',
             'accept': 'application/json, text/javascript, */*; q=0.01',
@@ -1310,7 +1315,12 @@ class MaotaiService {
                   if (body.state === false) {
                       return reject("没有订单:" + body.msg);
                   }
-                  return resolve(JSON.parse(body.data).data.data || []);
+                  if(JSON.parse(body.data).data){
+                    return resolve(JSON.parse(body.data).data.data || []);  
+                  }else{
+                    return resolve([]);  
+                  }
+                  
               }
           });
 
@@ -1327,7 +1337,7 @@ class MaotaiService {
           url: 'https://www.cmaotai.com/API/Servers.ashx',
           headers: {
             'cookie':j,
-            "proxy-authorization" : "Basic " + proxy.proxyAuth,
+            // "proxy-authorization" : "Basic " + proxy.proxyAuth,
             'cache-control': 'no-cache',
             'accept-language': 'zh-CN,en-US;q=0.8',
             'accept': 'application/json, text/javascript, */*; q=0.01',
@@ -1338,7 +1348,7 @@ class MaotaiService {
             'x-requested-with': 'XMLHttpRequest'
           },
           form: {
-            sid:	parseInt(addressId),
+            sid:	addressId,
             iid:	-1,
             qty:	5,
             express:	14,

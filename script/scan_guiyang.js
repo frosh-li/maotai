@@ -7,15 +7,13 @@ const fs = require('fs');
 const path = require('path');
 const Utils = require('../services/utils');
 var networks = require('../networks/520000.json');
-// var networks = [
-// 	{
-//         "id": "152520100028",
-//         "name": "贵州鸿福喜运贸易有限公司贵阳市专卖店",
-//         "address": "贵阳市云岩区北京路219号银海元隆广场10栋1层3号",
-//         "tel": "0851-86820969 13608509166",
-//         "dname": "贵州鸿福喜运贸易有限公司"
-//     }
-//]
+// networks = [{
+//         "id": "252520183004",
+//         "name": "贵阳忠诚贸易有限公司特约经销店",
+//         "address": "贵阳市云岩区中华北路78号世纪商务城16-1号",
+//         "tel": "0851-86800998　13511955216",
+//         "dname": "贵阳忠诚贸易有限公司"
+//     }];
 
 var accounts = require('../accounts/zhang_saoma.json')
 

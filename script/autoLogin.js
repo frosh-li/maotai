@@ -11,12 +11,12 @@ const fs = require('fs');
 
 //connection.connect();
 
-var originPhones = 
-  [
-{phone:"15331589341","pass":"13618844256STQ"},
-{phone:"15331586933","pass":"13618844256STQ"},
-{phone:"13887457422","pass":"13618844256STQ"},
-{phone:"15368384843","pass":"13618844256STQ"}
+var originPhones = [
+{phone:"17693185401",pass:"052020"},
+{phone:"18189689730",pass:"052020"},
+{phone:"18189683207",pass:"052020"},
+{phone:"18219910361",pass:"052020"},
+{phone:"15002554654",pass:"052020"},
 ]
 
 var loginSuccess = [];

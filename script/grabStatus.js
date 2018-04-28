@@ -103,7 +103,7 @@ function run(){
 function getOrders(data){
   let ret = [];
   data.forEach(item => {
-    if(item.orderStatus === 3 || item.orderStatus===4){
+    if(item.orderStatus <= 4){
       ret.push(
         {
           receiptPhone: item.receiptPhone,

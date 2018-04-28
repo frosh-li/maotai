@@ -22,18 +22,18 @@ class GrabController {
 
   startBind() {
     let scopeJar = null;
-    proxy.switchIp()
-      .then(() => {
-          return MaotaiService.getCurrentJar(this.account.phone)
-      })
+    
+     MaotaiService.getCurrentJar(this.account.phone)
+    
       .then(j => {
         scopeJar = j;
         // return MaotaiService.getProductInfo(this.account, this.account.addressId, scopeJar);
         return MaotaiService.GrabLogin(this.account, this.account.addressId, scopeJar);
       })
       .then(data => {
+        return MaotaiService.GrabSubmit(this.account, this.account.addressId, scopeJar);
         if(data.code == 0){
-            return MaotaiService.GrabSubmit(this.account, this.account.addressId, scopeJar);
+            // return MaotaiService.GrabSubmit(this.account, this.account.addressId, scopeJar);
         }else{
           return Promise.reject("已经登记过了");
         }

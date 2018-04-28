@@ -6,22 +6,17 @@ const request = require('request');
 const fs = require('fs');
 const path = require('path');
 const Utils = require('../services/utils');
-var networks = require('../networks/120000.json');	// 天津
-// networks = networks.concat(require('../networks/130000.json')); // 河北
-// networks = networks.concat(require('../networks/410000.json')); // 河南
-// networks = networks.concat(require('../networks/370000.json'));
-// networks = networks.concat(require('../networks/620100.json')); // 兰州
-// networks = networks.concat(require('../networks/610100.json'));
-// networks = networks.concat(require('../networks/510000.json'));
-// networks = networks.concat(require('../networks/350000.json'));
-// networks = networks.concat(require('../networks/340000.json'));
-networks = require('../networks/');
-var accounts = require('../accounts/4.13.json')
-
-if(process.argv[2]){
-	accounts = require(process.argv[2]);
-}
-
+var networks = require('../networks/620000.json');
+networks = networks.concat(require('../networks/630000.json'));
+//var accounts = require('../accounts/4.13.json')
+// networks = [{
+//         "id": "162623200001",
+//         "name": "酒泉恒生实业有限责任公司酒泉市专卖店",
+//         "address": "酒泉市肃州区洪洋商业广场西南角",
+//         "tel": "0937-2889988 13909376638",
+//         "dname": "酒泉恒生实业有限责任公司"
+//     }];
+accounts = require('../accounts/gansu.json');
 const Filecookietore = require('tough-cookie-filestore');
 // const accounts = require('../accounts/accounts');
 console.log('网点个数',networks.length);
@@ -52,11 +47,10 @@ class ScanActivity {
   }
 
 	start() {
-		if(this.startIndex >= networks.length - 1){
+		if(this.startIndex > networks.length - 1){
 			console.log('所有扫描结束,1分钟后继续开启扫描');
 			console.log(this.acts);
 			this.account = accounts[Math.floor(Math.random()*accounts.length)];
-			this.getCurrentJar(this.account.phone);
 			this.startIndex = 0;
 			this.acts = [];
 			setTimeout(() => {
@@ -104,64 +98,63 @@ class ScanActivity {
 	scanSingle(network) {
 		console.log('网点开始检查', network.id, network.address);
 		return new Promise((resolve, reject) => {
-			request(this.options(network.id), (error, response, body) => {
-				if(error){
-					console.log(network.id, network.address,error.message);
-					return resolve([]);
-				}
-
-				if(body.code === 0 && body.data.acts !== undefined && body.data.acts.length > 0){
-					console.log(body.data.acts);
-					let ret = [];
-					body.data.acts.forEach(act => {
-						if((act.Pid === 391)
-								||
-								(act.Pid === 628)
-								||
-								(act.Pid === 422)
-								||
-								(act.Pid === 641)){
-							ret.push(act);
-						}
-						if(act.LimitCount > 0){
-							if(
-								(act.Pid === 391)
-								||
-								(act.Pid === 628)
-								||
-								(act.Pid === 422)
-								||
-								(act.Pid === 641)
-								){
-								console.log('可以购买', JSON.stringify(act));
-								if(act.Pid === 391){
-									if(act.LimitCount >= 5){
-										this.buy(act.ID, act.LimitCount,act.Pid, network)
+			this.getCurrentJar(this.account.phone).then(_ => {
+				request(this.options(network.id), (error, response, body) => {
+					if(error){
+						console.log(network.id, network.address,error.message);
+						return resolve([]);
+					}
+					if(body.code === 0 && body.data.acts !== undefined && body.data.acts.length > 0){
+						console.log(body.data.acts);
+						let ret = [];
+						body.data.acts.forEach(act => {
+							if((act.Pid === 391)
+									||
+									(act.Pid === 628)
+									||
+									(act.Pid === 422)
+									||
+									(act.Pid === 641)){
+								ret.push(act);
+							}
+							if(act.LimitCount > 0){
+								if(
+									(act.Pid === 391)
+									||
+									(act.Pid === 628)
+									||
+									(act.Pid === 422)
+									||
+									(act.Pid === 641)
+									){
+									console.log('可以购买', JSON.stringify(act));
+									if(act.Pid === 391){
+										if(act.LimitCount >= 5){
+											this.buy(act.ID, act.LimitCount,act.Pid, network)
+										}
 									}
-								}else{
-									this.buy(act.ID, act.LimitCount,act.Pid, network)
 								}
 							}
+						})
+						if(ret.length > 0){
+							return resolve(ret);
+						}else{
+							return resolve([]);
 						}
-					})
-					if(ret.length > 0){
-						return resolve(ret);
 					}else{
 						return resolve([]);
 					}
-				}else{
-					return resolve([]);
-				}
+				})
+			}).catch(e => {
+				console.log(e);
+				
+				return reject(e);
 			})
 		})
 	}
 
 	buy(cid, quant, pid, network){
 		return new Promise((resolve, reject) => {
-			if(quant < 5){
-				console.log('数量过少不下单');
-				return resolve([]);
-			}
 			this.getCurrentJar(this.account.phone)
 				.then(cookieJar => {
 					let options = {
@@ -192,7 +185,6 @@ class ScanActivity {
 
 					request(options, (error, response, body) => {
 						if(error){
-							console.log('下单异常', error.message);
 							return resolve([]);
 						}
 						console.log('开始下单', cid,this.account.phone,this.account.pass, quant, JSON.stringify(body), JSON.stringify(network));
@@ -212,18 +204,6 @@ class ScanActivity {
 	}
 }
 
-let scanActivity = new ScanActivity(10);
+let scanActivity = new ScanActivity(5);
 
 scanActivity.start();
-
-// module.exports = ScanActivity;
-//
-// 购买
-// https://www.cmaotai.com/YSApp_API/YSAppServer.ashx
-// action: ActivityManager.newOrder
-// code: 9c19b8c4b8344ac7a1ef1c6bcb45513c
-// quant: 6
-// del: 14
-// inv: 0
-// inv_mail: 0
-// timestamp121: 1524468722447
