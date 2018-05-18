@@ -16,7 +16,9 @@ var networks = require('../networks/120000.json');	// 天津
 // networks = networks.concat(require('../networks/350000.json'));
 // networks = networks.concat(require('../networks/340000.json'));
 networks = require('../networks/');
-var accounts = require('../accounts/4.13.json')
+var accounts = [
+    {phone:"15330066919", pass:"110520"}
+]
 
 if(process.argv[2]){
 	accounts = require(process.argv[2]);
@@ -118,8 +120,6 @@ class ScanActivity {
 								||
 								(act.Pid === 628)
 								||
-								(act.Pid === 422)
-								||
 								(act.Pid === 641)){
 							ret.push(act);
 						}
@@ -128,8 +128,8 @@ class ScanActivity {
 								(act.Pid === 391)
 								||
 								(act.Pid === 628)
-								||
-								(act.Pid === 422)
+								// ||
+								// (act.Pid === 422)
 								||
 								(act.Pid === 641)
 								){
@@ -158,7 +158,7 @@ class ScanActivity {
 
 	buy(cid, quant, pid, network){
 		return new Promise((resolve, reject) => {
-			if(quant < 5){
+			if(quant < 5 && pid==391){
 				console.log('数量过少不下单');
 				return resolve([]);
 			}
@@ -198,7 +198,7 @@ class ScanActivity {
 						console.log('开始下单', cid,this.account.phone,this.account.pass, quant, JSON.stringify(body), JSON.stringify(network));
 						if(body.code === 0 ){
 							fs.writeFileSync(`output/${Utils.dateFormat()}.json`, `\n${this.account.phone} ${this.account.pass} 商品:${pid} 数量:${quant} ${JSON.stringify(network)} ${JSON.stringify(body)} ${cid}`, {flag:'a+'});
-							require('child_process').fork(path.resolve(__dirname,'./buyFixedAct.js'), [pid,cid, quant, JSON.stringify(network), JSON.stringify(accounts)]);
+							// require('child_process').fork(path.resolve(__dirname,'./buyFixedAct.js'), [pid,cid, quant, JSON.stringify(network), JSON.stringify(accounts)]);
 						}else if(body.code === 3 && body.data.StockCount > 0){
 							return this.buy(cid, body.data.StockCount, pid, network)
 						}

@@ -27,8 +27,14 @@ class GrabController {
     
       .then(j => {
         scopeJar = j;
-        // return MaotaiService.getProductInfo(this.account, this.account.addressId, scopeJar);
+        return MaotaiService.getProductInfo(this.account, this.account.addressId, scopeJar);
+        
+      })
+      .then(_ => {
         return MaotaiService.GrabLogin(this.account, this.account.addressId, scopeJar);
+      })
+      .then(_ => {
+        return MaotaiService.GrabDefaultAdd(this.account, this.account.addressId, scopeJar);
       })
       .then(data => {
         return MaotaiService.GrabSubmit(this.account, this.account.addressId, scopeJar);

@@ -12,11 +12,6 @@ const fs = require('fs');
 //connection.connect();
 
 var originPhones = [
-{phone:"17693185401",pass:"052020"},
-{phone:"18189689730",pass:"052020"},
-{phone:"18189683207",pass:"052020"},
-{phone:"18219910361",pass:"052020"},
-{phone:"15002554654",pass:"052020"},
 ]
 
 var loginSuccess = [];
@@ -48,11 +43,11 @@ function start() {
       logger.error(e);
       // 退回继续登录
       if(e.message.indexOf('密码错误') > -1){
-        
+
       }else{
         // originPhones.unshift(user);
       }
-      
+
       start();
     })
 

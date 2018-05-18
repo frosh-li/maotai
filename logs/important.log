@@ -1,703 +1,673 @@
-[2018-04-29T04:37:24.457] [INFO] ed0e280e74f34be7915a28d40052cd65 - 自动下单开始
-[2018-04-29T04:37:36.740] [INFO] ed0e280e74f34be7915a28d40052cd65 - 自动下单开始
-[2018-04-29T04:37:37.228] [INFO] 391 - params [ '/usr/local/bin/node',
-  '/Users/junliang/server/www/maotaiServer/script/buyFixedActFor1399.js',
-  '391',
-  'ed0e280e74f34be7915a28d40052cd65',
-  '12',
-  '{"address":"新密市青屏大街西段世纪新村大门口","sid":"141410183002","MarketPrice":1499,"Price":1499}',
-  '[{"phone":"13573579257","pass":"zjw1314"},{"phone":"18357477024","pass":"zjw1314"},{"phone":"13962310128","pass":"zjw1314"},{"phone":"18550125596","pass":"zjw1314"},{"phone":"13914949281","pass":"zjw1314"},{"phone":"15101904404","pass":"zjw1314"},{"phone":"13958862487","pass":"zjw1314"},{"phone":"15674891274","pass":"zjw1314"},{"phone":"17826613020","pass":"zjw1314"},{"phone":"13573579257","pass":"zjw1314"},{"phone":"13706644202","pass":"zjw1314"},{"phone":"17742561232","pass":"zjw1314"},{"phone":"18367129040","pass":"zjw1314"},{"phone":"15684099299","pass":"zjw1314"},{"phone":"18021636890","pass":"zjw1314"},{"phone":"15370150446","pass":"zjw1314"},{"phone":"15962272631","pass":"zjw1314"},{"phone":"18336492326","pass":"zjw1314"},{"phone":"15651776037","pass":"zjw1314"},{"phone":"15895625015","pass":"zjw1314"},{"phone":"13773024105 ","pass":"zjw1314"},{"phone":"18501521650","pass":"zjw1314"},{"phone":"13328029369","pass":"zjw1314"},{"phone":"15862853769","pass":"zjw1314"},{"phone":"15138185612  ","pass":"zjw1314"},{"phone":"17601461170","pass":"zjw1314"},{"phone":"13862320374","pass":"zjw1314"},{"phone":"18261738520 ","pass":"zjw1314"},{"phone":"13140969226","pass":"zjw1314"},{"phone":"15088597519","pass":"zjw1314"},{"phone":"13179621132","pass":"zjw1314"},{"phone":"17601461170","pass":"zjw1314"},{"phone":"18606193868","pass":"zjw1314"},{"phone":"17798575587","pass":"zjw1314"},{"phone":"18556737482","pass":"zjw1314"},{"phone":"18651672992","pass":"zjw1314"},{"phone":"13291083620","pass":"zjw1314"},{"phone":"15050357604","pass":"zjw1314"},{"phone":"18552449004","pass":"d963378484"},{"phone":"18550840530","pass":"d963378484"},{"phone":"15963577987","pass":"d963378484"},{"phone":"17712633629","pass":"d963378484"},{"phone":"13182295162","pass":"d963378484"},{"phone":"15850804366","pass":"d963378484"},{"phone":"18074442111","pass":"d963378484"}]' ]
-[2018-04-29T04:37:37.877] [INFO] 391 - start buy 13573579257 zjw1314 ed0e280e74f34be7915a28d40052cd65 12 { state: true,
+[2018-05-15T21:07:40.994] [INFO] gansu.json - 获取订单状态 17180168611
+[2018-05-15T21:07:41.333] [INFO] gansu.json - 获取订单状态 17180143187
+[2018-05-15T21:07:41.639] [INFO] gansu.json - 获取订单状态 18954959063
+[2018-05-15T21:07:41.945] [INFO] gansu.json - 获取订单状态 17180167273
+[2018-05-15T21:07:42.243] [INFO] gansu.json - 获取订单状态 17180162037
+[2018-05-15T21:07:42.419] [INFO] gansu.json - 获取订单状态 17180164654
+[2018-05-15T21:07:42.718] [INFO] gansu.json - 获取订单状态 17180143231
+[2018-05-15T21:07:43.065] [INFO] gansu.json - 获取订单状态 17180169727
+[2018-05-15T21:07:43.259] [INFO] gansu.json - 获取订单状态 17180143188
+[2018-05-15T21:07:43.557] [INFO] gansu.json - 获取订单状态 17180143200
+[2018-05-15T21:07:43.719] [INFO] gansu.json - 获取订单状态 17180164667
+[2018-05-15T21:07:44.262] [INFO] gansu.json - 获取订单状态 17180164353
+[2018-05-15T21:07:44.575] [INFO] gansu.json - 获取订单状态 17180143201
+[2018-05-15T21:07:45.828] [INFO] gansu.json - 获取订单状态 17180169725
+[2018-05-15T21:07:55.254] [INFO] gansu.json - 获取订单状态 17180164687
+[2018-05-15T21:07:55.455] [INFO] gansu.json - 获取订单状态 17180143195
+[2018-05-15T21:07:55.677] [INFO] gansu.json - 获取订单状态 17180143196
+[2018-05-15T21:07:55.987] [INFO] gansu.json - 获取订单状态 17180161969
+[2018-05-15T21:07:56.272] [INFO] gansu.json - 获取订单状态 17180143230
+[2018-05-15T21:07:56.600] [INFO] gansu.json - 获取订单状态 18219910361
+[2018-05-15T21:07:56.766] [INFO] gansu.json - 获取订单状态 17693185401
+[2018-05-15T21:07:57.082] [INFO] gansu.json - 获取订单状态 18189689730
+[2018-05-15T21:07:57.406] [INFO] gansu.json - 获取订单状态 18189683207
+[2018-05-15T21:07:57.577] [INFO] gansu.json - 获取订单状态 13679490726
+[2018-05-15T21:07:58.426] [INFO] gansu.json - 获取一次商品信息 17180168611 2031732
+[2018-05-15T21:07:58.769] [INFO] gansu.json - 登记登陆 17180168611 2031732
+[2018-05-15T21:07:58.867] [INFO] gansu.json - 登记登陆DONE 17180168611 { state: true, code: 0, msg: '' }
+[2018-05-15T21:07:58.869] [INFO] gansu.json - 获取默认地址 17180168611 2031732
+[2018-05-15T21:07:58.970] [INFO] gansu.json - 获取默认地址 17180168611 { state: true,
   code: 0,
   data: 
-   { OrderId: 'MTYS201804290000008',
-     OrderPayMoney: 17988,
-     outoCloseTimeText: '04月29日07时37分' } }
-[2018-04-29T04:37:38.344] [INFO] 391 - start buy 18357477024 zjw1314 ed0e280e74f34be7915a28d40052cd65 12 { state: true,
+   { SId: 2031714,
+     UserId: '2301658',
+     TelPhone: '17180168611',
+     Zipcode: '000000',
+     Address: '金昌花文化博览馆,9号楼0单元0862室',
+     AddressInfo: '甘肃省金昌市金川区',
+     ShipTo: '金舍',
+     Remark: '',
+     ProvinceId: '620000',
+     CityId: '620300',
+     DistrictsId: '620302',
+     IsDefault: true,
+     SMNo: null,
+     RelPhone: null,
+     Longitude: '102.136018',
+     Latitude: '38.53658' } }
+[2018-05-15T21:07:58.972] [INFO] gansu.json - 开始下单 17180168611 2031732
+[2018-05-15T21:07:59.489] [INFO] gansu.json - 提交订单完成 17180168611 { state: true, code: 0, data: 200 }
+[2018-05-15T21:07:59.490] [INFO] gansu.json - 获取订单状态 17180168611
+[2018-05-15T21:07:59.786] [INFO] gansu.json - 获取一次商品信息 17180143187 2031733
+[2018-05-15T21:07:59.894] [INFO] gansu.json - 登记登陆 17180143187 2031733
+[2018-05-15T21:08:00.014] [INFO] gansu.json - 登记登陆DONE 17180143187 { state: true, code: 0, msg: '' }
+[2018-05-15T21:08:00.014] [INFO] gansu.json - 获取默认地址 17180143187 2031733
+[2018-05-15T21:08:00.124] [INFO] gansu.json - 获取默认地址 17180143187 { state: true,
   code: 0,
   data: 
-   { OrderId: 'MTYS201804290000009',
-     OrderPayMoney: 17988,
-     outoCloseTimeText: '04月29日07时37分' } }
-[2018-04-29T04:37:38.894] [INFO] 391 - start buy 13962310128 zjw1314 ed0e280e74f34be7915a28d40052cd65 12 { state: true,
+   { SId: 2031715,
+     UserId: '2301665',
+     TelPhone: '17180143187',
+     Zipcode: '000000',
+     Address: '金川国家矿山公园,1号楼9单元8400室',
+     AddressInfo: '甘肃省金昌市金川区',
+     ShipTo: '国峥瑛',
+     Remark: '',
+     ProvinceId: '620000',
+     CityId: '620300',
+     DistrictsId: '620302',
+     IsDefault: true,
+     SMNo: null,
+     RelPhone: null,
+     Longitude: '102.165731',
+     Latitude: '38.56051' } }
+[2018-05-15T21:08:00.125] [INFO] gansu.json - 开始下单 17180143187 2031733
+[2018-05-15T21:08:00.234] [INFO] gansu.json - 提交订单完成 17180143187 { state: true, code: 0, data: 200 }
+[2018-05-15T21:08:00.235] [INFO] gansu.json - 获取订单状态 17180143187
+[2018-05-15T21:08:00.566] [INFO] gansu.json - 获取一次商品信息 18954959063 2031736
+[2018-05-15T21:08:00.661] [INFO] gansu.json - 登记登陆 18954959063 2031736
+[2018-05-15T21:08:00.727] [INFO] gansu.json - 登记登陆DONE 18954959063 { state: true, code: 0, msg: '' }
+[2018-05-15T21:08:00.728] [INFO] gansu.json - 获取默认地址 18954959063 2031736
+[2018-05-15T21:08:00.809] [INFO] gansu.json - 获取默认地址 18954959063 { state: true,
   code: 0,
   data: 
-   { OrderId: 'MTYS201804290000010',
-     OrderPayMoney: 17988,
-     outoCloseTimeText: '04月29日07时37分' } }
-[2018-04-29T04:37:39.236] [INFO] 391 - start buy 18550125596 zjw1314 ed0e280e74f34be7915a28d40052cd65 12 { state: true,
+   { SId: 2031716,
+     UserId: '2301673',
+     TelPhone: '18954959063',
+     Zipcode: '000000',
+     Address: '金昌市植物园,5号楼0单元6917室',
+     AddressInfo: '甘肃省金昌市金川区',
+     ShipTo: '武锈汝',
+     Remark: '',
+     ProvinceId: '620000',
+     CityId: '620300',
+     DistrictsId: '620302',
+     IsDefault: true,
+     SMNo: null,
+     RelPhone: null,
+     Longitude: '102.187164',
+     Latitude: '38.49258' } }
+[2018-05-15T21:08:00.811] [INFO] gansu.json - 开始下单 18954959063 2031736
+[2018-05-15T21:08:00.965] [INFO] gansu.json - 提交订单完成 18954959063 { state: true, code: 0, data: 200 }
+[2018-05-15T21:08:00.967] [INFO] gansu.json - 获取订单状态 18954959063
+[2018-05-15T21:08:01.768] [INFO] gansu.json - 获取一次商品信息 17180167273 2031737
+[2018-05-15T21:08:02.018] [INFO] gansu.json - 登记登陆 17180167273 2031737
+[2018-05-15T21:08:02.130] [INFO] gansu.json - 登记登陆DONE 17180167273 { state: true, code: 0, msg: '' }
+[2018-05-15T21:08:02.131] [INFO] gansu.json - 获取默认地址 17180167273 2031737
+[2018-05-15T21:08:02.248] [INFO] gansu.json - 获取默认地址 17180167273 { state: true,
   code: 0,
   data: 
-   { OrderId: 'MTYS201804290000011',
-     OrderPayMoney: 17988,
-     outoCloseTimeText: '04月29日07时37分' } }
-[2018-04-29T04:37:39.393] [INFO] 391 - start buy 13914949281 zjw1314 ed0e280e74f34be7915a28d40052cd65 12 { state: true,
-  code: 3,
+   { SId: 2031717,
+     UserId: '2301715',
+     TelPhone: '17180167273',
+     Zipcode: '000000',
+     Address: '刘家庄,8号楼7单元7135室',
+     AddressInfo: '甘肃省金昌市金川区',
+     ShipTo: '匡耶枯',
+     Remark: '',
+     ProvinceId: '620000',
+     CityId: '620300',
+     DistrictsId: '620302',
+     IsDefault: true,
+     SMNo: null,
+     RelPhone: null,
+     Longitude: '102.154991',
+     Latitude: '38.53407' } }
+[2018-05-15T21:08:02.249] [INFO] gansu.json - 开始下单 17180167273 2031737
+[2018-05-15T21:08:02.372] [INFO] gansu.json - 提交订单完成 17180167273 { state: true, code: 0, data: 200 }
+[2018-05-15T21:08:02.373] [INFO] gansu.json - 获取订单状态 17180167273
+[2018-05-15T21:08:02.684] [INFO] gansu.json - 获取一次商品信息 17180162037 2031739
+[2018-05-15T21:08:02.810] [INFO] gansu.json - 登记登陆 17180162037 2031739
+[2018-05-15T21:08:02.926] [INFO] gansu.json - 登记登陆DONE 17180162037 { state: true, code: 0, msg: '' }
+[2018-05-15T21:08:02.927] [INFO] gansu.json - 获取默认地址 17180162037 2031739
+[2018-05-15T21:08:03.015] [INFO] gansu.json - 获取默认地址 17180162037 { state: true,
+  code: 0,
   data: 
-   { Sid: '141410183002',
-     Pid: 391,
-     Pcode: '23',
-     CanSale: true,
-     CanLocation: true,
-     Longitude: 113.39,
-     Latitude: 34.54,
-     LocationCode: '410000',
-     StockCount: 1,
-     QuotasStockCount: 1,
-     IsPlatform: false } }
-[2018-04-29T04:37:39.567] [INFO] 391 - start buy 15101904404 zjw1314 ed0e280e74f34be7915a28d40052cd65 12 { state: true,
-  code: 3,
+   { SId: 2031718,
+     UserId: '2301721',
+     TelPhone: '17180162037',
+     Zipcode: '000000',
+     Address: '金川公司5号住宅小区62栋,5号楼2单元7344室',
+     AddressInfo: '甘肃省金昌市金川区',
+     ShipTo: '于干丕',
+     Remark: '',
+     ProvinceId: '620000',
+     CityId: '620300',
+     DistrictsId: '620302',
+     IsDefault: true,
+     SMNo: null,
+     RelPhone: null,
+     Longitude: '102.18036',
+     Latitude: '38.529478' } }
+[2018-05-15T21:08:03.016] [INFO] gansu.json - 开始下单 17180162037 2031739
+[2018-05-15T21:08:03.113] [INFO] gansu.json - 提交订单完成 17180162037 { state: true, code: 0, data: 200 }
+[2018-05-15T21:08:03.114] [INFO] gansu.json - 获取订单状态 17180162037
+[2018-05-15T21:08:03.691] [INFO] gansu.json - 获取一次商品信息 17180164654 2031740
+[2018-05-15T21:08:03.991] [INFO] gansu.json - 登记登陆 17180164654 2031740
+[2018-05-15T21:08:04.097] [INFO] gansu.json - 登记登陆DONE 17180164654 { state: true, code: 0, msg: '' }
+[2018-05-15T21:08:04.097] [INFO] gansu.json - 获取默认地址 17180164654 2031740
+[2018-05-15T21:08:04.188] [INFO] gansu.json - 获取默认地址 17180164654 { state: true,
+  code: 0,
   data: 
-   { Sid: '141410183002',
-     Pid: 391,
-     Pcode: '23',
-     CanSale: true,
-     CanLocation: true,
-     Longitude: 113.39,
-     Latitude: 34.54,
-     LocationCode: '410000',
-     StockCount: 1,
-     QuotasStockCount: 1,
-     IsPlatform: false } }
-[2018-04-29T04:37:39.746] [INFO] 391 - start buy 13958862487 zjw1314 ed0e280e74f34be7915a28d40052cd65 12 { state: true,
-  code: 3,
+   { SId: 2031719,
+     UserId: '2301736',
+     TelPhone: '17180164654',
+     Zipcode: '000000',
+     Address: '米家洼子,1号楼1单元7635室',
+     AddressInfo: '甘肃省金昌市金川区',
+     ShipTo: '秋饼利',
+     Remark: '',
+     ProvinceId: '620000',
+     CityId: '620300',
+     DistrictsId: '620302',
+     IsDefault: true,
+     SMNo: null,
+     RelPhone: null,
+     Longitude: '102.184576',
+     Latitude: '38.496896' } }
+[2018-05-15T21:08:04.189] [INFO] gansu.json - 开始下单 17180164654 2031740
+[2018-05-15T21:08:04.300] [INFO] gansu.json - 提交订单完成 17180164654 { state: true, code: 0, data: 200 }
+[2018-05-15T21:08:04.301] [INFO] gansu.json - 获取订单状态 17180164654
+[2018-05-15T21:08:04.616] [INFO] gansu.json - 获取一次商品信息 17180143231 2031747
+[2018-05-15T21:08:04.866] [INFO] gansu.json - 登记登陆 17180143231 2031747
+[2018-05-15T21:08:04.974] [INFO] gansu.json - 登记登陆DONE 17180143231 { state: true, code: 0, msg: '' }
+[2018-05-15T21:08:04.975] [INFO] gansu.json - 获取默认地址 17180143231 2031747
+[2018-05-15T21:08:05.071] [INFO] gansu.json - 获取默认地址 17180143231 { state: true,
+  code: 0,
   data: 
-   { Sid: '141410183002',
-     Pid: 391,
-     Pcode: '23',
-     CanSale: true,
-     CanLocation: true,
-     Longitude: 113.39,
-     Latitude: 34.54,
-     LocationCode: '410000',
-     StockCount: 1,
-     QuotasStockCount: 1,
-     IsPlatform: false } }
-[2018-04-29T04:37:39.927] [INFO] 391 - start buy 15674891274 zjw1314 ed0e280e74f34be7915a28d40052cd65 12 { state: true,
-  code: 3,
+   { SId: 2031720,
+     UserId: '2301741',
+     TelPhone: '17180143231',
+     Zipcode: '000000',
+     Address: '金川集团公司退休职工管理服务中心白泉村退休职工文化活动室,1号楼5单元4159室',
+     AddressInfo: '甘肃省金昌市金川区',
+     ShipTo: '吴曾',
+     Remark: '',
+     ProvinceId: '620000',
+     CityId: '620300',
+     DistrictsId: '620302',
+     IsDefault: true,
+     SMNo: null,
+     RelPhone: null,
+     Longitude: '102.184678',
+     Latitude: '38.567423' } }
+[2018-05-15T21:08:05.072] [INFO] gansu.json - 开始下单 17180143231 2031747
+[2018-05-15T21:08:08.574] [INFO] gansu.json - 提交订单完成 17180143231 { state: true, code: 0, data: 200 }
+[2018-05-15T21:08:08.575] [INFO] gansu.json - 获取订单状态 17180143231
+[2018-05-15T21:08:08.738] [INFO] gansu.json - 获取一次商品信息 17180169727 2031748
+[2018-05-15T21:08:08.956] [INFO] gansu.json - 登记登陆 17180169727 2031748
+[2018-05-15T21:08:09.316] [INFO] gansu.json - 登记登陆DONE 17180169727 { state: true, code: 0, msg: '' }
+[2018-05-15T21:08:09.317] [INFO] gansu.json - 获取默认地址 17180169727 2031748
+[2018-05-15T21:08:09.457] [INFO] gansu.json - 获取默认地址 17180169727 { state: true,
+  code: 0,
   data: 
-   { Sid: '141410183002',
-     Pid: 391,
-     Pcode: '23',
-     CanSale: true,
-     CanLocation: true,
-     Longitude: 113.39,
-     Latitude: 34.54,
-     LocationCode: '410000',
-     StockCount: 1,
-     QuotasStockCount: 1,
-     IsPlatform: false } }
-[2018-04-29T04:37:40.089] [INFO] 391 - start buy 17826613020 zjw1314 ed0e280e74f34be7915a28d40052cd65 12 { state: true,
-  code: 3,
+   { SId: 2031721,
+     UserId: '2301750',
+     TelPhone: '17180169727',
+     Zipcode: '000000',
+     Address: '阳光华庭,3号楼9单元3526室',
+     AddressInfo: '甘肃省金昌市金川区',
+     ShipTo: '包委',
+     Remark: '',
+     ProvinceId: '620000',
+     CityId: '620300',
+     DistrictsId: '620302',
+     IsDefault: true,
+     SMNo: null,
+     RelPhone: null,
+     Longitude: '102.183915',
+     Latitude: '38.495783' } }
+[2018-05-15T21:08:09.458] [INFO] gansu.json - 开始下单 17180169727 2031748
+[2018-05-15T21:08:09.570] [INFO] gansu.json - 提交订单完成 17180169727 { state: true, code: 0, data: 200 }
+[2018-05-15T21:08:09.571] [INFO] gansu.json - 获取订单状态 17180169727
+[2018-05-15T21:08:09.707] [INFO] gansu.json - 获取一次商品信息 17180143188 2031749
+[2018-05-15T21:08:09.827] [INFO] gansu.json - 登记登陆 17180143188 2031749
+[2018-05-15T21:08:09.953] [INFO] gansu.json - 登记登陆DONE 17180143188 { state: true, code: 0, msg: '' }
+[2018-05-15T21:08:09.953] [INFO] gansu.json - 获取默认地址 17180143188 2031749
+[2018-05-15T21:08:10.064] [INFO] gansu.json - 获取默认地址 17180143188 { state: true,
+  code: 0,
   data: 
-   { Sid: '141410183002',
-     Pid: 391,
-     Pcode: '23',
-     CanSale: true,
-     CanLocation: true,
-     Longitude: 113.39,
-     Latitude: 34.54,
-     LocationCode: '410000',
-     StockCount: 1,
-     QuotasStockCount: 1,
-     IsPlatform: false } }
-[2018-04-29T04:37:40.188] [INFO] 391 - start buy 13573579257 zjw1314 ed0e280e74f34be7915a28d40052cd65 12 { state: true, code: 2, data: { UserCount: 12, LimitCount: 12 } }
-[2018-04-29T04:37:40.342] [INFO] 391 - start buy 13706644202 zjw1314 ed0e280e74f34be7915a28d40052cd65 12 { state: true,
-  code: 3,
+   { SId: 2031722,
+     UserId: '2301752',
+     TelPhone: '17180143188',
+     Zipcode: '000000',
+     Address: '上层领地,7号楼8单元7368室',
+     AddressInfo: '甘肃省金昌市金川区',
+     ShipTo: '农袁',
+     Remark: '',
+     ProvinceId: '620000',
+     CityId: '620300',
+     DistrictsId: '620302',
+     IsDefault: true,
+     SMNo: null,
+     RelPhone: null,
+     Longitude: '102.165567',
+     Latitude: '38.521544' } }
+[2018-05-15T21:08:10.065] [INFO] gansu.json - 开始下单 17180143188 2031749
+[2018-05-15T21:08:10.186] [INFO] gansu.json - 提交订单完成 17180143188 { state: true, code: 0, data: 200 }
+[2018-05-15T21:08:10.187] [INFO] gansu.json - 获取订单状态 17180143188
+[2018-05-15T21:08:10.497] [INFO] gansu.json - 获取一次商品信息 17180143200 2031750
+[2018-05-15T21:08:10.651] [INFO] gansu.json - 登记登陆 17180143200 2031750
+[2018-05-15T21:08:10.749] [INFO] gansu.json - 登记登陆DONE 17180143200 { state: true, code: 0, msg: '' }
+[2018-05-15T21:08:10.750] [INFO] gansu.json - 获取默认地址 17180143200 2031750
+[2018-05-15T21:08:10.873] [INFO] gansu.json - 获取默认地址 17180143200 { state: true,
+  code: 0,
   data: 
-   { Sid: '141410183002',
-     Pid: 391,
-     Pcode: '23',
-     CanSale: true,
-     CanLocation: true,
-     Longitude: 113.39,
-     Latitude: 34.54,
-     LocationCode: '410000',
-     StockCount: 1,
-     QuotasStockCount: 1,
-     IsPlatform: false } }
-[2018-04-29T04:37:40.489] [INFO] 391 - start buy 17742561232 zjw1314 ed0e280e74f34be7915a28d40052cd65 12 { state: true,
-  code: 3,
+   { SId: 2031723,
+     UserId: '2301764',
+     TelPhone: '17180143200',
+     Zipcode: '000000',
+     Address: '鸿运综合超市,8号楼6单元3945室',
+     AddressInfo: '甘肃省金昌市金川区',
+     ShipTo: '邹要',
+     Remark: '',
+     ProvinceId: '620000',
+     CityId: '620300',
+     DistrictsId: '620302',
+     IsDefault: true,
+     SMNo: null,
+     RelPhone: null,
+     Longitude: '102.15938',
+     Latitude: '38.537098' } }
+[2018-05-15T21:08:10.874] [INFO] gansu.json - 开始下单 17180143200 2031750
+[2018-05-15T21:08:10.992] [INFO] gansu.json - 提交订单完成 17180143200 { state: true, code: 0, data: 200 }
+[2018-05-15T21:08:10.993] [INFO] gansu.json - 获取订单状态 17180143200
+[2018-05-15T21:08:11.557] [INFO] gansu.json - 获取一次商品信息 17180164667 2031751
+[2018-05-15T21:08:11.654] [INFO] gansu.json - 登记登陆 17180164667 2031751
+[2018-05-15T21:08:11.746] [INFO] gansu.json - 登记登陆DONE 17180164667 { state: true, code: 0, msg: '' }
+[2018-05-15T21:08:11.747] [INFO] gansu.json - 获取默认地址 17180164667 2031751
+[2018-05-15T21:08:11.853] [INFO] gansu.json - 获取默认地址 17180164667 { state: true,
+  code: 0,
   data: 
-   { Sid: '141410183002',
-     Pid: 391,
-     Pcode: '23',
-     CanSale: true,
-     CanLocation: true,
-     Longitude: 113.39,
-     Latitude: 34.54,
-     LocationCode: '410000',
-     StockCount: 1,
-     QuotasStockCount: 1,
-     IsPlatform: false } }
-[2018-04-29T04:37:40.663] [INFO] 391 - start buy 18367129040 zjw1314 ed0e280e74f34be7915a28d40052cd65 12 { state: true,
-  code: 3,
+   { SId: 2031724,
+     UserId: '2301767',
+     TelPhone: '17180164667',
+     Zipcode: '000000',
+     Address: '日日鑫超市,1号楼0单元0139室',
+     AddressInfo: '甘肃省金昌市金川区',
+     ShipTo: '莘刻',
+     Remark: '',
+     ProvinceId: '620000',
+     CityId: '620300',
+     DistrictsId: '620302',
+     IsDefault: true,
+     SMNo: null,
+     RelPhone: null,
+     Longitude: '102.195982',
+     Latitude: '38.558699' } }
+[2018-05-15T21:08:11.854] [INFO] gansu.json - 开始下单 17180164667 2031751
+[2018-05-15T21:08:11.948] [INFO] gansu.json - 提交订单完成 17180164667 { state: true, code: 0, data: 200 }
+[2018-05-15T21:08:11.949] [INFO] gansu.json - 获取订单状态 17180164667
+[2018-05-15T21:08:12.588] [INFO] gansu.json - 获取一次商品信息 17180164353 2031752
+[2018-05-15T21:08:12.694] [INFO] gansu.json - 登记登陆 17180164353 2031752
+[2018-05-15T21:08:12.796] [INFO] gansu.json - 登记登陆DONE 17180164353 { state: true, code: 0, msg: '' }
+[2018-05-15T21:08:12.797] [INFO] gansu.json - 获取默认地址 17180164353 2031752
+[2018-05-15T21:08:12.903] [INFO] gansu.json - 获取默认地址 17180164353 { state: true,
+  code: 0,
   data: 
-   { Sid: '141410183002',
-     Pid: 391,
-     Pcode: '23',
-     CanSale: true,
-     CanLocation: true,
-     Longitude: 113.39,
-     Latitude: 34.54,
-     LocationCode: '410000',
-     StockCount: 1,
-     QuotasStockCount: 1,
-     IsPlatform: false } }
-[2018-04-29T04:37:40.832] [INFO] 391 - start buy 15684099299 zjw1314 ed0e280e74f34be7915a28d40052cd65 12 { state: true,
-  code: 3,
+   { SId: 2031725,
+     UserId: '2301776',
+     TelPhone: '17180164353',
+     Zipcode: '000000',
+     Address: '米家洼子,1号楼4单元2323室',
+     AddressInfo: '甘肃省金昌市金川区',
+     ShipTo: '公卉胃',
+     Remark: '',
+     ProvinceId: '620000',
+     CityId: '620300',
+     DistrictsId: '620302',
+     IsDefault: true,
+     SMNo: null,
+     RelPhone: null,
+     Longitude: '102.140107',
+     Latitude: '38.548631' } }
+[2018-05-15T21:08:12.904] [INFO] gansu.json - 开始下单 17180164353 2031752
+[2018-05-15T21:08:13.001] [INFO] gansu.json - 提交订单完成 17180164353 { state: true, code: 0, data: 200 }
+[2018-05-15T21:08:13.002] [INFO] gansu.json - 获取订单状态 17180164353
+[2018-05-15T21:08:13.303] [INFO] gansu.json - 获取一次商品信息 17180143201 2031754
+[2018-05-15T21:08:13.446] [INFO] gansu.json - 登记登陆 17180143201 2031754
+[2018-05-15T21:08:13.560] [INFO] gansu.json - 登记登陆DONE 17180143201 { state: true, code: 0, msg: '' }
+[2018-05-15T21:08:13.561] [INFO] gansu.json - 获取默认地址 17180143201 2031754
+[2018-05-15T21:08:13.666] [INFO] gansu.json - 获取默认地址 17180143201 { state: true,
+  code: 0,
   data: 
-   { Sid: '141410183002',
-     Pid: 391,
-     Pcode: '23',
-     CanSale: true,
-     CanLocation: true,
-     Longitude: 113.39,
-     Latitude: 34.54,
-     LocationCode: '410000',
-     StockCount: 1,
-     QuotasStockCount: 1,
-     IsPlatform: false } }
-[2018-04-29T04:37:41.016] [INFO] 391 - start buy 18021636890 zjw1314 ed0e280e74f34be7915a28d40052cd65 12 { state: true,
-  code: 3,
+   { SId: 2031726,
+     UserId: '2301782',
+     TelPhone: '17180143201',
+     Zipcode: '000000',
+     Address: '春蕾幼儿园,6号楼4单元8916室',
+     AddressInfo: '甘肃省金昌市金川区',
+     ShipTo: '江育弟',
+     Remark: '',
+     ProvinceId: '620000',
+     CityId: '620300',
+     DistrictsId: '620302',
+     IsDefault: true,
+     SMNo: null,
+     RelPhone: null,
+     Longitude: '102.200462',
+     Latitude: '38.508881' } }
+[2018-05-15T21:08:13.667] [INFO] gansu.json - 开始下单 17180143201 2031754
+[2018-05-15T21:08:13.783] [INFO] gansu.json - 提交订单完成 17180143201 { state: true, code: 0, data: 200 }
+[2018-05-15T21:08:13.784] [INFO] gansu.json - 获取订单状态 17180143201
+[2018-05-15T21:08:13.997] [INFO] gansu.json - 获取一次商品信息 17180169725 2031755
+[2018-05-15T21:08:14.105] [INFO] gansu.json - 登记登陆 17180169725 2031755
+[2018-05-15T21:08:14.213] [INFO] gansu.json - 登记登陆DONE 17180169725 { state: true, code: 0, msg: '' }
+[2018-05-15T21:08:14.214] [INFO] gansu.json - 获取默认地址 17180169725 2031755
+[2018-05-15T21:08:14.325] [INFO] gansu.json - 获取默认地址 17180169725 { state: true,
+  code: 0,
   data: 
-   { Sid: '141410183002',
-     Pid: 391,
-     Pcode: '23',
-     CanSale: true,
-     CanLocation: true,
-     Longitude: 113.39,
-     Latitude: 34.54,
-     LocationCode: '410000',
-     StockCount: 1,
-     QuotasStockCount: 1,
-     IsPlatform: false } }
-[2018-04-29T04:37:41.195] [INFO] 391 - start buy 15370150446 zjw1314 ed0e280e74f34be7915a28d40052cd65 12 { state: true,
-  code: 3,
+   { SId: 2031727,
+     UserId: '2301793',
+     TelPhone: '17180169725',
+     Zipcode: '000000',
+     Address: '小沟,8号楼8单元4224室',
+     AddressInfo: '甘肃省金昌市金川区',
+     ShipTo: '广拘擎',
+     Remark: '',
+     ProvinceId: '620000',
+     CityId: '620300',
+     DistrictsId: '620302',
+     IsDefault: true,
+     SMNo: null,
+     RelPhone: null,
+     Longitude: '102.186387',
+     Latitude: '38.548755' } }
+[2018-05-15T21:08:14.326] [INFO] gansu.json - 开始下单 17180169725 2031755
+[2018-05-15T21:08:14.424] [INFO] gansu.json - 提交订单完成 17180169725 { state: true, code: 0, data: 200 }
+[2018-05-15T21:08:14.425] [INFO] gansu.json - 获取订单状态 17180169725
+[2018-05-15T21:08:14.718] [INFO] gansu.json - 获取一次商品信息 17180164687 2031756
+[2018-05-15T21:08:14.928] [INFO] gansu.json - 登记登陆 17180164687 2031756
+[2018-05-15T21:08:15.030] [INFO] gansu.json - 登记登陆DONE 17180164687 { state: true, code: 0, msg: '' }
+[2018-05-15T21:08:15.030] [INFO] gansu.json - 获取默认地址 17180164687 2031756
+[2018-05-15T21:08:15.119] [INFO] gansu.json - 获取默认地址 17180164687 { state: true,
+  code: 0,
   data: 
-   { Sid: '141410183002',
-     Pid: 391,
-     Pcode: '23',
-     CanSale: true,
-     CanLocation: true,
-     Longitude: 113.39,
-     Latitude: 34.54,
-     LocationCode: '410000',
-     StockCount: 1,
-     QuotasStockCount: 1,
-     IsPlatform: false } }
-[2018-04-29T04:37:41.379] [INFO] 391 - start buy 15962272631 zjw1314 ed0e280e74f34be7915a28d40052cd65 12 { state: true,
-  code: 3,
+   { SId: 2031728,
+     UserId: '2301806',
+     TelPhone: '17180164687',
+     Zipcode: '000000',
+     Address: '金昌市牛羊定点屠宰厂,7号楼0单元6980室',
+     AddressInfo: '甘肃省金昌市金川区',
+     ShipTo: '郁脱烈',
+     Remark: '',
+     ProvinceId: '620000',
+     CityId: '620300',
+     DistrictsId: '620302',
+     IsDefault: true,
+     SMNo: null,
+     RelPhone: null,
+     Longitude: '102.17706',
+     Latitude: '38.533649' } }
+[2018-05-15T21:08:15.120] [INFO] gansu.json - 开始下单 17180164687 2031756
+[2018-05-15T21:08:15.245] [INFO] gansu.json - 提交订单完成 17180164687 { state: true, code: 0, data: 200 }
+[2018-05-15T21:08:15.246] [INFO] gansu.json - 获取订单状态 17180164687
+[2018-05-15T21:08:15.543] [INFO] gansu.json - 获取一次商品信息 17180143195 2031757
+[2018-05-15T21:08:15.637] [INFO] gansu.json - 登记登陆 17180143195 2031757
+[2018-05-15T21:08:15.752] [INFO] gansu.json - 登记登陆DONE 17180143195 { state: true, code: 0, msg: '' }
+[2018-05-15T21:08:15.752] [INFO] gansu.json - 获取默认地址 17180143195 2031757
+[2018-05-15T21:08:15.818] [INFO] gansu.json - 获取默认地址 17180143195 { state: true,
+  code: 0,
   data: 
-   { Sid: '141410183002',
-     Pid: 391,
-     Pcode: '23',
-     CanSale: true,
-     CanLocation: true,
-     Longitude: 113.39,
-     Latitude: 34.54,
-     LocationCode: '410000',
-     StockCount: 1,
-     QuotasStockCount: 1,
-     IsPlatform: false } }
-[2018-04-29T04:37:41.563] [INFO] 391 - start buy 18336492326 zjw1314 ed0e280e74f34be7915a28d40052cd65 12 { state: true,
-  code: 3,
+   { SId: 2031729,
+     UserId: '2301814',
+     TelPhone: '17180143195',
+     Zipcode: '000000',
+     Address: '天然居,8号楼1单元7294室',
+     AddressInfo: '甘肃省金昌市金川区',
+     ShipTo: '何欻',
+     Remark: '',
+     ProvinceId: '620000',
+     CityId: '620300',
+     DistrictsId: '620302',
+     IsDefault: true,
+     SMNo: null,
+     RelPhone: null,
+     Longitude: '102.168086',
+     Latitude: '38.510572' } }
+[2018-05-15T21:08:15.819] [INFO] gansu.json - 开始下单 17180143195 2031757
+[2018-05-15T21:08:15.936] [INFO] gansu.json - 提交订单完成 17180143195 { state: true, code: 0, data: 200 }
+[2018-05-15T21:08:15.937] [INFO] gansu.json - 获取订单状态 17180143195
+[2018-05-15T21:08:16.047] [INFO] gansu.json - 获取一次商品信息 17180143196 2233439
+[2018-05-15T21:08:16.343] [INFO] gansu.json - 登记登陆 17180143196 2233439
+[2018-05-15T21:08:16.450] [INFO] gansu.json - 登记登陆DONE 17180143196 { state: true, code: 0, msg: '' }
+[2018-05-15T21:08:16.450] [INFO] gansu.json - 获取默认地址 17180143196 2233439
+[2018-05-15T21:08:16.537] [INFO] gansu.json - 获取默认地址 17180143196 { state: true,
+  code: 0,
   data: 
-   { Sid: '141410183002',
-     Pid: 391,
-     Pcode: '23',
-     CanSale: true,
-     CanLocation: true,
-     Longitude: 113.39,
-     Latitude: 34.54,
-     LocationCode: '410000',
-     StockCount: 1,
-     QuotasStockCount: 1,
-     IsPlatform: false } }
-[2018-04-29T04:37:41.740] [INFO] 391 - start buy 15651776037 zjw1314 ed0e280e74f34be7915a28d40052cd65 12 { state: true,
-  code: 3,
+   { SId: 2233439,
+     UserId: '2301801',
+     TelPhone: '17180143196',
+     Zipcode: '000000',
+     Address: '前滩,1号楼1单元0517室',
+     AddressInfo: '甘肃省金昌市永昌县',
+     ShipTo: '毛闪西',
+     Remark: '',
+     ProvinceId: '620000',
+     CityId: '620300',
+     DistrictsId: '620321',
+     IsDefault: true,
+     SMNo: null,
+     RelPhone: null,
+     Longitude: '102.156318',
+     Latitude: '38.563046' } }
+[2018-05-15T21:08:16.537] [INFO] gansu.json - 开始下单 17180143196 2233439
+[2018-05-15T21:08:16.646] [INFO] gansu.json - 提交订单完成 17180143196 { state: true, code: 0, data: 200 }
+[2018-05-15T21:08:16.646] [INFO] gansu.json - 获取订单状态 17180143196
+[2018-05-15T21:08:16.945] [INFO] gansu.json - 获取一次商品信息 17180161969 2031758
+[2018-05-15T21:08:17.167] [INFO] gansu.json - 登记登陆 17180161969 2031758
+[2018-05-15T21:08:17.254] [INFO] gansu.json - 登记登陆DONE 17180161969 { state: true, code: 0, msg: '' }
+[2018-05-15T21:08:17.255] [INFO] gansu.json - 获取默认地址 17180161969 2031758
+[2018-05-15T21:08:17.364] [INFO] gansu.json - 获取默认地址 17180161969 { state: true,
+  code: 0,
   data: 
-   { Sid: '141410183002',
-     Pid: 391,
-     Pcode: '23',
-     CanSale: true,
-     CanLocation: true,
-     Longitude: 113.39,
-     Latitude: 34.54,
-     LocationCode: '410000',
-     StockCount: 1,
-     QuotasStockCount: 1,
-     IsPlatform: false } }
-[2018-04-29T04:37:41.892] [INFO] 391 - start buy 15895625015 zjw1314 ed0e280e74f34be7915a28d40052cd65 12 { state: true,
-  code: 3,
+   { SId: 2031730,
+     UserId: '2301828',
+     TelPhone: '17180161969',
+     Zipcode: '000000',
+     Address: '恒昌花园,0号楼2单元6551室',
+     AddressInfo: '甘肃省金昌市金川区',
+     ShipTo: '郗雍',
+     Remark: '',
+     ProvinceId: '620000',
+     CityId: '620300',
+     DistrictsId: '620302',
+     IsDefault: true,
+     SMNo: null,
+     RelPhone: null,
+     Longitude: '102.170945',
+     Latitude: '38.519568' } }
+[2018-05-15T21:08:17.365] [INFO] gansu.json - 开始下单 17180161969 2031758
+[2018-05-15T21:08:17.456] [INFO] gansu.json - 提交订单完成 17180161969 { state: true, code: 0, data: 200 }
+[2018-05-15T21:08:17.456] [INFO] gansu.json - 获取订单状态 17180161969
+[2018-05-15T21:08:17.596] [INFO] gansu.json - 获取一次商品信息 17180143230 2031759
+[2018-05-15T21:08:17.717] [INFO] gansu.json - 登记登陆 17180143230 2031759
+[2018-05-15T21:08:17.805] [INFO] gansu.json - 登记登陆DONE 17180143230 { state: true, code: 0, msg: '' }
+[2018-05-15T21:08:17.806] [INFO] gansu.json - 获取默认地址 17180143230 2031759
+[2018-05-15T21:08:17.917] [INFO] gansu.json - 获取默认地址 17180143230 { state: true,
+  code: 0,
   data: 
-   { Sid: '141410183002',
-     Pid: 391,
-     Pcode: '23',
-     CanSale: true,
-     CanLocation: true,
-     Longitude: 113.39,
-     Latitude: 34.54,
-     LocationCode: '410000',
-     StockCount: 1,
-     QuotasStockCount: 1,
-     IsPlatform: false } }
-[2018-04-29T04:37:42.070] [INFO] 391 - start buy 13773024105  zjw1314 ed0e280e74f34be7915a28d40052cd65 12 { state: true,
-  code: 3,
+   { SId: 2031731,
+     UserId: '2301830',
+     TelPhone: '17180143230',
+     Zipcode: '000000',
+     Address: '金昌花文化博览馆,7号楼7单元2876室',
+     AddressInfo: '甘肃省金昌市金川区',
+     ShipTo: '休巧',
+     Remark: '',
+     ProvinceId: '620000',
+     CityId: '620300',
+     DistrictsId: '620302',
+     IsDefault: true,
+     SMNo: null,
+     RelPhone: null,
+     Longitude: '102.136018',
+     Latitude: '38.53658' } }
+[2018-05-15T21:08:17.918] [INFO] gansu.json - 开始下单 17180143230 2031759
+[2018-05-15T21:08:18.010] [INFO] gansu.json - 提交订单完成 17180143230 { state: true, code: 0, data: 200 }
+[2018-05-15T21:08:18.011] [INFO] gansu.json - 获取订单状态 17180143230
+[2018-05-15T21:08:18.166] [INFO] gansu.json - 获取一次商品信息 18219910361 1380914
+[2018-05-15T21:08:18.464] [INFO] gansu.json - 登记登陆 18219910361 1380914
+[2018-05-15T21:08:18.573] [INFO] gansu.json - 登记登陆DONE 18219910361 { state: true, code: 0, msg: '' }
+[2018-05-15T21:08:18.573] [INFO] gansu.json - 获取默认地址 18219910361 1380914
+[2018-05-15T21:08:18.656] [INFO] gansu.json - 获取默认地址 18219910361 { state: true,
+  code: 0,
   data: 
-   { Sid: '141410183002',
-     Pid: 391,
-     Pcode: '23',
-     CanSale: true,
-     CanLocation: true,
-     Longitude: 113.39,
-     Latitude: 34.54,
-     LocationCode: '410000',
-     StockCount: 1,
-     QuotasStockCount: 1,
-     IsPlatform: false } }
-[2018-04-29T04:37:42.224] [INFO] 391 - start buy 18501521650 zjw1314 ed0e280e74f34be7915a28d40052cd65 12 { state: true,
-  code: 3,
+   { SId: 1815999,
+     UserId: '1853988',
+     TelPhone: '18219910361',
+     Zipcode: '000000',
+     Address: '小沟,2号楼8单元8341室',
+     AddressInfo: '甘肃省金昌市金川区',
+     ShipTo: '贲瞻气',
+     Remark: '',
+     ProvinceId: '620000',
+     CityId: '620300',
+     DistrictsId: '620302',
+     IsDefault: true,
+     SMNo: null,
+     RelPhone: null,
+     Longitude: '102.186387',
+     Latitude: '38.548755' } }
+[2018-05-15T21:08:18.657] [INFO] gansu.json - 开始下单 18219910361 1380914
+[2018-05-15T21:08:18.752] [INFO] gansu.json - 提交订单完成 18219910361 { state: true, code: 0, data: 200 }
+[2018-05-15T21:08:18.753] [INFO] gansu.json - 获取订单状态 18219910361
+[2018-05-15T21:08:18.879] [INFO] gansu.json - 获取一次商品信息 17693185401 2084359
+[2018-05-15T21:08:18.974] [INFO] gansu.json - 登记登陆 17693185401 2084359
+[2018-05-15T21:08:19.081] [INFO] gansu.json - 登记登陆DONE 17693185401 { state: true, code: 0, msg: '' }
+[2018-05-15T21:08:19.082] [INFO] gansu.json - 获取默认地址 17693185401 2084359
+[2018-05-15T21:08:19.192] [INFO] gansu.json - 获取默认地址 17693185401 { state: true,
+  code: 0,
   data: 
-   { Sid: '141410183002',
-     Pid: 391,
-     Pcode: '23',
-     CanSale: true,
-     CanLocation: true,
-     Longitude: 113.39,
-     Latitude: 34.54,
-     LocationCode: '410000',
-     StockCount: 1,
-     QuotasStockCount: 1,
-     IsPlatform: false } }
-[2018-04-29T04:37:42.400] [INFO] 391 - start buy 13328029369 zjw1314 ed0e280e74f34be7915a28d40052cd65 12 { state: true,
-  code: 3,
+   { SId: 1835493,
+     UserId: '2175268',
+     TelPhone: '17693185401',
+     Zipcode: '000000',
+     Address: '阳光里超市,0号楼9单元8669室',
+     AddressInfo: '甘肃省兰州市安宁区',
+     ShipTo: '邴规',
+     Remark: '',
+     ProvinceId: '620000',
+     CityId: '620100',
+     DistrictsId: '620105',
+     IsDefault: true,
+     SMNo: null,
+     RelPhone: null,
+     Longitude: '103.713582',
+     Latitude: '36.096389' } }
+[2018-05-15T21:08:19.193] [INFO] gansu.json - 开始下单 17693185401 2084359
+[2018-05-15T21:08:19.284] [INFO] gansu.json - 提交订单完成 17693185401 { state: true, code: 0, data: 200 }
+[2018-05-15T21:08:19.285] [INFO] gansu.json - 获取订单状态 17693185401
+[2018-05-15T21:08:19.584] [INFO] gansu.json - 获取一次商品信息 18189689730 2084357
+[2018-05-15T21:08:19.792] [INFO] gansu.json - 登记登陆 18189689730 2084357
+[2018-05-15T21:08:19.872] [INFO] gansu.json - 登记登陆DONE 18189689730 { state: true, code: 0, msg: '' }
+[2018-05-15T21:08:19.872] [INFO] gansu.json - 获取默认地址 18189689730 2084357
+[2018-05-15T21:08:19.957] [INFO] gansu.json - 获取默认地址 18189689730 { state: true,
+  code: 0,
   data: 
-   { Sid: '141410183002',
-     Pid: 391,
-     Pcode: '23',
-     CanSale: true,
-     CanLocation: true,
-     Longitude: 113.39,
-     Latitude: 34.54,
-     LocationCode: '410000',
-     StockCount: 1,
-     QuotasStockCount: 1,
-     IsPlatform: false } }
-[2018-04-29T04:37:42.589] [INFO] 391 - start buy 15862853769 zjw1314 ed0e280e74f34be7915a28d40052cd65 12 { state: true,
-  code: 3,
+   { SId: 1467807,
+     UserId: '1786029',
+     TelPhone: '18189689730',
+     Zipcode: '000000',
+     Address: '金昌市牛羊定点屠宰厂,7号楼0单元9092室',
+     AddressInfo: '甘肃省金昌市金川区',
+     ShipTo: '旁箕',
+     Remark: '',
+     ProvinceId: '620000',
+     CityId: '620300',
+     DistrictsId: '620302',
+     IsDefault: true,
+     SMNo: null,
+     RelPhone: null,
+     Longitude: '102.17706',
+     Latitude: '38.533649' } }
+[2018-05-15T21:08:19.958] [INFO] gansu.json - 开始下单 18189689730 2084357
+[2018-05-15T21:08:20.064] [INFO] gansu.json - 提交订单完成 18189689730 { state: true, code: 0, data: 200 }
+[2018-05-15T21:08:20.065] [INFO] gansu.json - 获取订单状态 18189689730
+[2018-05-15T21:08:20.368] [INFO] gansu.json - 获取一次商品信息 18189683207 2084361
+[2018-05-15T21:08:20.671] [INFO] gansu.json - 登记登陆 18189683207 2084361
+[2018-05-15T21:08:20.770] [INFO] gansu.json - 登记登陆DONE 18189683207 { state: true, code: 0, msg: '' }
+[2018-05-15T21:08:20.770] [INFO] gansu.json - 获取默认地址 18189683207 2084361
+[2018-05-15T21:08:20.882] [INFO] gansu.json - 获取默认地址 18189683207 { state: true,
+  code: 0,
   data: 
-   { Sid: '141410183002',
-     Pid: 391,
-     Pcode: '23',
-     CanSale: true,
-     CanLocation: true,
-     Longitude: 113.39,
-     Latitude: 34.54,
-     LocationCode: '410000',
-     StockCount: 1,
-     QuotasStockCount: 1,
-     IsPlatform: false } }
-[2018-04-29T04:37:42.750] [INFO] 391 - start buy 15138185612   zjw1314 ed0e280e74f34be7915a28d40052cd65 12 { state: true,
-  code: 3,
+   { SId: 2084361,
+     UserId: '1853345',
+     TelPhone: '18189683207',
+     Zipcode: '000000',
+     Address: '阳光里超市,',
+     AddressInfo: '甘肃省兰州市安宁区',
+     ShipTo: '杨一凡',
+     Remark: '',
+     ProvinceId: '620000',
+     CityId: '620100',
+     DistrictsId: '620105',
+     IsDefault: true,
+     SMNo: null,
+     RelPhone: null,
+     Longitude: '103.713582',
+     Latitude: '36.096389' } }
+[2018-05-15T21:08:20.883] [INFO] gansu.json - 开始下单 18189683207 2084361
+[2018-05-15T21:08:20.974] [INFO] gansu.json - 提交订单完成 18189683207 { state: true, code: 0, data: 200 }
+[2018-05-15T21:08:20.976] [INFO] gansu.json - 获取订单状态 18189683207
+[2018-05-15T21:08:21.138] [INFO] gansu.json - 获取一次商品信息 13679490726 2108868
+[2018-05-15T21:08:21.201] [INFO] gansu.json - 登记登陆 13679490726 2108868
+[2018-05-15T21:08:21.309] [INFO] gansu.json - 登记登陆DONE 13679490726 { state: true, code: 0, msg: '' }
+[2018-05-15T21:08:21.310] [INFO] gansu.json - 获取默认地址 13679490726 2108868
+[2018-05-15T21:08:21.418] [INFO] gansu.json - 获取默认地址 13679490726 { state: true,
+  code: 0,
   data: 
-   { Sid: '141410183002',
-     Pid: 391,
-     Pcode: '23',
-     CanSale: true,
-     CanLocation: true,
-     Longitude: 113.39,
-     Latitude: 34.54,
-     LocationCode: '410000',
-     StockCount: 1,
-     QuotasStockCount: 1,
-     IsPlatform: false } }
-[2018-04-29T04:37:42.925] [INFO] 391 - start buy 17601461170 zjw1314 ed0e280e74f34be7915a28d40052cd65 12 { state: true,
-  code: 3,
-  data: 
-   { Sid: '141410183002',
-     Pid: 391,
-     Pcode: '23',
-     CanSale: true,
-     CanLocation: true,
-     Longitude: 113.39,
-     Latitude: 34.54,
-     LocationCode: '410000',
-     StockCount: 1,
-     QuotasStockCount: 1,
-     IsPlatform: false } }
-[2018-04-29T04:37:43.063] [INFO] 391 - start buy 13862320374 zjw1314 ed0e280e74f34be7915a28d40052cd65 12 { state: true,
-  code: 3,
-  data: 
-   { Sid: '141410183002',
-     Pid: 391,
-     Pcode: '23',
-     CanSale: true,
-     CanLocation: true,
-     Longitude: 113.39,
-     Latitude: 34.54,
-     LocationCode: '410000',
-     StockCount: 1,
-     QuotasStockCount: 1,
-     IsPlatform: false } }
-[2018-04-29T04:37:43.243] [INFO] 391 - start buy 18261738520  zjw1314 ed0e280e74f34be7915a28d40052cd65 12 { state: true,
-  code: 3,
-  data: 
-   { Sid: '141410183002',
-     Pid: 391,
-     Pcode: '23',
-     CanSale: true,
-     CanLocation: true,
-     Longitude: 113.39,
-     Latitude: 34.54,
-     LocationCode: '410000',
-     StockCount: 1,
-     QuotasStockCount: 1,
-     IsPlatform: false } }
-[2018-04-29T04:37:43.391] [INFO] 391 - start buy 13140969226 zjw1314 ed0e280e74f34be7915a28d40052cd65 12 { state: true,
-  code: 3,
-  data: 
-   { Sid: '141410183002',
-     Pid: 391,
-     Pcode: '23',
-     CanSale: true,
-     CanLocation: true,
-     Longitude: 113.39,
-     Latitude: 34.54,
-     LocationCode: '410000',
-     StockCount: 1,
-     QuotasStockCount: 1,
-     IsPlatform: false } }
-[2018-04-29T04:37:43.562] [INFO] 391 - start buy 15088597519 zjw1314 ed0e280e74f34be7915a28d40052cd65 12 { state: true,
-  code: 3,
-  data: 
-   { Sid: '141410183002',
-     Pid: 391,
-     Pcode: '23',
-     CanSale: true,
-     CanLocation: true,
-     Longitude: 113.39,
-     Latitude: 34.54,
-     LocationCode: '410000',
-     StockCount: 1,
-     QuotasStockCount: 1,
-     IsPlatform: false } }
-[2018-04-29T04:37:43.713] [INFO] 391 - start buy 13179621132 zjw1314 ed0e280e74f34be7915a28d40052cd65 12 { state: true,
-  code: 3,
-  data: 
-   { Sid: '141410183002',
-     Pid: 391,
-     Pcode: '23',
-     CanSale: true,
-     CanLocation: true,
-     Longitude: 113.39,
-     Latitude: 34.54,
-     LocationCode: '410000',
-     StockCount: 1,
-     QuotasStockCount: 1,
-     IsPlatform: false } }
-[2018-04-29T04:37:43.890] [INFO] 391 - start buy 17601461170 zjw1314 ed0e280e74f34be7915a28d40052cd65 12 { state: true,
-  code: 3,
-  data: 
-   { Sid: '141410183002',
-     Pid: 391,
-     Pcode: '23',
-     CanSale: true,
-     CanLocation: true,
-     Longitude: 113.39,
-     Latitude: 34.54,
-     LocationCode: '410000',
-     StockCount: 1,
-     QuotasStockCount: 1,
-     IsPlatform: false } }
-[2018-04-29T04:37:44.044] [INFO] 391 - start buy 18606193868 zjw1314 ed0e280e74f34be7915a28d40052cd65 12 { state: true,
-  code: 3,
-  data: 
-   { Sid: '141410183002',
-     Pid: 391,
-     Pcode: '23',
-     CanSale: true,
-     CanLocation: true,
-     Longitude: 113.39,
-     Latitude: 34.54,
-     LocationCode: '410000',
-     StockCount: 1,
-     QuotasStockCount: 1,
-     IsPlatform: false } }
-[2018-04-29T04:37:44.220] [INFO] 391 - start buy 17798575587 zjw1314 ed0e280e74f34be7915a28d40052cd65 12 { state: true,
-  code: 3,
-  data: 
-   { Sid: '141410183002',
-     Pid: 391,
-     Pcode: '23',
-     CanSale: true,
-     CanLocation: true,
-     Longitude: 113.39,
-     Latitude: 34.54,
-     LocationCode: '410000',
-     StockCount: 1,
-     QuotasStockCount: 1,
-     IsPlatform: false } }
-[2018-04-29T04:37:44.364] [INFO] 391 - start buy 18556737482 zjw1314 ed0e280e74f34be7915a28d40052cd65 12 { state: true,
-  code: 3,
-  data: 
-   { Sid: '141410183002',
-     Pid: 391,
-     Pcode: '23',
-     CanSale: true,
-     CanLocation: true,
-     Longitude: 113.39,
-     Latitude: 34.54,
-     LocationCode: '410000',
-     StockCount: 1,
-     QuotasStockCount: 1,
-     IsPlatform: false } }
-[2018-04-29T04:37:44.539] [INFO] 391 - start buy 18651672992 zjw1314 ed0e280e74f34be7915a28d40052cd65 12 { state: true,
-  code: 3,
-  data: 
-   { Sid: '141410183002',
-     Pid: 391,
-     Pcode: '23',
-     CanSale: true,
-     CanLocation: true,
-     Longitude: 113.39,
-     Latitude: 34.54,
-     LocationCode: '410000',
-     StockCount: 1,
-     QuotasStockCount: 1,
-     IsPlatform: false } }
-[2018-04-29T04:37:44.693] [INFO] 391 - start buy 13291083620 zjw1314 ed0e280e74f34be7915a28d40052cd65 12 { state: true,
-  code: 3,
-  data: 
-   { Sid: '141410183002',
-     Pid: 391,
-     Pcode: '23',
-     CanSale: true,
-     CanLocation: true,
-     Longitude: 113.39,
-     Latitude: 34.54,
-     LocationCode: '410000',
-     StockCount: 1,
-     QuotasStockCount: 1,
-     IsPlatform: false } }
-[2018-04-29T04:37:44.875] [INFO] 391 - start buy 15050357604 zjw1314 ed0e280e74f34be7915a28d40052cd65 12 { state: true,
-  code: 3,
-  data: 
-   { Sid: '141410183002',
-     Pid: 391,
-     Pcode: '23',
-     CanSale: true,
-     CanLocation: true,
-     Longitude: 113.39,
-     Latitude: 34.54,
-     LocationCode: '410000',
-     StockCount: 1,
-     QuotasStockCount: 1,
-     IsPlatform: false } }
-[2018-04-29T04:37:45.053] [INFO] 391 - start buy 18552449004 d963378484 ed0e280e74f34be7915a28d40052cd65 12 { state: true,
-  code: 3,
-  data: 
-   { Sid: '141410183002',
-     Pid: 391,
-     Pcode: '23',
-     CanSale: true,
-     CanLocation: true,
-     Longitude: 113.39,
-     Latitude: 34.54,
-     LocationCode: '410000',
-     StockCount: 1,
-     QuotasStockCount: 1,
-     IsPlatform: false } }
-[2018-04-29T04:37:45.206] [INFO] 391 - start buy 18550840530 d963378484 ed0e280e74f34be7915a28d40052cd65 12 { state: true,
-  code: 3,
-  data: 
-   { Sid: '141410183002',
-     Pid: 391,
-     Pcode: '23',
-     CanSale: true,
-     CanLocation: true,
-     Longitude: 113.39,
-     Latitude: 34.54,
-     LocationCode: '410000',
-     StockCount: 1,
-     QuotasStockCount: 1,
-     IsPlatform: false } }
-[2018-04-29T04:37:45.423] [INFO] 391 - start buy 15963577987 d963378484 ed0e280e74f34be7915a28d40052cd65 12 { state: true,
-  code: 3,
-  data: 
-   { Sid: '141410183002',
-     Pid: 391,
-     Pcode: '23',
-     CanSale: true,
-     CanLocation: true,
-     Longitude: 113.39,
-     Latitude: 34.54,
-     LocationCode: '410000',
-     StockCount: 1,
-     QuotasStockCount: 1,
-     IsPlatform: false } }
-[2018-04-29T04:37:45.612] [INFO] 391 - start buy 17712633629 d963378484 ed0e280e74f34be7915a28d40052cd65 12 { state: true,
-  code: 3,
-  data: 
-   { Sid: '141410183002',
-     Pid: 391,
-     Pcode: '23',
-     CanSale: true,
-     CanLocation: true,
-     Longitude: 113.39,
-     Latitude: 34.54,
-     LocationCode: '410000',
-     StockCount: 1,
-     QuotasStockCount: 1,
-     IsPlatform: false } }
-[2018-04-29T04:37:45.787] [INFO] 391 - start buy 13182295162 d963378484 ed0e280e74f34be7915a28d40052cd65 12 { state: true,
-  code: 3,
-  data: 
-   { Sid: '141410183002',
-     Pid: 391,
-     Pcode: '23',
-     CanSale: true,
-     CanLocation: true,
-     Longitude: 113.39,
-     Latitude: 34.54,
-     LocationCode: '410000',
-     StockCount: 1,
-     QuotasStockCount: 1,
-     IsPlatform: false } }
-[2018-04-29T04:37:45.960] [INFO] 391 - start buy 15850804366 d963378484 ed0e280e74f34be7915a28d40052cd65 12 { state: true,
-  code: 3,
-  data: 
-   { Sid: '141410183002',
-     Pid: 391,
-     Pcode: '23',
-     CanSale: true,
-     CanLocation: true,
-     Longitude: 113.39,
-     Latitude: 34.54,
-     LocationCode: '410000',
-     StockCount: 1,
-     QuotasStockCount: 1,
-     IsPlatform: false } }
-[2018-04-29T04:37:46.124] [INFO] 391 - start buy 18074442111 d963378484 ed0e280e74f34be7915a28d40052cd65 12 { state: true,
-  code: 3,
-  data: 
-   { Sid: '141410183002',
-     Pid: 391,
-     Pcode: '23',
-     CanSale: true,
-     CanLocation: true,
-     Longitude: 113.39,
-     Latitude: 34.54,
-     LocationCode: '410000',
-     StockCount: 1,
-     QuotasStockCount: 1,
-     IsPlatform: false } }
-[2018-04-29T04:45:07.288] [INFO] 监控 - 二维码错误
-[2018-04-29T04:45:56.598] [INFO] 监控 - 二维码错误
-[2018-04-29T04:48:53.515] [INFO] 监控 - 二维码错误
-[2018-04-29T04:49:33.203] [INFO] 监控 - 自动下单开始
-[2018-04-29T04:49:33.753] [INFO] 391 - params [ '/usr/local/bin/node',
-  '/Users/junliang/server/www/maotaiServer/script/buyFixedActFor1399.js',
-  '391',
-  'dbb06c79e1e64684ba096e1236d904cd',
-  '0',
-  '{"address":"沈丘县洪都大道中段颍河嘉园西大门","sid":"141412728001","MarketPrice":1499,"Price":1499}',
-  '[{"phone":"13573579257","pass":"zjw1314"},{"phone":"18357477024","pass":"zjw1314"},{"phone":"13962310128","pass":"zjw1314"},{"phone":"18550125596","pass":"zjw1314"},{"phone":"13914949281","pass":"zjw1314"},{"phone":"15101904404","pass":"zjw1314"},{"phone":"13958862487","pass":"zjw1314"},{"phone":"15674891274","pass":"zjw1314"},{"phone":"17826613020","pass":"zjw1314"},{"phone":"13573579257","pass":"zjw1314"},{"phone":"13706644202","pass":"zjw1314"},{"phone":"17742561232","pass":"zjw1314"},{"phone":"18367129040","pass":"zjw1314"},{"phone":"15684099299","pass":"zjw1314"},{"phone":"18021636890","pass":"zjw1314"},{"phone":"15370150446","pass":"zjw1314"},{"phone":"15962272631","pass":"zjw1314"},{"phone":"18336492326","pass":"zjw1314"},{"phone":"15651776037","pass":"zjw1314"},{"phone":"15895625015","pass":"zjw1314"},{"phone":"13773024105 ","pass":"zjw1314"},{"phone":"18501521650","pass":"zjw1314"},{"phone":"13328029369","pass":"zjw1314"},{"phone":"15862853769","pass":"zjw1314"},{"phone":"15138185612  ","pass":"zjw1314"},{"phone":"17601461170","pass":"zjw1314"},{"phone":"13862320374","pass":"zjw1314"},{"phone":"18261738520 ","pass":"zjw1314"},{"phone":"13140969226","pass":"zjw1314"},{"phone":"15088597519","pass":"zjw1314"},{"phone":"13179621132","pass":"zjw1314"},{"phone":"17601461170","pass":"zjw1314"},{"phone":"18606193868","pass":"zjw1314"},{"phone":"17798575587","pass":"zjw1314"},{"phone":"18556737482","pass":"zjw1314"},{"phone":"18651672992","pass":"zjw1314"},{"phone":"13291083620","pass":"zjw1314"},{"phone":"15050357604","pass":"zjw1314"},{"phone":"18552449004","pass":"d963378484"},{"phone":"18550840530","pass":"d963378484"},{"phone":"15963577987","pass":"d963378484"},{"phone":"17712633629","pass":"d963378484"},{"phone":"13182295162","pass":"d963378484"},{"phone":"15850804366","pass":"d963378484"},{"phone":"18074442111","pass":"d963378484"}]' ]
-[2018-04-29T04:49:33.866] [INFO] 391 - start buy 13573579257 zjw1314 dbb06c79e1e64684ba096e1236d904cd 0 { state: false, code: 1, msg: '购买数量必须大于0' }
-[2018-04-29T04:49:33.971] [INFO] 391 - start buy 18357477024 zjw1314 dbb06c79e1e64684ba096e1236d904cd 0 { state: false, code: 1, msg: '购买数量必须大于0' }
-[2018-04-29T04:49:34.066] [INFO] 391 - start buy 13962310128 zjw1314 dbb06c79e1e64684ba096e1236d904cd 0 { state: false, code: 1, msg: '购买数量必须大于0' }
-[2018-04-29T04:49:34.136] [INFO] 391 - start buy 18550125596 zjw1314 dbb06c79e1e64684ba096e1236d904cd 0 { state: false, code: 1, msg: '购买数量必须大于0' }
-[2018-04-29T04:49:34.225] [INFO] 391 - start buy 13914949281 zjw1314 dbb06c79e1e64684ba096e1236d904cd 0 { state: false, code: 1, msg: '购买数量必须大于0' }
-[2018-04-29T04:49:34.312] [INFO] 391 - start buy 15101904404 zjw1314 dbb06c79e1e64684ba096e1236d904cd 0 { state: false, code: 1, msg: '购买数量必须大于0' }
-[2018-04-29T04:49:34.376] [INFO] 391 - start buy 13958862487 zjw1314 dbb06c79e1e64684ba096e1236d904cd 0 { state: false, code: 1, msg: '购买数量必须大于0' }
-[2018-04-29T04:49:34.464] [INFO] 391 - start buy 15674891274 zjw1314 dbb06c79e1e64684ba096e1236d904cd 0 { state: false, code: 1, msg: '购买数量必须大于0' }
-[2018-04-29T04:49:34.550] [INFO] 391 - start buy 17826613020 zjw1314 dbb06c79e1e64684ba096e1236d904cd 0 { state: false, code: 1, msg: '购买数量必须大于0' }
-[2018-04-29T04:49:34.844] [INFO] 391 - start buy 13573579257 zjw1314 dbb06c79e1e64684ba096e1236d904cd 0 { state: false, code: 1, msg: '购买数量必须大于0' }
-[2018-04-29T04:49:34.929] [INFO] 391 - start buy 13706644202 zjw1314 dbb06c79e1e64684ba096e1236d904cd 0 { state: false, code: 1, msg: '购买数量必须大于0' }
-[2018-04-29T04:49:34.996] [INFO] 391 - start buy 17742561232 zjw1314 dbb06c79e1e64684ba096e1236d904cd 0 { state: false, code: 1, msg: '购买数量必须大于0' }
-[2018-04-29T04:49:35.082] [INFO] 391 - start buy 18367129040 zjw1314 dbb06c79e1e64684ba096e1236d904cd 0 { state: false, code: 1, msg: '购买数量必须大于0' }
-[2018-04-29T04:49:35.143] [INFO] 391 - start buy 15684099299 zjw1314 dbb06c79e1e64684ba096e1236d904cd 0 { state: false, code: 1, msg: '购买数量必须大于0' }
-[2018-04-29T04:49:35.239] [INFO] 391 - start buy 18021636890 zjw1314 dbb06c79e1e64684ba096e1236d904cd 0 { state: false, code: 1, msg: '购买数量必须大于0' }
-[2018-04-29T04:49:35.309] [INFO] 391 - start buy 15370150446 zjw1314 dbb06c79e1e64684ba096e1236d904cd 0 { state: false, code: 1, msg: '购买数量必须大于0' }
-[2018-04-29T04:49:35.390] [INFO] 391 - start buy 15962272631 zjw1314 dbb06c79e1e64684ba096e1236d904cd 0 { state: false, code: 1, msg: '购买数量必须大于0' }
-[2018-04-29T04:49:35.481] [INFO] 391 - start buy 18336492326 zjw1314 dbb06c79e1e64684ba096e1236d904cd 0 { state: false, code: 1, msg: '购买数量必须大于0' }
-[2018-04-29T04:49:35.571] [INFO] 391 - start buy 15651776037 zjw1314 dbb06c79e1e64684ba096e1236d904cd 0 { state: false, code: 1, msg: '购买数量必须大于0' }
-[2018-04-29T04:49:35.704] [INFO] 391 - start buy 15895625015 zjw1314 dbb06c79e1e64684ba096e1236d904cd 0 { state: false, code: 1, msg: '购买数量必须大于0' }
-[2018-04-29T04:49:35.796] [INFO] 391 - start buy 13773024105  zjw1314 dbb06c79e1e64684ba096e1236d904cd 0 { state: false, code: 1, msg: '购买数量必须大于0' }
-[2018-04-29T04:49:35.884] [INFO] 391 - start buy 18501521650 zjw1314 dbb06c79e1e64684ba096e1236d904cd 0 { state: false, code: 1, msg: '购买数量必须大于0' }
-[2018-04-29T04:49:35.948] [INFO] 391 - start buy 13328029369 zjw1314 dbb06c79e1e64684ba096e1236d904cd 0 { state: false, code: 1, msg: '购买数量必须大于0' }
-[2018-04-29T04:49:36.015] [INFO] 391 - start buy 15862853769 zjw1314 dbb06c79e1e64684ba096e1236d904cd 0 { state: false, code: 1, msg: '购买数量必须大于0' }
-[2018-04-29T04:49:36.109] [INFO] 391 - start buy 15138185612   zjw1314 dbb06c79e1e64684ba096e1236d904cd 0 { state: false, code: 1, msg: '购买数量必须大于0' }
-[2018-04-29T04:49:36.182] [INFO] 391 - start buy 17601461170 zjw1314 dbb06c79e1e64684ba096e1236d904cd 0 { state: false, code: 1, msg: '购买数量必须大于0' }
-[2018-04-29T04:49:36.273] [INFO] 391 - start buy 13862320374 zjw1314 dbb06c79e1e64684ba096e1236d904cd 0 { state: false, code: 1, msg: '购买数量必须大于0' }
-[2018-04-29T04:49:36.356] [INFO] 391 - start buy 18261738520  zjw1314 dbb06c79e1e64684ba096e1236d904cd 0 { state: false, code: 1, msg: '购买数量必须大于0' }
-[2018-04-29T04:49:36.447] [INFO] 391 - start buy 13140969226 zjw1314 dbb06c79e1e64684ba096e1236d904cd 0 { state: false, code: 1, msg: '购买数量必须大于0' }
-[2018-04-29T04:49:36.516] [INFO] 391 - start buy 15088597519 zjw1314 dbb06c79e1e64684ba096e1236d904cd 0 { state: false, code: 1, msg: '购买数量必须大于0' }
-[2018-04-29T04:49:36.589] [INFO] 391 - start buy 13179621132 zjw1314 dbb06c79e1e64684ba096e1236d904cd 0 { state: false, code: 1, msg: '购买数量必须大于0' }
-[2018-04-29T04:49:36.652] [INFO] 391 - start buy 17601461170 zjw1314 dbb06c79e1e64684ba096e1236d904cd 0 { state: false, code: 1, msg: '购买数量必须大于0' }
-[2018-04-29T04:49:36.711] [INFO] 391 - start buy 18606193868 zjw1314 dbb06c79e1e64684ba096e1236d904cd 0 { state: false, code: 1, msg: '购买数量必须大于0' }
-[2018-04-29T04:49:36.776] [INFO] 391 - start buy 17798575587 zjw1314 dbb06c79e1e64684ba096e1236d904cd 0 { state: false, code: 1, msg: '购买数量必须大于0' }
-[2018-04-29T04:49:36.861] [INFO] 391 - start buy 18556737482 zjw1314 dbb06c79e1e64684ba096e1236d904cd 0 { state: false, code: 1, msg: '购买数量必须大于0' }
-[2018-04-29T04:49:36.949] [INFO] 391 - start buy 18651672992 zjw1314 dbb06c79e1e64684ba096e1236d904cd 0 { state: false, code: 1, msg: '购买数量必须大于0' }
-[2018-04-29T04:49:37.032] [INFO] 391 - start buy 13291083620 zjw1314 dbb06c79e1e64684ba096e1236d904cd 0 { state: false, code: 1, msg: '购买数量必须大于0' }
-[2018-04-29T04:49:37.104] [INFO] 391 - start buy 15050357604 zjw1314 dbb06c79e1e64684ba096e1236d904cd 0 { state: false, code: 1, msg: '购买数量必须大于0' }
-[2018-04-29T04:49:37.171] [INFO] 391 - start buy 18552449004 d963378484 dbb06c79e1e64684ba096e1236d904cd 0 { state: false, code: 1, msg: '购买数量必须大于0' }
-[2018-04-29T04:49:37.244] [INFO] 391 - start buy 18550840530 d963378484 dbb06c79e1e64684ba096e1236d904cd 0 { state: false, code: 1, msg: '购买数量必须大于0' }
-[2018-04-29T04:49:37.344] [INFO] 391 - start buy 15963577987 d963378484 dbb06c79e1e64684ba096e1236d904cd 0 { state: false, code: 1, msg: '购买数量必须大于0' }
-[2018-04-29T04:49:37.418] [INFO] 391 - start buy 17712633629 d963378484 dbb06c79e1e64684ba096e1236d904cd 0 { state: false, code: 1, msg: '购买数量必须大于0' }
-[2018-04-29T04:49:37.514] [INFO] 391 - start buy 13182295162 d963378484 dbb06c79e1e64684ba096e1236d904cd 0 { state: false, code: 1, msg: '购买数量必须大于0' }
-[2018-04-29T04:49:37.603] [INFO] 391 - start buy 15850804366 d963378484 dbb06c79e1e64684ba096e1236d904cd 0 { state: false, code: 1, msg: '购买数量必须大于0' }
-[2018-04-29T04:49:37.695] [INFO] 391 - start buy 18074442111 d963378484 dbb06c79e1e64684ba096e1236d904cd 0 { state: false, code: 1, msg: '购买数量必须大于0' }
-[2018-04-29T04:50:28.589] [INFO] 监控 - 自动下单开始
-[2018-04-29T04:50:29.128] [INFO] 391 - params [ '/usr/local/bin/node',
-  '/Users/junliang/server/www/maotaiServer/script/buyFixedActFor1399.js',
-  '391',
-  'cf54dc6ae256472bbe09731105e05293',
-  '0',
-  '{"address":"项城市迎宾大道鑫苑名城","sid":"141412702001","MarketPrice":1499,"Price":1499}',
-  '[{"phone":"13573579257","pass":"zjw1314"},{"phone":"18357477024","pass":"zjw1314"},{"phone":"13962310128","pass":"zjw1314"},{"phone":"18550125596","pass":"zjw1314"},{"phone":"13914949281","pass":"zjw1314"},{"phone":"15101904404","pass":"zjw1314"},{"phone":"13958862487","pass":"zjw1314"},{"phone":"15674891274","pass":"zjw1314"},{"phone":"17826613020","pass":"zjw1314"},{"phone":"13573579257","pass":"zjw1314"},{"phone":"13706644202","pass":"zjw1314"},{"phone":"17742561232","pass":"zjw1314"},{"phone":"18367129040","pass":"zjw1314"},{"phone":"15684099299","pass":"zjw1314"},{"phone":"18021636890","pass":"zjw1314"},{"phone":"15370150446","pass":"zjw1314"},{"phone":"15962272631","pass":"zjw1314"},{"phone":"18336492326","pass":"zjw1314"},{"phone":"15651776037","pass":"zjw1314"},{"phone":"15895625015","pass":"zjw1314"},{"phone":"13773024105 ","pass":"zjw1314"},{"phone":"18501521650","pass":"zjw1314"},{"phone":"13328029369","pass":"zjw1314"},{"phone":"15862853769","pass":"zjw1314"},{"phone":"15138185612  ","pass":"zjw1314"},{"phone":"17601461170","pass":"zjw1314"},{"phone":"13862320374","pass":"zjw1314"},{"phone":"18261738520 ","pass":"zjw1314"},{"phone":"13140969226","pass":"zjw1314"},{"phone":"15088597519","pass":"zjw1314"},{"phone":"13179621132","pass":"zjw1314"},{"phone":"17601461170","pass":"zjw1314"},{"phone":"18606193868","pass":"zjw1314"},{"phone":"17798575587","pass":"zjw1314"},{"phone":"18556737482","pass":"zjw1314"},{"phone":"18651672992","pass":"zjw1314"},{"phone":"13291083620","pass":"zjw1314"},{"phone":"15050357604","pass":"zjw1314"},{"phone":"18552449004","pass":"d963378484"},{"phone":"18550840530","pass":"d963378484"},{"phone":"15963577987","pass":"d963378484"},{"phone":"17712633629","pass":"d963378484"},{"phone":"13182295162","pass":"d963378484"},{"phone":"15850804366","pass":"d963378484"},{"phone":"18074442111","pass":"d963378484"}]' ]
-[2018-04-29T04:50:29.248] [INFO] 391 - start buy 13573579257 zjw1314 cf54dc6ae256472bbe09731105e05293 0 { state: false, code: 1, msg: '购买数量必须大于0' }
-[2018-04-29T04:50:29.336] [INFO] 391 - start buy 18357477024 zjw1314 cf54dc6ae256472bbe09731105e05293 0 { state: false, code: 1, msg: '购买数量必须大于0' }
-[2018-04-29T04:50:29.428] [INFO] 391 - start buy 13962310128 zjw1314 cf54dc6ae256472bbe09731105e05293 0 { state: false, code: 1, msg: '购买数量必须大于0' }
-[2018-04-29T04:50:29.493] [INFO] 391 - start buy 18550125596 zjw1314 cf54dc6ae256472bbe09731105e05293 0 { state: false, code: 1, msg: '购买数量必须大于0' }
-[2018-04-29T04:50:29.577] [INFO] 391 - start buy 13914949281 zjw1314 cf54dc6ae256472bbe09731105e05293 0 { state: false, code: 1, msg: '购买数量必须大于0' }
-[2018-04-29T04:50:29.662] [INFO] 391 - start buy 15101904404 zjw1314 cf54dc6ae256472bbe09731105e05293 0 { state: false, code: 1, msg: '购买数量必须大于0' }
-[2018-04-29T04:50:29.729] [INFO] 391 - start buy 13958862487 zjw1314 cf54dc6ae256472bbe09731105e05293 0 { state: false, code: 1, msg: '购买数量必须大于0' }
-[2018-04-29T04:50:29.820] [INFO] 391 - start buy 15674891274 zjw1314 cf54dc6ae256472bbe09731105e05293 0 { state: false, code: 1, msg: '购买数量必须大于0' }
-[2018-04-29T04:50:29.909] [INFO] 391 - start buy 17826613020 zjw1314 cf54dc6ae256472bbe09731105e05293 0 { state: false, code: 1, msg: '购买数量必须大于0' }
-[2018-04-29T04:50:29.995] [INFO] 391 - start buy 13573579257 zjw1314 cf54dc6ae256472bbe09731105e05293 0 { state: false, code: 1, msg: '购买数量必须大于0' }
-[2018-04-29T04:50:30.084] [INFO] 391 - start buy 13706644202 zjw1314 cf54dc6ae256472bbe09731105e05293 0 { state: false, code: 1, msg: '购买数量必须大于0' }
-[2018-04-29T04:50:30.167] [INFO] 391 - start buy 17742561232 zjw1314 cf54dc6ae256472bbe09731105e05293 0 { state: false, code: 1, msg: '购买数量必须大于0' }
-[2018-04-29T04:50:30.224] [INFO] 391 - start buy 18367129040 zjw1314 cf54dc6ae256472bbe09731105e05293 0 { state: false, code: 1, msg: '购买数量必须大于0' }
-[2018-04-29T04:50:30.304] [INFO] 391 - start buy 15684099299 zjw1314 cf54dc6ae256472bbe09731105e05293 0 { state: false, code: 1, msg: '购买数量必须大于0' }
-[2018-04-29T04:50:30.377] [INFO] 391 - start buy 18021636890 zjw1314 cf54dc6ae256472bbe09731105e05293 0 { state: false, code: 1, msg: '购买数量必须大于0' }
-[2018-04-29T04:50:30.464] [INFO] 391 - start buy 15370150446 zjw1314 cf54dc6ae256472bbe09731105e05293 0 { state: false, code: 1, msg: '购买数量必须大于0' }
-[2018-04-29T04:50:30.549] [INFO] 391 - start buy 15962272631 zjw1314 cf54dc6ae256472bbe09731105e05293 0 { state: false, code: 1, msg: '购买数量必须大于0' }
-[2018-04-29T04:50:30.605] [INFO] 391 - start buy 18336492326 zjw1314 cf54dc6ae256472bbe09731105e05293 0 { state: false, code: 1, msg: '购买数量必须大于0' }
-[2018-04-29T04:50:30.695] [INFO] 391 - start buy 15651776037 zjw1314 cf54dc6ae256472bbe09731105e05293 0 { state: false, code: 1, msg: '购买数量必须大于0' }
-[2018-04-29T04:50:30.781] [INFO] 391 - start buy 15895625015 zjw1314 cf54dc6ae256472bbe09731105e05293 0 { state: false, code: 1, msg: '购买数量必须大于0' }
-[2018-04-29T04:50:30.873] [INFO] 391 - start buy 13773024105  zjw1314 cf54dc6ae256472bbe09731105e05293 0 { state: false, code: 1, msg: '购买数量必须大于0' }
-[2018-04-29T04:50:30.945] [INFO] 391 - start buy 18501521650 zjw1314 cf54dc6ae256472bbe09731105e05293 0 { state: false, code: 1, msg: '购买数量必须大于0' }
-[2018-04-29T04:50:31.030] [INFO] 391 - start buy 13328029369 zjw1314 cf54dc6ae256472bbe09731105e05293 0 { state: false, code: 1, msg: '购买数量必须大于0' }
-[2018-04-29T04:50:31.117] [INFO] 391 - start buy 15862853769 zjw1314 cf54dc6ae256472bbe09731105e05293 0 { state: false, code: 1, msg: '购买数量必须大于0' }
-[2018-04-29T04:50:31.192] [INFO] 391 - start buy 15138185612   zjw1314 cf54dc6ae256472bbe09731105e05293 0 { state: false, code: 1, msg: '购买数量必须大于0' }
-[2018-04-29T04:50:31.258] [INFO] 391 - start buy 17601461170 zjw1314 cf54dc6ae256472bbe09731105e05293 0 { state: false, code: 1, msg: '购买数量必须大于0' }
-[2018-04-29T04:50:31.346] [INFO] 391 - start buy 13862320374 zjw1314 cf54dc6ae256472bbe09731105e05293 0 { state: false, code: 1, msg: '购买数量必须大于0' }
-[2018-04-29T04:50:31.493] [INFO] 391 - start buy 18261738520  zjw1314 cf54dc6ae256472bbe09731105e05293 0 { state: false, code: 1, msg: '购买数量必须大于0' }
-[2018-04-29T04:50:31.568] [INFO] 391 - start buy 13140969226 zjw1314 cf54dc6ae256472bbe09731105e05293 0 { state: false, code: 1, msg: '购买数量必须大于0' }
-[2018-04-29T04:50:31.653] [INFO] 391 - start buy 15088597519 zjw1314 cf54dc6ae256472bbe09731105e05293 0 { state: false, code: 1, msg: '购买数量必须大于0' }
-[2018-04-29T04:50:31.737] [INFO] 391 - start buy 13179621132 zjw1314 cf54dc6ae256472bbe09731105e05293 0 { state: false, code: 1, msg: '购买数量必须大于0' }
-[2018-04-29T04:50:31.826] [INFO] 391 - start buy 17601461170 zjw1314 cf54dc6ae256472bbe09731105e05293 0 { state: false, code: 1, msg: '购买数量必须大于0' }
-[2018-04-29T04:50:31.895] [INFO] 391 - start buy 18606193868 zjw1314 cf54dc6ae256472bbe09731105e05293 0 { state: false, code: 1, msg: '购买数量必须大于0' }
-[2018-04-29T04:50:31.954] [INFO] 391 - start buy 17798575587 zjw1314 cf54dc6ae256472bbe09731105e05293 0 { state: false, code: 1, msg: '购买数量必须大于0' }
-[2018-04-29T04:50:32.016] [INFO] 391 - start buy 18556737482 zjw1314 cf54dc6ae256472bbe09731105e05293 0 { state: false, code: 1, msg: '购买数量必须大于0' }
-[2018-04-29T04:50:32.105] [INFO] 391 - start buy 18651672992 zjw1314 cf54dc6ae256472bbe09731105e05293 0 { state: false, code: 1, msg: '购买数量必须大于0' }
-[2018-04-29T04:50:32.190] [INFO] 391 - start buy 13291083620 zjw1314 cf54dc6ae256472bbe09731105e05293 0 { state: false, code: 1, msg: '购买数量必须大于0' }
-[2018-04-29T04:50:32.283] [INFO] 391 - start buy 15050357604 zjw1314 cf54dc6ae256472bbe09731105e05293 0 { state: false, code: 1, msg: '购买数量必须大于0' }
-[2018-04-29T04:50:32.345] [INFO] 391 - start buy 18552449004 d963378484 cf54dc6ae256472bbe09731105e05293 0 { state: false, code: 1, msg: '购买数量必须大于0' }
-[2018-04-29T04:50:32.430] [INFO] 391 - start buy 18550840530 d963378484 cf54dc6ae256472bbe09731105e05293 0 { state: false, code: 1, msg: '购买数量必须大于0' }
-[2018-04-29T04:50:32.512] [INFO] 391 - start buy 15963577987 d963378484 cf54dc6ae256472bbe09731105e05293 0 { state: false, code: 1, msg: '购买数量必须大于0' }
-[2018-04-29T04:50:32.606] [INFO] 391 - start buy 17712633629 d963378484 cf54dc6ae256472bbe09731105e05293 0 { state: false, code: 1, msg: '购买数量必须大于0' }
-[2018-04-29T04:50:32.668] [INFO] 391 - start buy 13182295162 d963378484 cf54dc6ae256472bbe09731105e05293 0 { state: false, code: 1, msg: '购买数量必须大于0' }
-[2018-04-29T04:50:32.757] [INFO] 391 - start buy 15850804366 d963378484 cf54dc6ae256472bbe09731105e05293 0 { state: false, code: 1, msg: '购买数量必须大于0' }
-[2018-04-29T04:50:32.850] [INFO] 391 - start buy 18074442111 d963378484 cf54dc6ae256472bbe09731105e05293 0 { state: false, code: 1, msg: '购买数量必须大于0' }
+   { SId: 1820882,
+     UserId: '1824859',
+     TelPhone: '13679490726',
+     Zipcode: '000000',
+     Address: '恒昌花园,5号楼0单元9847室',
+     AddressInfo: '甘肃省金昌市金川区',
+     ShipTo: '廉庚艳琬',
+     Remark: '',
+     ProvinceId: '620000',
+     CityId: '620300',
+     DistrictsId: '620302',
+     IsDefault: true,
+     SMNo: null,
+     RelPhone: null,
+     Longitude: '102.170945',
+     Latitude: '38.519568' } }
+[2018-05-15T21:08:21.419] [INFO] gansu.json - 开始下单 13679490726 2108868
+[2018-05-15T21:08:21.535] [INFO] gansu.json - 提交订单完成 13679490726 { state: true, code: 0, data: 200 }
+[2018-05-15T21:08:21.536] [INFO] gansu.json - 获取订单状态 13679490726
+[2018-05-15T21:17:57.904] [INFO] gansu.json - 获取订单状态 17180168611
+[2018-05-15T21:17:58.217] [INFO] gansu.json - 获取订单状态 17180143187
+[2018-05-15T21:18:03.561] [INFO] gansu.json - 获取订单状态 18954959063
+[2018-05-15T21:18:03.758] [INFO] gansu.json - 获取订单状态 17180167273
+[2018-05-15T21:18:03.927] [INFO] gansu.json - 获取订单状态 17180162037
+[2018-05-15T21:18:04.197] [INFO] gansu.json - 获取订单状态 17180164654
+[2018-05-15T21:18:04.786] [INFO] gansu.json - 获取订单状态 17180143231
+[2018-05-15T21:18:04.975] [INFO] gansu.json - 获取订单状态 17180169727
+[2018-05-15T21:18:05.192] [INFO] gansu.json - 获取订单状态 17180143188
+[2018-05-15T21:18:05.490] [INFO] gansu.json - 获取订单状态 17180143200
+[2018-05-15T21:18:05.789] [INFO] gansu.json - 获取订单状态 17180164667
+[2018-05-15T21:18:06.081] [INFO] gansu.json - 获取订单状态 17180164353
+[2018-05-15T21:18:06.315] [INFO] gansu.json - 获取订单状态 17180143201
+[2018-05-15T21:18:06.495] [INFO] gansu.json - 获取订单状态 17180169725
+[2018-05-15T21:18:06.617] [INFO] gansu.json - 获取订单状态 17180164687
+[2018-05-15T21:18:06.793] [INFO] gansu.json - 获取订单状态 17180143195
+[2018-05-15T21:18:07.128] [INFO] gansu.json - 获取订单状态 17180143196
+[2018-05-15T21:18:07.431] [INFO] gansu.json - 获取订单状态 17180161969
+[2018-05-15T21:18:07.728] [INFO] gansu.json - 获取订单状态 17180143230
+[2018-05-15T21:18:08.045] [INFO] gansu.json - 获取订单状态 18219910361
+[2018-05-15T21:18:08.355] [INFO] gansu.json - 获取订单状态 17693185401
+[2018-05-15T21:18:08.646] [INFO] gansu.json - 获取订单状态 18189689730
+[2018-05-15T21:18:08.827] [INFO] gansu.json - 获取订单状态 18189683207
+[2018-05-15T21:18:09.702] [INFO] gansu.json - 获取订单状态 13679490726
+[2018-05-15T21:28:10.038] [INFO] gansu.json - 获取订单状态 17180168611

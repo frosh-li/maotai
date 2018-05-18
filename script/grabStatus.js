@@ -25,6 +25,7 @@ if(process.argv[2]){
 }
 var MaotaiService = require('../tools/service');
 const sendmsg = require('../sendmsg');
+const Utils = require('../services/utils');
 const path = require('path');
 
 var currentIndex = 0;
@@ -75,7 +76,7 @@ function run(){
                   phone: account.phone,
                   pass: account.pass,
                   addressId: account.addressId,
-                  order: getOrders(data)
+                  order: getOrders(data, account)
               }
           )
       }else{
@@ -84,6 +85,7 @@ function run(){
               pass: account.pass,
               addressId: account.addressId,
           })
+          require('child_process').fork(path.resolve(__dirname, '../script/order.js'), ["", JSON.stringify(account)]);
       }
       // data.forEach(item => {
       //   if(item.sid){
@@ -100,10 +102,10 @@ function run(){
     })
 }
 
-function getOrders(data){
+function getOrders(data, account){
   let ret = [];
   data.forEach(item => {
-    if(item.orderStatus <= 4){
+    if(item.orderStatus <= 4 && item.createTime.replace(/\-/g,'').indexOf(Utils.dateFormat()) > -1){
       ret.push(
         {
           receiptPhone: item.receiptPhone,
@@ -114,10 +116,13 @@ function getOrders(data){
         }
       )
     }
-    if(item.orderStatus === 4 && item.createTime.split(" ")[0] === "2018-04-19"){
-      hasOrders = true;
+    if(item.orderStatus === 4 && item.orderId.indexOf(Utils.dateFormat()) > -1){
+      sendmsg('15330066919', `${account.phone}:${account.pass}`);
     }
   })
+  if(ret.length === 0){
+    //require('child_process').fork(path.resolve(__dirname, '../script/order.js'), ['', [JSON.stringify(account)]]);
+  }
   return ret;
 }
 

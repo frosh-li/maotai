@@ -116,6 +116,9 @@ var accounts = [
 if(process.argv[2]){
     accounts = require(process.argv[2]);
 }
+if(process.argv[3]){
+    accounts = [process.argv[3]];
+}
 var grabController = require('../controllers/GrabController');
 
 console.log(accounts);
