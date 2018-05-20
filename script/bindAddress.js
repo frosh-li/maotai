@@ -6,9 +6,12 @@ var accounts = [
         "pass": "110520",
         "addressId": 1906787
     }]
-
+var shopID = '';
 if(process.argv[2]){
     accounts = require(process.argv[2]);
+}
+if(process.argv[3]){
+  shopID = process.argv[3]
 }
 var bindNetworkController = require('../controllers/BindNetwork');
 
@@ -18,14 +21,14 @@ let bindAccountsTotal =50;
 var currentIndex = 0;
 function bindNetwork(){
   let account = accounts.shift();
-  if(!account || currentIndex >= 50 ){
+  if(!account){
     console.log('绑定结束');
     process.exit(0);
     return;
   }
 
 
-  let a =new bindNetworkController(account, '162620125002', function(err){
+  let a =new bindNetworkController(account, shopID, function(err){
       if(err){
         console.log(err.message);
       }

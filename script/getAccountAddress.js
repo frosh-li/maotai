@@ -41,7 +41,7 @@ function start() {
   })
   .catch(e => {
     // 网络出错继续尝试
-    console.log(e.message);
+    console.log(e);
     start();
 
   })

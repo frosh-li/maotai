@@ -37,7 +37,7 @@ class Registry {
 	}
 
 	async generatePhone() {
-		let url = `${this.vcodeApiPath}action=getPhone&sid=9715&token=${this.token}&vno=0&phoneType=CMCC`;
+		let url = `${this.vcodeApiPath}action=getPhone&sid=9715&token=${this.token}&vno=0`;
 		return new Promise((resolve, reject) => {
 			request({
 				method:'get',
@@ -108,7 +108,7 @@ class Registry {
 		this.counts = 0;
 		console.log('this.token', this.token);
 		try{
-			let res = await this.generatePhone();	
+			let res = await this.generatePhone();
 			let [status, phone] = res.split("|");
 			if(status == 1){
 				console.log('手机号为', phone);
@@ -127,10 +127,10 @@ class Registry {
 					this.addBlackList(phone);
 					setTimeout(() => {
 						this.start();
-					},60*1000)
+					},40*1000)
 					// this.start();
 				}
-				
+
 			}else{
 				console.log("无法获取手机号", res);
 				this.start();
@@ -188,7 +188,7 @@ class Registry {
           return resolve(body);
       });
     })
-    
+
 	}
 
 	async sendReg(phone) {
@@ -222,7 +222,7 @@ class Registry {
     	console.log('出错了，5分钟后再试');
 			setTimeout(() => {
 				this.start();
-			}, 60*1000*5)	
+			}, 60*1000*5)
 		}
   }
 
@@ -255,17 +255,17 @@ class Registry {
 								// 开始下次注册
 								setTimeout(() => {
 									that.start();
-								}, 10*1000)		
+								}, 60*1000)
 							})
 							.catch(e => {
 								// 开始下次注册
 								console.log('出错了，5分钟后再试');
 								setTimeout(() => {
 									that.start();
-								}, 60*1000*5)		
+								}, 60*1000*5)
 							})
-						
-						
+
+
 					}else{
 						this.counts++;
 						if(this.counts > 50){

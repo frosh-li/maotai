@@ -6,6 +6,8 @@ const Utils = require('../services/utils.js');
 const logger = require('../controllers/logger');
 const colors = require('colors');
 const randomName = require("chinese-random-name");
+const fs = require('fs');
+const path = require('path');
 
 
 let results = [];
@@ -16,7 +18,6 @@ if(process.argv[2]!=undefined){
 
 let address = [];
 let index = 0;
-let totalAddress = 50;
 let ret2 = [];
 let shopAddress = "北京市东柏街";
 
@@ -93,6 +94,8 @@ function checkPhone(){
   if(!phone){
       console.log("预约成功列表如下");
       console.log(JSON.stringify(successAcount));
+      //if(successAcount.length === phones.length)
+      fs.writeFileSync(path.resolve(__dirname,process.argv[2]), JSON.stringify(successAcount, null, 4));
       console.log("预约失败列表如下");
       console.log(JSON.stringify(failAccount));
       return;
@@ -166,7 +169,7 @@ function checkPhone(){
           successAcount.push({
             phone: user.phone,
             pass: user.pass,
-            addressId: user.addressId
+            addressId: data.data.ID
           });
           index++;
           checkPhone();
@@ -196,19 +199,25 @@ function checkPhone(){
 // 116.432727,39.942379
 // 120.611097,31.302083
 // 121.626624,31.183456 上海市浦东新区长城中环墅|232号
-let geos = Utils.randomGeo(31.183456, 121.626624, 5, phones.length);
+// 120.627816,31.307723 "江苏省苏州市干将东路780号
+// 120.641622,31.141395 江苏省苏州市吴江区松陵镇高新路910号
+// 120.519275,31.273729 江苏省苏州市吴中区香榭假日山庄
+let geos = Utils.randomGeo(31.273729, 120.519275, 15, phones.length);
 
 let getAddressCounter = 0;
+
+console.log(geos);
 geos.forEach(item => {
   BaiduService.geoEnCoder(item.lat, item.lng)
     .then(addressInfo => {
       getAddressCounter++;
-      ret2.push(addressInfo);
-      console.log(addressInfo);
-      if(getAddressCounter == geos.length){
-        console.log('alldone');
-        console.log(ret2)
+      if(addressInfo.pois.length > 0){
 
+        ret2.push(addressInfo);
+      }
+      console.log(addressInfo);
+      console.log('addressInfo.length', ret2.length);
+      if(getAddressCounter == geos.length){
           checkPhone()
           console.log(phones);
       }
@@ -217,8 +226,6 @@ geos.forEach(item => {
       getAddressCounter++;
       console.log(e);
       if(getAddressCounter == geos.length){
-        console.log('alldone');
-        console.log(ret2)
         checkPhone()
       }
     })
