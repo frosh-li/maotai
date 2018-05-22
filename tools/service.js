@@ -596,22 +596,27 @@ class MaotaiService {
                           //logger.error(e);
                         }
                         if(body && body.code !== undefined && body.code === 0){
-                          sendmsg('15330066919', '订单提交成功'+tel+":"+pass+":"+shopId+":库存"+StockCount+":限购"+quantity)
-                            .then(() => {
-                              return resolve({
-                                data:body,
-                                StockCount: StockCount,
-                                buyLimit: quantity,
-                              });
-                            })
-                            .catch(e => {
-                              return resolve({
-                                data:body,
-                                StockCount: StockCount,
-                                buyLimit: quantity,
-                              });
+                          return resolve({
+                            data:body,
+                            StockCount: StockCount,
+                            buyLimit: quantity,
+                          });
+                          // sendmsg('15330066919', '订单提交成功'+tel+":"+pass+":"+shopId+":库存"+StockCount+":限购"+quantity)
+                          //   .then(() => {
+                          //     return resolve({
+                          //       data:body,
+                          //       StockCount: StockCount,
+                          //       buyLimit: quantity,
+                          //     });
+                          //   })
+                          //   .catch(e => {
+                          //     return resolve({
+                          //       data:body,
+                          //       StockCount: StockCount,
+                          //       buyLimit: quantity,
+                          //     });
 
-                            })
+                          //   })
                         }else{
                             // 如果下单成功，但是并没有返回正常的编码
                             // 检查订单
@@ -831,7 +836,7 @@ class MaotaiService {
               if (error) {
                   return reject(error);
               }
-              console.log(body)
+              // console.log(body)
               let bodyJSON = JSON.parse(body);
               if(bodyJSON && bodyJSON.data && bodyJSON.data.list){
                 return resolve(bodyJSON.data.list);
@@ -1219,7 +1224,7 @@ class MaotaiService {
                    logger.info(error);
                    return reject(error);
                } else {
-                   logger.info("获取默认地址",account.phone, body);
+                   // logger.info("获取默认地址",account.phone, body);
                    let ret = JSON.stringify(body);
                    if (body.state === false) {
                        return reject("登记登陆Fail:" + body.msg);
@@ -1298,12 +1303,13 @@ class MaotaiService {
             timestamp121:	now,
             action: 'GrabSingleManager.getList',
             index: 1,
+            status: -1,
             size: 10
 
           },
           json:true
       };
-      console.log(options.form);
+      // console.log(options.form);
       logger.info('获取订单状态',account.phone);
       return new Promise((resolve, reject) => {
 
@@ -1315,7 +1321,7 @@ class MaotaiService {
                   if (body.state === false) {
                       return reject("没有订单:" + body.msg);
                   }
-                  if(JSON.parse(body.data).data){
+                  if(body.data && JSON.parse(body.data).data){
                     return resolve(JSON.parse(body.data).data.data || []);  
                   }else{
                     return resolve([]);  
@@ -1350,7 +1356,7 @@ class MaotaiService {
           form: {
             sid:	addressId,
             iid:	-1,
-            qty:	5,
+            qty:	2,
             express:	14,
             product:	'{"Pid":391,"PName":"贵州茅台酒 (新飞天) 53%vol 500ml","PCode":"23","Unit":"瓶","CoverImage":"/upload/fileStore/20180415/6365942315164224808933821.jpg","SalePrice":1499}',
             remark: ''	,
@@ -1359,7 +1365,7 @@ class MaotaiService {
           },
           json:true
       };
-      console.log(options.form);
+      // console.log(options.form);
       logger.info('开始下单',account.phone,addressId);
       return new Promise((resolve, reject) => {
 

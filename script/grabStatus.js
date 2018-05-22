@@ -1,24 +1,4 @@
 var accounts = [
-  { phone: '13283936032', pass: 'a123456', addressId: 1962184 },
-  { phone: '18632369087', pass: 'a123456', addressId: 1962186 },
-  { phone: '13290979032', pass: 'a123456', addressId: 1962187 },
-  { phone: '13936763461', pass: 'a123456', addressId: 1962189 },
-  { phone: '15081820867', pass: 'a123456', addressId: 1962191 },
-  { phone: '15053052761', pass: 'a123456', addressId: 1962199 },
-  { phone: '18434763969', pass: 'a123456', addressId: 1962204 },
-  { phone: '15035399985', pass: 'a123456', addressId: 1962205 },
-  { phone: '17131970724', pass: 'a123456', addressId: 1962215 },
-  { phone: '17667374197', pass: 'a123456', addressId: 1962216 },
-  { phone: '15505201939', pass: 'a123456', addressId: 1962224 },
-  { phone: '18831099037', pass: 'a123456', addressId: 1969317 },
-  { phone: '18534866149', pass: 'a123456', addressId: 1962233 },
-  { phone: '15034681449', pass: 'a123456', addressId: 1962237 },
-  { phone: '15257918657', pass: 'a123456', addressId: 1962220 },
-  { phone: '13413723166', pass: '123456', addressId: 1894654 },
-  { phone: '13230672756', pass: 'a123456', addressId: 1951804 },
-  { phone: '18183062125', pass: 'a123456', addressId: 1951807 },
-  { phone: '18438063310', pass: 'a123456', addressId: 1951811 },
-  { phone: '13935327172', pass: 'a123456', addressId: 1930782 }
 ]
 if(process.argv[2]){
     accounts = require(process.argv[2]);
@@ -27,14 +7,17 @@ var MaotaiService = require('../tools/service');
 const sendmsg = require('../sendmsg');
 const Utils = require('../services/utils');
 const path = require('path');
+const fs = require('fs');
 
 var currentIndex = 0;
 var successAcount = [];
 var failAccount = [];
 var hasOrders = false;
+var sendmap = {};
 
 function run(){
   let account = accounts[currentIndex];
+  console.log("当前处理账号序列", currentIndex);
   if(!account){
     console.log('全部结束');
     console.log(JSON.stringify(successAcount,null,4));
@@ -49,16 +32,16 @@ function run(){
           return;
         }
       })
-      if(needReorder){
+      //if(needReorder){
         require('child_process').fork(path.resolve(__dirname, '../script/order.js'), [process.argv[2]]);
-      }
+      //}
       setTimeout(() => {
         currentIndex = 0;
         successAcount = [];
         failAccount = [];
         hasOrders = false;
         run();
-      },1000*60*10);
+      },1000*60*30);
     }
     // process.exit(0);
     return;
@@ -85,7 +68,7 @@ function run(){
               pass: account.pass,
               addressId: account.addressId,
           })
-          require('child_process').fork(path.resolve(__dirname, '../script/order.js'), ["", JSON.stringify(account)]);
+          // require('child_process').fork(path.resolve(__dirname, '../script/order.js'), [, JSON.stringify(account)]);
       }
       // data.forEach(item => {
       //   if(item.sid){
@@ -117,12 +100,17 @@ function getOrders(data, account){
       )
     }
     if(item.orderStatus === 4 && item.orderId.indexOf(Utils.dateFormat()) > -1){
-      sendmsg('15330066919', `${account.phone}:${account.pass}`);
+      if(!sendmap[account.phone]){
+        sendmsg('15330066919', `${account.phone}:${account.pass}`);
+        sendmap[account.phone] = item.orderId;
+        fs.writeFileSync(path.resolve(__dirname,'../output/'+Utils.dateFormat()+".json"), `${account.phone}:${account.pass}`,  {flag:'a+'});  
+      }
     }
   })
-  if(ret.length === 0){
-    //require('child_process').fork(path.resolve(__dirname, '../script/order.js'), ['', [JSON.stringify(account)]]);
-  }
+  console.log(JSON.stringify(ret, null, 4));
+  // if(ret.length === 0){
+  //   require('child_process').fork(path.resolve(__dirname, '../script/order.js'), ['', [JSON.stringify(account)]]);
+  // }
   return ret;
 }
 

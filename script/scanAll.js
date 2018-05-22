@@ -7,15 +7,26 @@ const fs = require('fs');
 const path = require('path');
 const Utils = require('../services/utils');
 var networks = require('../networks/120000.json');	// 天津
-// networks = networks.concat(require('../networks/130000.json')); // 河北
-// networks = networks.concat(require('../networks/410000.json')); // 河南
-// networks = networks.concat(require('../networks/370000.json'));
-// networks = networks.concat(require('../networks/620100.json')); // 兰州
-// networks = networks.concat(require('../networks/610100.json'));
-// networks = networks.concat(require('../networks/510000.json'));
-// networks = networks.concat(require('../networks/350000.json'));
-// networks = networks.concat(require('../networks/340000.json'));
+networks = [];
+// networks = networks.concat(require('../networks/320000.json')); // 江苏
+// // networks = networks.concat(require('../networks/130000.json')); // 河北
+// // networks = networks.concat(require('../networks/410000.json')); // 河南
+// // networks = networks.concat(require('../networks/370000.json'));
+// networks = networks.concat(require('../networks/620000.json')); // 兰州
+// networks = networks.concat(require('../networks/110000.json')); // 兰州
+// networks = networks.concat(require('../networks/120000.json')); // 兰州
+// // networks = networks.concat(require('../networks/610100.json'));
+// // networks = networks.concat(require('../networks/510000.json'));
+// // networks = networks.concat(require('../networks/350000.json'));
+// // networks = networks.concat(require('../networks/340000.json'));
 networks = require('../networks/');
+// //networks = networks.concat(require('../networks/510000.json'));
+// let chengdu = require('../networks/510000.json');
+// chengdu.forEach(item => {
+// 	if(item.address.indexOf("成都") > -1){
+// 		networks.push(item);
+// 	}
+// })
 var accounts = [
     {phone:"15330066919", pass:"110520"}
 ]
@@ -34,7 +45,7 @@ class ScanActivity {
 		this.acts = [];
 		this.cookieJar = null;
 		this.account = accounts[Math.floor(Math.random()*accounts.length)];
-		this.getCurrentJar(this.account.phone);
+		// this.getCurrentJar(this.account.phone);
 	}
 
 	getCurrentJar(tel) {
@@ -116,6 +127,9 @@ class ScanActivity {
 					console.log(body.data.acts);
 					let ret = [];
 					body.data.acts.forEach(act => {
+						if(act.Pid === 628){
+							fs.writeFileSync(`output/${Utils.dateFormat()}-628.json`, `\n${JSON.stringify(act)}`, {flag:'a+'});
+						}
 						if((act.Pid === 391)
 								||
 								(act.Pid === 628)
@@ -134,13 +148,13 @@ class ScanActivity {
 								(act.Pid === 641)
 								){
 								console.log('可以购买', JSON.stringify(act));
-								if(act.Pid === 391){
-									if(act.LimitCount >= 5){
-										this.buy(act.ID, act.LimitCount,act.Pid, network)
-									}
-								}else{
+								// if(act.Pid === 391){
+								// 	if(act.LimitCount >= 5){
+								// 		this.buy(act.ID, act.LimitCount,act.Pid, network)
+								// 	}
+								// }else{
 									this.buy(act.ID, act.LimitCount,act.Pid, network)
-								}
+								// }
 							}
 						}
 					})
@@ -158,10 +172,10 @@ class ScanActivity {
 
 	buy(cid, quant, pid, network){
 		return new Promise((resolve, reject) => {
-			if(quant < 5 && pid==391){
-				console.log('数量过少不下单');
-				return resolve([]);
-			}
+			//if(quant < 5 && pid==391){
+			//	console.log('数量过少不下单');
+			//	return resolve([]);
+			//}
 			this.getCurrentJar(this.account.phone)
 				.then(cookieJar => {
 					let options = {
@@ -197,8 +211,11 @@ class ScanActivity {
 						}
 						console.log('开始下单', cid,this.account.phone,this.account.pass, quant, JSON.stringify(body), JSON.stringify(network));
 						if(body.code === 0 ){
+							if(pid === 628){
+								sendmsg('15330066919', `${this.account.phone}:${this.account.pass}:${JSON.stringify(body)}`);
+							}
 							fs.writeFileSync(`output/${Utils.dateFormat()}.json`, `\n${this.account.phone} ${this.account.pass} 商品:${pid} 数量:${quant} ${JSON.stringify(network)} ${JSON.stringify(body)} ${cid}`, {flag:'a+'});
-							// require('child_process').fork(path.resolve(__dirname,'./buyFixedAct.js'), [pid,cid, quant, JSON.stringify(network), JSON.stringify(accounts)]);
+							require('child_process').fork(path.resolve(__dirname,'./buyFixedAct.js'), [pid,cid, quant, JSON.stringify(network), JSON.stringify(accounts)]);
 						}else if(body.code === 3 && body.data.StockCount > 0){
 							return this.buy(cid, body.data.StockCount, pid, network)
 						}

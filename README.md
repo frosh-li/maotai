@@ -210,3 +210,12 @@ https://diablo.alibaba.com/captcha/click/get.jsonp?sessionid=0152JIZgtMjy7iQLwB8
 
 #### 网点查询
 https://www.cmaotai.com/API/Servers.ashx?action=StatisticsManager.SearchNetwork&prov=350000&timestamp121=1524637948785
+
+
+江苏省苏州市干将东路780号
+江苏省苏州市吴江区松陵镇高新路910号
+江苏省苏州市吴中区木渎镇香榭假日山庄商铺4幢2号
+江苏省苏州市葑门路12号
+江苏省苏州市高新区塔圆路131号
+江苏省苏州市工业园区娄葑分区东兴路58号  特约经销商
+江苏省苏州市常熟市枫林路99号
