@@ -116,9 +116,13 @@ var accounts = [
 if(process.argv[2]){
     accounts = require(process.argv[2]);
 }
+
+let orderCount = 6;
+
 if(process.argv[3]){
-    accounts = [process.argv[3]];
+    orderCount = process.argv[3];
 }
+
 var grabController = require('../controllers/GrabController');
 
 console.log(accounts);
@@ -134,7 +138,7 @@ function bindNetwork(){
     return;
   }
 
-  let a =new grabController(account, function(err, data){
+  let a =new grabController(account,orderCount, function(err, data){
       if(err){
         console.log(err.message);
       }

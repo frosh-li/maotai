@@ -3,6 +3,13 @@ var accounts = [
 if(process.argv[2]){
     accounts = require(process.argv[2]);
 }
+
+let orderCount = 4;
+
+if(process.argv[3]){
+  orderCount = process.argv[3]
+}
+
 var MaotaiService = require('../tools/service');
 const sendmsg = require('../sendmsg');
 const Utils = require('../services/utils');
@@ -33,7 +40,7 @@ function run(){
         }
       })
       //if(needReorder){
-        require('child_process').fork(path.resolve(__dirname, '../script/order.js'), [process.argv[2]]);
+        require('child_process').fork(path.resolve(__dirname, '../script/order.js'), [process.argv[2], orderCount]);
       //}
       setTimeout(() => {
         currentIndex = 0;
@@ -95,15 +102,17 @@ function getOrders(data, account){
           sid: item.sid,
           orderId: item.orderId,
           orderStatus: item.orderStatus,
-          createTime: item.createTime
+          createTime: item.createTime,
+          goodsNum: item.goodsNum,
         }
       )
     }
     if(item.orderStatus === 4 && item.orderId.indexOf(Utils.dateFormat()) > -1){
       if(!sendmap[account.phone]){
-        sendmsg('15330066919', `${account.phone}:${account.pass}`);
+        sendmsg('15330066919', `${account.phone}:${account.pass}:${item.orderId}`);
         sendmap[account.phone] = item.orderId;
-        fs.writeFileSync(path.resolve(__dirname,'../output/'+Utils.dateFormat()+".json"), `${account.phone}:${account.pass}`,  {flag:'a+'});  
+        fs.writeFileSync(`output/${Utils.dateFormat()}-apint.json`, `\n${account.phone}:${account.pass}:${item.orderId}`, {flag:'a+'});
+        // fs.writeFileSync(path.resolve(__dirname,'../output/'+Utils.dateFormat()+".json"), `${account.phone}:${account.pass}`,  {flag:'a+'});  
       }
     }
   })

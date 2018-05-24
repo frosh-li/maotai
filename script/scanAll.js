@@ -6,6 +6,8 @@ const request = require('request');
 const fs = require('fs');
 const path = require('path');
 const Utils = require('../services/utils');
+
+const queueCount = 10;
 var networks = require('../networks/120000.json');	// 天津
 networks = [];
 // networks = networks.concat(require('../networks/320000.json')); // 江苏
@@ -31,17 +33,20 @@ var accounts = [
     {phone:"15330066919", pass:"110520"}
 ]
 
+
 if(process.argv[2]){
 	accounts = require(process.argv[2]);
 }
-
+let startTime = 0;
 const Filecookietore = require('tough-cookie-filestore');
 // const accounts = require('../accounts/accounts');
 console.log('网点个数',networks.length);
 class ScanActivity {
 	constructor(maxProcess) {
-		this.maxProcess = maxProcess || 5;
+		this.maxProcess = queueCount || 30;
 		this.startIndex = 0;
+		this.promises = [];
+		this.queues = [];
 		this.acts = [];
 		this.cookieJar = null;
 		this.account = accounts[Math.floor(Math.random()*accounts.length)];
@@ -65,37 +70,51 @@ class ScanActivity {
   }
 
 	start() {
-		if(this.startIndex >= networks.length - 1){
-			console.log('所有扫描结束,1分钟后继续开启扫描');
-			console.log(this.acts);
-			this.account = accounts[Math.floor(Math.random()*accounts.length)];
-			this.getCurrentJar(this.account.phone);
-			this.startIndex = 0;
-			this.acts = [];
-			setTimeout(() => {
-				this.start();
-			}, 60*1000)
-			//start();
-			return;
-		}
-		let promises = [];
-		for(let i = 0 ; i < this.maxProcess ; i++,this.startIndex++){
-			if(networks[this.startIndex]){
-				promises.push(this.scanSingle(networks[this.startIndex]));
+
+		// if(this.startIndex >= networks.length - 1){
+		// 	console.log('所有扫描结束,1分钟后继续开启扫描');
+		// 	console.log(this.acts);
+		// 	this.account = accounts[Math.floor(Math.random()*accounts.length)];
+		// 	this.getCurrentJar(this.account.phone);
+		// 	this.startIndex = 0;
+		// 	this.acts = [];
+		// 	setTimeout(() => {
+		// 		this.start();
+		// 	}, 1000)
+		// 	//start();
+		// 	return;
+		// }
+		this.promises = [];
+		this.queues = [];
+		this.startIndex = 0 ;
+		this.account = accounts[Math.floor(Math.random()*accounts.length)];
+		this.acts = [];
+		for(let i = 0 ; i < networks.length ; i++,this.startIndex++){
+			if(i < queueCount){
+				this.promises.push(this.scanSingle(networks[this.startIndex])());
+			}else{
+				this.queues.push(this.scanSingle(networks[this.startIndex]))
 			}
 		}
-		Promise.all(promises)
+		startTime = +new Date();
+		Promise.all(this.promises.concat(this.queues))
 			.then(datas => {
 				datas.forEach(data => {
 					if(data.length > 0){
 						this.acts = this.acts.concat(data);
 					}
 				})
-				this.start();
+				console.log('所有扫描结束,耗时:',(+new Date()) - startTime+"MS");
+				setTimeout(() => {
+					this.start();
+				}, 60000)
 			})
 			.catch(e => {
 				console.log(e.message);
-				this.start();
+				console.log('所有扫描结束,耗时:',(+new Date()) - startTime+"MS");
+				setTimeout(() => {
+					this.start();
+				}, 60000)
 			})
 	}
 
@@ -109,65 +128,94 @@ class ScanActivity {
 						pid: 0
         },
         json:true,
-        jar:true
+        jar:true,
+        timeout:10000,
     };
     return options;
 	}
 
-	scanSingle(network) {
-		console.log('网点开始检查', network.id, network.address);
-		return new Promise((resolve, reject) => {
-			request(this.options(network.id), (error, response, body) => {
-				if(error){
-					console.log(network.id, network.address,error.message);
-					return resolve([]);
-				}
+	checkEnd(){
+		if(this.queues.length > 0){
+			console.log('剩余检测数量',this.queues.length);
+			this.queues.shift()();
+		}else{
+			console.log('OOOOOO所有扫描结束,耗时:',(+new Date()) - startTime+"MS");
+			// setTimeout(() => {
+				// 	this.start();
+				// }, 5000)
+		}
+	}
 
-				if(body.code === 0 && body.data.acts !== undefined && body.data.acts.length > 0){
-					console.log(body.data.acts);
-					let ret = [];
-					body.data.acts.forEach(act => {
-						if(act.Pid === 628){
-							fs.writeFileSync(`output/${Utils.dateFormat()}-628.json`, `\n${JSON.stringify(act)}`, {flag:'a+'});
+	scanSingle(network) {
+		
+		let that = this;
+		return () => {
+			return new Promise((resolve, reject) => {
+					console.log('网点开始检查', network.id, network.address);
+					request(that.options(network.id), (error, response, body) => {
+						if(error){
+							console.log(network.id, network.address,error.message);
+							that.checkEnd();
+							return resolve([]);
 						}
-						if((act.Pid === 391)
-								||
-								(act.Pid === 628)
-								||
-								(act.Pid === 641)){
-							ret.push(act);
-						}
-						if(act.LimitCount > 0){
-							if(
-								(act.Pid === 391)
-								||
-								(act.Pid === 628)
-								// ||
-								// (act.Pid === 422)
-								||
-								(act.Pid === 641)
-								){
-								console.log('可以购买', JSON.stringify(act));
-								// if(act.Pid === 391){
-								// 	if(act.LimitCount >= 5){
-								// 		this.buy(act.ID, act.LimitCount,act.Pid, network)
-								// 	}
-								// }else{
-									this.buy(act.ID, act.LimitCount,act.Pid, network)
-								// }
+
+						if(body.code === 0 && body.data.acts !== undefined && body.data.acts.length > 0){
+							let ret = [];
+							let buyPromises=[];
+							console.log('网点检查结束,',network.id, network.address,JSON.stringify(body.data.acts));
+							body.data.acts.forEach(act => {
+								if(act.Pid === 628){
+									fs.writeFileSync(`output/${Utils.dateFormat()}-628.json`, `\n${JSON.stringify(act)}`, {flag:'a+'});
+								}
+								if((act.Pid === 391)
+										||
+										(act.Pid === 628)
+										||
+										(act.Pid === 641)){
+									ret.push(act);
+								}
+								if(act.LimitCount > 0){
+									if(
+										(act.Pid === 391)
+										||
+										(act.Pid === 628)
+										// ||
+										// (act.Pid === 422)
+										||
+										(act.Pid === 641)
+										){
+										console.log('可以购买', JSON.stringify(act));
+										// if(act.Pid === 391){
+										// 	if(act.LimitCount >= 5){
+										// 		this.buy(act.ID, act.LimitCount,act.Pid, network)
+										// 	}
+										// }else{
+										buyPromises.push(that.buy(act.ID, act.LimitCount,act.Pid, network));
+										// }
+									}
+								}
+							})
+							if(buyPromises.length > 0){
+								Promise.all(buyPromises)
+									.then(() => {
+											that.checkEnd();
+											return resolve(ret);		
+									})
+									.catch(e => {
+										that.checkEnd();
+										return resolve([]);		
+									})
+							}else{
+								that.checkEnd();
+								return resolve([]);	
 							}
+						}else{
+							that.checkEnd();
+							return resolve([]);
 						}
 					})
-					if(ret.length > 0){
-						return resolve(ret);
-					}else{
-						return resolve([]);
-					}
-				}else{
-					return resolve([]);
-				}
-			})
-		})
+				})
+		}
 	}
 
 	buy(cid, quant, pid, network){
@@ -200,7 +248,8 @@ class ScanActivity {
 								timestamp121: (+new Date()),
 			        },
 			        jar:true,
-			        json:true
+			        json:true,
+			        timeout:10000,
 			    };
 
 
@@ -217,7 +266,9 @@ class ScanActivity {
 							fs.writeFileSync(`output/${Utils.dateFormat()}.json`, `\n${this.account.phone} ${this.account.pass} 商品:${pid} 数量:${quant} ${JSON.stringify(network)} ${JSON.stringify(body)} ${cid}`, {flag:'a+'});
 							require('child_process').fork(path.resolve(__dirname,'./buyFixedAct.js'), [pid,cid, quant, JSON.stringify(network), JSON.stringify(accounts)]);
 						}else if(body.code === 3 && body.data.StockCount > 0){
-							return this.buy(cid, body.data.StockCount, pid, network)
+							quant = body.data.StockCount;
+							require('child_process').fork(path.resolve(__dirname,'./buyFixedAct.js'), [pid,cid, quant, JSON.stringify(network), JSON.stringify(accounts)]);
+							// return this.buy(cid, body.data.StockCount, pid, network)
 						}
 						return resolve(body);
 					})
@@ -229,7 +280,7 @@ class ScanActivity {
 	}
 }
 
-let scanActivity = new ScanActivity(10);
+let scanActivity = new ScanActivity();
 
 scanActivity.start();
 

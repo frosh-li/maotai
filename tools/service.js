@@ -1172,7 +1172,8 @@ class MaotaiService {
              action:	'GrabSingleManager.grabSingleLogin',
              timestamp121:	now
            },
-           json:true
+           json:true,
+           timeout:5000,
        };
        logger.info('登记登陆',account.phone,addressId);
        return new Promise((resolve, reject) => {
@@ -1183,10 +1184,42 @@ class MaotaiService {
                } else {
                    logger.info("登记登陆DONE",account.phone, body);
                    let ret = JSON.stringify(body);
-                   if (body.state === false) {
-                       return reject("登记登陆Fail:" + body.msg);
-                   }
-                   return resolve(body);
+                   // if (body.state === false) {
+                   //     return reject("登记登陆Fail:" + body.msg);
+                   // }
+                   request({
+                       method: 'POST',
+                       jar:true,
+                       url: 'https://www.cmaotai.com/API/Servers.ashx',
+                       headers: {
+                         'cookie':j,
+                         // "proxy-authorization" : "Basic " + proxy.proxyAuth,
+                         'cache-control': 'no-cache',
+                         'accept-language': 'zh-CN,en-US;q=0.8',
+                         'accept': 'application/json, text/javascript, */*; q=0.01',
+                         'content-type': 'application/x-www-form-urlencoded; charset=UTF-8',
+                         'Connection': 'keep-alive',
+                         'referer': `https://www.cmaotai.com/ysh5/page/GrabSingle/grabSingleProductDetails.html?pid=628`,
+                         'user-agent': userAgent,
+                         'x-requested-with': 'XMLHttpRequest'
+                       },
+                       form: {
+                         pid:628,
+                         action:  'GrabSingleManager.grabSingleLogin',
+                         timestamp121:  now
+                       },
+                       json:true,
+                       timeout:5000,
+                   }, (error, response, body)=>{
+                      if(error){
+                        logger.info(error);
+                        return reject(error);
+                      }
+                      if (body.state === false) {
+                          return reject("登记登陆Fail:" + body.msg);
+                      }
+                      return resolve(body);
+                   })
                }
            });
        })
@@ -1215,7 +1248,8 @@ class MaotaiService {
              action:	'GrabSingleManager.getDefualtAdd',
              timestamp121:	now
            },
-           json:true
+           json:true,
+           timeout:5000,
        };
        logger.info('获取默认地址',account.phone,addressId);
        return new Promise((resolve, reject) => {
@@ -1260,7 +1294,8 @@ class MaotaiService {
             timestamp121:	now,
             pid: 391
           },
-          json:true
+          json:true,
+          timeout:5000,
       };
       logger.info('获取一次商品信息',account.phone,addressId);
       return new Promise((resolve, reject) => {
@@ -1307,7 +1342,8 @@ class MaotaiService {
             size: 10
 
           },
-          json:true
+          json:true,
+          timeout:5000,
       };
       // console.log(options.form);
       logger.info('获取订单状态',account.phone);
@@ -1333,7 +1369,7 @@ class MaotaiService {
 
       })
     }
-    GrabSubmit(account, addressId, j) {
+    GrabSubmit(account, addressId,orderCount, j) {
       let now = +new Date();
       let userAgent = this.userAgent(account.phone)
 
@@ -1356,14 +1392,15 @@ class MaotaiService {
           form: {
             sid:	addressId,
             iid:	-1,
-            qty:	2,
+            qty:	orderCount || 6,
             express:	14,
             product:	'{"Pid":391,"PName":"贵州茅台酒 (新飞天) 53%vol 500ml","PCode":"23","Unit":"瓶","CoverImage":"/upload/fileStore/20180415/6365942315164224808933821.jpg","SalePrice":1499}',
             remark: ''	,
             action:	'GrabSingleManager.submit',
             timestamp121:	now
           },
-          json:true
+          json:true,
+          timeout:5000,
       };
       // console.log(options.form);
       logger.info('开始下单',account.phone,addressId);
@@ -1376,10 +1413,45 @@ class MaotaiService {
               } else {
                   logger.info("提交订单完成",account.phone, body);
                   let ret = JSON.stringify(body);
-                  if (body.state === false) {
-                      return reject("提交订单失败:" + body.msg);
-                  }
-                  return resolve(body);
+                  request({
+                      method: 'POST',
+                      jar:true,
+                      url: 'https://www.cmaotai.com/API/Servers.ashx',
+                      headers: {
+                        'cookie':j,
+                        // "proxy-authorization" : "Basic " + proxy.proxyAuth,
+                        'cache-control': 'no-cache',
+                        'accept-language': 'zh-CN,en-US;q=0.8',
+                        'accept': 'application/json, text/javascript, */*; q=0.01',
+                        'content-type': 'application/x-www-form-urlencoded; charset=UTF-8',
+                        'Connection': 'keep-alive',
+                        'referer': `https://www.cmaotai.com/ysh5/page/GrabSingle/grabSingleOrderSubmit.html`,
+                        'user-agent': userAgent,
+                        'x-requested-with': 'XMLHttpRequest'
+                      },
+                      form: {
+                        sid:  addressId,
+                        iid:  -1,
+                        qty:  1,
+                        express:  14,
+                        product:  '{"Pid":628,"PName":"贵州茅台酒（戊戌狗年）53%vol 500ml","PCode":"2021","Unit":"瓶","CoverImage":"/upload/fileStore/20180415/6365942397923095142663827.jpg","SalePrice":1699}',
+                        remark: ''  ,
+                        action: 'GrabSingleManager.submit',
+                        timestamp121: now
+                      },
+                      json:true,
+                      timeout:5000,
+                  }, (error, response, body) => {
+                    if(error){
+                      logger.info(error);
+                      return reject(error);
+                    }
+                    if (body.state === false) {
+                        return reject("提交订单失败:" + body.msg);
+                    }
+                    return resolve(body);  
+                  })
+                  
               }
           });
 

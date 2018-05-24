@@ -5,7 +5,7 @@ let logger = require('../controllers/logger');
 const proxy = require('./proxy');
 
 class GrabController {
-  constructor(account, callback){
+  constructor(account,orderCount, callback){
     console.log(account);
     this.account = account;
     //
@@ -16,6 +16,7 @@ class GrabController {
     //   database : 'accounts'
     // });
     this.callback = callback;
+    this.orderCount = orderCount;
     // this.connection.connect();
     this.startBind();
   }
@@ -37,7 +38,7 @@ class GrabController {
         return MaotaiService.GrabDefaultAdd(this.account, this.account.addressId, scopeJar);
       })
       .then(data => {
-        return MaotaiService.GrabSubmit(this.account, this.account.addressId, scopeJar);
+        return MaotaiService.GrabSubmit(this.account, this.account.addressId,this.orderCount, scopeJar);
         if(data.code == 0){
             // return MaotaiService.GrabSubmit(this.account, this.account.addressId, scopeJar);
         }else{
