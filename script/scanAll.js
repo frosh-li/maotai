@@ -6,7 +6,7 @@ const request = require('request');
 const fs = require('fs');
 const path = require('path');
 const Utils = require('../services/utils');
-
+const sendmsg = require('../sendmsg');
 const queueCount = 10;
 var networks = require('../networks/120000.json');	// 天津
 networks = [];
