@@ -250,7 +250,7 @@ class Registry {
 							.then(out => {
 								if(out && out.code === 0){
 									console.log('注册成功',phone);
-									fs.writeFileSync(`newaccounts.txt`, `${phone} qwer1234\n`, {flag:'a+'});
+									fs.writeFileSync(`lijunliang.txt`, `${phone} 987654321\n`, {flag:'a+'});
 								}
 								// 开始下次注册
 								setTimeout(() => {
