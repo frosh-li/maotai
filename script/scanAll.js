@@ -89,15 +89,31 @@ class ScanActivity {
 		this.startIndex = 0 ;
 		this.account = accounts[Math.floor(Math.random()*accounts.length)];
 		this.acts = [];
+		let that = this;
 		for(let i = 0 ; i < networks.length ; i++,this.startIndex++){
 			if(i < queueCount){
-				this.promises.push(this.scanSingle(networks[this.startIndex])());
+				this.promises.push(this.scanSingle(networks[this.startIndex]));
 			}else{
-				this.queues.push(this.scanSingle(networks[this.startIndex]))
+				((networks, i)=>{
+					this.promises.push(new Promise((resolve, reject) => {
+						const task = () => {
+							that.scanSingle(networks[i])
+							.then((data) => {
+								return resolve(data)
+							}).catch(e => {
+								return reject(e);
+							})
+						}
+						that.queues.push(task);
+					}));
+					
+				
+				})(networks, i)
+				
 			}
 		}
 		startTime = +new Date();
-		Promise.all(this.promises.concat(this.queues))
+		Promise.all(this.promises)
 			.then(datas => {
 				datas.forEach(data => {
 					if(data.length > 0){
@@ -107,14 +123,10 @@ class ScanActivity {
 				console.log('所有扫描结束,耗时:',(+new Date()) - startTime+"MS");
 				setTimeout(() => {
 					this.start();
-				}, 60000)
+				}, 5000)
 			})
 			.catch(e => {
 				console.log(e.message);
-				console.log('所有扫描结束,耗时:',(+new Date()) - startTime+"MS");
-				setTimeout(() => {
-					this.start();
-				}, 60000)
 			})
 	}
 
@@ -149,7 +161,7 @@ class ScanActivity {
 	scanSingle(network) {
 		
 		let that = this;
-		return () => {
+		// return new Promise((_resolve, _reject) => {
 			return new Promise((resolve, reject) => {
 					console.log('网点开始检查', network.id, network.address);
 					request(that.options(network.id), (error, response, body) => {
@@ -215,7 +227,7 @@ class ScanActivity {
 						}
 					})
 				})
-		}
+		// });
 	}
 
 	buy(cid, quant, pid, network){
