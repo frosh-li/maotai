@@ -270,7 +270,7 @@ class ScanActivity {
 							console.log('下单异常', error.message);
 							return resolve([]);
 						}
-						console.log('开始下单', cid,this.account.phone,this.account.pass, quant, JSON.stringify(body), JSON.stringify(network));
+						console.log('开始下单', pid,this.account.phone,this.account.pass, quant, JSON.stringify(body), JSON.stringify(network));
 						if(body.code === 0 ){
 							fs.writeFileSync(`output/${Utils.dateFormat()}.json`, `\n${this.account.phone} ${this.account.pass} 商品:${pid} 数量:${quant} ${JSON.stringify(network)} ${JSON.stringify(body)} ${cid}`, {flag:'a+'});
 							if(pid === 628){
