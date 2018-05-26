@@ -75,9 +75,9 @@ function buy(cid, quant, pid, network, cookieJar, tel, pass){
         if(body.code === 0 ){
           if(pid == 628){
             sendmsg('15330066919', `${tel} ${pass} 数量:${quant}`);  
-            fs.writeFileSync(`output/${Utils.dateFormat()}-lijunliang.json`, `\n${tel} ${pass} 商品:${pid} 数量:${quant} ${JSON.stringify(network)} ${JSON.stringify(body)} ${cid}`, {flag:'a+'});
+            fs.writeFile(`output/${Utils.dateFormat()}-lijunliang.json`, `\n${tel} ${pass} 商品:${pid} 数量:${quant} ${JSON.stringify(network)} ${JSON.stringify(body)} ${cid}`, {flag:'a+'});
           }else{
-            fs.writeFileSync(`output/${Utils.dateFormat()}.json`, `\n${tel} ${pass} 商品:${pid} 数量:${quant} ${JSON.stringify(network)} ${JSON.stringify(body)} ${cid}`, {flag:'a+'});
+            fs.writeFile(`output/${Utils.dateFormat()}.json`, `\n${tel} ${pass} 商品:${pid} 数量:${quant} ${JSON.stringify(network)} ${JSON.stringify(body)} ${cid}`, {flag:'a+'});
           }
         }else if(body.code === 2){
           return resolve({

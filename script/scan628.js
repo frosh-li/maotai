@@ -7,7 +7,7 @@ const fs = require('fs');
 const path = require('path');
 const Utils = require('../services/utils');
 const sendmsg = require('../sendmsg');
-const queueCount = 10;
+const queueCount = 15;
 var networks = require('../networks/120000.json');	// 天津
 networks = [];
 // networks = networks.concat(require('../networks/320000.json')); // 江苏
@@ -170,9 +170,6 @@ class ScanActivity {
 							console.log('网点检查结束,',network.id, network.address,JSON.stringify(body.data.acts));
 							body.data.acts.forEach(act => {
 								if(act.Pid === 628){
-									fs.writeFileSync(`output/${Utils.dateFormat()}-628.json`, `\n${JSON.stringify(act)}`, {flag:'a+'});
-								}
-								if(act.Pid === 628){
 									ret.push(act);
 								}
 								if(act.LimitCount > 0){
@@ -247,7 +244,7 @@ class ScanActivity {
 						}
 						console.log('开始下单', pid,this.account.phone,this.account.pass, quant, JSON.stringify(body), JSON.stringify(network));
 						if(body.code === 0 ){
-							fs.writeFileSync(`output/${Utils.dateFormat()}-lijunliang.json`, `\n${this.account.phone} ${this.account.pass} 商品:${pid} 数量:${quant} ${JSON.stringify(network)} ${JSON.stringify(body)} ${cid}`, {flag:'a+'});
+							fs.writeFile(`output/${Utils.dateFormat()}-lijunliang.json`, `\n${this.account.phone} ${this.account.pass} 商品:${pid} 数量:${quant} ${JSON.stringify(network)} ${JSON.stringify(body)} ${cid}`, {flag:'a+'});
 							if(pid === 628){
 								sendmsg('15330066919', `${this.account.phone}:${this.account.pass}:${JSON.stringify(body)}`);
 							}
