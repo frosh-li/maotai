@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<!--屏蔽标签拨号/email/address链接-->
+<meta name="format-detection" content="telephone=no"/>
+<meta name="format-detection" content="email=no"/>
+<meta name="format-detection" content="adress=no" />
+<title></title>
+<!--应用mui懒加载 wxh-->
+<style>
+.mt10 {margin-top: 10px !important;}
+.mebc{width: 96% !important;}
+.order_list {overflow: visible !important; }/*margin-top:59px !important;*/
+.order_list li {
+  border-bottom: 1px solid #C7C7C7;
+} 
+.mui-pull-bottom-pocket{margin-top: 2px;}
+.ico_pay{
+  display: none !important;
+}
+#code{
+  width: 90%;
+  height: 2rem;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+button{
+  width: 90%;
+  height: 50px;
+  background: #930;
+  color: white;
+  font-size: 1.5rem;
+  margin: 10px auto;
+}
+</style>
+
+</head>
+
+<body>
+<input type="text" placeholder="请输入32位购物编码" id="code" />
+<button onclick="start()">开始下单</button>
+<button onclick="document.getElementById('code').value='';">清除</button>
+<script>
+function start(){
+  var code = document.getElementById('code').value;
+  var cmatch = code.match(/([0-9a-zA-Z]{32})/);
+  if(cmatch && cmatch.length > 0){
+    code = cmatch[0];
+  }else{
+    alert('请输入正确的32位长度的编码');
+    return;
+  }
+  window.location.href="http://47.94.238.179/api/maotai/setOrder/"+code;
+}
+</script>
+</body>
