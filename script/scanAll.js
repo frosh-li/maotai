@@ -179,23 +179,11 @@ class ScanActivity {
 								if(act.Pid === 628){
 									fs.writeFileSync(`output/${Utils.dateFormat()}-628.json`, `\n${JSON.stringify(act)}`, {flag:'a+'});
 								}
-								if((act.Pid === 391)
-										||
-										(act.Pid === 628)
-										||
-										(act.Pid === 641)){
+								if(act.Pid === 391){
 									ret.push(act);
 								}
 								if(act.LimitCount > 0){
-									if(
-										(act.Pid === 391)
-										||
-										(act.Pid === 628)
-										// ||
-										// (act.Pid === 422)
-										||
-										(act.Pid === 641)
-										){
+									if(act.Pid === 391){
 										console.log('可以购买', JSON.stringify(act));
 										// if(act.Pid === 391){
 										// 	if(act.LimitCount >= 5){

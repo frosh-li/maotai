@@ -123,7 +123,7 @@ if(process.argv[3]){
     orderCount = process.argv[3];
 }
 
-var grabController = require('../controllers/GrabController');
+var grabController = require('../controllers/grabController');
 
 console.log(accounts);
 
