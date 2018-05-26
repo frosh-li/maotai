@@ -3,7 +3,7 @@
  */
 
 var logger = require('../controllers/logger');
-var accounts = require('../accounts/410000.json')
+var accounts = [];//require('../accounts/410000.json')
 
 const request = require('request');
 const path = require('path');
