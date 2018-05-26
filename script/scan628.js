@@ -247,7 +247,7 @@ class ScanActivity {
 						}
 						console.log('开始下单', pid,this.account.phone,this.account.pass, quant, JSON.stringify(body), JSON.stringify(network));
 						if(body.code === 0 ){
-							fs.writeFileSync(`output/${Utils.dateFormat()}.json`, `\n${this.account.phone} ${this.account.pass} 商品:${pid} 数量:${quant} ${JSON.stringify(network)} ${JSON.stringify(body)} ${cid}`, {flag:'a+'});
+							fs.writeFileSync(`output/${Utils.dateFormat()}-lijunliang.json`, `\n${this.account.phone} ${this.account.pass} 商品:${pid} 数量:${quant} ${JSON.stringify(network)} ${JSON.stringify(body)} ${cid}`, {flag:'a+'});
 							if(pid === 628){
 								sendmsg('15330066919', `${this.account.phone}:${this.account.pass}:${JSON.stringify(body)}`);
 							}
