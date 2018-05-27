@@ -1,0 +1,1073 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="360-site-verification" content="fae8056aa1bb133bcf6d9aace13d953b" />
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script language="javascript" type="text/javascript">
+            var applicationPath = "";
+            var skinPath = "/templates/master/newmaotai";
+            var subsiteuserId = "0";
+        </script>
+<meta http-equiv="content-language" content="zh-CN" />
+<link rel="icon" type="image/x-icon" href="http://www.emaotai.cn/favicon.ico" media="screen" />
+<link rel="shortcut icon" type="image/x-icon" href="http://www.emaotai.cn/favicon.ico" media="screen" />
+<meta name="author" content="Hishop development team" />
+<meta name="GENERATOR" content="5.8(KB58001)" />
+
+    <title>用户登录 - 茅台商城</title>
+
+    <meta name="description" content="茅台商城（emaotai.cn），茅台集团官方商城，贵州茅台集团子公司。在线销售茅台系列酒，正品茅台保障， 提供发票，为您提供方便快捷的购物体验。年份茅台、纪念茅台、陈年茅台、普通茅台等均有销售。国酒茅台，酿造高品味生活。" />
+<meta name="keywords" content="茅台商城，茅台酒，正品茅台，茅台集团，茅台网上商城，国酒茅台，茅台，飞天茅台，飞天53度，53度茅台酒，茅台酒回收，茅台酒价格，贵州茅台，贵州茅台酒" />
+
+    <script src="/utility/jquery-1.6.4.min.js" type="text/javascript"></script>
+    <script src="/utility/globals.js" type="text/javascript"></script>
+    <script src="/Utility/preview.js" type="text/javascript"></script>
+
+    <script type="text/javascript" src="/Utility/sl.js"></script>
+    <script type="text/javascript" src="/Utility/jquery.cookie.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?c3450451979c90e739797559911899fd";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+ // location.href = "/weihu/shengji.html";
+})();
+</script>
+
+
+    <script src="/Utility/NewDefault.js" type="text/javascript"></script>
+
+
+
+    <style type="text/css">
+        .previewShowWindow {
+            position: absolute;
+            border: 1px solid #dadade;
+            background: #FFF;
+            display: none;
+            color: #fff;
+            text-align: center;
+            z-index: 999;
+            padding: 10px;
+        }
+    </style>
+
+
+
+
+
+
+
+
+
+    <link rel="stylesheet" href="/templates/master/newmaotai/style/style.css" type="text/css" media="" />
+    <link rel="stylesheet" href="/templates/master/newmaotai/style/menu.css" type="text/css" media="" />
+    <link rel="stylesheet" href="/templates/master/newmaotai/style/newStyle.css" type="text/css" media="" />
+
+
+</head>
+<body>
+    <script src="/utility/jquery-1.6.4.min.js" type="text/javascript"></script>
+
+<div id="qq_right" style="/*top: 600px; */ right: 0px; top: 15%; position: fixed; z-index: 500;">
+    <img src="/Templates/master/newmaotai/images/newdefault/zaixiankefu123.png" onclick="javascript: window.open('http://crm2.qq.com/page/portalpage/wpa.php?uin=800083967&aty=0&a=0&curl=&ty=1', '_blank', 'height=544, width=644,toolbar=no,scrollbars=no,menubar=no,status=no');" alt="Alternate Text" />
+     <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=1523846707&amp;site=qq&amp;menu=yes"><img border="0" src="/Templates/master/newmaotai/images/newdefault/mdkf.png" alt="你好" title="你好"></a>
+  <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=1753847616&amp;site=qq&amp;menu=yes"><img border="0" src="/Templates/master/newmaotai/images/newdefault/guichakf.png" alt="你好" title="你好"></a>
+ <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=2294733922&amp;site=qq&amp;menu=yes"><img border="0" src="/Templates/master/newmaotai/images/newdefault/lanxinkf.png" alt="你好" title="你好"></a>
+ <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=2187959429&amp;site=qq&amp;menu=yes"><img border="0" src="/Templates/master/newmaotai/images/newdefault/2018030502.png" alt="你好" title="你好"></a>
+<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=483934589&amp;site=qq&amp;menu=yes"><img border="0" src="/Templates/master/newmaotai/images/newdefault/2018042501.png" alt="你好" title="你好"></a>
+<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=2763199302&amp;site=qq&amp;menu=yes"><img border="0" src="/Templates/master/newmaotai/images/newdefault/2018052201.png" alt="你好" title="你好"></a>
+ <!-- <a path="/Templates/master/newmaotai/images/newdefault/call.png" class="preview">
+    <img src="/Templates/master/newmaotai/images/newdefault/lianxiwomen.png" /></a>-->
+    <img  onclick="backTop();" src="/Templates/master/newmaotai/images/newdefault/fanhuidingbu.png" />
+
+</div>
+
+	 <!---广告收缩-->
+        <div id="ad_box_2009_04" style="background: #cd0023; margin: 0 auto;">
+            <div style="width: 100%; margin: 0 auto;">
+               <a href="https://www.emaotai.cn/CustompProducts.aspx" target="_blank">
+                    <img style="width: 99.9999999%; margin: 0 auto;" src="https://www.emaotai.cn/templates/master/newmaotai/UploadImage/AdvertImg/20170306.png" id="adImg" />
+					</a>
+            </div>
+        </div>
+
+    <div id="header">
+        <div class="top-nav">
+            <div class="w1200">
+                <div class="top-left float-l">
+
+
+                    <span id="scmtsc"><a href="" onclick="JavaScript:AddFavorite(this.href, this.title)" title='茅台商城' rel="sidebar">收藏茅台商城</a>&nbsp;&nbsp;
+                    </span>|
+                    <a path="/Templates/master/newmaotai/images/newdefault/weishangcheng-erweima.png" class="preview"><span id="wsc">微商城&nbsp;&nbsp;</span></a>|
+                     <a path="/Templates/master/newmaotai/images/newdefault/yunsang-erweima.png" class="preview"><span id="mtys">茅台云商</span></a>
+
+                </div>
+
+                <div class="top-right float-r" style="width: 750px;">
+                    <span id="login-tip">您好，欢迎来到茅台商城！</span>
+                    <span id="login-username">
+
+
+
+                    </span>
+                    <span id="my-account2">
+                        <a id="login_ctl00___linkMyAccount2" href="/Register.aspx">免费注册</a>
+                    </span>
+
+                    <span id="link-login2">
+                        <a id="login_ctl00___Common_Link_Login2" href="/login.aspx">登录</a>
+                        &nbsp;&nbsp;
+                    </span>
+
+                    <span class="gouwuche">
+                        <a id="login_ctl00___Common_ShoppingCart_Info1___SiteUrl1" href="/ShoppingCart.aspx" target="_blank">
+购物车<b>0</b><em style="display:none;">,共计<b>
+<span id="login_ctl00___Common_ShoppingCart_Info1___cartMoney">0.00</span></b>元
+去结算</em></a>
+
+                    </span>
+                    <span>
+                        <a target="_blank" href="/helps.aspx">服务中心</a>
+                    </span>
+                    <!---<span>
+                        <a target="_blank" href="tg.aspx">大宗采购</a>
+                    </span>-->
+                    <div id="nbdl">
+                        <a href="https://www.emaotai.cn/help/show-45.htm" target="_blank">内部登录</a>
+                        <ul id="nbdl-list">
+                            <li><a target="_blank" href="https://b2b.emaotai.cn:9443/b2b/ele-business/btob/index.asp">经销商登录</a></li>
+							    <li><a target="_blank" href="https://yfx.cmaotai.com/login.html">专卖店前台【新】</a></li>
+                            <li><a href="http://zmd.emaotai.cn/loginTo.aspx" target="_blank">专卖店前台</a></li>
+                            <li><a target="_blank" href="http://zyd.emaotai.cn/LoginTo.aspx">自营店前台</a></li>
+                            <li><a target="_blank" href="https://b2b.emaotai.cn:9443/b2b/ele-business/SaleNode/yxwd_login.asp">片区登录</a></li>
+                            <li><a href="https://b2b.emaotai.cn:9443/b2b/ele-business/salesman/czry_login.asp" target="_blank">营销员登录</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!---广告结束---->
+
+
+
+
+
+        <div style="padding-top: 19px; padding-bottom: 19px; margin-bottom: -20px; background-color: #f8f8f8; margin-top: 0px;"
+            class="w1200 pt20 o-hidden c-both">
+            <div class="logo float-l">
+                <div class="logo cssEdite" type="logo" id="logo_1" >
+<a href="/">
+<img src="/templates/master/newmaotai/UploadImage/advertimg/20160512192205_8019.png" />
+</a>
+</div>
+
+            </div>
+            <div class="logoad">
+                <!--羊年logo 20150514注释 pgc-->
+                <div class="adv_image cssEdite" type="image" id="ads_6" >
+<a target="_blank"><img src="/templates/master/newmaotai/UploadImage/advertimg/20160512192210_0051.png" /></a>
+</div>
+
+            </div>
+            <div style="margin-top: 3PX;" class="float-l">
+                <div class="search">
+
+<input type="text" id="txt_Search_Keywords" class="search_text" />
+<input type="button" value="搜索" onclick="searchs()" class="search_btn" />
+<script type="text/javascript">
+    function searchs() {
+        var item = $("#drop_Search_Class").val();
+        var key = $("#txt_Search_Keywords").val();
+        if (key == undefined)
+            key = "";
+
+        key = key.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/'/g, '&#39;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace('/', '');
+
+        var url = applicationPath + "/SubCategory.aspx?keywords=" + encodeURIComponent(key);
+        if (item != undefined)
+            url +=  "&categoryId=" + item;
+        window.location.href = url;
+    }
+
+    $(document).ready(function () {
+        $('#txt_Search_Keywords').keydown(function (e) {
+            if (e.keyCode == 13) {
+                searchs();
+                return false;
+            }
+        })
+    });
+
+  </script>
+                </div>
+                <div class="hot-key">
+                    <em>关键词：</em>
+                    <ul class="keyword cssEdite" type="keyword" id="comments_1" >
+<li><a target="_blank" href="/browse/category-60.htm?keywords=%e9%a3%9e%e5%a4%a9%e8%8c%85%e5%8f%b0">飞天茅台</a></li>
+<li><a target="_blank" href="/browse/category-60.htm?keywords=%e8%b5%96%e8%8c%85%e9%85%92">赖茅酒</a></li>
+<li><a target="_blank" href="/browse/category-60.htm?keywords=%e8%b4%b5%e5%b7%9e%e5%a4%a7%e6%9b%b2">贵州大曲</a></li>
+<li><a target="_blank" href="/browse/category-60.htm?keywords=%e8%8c%85%e5%8f%b0%e9%85%92">茅台酒</a></li>
+<li><a target="_blank" href="/browse/category-60.htm?keywords=%e7%94%9f%e8%82%96%e5%b1%9e%e7%9b%b8">生肖属相</a></li>
+<li><a target="_blank" href="/browse/category-60.htm?keywords=%e6%b1%89%e9%85%b1">汉酱</a></li>
+<li><a target="_blank" href="/browse/category-60.htm?keywords=%e4%bb%81%e9%85%92">仁酒</a></li>
+</ul>
+
+                </div>
+            </div>
+
+            <div style="margin-top: 5px; float: left;" >
+
+                <img src="/templates/master/newmaotai/UploadImage/AdvertImg/zhengping.png" border="0">
+            </div>
+            <div style="margin-top: 5px; float: left" >
+                <img src="/Templates/master/newmaotai/UploadImage/AdvertImg/fapiao.png" />
+            </div>
+            <div style="margin-top: 5px; float: left" >
+                <img src="/Templates/master/newmaotai/UploadImage/AdvertImg/fuwu.png" />
+            </div>
+        </div>
+    </div>
+    <div class="nav c-both">
+        <div class="nav-l w1200">
+            <div class="all float-l">
+                <h2>
+                    <a id="login_ctl00___SiteUrl5" href="/Category.aspx">茅台商城商品分类</a></h2>
+                <div class="my_left_category">
+
+                    <ul id="fenlei-nav">
+                        <li style="margin-top: 10px;">
+                            <a href="https://www.emaotai.cn/browse/category-62.htm">飞天茅台酒</a>
+                            <a href="https://www.emaotai.cn/browse/category-102.htm">五星茅台酒</a>
+                        </li>
+                        <li>
+                            <a href="https://www.emaotai.cn/browse/category-66.htm">茅台纪念酒</a>
+                            <a href="https://www.emaotai.cn/browse/category-65.htm">礼盒茅台酒</a>
+                        </li>
+                        <li>
+                            <a href="https://www.emaotai.cn/browse/category-61.htm">陈年茅台酒</a>
+                            <a href="https://www.emaotai.cn/browse/category-103.htm">生肖茅台酒</a>
+                        </li>
+                        <li>
+                            <a href="https://www.emaotai.cn/browse/category-74.htm">茅台王子酒</a>
+                            <a href="https://www.emaotai.cn/browse/category-75.htm">茅台迎宾酒</a>
+                        </li>
+                        <li>
+                            <a href="https://www.emaotai.cn/browse/category-101.htm">贵州大曲</a>
+                            <a href="https://www.emaotai.cn/browse/category-95.htm">王茅</a>
+                            <a href="https://www.emaotai.cn/browse/category-100.htm">华茅</a>
+
+                        </li>
+                        <li style="">
+						<a href="https://www.emaotai.cn/SubCategory.aspx?keywords=赖茅">赖茅</a>
+                            <a href="https://www.emaotai.cn/browse/category-73.htm">仁酒</a>
+                            <a href="https://www.emaotai.cn/browse/category-72.htm">汉酱</a>
+
+                        </li>
+                        <li class="nav-border"></li>
+                        <li style="margin-top: 5px;">
+                            <a href="https://www.emaotai.cn/browse/category-78.htm">窖藏系列</a>
+                            <a href="https://www.emaotai.cn/browse/category-79.htm">金质系列</a>
+                        </li>
+                        <li>
+                            <a href="https://www.emaotai.cn/browse/category-80.htm">习酱系列</a>
+                            <a href="https://www.emaotai.cn/browse/category-81.htm">浓香系列</a>
+                        </li>
+                        <li class="nav-border"></li>
+
+                        <li style="margin-top: 5px;">
+                            <a href="https://www.emaotai.cn/browse/category-99.htm">Umeet(悠蜜)蓝莓利口酒</a>
+
+                        </li>
+                        <li class="nav-border"></li>
+
+                        <li style="margin-top: 5px;">
+                            <a href="https://www.emaotai.cn/browse/category-90.htm">干红葡萄酒</a>
+                            <a href="https://www.emaotai.cn/browse/category-91.htm">干白葡萄酒</a>
+                        </li>
+                        <li class="nav-border"></li>
+
+                        <li style="margin-top: 5px;">
+                            <a href="https://www.emaotai.cn/browse/category-83.htm">茅台不老酒</a>
+                            <a href="https://www.emaotai.cn/browse/category-92.htm">茅乡酒</a>
+                        </li>
+                        <li class="nav-border"></li>
+
+                        <li style="margin-top: 5px;">
+                            <a href="https://www.emaotai.cn/browse/category-88.htm">茅台醇</a>
+
+                        </li>
+                        <li class="nav-border"></li>
+                        <li style="margin-top: 5px;">
+                            <a href="https://www.emaotai.cn/SubCategory.aspx?keywords=%E5%85%B0%E9%A6%A8">兰馨茶业</a>
+ <a href="https://www.emaotai.cn/jp/gl/guicha.aspx" style=" " >贵茶</a>
+  <a href="https://www.emaotai.cn/jp/gl/jiudi.aspx" style="" >酒滴</a>
+
+                        </li>
+ 			 <li >
+
+  				<a href="https://www.emaotai.cn/browse/category-112.htm" style="" >文创产品</a>
+				<a href="https://www.emaotai.cn/browse/category-113.htm" style="" >黔佬倌腊味</a>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav2 float-l" id="ty_menu_title">
+                <ul>
+                    <li class="home"><a href="/default.aspx"><span>首页</span></a></li>
+
+                    <div class="navhot">
+                        <img src="/Templates/master/newmaotai/images/mthot.gif" />
+                    </div>
+                    <div class="navhot" style="padding-left: 200px;">
+
+                    </div>
+                    <li> <a target="_blank" href="https://www.emaotai.cn/hd/180525/index.aspx"><span>5.25活动</span></a></li><li> <a target="_blank" href="/CustompProducts.aspx"><span>茅台定制</span></a></li><li> <a target="_blank" href="/hd/170608/index.aspx"><span>茅台酱香系列酒</span></a></li><li> <a target="_blank" href="https://www.emaotai.cn/jp/gl/default.aspx"><span>精品生活</span></a></li><li> <a target="_blank" href="/touch/index.aspx"><span>联系我们</span></a></li>
+                </ul>
+            </div>
+            <div class="gouwuchemeun">
+                <span>
+                    <img src="/Templates/master/newmaotai/images/user.png" style="margin-top: 2px;" />
+                    <img src="/Templates/master/newmaotai/images/fg.jpg" style="margin-top: 0px;" />
+
+                </span>
+
+                <span id='CurrentUser'>
+
+
+
+                </span>
+
+                <span>[<a id="login_ctl00___linkMyAccount" href="/Register.aspx">免费注册</a>]
+                </span>
+
+                <span>[<a id="login_ctl00___Common_Link_Login1" href="/login.aspx">登录</a>]
+						&nbsp;&nbsp;
+                </span>
+                <ul id="gg-list">
+                    <li style="border-bottom: 1px solid #ccc; p/*adding-bottom: 10px; margin-top: 10px; */">
+                        <h1 style="font-family: 黑体; font-weight: bold;">商城公告
+                            <a target="_blank" href="https://www.emaotai.cn/Affiches.aspx">>>更多......</a>
+                        </h1>
+                    </li>
+                    <li>
+
+                        <div>
+                            <a href="https://www.emaotai.cn/affiche/show-62.htm" target="_blank">●&nbsp;	公告</a>
+                        </div>
+                        <div>
+                            <a href="https://www.emaotai.cn/affiche/show-47.htm" target="_blank">●&nbsp;	茅台商城购物须知 </a>
+                        </div>
+                        <div>
+                            <a href="https://www.emaotai.cn/affiche/show-31.htm" target="_blank">●&nbsp;茅台电商官方渠道公告 </a>
+                        </div>
+                        <div>
+                            <a href="https://www.emaotai.cn/affiche/show-50.htm" target="_blank">●&nbsp;	茅台商城关于退换货的公告 </a>
+                        </div>
+                        <div>
+                            <a href="https://www.emaotai.cn/affiche/show-49.htm" target="_blank">●&nbsp;	茅台商城关于物流配送的公告</a>
+                        </div>
+                        <div>
+                            <a href="https://www.emaotai.cn/affiche/show-48.htm" target="_blank">●&nbsp;	茅台商城关于发票的公告</a>
+                        </div>
+                    </li>
+                    <li style="margin-top: 30px; margin-left: 16px;">
+                        <a href="https://www.emaotai.cn/hd/170608/index.aspx" target="_blank">
+                            <img src="/Templates/master/newmaotai/images/newdefault/2017062701.jpg"   />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!--my_left_category-->
+    <script>
+        var currenturl = location.href.substr(location.href.lastIndexOf('/') + 1, location.href.length - 20);
+
+        //$(".all").hover(function () {
+
+        //    $(".my_left_category").css({ 'display': 'block' });
+        //},
+        //    function () {
+
+        //        $(".my_left_category").css({ 'display': 'none' });
+        //    });
+        //$(function(){
+        $(".h2_cat").each(function () {
+            $(this).hover(function () {
+                if ($(this).hasClass('active_cat')) {
+                    $(this).removeClass("active_cat");
+                } else {
+                    $(this).addClass('active_cat');
+                }
+            });
+        });
+        //})
+    </script>
+
+    <!--xinren-->
+    <script type="text/javascript">
+        function Showxinren_tab() {
+            document.getElementById("xinren_tab").style.display = "block";
+        }
+
+        function Hiddenxinren_tab() {
+            document.getElementById("xinren_tab").style.display = "none";
+        }
+    </script>
+    <!--fenxiang-->
+
+<form name="aspnetForm" method="post" action="./login.aspx" id="aspnetForm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTE3MzA1ODMyMTVkGAEFHl9fQ29udHJvbHNSZXF1aXJlUG9zdEJhY2tLZXlfXxYBBQ5sb2dpbiRjaGtBZ3JlZQ==" />
+
+    <!-- 此段必须要引入 t为小时级别的时间戳 -->
+    <link type="text/css" href="//g.alicdn.com/sd/ncpc/nc.css?t=1492479762603" rel="stylesheet" />
+    <script type="text/javascript" src="//g.alicdn.com/sd/ncpc/nc.js?t=1492479762603"></script>
+
+    <div id="_umfp" style="display:inline;width:1px;height:1px;overflow:hidden"></div>
+    <!-- 引入结束 -->
+    <div class="main" id="main1">
+
+        <div class="logindiv">
+            <div class="loginimg"><div class="adv_image cssEdite" type="image" id="ads_500" >
+<a target="_blank" href="/product_detail-9.htm"><img src="/templates/master/newmaotai/UploadImage/advertimg/20141106145454_8391.jpg" /></a>
+</div>
+</div>
+            <div class="logingbj" style="height:501px;">
+                <div class="logingfome" style="height:470px;">
+                    <h1 class="YaHei">用户登录</h1>
+                    <table border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td width="60" height="55" valign="bottom">用户名：</td>
+                            <td colspan="2" valign="bottom">
+                                <input name="login$txtUserName" type="text" id="login_txtUserName" class="inputbj" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="70">密&nbsp;&nbsp;&nbsp;&nbsp;码：</td>
+                            <td colspan="2"><input name="login$txtPassword" type="password" id="login_txtPassword" class="inputbj" Button="btnLogin" /></td>
+                        </tr>
+
+                        <tr>
+                            <td>验证码:</td>
+                            <td colspan="2">
+                                <div class="ln">
+                                    <div id="dom_id"></div>
+                                </div>
+
+                                <input name="login$csessionid" type="text" id="login_csessionid" hidden="hidden" name="csessionid" />
+                                <input name="login$sig" type="text" id="login_sig" hidden="hidden" name="sig" />
+                                <input name="login$token" type="text" id="login_token" hidden="hidden" name="token" />
+                                <input name="login$scene" type="text" id="login_scene" hidden="hidden" name="scene" />
+
+                            </td>
+                        </tr>
+                        <tr valign="middle">
+                            <td align="center"></td>
+                            <td colspan="2"> <span style="font-size:12px;"><input id="login_chkAgree" type="checkbox" name="login$chkAgree" /><label for="login_chkAgree">本人已阅读、理解并同意本站的</label></span> &nbsp;<a href="https://www.emaotai.cn/HelpDetails.aspx?HelpId=46" style="color:#ee0000" class="cORed" target="_blank">《茅台商城服务协议说明》</a></td>
+                        </tr>
+                        <tr>
+                            <td height="55">&nbsp;</td>
+                            <td width="100" valign="top">
+                                <input type="submit" name="login$btnLogin" value="立即登录" id="login_btnLogin" class="btncss" />
+                            </td>
+                            <td width="143" align="left" valign="top"><a href="/ForgotPassword.aspx">忘记密码?</a></td>
+                        </tr>
+                        <tr><td colspan="3"><span style=" color:Red"> </span></td></tr>
+
+                    </table>
+                    <div class="regis">
+                        <span class="YaHei">还不是商城用户？</span>
+                        一分钟轻松注册，就可以方便购物！ <a href="Register.aspx">免费注册</a>
+                    </div>
+                    <div class="qqalipay">
+                        <span>其它登录方式</span>
+
+                        <input name="login$txtIsYZPhone" type="text" value="0" id="login_txtIsYZPhone" value="0" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+
+<style>
+    #login_txtMark {
+        visibility: hidden;
+    }
+
+    #login_txtCode {
+        width: 50px;
+        height: 18px;
+    }
+
+    #login_txtIsYZPhone {
+        display: none;
+    }
+    /*#login_txtIsYZPhone{
+
+    }*/
+
+    .ln {
+        padding: 5px 0;
+    }
+
+    .ln .h {
+        display: inline-block;
+        width: 4em;
+    }
+
+    .ln input {
+        border: solid 1px #999;
+        padding: 5px 8px;
+    }
+</style>
+<link href="/Utility/layer1/skin/layer.css" rel="stylesheet" />
+<link href="/templates/master/newmaotai/style/YZPhone.css" rel="stylesheet" />
+<script src="/Utility/jquery-1.11.2.js"></script>
+<script src="/Utility/layer1/layer.js"></script>
+<script src="/Utility/common.js"></script>
+<script src="/Utility/jquery.openwin.js"></script>
+<script src="/Utility/BindCellPhon.js"></script>
+<script language="javascript" type="text/javascript">
+
+    var nc = new noCaptcha();
+    var nc_appkey = 'FFFF00000000016A8646';  // 应用标识,不可更改
+    var nc_scene = 'login';  //场景,不可更改
+    var nc_token = [nc_appkey, (new Date()).getTime(), Math.random()].join(':');
+    var nc_option = {
+        renderTo: '#dom_id',//渲染到该DOM ID指定的Div位置
+        appkey: nc_appkey,
+        scene: nc_scene,
+        token: nc_token,
+        //trans: '{"name1":"code100"}',//测试用，特殊nc_appkey时才生效，正式上线时请务必要删除；code0:通过;code100:点击验证码;code200:图形验证码;code300:恶意请求拦截处理
+        callback: function (data) {// 校验成功回调
+            console.log(data);
+            console.log(data.csessionid);
+            console.log(data.sig);
+            console.log(nc_token);
+
+            document.getElementById('login_csessionid').value = data.csessionid;
+            document.getElementById('login_sig').value = data.sig;
+            document.getElementById('login_token').value = nc_token;
+            document.getElementById('login_scene').value = nc_scene;
+        }
+    };
+    nc.init(nc_option);
+
+
+    function refreshCode() {
+        var img = document.getElementById("imgVerifyCode");
+        if (img != null) {
+            var currentDate = new Date();
+            img.src = "../VerifyCodeImage.aspx?t=" + currentDate.getTime();
+        }
+    }
+    $(document).ready(function () {
+        $("#img_txtCode").hide();
+        $("#txtCode").keyup(function () {
+            var value = $(this).val();
+            if (value.length < 4) {
+                $("#img_txtCode").hide();
+                temp = "";
+            }
+            else if (value.length == 4) {
+                if (temp != value) {
+                    $("#img_txtCode").show();
+                    $.ajax({
+                        url: "Login.aspx",
+                        type: 'post', dataType: 'json', timeout: 10000,
+                        data: {
+                            isCallback: "true",
+                            code: $("#txtCode").val()
+                        },
+                        async: false,
+                        success: function (resultData) {
+                            var flag = resultData.flag;
+                            if (flag == "1") {
+                                $("#img_txtCode").attr("src", "images/true.gif");
+                            }
+                            else if (flag == "0") {
+                                $("#img_txtCode").attr("src", "images/false.gif");
+                            }
+                        }
+                    });
+                }
+                temp = value;
+            }
+        });
+
+        if ($("#login_txtIsYZPhone").val() == 1) {
+            $("#m-username").val($("#login_txtUserName").val());
+
+
+
+            $("#yzsjhWin").myOpenWin(
+             {
+                 colseBtn: ' <img src="/Utility/image/guanbi-2.png" />',
+                 mouseOverCloseBtn: '/Utility/image/guanbi-1.png',
+                 openStyle: 3,
+                 colseStyle: 3
+
+             });
+
+        }
+
+    });
+</script>
+
+<style>
+    /*底部*/
+
+    #footer {
+        /*margin-top: 20px;*/
+        color: #515151;
+        margin-bottom:0px;
+    }
+
+    #footer-left {
+        width: 950px;
+        float: left;
+    }
+
+    #footer .w1200, #footer .huangse, #footer .fenhong {
+        margin-top: 0px;
+    }
+
+    body .footer {
+        background-color: white;
+        /* height: 390px; */
+    }
+
+    .footer #footer_top {
+        height: 20px;
+        width: 100%;
+        background-color: #990304;
+    }
+
+    #footer .w1200 {
+        background-color: white;
+    }
+
+    #footer-info {
+        height: 230px;
+    }
+
+
+    .lainxidianhua {
+        background-image: url(/Templates/master/newmaotai/images//newdefault/fuwurexianlogo.png);
+        padding-left: 35px;
+        background-position-y: -1px;
+        background-repeat: no-repeat;
+        float: left;
+        font-size: 17px;
+        font-weight: bold;
+        margin-top: 26px;
+        padding-top: 5px;
+        margin-left: 0px;
+        background-size: 35px;
+    }
+
+    .lainxidianhua span {
+        font-size: 16px;
+    }
+
+    .lianxiyouxiang {
+        background-image: url(/Templates/master/newmaotai/images//newdefault/lxyouxinagicon.png);
+        padding-left: 40px;
+        background-position-y: -3px;
+        background-repeat: no-repeat;
+        float: left;
+        font-size: 17px;
+        font-weight: bold;
+        margin-top: 26px;
+        padding-top: 5px;
+        margin-left: 17px;
+    }
+
+    .lianxiyouxiang span {
+        font-size: 15px;
+    }
+
+    .dianjizxun {
+        float: left;
+        margin-left: 18px;
+        margin-top: 31.5px;
+        margin-right: 0px;
+
+    }
+
+    .dianjizxun span.dianjizxun-title {
+        text-align: center;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 10px;
+        padding-left: 35px;
+        background-image: url(/Templates/master/newmaotai//images/newdefault/zixunlogo.png);
+        background-repeat: no-repeat;
+        cursor: pointer;
+        margin-top: 20px; background-size: 35px;
+    }
+
+    .dianjizxun span {
+        font-size: 14px;
+        font-weight: normal;
+    }
+    /*.dianjizxun input {
+        width: 250px;
+        border: 1px solid #ccc;
+        height: 25px;
+    }*/
+
+    /*.dianjizxun span {
+    cursor: pointer;
+    color: black;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #8A8A8A;
+    border-right: 1px solid #8A8A8A;
+    border-radius: 4px;
+    padding: 5px 10px;
+}*/
+    /*列表*/
+    #footer-list {
+        width: 835px;
+        margin: 0 auto;
+        margin-top: -10px;
+    }
+
+    #footer-list ul {
+        float: left;
+        margin-left: 120px;
+    }
+
+    #footer-list ul:first-child {
+        margin-left: 0px;
+    }
+
+    #footer-list ul li a {
+        color: #515151;
+    }
+
+    #footer-list ul li {
+        line-height: 22px;
+    }
+
+    #footer-list ul li:first-child {
+        height: 45px;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 60px;
+        margin-left: 0px;
+    }
+
+    #ffzx {
+        margin-left: 0px;
+    }
+
+    #ffzx li:first-child {
+        /*background-image: url(/Templates/master/newmaotai//images/newdefault/fuwu.png);
+    background-repeat: no-repeat;*/
+    }
+
+    #sczn li:first-child {
+        /*background-image: url(/Templates/master/newmaotai//images/newdefault/zhinan.png);
+    background-repeat: no-repeat;*/
+    }
+
+    #zffs li:first-child {
+        /*background-image: url(/Templates/master/newmaotai//images/newdefault/zhifu.png);
+    background-repeat: no-repeat;*/
+    }
+
+    #wlps li:first-child {
+        /*background-image: url(/Templates/master/newmaotai//images/newdefault/wuliu.png);
+    background-repeat: no-repeat;*/
+    }
+
+    #yxwl li:first-child {
+        /*background-image: url(/Templates/master/newmaotai//images/newdefault/yinxiaowangluo.png);
+    background-repeat: no-repeat;*/
+    }
+
+    #shfw li:first-child {
+        /*background-image: url(/Templates/master/newmaotai//images/newdefault/shouhou.png);
+    background-repeat: no-repeat;*/
+    }
+    /*底部右边*/
+    #footer-right {
+        float: right;
+        width: 193px;
+        margin-right: 17px;
+        margin-top: 20px;
+    }
+
+    #weibo #weibo-word {
+        font-size: 15px;
+    }
+
+
+    #gezhongewm {
+        height: 261px;
+        background-color: #C0090B;
+        color: white;
+        text-align: center;
+    }
+
+    #gezhongewm a {
+        font-weight: bold;
+        color: white;
+    }
+
+    #ewm-list {
+        padding-top: 30px;
+        height: 137px;
+        width: 1200px;
+        margin: 0 auto;
+    }
+
+    #ewm-list div a {
+        font-size: 14px;
+    }
+
+    #ewm-list .left {
+        float: left;
+        margin-left: 20px;
+        margin-top: 34px;
+    }
+
+    #ewm-list .right {
+        float: right;
+        margin-right: 45px;
+        margin-top: 15px;
+    }
+
+    #ewm-list .right div {
+        float: left;
+        margin-left: 45px;
+        text-align: center;
+    }
+
+    #ewm-list .right div h2 {
+        margin-top: 2px;
+    }
+
+    #ewm-list div {
+        line-height: 25px;
+    }
+
+
+    #qq_right img {
+        display: block;
+        margin-top: 5px;
+        cursor: pointer;
+    }
+
+    body #footer {
+        font-family: 微软雅黑;
+    }
+    /*清楚浮动代码*/
+    .clear-fix:after {
+        display: block;
+        clear: both;
+        content: "";
+        visibility: hidden;
+        height: 0;
+    }
+</style>
+<div class="footer  o-hidden pt20" id="footer">
+
+    <div id="footer-info">
+        <div class="w1200 pt20 ">
+
+            <div id="footer-left">
+                <div class=" clear-fix">
+                    <div class="lainxidianhua">
+                     400 1000 799&nbsp;&nbsp;<span>服务热线</span>
+                    </div>
+                    <div class="dianjizxun  ">
+                         <span class="dianjizxun-title " onclick="javascript: window.open('http://crm2.qq.com/page/portalpage/wpa.php?uin=800083967&aty=0&a=0&curl=&ty=1', '_blank', 'height=544, width=644,toolbar=no,scrollbars=no,menubar=no,status=no');">点击咨询在线客服
+                        </span>
+                        <span>&nbsp;(每日9:00-22:00在线服务)</span>
+                    </div>
+     <div class="lianxiyouxiang">
+                        cuijie@emaotai.cn&nbsp;&nbsp;<span>精品入驻 商务联系</span>
+                    </div>
+                </div>
+                <div style="clear: both"></div>
+
+
+                <div style="border-bottom: 1px solid #CCCCCC; margin-top: 5px; margin-bottom: 5px;"></div>
+                <div style="clear: both"></div>
+                <div id="footer-list" class="clear-fix">
+                    <ul id="ffzx">
+                        <li><a target="_blank" href="https://www.emaotai.cn//helps.aspx">服务中心</a></li>
+                        <li><a target="_blank" href="https://www.emaotai.cn//help/show-33.htm">常见问题</a></li>
+                        <li><a target="_blank" href="https://www.emaotai.cn/help/show-40.htm">优惠券使用方法</a></li>
+                        <li><a target="_blank" href="https://www.emaotai.cn/help/show-38.htm">邮件订阅/退订</a></li>
+                        <li><a target="_blank" href="https://www.emaotai.cn//help/show-27.htm">防伪溯源</a></li>
+                    </ul>
+                    <ul id="sczn">
+                        <li><a target="_blank" href="https://www.emaotai.cn//Helps.aspx?CategoryId=5">商城指南</a></li>
+                        <li><a target="_blank" href="https://www.emaotai.cn//help/show-14.htm">购物流程</a></li>
+                        <li><a target="_blank" href="https://www.emaotai.cn//help/show-19.htm">订购方式</a></li>
+                        <li><a target="_blank" href="https://www.emaotai.cn//help/show-13.htm">积分政策</a></li>
+                    </ul>
+                    <ul id="zffs">
+                        <li><a target="_blank" href="https://www.emaotai.cn//Helps.aspx?CategoryId=4">支付方式</a></li>
+                        <li><a target="_blank" href="https://www.emaotai.cn//help/show-17.htm">银行汇款</a></li>
+                        <li><a target="_blank" href="https://www.emaotai.cn//help/show-8.htm">支付宝</a></li>
+                        <li><a target="_blank" href="https://www.emaotai.cn//help/show-6.htm">银联支付</a></li>
+                    </ul>
+                    <ul id="wlps">
+                        <li><a target="_blank" href="https://www.emaotai.cn//Helps.aspx?CategoryId=1">物流配送</a></li>
+                        <li><a target="_blank" href="https://www.emaotai.cn//help/show-1.htm">配送费用</a></li>
+                        <li><a target="_blank" href="https://www.emaotai.cn//help/show-16.htm">配送方式</a></li>
+                        <li><a target="_blank" href="https://www.emaotai.cn//help/show-15.htm">配送时间</a></li>
+                    </ul>
+
+                    <ul id="shfw">
+                        <li><a target="_blank" href="https://www.emaotai.cn/Helps.aspx?CategoryId=7">售后服务</a></li>
+                        <li><a target="_blank" href="https://www.emaotai.cn/help/show-41.htm">购物须知</a></li>
+                        <li><a target="_blank" href="https://www.emaotai.cn/help/show-42.htm">退换货说明</a></li>
+                        <li><a target="_blank" href="https://www.emaotai.cn/help/show-43.htm">关于专票</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="footer-right">
+                <div id="weibo">
+                    <a href="http://weibo.com/emaotaicn" target="_blank">
+                        <img style="width: 140px; margin: 0 auto; margin-bottom: 5px; display: block;" src="/Templates/master/newmaotai/images/newdefault/weibologo.png" />
+                    </a>
+                    <!--<div id="weibo-word">
+                        茅台商城官方微博
+                         <div style="float: right; margin-top: -8px;">
+                             <iframe allowtransparency="" border="0" frameborder="0" height="15" marginheight="0" marginwidth="0" scrolling="no" src="https://widget.weibo.com/relationship/followbutton.php?width=200&amp;height=22&amp;uid=5335560106&amp;style=5&amp;btn=red&amp;dpc=1" style="width: 64px; height: 22px; padding-top: 10px;" width="200"></iframe>
+                         </div>
+                    </div>-->
+                    <div style="float: left; text-align: center; margin-top: 10px;">
+                        <img src="/Templates/master/newmaotai/images/newdefault/weishangcheng-erweima.png" />
+                        <h2>茅台微信商城
+                        </h2>
+                    </div>
+                    <div id="mt-dyh" style="float: right; text-align: center;">
+                        <img src="/Templates/master/newmaotai/images/newdefault/dingyuehao-erweima.png" />
+                        <h2>茅台商城订阅号
+                        </h2>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div style="clear: both;"></div>
+
+
+    <div id="gezhongewm">
+        <div id="footer_top">
+        </div>
+        <div id="ewm-list">
+
+            <div>
+                <a href="https://www.emaotai.cn/" target="_blank">商城首页</a>&nbsp&nbsp|&nbsp&nbsp
+                    <a href="https://www.emaotai.cn/help/show-31.htm" target="_blank">关于我们</a>&nbsp&nbsp|&nbsp&nbsp
+                    <a href="https://www.emaotai.cn/HelpDetails.aspx?HelpId=44" target="_blank">公司资质</a>&nbsp&nbsp|&nbsp&nbsp
+                    <a href="https://www.emaotai.cn/help/show-11.htm" target="_blank">联系我们</a>&nbsp&nbsp|&nbsp&nbsp
+                     <a href="https://www.emaotai.cn/help/show-28.htm" target="_blank">经销商网络</a>&nbsp&nbsp|&nbsp&nbsp
+                     <a href="https://www.emaotai.cn/help/show-20.htm" target="_blank">自提货网点</a>
+            </div>
+            <div>Copyright 2014  ©贵州茅台集团电子商务股份有限公司<div>
+            <div> 增值电信业务经营许可证:  黔B2-20180022   &nbsp;&nbsp;<a style=" font-size:12px;
+			font-weight:100" target="_blank" href="http://www.miibeian.gov.cn/state/outPortal/loginPortal.action" >黔ICP备10001658号-1
+            </a>  <a target="_blank" href="https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=52011502000337" style="font-size:12px;
+			font-weight:100;display:inline-block;text-decoration:none;"><img src="https://static.emaotai.cn/templates/master/newmaotai/images/newdefault/2018050410.png" style="float:left;height:15px;margin-top:5px;"/>贵公网安备 52011502000337号</a> </div>
+
+            <div>
+                公司地址：贵州省贵阳市观山湖区湖滨路10号翔明大厦10楼&nbsp;<!--|&nbsp;联系电话:400-1000-799-->
+            </div>
+
+            <div style="font-weight: bold; font-size: 14px;">
+                购买前请确认达到法定饮酒年龄！茅台商城不销售任何含酒精产品给18岁以下人士！
+            </div>
+
+
+
+        </div>
+    </div>
+
+</div>
+
+<div id="yzsjhWin">
+    <form id="bindPhone">
+
+
+        <div id="wanshan">
+            <div class="wanshan"></div>
+            <div class="wanshan wanshan-word">为了您的账号安全,请绑定手机号</div>
+            <div class="wanshan"></div>
+        </div>
+        <div id="write-info">
+            <table>
+                <tr>
+                    <th>用户名:</th>
+                    <td>
+                        <input id="m-username" readonly="readonly" type="text" name="name" value="" />
+
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>手机号码:</th>
+                    <td>
+                        <input pattern="^[1-9]\d{10,11}$" id="m-userphone" required type="text" name="name" value="" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>短信验证:</th>
+                    <td>
+                        <input id="m-msmcode" pattern="^[0-9]\d{5,6}$" required type="text" style="width:100px;" name="name" value="" /><span class="codezq" id="a_sendCode">
+                            获取短信
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <th> </th>
+                    <td>
+
+                        <button type="submit" id="sava-btn">提交信息</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+    </form>
+</div>

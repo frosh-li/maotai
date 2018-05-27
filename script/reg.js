@@ -2,6 +2,7 @@ const request = require('request');
 const service = require('../tools/service');
 const fs = require('fs');
 var codesInterval = null;
+// http://api.tay8.com/msgcode/api/do.php?sid=9715&token=5E5C75C2325542A0879F7F11BA3326BF&action=getPhone&phone=13146162280
 /**
  * 账号注册接口
  */
