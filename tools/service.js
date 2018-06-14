@@ -289,8 +289,9 @@ class MaotaiService {
         let that = this;
         return new Promise((resolve, reject) => {
             let options = {
-                method: 'POST',
-                url: 'https://www.cmaotai.com/API/LBSServer.ashx',
+                method: 'get',
+                url:"https://www.baidu.com",
+                //url: 'https://www.cmaotai.com/API/LBSServer.ashx',
                 headers: {
                     // "proxy-authorization" : "Basic " + proxy.proxyAuth,
                     'cookie':j,
@@ -1358,11 +1359,11 @@ class MaotaiService {
                       return reject("没有订单:" + body.msg);
                   }
                   if(body.data && JSON.parse(body.data).data){
-                    return resolve(JSON.parse(body.data).data.data || []);  
+                    return resolve(JSON.parse(body.data).data.data || []);
                   }else{
-                    return resolve([]);  
+                    return resolve([]);
                   }
-                  
+
               }
           });
 
@@ -1392,7 +1393,7 @@ class MaotaiService {
           form: {
             sid:	addressId,
             iid:	-1,
-            qty:	orderCount || 6,
+            qty:	2,
             express:	14,
             product:	'{"Pid":391,"PName":"贵州茅台酒 (新飞天) 53%vol 500ml","PCode":"23","Unit":"瓶","CoverImage":"/upload/fileStore/20180415/6365942315164224808933821.jpg","SalePrice":1499}',
             remark: ''	,
@@ -1449,9 +1450,9 @@ class MaotaiService {
                     if (body.state === false) {
                         return reject("提交订单失败:" + body.msg);
                     }
-                    return resolve(body);  
+                    return resolve(body);
                   })
-                  
+
               }
           });
 

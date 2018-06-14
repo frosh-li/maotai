@@ -205,7 +205,9 @@ function checkPhone(){
 // 120.5945,31.302098
 // 116.397169,39.918539
 // 121.473051,31.232353
-let geos = Utils.randomGeo(31.232353, 121.473051, 20, phones.length);
+// 116.437943,39.99335
+// 120.572002,31.346997
+let geos = Utils.randomGeo(39.960742, 116.402257, 15, phones.length);
 
 let getAddressCounter = 0;
 

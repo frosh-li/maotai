@@ -27,6 +27,7 @@ function start() {
     logger.info("全部登录完成");
 
     console.log(JSON.stringify(loginSuccess, null, 4));
+    fs.writeFileSync(process.argv[2], JSON.stringify(loginSuccess,null,4));
     return;
   }
   let userAgent = MaotaiService.userAgent(user.phone);

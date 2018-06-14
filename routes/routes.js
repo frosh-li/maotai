@@ -13,6 +13,27 @@ var Filecookietore = require('tough-cookie-filestore');
 router.get('/maotai/index.html', function(req, res, next) {
   res.render('homepage.html');
 })
+
+router.post('/token/', (req, res, next) => {
+  let csessionid = req.body.csessionid;
+  let sig = req.body.sig;
+  let token = req.body.token;
+  let tokens = {
+    csessionid,
+    sig,
+    token
+  };
+  redisClient.setex(`token:${uuid()}`, 600, JSON.stringify({
+    csessionid,
+    sig,
+    token
+  }));
+  console.log('SID from client',new Date(), tokens);
+  res.json({
+    status: 200,
+    sid: tokens
+  })
+})
 /**
  * router - 获取sid
  *
